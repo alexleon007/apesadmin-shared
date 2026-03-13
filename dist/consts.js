@@ -1,89 +1,85 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.TYPE_AI = exports.TYPE_PARTY = exports.TYPE_PO = exports.TYPE_POS = exports.TYPE_PROJECTS = exports.TYPE_ORDERS = exports.FILETYPE_OTHER = exports.FILETYPE_IMAGE = exports.FILETYPE_PDF = exports.SIZE_FULLSCREN = exports.OS_IOS = exports.OS_ANDROID = exports.RECORD_FOLDERS = exports.RECORD_RECORDS = exports.RECORD_RECORD = exports.RECORD_DOC = exports.RECORD_BIT = exports.STATUS_NUMBER_RESERVED = exports.STATUS_NUMBER_PAID = exports.STATUS_NUMBER_FINISHED = exports.STATUS_NUMBER_AUTHORIZED = exports.STATUS_NUMBER_IN_PROGRESS = exports.STATUS_NUMBER_ACTIVE = exports.STATUS_NUMBER_UNACTIVE = exports.STATUS_NUMBER_DELETED = exports.STATUS_NUMBER_CANCELLED = exports.STATUS_NUMBER_REJECTED = exports.STATUS_RESERVED = exports.STATUS_PAID = exports.STATUS_FINISHED = exports.STATUS_AUTHORIZED = exports.STATUS_IN_PROGRESS = exports.STATUS_ACTIVE = exports.STATUS_UNACTIVE = exports.STATUS_DELETED = exports.STATUS_CANCELLED = exports.STATUS_REJECTED = exports.MODE_PAY_SUBSCRIPTION = exports.MODE_MANAGE_SUBSCRIPTION = exports.MODE_MANUAL = exports.MODE_IMPORT = exports.MODE_RETURN = exports.MODE_STAMP = exports.MODE_NEXT = exports.MODE_DELETE = exports.MODE_MAXMIN = exports.MODE_VIEW = exports.MODE_EDIT = exports.MODE_NEW = exports.MODE_CREATE = void 0;
-exports.CFDI_USES = exports.COLOR_PALETTE_NAMES = exports.TAB_STATS = exports.TAB_PROPERTY = exports.TAB_BUDGET = exports.CALENDAR_EVENT_TYPES = exports.CALENDAR_EVENT_TYPE_DISPONIBILIDAD = exports.CALENDAR_EVENT_TYPE_LLAMADA = exports.CALENDAR_EVENT_TYPE_REUNION = exports.MIME_MAP = exports.ROLE_MAP = exports.ROLE_CONTACT = exports.ROLE_RH = exports.ROLE_SUPPLIER = exports.ROLE_CUSTOMER = exports.ROLE_LABELS = exports.VIEW_TABLE = exports.VIEW_GALLERY = exports.VIEW_BOARD = exports.CONCEPT_PRODUCTS = exports.CONCEPT_FORM = exports.CONCEPT_MAIN = exports.MAILSUPPLIER_OTHER = exports.MAILSUPPLIER_OUTLOOK = exports.MAILSUPPLIER_GMAIL = exports.FORM_OTHER = exports.FORM_STATS = exports.FORM_FISCAL = exports.FORM_RECORDS = exports.FORM_PIPELINE = exports.FORM_CONTACTS = exports.FORM_ADDRESSES = exports.FORM_MAIN = exports.VAR_TYPE_EMPTY_STRING = exports.VAR_TYPE_OBJECT = exports.VAR_TYPE_NUMBER = exports.VAR_TYPE_BOOLEAN = exports.VAR_TYPE_STRING = void 0;
-exports.MODE_CREATE = "create";
-exports.MODE_NEW = "new";
-exports.MODE_EDIT = "edit";
-exports.MODE_VIEW = "view";
-exports.MODE_MAXMIN = "maxmin";
-exports.MODE_DELETE = "delete";
-exports.MODE_NEXT = "next";
-exports.MODE_STAMP = "stamp";
-exports.MODE_RETURN = "return";
-exports.MODE_IMPORT = "import";
-exports.MODE_MANUAL = "manual";
-exports.MODE_MANAGE_SUBSCRIPTION = "manageSubscription";
-exports.MODE_PAY_SUBSCRIPTION = "paySubscription";
-exports.STATUS_REJECTED = "rejected";
-exports.STATUS_CANCELLED = "cancelled";
-exports.STATUS_DELETED = "deleted";
-exports.STATUS_UNACTIVE = "unactive";
-exports.STATUS_ACTIVE = "active";
-exports.STATUS_IN_PROGRESS = "in_progress";
-exports.STATUS_AUTHORIZED = "authorized";
-exports.STATUS_FINISHED = "finished";
-exports.STATUS_PAID = "paid";
-exports.STATUS_RESERVED = "reserved";
-exports.STATUS_NUMBER_REJECTED = -3;
-exports.STATUS_NUMBER_CANCELLED = -2;
-exports.STATUS_NUMBER_DELETED = -1;
-exports.STATUS_NUMBER_UNACTIVE = 0;
-exports.STATUS_NUMBER_ACTIVE = 1;
-exports.STATUS_NUMBER_IN_PROGRESS = 2;
-exports.STATUS_NUMBER_AUTHORIZED = 3;
-exports.STATUS_NUMBER_FINISHED = 4;
-exports.STATUS_NUMBER_PAID = 5;
-exports.STATUS_NUMBER_RESERVED = 6;
-exports.RECORD_BIT = "bit";
-exports.RECORD_DOC = "doc";
-exports.RECORD_RECORD = "record";
-exports.RECORD_RECORDS = "records";
-exports.RECORD_FOLDERS = "folders";
-exports.OS_ANDROID = "android";
-exports.OS_IOS = "ios";
-exports.SIZE_FULLSCREN = "fullscreen";
-exports.FILETYPE_PDF = "pdf";
-exports.FILETYPE_IMAGE = "image";
-exports.FILETYPE_OTHER = "other";
-exports.TYPE_ORDERS = "orders";
-exports.TYPE_PROJECTS = "projects";
-exports.TYPE_POS = "pos";
-exports.TYPE_PO = "po";
-exports.TYPE_PARTY = "party";
-exports.TYPE_AI = "AI";
-exports.VAR_TYPE_STRING = "string";
-exports.VAR_TYPE_BOOLEAN = "boolean";
-exports.VAR_TYPE_NUMBER = "number";
-exports.VAR_TYPE_OBJECT = "object";
-exports.VAR_TYPE_EMPTY_STRING = "";
-exports.FORM_MAIN = "main";
-exports.FORM_ADDRESSES = "addresses";
-exports.FORM_CONTACTS = "contacts";
-exports.FORM_PIPELINE = "pipelines";
-exports.FORM_RECORDS = "records";
-exports.FORM_FISCAL = "fiscal";
-exports.FORM_STATS = "stats";
-exports.FORM_OTHER = "other";
-exports.MAILSUPPLIER_GMAIL = "gmail";
-exports.MAILSUPPLIER_OUTLOOK = "outlook";
-exports.MAILSUPPLIER_OTHER = "other";
-exports.CONCEPT_MAIN = "main";
-exports.CONCEPT_FORM = "form";
-exports.CONCEPT_PRODUCTS = "product";
-exports.VIEW_BOARD = "board";
-exports.VIEW_GALLERY = "gallery";
-exports.VIEW_TABLE = "table";
-exports.ROLE_LABELS = {
+export const MODE_CREATE = "create";
+export const MODE_NEW = "new";
+export const MODE_EDIT = "edit";
+export const MODE_VIEW = "view";
+export const MODE_MAXMIN = "maxmin";
+export const MODE_DELETE = "delete";
+export const MODE_NEXT = "next";
+export const MODE_STAMP = "stamp";
+export const MODE_RETURN = "return";
+export const MODE_IMPORT = "import";
+export const MODE_MANUAL = "manual";
+export const MODE_MANAGE_SUBSCRIPTION = "manageSubscription";
+export const MODE_PAY_SUBSCRIPTION = "paySubscription";
+export const STATUS_REJECTED = "rejected";
+export const STATUS_CANCELLED = "cancelled";
+export const STATUS_DELETED = "deleted";
+export const STATUS_UNACTIVE = "unactive";
+export const STATUS_ACTIVE = "active";
+export const STATUS_IN_PROGRESS = "in_progress";
+export const STATUS_AUTHORIZED = "authorized";
+export const STATUS_FINISHED = "finished";
+export const STATUS_PAID = "paid";
+export const STATUS_RESERVED = "reserved";
+export const STATUS_NUMBER_REJECTED = -3;
+export const STATUS_NUMBER_CANCELLED = -2;
+export const STATUS_NUMBER_DELETED = -1;
+export const STATUS_NUMBER_UNACTIVE = 0;
+export const STATUS_NUMBER_ACTIVE = 1;
+export const STATUS_NUMBER_IN_PROGRESS = 2;
+export const STATUS_NUMBER_AUTHORIZED = 3;
+export const STATUS_NUMBER_FINISHED = 4;
+export const STATUS_NUMBER_PAID = 5;
+export const STATUS_NUMBER_RESERVED = 6;
+export const RECORD_BIT = "bit";
+export const RECORD_DOC = "doc";
+export const RECORD_RECORD = "record";
+export const RECORD_RECORDS = "records";
+export const RECORD_FOLDERS = "folders";
+export const OS_ANDROID = "android";
+export const OS_IOS = "ios";
+export const SIZE_FULLSCREN = "fullscreen";
+export const FILETYPE_PDF = "pdf";
+export const FILETYPE_IMAGE = "image";
+export const FILETYPE_OTHER = "other";
+export const TYPE_ORDERS = "orders";
+export const TYPE_PROJECTS = "projects";
+export const TYPE_POS = "pos";
+export const TYPE_PO = "po";
+export const TYPE_PARTY = "party";
+export const TYPE_AI = "AI";
+export const VAR_TYPE_STRING = "string";
+export const VAR_TYPE_BOOLEAN = "boolean";
+export const VAR_TYPE_NUMBER = "number";
+export const VAR_TYPE_OBJECT = "object";
+export const VAR_TYPE_EMPTY_STRING = "";
+export const FORM_MAIN = "main";
+export const FORM_ADDRESSES = "addresses";
+export const FORM_CONTACTS = "contacts";
+export const FORM_PIPELINE = "pipelines";
+export const FORM_RECORDS = "records";
+export const FORM_FISCAL = "fiscal";
+export const FORM_STATS = "stats";
+export const FORM_OTHER = "other";
+export const MAILSUPPLIER_GMAIL = "gmail";
+export const MAILSUPPLIER_OUTLOOK = "outlook";
+export const MAILSUPPLIER_OTHER = "other";
+export const CONCEPT_MAIN = "main";
+export const CONCEPT_FORM = "form";
+export const CONCEPT_PRODUCTS = "product";
+export const VIEW_BOARD = "board";
+export const VIEW_GALLERY = "gallery";
+export const VIEW_TABLE = "table";
+export const ROLE_LABELS = {
     admin: "Admin",
     team: "Equipo",
     agent: "Agente",
 };
-exports.ROLE_CUSTOMER = "customer";
-exports.ROLE_SUPPLIER = "supplier";
-exports.ROLE_RH = "rh";
-exports.ROLE_CONTACT = "contact";
-exports.ROLE_MAP = {
+export const ROLE_CUSTOMER = "customer";
+export const ROLE_SUPPLIER = "supplier";
+export const ROLE_RH = "rh";
+export const ROLE_CONTACT = "contact";
+export const ROLE_MAP = {
     suppliers: { singular: "Proveedor", plural: "Proveedores" },
     supplier: { singular: "Proveedor", plural: "Proveedores" },
     prospect: { singular: "Prospecto", plural: "Prospectos" },
@@ -95,7 +91,7 @@ exports.ROLE_MAP = {
     contact: { singular: "Contacto", plural: "Contactos" },
     contacts: { singular: "Contacto", plural: "Contactos" },
 };
-exports.MIME_MAP = {
+export const MIME_MAP = {
     // Documentos
     "application/pdf": "PDF",
     "text/plain": "Texto",
@@ -162,18 +158,18 @@ exports.MIME_MAP = {
     "application/vnd.mozilla.xul+xml": "XUL",
     "application/epub+zip": "EPUB",
 };
-exports.CALENDAR_EVENT_TYPE_REUNION = "Reunión";
-exports.CALENDAR_EVENT_TYPE_LLAMADA = "Llamada";
-exports.CALENDAR_EVENT_TYPE_DISPONIBILIDAD = "Disponibilidad";
-exports.CALENDAR_EVENT_TYPES = [
-    exports.CALENDAR_EVENT_TYPE_REUNION,
-    exports.CALENDAR_EVENT_TYPE_LLAMADA,
-    exports.CALENDAR_EVENT_TYPE_DISPONIBILIDAD,
+export const CALENDAR_EVENT_TYPE_REUNION = "Reunión";
+export const CALENDAR_EVENT_TYPE_LLAMADA = "Llamada";
+export const CALENDAR_EVENT_TYPE_DISPONIBILIDAD = "Disponibilidad";
+export const CALENDAR_EVENT_TYPES = [
+    CALENDAR_EVENT_TYPE_REUNION,
+    CALENDAR_EVENT_TYPE_LLAMADA,
+    CALENDAR_EVENT_TYPE_DISPONIBILIDAD,
 ];
-exports.TAB_BUDGET = "budget";
-exports.TAB_PROPERTY = "property";
-exports.TAB_STATS = "stats";
-exports.COLOR_PALETTE_NAMES = {
+export const TAB_BUDGET = "budget";
+export const TAB_PROPERTY = "property";
+export const TAB_STATS = "stats";
+export const COLOR_PALETTE_NAMES = {
     graphColors: "Gráficas",
     systemStates: "Estados del sistema",
     vibrantSunset: "Atardecer vibrante",
@@ -188,7 +184,7 @@ exports.COLOR_PALETTE_NAMES = {
     allDifferent: "Colores diferentes",
     allDifferentPastel: "Pasteles diferentes",
 };
-exports.CFDI_USES = [
+export const CFDI_USES = [
     { code: "G01", name: "Adquisición de mercancías" },
     { code: "G02", name: "Devoluciones, descuentos o bonificaciones" },
     { code: "G03", name: "Gastos en general" },
