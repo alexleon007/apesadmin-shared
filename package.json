@@ -1,0 +1,31 @@
+{
+  "name": "@apesdev/shared",
+  "version": "1.0.0",
+  "description": "Shared types, constants and languages for ApesAdmin ecosystem",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./types/*": "./dist/types/*.d.ts",
+    "./languages/*": "./src/languages/*"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "files": [
+    "dist",
+    "src/languages"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
