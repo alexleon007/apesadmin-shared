@@ -1776,4 +1776,31 @@ export interface FiltersConfig {
 export interface FilterValues {
     [key: string]: any;
 }
+export type ChatType = {
+    idchat: number;
+    chattype: "direct" | "group" | "channel" | "community_room";
+    chattitle: string;
+    chatdescription: string | null;
+    chatavatar: string;
+    lastmessageat: string | null;
+    lastmessage?: string;
+    lastmessageowner?: string;
+    participants?: {
+        idchatpa: number;
+        iduser: number;
+        nickname: string;
+        role: string;
+        profileimage?: string;
+    }[];
+    unread_count?: number;
+};
+export type ChatMessageType = {
+    idchatme: number;
+    chatmeowner: boolean;
+    usernick?: string;
+    chatmemessagetype: string;
+    chatmebody: string;
+    chatmestatus: number;
+    chatmecreatedat: string;
+};
 //# sourceMappingURL=types.d.ts.map
