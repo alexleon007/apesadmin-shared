@@ -4,7 +4,7 @@ import { VIEW_BOARD, VIEW_GALLERY, VIEW_TABLE } from "./consts";
 // SAMS
 // ─────────────────────────────────────────────────────────────────────────────
 
-export interface Container {
+export type Container = {
   id: string;
   name: string;
   image: string;
@@ -13,14 +13,14 @@ export interface Container {
   created: number;
 }
 
-export interface ContainersByServer {
+export type ContainersByServer = {
   serverId: string;
   serverName: string;
   containers: Container[];
   error?: string;
 }
 
-export interface Server {
+export type Server = {
   id: string;
   name: string;
   host: string;
@@ -1780,12 +1780,12 @@ export type WorkItemsType = {
 // BIBLY (apesadmin-bibly/src/types/types.ts)
 // ─────────────────────────────────────────────────────────────────────────────
 
-export interface BiblyExamOptionType {
+export type BiblyExamOptionType = {
   text: string;
   correct: boolean;
 }
 
-export interface BiblyExamQuestionType {
+export type BiblyExamQuestionType = {
   idexq: number;
   qrytitle: string;
   qrydescription: string;
@@ -1800,7 +1800,7 @@ export interface BiblyExamQuestionType {
   createdat?: string;
 }
 
-export interface BiblyExamType {
+export type BiblyExamType = {
   idex: number;
   name: string;
   description: string;
@@ -1824,7 +1824,7 @@ export type BiblyHubType = {
   hubprice: number;
 };
 
-export interface CheckoutMetadata {
+export type CheckoutMetadata = {
   userId?: string | number;
   orderId?: string | number;
   productIds?: string;
@@ -1832,7 +1832,7 @@ export interface CheckoutMetadata {
   [key: string]: any;
 }
 
-export interface CommentType {
+export type CommentType = {
   id: number;
   user: string;
   text: string;
@@ -1840,7 +1840,7 @@ export interface CommentType {
   authorId: number;
 }
 
-export interface ProductItem {
+export type ProductItem = {
   productId: string | number;
   name: string;
   description?: string;
@@ -1856,19 +1856,19 @@ export interface ProductItem {
 
 export type AggregationOperation = "sum" | "avg" | "count" | "min" | "max";
 
-export interface BarConfig {
+export type BarConfig = {
   dataKey: string;
   fill: string;
   name: string;
 }
 
-export interface ChartAggregation {
+export type ChartAggregation = {
   column: string;
   operation: AggregationOperation;
   label: string;
 }
 
-export interface ChartConfig {
+export type ChartConfig = {
   xAxisKey: string;
   bars?: BarConfig[];
   lines?: LineConfig[];
@@ -1877,7 +1877,7 @@ export interface ChartConfig {
   nameKey?: string;
 }
 
-export interface ChartDataConfig {
+export type ChartDataConfig = {
   groupBy: GroupByType;
   dateColumn?: string;
   groupColumn?: string;
@@ -1886,7 +1886,7 @@ export interface ChartDataConfig {
   aggregations: ChartAggregation[];
 }
 
-export interface ChartDefinition {
+export type ChartDefinition = {
   id: string;
   type: ChartType;
   title: string;
@@ -1925,7 +1925,7 @@ export type ChatType = {
   unread_count?: number;
 };
 
-export interface FilterDefinition {
+export type FilterDefinition = {
   id: string;
   label: string;
   type: FilterType;
@@ -1957,12 +1957,12 @@ export type FilterOperator =
   | "IN"
   | "NOT IN";
 
-export interface FilterOption {
+export type FilterOption = {
   value: string | number;
   label: string;
 }
 
-export interface FiltersConfig {
+export type FiltersConfig = {
   enabled: boolean;
   filters: FilterDefinition[];
 }
@@ -1977,11 +1977,11 @@ export type FilterType =
   | "multi-select"
   | "multi-select-api";
 
-export interface FilterValues {
+export type FilterValues = {
   [key: string]: any;
 }
 
-export interface GraphsConfig {
+export type GraphsConfig = {
   enabled: boolean;
   kpis?: KPIConfig[];
   charts: ChartDefinition[];
@@ -1989,7 +1989,7 @@ export interface GraphsConfig {
 
 export type GroupByType = "day" | "week" | "month" | "year" | "column";
 
-export interface KPIConfig {
+export type KPIConfig = {
   id: string;
   label: string;
   column: string;
@@ -2001,20 +2001,20 @@ export interface KPIConfig {
   rowFilter?: RowFilter[];
 }
 
-export interface LineConfig {
+export type LineConfig = {
   dataKey: string;
   stroke: string;
   name: string;
 }
 
-export interface RadarConfig {
+export type RadarConfig = {
   dataKey: string;
   stroke: string;
   fill: string;
   name: string;
 }
 
-export interface RowFilter {
+export type RowFilter = {
   column: string;
   op: "=" | "!=" | "in" | "not_in";
   value: string | string[];
