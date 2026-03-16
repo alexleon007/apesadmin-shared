@@ -11,14 +11,14 @@ export type Container = {
   status: string;
   state: string;
   created: number;
-}
+};
 
 export type ContainersByServer = {
   serverId: string;
   serverName: string;
   containers: Container[];
   error?: string;
-}
+};
 
 export type Server = {
   id: string;
@@ -32,7 +32,7 @@ export type Server = {
   uptime: number;
   hostname: string;
   location: string;
-}
+};
 
 // ─────────────────────────────────────────────────────────────────────────────
 // WHATSAPP — tipos del servicio raw (apesadmin-backend/src/utils/types.ts)
@@ -1802,7 +1802,7 @@ export type WorkItemsType = {
 export type BiblyExamOptionType = {
   text: string;
   correct: boolean;
-}
+};
 
 export type BiblyExamQuestionType = {
   idexq: number;
@@ -1817,7 +1817,7 @@ export type BiblyExamQuestionType = {
   answers?: any;
   next?: number | null;
   createdat?: string;
-}
+};
 
 export type BiblyExamType = {
   idex: number;
@@ -1830,7 +1830,7 @@ export type BiblyExamType = {
   createdat: string;
   userstartdate?: string | null;
   questions: BiblyExamQuestionType[];
-}
+};
 
 // BiblyHubType — versión Bibly del hub (distinta a HubType del ERP)
 export type BiblyHubType = {
@@ -1849,7 +1849,7 @@ export type CheckoutMetadata = {
   productIds?: string;
   source?: string;
   [key: string]: any;
-}
+};
 
 export type CommentType = {
   id: number;
@@ -1857,7 +1857,7 @@ export type CommentType = {
   text: string;
   date: string;
   authorId: number;
-}
+};
 
 export type ProductItem = {
   productId: string | number;
@@ -1867,7 +1867,7 @@ export type ProductItem = {
   quantity: number;
   images?: string[];
   metadata?: Record<string, any>;
-}
+};
 
 // ─────────────────────────────────────────────────────────────────────────────
 // REPORTS
@@ -1879,13 +1879,13 @@ export type BarConfig = {
   dataKey: string;
   fill: string;
   name: string;
-}
+};
 
 export type ChartAggregation = {
   column: string;
   operation: AggregationOperation;
   label: string;
-}
+};
 
 export type ChartConfig = {
   xAxisKey: string;
@@ -1894,7 +1894,7 @@ export type ChartConfig = {
   radars?: RadarConfig[];
   dataKey?: string;
   nameKey?: string;
-}
+};
 
 export type ChartDataConfig = {
   groupBy: GroupByType;
@@ -1903,7 +1903,7 @@ export type ChartDataConfig = {
   pivotColumn?: string;
   rowFilter?: RowFilter[];
   aggregations: ChartAggregation[];
-}
+};
 
 export type ChartDefinition = {
   id: string;
@@ -1911,7 +1911,7 @@ export type ChartDefinition = {
   title: string;
   dataConfig: ChartDataConfig;
   chartConfig: ChartConfig;
-}
+};
 
 export type ChartType = "bar" | "line" | "pie" | "area" | "composed";
 
@@ -1963,7 +1963,7 @@ export type FilterDefinition = {
   rangeEnd?: string;
   isClearable?: boolean;
   formatOptionLabel?: string;
-}
+};
 
 export type FilterOperator =
   | "="
@@ -1979,12 +1979,12 @@ export type FilterOperator =
 export type FilterOption = {
   value: string | number;
   label: string;
-}
+};
 
 export type FiltersConfig = {
   enabled: boolean;
   filters: FilterDefinition[];
-}
+};
 
 export type FilterType =
   | "date"
@@ -1998,13 +1998,13 @@ export type FilterType =
 
 export type FilterValues = {
   [key: string]: any;
-}
+};
 
 export type GraphsConfig = {
   enabled: boolean;
   kpis?: KPIConfig[];
   charts: ChartDefinition[];
-}
+};
 
 export type GroupByType = "day" | "week" | "month" | "year" | "column";
 
@@ -2018,23 +2018,35 @@ export type KPIConfig = {
   suffix?: string;
   color?: string;
   rowFilter?: RowFilter[];
-}
+};
 
 export type LineConfig = {
   dataKey: string;
   stroke: string;
   name: string;
-}
+};
 
 export type RadarConfig = {
   dataKey: string;
   stroke: string;
   fill: string;
   name: string;
-}
+};
 
 export type RowFilter = {
   column: string;
   op: "=" | "!=" | "in" | "not_in";
   value: string | string[];
-}
+};
+
+// ─────────────────────────────────────────────────────────────────────────────
+// OTHERS
+// ─────────────────────────────────────────────────────────────────────────────
+
+export type BootstrapColorsType =
+  | "primary"
+  | "success"
+  | "danger"
+  | "warning"
+  | "info"
+  | "dark";
