@@ -1763,12 +1763,22 @@ export type WorkItemsClasifType =
   | "sprint"
   | "task"
   | "ticket"
+  | "block"
   | string;
+
+export type WorkItemMemberType = {
+  iduser: number;
+  username: string;
+  name: string;
+  profileimage?: string;
+  role: "owner" | "collaborator" | "watcher";
+};
 
 export type WorkItemsType = {
   idwi: number;
   witype: WorkItemsClasifType;
   wititle: string;
+  widescription?: string;
   wicode?: string;
   widocnumber?: string;
   wiidwidad?: number | null;
@@ -1776,6 +1786,11 @@ export type WorkItemsType = {
   wistatus?: number;
   wiprogress?: number;
   widuedate?: string;
+  wistartdate?: string;
+  wiidproject?: number | null;
+  wiidcmp?: number | null;
+  wiblocktype?: string;
+  wimembers?: WorkItemMemberType[];
   parentTitle?: string;
   parentType?: WorkItemsClasifType;
 };
