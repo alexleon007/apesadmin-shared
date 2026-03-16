@@ -1717,11 +1717,15 @@ export type WorkflowEdgeType = {
 
 export type WorkItemsType = {
   idwi: number;
-  wicode: string;
-  widocnumber: string;
   witype: WorkItemsClasifType;
   wititle: string;
-
+  wicode?: string;
+  widocnumber?: string;
+  wiidwidad?: number | null;
+  wipriority?: number;
+  wistatus?: number;
+  wiprogress?: number;
+  widuedate?: string;
   parentTitle?: string;
   parentType?: WorkItemsClasifType;
 };
