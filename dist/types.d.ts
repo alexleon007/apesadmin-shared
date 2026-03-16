@@ -1,5 +1,19 @@
 import { VIEW_BOARD, VIEW_GALLERY, VIEW_TABLE } from "./consts";
-export interface Server {
+export type Container = {
+    id: string;
+    name: string;
+    image: string;
+    status: string;
+    state: string;
+    created: number;
+};
+export type ContainersByServer = {
+    serverId: string;
+    serverName: string;
+    containers: Container[];
+    error?: string;
+};
+export type Server = {
     id: string;
     name: string;
     host: string;
@@ -11,49 +25,6 @@ export interface Server {
     uptime: number;
     hostname: string;
     location: string;
-}
-export interface Container {
-    id: string;
-    name: string;
-    image: string;
-    status: string;
-    state: string;
-    created: number;
-}
-export interface ContainersByServer {
-    serverId: string;
-    serverName: string;
-    containers: Container[];
-    error?: string;
-}
-export type WappRawMessageType = {
-    id: {
-        fromMe: boolean;
-        remote: string;
-        id: string;
-        _serialized: string;
-    };
-    body: string;
-    type: "chat" | "image" | "video" | "audio" | "ptt" | "document" | "sticker" | "location" | "vcard" | string;
-    timestamp: number;
-    from: string;
-    to: string;
-    fromMe?: boolean;
-    author?: string;
-    hasMedia: boolean;
-    isForwarded: boolean;
-    isStatus: boolean;
-    isStarred: boolean;
-    isGroupMsg: boolean;
-    mentionedIds?: string[];
-    quotedMsgId?: string;
-    chatId: string;
-    mediaKey?: string;
-    filename?: string;
-    mimetype?: string;
-    ack: number;
-    downloadMedia: () => Promise<WappRawMessageMedia>;
-    location?: WappRawMessageLocation;
 };
 export type WappRawChatType = {
     id: {
@@ -84,27 +55,46 @@ export type WappRawChatType = {
     };
     lastMessage?: WappRawMessageType;
 };
-export type WappRawMessageMedia = {
-    data: string;
-    mimetype: string;
-    filename?: string;
-    filesize?: number;
-};
 export type WappRawMessageLocation = {
     latitude: number;
     longitude: number;
     description?: string;
     options: any;
 };
-export type WappUserType = {
-    iduser: number;
-    username: string;
-    name: string;
-    mail: string;
-    levelUser: number;
-    whatsappSync: boolean;
-    profileImage: string;
-    loggedIn: boolean;
+export type WappRawMessageMedia = {
+    data: string;
+    mimetype: string;
+    filename?: string;
+    filesize?: number;
+};
+export type WappRawMessageType = {
+    id: {
+        fromMe: boolean;
+        remote: string;
+        id: string;
+        _serialized: string;
+    };
+    body: string;
+    type: "chat" | "image" | "video" | "audio" | "ptt" | "document" | "sticker" | "location" | "vcard" | string;
+    timestamp: number;
+    from: string;
+    to: string;
+    fromMe?: boolean;
+    author?: string;
+    hasMedia: boolean;
+    isForwarded: boolean;
+    isStatus: boolean;
+    isStarred: boolean;
+    isGroupMsg: boolean;
+    mentionedIds?: string[];
+    quotedMsgId?: string;
+    chatId: string;
+    mediaKey?: string;
+    filename?: string;
+    mimetype?: string;
+    ack: number;
+    downloadMedia: () => Promise<WappRawMessageMedia>;
+    location?: WappRawMessageLocation;
 };
 export type WappChatListType = {
     idch: number;
@@ -150,18 +140,18 @@ export type WappChatType = {
     from: string;
     to: string;
 };
+export type WappQuickAnswerType = {
+    idqa: number;
+    qauserid: number;
+    qashortcut: string;
+    qaquickanswer: string;
+};
 export type WappScheduledMessage = {
     idsm: number;
     name: string;
     body: string;
     date: string;
     status: number;
-};
-export type WappQuickAnswerType = {
-    idqa: number;
-    qauserid: number;
-    qashortcut: string;
-    qaquickanswer: string;
 };
 export type WappTagType = {
     idtag: number;
@@ -174,26 +164,15 @@ export type WappTagType = {
         contactnumber: number;
     };
 };
-export type CFDIImpuestoType = {
-    Base: number;
-    Impuesto: string;
-    TipoFactor: string;
-    TasaOCuota: string;
-    Importe: number;
-};
-export type CFDIConceptoType = {
-    ClaveProdServ: string;
-    Cantidad: number;
-    ClaveUnidad: string;
-    Descripcion: string;
-    ValorUnitario: number;
-    Importe: number;
-    Descuento?: number;
-    ObjetoImp?: string;
-    Impuestos?: {
-        Traslados?: CFDIImpuestoType[];
-        Retenciones?: CFDIImpuestoType[];
-    };
+export type WappUserType = {
+    iduser: number;
+    username: string;
+    name: string;
+    mail: string;
+    levelUser: number;
+    whatsappSync: boolean;
+    profileImage: string;
+    loggedIn: boolean;
 };
 export type CfdiDataType = {
     version: "4.0";
@@ -253,10 +232,45 @@ export type CfdiDataType = {
     };
     comercioExterior?: boolean;
 };
+export type CFDIConceptoType = {
+    ClaveProdServ: string;
+    Cantidad: number;
+    ClaveUnidad: string;
+    Descripcion: string;
+    ValorUnitario: number;
+    Importe: number;
+    Descuento?: number;
+    ObjetoImp?: string;
+    Impuestos?: {
+        Traslados?: CFDIImpuestoType[];
+        Retenciones?: CFDIImpuestoType[];
+    };
+};
+export type CFDIImpuestoType = {
+    Base: number;
+    Impuesto: string;
+    TipoFactor: string;
+    TasaOCuota: string;
+    Importe: number;
+};
 export type ActionUserValueType = {
     enabled: boolean;
     scope?: "own" | "team" | "all";
     team?: number[];
+};
+export type HelpTicketType = {
+    idht: number;
+    idkmn: number;
+    title: string;
+    description: string;
+    type: string;
+    status: number;
+    statusname: string;
+    iduser: number;
+    username: string;
+    createdat: string;
+    datestarted: string;
+    datefinished: string;
 };
 export type KmnListType = {
     idkmn: number;
@@ -276,19 +290,34 @@ export type KmnListType = {
         obs: string;
     }[];
 };
-export type HelpTicketType = {
-    idht: number;
-    idkmn: number;
-    title: string;
-    description: string;
+export type AccountMovementType = {
+    idmovement: number;
+    idaccount: number;
+    accountname: string;
+    accountbank: string;
     type: string;
-    status: number;
-    statusname: string;
-    iduser: number;
-    username: string;
+    doctype: string;
+    concept: string;
+    reference: string;
+    class: string;
+    subclass: string;
+    amount: string;
+    currency: string;
+    tc: string;
+    date: string;
     createdat: string;
-    datestarted: string;
-    datefinished: string;
+    iddoc: number;
+    iduser: number;
+    username?: string;
+    status: number;
+    consec: string;
+    cancelusername?: string;
+    canceldate?: string;
+    cancelobs?: string;
+};
+export type ActionFieldType = {
+    key: string;
+    type: "scope-select";
 };
 export type AddressType = {
     idaddress: number;
@@ -343,30 +372,12 @@ export type BankAccountType = {
     accountstatus: number;
     accountclassification?: string;
 };
-export type AccountMovementType = {
-    idmovement: number;
-    idaccount: number;
-    accountname: string;
-    accountbank: string;
-    type: string;
-    doctype: string;
-    concept: string;
-    reference: string;
-    class: string;
-    subclass: string;
-    amount: string;
-    currency: string;
-    tc: string;
-    date: string;
-    createdat: string;
-    iddoc: number;
-    iduser: number;
-    username?: string;
-    status: number;
-    consec: string;
-    cancelusername?: string;
-    canceldate?: string;
-    cancelobs?: string;
+export type CalendarEventType = {
+    idcaleve: number;
+    name: string;
+    code: string;
+    color: string;
+    isvisible: number;
 };
 export type CalendarType = {
     idcal: number;
@@ -384,18 +395,22 @@ export type CalendarType = {
     statusname: string;
     isvisible: number;
 };
-export type CalendarEventType = {
-    idcaleve: number;
-    name: string;
-    code: string;
-    color: string;
-    isvisible: number;
-};
 export type CategoryType = {
     idcat: number;
     name_cat: string;
     description_cat: string;
     thumbnail_cat: string;
+};
+export type CicleCountingLogType = {
+    idinvcdlog: number;
+    idprod: number;
+    prodcode: string;
+    prodname: string;
+    idunit: number;
+    unitname: string;
+    qtyoriginal: number;
+    qtycounted: number;
+    createdat: string;
 };
 export type CicleCountingType = {
     idinvc: number;
@@ -408,17 +423,6 @@ export type CicleCountingType = {
     iduser: number;
     status: number;
     statusname: string;
-    createdat: string;
-};
-export type CicleCountingLogType = {
-    idinvcdlog: number;
-    idprod: number;
-    prodcode: string;
-    prodname: string;
-    idunit: number;
-    unitname: string;
-    qtyoriginal: number;
-    qtycounted: number;
     createdat: string;
 };
 export type CompanyType = {
@@ -437,19 +441,6 @@ export type CompanyType = {
     cmpiconourl: string;
     cmpsatkeyurl: string;
     cmpsatcerurl: string;
-};
-export type ConceptType = {
-    idconcept: number;
-    conceptidkmn: number;
-    concepttype: string;
-    conceptclas: string;
-    conceptcode: string;
-    conceptname: string;
-    conceptkey: string;
-    conceptunit: string;
-    conceptstatus: number;
-    conceptstatusname: string;
-    fields: ConceptFieldsType[];
 };
 export type ConceptFieldsType = {
     idcfield: number;
@@ -478,6 +469,19 @@ export type ConceptFieldsValuesType = {
     fieldname: string;
     fvalue: string;
 };
+export type ConceptType = {
+    idconcept: number;
+    conceptidkmn: number;
+    concepttype: string;
+    conceptclas: string;
+    conceptcode: string;
+    conceptname: string;
+    conceptkey: string;
+    conceptunit: string;
+    conceptstatus: number;
+    conceptstatusname: string;
+    fields: ConceptFieldsType[];
+};
 export type ConvertionFactorType = {
     idfactor: number;
     factorprod: number;
@@ -496,85 +500,29 @@ export type DashboardConfigType = {
     sizeY?: number;
     visible?: boolean;
 };
-export type TagType = {
-    idtag: number;
-    tagname: string;
-    tagcolor: string;
-    tagdoctype: string;
+export type DashboardWidgetType = {
+    i: string;
+    type: "welcome" | "quickActions" | "kpiGroup" | "report";
+    title: string;
+    x: number;
+    y: number;
+    w: number;
+    h: number;
+    visible: boolean;
+    reportId?: number;
+    moduleRoute?: string;
 };
-export type PartyType = {
-    idparty: number;
-    partycode: string;
-    partyname: string;
-    partytruename: string;
-    partyrfc: string;
-    partyrf: number;
-    partyaddress: string;
-    partycp: string;
-    partyagent: number;
-    partyagentname: string;
-    partypricelist: number;
-    partytel: string;
-    partyemail: string;
-    partytype: number;
-    partytypename: string;
-    partyzone: string;
-    partyclas: string;
-    partysubclas: string;
-    partycreditdays: number;
-    partycreditlimit: number;
-    partyobs: string;
-    partycsf: string;
-    partyorigin: number;
-    partyoriginname?: string;
-    contacts: {
-        name: string;
-        position: string;
-        tel1: string;
-        email: string;
-    }[];
-    addresses: {
-        name: string;
-        address: string;
-        cp: string;
-        latlong: string;
-    }[];
-    partyrecord: RecordType[];
-    partyfields: ConceptFieldsValuesType[];
-    logs: PartyLogType[];
-    partystatus: number;
-    partystatusinbox: string;
-    iscustomer: number;
-    issupplier: number;
-    isrh: number;
-    partyphoto?: string;
-    partypipelines?: {
-        idpipe: number;
-        pipeline: string;
-        idpipestep: number | null;
-        step: string | null;
-        stepcolor: string | null;
-        date: string | null;
-        idpipeparty: number;
-    }[];
-    partytags?: TagType[];
-};
-export type PartyInboxType = {
-    idinbox: number;
-    inboxname: string;
-    inboxdescription: string;
-    datacount: number;
-};
-export type PartyLogType = {
-    idpartylog: number;
-    logidparty: number;
-    statusinbox: string;
-    lognotes: string;
-    logfile: string;
-    logcontactdate: string;
-    logiduser: string;
-    logusername: string;
-    logcreatedat: string;
+export type ExamQuestionType = {
+    idexq: number;
+    qrytitle: string;
+    qrydescription: string;
+    qrytype: string;
+    qrytime: number;
+    qryvalue: number;
+    qryfiles: string | any;
+    options: any[];
+    answered: number | null;
+    answers: any[];
 };
 export type ExamType = {
     iduser?: number;
@@ -590,18 +538,6 @@ export type ExamType = {
     status: number;
     createdat: string;
     questions: ExamQuestionType[];
-};
-export type ExamQuestionType = {
-    idexq: number;
-    qrytitle: string;
-    qrydescription: string;
-    qrytype: string;
-    qrytime: number;
-    qryvalue: number;
-    qryfiles: string | any;
-    options: any[];
-    answered: number | null;
-    answers: any[];
 };
 export type ExpenseType = {
     idex: number;
@@ -651,6 +587,24 @@ export type FamiliesType = {
     famstatus: number;
     famstatusname: string;
 };
+export type GoodsReceiptDetailType = {
+    idgrd: number;
+    idprod: number;
+    prodcode: string;
+    prodname: string;
+    idunit: number;
+    unitname: string;
+    orgquantity: number;
+    finalquantity: number;
+    grdisnew: number;
+    prodbatch: number;
+    prodexpiration: number;
+    idbatch: number;
+    batchname: string;
+    expirationdate: string;
+    grdstatus: number;
+    grdstatusname: string;
+};
 export type GoodsReceiptType = {
     idgr: number;
     grtype: string;
@@ -672,29 +626,19 @@ export type GoodsReceiptType = {
     grstatusname: string;
     grdetail: GoodsReceiptDetailType[];
 };
-export type GoodsReceiptDetailType = {
-    idgrd: number;
-    idprod: number;
-    prodcode: string;
-    prodname: string;
-    idunit: number;
-    unitname: string;
-    orgquantity: number;
-    finalquantity: number;
-    grdisnew: number;
-    prodbatch: number;
-    prodexpiration: number;
-    idbatch: number;
-    batchname: string;
-    expirationdate: string;
-    grdstatus: number;
-    grdstatusname: string;
-};
 export type GroupsType = {
     idgru: number;
     gruname: string;
     grustatus: number;
     grustatusname: string;
+};
+export type HubAdminType = {
+    idhub: number;
+    hubname: string;
+    hubdescription: string;
+    hubthumnail: string;
+    hubcontent: HubContentType[];
+    hubprice: number;
 };
 export type HubContentType = {
     idhubcontent: number;
@@ -706,14 +650,6 @@ export type HubContentType = {
     cfile: string;
     corder: number;
     cstatus: number;
-};
-export type HubAdminType = {
-    idhub: number;
-    hubname: string;
-    hubdescription: string;
-    hubthumnail: string;
-    hubcontent: HubContentType[];
-    hubprice: number;
 };
 export type HubType = {
     idhub: number;
@@ -729,26 +665,6 @@ export type HubType = {
     status_hub: string;
     videoUrl: string;
     thumbnailUrl: string;
-};
-export type InventoryType = {
-    idinv: number;
-    idprod: number;
-    prodname: string;
-    idunit: number;
-    unitname: string;
-    idwh: number;
-    whname: string;
-    idcmp: number;
-    cmpname: string;
-    prodbatch: number;
-    idbatch: number;
-    batchname: string;
-    prodexpiration: number;
-    batchexpirationdate: string;
-    batchorgquantity: number;
-    invquantity: number;
-    invstatus: number;
-    statusname: string;
 };
 export type InventoryMovsType = {
     idmov: number;
@@ -776,6 +692,34 @@ export type InventoryMovsType = {
     movtypedoc: string;
     moviddoc: number;
     movdocname: string;
+};
+export type InventoryType = {
+    idinv: number;
+    idprod: number;
+    prodname: string;
+    idunit: number;
+    unitname: string;
+    idwh: number;
+    whname: string;
+    idcmp: number;
+    cmpname: string;
+    prodbatch: number;
+    idbatch: number;
+    batchname: string;
+    prodexpiration: number;
+    batchexpirationdate: string;
+    batchorgquantity: number;
+    invquantity: number;
+    invstatus: number;
+    statusname: string;
+};
+export type KpiItemType = {
+    icon: any;
+    label: string;
+    value: string;
+    trend: string;
+    trendUp: boolean;
+    color: string;
 };
 export type LogisticsRoutesType = {
     idroute: number;
@@ -830,6 +774,21 @@ export type MailConfigType = {
     status?: number;
     createdAt?: string | null;
 };
+export type ManufactureDetType = {
+    idmand: number;
+    title: string;
+    description: string;
+    type: number;
+    doctype: number;
+    iddoc: number;
+    startdate: string;
+    enddate: string;
+    order: number;
+    status: number;
+    statusname: string;
+    status2: number;
+    status2name: string;
+};
 export type ManufactureType = {
     idman: number;
     doccode: string;
@@ -846,21 +805,6 @@ export type ManufactureType = {
     manstatusname: string;
     createdat: string;
     detail: ManufactureDetType[];
-};
-export type ManufactureDetType = {
-    idmand: number;
-    title: string;
-    description: string;
-    type: number;
-    doctype: number;
-    iddoc: number;
-    startdate: string;
-    enddate: string;
-    order: number;
-    status: number;
-    statusname: string;
-    status2: number;
-    status2name: string;
 };
 export type MenuItemType = {
     idmm: number;
@@ -895,6 +839,48 @@ export type NotificationType = {
 export type OptionType = {
     label: string;
     value: string;
+};
+export type OrderDetailType = {
+    idord: number;
+    idor: number;
+    idprod: number;
+    prodcode: string;
+    prodname: string;
+    produnit: number;
+    produnitname: string;
+    taxes: TaxType[];
+    quantity: number;
+    price: number;
+    subtotal: number;
+    total: number;
+    obsRow?: string;
+    section?: string;
+};
+export type OrderLogType = {
+    idhistory: number;
+    idstage: number;
+    stageName: string;
+    stageColor: string;
+    date: string;
+    user: string;
+    comments: string;
+    action: "forward" | "backward" | "created";
+    event: null;
+};
+export type OrderMovementType = {
+    idpayd: number;
+    idpay: number;
+    ormovtype: string;
+    ormovnumber: string;
+    ormovreference: string;
+    ormovdate: string;
+    ormovpayform: string;
+    ormovcurrency: string;
+    ormovexchangerate: number;
+    ormovtotal: number;
+    ormovtotalpayment: number;
+    ormovstatus: number;
+    ormovobs: string;
 };
 export type OrderType = {
     idor: number;
@@ -953,47 +939,79 @@ export type OrderType = {
     ormovements?: OrderMovementType[];
     orlogs?: OrderLogType[];
 };
-export type OrderLogType = {
-    idhistory: number;
-    idstage: number;
-    stageName: string;
-    stageColor: string;
-    date: string;
-    user: string;
-    comments: string;
-    action: "forward" | "backward" | "created";
-    event: null;
+export type PartyInboxType = {
+    idinbox: number;
+    inboxname: string;
+    inboxdescription: string;
+    datacount: number;
 };
-export type OrderMovementType = {
-    idpayd: number;
-    idpay: number;
-    ormovtype: string;
-    ormovnumber: string;
-    ormovreference: string;
-    ormovdate: string;
-    ormovpayform: string;
-    ormovcurrency: string;
-    ormovexchangerate: number;
-    ormovtotal: number;
-    ormovtotalpayment: number;
-    ormovstatus: number;
-    ormovobs: string;
+export type PartyLogType = {
+    idpartylog: number;
+    logidparty: number;
+    statusinbox: string;
+    lognotes: string;
+    logfile: string;
+    logcontactdate: string;
+    logiduser: string;
+    logusername: string;
+    logcreatedat: string;
 };
-export type OrderDetailType = {
-    idord: number;
-    idor: number;
-    idprod: number;
-    prodcode: string;
-    prodname: string;
-    produnit: number;
-    produnitname: string;
-    taxes: TaxType[];
-    quantity: number;
-    price: number;
-    subtotal: number;
-    total: number;
-    obsRow?: string;
-    section?: string;
+export type PartyType = {
+    idparty: number;
+    partycode: string;
+    partyname: string;
+    partytruename: string;
+    partyrfc: string;
+    partyrf: number;
+    partyaddress: string;
+    partycp: string;
+    partyagent: number;
+    partyagentname: string;
+    partypricelist: number;
+    partytel: string;
+    partyemail: string;
+    partytype: number;
+    partytypename: string;
+    partyzone: string;
+    partyclas: string;
+    partysubclas: string;
+    partycreditdays: number;
+    partycreditlimit: number;
+    partyobs: string;
+    partycsf: string;
+    partyorigin: number;
+    partyoriginname?: string;
+    contacts: {
+        name: string;
+        position: string;
+        tel1: string;
+        email: string;
+    }[];
+    addresses: {
+        name: string;
+        address: string;
+        cp: string;
+        latlong: string;
+    }[];
+    partyrecord: RecordType[];
+    partyfields: ConceptFieldsValuesType[];
+    logs: PartyLogType[];
+    partystatus: number;
+    partystatusinbox: string;
+    iscustomer: number;
+    issupplier: number;
+    isrh: number;
+    partyphoto?: string;
+    partypipelines?: {
+        idpipe: number;
+        pipeline: string;
+        idpipestep: number | null;
+        step: string | null;
+        stepcolor: string | null;
+        date: string | null;
+        idpipeparty: number;
+    }[];
+    partytags?: TagType[];
 };
 export type PayFormType = {
     idpf: number;
@@ -1006,6 +1024,15 @@ export type PayFormType = {
     commtypepos: number;
     commclaspos: number;
     commqtypos: number;
+};
+export type PaymentDetType = {
+    idpayd?: number;
+    iddoc: number;
+    docnumber?: string;
+    currency?: string;
+    total?: number;
+    totaldue?: number;
+    totalpay?: number;
 };
 export type PaymentType = {
     idpay: number;
@@ -1027,15 +1054,6 @@ export type PaymentType = {
     paystatusname: string;
     paytotal: number;
     paydocs: PaymentDetType[];
-};
-export type PaymentDetType = {
-    idpayd?: number;
-    iddoc: number;
-    docnumber?: string;
-    currency?: string;
-    total?: number;
-    totaldue?: number;
-    totalpay?: number;
 };
 export type PipelineStepType = {
     idpipestep: number;
@@ -1243,6 +1261,20 @@ export type PromotionsFormPropsType = {
     onSaved?: () => void;
     modalMode: string;
 };
+export type PODetailType = {
+    idpod: number;
+    idpo: number;
+    idprod: number;
+    prodcode: string;
+    prodname: string;
+    produnit: number;
+    produnitname: string;
+    taxes: TaxType[];
+    quantity: number;
+    price: number;
+    subtotal: number;
+    total: number;
+};
 export type POType = {
     idpo: number;
     potype: number;
@@ -1288,19 +1320,15 @@ export type POType = {
     pofunnel: number;
     pofields: ConceptFieldsValuesType[];
 };
-export type PODetailType = {
-    idpod: number;
-    idpo: number;
-    idprod: number;
-    prodcode: string;
-    prodname: string;
-    produnit: number;
-    produnitname: string;
-    taxes: TaxType[];
-    quantity: number;
-    price: number;
-    subtotal: number;
-    total: number;
+export type QuickActionType = {
+    key: string;
+    icon: any;
+    label: string;
+    path: string;
+    category: string;
+    state?: Record<string, unknown>;
+    access: number[];
+    actionKey?: string;
 };
 export type RecordType = {
     idrecord?: number;
@@ -1332,6 +1360,25 @@ export type ReportsSQLType = {
     filters: object;
     graphs: object;
 };
+export type ShortcutPrefType = {
+    key: string;
+    order: number;
+    isvisible: number;
+};
+export type SubMenuItemType = {
+    idmm2: number;
+    idmm_mm2: number;
+    name_mm2: string;
+    link_mm2: string;
+    order_mm2: number;
+    access_menu: number;
+    actions?: Record<string, {
+        label: string;
+        fields?: ActionFieldType[];
+    }>;
+    userActions?: Record<string, ActionUserValueType>;
+    status_mm2: number;
+};
 export type SupplierType = {
     idsupp: number;
     suppcode: string;
@@ -1362,24 +1409,6 @@ export type SupplierType = {
     supprecord: RecordType[];
     suppobs: string;
     suppstatus: number;
-};
-export type ActionFieldType = {
-    key: string;
-    type: "scope-select";
-};
-export type SubMenuItemType = {
-    idmm2: number;
-    idmm_mm2: number;
-    name_mm2: string;
-    link_mm2: string;
-    order_mm2: number;
-    access_menu: number;
-    actions?: Record<string, {
-        label: string;
-        fields?: ActionFieldType[];
-    }>;
-    userActions?: Record<string, ActionUserValueType>;
-    status_mm2: number;
 };
 export type SystemSettingsType = {
     sw_cfdi: boolean;
@@ -1451,6 +1480,12 @@ export type SystemSettingsType = {
     pdf_template_3_en: boolean;
     pdf_template_default: string;
     airecord_record: string;
+};
+export type TagType = {
+    idtag: number;
+    tagname: string;
+    tagcolor: string;
+    tagdoctype: string;
 };
 export type TaxType = {
     idtax: number;
@@ -1536,6 +1571,12 @@ export type UserType = {
     mailpass: string;
 };
 export type ViewType = typeof VIEW_TABLE | typeof VIEW_BOARD | typeof VIEW_GALLERY;
+export type WarehouseLocationType = {
+    idwhloc: number;
+    whlocidwh: number;
+    whlocname: string;
+    whloccolor: string;
+};
 export type WarehouseType = {
     idwh: number;
     whcode: string;
@@ -1551,21 +1592,10 @@ export type WarehouseType = {
     whstatus: string;
     whcolor: string;
 };
-export type WarehouseLocationType = {
-    idwhloc: number;
-    whlocidwh: number;
-    whlocname: string;
-    whloccolor: string;
-};
-export type WorkflowType = {
-    wfId: number;
-    wfName: string;
-    wfDescription?: string | null;
-    wfCreatedAt: string;
-    wfStatus: number;
-    wfStatusName: string;
-    wfNodes: WorkflowNodeType[];
-    nodeCount?: number;
+export type WidgetPrefType = {
+    key: string;
+    order: number;
+    isvisible: number;
 };
 export type WorkflowActionType = {
     wfActionId: number;
@@ -1575,17 +1605,6 @@ export type WorkflowActionType = {
     wfActionColor: string;
     wfActionCategory: string;
     wfActionParams: any;
-};
-export type WorkflowNodeType = {
-    wfNodeId: number;
-    wfId: number;
-    wfNodeKey: string | null;
-    wfNodeNameKey?: string;
-    wfNodeIconKey?: string;
-    wfActionId: number;
-    wfNodeParams: any;
-    wfNodeUiPosition: any;
-    wfEdges: WorkflowEdgeType[];
 };
 export type WorkflowEdgeType = {
     wfEdgeId: number;
@@ -1599,83 +1618,42 @@ export type WorkflowEdgeType = {
     wfEdgeSourceHandle?: string | null;
     wfEdgeTargetHandle?: string | null;
 };
-export type QuickActionType = {
-    key: string;
-    icon: any;
-    label: string;
-    path: string;
-    category: string;
-    state?: Record<string, unknown>;
-    access: number[];
-    actionKey?: string;
+export type WorkflowNodeType = {
+    wfNodeId: number;
+    wfId: number;
+    wfNodeKey: string | null;
+    wfNodeNameKey?: string;
+    wfNodeIconKey?: string;
+    wfActionId: number;
+    wfNodeParams: any;
+    wfNodeUiPosition: any;
+    wfEdges: WorkflowEdgeType[];
 };
-export type KpiItemType = {
-    icon: any;
-    label: string;
-    value: string;
-    trend: string;
-    trendUp: boolean;
-    color: string;
+export type WorkflowType = {
+    wfId: number;
+    wfName: string;
+    wfDescription?: string | null;
+    wfCreatedAt: string;
+    wfStatus: number;
+    wfStatusName: string;
+    wfNodes: WorkflowNodeType[];
+    nodeCount?: number;
 };
-export type DashboardWidgetType = {
-    i: string;
-    type: "welcome" | "quickActions" | "kpiGroup" | "report";
-    title: string;
-    x: number;
-    y: number;
-    w: number;
-    h: number;
-    visible: boolean;
-    reportId?: number;
-    moduleRoute?: string;
+export type WorkItemsClasifType = "project" | "sprint" | "task" | "ticket" | string;
+export type WorkItemsType = {
+    idwi: number;
+    wicode: string;
+    widocnumber: string;
+    witype: WorkItemsClasifType;
+    wititle: string;
+    parentTitle?: string;
+    parentType?: WorkItemsClasifType;
 };
-export type WidgetPrefType = {
-    key: string;
-    order: number;
-    isvisible: number;
-};
-export type ShortcutPrefType = {
-    key: string;
-    order: number;
-    isvisible: number;
-};
-export type BiblyHubType = {
-    idhub: number;
-    hubname: string;
-    hubdescription: string;
-    hubthumnail: string;
-    hubcontent: HubContentType[];
-    hubAccess: boolean;
-    hubprice: number;
-};
-export interface CommentType {
-    id: number;
-    user: string;
-    text: string;
-    date: string;
-    authorId: number;
-}
-export interface ProductItem {
-    productId: string | number;
-    name: string;
-    description?: string;
-    price: number;
-    quantity: number;
-    images?: string[];
-    metadata?: Record<string, any>;
-}
-export interface CheckoutMetadata {
-    userId?: string | number;
-    orderId?: string | number;
-    productIds?: string;
-    source?: string;
-    [key: string]: any;
-}
-export interface BiblyExamOptionType {
+export type BiblyExamOptionType = {
     text: string;
     correct: boolean;
-}
-export interface BiblyExamQuestionType {
+};
+export type BiblyExamQuestionType = {
     idexq: number;
     qrytitle: string;
     qrydescription: string;
@@ -1688,8 +1666,8 @@ export interface BiblyExamQuestionType {
     answers?: any;
     next?: number | null;
     createdat?: string;
-}
-export interface BiblyExamType {
+};
+export type BiblyExamType = {
     idex: number;
     name: string;
     description: string;
@@ -1700,82 +1678,83 @@ export interface BiblyExamType {
     createdat: string;
     userstartdate?: string | null;
     questions: BiblyExamQuestionType[];
-}
-export type ChartType = "bar" | "line" | "pie" | "area" | "composed";
-export type GroupByType = "day" | "week" | "month" | "year" | "column";
+};
+export type BiblyHubType = {
+    idhub: number;
+    hubname: string;
+    hubdescription: string;
+    hubthumnail: string;
+    hubcontent: HubContentType[];
+    hubAccess: boolean;
+    hubprice: number;
+};
+export type CheckoutMetadata = {
+    userId?: string | number;
+    orderId?: string | number;
+    productIds?: string;
+    source?: string;
+    [key: string]: any;
+};
+export type CommentType = {
+    id: number;
+    user: string;
+    text: string;
+    date: string;
+    authorId: number;
+};
+export type ProductItem = {
+    productId: string | number;
+    name: string;
+    description?: string;
+    price: number;
+    quantity: number;
+    images?: string[];
+    metadata?: Record<string, any>;
+};
 export type AggregationOperation = "sum" | "avg" | "count" | "min" | "max";
-export interface ChartAggregation {
-    column: string;
-    operation: AggregationOperation;
-    label: string;
-}
-export interface ChartDataConfig {
-    groupBy: GroupByType;
-    dateColumn?: string;
-    groupColumn?: string;
-    aggregations: ChartAggregation[];
-}
-export interface BarConfig {
+export type BarConfig = {
     dataKey: string;
     fill: string;
     name: string;
-}
-export interface LineConfig {
-    dataKey: string;
-    stroke: string;
-    name: string;
-}
-export interface ChartConfig {
+};
+export type ChartAggregation = {
+    column: string;
+    operation: AggregationOperation;
+    label: string;
+};
+export type ChartConfig = {
     xAxisKey: string;
     bars?: BarConfig[];
     lines?: LineConfig[];
+    radars?: RadarConfig[];
     dataKey?: string;
     nameKey?: string;
-}
-export interface ChartDefinition {
+};
+export type ChartDataConfig = {
+    groupBy: GroupByType;
+    dateColumn?: string;
+    groupColumn?: string;
+    pivotColumn?: string;
+    rowFilter?: RowFilter[];
+    aggregations: ChartAggregation[];
+};
+export type ChartDefinition = {
     id: string;
     type: ChartType;
     title: string;
     dataConfig: ChartDataConfig;
     chartConfig: ChartConfig;
-}
-export interface GraphsConfig {
-    enabled: boolean;
-    charts: ChartDefinition[];
-}
-export type FilterType = "date" | "select" | "text" | "number" | "select-api" | "searchable-select" | "multi-select" | "multi-select-api";
-export type FilterOperator = "=" | "!=" | ">" | ">=" | "<" | "<=" | "LIKE" | "IN" | "NOT IN";
-export interface FilterOption {
-    value: string | number;
-    label: string;
-}
-export interface FilterDefinition {
-    id: string;
-    label: string;
-    type: FilterType;
-    placeholder?: string;
-    defaultValue?: any;
-    required?: boolean;
-    cols?: number;
-    key?: string;
-    operator?: FilterOperator;
-    options?: FilterOption[];
-    apiEndpoint?: string;
-    apiValueKey?: string;
-    apiLabelKey?: string;
-    isRange?: boolean;
-    rangeStart?: string;
-    rangeEnd?: string;
-    isClearable?: boolean;
-    formatOptionLabel?: string;
-}
-export interface FiltersConfig {
-    enabled: boolean;
-    filters: FilterDefinition[];
-}
-export interface FilterValues {
-    [key: string]: any;
-}
+};
+export type ChartType = "bar" | "line" | "pie" | "area" | "composed";
+export type ChatMessageType = {
+    idchatme: number;
+    chatmeowner: boolean;
+    usernick?: string;
+    chatmemessagetype: string;
+    chatmebody: string;
+    chatmestatus: number;
+    chatmecreatedat: string;
+};
 export type ChatType = {
     idchat: number;
     chattype: "direct" | "group" | "channel" | "community_room";
@@ -1794,13 +1773,70 @@ export type ChatType = {
     }[];
     unread_count?: number;
 };
-export type ChatMessageType = {
-    idchatme: number;
-    chatmeowner: boolean;
-    usernick?: string;
-    chatmemessagetype: string;
-    chatmebody: string;
-    chatmestatus: number;
-    chatmecreatedat: string;
+export type FilterDefinition = {
+    id: string;
+    label: string;
+    type: FilterType;
+    placeholder?: string;
+    defaultValue?: any;
+    required?: boolean;
+    cols?: number;
+    key?: string;
+    operator?: FilterOperator;
+    options?: FilterOption[];
+    apiEndpoint?: string;
+    apiValueKey?: string;
+    apiLabelKey?: string;
+    isRange?: boolean;
+    rangeStart?: string;
+    rangeEnd?: string;
+    isClearable?: boolean;
+    formatOptionLabel?: string;
+};
+export type FilterOperator = "=" | "!=" | ">" | ">=" | "<" | "<=" | "LIKE" | "IN" | "NOT IN";
+export type FilterOption = {
+    value: string | number;
+    label: string;
+};
+export type FiltersConfig = {
+    enabled: boolean;
+    filters: FilterDefinition[];
+};
+export type FilterType = "date" | "select" | "text" | "number" | "select-api" | "searchable-select" | "multi-select" | "multi-select-api";
+export type FilterValues = {
+    [key: string]: any;
+};
+export type GraphsConfig = {
+    enabled: boolean;
+    kpis?: KPIConfig[];
+    charts: ChartDefinition[];
+};
+export type GroupByType = "day" | "week" | "month" | "year" | "column";
+export type KPIConfig = {
+    id: string;
+    label: string;
+    column: string;
+    operation: AggregationOperation;
+    format?: "number" | "currency" | "percentage" | "integer";
+    prefix?: string;
+    suffix?: string;
+    color?: string;
+    rowFilter?: RowFilter[];
+};
+export type LineConfig = {
+    dataKey: string;
+    stroke: string;
+    name: string;
+};
+export type RadarConfig = {
+    dataKey: string;
+    stroke: string;
+    fill: string;
+    name: string;
+};
+export type RowFilter = {
+    column: string;
+    op: "=" | "!=" | "in" | "not_in";
+    value: string | string[];
 };
 //# sourceMappingURL=types.d.ts.map
