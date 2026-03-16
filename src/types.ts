@@ -1715,6 +1715,24 @@ export type WorkflowEdgeType = {
   wfEdgeTargetHandle?: string | null;
 };
 
+export type WorkItemsType = {
+  idwi: number;
+  wicode: string;
+  widocnumber: string;
+  witype: WorkItemsClasifType;
+  wititle: string;
+
+  parentTitle?: string;
+  parentType?: WorkItemsClasifType;
+};
+
+export type WorkItemsClasifType =
+  | "project"
+  | "sprint"
+  | "task"
+  | "ticket"
+  | string;
+
 // QuickActionType y KpiItemType usan IconDefinition de FontAwesome.
 // Se tipan como `any` para evitar la dependencia en un paquete compartido con el backend.
 // En el frontend puedes hacer: import { QuickActionType } from "@apesdev/shared" y castear icon.
@@ -1855,10 +1873,18 @@ export interface ChartAggregation {
   label: string;
 }
 
+export interface RowFilter {
+  column: string;
+  op: "=" | "!=" | "in" | "not_in";
+  value: string | string[];
+}
+
 export interface ChartDataConfig {
   groupBy: GroupByType;
   dateColumn?: string;
   groupColumn?: string;
+  pivotColumn?: string;
+  rowFilter?: RowFilter[];
   aggregations: ChartAggregation[];
 }
 
@@ -1874,10 +1900,18 @@ export interface LineConfig {
   name: string;
 }
 
+export interface RadarConfig {
+  dataKey: string;
+  stroke: string;
+  fill: string;
+  name: string;
+}
+
 export interface ChartConfig {
   xAxisKey: string;
   bars?: BarConfig[];
   lines?: LineConfig[];
+  radars?: RadarConfig[];
   dataKey?: string;
   nameKey?: string;
 }
@@ -1892,7 +1926,20 @@ export interface ChartDefinition {
 
 export interface GraphsConfig {
   enabled: boolean;
+  kpis?: KPIConfig[];
   charts: ChartDefinition[];
+}
+
+export interface KPIConfig {
+  id: string;
+  label: string;
+  column: string;
+  operation: AggregationOperation;
+  format?: "number" | "currency" | "percentage" | "integer";
+  prefix?: string;
+  suffix?: string;
+  color?: string;
+  rowFilter?: RowFilter[];
 }
 
 export type FilterType =
