@@ -2049,4 +2049,13 @@ export type BootstrapColorsType =
   | "danger"
   | "warning"
   | "info"
-  | "dark";
+  | "dark"
+  | "default"
+  | "light"
+  | "outline-primary"
+  | "outline-success"
+  | "outline-danger"
+  | "outline-warning"
+  | "outline-info"
+  | "outline-light"
+  | "outline-dark";
