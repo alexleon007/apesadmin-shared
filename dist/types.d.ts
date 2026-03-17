@@ -1419,10 +1419,12 @@ export type SystemSettingsType = {
     pos_warehouse_mode: string;
     pos_pricelist_mode: string;
     pos_blind_cash_count: boolean;
+    pos_self_billing: boolean;
     project_property_managment: boolean;
     inventory_addition_on_po: boolean;
     f_order_field_value_date1: string;
     f_order_field_show_date1: boolean;
+    f_order_field_value_datetype1: string;
     f_order_field_value_date2: string;
     f_order_field_show_date2: boolean;
     f_order_field_value_payform: string;
@@ -1639,13 +1641,34 @@ export type WorkflowType = {
     wfNodes: WorkflowNodeType[];
     nodeCount?: number;
 };
-export type WorkItemsClasifType = "project" | "sprint" | "task" | "ticket" | string;
+export type WorkItemsClasifType = "project" | "sprint" | "task" | "ticket" | "block" | string;
+export type WorkItemMemberType = {
+    iduser: number;
+    name: string;
+    profileimage?: string;
+    role: "owner" | "collaborator" | "watcher";
+};
 export type WorkItemsType = {
     idwi: number;
-    wicode: string;
-    widocnumber: string;
     witype: WorkItemsClasifType;
     wititle: string;
+    widescription?: string;
+    wicode?: string;
+    widocnumber?: string;
+    wiidwidad?: number | null;
+    wipriority?: number;
+    wistatus?: number;
+    wistatusname?: string;
+    wiprogress?: number;
+    widuedate?: string;
+    wistartdate?: string;
+    wienddate?: string;
+    wiidproject?: number | null;
+    wiidcmp?: number | null;
+    wiblocktype?: string;
+    wimembers?: WorkItemMemberType[];
+    wiloggedseconds?: number;
+    wirunningat?: string | null;
     parentTitle?: string;
     parentType?: WorkItemsClasifType;
 };
@@ -1745,7 +1768,7 @@ export type ChartDefinition = {
     dataConfig: ChartDataConfig;
     chartConfig: ChartConfig;
 };
-export type ChartType = "bar" | "line" | "pie" | "area" | "composed";
+export type ChartType = "bar" | "line" | "pie" | "area" | "composed" | "radar";
 export type ChatMessageType = {
     idchatme: number;
     chatmeowner: boolean;
@@ -1770,8 +1793,9 @@ export type ChatType = {
         nickname: string;
         role: string;
         profileimage?: string;
+        unread?: number;
     }[];
-    unread_count?: number;
+    unread?: number;
 };
 export type FilterDefinition = {
     id: string;
@@ -1839,4 +1863,5 @@ export type RowFilter = {
     op: "=" | "!=" | "in" | "not_in";
     value: string | string[];
 };
+export type BootstrapColorsType = "primary" | "success" | "danger" | "warning" | "info" | "dark" | "secondary" | "default" | "light" | "link" | "outline-primary" | "outline-success" | "outline-danger" | "outline-warning" | "outline-info" | "outline-light" | "outline-dark" | "outline-secondary" | "record";
 //# sourceMappingURL=types.d.ts.map
