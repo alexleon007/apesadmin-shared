@@ -650,9 +650,9 @@ export type ExternalUrlsType = {
   url: string;
   createdat: string;
   finalmessage: string;
-  company: string;
+  company: number;
   role: string;
-  showcalendar: number;
+  showcalendar: boolean;
 };
 
 export type FamiliesType = {
