@@ -1521,6 +1521,7 @@ export type SystemSettingsType = {
   pos_warehouse_mode: string;
   pos_pricelist_mode: string;
   pos_blind_cash_count: boolean;
+  pos_self_billing: boolean;
   project_property_managment: boolean;
   inventory_addition_on_po: boolean;
   f_order_field_value_date1: string;
