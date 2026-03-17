@@ -582,7 +582,7 @@ export type ExternalUrlsType = {
     finalmessage: string;
     company: number;
     role: string;
-    showcalendar: number;
+    showcalendar: boolean;
 };
 export type FamiliesType = {
     idfam: number;
