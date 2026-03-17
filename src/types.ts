@@ -1918,7 +1918,7 @@ export type ChartDefinition = {
   chartConfig: ChartConfig;
 };
 
-export type ChartType = "bar" | "line" | "pie" | "area" | "composed";
+export type ChartType = "bar" | "line" | "pie" | "area" | "composed" | "radar";
 
 export type ChatMessageType = {
   idchatme: number;
@@ -2059,10 +2059,13 @@ export type BootstrapColorsType =
   | "secondary"
   | "default"
   | "light"
+  | "link"
   | "outline-primary"
   | "outline-success"
   | "outline-danger"
   | "outline-warning"
   | "outline-info"
   | "outline-light"
-  | "outline-dark";
+  | "outline-dark"
+  | "outline-secondary"
+  | "record";
