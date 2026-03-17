@@ -335,6 +335,7 @@ export declare const languages: {
         installTitle: string;
         installing: string;
         inventory: string;
+        inventoriable: string;
         invoice: string;
         invoiceLegend: string;
         invoices: string;
@@ -1214,6 +1215,7 @@ export declare const languages: {
         installTitle: string;
         installing: string;
         inventory: string;
+        inventoriable: string;
         invoice: string;
         invoiceLegend: string;
         invoices: string;
@@ -2092,6 +2094,7 @@ export declare const languages: {
         installTitle: string;
         installing: string;
         inventory: string;
+        inventoriable: string;
         invoice: string;
         invoiceLegend: string;
         invoices: string;
