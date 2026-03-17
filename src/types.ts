@@ -1525,6 +1525,7 @@ export type SystemSettingsType = {
   inventory_addition_on_po: boolean;
   f_order_field_value_date1: string;
   f_order_field_show_date1: boolean;
+  f_order_field_value_datetype1: string;
   f_order_field_value_date2: string;
   f_order_field_show_date2: boolean;
   f_order_field_value_payform: string;
