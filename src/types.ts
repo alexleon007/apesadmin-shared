@@ -1768,7 +1768,6 @@ export type WorkItemsClasifType =
 
 export type WorkItemMemberType = {
   iduser: number;
-  username: string;
   name: string;
   profileimage?: string;
   role: "owner" | "collaborator" | "watcher";
@@ -1784,13 +1783,17 @@ export type WorkItemsType = {
   wiidwidad?: number | null;
   wipriority?: number;
   wistatus?: number;
+  wistatusname?: string;
   wiprogress?: number;
   widuedate?: string;
   wistartdate?: string;
+  wienddate?: string;
   wiidproject?: number | null;
   wiidcmp?: number | null;
   wiblocktype?: string;
   wimembers?: WorkItemMemberType[];
+  wiloggedseconds?: number;
+  wirunningat?: string | null;
   parentTitle?: string;
   parentType?: WorkItemsClasifType;
 };
@@ -1940,8 +1943,9 @@ export type ChatType = {
     nickname: string;
     role: string;
     profileimage?: string;
+    unread?: number;
   }[];
-  unread_count?: number;
+  unread?: number;
 };
 
 export type FilterDefinition = {
