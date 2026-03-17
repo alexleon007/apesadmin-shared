@@ -2054,6 +2054,7 @@ export type BootstrapColorsType =
   | "warning"
   | "info"
   | "dark"
+  | "secondary"
   | "default"
   | "light"
   | "outline-primary"
