@@ -678,6 +678,7 @@ export declare const languages: {
         shortName: string;
         show: string;
         showAnalytics: string;
+        showCalendar: string;
         singlePurchase: string;
         spent: string;
         start: string;
@@ -1558,6 +1559,7 @@ export declare const languages: {
         shortName: string;
         show: string;
         showAnalytics: string;
+        showCalendar: string;
         singlePurchase: string;
         spent: string;
         start: string;
@@ -2437,6 +2439,7 @@ export declare const languages: {
         shortName: string;
         show: string;
         showAnalytics: string;
+        showCalendar: string;
         singlePurchase: string;
         spent: string;
         start: string;
