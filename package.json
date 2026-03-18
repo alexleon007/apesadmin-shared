@@ -10,7 +10,11 @@
       "require": "./dist/index.js",
       "types": "./dist/index.d.ts"
     },
-    "./languages/*": "./src/languages/*"
+    "./languages": {
+      "import": "./dist/languages/index.js",
+      "require": "./dist/languages/index.js",
+      "types": "./dist/languages/index.d.ts"
+    }
   },
   "scripts": {
     "build": "tsc",
