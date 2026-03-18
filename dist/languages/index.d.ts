@@ -390,6 +390,7 @@ export declare const languages: {
         modalUploadTitle: string;
         model: string;
         modifyPlan: string;
+        module: string;
         moduleManagement: string;
         month: string;
         movements: string;
@@ -1271,6 +1272,7 @@ export declare const languages: {
         modalUploadTitle: string;
         model: string;
         modifyPlan: string;
+        module: string;
         moduleManagement: string;
         month: string;
         movements: string;
@@ -2151,6 +2153,7 @@ export declare const languages: {
         modalUploadTitle: string;
         model: string;
         modifyPlan: string;
+        module: string;
         moduleManagement: string;
         month: string;
         months: string;
