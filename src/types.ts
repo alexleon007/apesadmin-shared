@@ -2050,6 +2050,23 @@ export type RowFilter = {
   value: string | string[];
 };
 
+export type LogType = {
+  idlog: number;
+  logiduser: number;
+  logdoctype: string;
+  logiddoc: number;
+  logeventname: string;
+  logstatusprev: number;
+  logstatusnext: number;
+  logcomments: string | null;
+  logcreatedat: string;
+};
+
+export type LogUserType = {
+  name: string;
+  profileimage?: string;
+};
+
 // ─────────────────────────────────────────────────────────────────────────────
 // OTHERS
 // ─────────────────────────────────────────────────────────────────────────────

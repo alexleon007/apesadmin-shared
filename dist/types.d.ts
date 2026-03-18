@@ -1868,5 +1868,20 @@ export type RowFilter = {
     op: "=" | "!=" | "in" | "not_in";
     value: string | string[];
 };
+export type LogType = {
+    idlog: number;
+    logiduser: number;
+    logdoctype: string;
+    logiddoc: number;
+    logeventname: string;
+    logstatusprev: number;
+    logstatusnext: number;
+    logcomments: string | null;
+    logcreatedat: string;
+};
+export type LogUserType = {
+    name: string;
+    profileimage?: string;
+};
 export type BootstrapColorsType = "primary" | "success" | "danger" | "warning" | "info" | "dark" | "secondary" | "default" | "light" | "link" | "outline-primary" | "outline-success" | "outline-danger" | "outline-warning" | "outline-info" | "outline-light" | "outline-dark" | "outline-secondary" | "record";
 //# sourceMappingURL=types.d.ts.map
