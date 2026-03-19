@@ -1798,6 +1798,7 @@ export type WorkItemsType = {
   wiblocktype?: string;
   wiclas?: string;
   wisubclas?: string;
+  wimodule?: string;
   wimembers?: WorkItemMemberType[];
   wiloggedseconds?: number;
   wirunningat?: string | null;
