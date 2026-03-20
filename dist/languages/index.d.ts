@@ -830,6 +830,7 @@ export declare const languages: {
         unsavedChanges: string;
         unsupportedChartType: string;
         update: string;
+        updateAndExit: string;
         updateTicket: string;
         uploadButton: string;
         uploadContent: string;
@@ -1778,6 +1779,7 @@ export declare const languages: {
         unsavedChanges: string;
         unsupportedChartType: string;
         update: string;
+        updateAndExit: string;
         updateTicket: string;
         uploadButton: string;
         uploadContent: string;
@@ -2726,6 +2728,7 @@ export declare const languages: {
         unsavedChanges: string;
         unsupportedChartType: string;
         update: string;
+        updateAndExit: string;
         updateTicket: string;
         uploadButton: string;
         uploadContent: string;
