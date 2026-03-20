@@ -1673,6 +1673,7 @@ export type WorkItemsType = {
     wisubclas?: string;
     wimodule?: string;
     wimembers?: WorkItemMemberType[];
+    wiimages?: string[];
     wiloggedseconds?: number;
     wirunningat?: string | null;
     parentTitle?: string;
