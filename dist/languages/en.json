@@ -282,6 +282,7 @@
     "excelColumnF": "Column F: Status",
     "excelColumnG": "Column G: Zone",
     "excelColumnH": "Column H: Class",
+    "excelColumnI": "Column I: Type (Customer or Prospect)",
     "excelColumnsExtra": "Additional columns...",
     "excelFormatInstructions": "Required Excel file format:",
     "exchangeRate": "Exchange Rate",

@@ -282,6 +282,7 @@
     "excelColumnF": "欄 F：狀態",
     "excelColumnG": "欄 G：區域",
     "excelColumnH": "欄 H：類別",
+    "excelColumnI": "欄 I：類型（客戶或潛在客戶）",
     "excelColumnsExtra": "其他欄...",
     "excelFormatInstructions": "所需的 Excel 檔案格式：",
     "exchangeRate": "匯率",

@@ -282,6 +282,7 @@
   "excelColumnF": "Columna F: Estatus",
   "excelColumnG": "Columna G: Zona",
   "excelColumnH": "Columna H: Clase",
+  "excelColumnI": "Columna I: Tipo (Cliente o Prospecto)",
   "excelColumnsExtra": "Columnas adicionales...",
   "excelFormatInstructions": "Formato requerido del archivo Excel:",
   "exchangeRate": "T.C.",
