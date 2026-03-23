@@ -290,6 +290,9 @@ export declare const languages: {
         excelColumnJ: string;
         excelColumnK: string;
         excelColumnL: string;
+        excelColumnM: string;
+        excelColumnN: string;
+        excelColumnO: string;
         excelColumnsExtra: string;
         excelFormatInstructions: string;
         exchangeRate: string;
@@ -1243,6 +1246,9 @@ export declare const languages: {
         excelColumnJ: string;
         excelColumnK: string;
         excelColumnL: string;
+        excelColumnM: string;
+        excelColumnN: string;
+        excelColumnO: string;
         excelColumnsExtra: string;
         excelFormatInstructions: string;
         exchangeRate: string;
@@ -2196,6 +2202,9 @@ export declare const languages: {
         excelColumnJ: string;
         excelColumnK: string;
         excelColumnL: string;
+        excelColumnM: string;
+        excelColumnN: string;
+        excelColumnO: string;
         excelColumnsExtra: string;
         excelFormatInstructions: string;
         exchangeRate: string;
