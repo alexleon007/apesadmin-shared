@@ -1054,6 +1054,7 @@ export type PartyLogType = {
 
 export type PartyType = {
   idparty: number;
+  uuidparty: string;
   partycode: string;
   partyname: string;
   partytruename: string;
