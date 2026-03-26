@@ -92,4 +92,5 @@ export declare const CFDI_USES: {
     code: string;
     name: string;
 }[];
+export declare const GRID_SIZE = 10;
 //# sourceMappingURL=consts.d.ts.map

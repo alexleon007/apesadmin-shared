@@ -1054,6 +1054,7 @@ export type PartyLogType = {
 
 export type PartyType = {
   idparty: number;
+  uuidparty: string;
   partycode: string;
   partyname: string;
   partytruename: string;
@@ -2094,3 +2095,217 @@ export type BootstrapColorsType =
   | "outline-dark"
   | "outline-secondary"
   | "record";
+
+export type PDFTemplateType = {
+  idtemplate: number;
+  name: string;
+  version: string;
+  definition: any;
+  createdat: string;
+};
+
+export type PageSizeType =
+  | "A3"
+  | "A4"
+  | "A5"
+  | "LETTER"
+  | "LEGAL"
+  | [number, number];
+
+export type PageLayoutType = "portrait" | "landscape";
+
+export type DocumentMetaType = {
+  name: string;
+  version: string;
+  page: {
+    size: PageSizeType;
+    layout?: PageLayoutType;
+    margin?:
+      | number
+      | { top: number; right: number; bottom: number; left: number };
+  };
+};
+
+export type ElementTypeType =
+  | "image"
+  | "text"
+  | "line"
+  | "circle"
+  | "group"
+  | "table";
+
+export type BaseElementType = {
+  type: ElementTypeType;
+  x?: number;
+  y?: number;
+  visibleIf?: string;
+};
+
+export type TextStyleType = {
+  fontFamily?: string;
+  fontSize?: number;
+  color?: string;
+};
+
+export type ImageElementType = BaseElementType & {
+  type: "image";
+  src: string;
+  width?: number;
+  height?: number;
+  fit?: "contain" | "cover" | "scale-down";
+};
+
+export type TextElementType = BaseElementType &
+  TextStyleType & {
+    type: "text";
+    text: string;
+    width?: number;
+    align?: "left" | "center" | "right" | "justify";
+    lineBreak?: boolean;
+  };
+
+export type LineElementType = BaseElementType & {
+  type: "line";
+  x1: number;
+  y1: number;
+  x2: number;
+  y2: number;
+  lineWidth?: number;
+  lineColor?: string;
+};
+
+export type CircleElementType = BaseElementType & {
+  type: "circle";
+  radius: number;
+  fillColor?: string;
+  strokeColor?: string;
+  lineWidth?: number;
+};
+
+export type TableElementType = BaseElementType &
+  TextStyleType & {
+    type: "table";
+    width?: number;
+    data: string; // dot-notation path into data object, e.g. "order.items"
+    paginate?: boolean;
+    repeatHeader?: boolean;
+    columns: TableColumnType[];
+  };
+
+export type GroupElementType = BaseElementType & {
+  type: "group";
+  elements: DocumentElementType[];
+};
+
+export type DocumentElementType =
+  | ImageElementType
+  | TextElementType
+  | LineElementType
+  | CircleElementType
+  | GroupElementType
+  | TableElementType;
+
+export type PDFTemplateDefType = {
+  meta: DocumentMetaType;
+  defaults?: DocumentDefaultsType;
+  elements: DocumentElementType[];
+};
+
+export type DocumentDefaultsType = {
+  fontFamily?: string;
+  fontSize?: number;
+  fontStyle?: "normal" | "bold" | "italic" | "bold-italic";
+  color?: string;
+  lineWidth?: number;
+  lineColor?: string;
+};
+
+export type TableColumnType = {
+  key: string;
+  title: string;
+  width?: number;
+  align?: "left" | "center" | "right";
+  format?: "number" | "currency" | "date" | string;
+};
+
+type Base = { _id: string; visibleIf?: string };
+
+export type EditorTextType = Base & {
+  type: "text";
+  x?: number;
+  y?: number;
+  text: string;
+  fontFamily?: string;
+  fontSize?: number;
+  color?: string;
+  align?: "left" | "center" | "right" | "justify";
+  width?: number;
+  lineBreak?: boolean;
+};
+
+export type EditorImageType = Base & {
+  type: "image";
+  x?: number;
+  y?: number;
+  src: string;
+  width?: number;
+  height?: number;
+  fit?: "contain" | "cover" | "scale-down";
+};
+
+export type EditorLineType = Base & {
+  type: "line";
+  x1: number;
+  y1: number;
+  x2: number;
+  y2: number;
+  lineWidth?: number;
+  lineColor?: string;
+};
+
+export type EditorCircleType = Base & {
+  type: "circle";
+  x?: number;
+  y?: number;
+  radius: number;
+  fillColor?: string;
+  strokeColor?: string;
+  lineWidth?: number;
+};
+
+export type EditorTableType = Base & {
+  type: "table";
+  x?: number;
+  y?: number;
+  data: string;
+  columns: TableColumnType[];
+  width?: number;
+  paginate?: boolean;
+  repeatHeader?: boolean;
+};
+
+export type EditorElementType =
+  | EditorTextType
+  | EditorImageType
+  | EditorLineType
+  | EditorCircleType
+  | EditorTableType;
+
+export type BuilderStateType = {
+  elements: EditorElementType[];
+  selectedId: string | null;
+  defaults: DocumentDefaultsType;
+};
+
+export type ActionType =
+  | { type: "ADD"; element: EditorElementType }
+  | { type: "MOVE"; id: string; x: number; y: number }
+  | { type: "UPDATE"; id: string; patch: Partial<EditorElementType> }
+  | { type: "DELETE"; id: string }
+  | { type: "SELECT"; id: string | null }
+  | { type: "SET_DEFAULTS"; patch: Partial<DocumentDefaultsType> }
+  | {
+      type: "RESET";
+      elements: EditorElementType[];
+      defaults: DocumentDefaultsType;
+    };
