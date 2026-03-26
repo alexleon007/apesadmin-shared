@@ -1903,14 +1903,6 @@ export type DocumentMetaType = {
         };
     };
 };
-export type DocumentDefaultsType = {
-    fontFamily?: string;
-    fontSize?: number;
-    fontStyle?: "normal" | "bold" | "italic" | "bold-italic" | (string & {});
-    color?: string;
-    lineWidth?: number;
-    lineColor?: string;
-};
 export type ElementTypeType = "image" | "text" | "line" | "circle" | "group" | "table";
 export type BaseElementType = {
     type: ElementTypeType;
@@ -1952,13 +1944,6 @@ export type CircleElementType = BaseElementType & {
     strokeColor?: string;
     lineWidth?: number;
 };
-export type TableColumnType = {
-    key: string;
-    title: string;
-    width?: number;
-    align?: "left" | "center" | "right";
-    format?: "number" | "currency" | "date" | (string & {});
-};
 export type TableElementType = BaseElementType & TextStyleType & {
     type: "table";
     width?: number;
@@ -1977,4 +1962,73 @@ export type PDFTemplateDefType = {
     defaults?: DocumentDefaultsType;
     elements: DocumentElementType[];
 };
+export type DocumentDefaultsType = {
+    fontFamily?: string;
+    fontSize?: number;
+    fontStyle?: "normal" | "bold" | "italic" | "bold-italic";
+    color?: string;
+    lineWidth?: number;
+    lineColor?: string;
+};
+export type TableColumnType = {
+    key: string;
+    title: string;
+    width?: number;
+    align?: "left" | "center" | "right";
+    format?: "number" | "currency" | "date" | string;
+};
+type Base = {
+    _id: string;
+    visibleIf?: string;
+};
+export type EditorTextType = Base & {
+    type: "text";
+    x?: number;
+    y?: number;
+    text: string;
+    fontFamily?: string;
+    fontSize?: number;
+    color?: string;
+    align?: "left" | "center" | "right" | "justify";
+    width?: number;
+};
+export type EditorImageType = Base & {
+    type: "image";
+    x?: number;
+    y?: number;
+    src: string;
+    width?: number;
+    height?: number;
+    fit?: "contain" | "cover" | "scale-down";
+};
+export type EditorLineType = Base & {
+    type: "line";
+    x1: number;
+    y1: number;
+    x2: number;
+    y2: number;
+    lineWidth?: number;
+    lineColor?: string;
+};
+export type EditorCircleType = Base & {
+    type: "circle";
+    x?: number;
+    y?: number;
+    radius: number;
+    fillColor?: string;
+    strokeColor?: string;
+    lineWidth?: number;
+};
+export type EditorTableType = Base & {
+    type: "table";
+    x?: number;
+    y?: number;
+    data: string;
+    columns: TableColumnType[];
+    width?: number;
+    paginate?: boolean;
+    repeatHeader?: boolean;
+};
+export type EditorElement = EditorTextType | EditorImageType | EditorLineType | EditorCircleType | EditorTableType;
+export {};
 //# sourceMappingURL=types.d.ts.map
