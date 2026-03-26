@@ -2095,6 +2095,14 @@ export type BootstrapColorsType =
   | "outline-secondary"
   | "record";
 
+export type PDFTemplateType = {
+  idtemplate: number;
+  name: string;
+  version: string;
+  definition: any;
+  createdat: string;
+};
+
 export type PageSizeType =
   | "A3"
   | "A4"

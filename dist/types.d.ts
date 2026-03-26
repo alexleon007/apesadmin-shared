@@ -1887,6 +1887,13 @@ export type LogUserType = {
     profileimage?: string;
 };
 export type BootstrapColorsType = "primary" | "success" | "danger" | "warning" | "info" | "dark" | "secondary" | "default" | "light" | "link" | "outline-primary" | "outline-success" | "outline-danger" | "outline-warning" | "outline-info" | "outline-light" | "outline-dark" | "outline-secondary" | "record";
+export type PDFTemplateType = {
+    idtemplate: number;
+    name: string;
+    version: string;
+    definition: any;
+    createdat: string;
+};
 export type PageSizeType = "A3" | "A4" | "A5" | "LETTER" | "LEGAL" | [number, number];
 export type PageLayoutType = "portrait" | "landscape";
 export type DocumentMetaType = {
