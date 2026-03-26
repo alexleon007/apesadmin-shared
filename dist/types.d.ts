@@ -1764,6 +1764,7 @@ export type ChartDataConfig = {
     groupBy: GroupByType;
     dateColumn?: string;
     groupColumn?: string;
+    groupColumns?: string[];
     pivotColumn?: string;
     rowFilter?: RowFilter[];
     aggregations: ChartAggregation[];
