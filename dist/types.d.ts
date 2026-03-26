@@ -2030,5 +2030,36 @@ export type EditorTableType = Base & {
     repeatHeader?: boolean;
 };
 export type EditorElementType = EditorTextType | EditorImageType | EditorLineType | EditorCircleType | EditorTableType;
+export type BuilderStateType = {
+    elements: EditorElementType[];
+    selectedId: string | null;
+    defaults: DocumentDefaultsType;
+};
+export type ActionType = {
+    type: "ADD";
+    element: EditorElementType;
+} | {
+    type: "MOVE";
+    id: string;
+    x: number;
+    y: number;
+} | {
+    type: "UPDATE";
+    id: string;
+    patch: Partial<EditorElementType>;
+} | {
+    type: "DELETE";
+    id: string;
+} | {
+    type: "SELECT";
+    id: string | null;
+} | {
+    type: "SET_DEFAULTS";
+    patch: Partial<DocumentDefaultsType>;
+} | {
+    type: "RESET";
+    elements: EditorElementType[];
+    defaults: DocumentDefaultsType;
+};
 export {};
 //# sourceMappingURL=types.d.ts.map
