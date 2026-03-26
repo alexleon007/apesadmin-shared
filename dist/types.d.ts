@@ -1934,6 +1934,7 @@ export type TextElementType = BaseElementType & TextStyleType & {
     text: string;
     width?: number;
     align?: "left" | "center" | "right" | "justify";
+    lineBreak?: boolean;
 };
 export type LineElementType = BaseElementType & {
     type: "line";
@@ -1998,6 +1999,7 @@ export type EditorTextType = Base & {
     color?: string;
     align?: "left" | "center" | "right" | "justify";
     width?: number;
+    lineBreak?: boolean;
 };
 export type EditorImageType = Base & {
     type: "image";

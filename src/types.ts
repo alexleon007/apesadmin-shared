@@ -2160,6 +2160,7 @@ export type TextElementType = BaseElementType &
     text: string;
     width?: number;
     align?: "left" | "center" | "right" | "justify";
+    lineBreak?: boolean;
   };
 
 export type LineElementType = BaseElementType & {
@@ -2238,6 +2239,7 @@ export type EditorTextType = Base & {
   color?: string;
   align?: "left" | "center" | "right" | "justify";
   width?: number;
+  lineBreak?: boolean;
 };
 
 export type EditorImageType = Base & {
