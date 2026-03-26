@@ -2029,6 +2029,6 @@ export type EditorTableType = Base & {
     paginate?: boolean;
     repeatHeader?: boolean;
 };
-export type EditorElement = EditorTextType | EditorImageType | EditorLineType | EditorCircleType | EditorTableType;
+export type EditorElementType = EditorTextType | EditorImageType | EditorLineType | EditorCircleType | EditorTableType;
 export {};
 //# sourceMappingURL=types.d.ts.map

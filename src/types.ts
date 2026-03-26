@@ -2273,7 +2273,7 @@ export type EditorTableType = Base & {
   repeatHeader?: boolean;
 };
 
-export type EditorElement =
+export type EditorElementType =
   | EditorTextType
   | EditorImageType
   | EditorLineType
