@@ -214,4 +214,5 @@ export const CFDI_USES = [
     { code: "D10", name: "Pagos por servicios educativos (colegiaturas)" },
     { code: "S01", name: "Sin efectos fiscales" },
 ];
+export const GRID_SIZE = 10;
 //# sourceMappingURL=consts.js.map
