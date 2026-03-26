@@ -1887,4 +1887,94 @@ export type LogUserType = {
     profileimage?: string;
 };
 export type BootstrapColorsType = "primary" | "success" | "danger" | "warning" | "info" | "dark" | "secondary" | "default" | "light" | "link" | "outline-primary" | "outline-success" | "outline-danger" | "outline-warning" | "outline-info" | "outline-light" | "outline-dark" | "outline-secondary" | "record";
+export type PageSizeType = "A3" | "A4" | "A5" | "LETTER" | "LEGAL" | [number, number];
+export type PageLayoutType = "portrait" | "landscape";
+export type DocumentMetaType = {
+    name: string;
+    version: string;
+    page: {
+        size: PageSizeType;
+        layout?: PageLayoutType;
+        margin?: number | {
+            top: number;
+            right: number;
+            bottom: number;
+            left: number;
+        };
+    };
+};
+export type DocumentDefaultsType = {
+    fontFamily?: string;
+    fontSize?: number;
+    fontStyle?: "normal" | "bold" | "italic" | "bold-italic" | (string & {});
+    color?: string;
+    lineWidth?: number;
+    lineColor?: string;
+};
+export type ElementTypeType = "image" | "text" | "line" | "circle" | "group" | "table";
+export type BaseElementType = {
+    type: ElementTypeType;
+    x?: number;
+    y?: number;
+    visibleIf?: string;
+};
+export type TextStyleType = {
+    fontFamily?: string;
+    fontSize?: number;
+    color?: string;
+};
+export type ImageElementType = BaseElementType & {
+    type: "image";
+    src: string;
+    width?: number;
+    height?: number;
+    fit?: "contain" | "cover" | "scale-down";
+};
+export type TextElementType = BaseElementType & TextStyleType & {
+    type: "text";
+    text: string;
+    width?: number;
+    align?: "left" | "center" | "right" | "justify";
+};
+export type LineElementType = BaseElementType & {
+    type: "line";
+    x1: number;
+    y1: number;
+    x2: number;
+    y2: number;
+    lineWidth?: number;
+    lineColor?: string;
+};
+export type CircleElementType = BaseElementType & {
+    type: "circle";
+    radius: number;
+    fillColor?: string;
+    strokeColor?: string;
+    lineWidth?: number;
+};
+export type TableColumnType = {
+    key: string;
+    title: string;
+    width?: number;
+    align?: "left" | "center" | "right";
+    format?: "number" | "currency" | "date" | (string & {});
+};
+export type TableElementType = BaseElementType & TextStyleType & {
+    type: "table";
+    width?: number;
+    data: string;
+    paginate?: boolean;
+    repeatHeader?: boolean;
+    columns: TableColumnType[];
+};
+export type GroupElementType = BaseElementType & {
+    type: "group";
+    elements: DocumentElementType[];
+};
+export type DocumentElementType = ImageElementType | TextElementType | LineElementType | CircleElementType | GroupElementType | TableElementType;
+export type PDFTemplateDefType = {
+    meta: DocumentMetaType;
+    defaults?: DocumentDefaultsType;
+    elements: DocumentElementType[];
+};
 //# sourceMappingURL=types.d.ts.map
