@@ -407,6 +407,7 @@ export declare const languages: {
         lastContactDate: string;
         lastPurchaseDate: string;
         later: string;
+        lead: string;
         leConceptFields: string;
         legend: string;
         libraries: string;
@@ -1383,6 +1384,7 @@ export declare const languages: {
         lastContactDate: string;
         lastPurchaseDate: string;
         later: string;
+        lead: string;
         leConceptFields: string;
         legend: string;
         libraries: string;
@@ -2359,6 +2361,7 @@ export declare const languages: {
         lastContactDate: string;
         lastPurchaseDate: string;
         later: string;
+        lead: string;
         leConceptFields: string;
         legend: string;
         libraries: string;
