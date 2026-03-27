@@ -489,6 +489,7 @@ export declare const languages: {
         newTheme: string;
         newUser: string;
         next: string;
+        nextFollowup: string;
         no: string;
         noActiveProcesses: string;
         noAssignedQuestionnaires: string;
@@ -1464,6 +1465,7 @@ export declare const languages: {
         newTheme: string;
         newUser: string;
         next: string;
+        nextFollowup: string;
         no: string;
         noActiveProcesses: string;
         noAssignedQuestionnaires: string;
@@ -2439,6 +2441,7 @@ export declare const languages: {
         newTheme: string;
         newUser: string;
         next: string;
+        nextFollowup: string;
         no: string;
         noActiveProcesses: string;
         noAssignedQuestionnaires: string;
