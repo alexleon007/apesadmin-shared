@@ -25,6 +25,7 @@ export declare const languages: {
         advanced: string;
         agenda: string;
         agent: string;
+        agentDateAsign: string;
         ai: string;
         aiConfiguration: string;
         aiRecording: string;
@@ -1002,6 +1003,7 @@ export declare const languages: {
         advanced: string;
         agenda: string;
         agent: string;
+        agentDateAsign: string;
         ai: string;
         aiConfiguration: string;
         aiRecording: string;
@@ -1979,6 +1981,7 @@ export declare const languages: {
         advanced: string;
         agenda: string;
         agent: string;
+        agentDateAsign: string;
         ai: string;
         aiConfiguration: string;
         aiRecording: string;
