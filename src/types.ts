@@ -1917,6 +1917,8 @@ export type ChartDataConfig = {
   pivotColumn?: string;
   rowFilter?: RowFilter[];
   aggregations: ChartAggregation[];
+  sortBy?: { key: string; dir: "asc" | "desc" };
+  limit?: number;
 };
 
 export type ChartDefinition = {
