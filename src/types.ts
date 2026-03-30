@@ -2134,13 +2134,15 @@ export type ElementTypeType =
   | "line"
   | "circle"
   | "group"
-  | "table";
+  | "table"
+  | "pagenum";
 
 export type BaseElementType = {
   type: ElementTypeType;
   x?: number;
   y?: number;
   visibleIf?: string;
+  showOn?: "all" | "first" | "last";
 };
 
 export type TextStyleType = {
@@ -2191,7 +2193,16 @@ export type TableElementType = BaseElementType &
     data: string; // dot-notation path into data object, e.g. "order.items"
     paginate?: boolean;
     repeatHeader?: boolean;
+    rowsPerPage?: number; // 0 or undefined = let pdfkit handle overflow
     columns: TableColumnType[];
+  };
+
+export type PageNumElementType = BaseElementType &
+  TextStyleType & {
+    type: "pagenum";
+    template?: string; // e.g. "Página {{current}} de {{total}}"
+    align?: "left" | "center" | "right";
+    width?: number;
   };
 
 export type GroupElementType = BaseElementType & {
@@ -2205,7 +2216,8 @@ export type DocumentElementType =
   | LineElementType
   | CircleElementType
   | GroupElementType
-  | TableElementType;
+  | TableElementType
+  | PageNumElementType;
 
 export type PDFTemplateDefType = {
   meta: DocumentMetaType;
@@ -2230,7 +2242,7 @@ export type TableColumnType = {
   format?: "number" | "currency" | "date" | string;
 };
 
-type Base = { _id: string; visibleIf?: string };
+type Base = { _id: string; visibleIf?: string; showOn?: "all" | "first" | "last" };
 
 export type EditorTextType = Base & {
   type: "text";
@@ -2284,6 +2296,19 @@ export type EditorTableType = Base & {
   width?: number;
   paginate?: boolean;
   repeatHeader?: boolean;
+  rowsPerPage?: number;
+};
+
+export type EditorPageNumType = Base & {
+  type: "pagenum";
+  x?: number;
+  y?: number;
+  template?: string;
+  fontSize?: number;
+  fontFamily?: string;
+  color?: string;
+  align?: "left" | "center" | "right";
+  width?: number;
 };
 
 export type EditorElementType =
@@ -2291,7 +2316,8 @@ export type EditorElementType =
   | EditorImageType
   | EditorLineType
   | EditorCircleType
-  | EditorTableType;
+  | EditorTableType
+  | EditorPageNumType;
 
 export type BuilderStateType = {
   elements: EditorElementType[];

@@ -1916,12 +1916,13 @@ export type DocumentMetaType = {
         };
     };
 };
-export type ElementTypeType = "image" | "text" | "line" | "circle" | "group" | "table";
+export type ElementTypeType = "image" | "text" | "line" | "circle" | "group" | "table" | "pagenum";
 export type BaseElementType = {
     type: ElementTypeType;
     x?: number;
     y?: number;
     visibleIf?: string;
+    showOn?: "all" | "first" | "last";
 };
 export type TextStyleType = {
     fontFamily?: string;
@@ -1964,13 +1965,20 @@ export type TableElementType = BaseElementType & TextStyleType & {
     data: string;
     paginate?: boolean;
     repeatHeader?: boolean;
+    rowsPerPage?: number;
     columns: TableColumnType[];
+};
+export type PageNumElementType = BaseElementType & TextStyleType & {
+    type: "pagenum";
+    template?: string;
+    align?: "left" | "center" | "right";
+    width?: number;
 };
 export type GroupElementType = BaseElementType & {
     type: "group";
     elements: DocumentElementType[];
 };
-export type DocumentElementType = ImageElementType | TextElementType | LineElementType | CircleElementType | GroupElementType | TableElementType;
+export type DocumentElementType = ImageElementType | TextElementType | LineElementType | CircleElementType | GroupElementType | TableElementType | PageNumElementType;
 export type PDFTemplateDefType = {
     meta: DocumentMetaType;
     defaults?: DocumentDefaultsType;
@@ -1994,6 +2002,7 @@ export type TableColumnType = {
 type Base = {
     _id: string;
     visibleIf?: string;
+    showOn?: "all" | "first" | "last";
 };
 export type EditorTextType = Base & {
     type: "text";
@@ -2043,8 +2052,20 @@ export type EditorTableType = Base & {
     width?: number;
     paginate?: boolean;
     repeatHeader?: boolean;
+    rowsPerPage?: number;
 };
-export type EditorElementType = EditorTextType | EditorImageType | EditorLineType | EditorCircleType | EditorTableType;
+export type EditorPageNumType = Base & {
+    type: "pagenum";
+    x?: number;
+    y?: number;
+    template?: string;
+    fontSize?: number;
+    fontFamily?: string;
+    color?: string;
+    align?: "left" | "center" | "right";
+    width?: number;
+};
+export type EditorElementType = EditorTextType | EditorImageType | EditorLineType | EditorCircleType | EditorTableType | EditorPageNumType;
 export type BuilderStateType = {
     elements: EditorElementType[];
     selectedId: string | null;
