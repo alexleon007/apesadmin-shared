@@ -2097,5 +2097,30 @@ export type ActionType = {
     elements: EditorElementType[];
     defaults: DocumentDefaultsType;
 };
+export type FieldDef = {
+    key: string;
+    label: string;
+};
+export type FieldGroup = {
+    group: string;
+    fields: FieldDef[];
+};
+export type DetailColumnDef = {
+    key: string;
+    title: string;
+    format?: "currency" | "number" | "date";
+};
+export type DetailColumnGroup = {
+    group: string;
+    columns: DetailColumnDef[];
+};
+export declare const DETAIL_COLUMNS_BY_TYPE: Record<string, DetailColumnGroup[]>;
+export declare const FIELDS_BY_TYPE: Record<string, FieldGroup[]>;
+export declare const TYPE_LABELS: Record<string, string>;
+/**
+ * Mapeo de clave amigable → campo real del resultado de la query (ordersResult).
+ * El generador de PDF usa este mapa para resolver {{variable}} en la plantilla.
+ */
+export declare const OR_FIELD_MAP: Record<string, string>;
 export {};
 //# sourceMappingURL=types.d.ts.map
