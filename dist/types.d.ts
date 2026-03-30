@@ -1769,6 +1769,11 @@ export type ChartDataConfig = {
     pivotColumn?: string;
     rowFilter?: RowFilter[];
     aggregations: ChartAggregation[];
+    sortBy?: {
+        key: string;
+        dir: "asc" | "desc";
+    };
+    limit?: number;
 };
 export type ChartDefinition = {
     id: string;
@@ -1891,8 +1896,8 @@ export type BootstrapColorsType = "primary" | "success" | "danger" | "warning" |
 export type PDFTemplateType = {
     idtemplate: number;
     name: string;
-    version: string;
     definition: any;
+    type: string;
     createdat: string;
 };
 export type PageSizeType = "A3" | "A4" | "A5" | "LETTER" | "LEGAL" | [number, number];

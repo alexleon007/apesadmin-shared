@@ -1913,7 +1913,7 @@ export type ChartDataConfig = {
   groupBy: GroupByType;
   dateColumn?: string;
   groupColumn?: string;
-  groupColumns?: string[];   // Multiple columns → composite key on X-axis (overrides groupColumn)
+  groupColumns?: string[]; // Multiple columns → composite key on X-axis (overrides groupColumn)
   pivotColumn?: string;
   rowFilter?: RowFilter[];
   aggregations: ChartAggregation[];
@@ -2101,8 +2101,8 @@ export type BootstrapColorsType =
 export type PDFTemplateType = {
   idtemplate: number;
   name: string;
-  version: string;
   definition: any;
+  type: string;
   createdat: string;
 };
 
