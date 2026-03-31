@@ -2112,6 +2112,8 @@ export type PageSizeType =
   | "A5"
   | "LETTER"
   | "LEGAL"
+  | "TICKET_58"
+  | "TICKET_80"
   | [number, number];
 
 export type PageLayoutType = "portrait" | "landscape";
@@ -2125,6 +2127,7 @@ export type DocumentMetaType = {
     margin?:
       | number
       | { top: number; right: number; bottom: number; left: number };
+    autoHeight?: boolean;
   };
 };
 

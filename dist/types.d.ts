@@ -1900,7 +1900,7 @@ export type PDFTemplateType = {
     type: string;
     createdat: string;
 };
-export type PageSizeType = "A3" | "A4" | "A5" | "LETTER" | "LEGAL" | [number, number];
+export type PageSizeType = "A3" | "A4" | "A5" | "LETTER" | "LEGAL" | "TICKET_58" | "TICKET_80" | [number, number];
 export type PageLayoutType = "portrait" | "landscape";
 export type DocumentMetaType = {
     name: string;
@@ -1914,6 +1914,7 @@ export type DocumentMetaType = {
             bottom: number;
             left: number;
         };
+        autoHeight?: boolean;
     };
 };
 export type ElementTypeType = "image" | "text" | "line" | "circle" | "group" | "table" | "pagenum" | "qr" | "currentdate";
