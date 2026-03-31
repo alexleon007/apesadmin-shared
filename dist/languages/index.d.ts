@@ -404,6 +404,7 @@ export declare const languages: {
         itemName: string;
         key: string;
         labelTo: string;
+        landscape: string;
         language: string;
         lastContactDate: string;
         lastPurchaseDate: string;
@@ -616,6 +617,7 @@ export declare const languages: {
         pointOfSale: string;
         pointOfSaleTitle: string;
         port: string;
+        portrait: string;
         position: string;
         postalCode: string;
         predefinedThemes: string;
@@ -1382,6 +1384,7 @@ export declare const languages: {
         itemName: string;
         key: string;
         labelTo: string;
+        landscape: string;
         language: string;
         lastContactDate: string;
         lastPurchaseDate: string;
@@ -1594,6 +1597,7 @@ export declare const languages: {
         pointOfSale: string;
         pointOfSaleTitle: string;
         port: string;
+        portrait: string;
         position: string;
         postalCode: string;
         predefinedThemes: string;
@@ -2360,6 +2364,7 @@ export declare const languages: {
         itemName: string;
         key: string;
         labelTo: string;
+        landscape: string;
         language: string;
         lastContactDate: string;
         lastPurchaseDate: string;
@@ -2572,6 +2577,7 @@ export declare const languages: {
         pointOfSale: string;
         pointOfSaleTitle: string;
         port: string;
+        portrait: string;
         position: string;
         postalCode: string;
         predefinedThemes: string;
