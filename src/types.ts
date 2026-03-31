@@ -2135,7 +2135,8 @@ export type ElementTypeType =
   | "circle"
   | "group"
   | "table"
-  | "pagenum";
+  | "pagenum"
+  | "qr";
 
 export type BaseElementType = {
   type: ElementTypeType;
@@ -2210,6 +2211,12 @@ export type GroupElementType = BaseElementType & {
   elements: DocumentElementType[];
 };
 
+export type QRElementType = BaseElementType & {
+  type: "qr";
+  value: string;
+  size?: number;
+};
+
 export type DocumentElementType =
   | ImageElementType
   | TextElementType
@@ -2217,7 +2224,8 @@ export type DocumentElementType =
   | CircleElementType
   | GroupElementType
   | TableElementType
-  | PageNumElementType;
+  | PageNumElementType
+  | QRElementType;
 
 export type PDFTemplateDefType = {
   meta: DocumentMetaType;
@@ -2315,13 +2323,22 @@ export type EditorPageNumType = Base & {
   width?: number;
 };
 
+export type EditorQRType = Base & {
+  type: "qr";
+  x?: number;
+  y?: number;
+  value: string;
+  size?: number;
+};
+
 export type EditorElementType =
   | EditorTextType
   | EditorImageType
   | EditorLineType
   | EditorCircleType
   | EditorTableType
-  | EditorPageNumType;
+  | EditorPageNumType
+  | EditorQRType;
 
 export type BuilderStateType = {
   elements: EditorElementType[];

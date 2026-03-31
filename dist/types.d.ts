@@ -1916,7 +1916,7 @@ export type DocumentMetaType = {
         };
     };
 };
-export type ElementTypeType = "image" | "text" | "line" | "circle" | "group" | "table" | "pagenum";
+export type ElementTypeType = "image" | "text" | "line" | "circle" | "group" | "table" | "pagenum" | "qr";
 export type BaseElementType = {
     type: ElementTypeType;
     x?: number;
@@ -1978,7 +1978,12 @@ export type GroupElementType = BaseElementType & {
     type: "group";
     elements: DocumentElementType[];
 };
-export type DocumentElementType = ImageElementType | TextElementType | LineElementType | CircleElementType | GroupElementType | TableElementType | PageNumElementType;
+export type QRElementType = BaseElementType & {
+    type: "qr";
+    value: string;
+    size?: number;
+};
+export type DocumentElementType = ImageElementType | TextElementType | LineElementType | CircleElementType | GroupElementType | TableElementType | PageNumElementType | QRElementType;
 export type PDFTemplateDefType = {
     meta: DocumentMetaType;
     defaults?: DocumentDefaultsType;
@@ -2065,7 +2070,14 @@ export type EditorPageNumType = Base & {
     align?: "left" | "center" | "right";
     width?: number;
 };
-export type EditorElementType = EditorTextType | EditorImageType | EditorLineType | EditorCircleType | EditorTableType | EditorPageNumType;
+export type EditorQRType = Base & {
+    type: "qr";
+    x?: number;
+    y?: number;
+    value: string;
+    size?: number;
+};
+export type EditorElementType = EditorTextType | EditorImageType | EditorLineType | EditorCircleType | EditorTableType | EditorPageNumType | EditorQRType;
 export type BuilderStateType = {
     elements: EditorElementType[];
     selectedId: string | null;
