@@ -2595,3 +2595,13 @@ export const OR_FIELD_MAP: Record<string, string> = {
   usuario_telefono: "tel_user",
   usuario_correo: "mail_user",
 };
+
+export type BarcodeType = {
+  idbarcode: number;
+  barcodetype: string;
+  barcodeidtarget: number;
+  barcodebarcode: string;
+  barcodestatus: number;
+  barcodeiduser: number;
+  barcodecreatedat: string;
+};

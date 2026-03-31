@@ -2155,5 +2155,14 @@ export declare const TYPE_LABELS: Record<string, string>;
  * El generador de PDF usa este mapa para resolver {{variable}} en la plantilla.
  */
 export declare const OR_FIELD_MAP: Record<string, string>;
+export type BarcodeType = {
+    idbarcode: number;
+    barcodetype: string;
+    barcodeidtarget: number;
+    barcodebarcode: string;
+    barcodestatus: number;
+    barcodeiduser: number;
+    barcodecreatedat: string;
+};
 export {};
 //# sourceMappingURL=types.d.ts.map
