@@ -962,6 +962,7 @@ export declare const languages: {
         toastRegistered: string;
         toastSaved: string;
         toastSaveError: string;
+        duplicatePartyWarning: string;
         toastSelectAtLeastOne: string;
         toastSelectEquivalent: string;
         toastSelectRequired: string;
@@ -1942,6 +1943,7 @@ export declare const languages: {
         toastRegistered: string;
         toastSaved: string;
         toastSaveError: string;
+        duplicatePartyWarning: string;
         toastSelectAtLeastOne: string;
         toastSelectEquivalent: string;
         toastSelectRequired: string;
@@ -2922,6 +2924,7 @@ export declare const languages: {
         toastRegistered: string;
         toastSaved: string;
         toastSaveError: string;
+        duplicatePartyWarning: string;
         toastSelectAtLeastOne: string;
         toastSelectEquivalent: string;
         toastSelectRequired: string;

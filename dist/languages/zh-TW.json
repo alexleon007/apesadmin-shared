@@ -958,6 +958,7 @@
     "toastRegistered": "註冊成功",
     "toastSaved": "儲存成功",
     "toastSaveError": "儲存錯誤",
+    "duplicatePartyWarning": "找到相似的記錄。請查看表格，然後再次按儲存以確認。",
     "toastSelectAtLeastOne": "請至少選擇一個",
     "toastSelectEquivalent": "您必須選擇一個等效的概念/產品",
     "toastSelectRequired": "請選擇一個選項",

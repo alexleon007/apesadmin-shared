@@ -958,6 +958,7 @@
   "toastRegistered": "Registrado exitosamente",
   "toastSaved": "Guardado exitosamente",
   "toastSaveError": "Error al guardar",
+  "duplicatePartyWarning": "Se encontraron registros similares. Revisa la tabla y presiona Guardar de nuevo para confirmar.",
   "toastSelectAtLeastOne": "Selecciona al menos uno",
   "toastSelectEquivalent": "Debes seleccionar un concepto/producto equivalente",
   "toastSelectRequired": "Selecciona una opción",

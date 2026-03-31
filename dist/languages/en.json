@@ -958,6 +958,7 @@
     "toastRegistered": "Registered successfully",
     "toastSaved": "Saved successfully",
     "toastSaveError": "Error saving",
+    "duplicatePartyWarning": "Similar records were found. Review the table and press Save again to confirm.",
     "toastSelectAtLeastOne": "Select at least one",
     "toastSelectEquivalent": "Must select an equivalent concept/product",
     "toastSelectRequired": "Select an option",
