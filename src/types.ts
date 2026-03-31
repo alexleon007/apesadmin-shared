@@ -2136,7 +2136,8 @@ export type ElementTypeType =
   | "group"
   | "table"
   | "pagenum"
-  | "qr";
+  | "qr"
+  | "currentdate";
 
 export type BaseElementType = {
   type: ElementTypeType;
@@ -2217,6 +2218,16 @@ export type QRElementType = BaseElementType & {
   size?: number;
 };
 
+export type CurrentDateElementType = BaseElementType & {
+  type: "currentdate";
+  format?: string;
+  fontSize?: number;
+  fontFamily?: string;
+  color?: string;
+  align?: "left" | "center" | "right";
+  width?: number;
+};
+
 export type DocumentElementType =
   | ImageElementType
   | TextElementType
@@ -2225,7 +2236,8 @@ export type DocumentElementType =
   | GroupElementType
   | TableElementType
   | PageNumElementType
-  | QRElementType;
+  | QRElementType
+  | CurrentDateElementType;
 
 export type PDFTemplateDefType = {
   meta: DocumentMetaType;
@@ -2331,6 +2343,18 @@ export type EditorQRType = Base & {
   size?: number;
 };
 
+export type EditorCurrentDateType = Base & {
+  type: "currentdate";
+  x?: number;
+  y?: number;
+  format?: string;
+  fontSize?: number;
+  fontFamily?: string;
+  color?: string;
+  align?: "left" | "center" | "right";
+  width?: number;
+};
+
 export type EditorElementType =
   | EditorTextType
   | EditorImageType
@@ -2338,7 +2362,8 @@ export type EditorElementType =
   | EditorCircleType
   | EditorTableType
   | EditorPageNumType
-  | EditorQRType;
+  | EditorQRType
+  | EditorCurrentDateType;
 
 export type BuilderStateType = {
   elements: EditorElementType[];
