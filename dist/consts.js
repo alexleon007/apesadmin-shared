@@ -215,4 +215,5 @@ export const CFDI_USES = [
     { code: "S01", name: "Sin efectos fiscales" },
 ];
 export const GRID_SIZE = 10;
+const DASHBOARD_CATEGORIES = ["Todos", "General", "Reportes"];
 //# sourceMappingURL=consts.js.map
