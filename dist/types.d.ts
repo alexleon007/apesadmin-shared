@@ -518,7 +518,10 @@ export type StaticWidgetType = {
     title: string;
     desc: string;
     category: string;
-    icon: Record<string, any>;
+    icon: {
+        prefix: any;
+        iconName: any;
+    };
     color: string;
 };
 export type ReportWidgetType = {
@@ -526,7 +529,10 @@ export type ReportWidgetType = {
     widgetId: string;
     title: string;
     category: string;
-    icon: Record<string, any>;
+    icon: {
+        prefix: any;
+        iconName: any;
+    };
     color: string;
 };
 export type CatalogWidgetEntryType = StaticWidgetType | ReportWidgetType;
