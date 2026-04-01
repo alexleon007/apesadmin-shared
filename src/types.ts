@@ -579,6 +579,27 @@ export type DashboardWidgetType = {
   moduleRoute?: string;
 };
 
+export type StaticWidgetType = {
+  kind: "static";
+  type: DashboardWidgetType["type"];
+  title: string;
+  desc: string;
+  category: string;
+  icon: Record<string, any>;
+  color: string;
+};
+
+export type ReportWidgetType = {
+  kind: "report";
+  widgetId: string;
+  title: string;
+  category: string;
+  icon: Record<string, any>;
+  color: string;
+};
+
+export type CatalogWidgetEntry = StaticWidgetType | ReportWidgetType;
+
 export type ExamQuestionType = {
   idexq: number;
   qrytitle: string;
