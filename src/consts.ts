@@ -245,3 +245,5 @@ export const CFDI_USES = [
 ];
 
 export const GRID_SIZE = 10;
+
+const DASHBOARD_CATEGORIES = ["Todos", "General", "Reportes"];
