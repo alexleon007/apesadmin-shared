@@ -598,7 +598,7 @@ export type ReportWidgetType = {
   color: string;
 };
 
-export type CatalogWidgetEntry = StaticWidgetType | ReportWidgetType;
+export type CatalogWidgetEntryType = StaticWidgetType | ReportWidgetType;
 
 export type ExamQuestionType = {
   idexq: number;
