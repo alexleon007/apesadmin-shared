@@ -93,4 +93,5 @@ export declare const CFDI_USES: {
     name: string;
 }[];
 export declare const GRID_SIZE = 10;
+export declare const DASHBOARD_CATEGORIES: string[];
 //# sourceMappingURL=consts.d.ts.map

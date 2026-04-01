@@ -529,7 +529,7 @@ export type ReportWidgetType = {
     icon: Record<string, any>;
     color: string;
 };
-export type CatalogWidgetEntry = StaticWidgetType | ReportWidgetType;
+export type CatalogWidgetEntryType = StaticWidgetType | ReportWidgetType;
 export type ExamQuestionType = {
     idexq: number;
     qrytitle: string;
