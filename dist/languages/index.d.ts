@@ -64,6 +64,7 @@ export declare const languages: {
         bankAccount: string;
         bankAccounts: string;
         barcode: string;
+        barcodes: string;
         batch: string;
         beneficiary: string;
         billHistory: string;
@@ -1045,6 +1046,7 @@ export declare const languages: {
         bankAccount: string;
         bankAccounts: string;
         barcode: string;
+        barcodes: string;
         batch: string;
         beneficiary: string;
         billHistory: string;
@@ -2026,6 +2028,7 @@ export declare const languages: {
         bankAccount: string;
         bankAccounts: string;
         barcode: string;
+        barcodes: string;
         batch: string;
         beneficiary: string;
         billHistory: string;
