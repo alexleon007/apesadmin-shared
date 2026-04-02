@@ -2627,3 +2627,27 @@ export type BarcodeType = {
   barcodeiduser: number;
   barcodecreatedat: string;
 };
+
+export type OpticutterStockItemType = {
+  length: string;
+  width: string;
+  count: string;
+};
+
+export type OpticutterRequirementItemType = {
+  length: string;
+  width: string;
+  count: string;
+};
+
+export type OpticutterLayoutResultType = {
+  index: number;
+  panels: any;
+  remainders: any;
+  svgImage: string | null;
+};
+
+export type OpticutterCutResultType = {
+  requiredStocks: any;
+  layouts: OpticutterLayoutResultType[];
+};
