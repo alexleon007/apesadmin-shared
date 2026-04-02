@@ -1317,6 +1317,7 @@ export type ProductType = {
   prodfields: ConceptFieldsValuesType[];
   taxvalues: TaxValueType[];
   inventoryTracked: boolean;
+  prodbarcodes: BarcodeType[];
   maxqty: number;
   minqty: number;
 };
