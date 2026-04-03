@@ -1965,7 +1965,7 @@ export type ChatMessageType = {
 
 export type ChatType = {
   idchat: number;
-  chattype: "direct" | "group" | "channel" | "community_room";
+  chattype: "direct" | "group" | "channel" | "community_room" | "aura";
   chattitle: string;
   chatdescription: string | null;
   chatavatar: string;
