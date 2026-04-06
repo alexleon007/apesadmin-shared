@@ -910,6 +910,7 @@ export declare const languages: {
         toastAudioProcessing: string;
         toastAudioTranscribed: string;
         toastAuthError: string;
+        toastAuthLimitReached: string;
         toastAuthStartError: string;
         toastAuthSuccess: string;
         toastCancelled: string;
@@ -946,6 +947,7 @@ export declare const languages: {
         toastInvalidQuantityMessage: string;
         toastInvalidValue: string;
         toastLoadError: string;
+        toastLoginLimitReached: string;
         toastMissingFields: string;
         toastNetworkError: string;
         toastNoBills: string;
@@ -1892,6 +1894,7 @@ export declare const languages: {
         toastAudioProcessing: string;
         toastAudioTranscribed: string;
         toastAuthError: string;
+        toastAuthLimitReached: string;
         toastAuthStartError: string;
         toastAuthSuccess: string;
         toastCancelled: string;
@@ -1928,6 +1931,7 @@ export declare const languages: {
         toastInvalidQuantityMessage: string;
         toastInvalidValue: string;
         toastLoadError: string;
+        toastLoginLimitReached: string;
         toastMissingFields: string;
         toastNetworkError: string;
         toastNoBills: string;
@@ -2874,6 +2878,7 @@ export declare const languages: {
         toastAudioProcessing: string;
         toastAudioTranscribed: string;
         toastAuthError: string;
+        toastAuthLimitReached: string;
         toastAuthStartError: string;
         toastAuthSuccess: string;
         toastCancelled: string;
@@ -2910,6 +2915,7 @@ export declare const languages: {
         toastInvalidQuantityMessage: string;
         toastInvalidValue: string;
         toastLoadError: string;
+        toastLoginLimitReached: string;
         toastMissingFields: string;
         toastNetworkError: string;
         toastNoBills: string;
