@@ -753,6 +753,7 @@
   "sendTitle": "傳送電子郵件",
   "series": "CFDI 文件系列",
   "service": "服務",
+  "shopifyInstructions": "輸入您的 Shopify 商店名稱 (storename.myshopify.com 的子網域) 以授權連接。",
   "shortName": "簡稱",
   "show": "顯示",
   "showAnalytics": "顯示分析資料",
