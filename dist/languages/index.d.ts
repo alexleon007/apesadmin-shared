@@ -756,6 +756,7 @@ export declare const languages: {
         sendTitle: string;
         series: string;
         service: string;
+        shopifyInstructions: string;
         shortName: string;
         show: string;
         showAnalytics: string;
@@ -1740,6 +1741,7 @@ export declare const languages: {
         sendTitle: string;
         series: string;
         service: string;
+        shopifyInstructions: string;
         shortName: string;
         show: string;
         showAnalytics: string;
@@ -2724,6 +2726,7 @@ export declare const languages: {
         sendTitle: string;
         series: string;
         service: string;
+        shopifyInstructions: string;
         shortName: string;
         show: string;
         showAnalytics: string;

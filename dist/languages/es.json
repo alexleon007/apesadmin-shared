@@ -752,6 +752,7 @@
     "sendTitle": "Enviar Correo Electrónico",
     "series": "Serie",
     "service": "Servicio",
+    "shopifyInstructions": "Ingresa el nombre de tu tienda Shopify (el subdominio de tutienda.myshopify.com) para autorizar la conexion.",
     "shortName": "Nombre corto",
     "show": "Mostrar",
     "showAnalytics": "Mostrar datos de análisis",
