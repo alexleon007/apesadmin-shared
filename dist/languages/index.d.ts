@@ -161,6 +161,7 @@ export declare const languages: {
         connectedAs: string;
         connectGoogle: string;
         connectOutlook: string;
+        connectedStore: string;
         consolidatedBalance: string;
         contactDate: string;
         contactedToday: string;
@@ -369,6 +370,10 @@ export declare const languages: {
         future: string;
         gallery: string;
         generalData: string;
+        getInventory: string;
+        getOrder: string;
+        getOrders: string;
+        getProducts: string;
         gmailConnection: string;
         grade: string;
         group: string;
@@ -717,6 +722,7 @@ export declare const languages: {
         register: string;
         registerEntry: string;
         registerMovement: string;
+        registerWebhooks: string;
         reminder: string;
         remindersEvents: string;
         remove: string;
@@ -788,6 +794,7 @@ export declare const languages: {
         sendTitle: string;
         series: string;
         service: string;
+        shop: string;
         shopifyInstructions: string;
         shortName: string;
         show: string;
@@ -839,7 +846,9 @@ export declare const languages: {
         support: string;
         supportAdmin: string;
         swiftCode: string;
+        syncInventory: string;
         syncOrders: string;
+        syncSuccess: string;
         table: string;
         tableView: string;
         tag: string;
@@ -1180,6 +1189,7 @@ export declare const languages: {
         connectedAs: string;
         connectGoogle: string;
         connectOutlook: string;
+        connectedStore: string;
         consolidatedBalance: string;
         contactDate: string;
         contactedToday: string;
@@ -1388,6 +1398,10 @@ export declare const languages: {
         future: string;
         gallery: string;
         generalData: string;
+        getInventory: string;
+        getOrder: string;
+        getOrders: string;
+        getProducts: string;
         gmailConnection: string;
         grade: string;
         group: string;
@@ -1736,6 +1750,7 @@ export declare const languages: {
         register: string;
         registerEntry: string;
         registerMovement: string;
+        registerWebhooks: string;
         reminder: string;
         remindersEvents: string;
         remove: string;
@@ -1807,6 +1822,7 @@ export declare const languages: {
         sendTitle: string;
         series: string;
         service: string;
+        shop: string;
         shopifyInstructions: string;
         shortName: string;
         show: string;
@@ -1858,7 +1874,9 @@ export declare const languages: {
         support: string;
         supportAdmin: string;
         swiftCode: string;
+        syncInventory: string;
         syncOrders: string;
+        syncSuccess: string;
         table: string;
         tableView: string;
         tag: string;
@@ -2199,6 +2217,7 @@ export declare const languages: {
         connectedAs: string;
         connectGoogle: string;
         connectOutlook: string;
+        connectedStore: string;
         consolidatedBalance: string;
         contactDate: string;
         contactedToday: string;
@@ -2407,6 +2426,10 @@ export declare const languages: {
         future: string;
         gallery: string;
         generalData: string;
+        getInventory: string;
+        getOrder: string;
+        getOrders: string;
+        getProducts: string;
         gmailConnection: string;
         grade: string;
         group: string;
@@ -2755,6 +2778,7 @@ export declare const languages: {
         register: string;
         registerEntry: string;
         registerMovement: string;
+        registerWebhooks: string;
         reminder: string;
         remindersEvents: string;
         remove: string;
@@ -2826,6 +2850,7 @@ export declare const languages: {
         sendTitle: string;
         series: string;
         service: string;
+        shop: string;
         shopifyInstructions: string;
         shortName: string;
         show: string;
@@ -2877,7 +2902,9 @@ export declare const languages: {
         support: string;
         supportAdmin: string;
         swiftCode: string;
+        syncInventory: string;
         syncOrders: string;
+        syncSuccess: string;
         table: string;
         tableView: string;
         tag: string;
