@@ -262,7 +262,7 @@ export type ClockType = "in" | "break_start" | "break_end" | "out";
 export type AttendanceStatusType = "idle" | "working" | "onBreak";
 export type PartyAttendanceType = {
     idassist: number;
-    assistatype: ClockType;
+    assisttype: ClockType;
     assistattendance: string;
     assistworkdate: string;
     assistidparty: number;
