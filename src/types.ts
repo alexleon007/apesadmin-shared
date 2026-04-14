@@ -299,6 +299,19 @@ export type ActionUserValueType = {
   team?: number[];
 };
 
+export type PartyAttendanceType = {
+  idassist: number;
+  assistatype: string;
+  assistattendance: string;
+  assistworkdate: string;
+  assistidparty: number;
+  assistdate: string;
+  assistnotes: string;
+  assistiduser: number;
+  assiststatus: number;
+  assistcreatedat: string;
+};
+
 export type HelpTicketType = {
   idht: number;
   idkmn: number;
