@@ -299,9 +299,12 @@ export type ActionUserValueType = {
   team?: number[];
 };
 
+export type ClockType = "in" | "break_start" | "break_end" | "out";
+export type AttendanceStatusType = "idle" | "working" | "onBreak";
+
 export type PartyAttendanceType = {
   idassist: number;
-  assistatype: string;
+  assistatype: ClockType;
   assistattendance: string;
   assistworkdate: string;
   assistidparty: number;

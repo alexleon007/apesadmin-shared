@@ -94,4 +94,6 @@ export declare const CFDI_USES: {
 }[];
 export declare const GRID_SIZE = 10;
 export declare const DASHBOARD_CATEGORIES: string[];
+export declare const VALID_CLOCK_TYPES: readonly ["in", "break_start", "break_end", "out"];
+export declare const CLOCK_TYPE_TO_STATUS: Record<string, string>;
 //# sourceMappingURL=consts.d.ts.map
