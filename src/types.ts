@@ -584,7 +584,7 @@ export type DashboardConfigType = {
 
 export type DashboardWidgetType = {
   i: string;
-  type: "welcome" | "quickActions" | "kpiGroup" | "report";
+  type: "welcome" | "quickActions" | "kpiGroup" | "report" | "attendance";
   title: string;
   x: number;
   y: number;
