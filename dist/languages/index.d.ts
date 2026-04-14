@@ -42,6 +42,7 @@ export declare const languages: {
         apply: string;
         appointment: string;
         archive: string;
+        arrival: string;
         assign: string;
         assignedUsers: string;
         assignProvidersTo: string;
@@ -74,6 +75,7 @@ export declare const languages: {
         blindCashClosing: string;
         board: string;
         brand: string;
+        break: string;
         budget: string;
         businessName: string;
         button: string;
@@ -335,6 +337,7 @@ export declare const languages: {
         excelColumnsExtra: string;
         excelFormatInstructions: string;
         exchangeRate: string;
+        exit: string;
         expandXML: string;
         expense: string;
         expenseRequests: string;
@@ -355,6 +358,7 @@ export declare const languages: {
         finalCash: string;
         finalize: string;
         finalUser: string;
+        finishBreak: string;
         fiscalDataTab: string;
         fiscalInformation: string;
         fiscalInformationLowercase: string;
@@ -399,6 +403,7 @@ export declare const languages: {
         iban: string;
         icon: string;
         id: string;
+        idle: string;
         images: string;
         import: string;
         improvementSuggestion: string;
@@ -570,6 +575,7 @@ export declare const languages: {
         observations: string;
         of: string;
         onBehalfOf: string;
+        onBreak: string;
         open: string;
         openAll: string;
         openCashSession: string;
@@ -941,6 +947,7 @@ export declare const languages: {
         week: string;
         weekOf: string;
         without: string;
+        working: string;
         yes: string;
         you: string;
         zipCode: string;
@@ -1070,6 +1077,7 @@ export declare const languages: {
         apply: string;
         appointment: string;
         archive: string;
+        arrival: string;
         assign: string;
         assignedUsers: string;
         assignProvidersTo: string;
@@ -1102,6 +1110,7 @@ export declare const languages: {
         blindCashClosing: string;
         board: string;
         brand: string;
+        break: string;
         budget: string;
         businessName: string;
         button: string;
@@ -1363,6 +1372,7 @@ export declare const languages: {
         excelColumnsExtra: string;
         excelFormatInstructions: string;
         exchangeRate: string;
+        exit: string;
         expandXML: string;
         expense: string;
         expenseRequests: string;
@@ -1383,6 +1393,7 @@ export declare const languages: {
         finalCash: string;
         finalize: string;
         finalUser: string;
+        finishBreak: string;
         fiscalDataTab: string;
         fiscalInformation: string;
         fiscalInformationLowercase: string;
@@ -1427,6 +1438,7 @@ export declare const languages: {
         iban: string;
         icon: string;
         id: string;
+        idle: string;
         images: string;
         import: string;
         improvementSuggestion: string;
@@ -1598,6 +1610,7 @@ export declare const languages: {
         observations: string;
         of: string;
         onBehalfOf: string;
+        onBreak: string;
         open: string;
         openAll: string;
         openCashSession: string;
@@ -1969,6 +1982,7 @@ export declare const languages: {
         week: string;
         weekOf: string;
         without: string;
+        working: string;
         yes: string;
         you: string;
         zipCode: string;
@@ -2098,6 +2112,7 @@ export declare const languages: {
         apply: string;
         appointment: string;
         archive: string;
+        arrival: string;
         assign: string;
         assignedUsers: string;
         assignProvidersTo: string;
@@ -2130,6 +2145,7 @@ export declare const languages: {
         blindCashClosing: string;
         board: string;
         brand: string;
+        break: string;
         budget: string;
         businessName: string;
         button: string;
@@ -2391,6 +2407,7 @@ export declare const languages: {
         excelColumnsExtra: string;
         excelFormatInstructions: string;
         exchangeRate: string;
+        exit: string;
         expandXML: string;
         expense: string;
         expenseRequests: string;
@@ -2411,6 +2428,7 @@ export declare const languages: {
         finalCash: string;
         finalize: string;
         finalUser: string;
+        finishBreak: string;
         fiscalDataTab: string;
         fiscalInformation: string;
         fiscalInformationLowercase: string;
@@ -2455,6 +2473,7 @@ export declare const languages: {
         iban: string;
         icon: string;
         id: string;
+        idle: string;
         images: string;
         import: string;
         improvementSuggestion: string;
@@ -2626,6 +2645,7 @@ export declare const languages: {
         observations: string;
         of: string;
         onBehalfOf: string;
+        onBreak: string;
         open: string;
         openAll: string;
         openCashSession: string;
@@ -2997,6 +3017,7 @@ export declare const languages: {
         week: string;
         weekOf: string;
         without: string;
+        working: string;
         yes: string;
         you: string;
         zipCode: string;
