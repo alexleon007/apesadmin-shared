@@ -780,6 +780,7 @@ export declare const languages: {
         searchSupplier: string;
         secondaryButton: string;
         secondaryTextSample: string;
+        seconds: string;
         secretKey: string;
         section: string;
         select: string;
@@ -871,11 +872,13 @@ export declare const languages: {
         testConnection: string;
         testing: string;
         testStampService: string;
+        thanksForCompletingExam: string;
         themePreview: string;
         thumbnail: string;
         ticketLegend: string;
         ticketTypeConsult: string;
         time: string;
+        timeLeft: string;
         timeHour: string;
         title: string;
         to: string;
@@ -948,8 +951,10 @@ export declare const languages: {
         weekOf: string;
         without: string;
         working: string;
+        writeYourAnswer: string;
         yes: string;
         you: string;
+        youHaveFinishedTheExam: string;
         zipCode: string;
         zone: string;
         toastAccessDenied: string;
@@ -1815,6 +1820,7 @@ export declare const languages: {
         searchSupplier: string;
         secondaryButton: string;
         secondaryTextSample: string;
+        seconds: string;
         secretKey: string;
         section: string;
         select: string;
@@ -1906,11 +1912,13 @@ export declare const languages: {
         testConnection: string;
         testing: string;
         testStampService: string;
+        thanksForCompletingExam: string;
         themePreview: string;
         thumbnail: string;
         ticketLegend: string;
         ticketTypeConsult: string;
         time: string;
+        timeLeft: string;
         timeHour: string;
         title: string;
         to: string;
@@ -1983,8 +1991,10 @@ export declare const languages: {
         weekOf: string;
         without: string;
         working: string;
+        writeYourAnswer: string;
         yes: string;
         you: string;
+        youHaveFinishedTheExam: string;
         zipCode: string;
         zone: string;
         toastAccessDenied: string;
@@ -2850,6 +2860,7 @@ export declare const languages: {
         searchSupplier: string;
         secondaryButton: string;
         secondaryTextSample: string;
+        seconds: string;
         secretKey: string;
         section: string;
         select: string;
@@ -2941,11 +2952,13 @@ export declare const languages: {
         testConnection: string;
         testing: string;
         testStampService: string;
+        thanksForCompletingExam: string;
         themePreview: string;
         thumbnail: string;
         ticketLegend: string;
         ticketTypeConsult: string;
         time: string;
+        timeLeft: string;
         timeHour: string;
         title: string;
         to: string;
@@ -3018,8 +3031,10 @@ export declare const languages: {
         weekOf: string;
         without: string;
         working: string;
+        writeYourAnswer: string;
         yes: string;
         you: string;
+        youHaveFinishedTheExam: string;
         zipCode: string;
         zone: string;
         toastAccessDenied: string;
