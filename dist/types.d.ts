@@ -550,7 +550,7 @@ export type ReportEntryType = {
     instanceCount: number;
     anyVisible: boolean;
 };
-export type CatalogEntry = StaticEntryType | ReportEntryType;
+export type CatalogEntryType = StaticEntryType | ReportEntryType;
 export type DashboardWidgetInstanceType = {
     iddashwidget: number;
     widgettype: string;
