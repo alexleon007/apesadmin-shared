@@ -51,6 +51,7 @@ export declare const languages: {
         attachPlaceholder: string;
         attendance: string;
         attended: string;
+        auraGreeting: string;
         authorization: string;
         authorizationDescription: string;
         authorizationDescriptionAmazon: string;
@@ -220,6 +221,7 @@ export declare const languages: {
         customThemes: string;
         danger: string;
         dashboard: string;
+        dashboardAIInstructions: string;
         dataFiles: string;
         date: string;
         date1: string;
@@ -668,6 +670,7 @@ export declare const languages: {
         plusVat: string;
         pointOfSale: string;
         pointOfSaleTitle: string;
+        popularAccess: string;
         port: string;
         portrait: string;
         position: string;
@@ -722,6 +725,7 @@ export declare const languages: {
         questionnaireControl: string;
         questionnaires: string;
         questions: string;
+        quickActionsLimitReached: string;
         quotation: string;
         quotationDate: string;
         quotationNo: string;
@@ -788,6 +792,7 @@ export declare const languages: {
         scheduledAppointment: string;
         score: string;
         search: string;
+        searchAction: string;
         searchCustomer: string;
         searchPeople: string;
         searchPlaceholder: string;
@@ -965,6 +970,7 @@ export declare const languages: {
         warning: string;
         week: string;
         weekOf: string;
+        welcomeBack: string;
         without: string;
         working: string;
         writeYourAnswer: string;
