@@ -246,7 +246,7 @@ export const CFDI_USES = [
 
 export const GRID_SIZE = 10;
 
-export const DASHBOARD_CATEGORIES = ["Todos", "General", "Reportes"];
+export const DASHBOARD_CATEGORIES = ["all", "general", "reports"];
 
 export const VALID_CLOCK_TYPES = ["in", "break_start", "break_end", "out"] as const;
 
