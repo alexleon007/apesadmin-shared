@@ -40,6 +40,7 @@ export declare const languages: {
         amount: string;
         and: string;
         apply: string;
+        applyPayment: string;
         appointment: string;
         archive: string;
         arrival: string;
@@ -431,6 +432,7 @@ export declare const languages: {
         installTitle: string;
         inventoriable: string;
         inventory: string;
+        inventoryCorrection: string;
         invoice: string;
         invoiceLegend: string;
         invoices: string;
@@ -514,8 +516,10 @@ export declare const languages: {
         newCompany: string;
         newContact: string;
         newCustomer: string;
+        newExpense: string;
         newForm: string;
         newHR: string;
+        newInvoice: string;
         newItem: string;
         newLead: string;
         newLibrary: string;
@@ -523,8 +527,11 @@ export declare const languages: {
         newMailAccount: string;
         newOrder: string;
         newProduct: string;
+        newPurchaseInvoice: string;
+        newPurchaseOrder: string;
         newQuestionnaire: string;
         newQuotation: string;
+        newSalesOrder: string;
         newSupplier: string;
         newTheme: string;
         newUser: string;
@@ -592,6 +599,7 @@ export declare const languages: {
         orderLegend: string;
         orderNo: string;
         orderQuery: string;
+        orders: string;
         origin: string;
         originalQuantity: string;
         other: string;
@@ -610,6 +618,7 @@ export declare const languages: {
         paymentDebitCard: string;
         paymentForm: string;
         paymentForms: string;
+        paymentHistory: string;
         paymentMethodFull: string;
         paymentMethodShort: string;
         paymentOther: string;
@@ -704,6 +713,7 @@ export declare const languages: {
         publicLink: string;
         purchaseFrequency: string;
         purchases: string;
+        purchasesAndExpenses: string;
         purchasesExpenses: string;
         quantity: string;
         quantityPlaceholder: string;
@@ -1087,6 +1097,7 @@ export declare const languages: {
         amount: string;
         and: string;
         apply: string;
+        applyPayment: string;
         appointment: string;
         archive: string;
         arrival: string;
@@ -1097,6 +1108,7 @@ export declare const languages: {
         attachPlaceholder: string;
         attendance: string;
         attended: string;
+        auraGreeting: string;
         authorization: string;
         authorizationDescription: string;
         authorizationDescriptionAmazon: string;
@@ -1266,6 +1278,7 @@ export declare const languages: {
         customThemes: string;
         danger: string;
         dashboard: string;
+        dashboardAIInstructions: string;
         dataFiles: string;
         date: string;
         date1: string;
@@ -1478,6 +1491,7 @@ export declare const languages: {
         installTitle: string;
         inventoriable: string;
         inventory: string;
+        inventoryCorrection: string;
         invoice: string;
         invoiceLegend: string;
         invoices: string;
@@ -1561,8 +1575,10 @@ export declare const languages: {
         newCompany: string;
         newContact: string;
         newCustomer: string;
+        newExpense: string;
         newForm: string;
         newHR: string;
+        newInvoice: string;
         newItem: string;
         newLead: string;
         newLibrary: string;
@@ -1570,8 +1586,11 @@ export declare const languages: {
         newMailAccount: string;
         newOrder: string;
         newProduct: string;
+        newPurchaseInvoice: string;
+        newPurchaseOrder: string;
         newQuestionnaire: string;
         newQuotation: string;
+        newSalesOrder: string;
         newSupplier: string;
         newTheme: string;
         newUser: string;
@@ -1639,6 +1658,7 @@ export declare const languages: {
         orderLegend: string;
         orderNo: string;
         orderQuery: string;
+        orders: string;
         origin: string;
         originalQuantity: string;
         other: string;
@@ -1657,6 +1677,7 @@ export declare const languages: {
         paymentDebitCard: string;
         paymentForm: string;
         paymentForms: string;
+        paymentHistory: string;
         paymentMethodFull: string;
         paymentMethodShort: string;
         paymentOther: string;
@@ -1706,6 +1727,7 @@ export declare const languages: {
         plusVat: string;
         pointOfSale: string;
         pointOfSaleTitle: string;
+        popularAccess: string;
         port: string;
         portrait: string;
         position: string;
@@ -1751,6 +1773,7 @@ export declare const languages: {
         publicLink: string;
         purchaseFrequency: string;
         purchases: string;
+        purchasesAndExpenses: string;
         purchasesExpenses: string;
         quantity: string;
         quantityPlaceholder: string;
@@ -1759,6 +1782,7 @@ export declare const languages: {
         questionnaireControl: string;
         questionnaires: string;
         questions: string;
+        quickActionsLimitReached: string;
         quotation: string;
         quotationDate: string;
         quotationNo: string;
@@ -1825,6 +1849,7 @@ export declare const languages: {
         scheduledAppointment: string;
         score: string;
         search: string;
+        searchAction: string;
         searchCustomer: string;
         searchPeople: string;
         searchPlaceholder: string;
@@ -2002,6 +2027,7 @@ export declare const languages: {
         warning: string;
         week: string;
         weekOf: string;
+        welcomeBack: string;
         without: string;
         working: string;
         writeYourAnswer: string;
@@ -2134,6 +2160,7 @@ export declare const languages: {
         amount: string;
         and: string;
         apply: string;
+        applyPayment: string;
         appointment: string;
         archive: string;
         arrival: string;
@@ -2144,6 +2171,7 @@ export declare const languages: {
         attachPlaceholder: string;
         attendance: string;
         attended: string;
+        auraGreeting: string;
         authorization: string;
         authorizationDescription: string;
         authorizationDescriptionAmazon: string;
@@ -2313,6 +2341,7 @@ export declare const languages: {
         customThemes: string;
         danger: string;
         dashboard: string;
+        dashboardAIInstructions: string;
         dataFiles: string;
         date: string;
         date1: string;
@@ -2525,6 +2554,7 @@ export declare const languages: {
         installTitle: string;
         inventoriable: string;
         inventory: string;
+        inventoryCorrection: string;
         invoice: string;
         invoiceLegend: string;
         invoices: string;
@@ -2608,8 +2638,10 @@ export declare const languages: {
         newCompany: string;
         newContact: string;
         newCustomer: string;
+        newExpense: string;
         newForm: string;
         newHR: string;
+        newInvoice: string;
         newItem: string;
         newLead: string;
         newLibrary: string;
@@ -2617,8 +2649,11 @@ export declare const languages: {
         newMailAccount: string;
         newOrder: string;
         newProduct: string;
+        newPurchaseInvoice: string;
+        newPurchaseOrder: string;
         newQuestionnaire: string;
         newQuotation: string;
+        newSalesOrder: string;
         newSupplier: string;
         newTheme: string;
         newUser: string;
@@ -2686,6 +2721,7 @@ export declare const languages: {
         orderLegend: string;
         orderNo: string;
         orderQuery: string;
+        orders: string;
         origin: string;
         originalQuantity: string;
         other: string;
@@ -2704,6 +2740,7 @@ export declare const languages: {
         paymentDebitCard: string;
         paymentForm: string;
         paymentForms: string;
+        paymentHistory: string;
         paymentMethodFull: string;
         paymentMethodShort: string;
         paymentOther: string;
@@ -2753,6 +2790,7 @@ export declare const languages: {
         plusVat: string;
         pointOfSale: string;
         pointOfSaleTitle: string;
+        popularAccess: string;
         port: string;
         portrait: string;
         position: string;
@@ -2798,6 +2836,7 @@ export declare const languages: {
         publicLink: string;
         purchaseFrequency: string;
         purchases: string;
+        purchasesAndExpenses: string;
         purchasesExpenses: string;
         quantity: string;
         quantityPlaceholder: string;
@@ -2806,6 +2845,7 @@ export declare const languages: {
         questionnaireControl: string;
         questionnaires: string;
         questions: string;
+        quickActionsLimitReached: string;
         quotation: string;
         quotationDate: string;
         quotationNo: string;
@@ -2872,6 +2912,7 @@ export declare const languages: {
         scheduledAppointment: string;
         score: string;
         search: string;
+        searchAction: string;
         searchCustomer: string;
         searchPeople: string;
         searchPlaceholder: string;
@@ -3049,6 +3090,7 @@ export declare const languages: {
         warning: string;
         week: string;
         weekOf: string;
+        welcomeBack: string;
         without: string;
         working: string;
         writeYourAnswer: string;
