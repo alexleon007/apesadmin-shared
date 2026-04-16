@@ -600,6 +600,29 @@ export type DashboardWidgetType = {
   };
 };
 
+export type StaticEntryType = {
+  kind: "static";
+  type: string;
+  title: string;
+  desc: string;
+  category: string;
+  icon: any;
+  color: string;
+};
+
+export type ReportEntryType = {
+  kind: "report";
+  reportId: number;
+  title: string;
+  category: string;
+  icon: any;
+  color: string;
+  instanceCount: number;
+  anyVisible: boolean;
+};
+
+export type CatalogEntry = StaticEntryType | ReportEntryType;
+
 export type DashboardWidgetInstanceType = {
   iddashwidget: number;
   widgettype: string;
