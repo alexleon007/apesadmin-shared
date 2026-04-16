@@ -16,6 +16,8 @@ export declare const languages: {
         activeNotifications: string;
         add: string;
         addAddresses: string;
+        addAnotherReportInstance: string;
+        added: string;
         addContacts: string;
         addLine: string;
         addNote: string;
@@ -23,6 +25,7 @@ export declare const languages: {
         address: string;
         addressShort: string;
         addToTask: string;
+        addWidget: string;
         admin: string;
         advance: string;
         advanced: string;
@@ -50,6 +53,7 @@ export declare const languages: {
         attachments: string;
         attachPlaceholder: string;
         attendance: string;
+        attendanceWidgetDesc: string;
         attended: string;
         auraGreeting: string;
         authorization: string;
@@ -377,6 +381,7 @@ export declare const languages: {
         funnel: string;
         future: string;
         gallery: string;
+        general: string;
         generalData: string;
         getInventory: string;
         getOrder: string;
@@ -725,7 +730,9 @@ export declare const languages: {
         questionnaireControl: string;
         questionnaires: string;
         questions: string;
+        quickActions: string;
         quickActionsLimitReached: string;
+        quickActionsWidgetDesc: string;
         quotation: string;
         quotationDate: string;
         quotationNo: string;
@@ -798,6 +805,7 @@ export declare const languages: {
         searchPlaceholder: string;
         searchProduct: string;
         searchSupplier: string;
+        searchWidget: string;
         secondaryButton: string;
         secondaryTextSample: string;
         seconds: string;
@@ -970,7 +978,9 @@ export declare const languages: {
         warning: string;
         week: string;
         weekOf: string;
+        welcome: string;
         welcomeBack: string;
+        welcomeWidgetDesc: string;
         without: string;
         working: string;
         writeYourAnswer: string;
@@ -1079,6 +1089,8 @@ export declare const languages: {
         activeNotifications: string;
         add: string;
         addAddresses: string;
+        addAnotherReportInstance: string;
+        added: string;
         addContacts: string;
         addLine: string;
         addNote: string;
@@ -1086,6 +1098,7 @@ export declare const languages: {
         address: string;
         addressShort: string;
         addToTask: string;
+        addWidget: string;
         admin: string;
         advance: string;
         advanced: string;
@@ -1113,6 +1126,7 @@ export declare const languages: {
         attachments: string;
         attachPlaceholder: string;
         attendance: string;
+        attendanceWidgetDesc: string;
         attended: string;
         auraGreeting: string;
         authorization: string;
@@ -1440,6 +1454,7 @@ export declare const languages: {
         funnel: string;
         future: string;
         gallery: string;
+        general: string;
         generalData: string;
         getInventory: string;
         getOrder: string;
@@ -1788,7 +1803,9 @@ export declare const languages: {
         questionnaireControl: string;
         questionnaires: string;
         questions: string;
+        quickActions: string;
         quickActionsLimitReached: string;
+        quickActionsWidgetDesc: string;
         quotation: string;
         quotationDate: string;
         quotationNo: string;
@@ -1861,6 +1878,7 @@ export declare const languages: {
         searchPlaceholder: string;
         searchProduct: string;
         searchSupplier: string;
+        searchWidget: string;
         secondaryButton: string;
         secondaryTextSample: string;
         seconds: string;
@@ -2033,7 +2051,9 @@ export declare const languages: {
         warning: string;
         week: string;
         weekOf: string;
+        welcome: string;
         welcomeBack: string;
+        welcomeWidgetDesc: string;
         without: string;
         working: string;
         writeYourAnswer: string;
@@ -2142,6 +2162,8 @@ export declare const languages: {
         activeNotifications: string;
         add: string;
         addAddresses: string;
+        addAnotherReportInstance: string;
+        added: string;
         addContacts: string;
         addLine: string;
         addNote: string;
@@ -2149,6 +2171,7 @@ export declare const languages: {
         address: string;
         addressShort: string;
         addToTask: string;
+        addWidget: string;
         admin: string;
         advance: string;
         advanced: string;
@@ -2176,6 +2199,7 @@ export declare const languages: {
         attachments: string;
         attachPlaceholder: string;
         attendance: string;
+        attendanceWidgetDesc: string;
         attended: string;
         auraGreeting: string;
         authorization: string;
@@ -2503,6 +2527,7 @@ export declare const languages: {
         funnel: string;
         future: string;
         gallery: string;
+        general: string;
         generalData: string;
         getInventory: string;
         getOrder: string;
@@ -2851,7 +2876,9 @@ export declare const languages: {
         questionnaireControl: string;
         questionnaires: string;
         questions: string;
+        quickActions: string;
         quickActionsLimitReached: string;
+        quickActionsWidgetDesc: string;
         quotation: string;
         quotationDate: string;
         quotationNo: string;
@@ -2924,6 +2951,7 @@ export declare const languages: {
         searchPlaceholder: string;
         searchProduct: string;
         searchSupplier: string;
+        searchWidget: string;
         secondaryButton: string;
         secondaryTextSample: string;
         seconds: string;
@@ -3096,7 +3124,9 @@ export declare const languages: {
         warning: string;
         week: string;
         weekOf: string;
+        welcome: string;
         welcomeBack: string;
+        welcomeWidgetDesc: string;
         without: string;
         working: string;
         writeYourAnswer: string;
