@@ -177,6 +177,7 @@ export declare const languages: {
         conversionFactors: string;
         convertToOrder: string;
         coordinates: string;
+        copy: string;
         correct: string;
         correctColumn: string;
         correctErrorsByQuestion: string;
@@ -573,6 +574,9 @@ export declare const languages: {
         number: string;
         numQuestions: string;
         observations: string;
+        ocrTitle: string;
+        ocrDescription: string;
+        ocrExtractText: string;
         of: string;
         onBehalfOf: string;
         onBreak: string;
@@ -675,6 +679,7 @@ export declare const languages: {
         printQuotation: string;
         priority: string;
         privateGroup: string;
+        processing: string;
         product: string;
         products: string;
         productsManagement: string;
@@ -872,6 +877,7 @@ export declare const languages: {
         testConnection: string;
         testing: string;
         testStampService: string;
+        textExtracted: string;
         thanksForCompletingExam: string;
         themePreview: string;
         thumbnail: string;
@@ -1030,6 +1036,7 @@ export declare const languages: {
         toastSyncComplete: string;
         toastSyncError: string;
         toastTestConnectionError: string;
+        toastTextCopied: string;
         toastUpdated: string;
         toastUpdateError: string;
         toastUploadError: string;
@@ -1217,6 +1224,7 @@ export declare const languages: {
         conversionFactors: string;
         convertToOrder: string;
         coordinates: string;
+        copy: string;
         correct: string;
         correctColumn: string;
         correctErrorsByQuestion: string;
@@ -1613,6 +1621,9 @@ export declare const languages: {
         number: string;
         numQuestions: string;
         observations: string;
+        ocrTitle: string;
+        ocrDescription: string;
+        ocrExtractText: string;
         of: string;
         onBehalfOf: string;
         onBreak: string;
@@ -1715,6 +1726,7 @@ export declare const languages: {
         printQuotation: string;
         priority: string;
         privateGroup: string;
+        processing: string;
         product: string;
         products: string;
         productsManagement: string;
@@ -1912,6 +1924,7 @@ export declare const languages: {
         testConnection: string;
         testing: string;
         testStampService: string;
+        textExtracted: string;
         thanksForCompletingExam: string;
         themePreview: string;
         thumbnail: string;
@@ -2070,6 +2083,7 @@ export declare const languages: {
         toastSyncComplete: string;
         toastSyncError: string;
         toastTestConnectionError: string;
+        toastTextCopied: string;
         toastUpdated: string;
         toastUpdateError: string;
         toastUploadError: string;
@@ -2257,6 +2271,7 @@ export declare const languages: {
         conversionFactors: string;
         convertToOrder: string;
         coordinates: string;
+        copy: string;
         correct: string;
         correctColumn: string;
         correctErrorsByQuestion: string;
@@ -2653,6 +2668,9 @@ export declare const languages: {
         number: string;
         numQuestions: string;
         observations: string;
+        ocrTitle: string;
+        ocrDescription: string;
+        ocrExtractText: string;
         of: string;
         onBehalfOf: string;
         onBreak: string;
@@ -2755,6 +2773,7 @@ export declare const languages: {
         printQuotation: string;
         priority: string;
         privateGroup: string;
+        processing: string;
         product: string;
         products: string;
         productsManagement: string;
@@ -2952,6 +2971,7 @@ export declare const languages: {
         testConnection: string;
         testing: string;
         testStampService: string;
+        textExtracted: string;
         thanksForCompletingExam: string;
         themePreview: string;
         thumbnail: string;
@@ -3110,6 +3130,7 @@ export declare const languages: {
         toastSyncComplete: string;
         toastSyncError: string;
         toastTestConnectionError: string;
+        toastTextCopied: string;
         toastUpdated: string;
         toastUpdateError: string;
         toastUploadError: string;

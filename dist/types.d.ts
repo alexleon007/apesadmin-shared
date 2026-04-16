@@ -516,6 +516,7 @@ export type DashboardConfigType = {
 };
 export type DashboardWidgetType = {
     i: string;
+    dbId?: number;
     type: "welcome" | "quickActions" | "kpiGroup" | "report" | "attendance";
     title: string;
     x: number;
@@ -525,6 +526,18 @@ export type DashboardWidgetType = {
     visible: boolean;
     reportId?: number;
     moduleRoute?: string;
+    config?: {
+        chartIndex?: number;
+        filters?: Record<string, any>;
+    };
+};
+export type DashboardWidgetInstanceType = {
+    iddashwidget: number;
+    widgettype: string;
+    idtarget: number;
+    config: Record<string, any>;
+    orderpos: number;
+    isvisible: number;
 };
 export type StaticWidgetType = {
     kind: "static";
