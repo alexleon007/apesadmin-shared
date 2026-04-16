@@ -401,6 +401,7 @@ export declare const languages: {
         haber: string;
         help: string;
         helpTitle: string;
+        hide: string;
         hideAnalytics: string;
         hideNotes: string;
         high: string;
@@ -502,6 +503,7 @@ export declare const languages: {
         minStock: string;
         modalUploadTitle: string;
         model: string;
+        modify: string;
         modifyPlan: string;
         module: string;
         moduleManagement: string;
@@ -970,6 +972,7 @@ export declare const languages: {
         viewCustomer: string;
         viewHR: string;
         viewMailAccount: string;
+        viewMore: string;
         viewRoadmap: string;
         viewSupplier: string;
         viewTicket: string;
@@ -1474,6 +1477,7 @@ export declare const languages: {
         haber: string;
         help: string;
         helpTitle: string;
+        hide: string;
         hideAnalytics: string;
         hideNotes: string;
         high: string;
@@ -1575,6 +1579,7 @@ export declare const languages: {
         minStock: string;
         modalUploadTitle: string;
         model: string;
+        modify: string;
         modifyPlan: string;
         module: string;
         moduleManagement: string;
@@ -2043,6 +2048,7 @@ export declare const languages: {
         viewCustomer: string;
         viewHR: string;
         viewMailAccount: string;
+        viewMore: string;
         viewRoadmap: string;
         viewSupplier: string;
         viewTicket: string;
@@ -2547,6 +2553,7 @@ export declare const languages: {
         haber: string;
         help: string;
         helpTitle: string;
+        hide: string;
         hideAnalytics: string;
         hideNotes: string;
         high: string;
@@ -2648,6 +2655,7 @@ export declare const languages: {
         minStock: string;
         modalUploadTitle: string;
         model: string;
+        modify: string;
         modifyPlan: string;
         module: string;
         moduleManagement: string;
@@ -3116,6 +3124,7 @@ export declare const languages: {
         viewCustomer: string;
         viewHR: string;
         viewMailAccount: string;
+        viewMore: string;
         viewRoadmap: string;
         viewSupplier: string;
         viewTicket: string;
