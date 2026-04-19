@@ -1034,9 +1034,10 @@ export type OrderLogType = {
 };
 
 export type OrderMovementType = {
-  idpayd: number;
-  idpay: number;
+  iddetdoc: number;
+  idmaindoc: number;
   ormovtype: string;
+  ormovtypename: string;
   ormovnumber: string;
   ormovreference: string;
   ormovdate: string;
