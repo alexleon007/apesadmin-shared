@@ -868,6 +868,7 @@ export declare const languages: {
         stripeVersion: string;
         subClass: string;
         subclass: string;
+        subgroup: string;
         subject: string;
         subjectPlaceholder: string;
         subscription: string;
@@ -1944,6 +1945,7 @@ export declare const languages: {
         stripeVersion: string;
         subClass: string;
         subclass: string;
+        subgroup: string;
         subject: string;
         subjectPlaceholder: string;
         subscription: string;
@@ -3020,6 +3022,7 @@ export declare const languages: {
         stripeVersion: string;
         subClass: string;
         subclass: string;
+        subgroup: string;
         subject: string;
         subjectPlaceholder: string;
         subscription: string;
