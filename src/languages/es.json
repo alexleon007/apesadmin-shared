@@ -864,6 +864,7 @@
   "stripeVersion": "Selecciona la versión 2025-11-17.clover en tu configuración de Stripe",
   "subClass": "Sub Clase",
   "subclass": "Subclase",
+  "subgroup": "Subgrupo",
   "subject": "Asunto",
   "subjectPlaceholder": "Ingrese el asunto",
   "subscription": "Suscripción",
