@@ -1354,6 +1354,8 @@ export type ProductType = {
   prodfamilyname: string;
   prodgroup: number;
   prodgroupname: string;
+  prodsubgroup: number;
+  prodsubgroupname: string;
   prodbatch: number;
   prodexpiration: number;
   prodprice1: number;
