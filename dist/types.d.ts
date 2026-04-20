@@ -942,9 +942,10 @@ export type OrderLogType = {
     event: null;
 };
 export type OrderMovementType = {
-    idpayd: number;
-    idpay: number;
+    iddetdoc: number;
+    idmaindoc: number;
     ormovtype: string;
+    ormovtypename: string;
     ormovnumber: string;
     ormovreference: string;
     ormovdate: string;
@@ -1257,6 +1258,8 @@ export type ProductType = {
     prodfamilyname: string;
     prodgroup: number;
     prodgroupname: string;
+    prodsubgroup: number;
+    prodsubgroupname: string;
     prodbatch: number;
     prodexpiration: number;
     prodprice1: number;
