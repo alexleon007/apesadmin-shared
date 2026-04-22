@@ -314,6 +314,8 @@ export type PartyAttendanceType = {
   assiststatus: number;
   assistcreatedat: string;
   assistsessionuuid: string | null;
+  assistlatitude: number | null;
+  assistlongitude: number | null;
 };
 
 export type HelpTicketType = {
