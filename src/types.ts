@@ -313,6 +313,7 @@ export type PartyAttendanceType = {
   assistiduser: number;
   assiststatus: number;
   assistcreatedat: string;
+  assistsessionuuid: string | null;
 };
 
 export type HelpTicketType = {
