@@ -1861,6 +1861,7 @@ export type WorkItemsClasifType =
 
 export type WorkItemMemberType = {
   iduser: number;
+  username: string;
   name: string;
   profileimage?: string;
   role: "owner" | "collaborator" | "watcher";
