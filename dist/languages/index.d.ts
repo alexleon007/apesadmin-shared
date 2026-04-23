@@ -231,6 +231,7 @@ export declare const languages: {
         date1: string;
         date2: string;
         day: string;
+        daysAbbr: string;
         daysSinceLastPurchase: string;
         deactivate: string;
         debit: string;
@@ -981,6 +982,7 @@ export declare const languages: {
         warehouses: string;
         warning: string;
         week: string;
+        weekAbbr: string;
         weekOf: string;
         welcome: string;
         welcomeBack: string;
@@ -1308,6 +1310,7 @@ export declare const languages: {
         date1: string;
         date2: string;
         day: string;
+        daysAbbr: string;
         daysSinceLastPurchase: string;
         deactivate: string;
         debit: string;
@@ -2058,6 +2061,7 @@ export declare const languages: {
         warehouses: string;
         warning: string;
         week: string;
+        weekAbbr: string;
         weekOf: string;
         welcome: string;
         welcomeBack: string;
@@ -2385,6 +2389,7 @@ export declare const languages: {
         date1: string;
         date2: string;
         day: string;
+        daysAbbr: string;
         daysSinceLastPurchase: string;
         deactivate: string;
         debit: string;
@@ -3135,6 +3140,7 @@ export declare const languages: {
         warehouses: string;
         warning: string;
         week: string;
+        weekAbbr: string;
         weekOf: string;
         welcome: string;
         welcomeBack: string;

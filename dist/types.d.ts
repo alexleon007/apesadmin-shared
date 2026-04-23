@@ -520,7 +520,7 @@ export type DashboardConfigType = {
 export type DashboardWidgetType = {
     i: string;
     dbId?: number;
-    type: "welcome" | "quickActions" | "kpiGroup" | "report" | "attendance";
+    type: "welcome" | "quickActions" | "kpiGroup" | "report" | "attendance" | "myTickets";
     title: string;
     x: number;
     y: number;
@@ -1726,6 +1726,7 @@ export type WorkflowType = {
 export type WorkItemsClasifType = "project" | "sprint" | "task" | "ticket" | "block" | string;
 export type WorkItemMemberType = {
     iduser: number;
+    username?: string;
     name: string;
     profileimage?: string;
     role: "owner" | "collaborator" | "watcher";
