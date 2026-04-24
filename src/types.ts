@@ -2191,6 +2191,7 @@ export type PDFTemplateType = {
   name: string;
   definition: any;
   type: string;
+  favorite: number;
   createdat: string;
 };
 

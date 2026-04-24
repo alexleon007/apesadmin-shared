@@ -1977,6 +1977,7 @@ export type PDFTemplateType = {
     name: string;
     definition: any;
     type: string;
+    favorite: number;
     createdat: string;
 };
 export type PageSizeType = "A3" | "A4" | "A5" | "LETTER" | "LEGAL" | "TICKET_58" | "TICKET_80" | [number, number];
