@@ -606,6 +606,7 @@ export declare const languages: {
         options: string;
         optionsUnavailable: string;
         or: string;
+        order: string;
         orderLegend: string;
         orderNo: string;
         orderQuery: string;
@@ -671,6 +672,7 @@ export declare const languages: {
         popularAccess: string;
         port: string;
         portrait: string;
+        pos: string;
         position: string;
         postalCode: string;
         predefinedThemes: string;
@@ -1675,6 +1677,7 @@ export declare const languages: {
         options: string;
         optionsUnavailable: string;
         or: string;
+        order: string;
         orderLegend: string;
         orderNo: string;
         orderQuery: string;
@@ -1740,6 +1743,7 @@ export declare const languages: {
         popularAccess: string;
         port: string;
         portrait: string;
+        pos: string;
         position: string;
         postalCode: string;
         predefinedThemes: string;
@@ -2744,6 +2748,7 @@ export declare const languages: {
         options: string;
         optionsUnavailable: string;
         or: string;
+        order: string;
         orderLegend: string;
         orderNo: string;
         orderQuery: string;
@@ -2809,6 +2814,7 @@ export declare const languages: {
         popularAccess: string;
         port: string;
         portrait: string;
+        pos: string;
         position: string;
         postalCode: string;
         predefinedThemes: string;
