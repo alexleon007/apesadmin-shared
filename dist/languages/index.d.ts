@@ -698,6 +698,7 @@ export declare const languages: {
         productTypeFormat: string;
         profilePhoto: string;
         profilePhotoPng: string;
+        profiles: string;
         progress: string;
         project: string;
         projectPlugin: string;
@@ -1770,6 +1771,7 @@ export declare const languages: {
         productTypeFormat: string;
         profilePhoto: string;
         profilePhotoPng: string;
+        profiles: string;
         progress: string;
         project: string;
         projectPlugin: string;
@@ -2842,6 +2844,7 @@ export declare const languages: {
         productTypeFormat: string;
         profilePhoto: string;
         profilePhotoPng: string;
+        profiles: string;
         progress: string;
         project: string;
         projectPlugin: string;

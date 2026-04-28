@@ -1653,6 +1653,13 @@ export type UserType = {
     mailsecure: string;
     mailauth: string;
     mailpass: string;
+    idprofile?: number;
+};
+export type ProfileType = {
+    idprofile: number;
+    name: string;
+    description: string;
+    status: number;
 };
 export type ViewType = typeof VIEW_TABLE | typeof VIEW_BOARD | typeof VIEW_GALLERY;
 export type WarehouseLocationType = {
