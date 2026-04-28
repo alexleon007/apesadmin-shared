@@ -1769,10 +1769,6 @@ export type UserType = {
   mailsecure: string;
   mailauth: string;
   mailpass: string;
-  cedula: string;
-  school: string;
-  specialty: string;
-  address: string;
 };
 
 export type ViewType =
