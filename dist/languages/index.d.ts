@@ -1048,6 +1048,7 @@ export declare const languages: {
         toastProductAdded: string;
         toastProductRemoved: string;
         toastRedirecting: string;
+        toastRefoundError: string;
         toastRegistered: string;
         toastSaved: string;
         toastSaveError: string;
@@ -2119,6 +2120,7 @@ export declare const languages: {
         toastProductAdded: string;
         toastProductRemoved: string;
         toastRedirecting: string;
+        toastRefoundError: string;
         toastRegistered: string;
         toastSaved: string;
         toastSaveError: string;
@@ -3190,6 +3192,7 @@ export declare const languages: {
         toastProductAdded: string;
         toastProductRemoved: string;
         toastRedirecting: string;
+        toastRefoundError: string;
         toastRegistered: string;
         toastSaved: string;
         toastSaveError: string;
