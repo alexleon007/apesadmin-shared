@@ -1044,6 +1044,7 @@
   "toastProductAdded": "產品已新增",
   "toastProductRemoved": "產品已移除",
   "toastRedirecting": "正在重新導向...",
+  "toastRefoundError": "應用到文件的金額超過其待處理餘額。",
   "toastRegistered": "註冊成功",
   "toastSaved": "儲存成功",
   "toastSaveError": "儲存錯誤",

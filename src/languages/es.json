@@ -1044,6 +1044,7 @@
   "toastProductAdded": "Producto agregado",
   "toastProductRemoved": "Producto eliminado",
   "toastRedirecting": "Redirigiendo...",
+  "toastRefoundError": "El monto a aplicar al documento supera su saldo pendiente actual.",
   "toastRegistered": "Registrado exitosamente",
   "toastSaved": "Guardado exitosamente",
   "toastSaveError": "Error al guardar",

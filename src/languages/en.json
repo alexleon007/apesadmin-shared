@@ -1044,6 +1044,7 @@
   "toastProductAdded": "Product added",
   "toastProductRemoved": "Product removed",
   "toastRedirecting": "Redirecting...",
+  "toastRefoundError": "The amount to apply to the document exceeds its pending balance.",
   "toastRegistered": "Registered successfully",
   "toastSaved": "Saved successfully",
   "toastSaveError": "Error saving",
