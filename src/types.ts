@@ -1769,6 +1769,14 @@ export type UserType = {
   mailsecure: string;
   mailauth: string;
   mailpass: string;
+  idprofile?: number;
+};
+
+export type ProfileType = {
+  idprofile: number;
+  name: string;
+  description: string;
+  status: number;
 };
 
 export type ViewType =
