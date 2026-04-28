@@ -537,6 +537,7 @@ export declare const languages: {
         newMailAccount: string;
         newOrder: string;
         newProduct: string;
+        newProfile: string;
         newPurchaseInvoice: string;
         newPurchaseOrder: string;
         newQuestionnaire: string;
@@ -1610,6 +1611,7 @@ export declare const languages: {
         newMailAccount: string;
         newOrder: string;
         newProduct: string;
+        newProfile: string;
         newPurchaseInvoice: string;
         newPurchaseOrder: string;
         newQuestionnaire: string;
@@ -2683,6 +2685,7 @@ export declare const languages: {
         newMailAccount: string;
         newOrder: string;
         newProduct: string;
+        newProfile: string;
         newPurchaseInvoice: string;
         newPurchaseOrder: string;
         newQuestionnaire: string;
