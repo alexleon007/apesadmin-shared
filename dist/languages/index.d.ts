@@ -1029,6 +1029,7 @@ export declare const languages: {
         toastIncorrectCode: string;
         toastInsufficientFunds: string;
         toastInsufficientStockMessage: string;
+        toastInternalServerError: string;
         toastInvalidAmount: string;
         toastInvalidFile: string;
         toastInvalidNumber: string;
@@ -2103,6 +2104,7 @@ export declare const languages: {
         toastIncorrectCode: string;
         toastInsufficientFunds: string;
         toastInsufficientStockMessage: string;
+        toastInternalServerError: string;
         toastInvalidAmount: string;
         toastInvalidFile: string;
         toastInvalidNumber: string;
@@ -3177,6 +3179,7 @@ export declare const languages: {
         toastIncorrectCode: string;
         toastInsufficientFunds: string;
         toastInsufficientStockMessage: string;
+        toastInternalServerError: string;
         toastInvalidAmount: string;
         toastInvalidFile: string;
         toastInvalidNumber: string;

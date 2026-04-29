@@ -1025,6 +1025,7 @@
     "toastIncorrectCode": "Código incorrecto",
     "toastInsufficientFunds": "Los fondos no son suficientes",
     "toastInsufficientStockMessage": "Stock insuficiente",
+    "toastInternalServerError": "Ocurrió un error de nuestro lado. Por favor intenta de nuevo más tarde.",
     "toastInvalidAmount": "Ingresa un monto válido",
     "toastInvalidFile": "Archivo no válido",
     "toastInvalidNumber": "Ingresa un número válido",

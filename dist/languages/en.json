@@ -1025,6 +1025,7 @@
     "toastIncorrectCode": "Incorrect code",
     "toastInsufficientFunds": "Insufficient funds",
     "toastInsufficientStockMessage": "Insufficient stock",
+    "toastInternalServerError": "An error occurred on our side. Please try again later.",
     "toastInvalidAmount": "Enter a valid amount",
     "toastInvalidFile": "Invalid file",
     "toastInvalidNumber": "Enter a valid number",

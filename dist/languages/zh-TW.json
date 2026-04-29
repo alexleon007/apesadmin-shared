@@ -1025,6 +1025,7 @@
     "toastIncorrectCode": "代碼不正確",
     "toastInsufficientFunds": "資金不足",
     "toastInsufficientStockMessage": "庫存不足",
+    "toastInternalServerError": "我們端發生錯誤。請稍後再試。",
     "toastInvalidAmount": "請輸入有效金額",
     "toastInvalidFile": "無效檔案",
     "toastInvalidNumber": "請輸入有效數字",
