@@ -41,6 +41,7 @@ export declare const languages: {
         amazonSetupDescription: string;
         amazonSetupTitle: string;
         amount: string;
+        amountToApply: string;
         and: string;
         apply: string;
         applyPayment: string;
@@ -80,6 +81,7 @@ export declare const languages: {
         billHistory: string;
         blindCashClosing: string;
         board: string;
+        bonification: string;
         brand: string;
         break: string;
         budget: string;
@@ -219,6 +221,7 @@ export declare const languages: {
         currency: string;
         currencyPlaceholder: string;
         customer: string;
+        customerDocuments: string;
         customerNotes: string;
         customerNotesPlaceholder: string;
         customers: string;
@@ -309,6 +312,7 @@ export declare const languages: {
         event: string;
         eventDate: string;
         eventQuery: string;
+        evidence: string;
         excelProdColumnA: string;
         excelProdColumnB: string;
         excelProdColumnC: string;
@@ -367,6 +371,7 @@ export declare const languages: {
         finalCash: string;
         finalize: string;
         finalUser: string;
+        financialResolution: string;
         finishBreak: string;
         fiscalDataTab: string;
         fiscalInformation: string;
@@ -502,6 +507,7 @@ export declare const languages: {
         message: string;
         messagePlaceholder: string;
         minStock: string;
+        modality: string;
         modalUploadTitle: string;
         model: string;
         modify: string;
@@ -518,6 +524,10 @@ export declare const languages: {
         name: string;
         nameSearch: string;
         navBar: string;
+        ncOption01: string;
+        ncOption03: string;
+        ncOption04: string;
+        ncOption07: string;
         new: string;
         newAccount: string;
         newAuraConversation: string;
@@ -573,6 +583,7 @@ export declare const languages: {
         noPromotions: string;
         noQuestionsAdded: string;
         noQuotations: string;
+        noRefund: string;
         noRecords: string;
         noRepeat: string;
         noResults: string;
@@ -585,6 +596,7 @@ export declare const languages: {
         noTitle: string;
         noTraysRegistered: string;
         notRegistered: string;
+        notStamped: string;
         noUserLinked: string;
         noUsers: string;
         noUsersToShow: string;
@@ -722,6 +734,7 @@ export declare const languages: {
         purchasesExpenses: string;
         quantity: string;
         quantityPlaceholder: string;
+        quantityToReturn: string;
         query: string;
         questionnaire: string;
         questionnaireControl: string;
@@ -743,6 +756,7 @@ export declare const languages: {
         recordAudio: string;
         records: string;
         reference: string;
+        refund: string;
         refresh: string;
         refreshToken: string;
         refreshTokenTooltip: string;
@@ -752,6 +766,8 @@ export declare const languages: {
         registerEntry: string;
         registerMovement: string;
         registerWebhooks: string;
+        relatedDocuments: string;
+        relationType: string;
         reminder: string;
         remindersEvents: string;
         remove: string;
@@ -775,6 +791,7 @@ export declare const languages: {
         results: string;
         retreated: string;
         return: string;
+        returnItems: string;
         returnOf: string;
         rfc: string;
         role: string;
@@ -838,6 +855,7 @@ export declare const languages: {
         spent: string;
         stageCreated: string;
         stageUpdated: string;
+        stamped: string;
         start: string;
         startDate: string;
         startTime: string;
@@ -1116,6 +1134,7 @@ export declare const languages: {
         amazonSetupDescription: string;
         amazonSetupTitle: string;
         amount: string;
+        amountToApply: string;
         and: string;
         apply: string;
         applyPayment: string;
@@ -1155,6 +1174,7 @@ export declare const languages: {
         billHistory: string;
         blindCashClosing: string;
         board: string;
+        bonification: string;
         brand: string;
         break: string;
         budget: string;
@@ -1294,6 +1314,7 @@ export declare const languages: {
         currency: string;
         currencyPlaceholder: string;
         customer: string;
+        customerDocuments: string;
         customerNotes: string;
         customerNotesPlaceholder: string;
         customers: string;
@@ -1384,6 +1405,7 @@ export declare const languages: {
         event: string;
         eventDate: string;
         eventQuery: string;
+        evidence: string;
         excelProdColumnA: string;
         excelProdColumnB: string;
         excelProdColumnC: string;
@@ -1442,6 +1464,7 @@ export declare const languages: {
         finalCash: string;
         finalize: string;
         finalUser: string;
+        financialResolution: string;
         finishBreak: string;
         fiscalDataTab: string;
         fiscalInformation: string;
@@ -1577,6 +1600,7 @@ export declare const languages: {
         message: string;
         messagePlaceholder: string;
         minStock: string;
+        modality: string;
         modalUploadTitle: string;
         model: string;
         modify: string;
@@ -1593,6 +1617,10 @@ export declare const languages: {
         name: string;
         nameSearch: string;
         navBar: string;
+        ncOption01: string;
+        ncOption03: string;
+        ncOption04: string;
+        ncOption07: string;
         new: string;
         newAccount: string;
         newAuraConversation: string;
@@ -1648,6 +1676,7 @@ export declare const languages: {
         noPromotions: string;
         noQuestionsAdded: string;
         noQuotations: string;
+        noRefund: string;
         noRecords: string;
         noRepeat: string;
         noResults: string;
@@ -1660,6 +1689,7 @@ export declare const languages: {
         noTitle: string;
         noTraysRegistered: string;
         notRegistered: string;
+        notStamped: string;
         noUserLinked: string;
         noUsers: string;
         noUsersToShow: string;
@@ -1797,6 +1827,7 @@ export declare const languages: {
         purchasesExpenses: string;
         quantity: string;
         quantityPlaceholder: string;
+        quantityToReturn: string;
         query: string;
         questionnaire: string;
         questionnaireControl: string;
@@ -1818,6 +1849,7 @@ export declare const languages: {
         recordAudio: string;
         records: string;
         reference: string;
+        refund: string;
         refresh: string;
         refreshToken: string;
         refreshTokenTooltip: string;
@@ -1827,6 +1859,8 @@ export declare const languages: {
         registerEntry: string;
         registerMovement: string;
         registerWebhooks: string;
+        relatedDocuments: string;
+        relationType: string;
         reminder: string;
         remindersEvents: string;
         remove: string;
@@ -1850,6 +1884,7 @@ export declare const languages: {
         results: string;
         retreated: string;
         return: string;
+        returnItems: string;
         returnOf: string;
         rfc: string;
         role: string;
@@ -1913,6 +1948,7 @@ export declare const languages: {
         spent: string;
         stageCreated: string;
         stageUpdated: string;
+        stamped: string;
         start: string;
         startDate: string;
         startTime: string;
@@ -2191,6 +2227,7 @@ export declare const languages: {
         amazonSetupDescription: string;
         amazonSetupTitle: string;
         amount: string;
+        amountToApply: string;
         and: string;
         apply: string;
         applyPayment: string;
@@ -2230,6 +2267,7 @@ export declare const languages: {
         billHistory: string;
         blindCashClosing: string;
         board: string;
+        bonification: string;
         brand: string;
         break: string;
         budget: string;
@@ -2369,6 +2407,7 @@ export declare const languages: {
         currency: string;
         currencyPlaceholder: string;
         customer: string;
+        customerDocuments: string;
         customerNotes: string;
         customerNotesPlaceholder: string;
         customers: string;
@@ -2459,6 +2498,7 @@ export declare const languages: {
         event: string;
         eventDate: string;
         eventQuery: string;
+        evidence: string;
         excelProdColumnA: string;
         excelProdColumnB: string;
         excelProdColumnC: string;
@@ -2517,6 +2557,7 @@ export declare const languages: {
         finalCash: string;
         finalize: string;
         finalUser: string;
+        financialResolution: string;
         finishBreak: string;
         fiscalDataTab: string;
         fiscalInformation: string;
@@ -2652,6 +2693,7 @@ export declare const languages: {
         message: string;
         messagePlaceholder: string;
         minStock: string;
+        modality: string;
         modalUploadTitle: string;
         model: string;
         modify: string;
@@ -2668,6 +2710,10 @@ export declare const languages: {
         name: string;
         nameSearch: string;
         navBar: string;
+        ncOption01: string;
+        ncOption03: string;
+        ncOption04: string;
+        ncOption07: string;
         new: string;
         newAccount: string;
         newAuraConversation: string;
@@ -2723,6 +2769,7 @@ export declare const languages: {
         noPromotions: string;
         noQuestionsAdded: string;
         noQuotations: string;
+        noRefund: string;
         noRecords: string;
         noRepeat: string;
         noResults: string;
@@ -2735,6 +2782,7 @@ export declare const languages: {
         noTitle: string;
         noTraysRegistered: string;
         notRegistered: string;
+        notStamped: string;
         noUserLinked: string;
         noUsers: string;
         noUsersToShow: string;
@@ -2872,6 +2920,7 @@ export declare const languages: {
         purchasesExpenses: string;
         quantity: string;
         quantityPlaceholder: string;
+        quantityToReturn: string;
         query: string;
         questionnaire: string;
         questionnaireControl: string;
@@ -2893,6 +2942,7 @@ export declare const languages: {
         recordAudio: string;
         records: string;
         reference: string;
+        refund: string;
         refresh: string;
         refreshToken: string;
         refreshTokenTooltip: string;
@@ -2902,6 +2952,8 @@ export declare const languages: {
         registerEntry: string;
         registerMovement: string;
         registerWebhooks: string;
+        relatedDocuments: string;
+        relationType: string;
         reminder: string;
         remindersEvents: string;
         remove: string;
@@ -2925,6 +2977,7 @@ export declare const languages: {
         results: string;
         retreated: string;
         return: string;
+        returnItems: string;
         returnOf: string;
         rfc: string;
         role: string;
@@ -2988,6 +3041,7 @@ export declare const languages: {
         spent: string;
         stageCreated: string;
         stageUpdated: string;
+        stamped: string;
         start: string;
         startDate: string;
         startTime: string;
