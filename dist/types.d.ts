@@ -2226,6 +2226,32 @@ export type FieldGroup = {
     group: string;
     fields: FieldDef[];
 };
+export type NCFormType = "dev" | "bon" | "ant";
+export type NormalizedDocType = {
+    id: number;
+    docnumber: string;
+    currency: string;
+    docdate: string;
+    duedate: string;
+    total: number;
+    totaldue: number;
+    partnerid: number;
+    cmpid: number;
+    status: number;
+};
+export type ReturnItemType = {
+    iddoc: number;
+    docnumber: string;
+    iddetail: number;
+    idprod: number;
+    prodcode: string;
+    prodname: string;
+    produnitname: string;
+    originalQty: number;
+    price: number;
+    taxes: any[];
+    returnQty: string;
+};
 export type DetailColumnDef = {
     key: string;
     title: string;
