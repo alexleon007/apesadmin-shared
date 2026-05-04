@@ -2756,3 +2756,18 @@ export type OpticutterCutResultType = {
   requiredStocks: any;
   layouts: OpticutterLayoutResultType[];
 };
+
+export type RecurrenceType = {
+  idrec: number;
+  doctype: string;
+  iddoc: number;
+  frequency: string;
+  startdate: string;
+  enddate: string | null;
+  nextrundate: string | null;
+  lastrundate: string | null;
+  createdat: string;
+  status: number;
+  iduser: number;
+  username?: string;
+};
