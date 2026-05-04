@@ -50,6 +50,39 @@ export const FILETYPE_IMAGE = "image";
 export const FILETYPE_OTHER = "other";
 
 export const TYPE_ORDERS = "orders";
+export const TYPE_RECURRENCES = "recurrences";
+
+export const RECURRENCE_DAILY = "daily";
+export const RECURRENCE_WEEKLY = "weekly";
+export const RECURRENCE_BIWEEKLY = "biweekly";
+export const RECURRENCE_MONTHLY = "monthly";
+export const RECURRENCE_BIMONTHLY = "bimonthly";
+export const RECURRENCE_QUARTERLY = "quarterly";
+export const RECURRENCE_SEMIANNUAL = "semiannual";
+export const RECURRENCE_ANNUAL = "annual";
+
+export const RECURRENCE_FREQUENCY_OPTIONS: {
+  value: string;
+  label: string;
+}[] = [
+  { value: RECURRENCE_ANNUAL, label: "Anual" },
+  { value: RECURRENCE_SEMIANNUAL, label: "Semestral" },
+  { value: RECURRENCE_QUARTERLY, label: "Trimestral" },
+  { value: RECURRENCE_BIMONTHLY, label: "Bimestral" },
+  { value: RECURRENCE_MONTHLY, label: "Mensual" },
+  { value: RECURRENCE_BIWEEKLY, label: "Quincenal" },
+  { value: RECURRENCE_WEEKLY, label: "Semanal" },
+  { value: RECURRENCE_DAILY, label: "Diario" },
+];
+
+export const RECURRENCE_FREQUENCY_LABELS: Record<string, string> =
+  RECURRENCE_FREQUENCY_OPTIONS.reduce(
+    (acc, opt) => {
+      acc[opt.value] = opt.label;
+      return acc;
+    },
+    {} as Record<string, string>,
+  );
 export const TYPE_PROJECTS = "projects";
 export const TYPE_POS = "pos";
 export const TYPE_PO = "po";
