@@ -66,12 +66,6 @@ export const RECURRENCE_FREQUENCY_LABELS = RECURRENCE_FREQUENCY_OPTIONS.reduce((
     acc[opt.value] = opt.label;
     return acc;
 }, {});
-export const ORDER_TYPE_COT = 1;
-export const ORDER_TYPE_PED = 2;
-export const ORDER_TYPE_FAC = 3;
-export const ORDER_TYPE_TICK = 4;
-export const ORDER_TYPE_BON = 5;
-export const ORDER_TYPE_DEV = 6;
 export const ORDER_TYPE_LABELS = {
     1: "Cotización",
     2: "Pedido",

@@ -2313,5 +2313,20 @@ export type RecurrenceType = {
     username?: string;
     targettype?: number;
 };
+export type OrderRecurrenceType = RecurrenceType & {
+    idor: number;
+    ordocnumber2: string;
+    idcmer: number;
+    cmername: string;
+    cmercode: string;
+    idcmp: number;
+    cmpname: string;
+    idwh: number;
+    whname: string;
+    orcurrency: string;
+    orexchangerate: string;
+    ortotal: string;
+    targettype?: number;
+};
 export {};
 //# sourceMappingURL=types.d.ts.map

@@ -57,12 +57,6 @@ export declare const RECURRENCE_FREQUENCY_OPTIONS: {
     label: string;
 }[];
 export declare const RECURRENCE_FREQUENCY_LABELS: Record<string, string>;
-export declare const ORDER_TYPE_COT = 1;
-export declare const ORDER_TYPE_PED = 2;
-export declare const ORDER_TYPE_FAC = 3;
-export declare const ORDER_TYPE_TICK = 4;
-export declare const ORDER_TYPE_BON = 5;
-export declare const ORDER_TYPE_DEV = 6;
 export declare const ORDER_TYPE_LABELS: Record<number, string>;
 export declare const TYPE_PROJECTS = "projects";
 export declare const TYPE_POS = "pos";
