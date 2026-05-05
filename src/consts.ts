@@ -83,6 +83,16 @@ export const RECURRENCE_FREQUENCY_LABELS: Record<string, string> =
     },
     {} as Record<string, string>,
   );
+
+export const ORDER_TYPE_LABELS: Record<number, string> = {
+  1: "Cotización",
+  2: "Pedido",
+  3: "Factura",
+  4: "Ticket",
+  5: "Bonificación",
+  6: "Devolución",
+};
+
 export const TYPE_PROJECTS = "projects";
 export const TYPE_POS = "pos";
 export const TYPE_PO = "po";
