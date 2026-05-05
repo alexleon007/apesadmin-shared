@@ -2770,4 +2770,5 @@ export type RecurrenceType = {
   status: number;
   iduser: number;
   username?: string;
+  targettype?: number;
 };
