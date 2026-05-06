@@ -1935,6 +1935,7 @@ export type BiblyExamType = {
   description: string;
   thumbnail: string;
   startdate: string | null;
+  isactive: number;
   enddate: string | null;
   status: number;
   createdat: string;
