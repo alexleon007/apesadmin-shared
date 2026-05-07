@@ -1285,6 +1285,14 @@ export type ProductType = {
     maxqty: number;
     minqty: number;
 };
+export type ProductMediaType = {
+    idmedia: number;
+    name: string;
+    ext: string;
+    size: number;
+    createdat: string;
+    url: string;
+};
 export type ProductVariableType = {
     variableid: number;
     variablename: string;
