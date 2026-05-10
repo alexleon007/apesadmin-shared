@@ -1382,6 +1382,7 @@ export type ProductType = {
   produnisat: string;
   unitPrices: {
     idunit: number;
+    unitName: string;
     pricelist: number;
     pricelistname: string;
     price: number;
