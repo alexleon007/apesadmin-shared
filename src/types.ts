@@ -1380,6 +1380,12 @@ export type ProductType = {
   specsheeturl: string;
   prodcvesat: string;
   produnisat: string;
+  unitPrices: {
+    idunit: number;
+    pricelist: number;
+    pricelistname: string;
+    price: number;
+  }[];
   prodfields: ConceptFieldsValuesType[];
   taxvalues: TaxValueType[];
   inventoryTracked: boolean;
