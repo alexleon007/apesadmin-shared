@@ -1387,6 +1387,12 @@ export type ProductType = {
     pricelistname: string;
     price: number;
   }[];
+  units: {
+    idunit: number;
+    unitname: string;
+    factor: number;
+    isbase: boolean;
+  }[];
   prodfields: ConceptFieldsValuesType[];
   taxvalues: TaxValueType[];
   inventoryTracked: boolean;
