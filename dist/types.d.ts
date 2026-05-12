@@ -1278,9 +1278,23 @@ export type ProductType = {
     specsheeturl: string;
     prodcvesat: string;
     produnisat: string;
+    unitPrices: {
+        idunit: number;
+        unitname: string;
+        pricelist: number;
+        pricelistname: string;
+        price: number;
+    }[];
+    units: {
+        idunit: number;
+        unitname: string;
+        factor: number;
+        isbase: boolean;
+    }[];
     prodfields: ConceptFieldsValuesType[];
     taxvalues: TaxValueType[];
     inventoryTracked: boolean;
+    pricePerUnit: boolean;
     prodbarcodes: BarcodeType[];
     maxqty: number;
     minqty: number;
