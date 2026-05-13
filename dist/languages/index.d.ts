@@ -192,7 +192,9 @@ export declare const languages: {
         correcto: string;
         correctoQuestion: string;
         correctQuestions: string;
+        averageCost: string;
         cost: string;
+        replacementCost: string;
         countedQuantity: string;
         country: string;
         create: string;
@@ -1286,7 +1288,9 @@ export declare const languages: {
         correcto: string;
         correctoQuestion: string;
         correctQuestions: string;
+        averageCost: string;
         cost: string;
+        replacementCost: string;
         countedQuantity: string;
         country: string;
         create: string;
@@ -2380,7 +2384,9 @@ export declare const languages: {
         correcto: string;
         correctoQuestion: string;
         correctQuestions: string;
+        averageCost: string;
         cost: string;
+        replacementCost: string;
         countedQuantity: string;
         country: string;
         create: string;
