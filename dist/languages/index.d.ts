@@ -773,6 +773,7 @@ export declare const languages: {
         remove: string;
         removeColor: string;
         removeLine: string;
+        rename: string;
         renewAuthorization: string;
         reorder: string;
         repeat: string;
@@ -1866,6 +1867,7 @@ export declare const languages: {
         remove: string;
         removeColor: string;
         removeLine: string;
+        rename: string;
         renewAuthorization: string;
         reorder: string;
         repeat: string;
@@ -2959,6 +2961,7 @@ export declare const languages: {
         remove: string;
         removeColor: string;
         removeLine: string;
+        rename: string;
         renewAuthorization: string;
         reorder: string;
         repeat: string;
