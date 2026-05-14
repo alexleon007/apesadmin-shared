@@ -1794,6 +1794,7 @@ export type UserType = {
   mailauth: string;
   mailpass: string;
   idprofile?: number;
+  idparty?: number;
 };
 
 export type ProfileType = {
