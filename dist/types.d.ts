@@ -2048,6 +2048,18 @@ export type ImageElementType = BaseElementType & {
     height?: number;
     fit?: "contain" | "cover" | "scale-down";
 };
+export type ImageGridElementType = {
+    type: "image_grid";
+    x?: number;
+    y?: number;
+    data: string;
+    columns?: number;
+    cellWidth?: number;
+    cellHeight?: number;
+    gap?: number;
+    visibleIf?: string;
+    showOn?: "all" | "first" | "last";
+};
 export type TextElementType = BaseElementType & TextStyleType & {
     type: "text";
     text: string;
