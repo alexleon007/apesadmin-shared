@@ -1633,6 +1633,8 @@ export type SystemSettingsType = {
   reserve_inventory_on_order: boolean;
   allow_orders_without_stock: boolean;
   inventory_deduction_on_invoice: boolean;
+  assign_agents_on_order: boolean;
+  assign_operators_on_order: boolean;
   pos_warehouse_mode: string;
   pos_pricelist_mode: string;
   pos_blind_cash_count: boolean;
