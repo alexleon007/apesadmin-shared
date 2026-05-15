@@ -1092,6 +1092,8 @@ export type PartyType = {
     }[];
     partytags?: TagType[];
     partycreatedat?: string | null;
+    partylat?: string;
+    partylng?: string;
 };
 export type PayFormType = {
     idpf: number;
