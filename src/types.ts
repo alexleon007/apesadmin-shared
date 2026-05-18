@@ -1893,6 +1893,7 @@ export type WorkItemsClasifType =
 
 export type WorkItemMemberType = {
   iduser: number;
+  idparty?: number;
   username?: string;
   name: string;
   profileimage?: string;
