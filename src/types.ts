@@ -1184,6 +1184,8 @@ export type PartyType = {
   }[];
   partytags?: TagType[];
   partycreatedat?: string | null;
+  partylat?: string;
+  partylng?: string;
 };
 
 export type PayFormType = {
@@ -1633,6 +1635,8 @@ export type SystemSettingsType = {
   reserve_inventory_on_order: boolean;
   allow_orders_without_stock: boolean;
   inventory_deduction_on_invoice: boolean;
+  assign_agents_on_order: boolean;
+  assign_operators_on_order: boolean;
   pos_warehouse_mode: string;
   pos_pricelist_mode: string;
   pos_blind_cash_count: boolean;
@@ -1794,6 +1798,7 @@ export type UserType = {
   mailauth: string;
   mailpass: string;
   idprofile?: number;
+  idparty?: number;
 };
 
 export type ProfileType = {
@@ -2285,6 +2290,19 @@ export type ImageElementType = BaseElementType & {
   width?: number;
   height?: number;
   fit?: "contain" | "cover" | "scale-down";
+};
+
+export type ImageGridElementType = {
+  type: "image_grid";
+  x?: number;
+  y?: number;
+  data: string;
+  columns?: number;
+  cellWidth?: number;
+  cellHeight?: number;
+  gap?: number;
+  visibleIf?: string;
+  showOn?: "all" | "first" | "last";
 };
 
 export type TextElementType = BaseElementType &

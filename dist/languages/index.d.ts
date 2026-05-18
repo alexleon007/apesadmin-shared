@@ -49,7 +49,9 @@ export declare const languages: {
         archive: string;
         arrival: string;
         assign: string;
+        assignAgentsOnOrder: string;
         assignedUsers: string;
+        assignOperatorsOnOrder: string;
         assignProvidersTo: string;
         attachments: string;
         attachPlaceholder: string;
@@ -1145,7 +1147,9 @@ export declare const languages: {
         archive: string;
         arrival: string;
         assign: string;
+        assignAgentsOnOrder: string;
         assignedUsers: string;
+        assignOperatorsOnOrder: string;
         assignProvidersTo: string;
         attachments: string;
         attachPlaceholder: string;
