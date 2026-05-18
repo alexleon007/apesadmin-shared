@@ -1761,6 +1761,7 @@ export type WorkflowType = {
 export type WorkItemsClasifType = "project" | "sprint" | "task" | "ticket" | "block" | string;
 export type WorkItemMemberType = {
     iduser: number;
+    idparty?: number;
     username?: string;
     name: string;
     profileimage?: string;
