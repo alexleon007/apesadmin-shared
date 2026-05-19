@@ -772,6 +772,7 @@ export declare const languages: {
         registerEntry: string;
         registerMovement: string;
         registerWebhooks: string;
+        registeredSeries: string;
         relatedDocuments: string;
         relationType: string;
         reminder: string;
@@ -1873,6 +1874,7 @@ export declare const languages: {
         registerEntry: string;
         registerMovement: string;
         registerWebhooks: string;
+        registeredSeries: string;
         relatedDocuments: string;
         relationType: string;
         reminder: string;
@@ -2970,6 +2972,7 @@ export declare const languages: {
         registerEntry: string;
         registerMovement: string;
         registerWebhooks: string;
+        registeredSeries: string;
         relatedDocuments: string;
         relationType: string;
         reminder: string;

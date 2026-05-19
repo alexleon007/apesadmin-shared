@@ -764,6 +764,7 @@
     "registerEntry": "註冊條目",
     "registerMovement": "記錄異動",
     "registerWebhooks": "註冊 Webhooks",
+    "registeredSeries": "已註冊的系列",
     "relatedDocuments": "相關文件",
     "relationType": "關係類型",
     "reminder": "提醒",
