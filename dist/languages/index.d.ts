@@ -81,6 +81,7 @@ export declare const languages: {
         batch: string;
         beneficiary: string;
         billHistory: string;
+        billingSeries: string;
         blindCashClosing: string;
         board: string;
         bonification: string;
@@ -235,6 +236,7 @@ export declare const languages: {
         dashboardAIInstructions: string;
         dataFiles: string;
         date: string;
+        datePrefix: string;
         date1: string;
         date2: string;
         day: string;
@@ -864,6 +866,7 @@ export declare const languages: {
         start: string;
         startDate: string;
         startTime: string;
+        startingFolio: string;
         state: string;
         statistics: string;
         status: string;
@@ -1179,6 +1182,7 @@ export declare const languages: {
         batch: string;
         beneficiary: string;
         billHistory: string;
+        billingSeries: string;
         blindCashClosing: string;
         board: string;
         bonification: string;
@@ -1333,6 +1337,7 @@ export declare const languages: {
         dashboardAIInstructions: string;
         dataFiles: string;
         date: string;
+        datePrefix: string;
         date1: string;
         date2: string;
         day: string;
@@ -1962,6 +1967,7 @@ export declare const languages: {
         start: string;
         startDate: string;
         startTime: string;
+        startingFolio: string;
         state: string;
         statistics: string;
         status: string;
