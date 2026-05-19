@@ -2831,3 +2831,13 @@ export type OrderRecurrenceType = RecurrenceType & {
   ortotal: string;
   targettype?: number;
 };
+
+export type BillingSerieType = {
+  idbillserie: number;
+  code: string;
+  type: string;
+  usedateprefix: number;
+  startingfolio: string;
+  iduser: number;
+  createdat: string;
+};
