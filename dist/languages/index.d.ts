@@ -111,6 +111,9 @@ export declare const languages: {
         change: string;
         changePassword: string;
         changeTheme: string;
+        connectionConnected: string;
+        connectionServerDown: string;
+        connectionOffline: string;
         changeView: string;
         charts: string;
         chat: string;
@@ -1215,6 +1218,9 @@ export declare const languages: {
         change: string;
         changePassword: string;
         changeTheme: string;
+        connectionConnected: string;
+        connectionServerDown: string;
+        connectionOffline: string;
         changeView: string;
         charts: string;
         chat: string;
@@ -2316,6 +2322,9 @@ export declare const languages: {
         change: string;
         changePassword: string;
         changeTheme: string;
+        connectionConnected: string;
+        connectionServerDown: string;
+        connectionOffline: string;
         changeView: string;
         charts: string;
         chat: string;
