@@ -1012,6 +1012,7 @@ export type OrderType = {
     oridped: number;
     oridcfdi: number;
     orxmlurl: string;
+    orstatusinbox?: string;
     ordetail: OrderDetailType[];
     orfields: ConceptFieldsValuesType[];
     ormovements?: OrderMovementType[];
