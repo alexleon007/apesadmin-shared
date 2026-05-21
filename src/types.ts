@@ -565,6 +565,8 @@ export type ConceptType = {
   fields: ConceptFieldsType[];
 };
 
+export type ConnectionStatusType = "connected" | "server-down" | "offline";
+
 export type ConvertionFactorType = {
   idfactor: number;
   factorprod: number;
