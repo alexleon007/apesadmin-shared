@@ -416,6 +416,7 @@ export declare const languages: {
         hide: string;
         hideAnalytics: string;
         hideNotes: string;
+        hideOptions: string;
         high: string;
         historyUnavailable: string;
         home: string;
@@ -858,6 +859,7 @@ export declare const languages: {
         showAnalytics: string;
         showCalendar: string;
         showNotes: string;
+        showOptions: string;
         singlePurchase: string;
         sort: string;
         spent: string;
@@ -1518,6 +1520,7 @@ export declare const languages: {
         hide: string;
         hideAnalytics: string;
         hideNotes: string;
+        hideOptions: string;
         high: string;
         historyUnavailable: string;
         home: string;
@@ -1960,6 +1963,7 @@ export declare const languages: {
         showAnalytics: string;
         showCalendar: string;
         showNotes: string;
+        showOptions: string;
         singlePurchase: string;
         sort: string;
         spent: string;
@@ -2616,6 +2620,7 @@ export declare const languages: {
         hide: string;
         hideAnalytics: string;
         hideNotes: string;
+        hideOptions: string;
         high: string;
         historyUnavailable: string;
         home: string;
@@ -3058,6 +3063,7 @@ export declare const languages: {
         showAnalytics: string;
         showCalendar: string;
         showNotes: string;
+        showOptions: string;
         singlePurchase: string;
         sort: string;
         spent: string;
