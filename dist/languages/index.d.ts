@@ -10,6 +10,7 @@ export declare const languages: {
         accountNumber: string;
         accountsPayable: string;
         accountsReceivable: string;
+        accountStatement: string;
         actions: string;
         activate: string;
         active: string;
@@ -717,6 +718,7 @@ export declare const languages: {
         processing: string;
         product: string;
         products: string;
+        productCatalog: string;
         productsManagement: string;
         productTypeFormat: string;
         profilePhoto: string;
@@ -1117,6 +1119,7 @@ export declare const languages: {
         accountNumber: string;
         accountsPayable: string;
         accountsReceivable: string;
+        accountStatement: string;
         actions: string;
         activate: string;
         active: string;
@@ -1824,6 +1827,7 @@ export declare const languages: {
         processing: string;
         product: string;
         products: string;
+        productCatalog: string;
         productsManagement: string;
         productTypeFormat: string;
         profilePhoto: string;
@@ -2224,6 +2228,7 @@ export declare const languages: {
         accountNumber: string;
         accountsPayable: string;
         accountsReceivable: string;
+        accountStatement: string;
         actions: string;
         activate: string;
         active: string;
@@ -2927,6 +2932,7 @@ export declare const languages: {
         processing: string;
         product: string;
         products: string;
+        productCatalog: string;
         productsManagement: string;
         productTypeFormat: string;
         profilePhoto: string;
