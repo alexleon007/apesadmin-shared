@@ -1931,6 +1931,7 @@ export type WorkItemsType = {
   wimodule?: string;
   wimembers?: WorkItemMemberType[];
   wiimages?: string[];
+  wiimagemimes?: string[];
   wiloggedseconds?: number;
   wirunningat?: string | null;
   parentTitle?: string;
