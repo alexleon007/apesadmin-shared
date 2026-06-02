@@ -638,6 +638,15 @@ export type ExpenseType = {
     excreatedat: string;
     extaxes: TaxType[];
 };
+export type PosSessionCashType = {
+    idposcash: number;
+    idpos: number;
+    cashtype: string;
+    denomination: number;
+    quantity: number;
+    total: number;
+    date: string;
+};
 export type ExternalUrlsType = {
     ideurl: number;
     type: string;
