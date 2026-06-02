@@ -1183,6 +1183,7 @@ export type POSSessionType = {
     initialobs: string;
     finalcash: number;
     finalobs: string;
+    remainingcash: number;
     cashpayed: number;
     cashexpenses: number;
     cashdif: number;
