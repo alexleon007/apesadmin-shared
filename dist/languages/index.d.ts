@@ -112,6 +112,7 @@ export declare const languages: {
         change: string;
         changePassword: string;
         changeTheme: string;
+        connections: string;
         connectionConnected: string;
         connectionServerDown: string;
         connectionOffline: string;
@@ -443,6 +444,7 @@ export declare const languages: {
         incorrect: string;
         info: string;
         information: string;
+        integrated: string;
         initialCash: string;
         initialList: string;
         install: string;
@@ -1221,6 +1223,7 @@ export declare const languages: {
         change: string;
         changePassword: string;
         changeTheme: string;
+        connections: string;
         connectionConnected: string;
         connectionServerDown: string;
         connectionOffline: string;
@@ -1551,6 +1554,7 @@ export declare const languages: {
         income: string;
         incorrect: string;
         info: string;
+        integrated: string;
         information: string;
         initialCash: string;
         initialList: string;
@@ -2327,6 +2331,7 @@ export declare const languages: {
         change: string;
         changePassword: string;
         changeTheme: string;
+        connections: string;
         connectionConnected: string;
         connectionServerDown: string;
         connectionOffline: string;
@@ -2656,6 +2661,7 @@ export declare const languages: {
         income: string;
         incorrect: string;
         info: string;
+        integrated: string;
         information: string;
         initialCash: string;
         initialList: string;
