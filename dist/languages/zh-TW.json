@@ -1066,6 +1066,7 @@
     "toastInvalidValue": "無效值",
     "toastLoadError": "載入錯誤",
     "toastLoginLimitReached": "您已達到登入嘗試限制。請稍候再試一次。",
+    "toastLoginError": "使用者名稱或密碼不正確。",
     "toastMissingFields": "請填寫所有欄位",
     "toastNetworkError": "網路錯誤",
     "toastNoBills": "找不到帳單",

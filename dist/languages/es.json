@@ -1071,6 +1071,7 @@
     "toastInvalidValue": "Valor no válido",
     "toastLoadError": "Error al cargar",
     "toastLoginLimitReached": "Has alcanzado el límite de intentos de inicio de sesión. Por favor espera antes de intentar de nuevo.",
+    "toastLoginError": "Usuario o contraseña incorrectos.",
     "toastMissingFields": "Por favor complete todos los campos",
     "toastNetworkError": "Error de red",
     "toastNoBills": "No se encontraron facturas",

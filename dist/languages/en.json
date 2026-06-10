@@ -1071,6 +1071,7 @@
     "toastInvalidValue": "Invalid value",
     "toastLoadError": "Error loading",
     "toastLoginLimitReached": "You have reached the login attempt limit. Please wait before trying again.",
+    "toastLoginError": "Incorrect username or password.",
     "toastMissingFields": "Please complete all fields",
     "toastNetworkError": "Network error",
     "toastNoBills": "No bills found",

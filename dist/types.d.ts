@@ -2160,6 +2160,9 @@ export type TableColumnType = {
     width?: number;
     align?: "left" | "center" | "right";
     format?: "number" | "currency" | "date" | string;
+    wrap?: boolean;
+    headerFontSize?: number;
+    fontSize?: number;
 };
 type Base = {
     _id: string;

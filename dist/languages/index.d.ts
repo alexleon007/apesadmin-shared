@@ -1075,6 +1075,7 @@ export declare const languages: {
         toastInvalidValue: string;
         toastLoadError: string;
         toastLoginLimitReached: string;
+        toastLoginError: string;
         toastMissingFields: string;
         toastNetworkError: string;
         toastNoBills: string;
@@ -2188,6 +2189,7 @@ export declare const languages: {
         toastInvalidValue: string;
         toastLoadError: string;
         toastLoginLimitReached: string;
+        toastLoginError: string;
         toastMissingFields: string;
         toastNetworkError: string;
         toastNoBills: string;
@@ -3296,6 +3298,7 @@ export declare const languages: {
         toastInvalidValue: string;
         toastLoadError: string;
         toastLoginLimitReached: string;
+        toastLoginError: string;
         toastMissingFields: string;
         toastNetworkError: string;
         toastNoBills: string;
