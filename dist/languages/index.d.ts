@@ -600,6 +600,8 @@ export declare const languages: {
         noRecords: string;
         noRepeat: string;
         noResults: string;
+        noAddresses: string;
+        noContacts: string;
         noSales: string;
         noSection: string;
         noSubject: string;
@@ -1711,6 +1713,8 @@ export declare const languages: {
         noRecords: string;
         noRepeat: string;
         noResults: string;
+        noAddresses: string;
+        noContacts: string;
         noSales: string;
         noSection: string;
         noSubject: string;
@@ -2818,6 +2822,8 @@ export declare const languages: {
         noRecords: string;
         noRepeat: string;
         noResults: string;
+        noAddresses: string;
+        noContacts: string;
         noSales: string;
         noSection: string;
         noSubject: string;

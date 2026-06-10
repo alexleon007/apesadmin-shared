@@ -592,6 +592,8 @@
     "noRecords": "沒有記錄",
     "noRepeat": "不重複",
     "noResults": "找不到結果",
+    "noAddresses": "沒有已註冊的地址",
+    "noContacts": "沒有已註冊的聯絡人",
     "noSales": "沒有已註冊的銷售",
     "noSection": "無區段",
     "noSubject": "(無主旨)",

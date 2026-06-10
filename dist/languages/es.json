@@ -596,6 +596,8 @@
     "noRecords": "Sin registros",
     "noRepeat": "No repetir",
     "noResults": "No se encontraron resultados",
+    "noAddresses": "No hay direcciones registradas",
+    "noContacts": "No hay contactos registrados",
     "noSales": "No hay ventas registradas",
     "noSection": "Sin sección",
     "noSubject": "(sin asunto)",
