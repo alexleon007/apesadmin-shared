@@ -1697,6 +1697,7 @@ export type UserType = {
     mailsecure: string;
     mailauth: string;
     mailpass: string;
+    party_type?: number;
     idprofile?: number;
     idparty?: number;
 };

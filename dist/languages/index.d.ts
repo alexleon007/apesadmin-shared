@@ -368,6 +368,7 @@ export declare const languages: {
         expenses: string;
         expiration: string;
         export: string;
+        external: string;
         externalServices: string;
         extra: string;
         failedOperation: string;
@@ -457,6 +458,7 @@ export declare const languages: {
         installIOSStep2: string;
         installIOSStep3: string;
         installTitle: string;
+        internal: string;
         inventoriable: string;
         inventory: string;
         inventoryCorrection: string;
@@ -1482,6 +1484,7 @@ export declare const languages: {
         expenses: string;
         expiration: string;
         export: string;
+        external: string;
         externalServices: string;
         extra: string;
         failedOperation: string;
@@ -1571,6 +1574,7 @@ export declare const languages: {
         installIOSStep2: string;
         installIOSStep3: string;
         installTitle: string;
+        internal: string;
         inventoriable: string;
         inventory: string;
         inventoryCorrection: string;
@@ -2592,6 +2596,7 @@ export declare const languages: {
         expenses: string;
         expiration: string;
         export: string;
+        external: string;
         externalServices: string;
         extra: string;
         failedOperation: string;
@@ -2681,6 +2686,7 @@ export declare const languages: {
         installIOSStep2: string;
         installIOSStep3: string;
         installTitle: string;
+        internal: string;
         inventoriable: string;
         inventory: string;
         inventoryCorrection: string;
