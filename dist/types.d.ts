@@ -1813,8 +1813,9 @@ export type WorkItemsType = {
     wirunningat?: string | null;
     parentTitle?: string;
     parentType?: WorkItemsClasifType;
+    idchat?: number | null;
 };
-export type PublicServiceKeyType = "calendar" | "cfdi" | "ticket" | "account";
+export type PublicServiceKeyType = "calendar" | "cfdi" | "ticket" | "account" | "chat";
 export type PublicNavItemType = {
     key: PublicServiceKeyType;
     label: string;
@@ -1849,13 +1850,24 @@ export type PublicTicketType = {
     imagecount: number;
     createdat: string;
     updatedat: string;
+    unread?: number;
 };
 export type PublicTicketMessageType = {
     id: number;
     type: string;
     body: string | null;
     sender: string;
+    isInternal?: boolean;
     createdat: string;
+};
+export type PublicChatType = {
+    idchat: number;
+    idwi: number | null;
+    title: string;
+    status: number | null;
+    lastmessage: string | null;
+    lastmessageat: string | null;
+    unread?: number;
 };
 export type CalendarSlotEventType = {
     id: number;
