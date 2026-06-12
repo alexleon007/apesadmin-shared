@@ -1949,13 +1949,14 @@ export type WorkItemsType = {
   wirunningat?: string | null;
   parentTitle?: string;
   parentType?: WorkItemsClasifType;
+  idchat?: number | null;
 };
 
 // ─────────────────────────────────────────────────────────────────────────────
 // PUBLIC PORTAL (apesadmin-frontend/src/pages/Public*.tsx)
 // ─────────────────────────────────────────────────────────────────────────────
 
-export type PublicServiceKeyType = "calendar" | "cfdi" | "ticket" | "account";
+export type PublicServiceKeyType = "calendar" | "cfdi" | "ticket" | "account" | "chat";
 
 export type PublicNavItemType = {
   key: PublicServiceKeyType;
@@ -1996,6 +1997,7 @@ export type PublicTicketType = {
   imagecount: number;
   createdat: string;
   updatedat: string;
+  unread?: number;
 };
 
 // Mensaje de la conversación de un ticket (respuesta de /open/ticket-messages)
@@ -2004,7 +2006,19 @@ export type PublicTicketMessageType = {
   type: string;
   body: string | null;
   sender: string;
+  isInternal?: boolean;
   createdat: string;
+};
+
+// Chat del portal público (respuesta de /open/my-chats y /open/start-ticket-chat)
+export type PublicChatType = {
+  idchat: number;
+  idwi: number | null;
+  title: string;
+  status: number | null;
+  lastmessage: string | null;
+  lastmessageat: string | null;
+  unread?: number;
 };
 
 // Evento/slot de calendario. Unifica el EventType de
