@@ -1990,6 +1990,9 @@ export type PublicTicketType = {
   wisubclas: string;
   wipriority: number;
   widescription: string;
+  contactname: string | null;
+  contactemail: string | null;
+  contacttel: string | null;
   imagecount: number;
   createdat: string;
   updatedat: string;
