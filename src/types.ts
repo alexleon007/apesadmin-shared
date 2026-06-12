@@ -1952,6 +1952,79 @@ export type WorkItemsType = {
 };
 
 // ─────────────────────────────────────────────────────────────────────────────
+// PUBLIC PORTAL (apesadmin-frontend/src/pages/Public*.tsx)
+// ─────────────────────────────────────────────────────────────────────────────
+
+export type PublicServiceKeyType = "calendar" | "cfdi" | "ticket" | "account";
+
+export type PublicNavItemType = {
+  key: PublicServiceKeyType;
+  label: string;
+  icon: any;
+  color: string;
+  requiresAuth?: boolean;
+};
+
+export type PublicBackendDataType = {
+  url: string;
+  protocol: string;
+};
+
+// Perfil del usuario público (respuesta de /open/me y /open/update-profile)
+export type PublicUserInfoType = {
+  username: string;
+  mail: string;
+  name?: string;
+  tel?: string;
+};
+
+// Ticket en la lista del usuario público (respuesta de /open/my-tickets)
+export type PublicTicketType = {
+  wiid: number;
+  wicode: string;
+  widocnumber: number;
+  wititle: string;
+  wistatus: number;
+  statusname: string;
+  wiclas: string;
+  wisubclas: string;
+  wipriority: number;
+  widescription: string;
+  imagecount: number;
+  createdat: string;
+  updatedat: string;
+};
+
+// Mensaje de la conversación de un ticket (respuesta de /open/ticket-messages)
+export type PublicTicketMessageType = {
+  id: number;
+  type: string;
+  body: string | null;
+  sender: string;
+  createdat: string;
+};
+
+// Evento/slot de calendario. Unifica el EventType de
+// apesadmin-frontend/src/hooks/useCalendarEventModal.ts (re-exportado allí)
+// y el de PublicCalendarForm. Forma laxa para mantener compatibilidad en ambos.
+export type CalendarSlotEventType = {
+  id: number;
+  title: string;
+  start: Date | string | null;
+  end: Date | string | null;
+  allDay?: boolean;
+  resourceId?: number | null;
+  original?: any;
+  type?: string;
+};
+
+// Franja horaria disponible en PublicCalendarForm
+export type PublicTimeSlotType = {
+  time: string;
+  available: boolean;
+};
+
+// ─────────────────────────────────────────────────────────────────────────────
 // BIBLY (apesadmin-bibly/src/types/types.ts)
 // ─────────────────────────────────────────────────────────────────────────────
 

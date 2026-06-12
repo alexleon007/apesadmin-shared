@@ -1814,6 +1814,60 @@ export type WorkItemsType = {
     parentTitle?: string;
     parentType?: WorkItemsClasifType;
 };
+export type PublicServiceKeyType = "calendar" | "cfdi" | "ticket" | "account";
+export type PublicNavItemType = {
+    key: PublicServiceKeyType;
+    label: string;
+    icon: any;
+    color: string;
+    requiresAuth?: boolean;
+};
+export type PublicBackendDataType = {
+    url: string;
+    protocol: string;
+};
+export type PublicUserInfoType = {
+    username: string;
+    mail: string;
+    name?: string;
+    tel?: string;
+};
+export type PublicTicketType = {
+    wiid: number;
+    wicode: string;
+    widocnumber: number;
+    wititle: string;
+    wistatus: number;
+    statusname: string;
+    wiclas: string;
+    wisubclas: string;
+    wipriority: number;
+    widescription: string;
+    imagecount: number;
+    createdat: string;
+    updatedat: string;
+};
+export type PublicTicketMessageType = {
+    id: number;
+    type: string;
+    body: string | null;
+    sender: string;
+    createdat: string;
+};
+export type CalendarSlotEventType = {
+    id: number;
+    title: string;
+    start: Date | string | null;
+    end: Date | string | null;
+    allDay?: boolean;
+    resourceId?: number | null;
+    original?: any;
+    type?: string;
+};
+export type PublicTimeSlotType = {
+    time: string;
+    available: boolean;
+};
 export type BiblyExamOptionType = {
     text: string;
     correct: boolean;
