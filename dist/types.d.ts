@@ -1418,6 +1418,7 @@ export type POType = {
     podate: string;
     podocdate: string;
     poduedate: string;
+    podeliverydate?: string;
     idpos?: number;
     poconcept: string;
     popriority: string;
