@@ -3,9 +3,19 @@ export type Container = {
     id: string;
     name: string;
     image: string;
+    imageId?: string;
     status: string;
     state: string;
     created: number;
+    ports?: number[];
+    exitCode?: number | null;
+};
+export type ContainerStats = {
+    id: string;
+    name: string;
+    memUsage: number;
+    memLimit: number;
+    memPerc: string;
 };
 export type ContainersByServer = {
     serverId: string;
