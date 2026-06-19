@@ -9,6 +9,7 @@ export type Container = {
     created: number;
     ports?: number[];
     exitCode?: number | null;
+    tenantName?: string;
 };
 export type ContainerStats = {
     id: string;
@@ -16,6 +17,9 @@ export type ContainerStats = {
     memUsage: number;
     memLimit: number;
     memPerc: string;
+    cpuPerc?: string;
+    blockRead?: number;
+    blockWrite?: number;
 };
 export type ContainersByServer = {
     serverId: string;
