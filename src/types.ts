@@ -1434,6 +1434,19 @@ export type ProductType = {
   minqty: number;
 };
 
+export type UnitRow = {
+  idunit: number;
+  unitname: string;
+  satcode: string;
+  productCount: number;
+};
+
+export type ConflictProduct = {
+  idprod: number;
+  prodcode: string;
+  prodname: string;
+};
+
 export type ProductMediaType = {
   idmedia: number;
   name: string;
@@ -1972,7 +1985,12 @@ export type WorkItemsType = {
 // PUBLIC PORTAL (apesadmin-frontend/src/pages/Public*.tsx)
 // ─────────────────────────────────────────────────────────────────────────────
 
-export type PublicServiceKeyType = "calendar" | "cfdi" | "ticket" | "account" | "chat";
+export type PublicServiceKeyType =
+  | "calendar"
+  | "cfdi"
+  | "ticket"
+  | "account"
+  | "chat";
 
 export type PublicNavItemType = {
   key: PublicServiceKeyType;

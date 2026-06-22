@@ -1332,6 +1332,17 @@ export type ProductType = {
     maxqty: number;
     minqty: number;
 };
+export type UnitRow = {
+    idunit: number;
+    unitname: string;
+    satcode: string;
+    productCount: number;
+};
+export type ConflictProduct = {
+    idprod: number;
+    prodcode: string;
+    prodname: string;
+};
 export type ProductMediaType = {
     idmedia: number;
     name: string;
