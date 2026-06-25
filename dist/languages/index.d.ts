@@ -100,6 +100,7 @@ export declare const languages: {
         cancelEvent: string;
         cancelled: string;
         cancelledBy: string;
+        cancelPayment: string;
         cancelReason: string;
         cancelSubscription: string;
         card: string;
@@ -291,7 +292,9 @@ export declare const languages: {
         discount: string;
         dismissed: string;
         docDate: string;
+        docs: string;
         document: string;
+        documentCancelled: string;
         documentLowercase: string;
         download: string;
         dueDate: string;
@@ -764,6 +767,7 @@ export declare const languages: {
         promotionPercentage: string;
         promotions: string;
         prompt: string;
+        properties: string;
         prospect: string;
         protocol: string;
         provider: string;
@@ -792,6 +796,7 @@ export declare const languages: {
         quoteLegend: string;
         readNotifications: string;
         readStatus: string;
+        reason: string;
         receivedDate: string;
         recentMovements: string;
         record: string;
@@ -810,6 +815,7 @@ export declare const languages: {
         registerMovement: string;
         registerWebhooks: string;
         registeredSeries: string;
+        registrationDate: string;
         relatedDocuments: string;
         relationType: string;
         reminder: string;
@@ -981,6 +987,7 @@ export declare const languages: {
         to: string;
         today: string;
         toInvoice: string;
+        tools: string;
         toPay: string;
         topCustomers: string;
         toPlaceholder: string;
@@ -1046,6 +1053,7 @@ export declare const languages: {
         viewRoadmap: string;
         viewSupplier: string;
         viewTicket: string;
+        visualization: string;
         warehouse: string;
         warehouses: string;
         warning: string;
@@ -1250,6 +1258,7 @@ export declare const languages: {
         cancelEvent: string;
         cancelled: string;
         cancelledBy: string;
+        cancelPayment: string;
         cancelReason: string;
         cancelSubscription: string;
         card: string;
@@ -1441,7 +1450,9 @@ export declare const languages: {
         discount: string;
         dismissed: string;
         docDate: string;
+        docs: string;
         document: string;
+        documentCancelled: string;
         documentLowercase: string;
         download: string;
         dueDate: string;
@@ -1914,6 +1925,7 @@ export declare const languages: {
         promotionPercentage: string;
         promotions: string;
         prompt: string;
+        properties: string;
         prospect: string;
         protocol: string;
         provider: string;
@@ -1942,6 +1954,7 @@ export declare const languages: {
         quoteLegend: string;
         readNotifications: string;
         readStatus: string;
+        reason: string;
         receivedDate: string;
         recentMovements: string;
         record: string;
@@ -1960,6 +1973,7 @@ export declare const languages: {
         registerMovement: string;
         registerWebhooks: string;
         registeredSeries: string;
+        registrationDate: string;
         relatedDocuments: string;
         relationType: string;
         reminder: string;
@@ -2131,6 +2145,7 @@ export declare const languages: {
         to: string;
         today: string;
         toInvoice: string;
+        tools: string;
         toPay: string;
         topCustomers: string;
         toPlaceholder: string;
@@ -2196,6 +2211,7 @@ export declare const languages: {
         viewRoadmap: string;
         viewSupplier: string;
         viewTicket: string;
+        visualization: string;
         warehouse: string;
         warehouses: string;
         warning: string;
@@ -2397,6 +2413,7 @@ export declare const languages: {
         cancelEvent: string;
         cancelled: string;
         cancelledBy: string;
+        cancelPayment: string;
         cancelReason: string;
         cancelSubscription: string;
         card: string;
@@ -2587,7 +2604,9 @@ export declare const languages: {
         discount: string;
         dismissed: string;
         docDate: string;
+        docs: string;
         document: string;
+        documentCancelled: string;
         documentLowercase: string;
         download: string;
         dueDate: string;
@@ -3060,6 +3079,7 @@ export declare const languages: {
         promotionPercentage: string;
         promotions: string;
         prompt: string;
+        properties: string;
         prospect: string;
         protocol: string;
         provider: string;
@@ -3088,6 +3108,7 @@ export declare const languages: {
         quoteLegend: string;
         readNotifications: string;
         readStatus: string;
+        reason: string;
         receivedDate: string;
         recentMovements: string;
         record: string;
@@ -3106,6 +3127,7 @@ export declare const languages: {
         registerMovement: string;
         registerWebhooks: string;
         registeredSeries: string;
+        registrationDate: string;
         relatedDocuments: string;
         relationType: string;
         reminder: string;
@@ -3276,6 +3298,7 @@ export declare const languages: {
         to: string;
         today: string;
         toInvoice: string;
+        tools: string;
         toPay: string;
         topCustomers: string;
         toPlaceholder: string;
@@ -3341,6 +3364,7 @@ export declare const languages: {
         viewRoadmap: string;
         viewSupplier: string;
         viewTicket: string;
+        visualization: string;
         warehouse: string;
         warehouses: string;
         warning: string;
