@@ -122,6 +122,7 @@ export declare const languages: {
         changeView: string;
         charts: string;
         chat: string;
+        circle: string;
         city: string;
         clabe: string;
         class: string;
@@ -235,6 +236,7 @@ export declare const languages: {
         currenciesManagement: string;
         currency: string;
         currencyPlaceholder: string;
+        currentDate: string;
         customer: string;
         customerDocuments: string;
         customerNotes: string;
@@ -244,6 +246,7 @@ export declare const languages: {
         danger: string;
         dashboard: string;
         dashboardAIInstructions: string;
+        data: string;
         dataFiles: string;
         date: string;
         datePrefix: string;
@@ -263,6 +266,7 @@ export declare const languages: {
         deleteConnection: string;
         deleteCustomer: string;
         deletePromotion: string;
+        deleteSelectedElement: string;
         deleteTray: string;
         deleteTrayWarning: string;
         deleteUser: string;
@@ -309,6 +313,7 @@ export declare const languages: {
         editTheme: string;
         editUser: string;
         element: string;
+        elements: string;
         email: string;
         emailAddress: string;
         emailMessagePlaceholder: string;
@@ -443,6 +448,7 @@ export declare const languages: {
         icon: string;
         id: string;
         idle: string;
+        image: string;
         images: string;
         import: string;
         improvementSuggestion: string;
@@ -458,6 +464,7 @@ export declare const languages: {
         integrated: string;
         initialCash: string;
         initialList: string;
+        insert: string;
         install: string;
         installAndroidIntro: string;
         installBenefitBetter: string;
@@ -493,6 +500,7 @@ export declare const languages: {
         legend: string;
         libraries: string;
         libraryNotFound: string;
+        line: string;
         lineTotal: string;
         listening: string;
         loadFiles: string;
@@ -621,6 +629,7 @@ export declare const languages: {
         noContacts: string;
         noSales: string;
         noSection: string;
+        noSrc: string;
         noSubject: string;
         noTemplatesAvailable: string;
         notes: string;
@@ -668,6 +677,8 @@ export declare const languages: {
         overdue: string;
         overdueAmount: string;
         page: string;
+        pageNumber: string;
+        pageNumTemplate: string;
         paid: string;
         password: string;
         passwordAlt: string;
@@ -776,6 +787,7 @@ export declare const languages: {
         purchases: string;
         purchasesAndExpenses: string;
         purchasesExpenses: string;
+        qr: string;
         quantity: string;
         quantityPlaceholder: string;
         quantityToReturn: string;
@@ -973,6 +985,7 @@ export declare const languages: {
         testConnection: string;
         testing: string;
         testStampService: string;
+        text: string;
         textExtracted: string;
         thanksForCompletingExam: string;
         themePreview: string;
@@ -1280,6 +1293,7 @@ export declare const languages: {
         changeView: string;
         charts: string;
         chat: string;
+        circle: string;
         city: string;
         clabe: string;
         class: string;
@@ -1393,6 +1407,7 @@ export declare const languages: {
         currenciesManagement: string;
         currency: string;
         currencyPlaceholder: string;
+        currentDate: string;
         customer: string;
         customerDocuments: string;
         customerNotes: string;
@@ -1402,6 +1417,7 @@ export declare const languages: {
         danger: string;
         dashboard: string;
         dashboardAIInstructions: string;
+        data: string;
         dataFiles: string;
         date: string;
         datePrefix: string;
@@ -1421,6 +1437,7 @@ export declare const languages: {
         deleteConnection: string;
         deleteCustomer: string;
         deletePromotion: string;
+        deleteSelectedElement: string;
         deleteTray: string;
         deleteTrayWarning: string;
         deleteUser: string;
@@ -1467,6 +1484,7 @@ export declare const languages: {
         editTheme: string;
         editUser: string;
         element: string;
+        elements: string;
         email: string;
         emailAddress: string;
         emailMessagePlaceholder: string;
@@ -1601,6 +1619,7 @@ export declare const languages: {
         icon: string;
         id: string;
         idle: string;
+        image: string;
         images: string;
         import: string;
         improvementSuggestion: string;
@@ -1616,6 +1635,7 @@ export declare const languages: {
         information: string;
         initialCash: string;
         initialList: string;
+        insert: string;
         install: string;
         installAndroidIntro: string;
         installBenefitBetter: string;
@@ -1651,6 +1671,7 @@ export declare const languages: {
         legend: string;
         libraries: string;
         libraryNotFound: string;
+        line: string;
         lineTotal: string;
         listening: string;
         loadFiles: string;
@@ -1779,6 +1800,7 @@ export declare const languages: {
         noContacts: string;
         noSales: string;
         noSection: string;
+        noSrc: string;
         noSubject: string;
         noTemplatesAvailable: string;
         notes: string;
@@ -1826,6 +1848,8 @@ export declare const languages: {
         overdue: string;
         overdueAmount: string;
         page: string;
+        pageNumber: string;
+        pageNumTemplate: string;
         paid: string;
         password: string;
         passwordAlt: string;
@@ -1934,6 +1958,7 @@ export declare const languages: {
         purchases: string;
         purchasesAndExpenses: string;
         purchasesExpenses: string;
+        qr: string;
         quantity: string;
         quantityPlaceholder: string;
         quantityToReturn: string;
@@ -2131,6 +2156,7 @@ export declare const languages: {
         testConnection: string;
         testing: string;
         testStampService: string;
+        text: string;
         textExtracted: string;
         thanksForCompletingExam: string;
         themePreview: string;
@@ -2435,6 +2461,7 @@ export declare const languages: {
         changeView: string;
         charts: string;
         chat: string;
+        circle: string;
         city: string;
         clabe: string;
         class: string;
@@ -2548,6 +2575,7 @@ export declare const languages: {
         currenciesManagement: string;
         currency: string;
         currencyPlaceholder: string;
+        currentDate: string;
         customer: string;
         customerDocuments: string;
         customerNotes: string;
@@ -2557,6 +2585,7 @@ export declare const languages: {
         danger: string;
         dashboard: string;
         dashboardAIInstructions: string;
+        data: string;
         dataFiles: string;
         date: string;
         date1: string;
@@ -2575,6 +2604,7 @@ export declare const languages: {
         deleteConnection: string;
         deleteCustomer: string;
         deletePromotion: string;
+        deleteSelectedElement: string;
         deleteTray: string;
         deleteTrayWarning: string;
         deleteUser: string;
@@ -2621,6 +2651,7 @@ export declare const languages: {
         editTheme: string;
         editUser: string;
         element: string;
+        elements: string;
         email: string;
         emailAddress: string;
         emailMessagePlaceholder: string;
@@ -2755,6 +2786,7 @@ export declare const languages: {
         icon: string;
         id: string;
         idle: string;
+        image: string;
         images: string;
         import: string;
         improvementSuggestion: string;
@@ -2770,6 +2802,7 @@ export declare const languages: {
         information: string;
         initialCash: string;
         initialList: string;
+        insert: string;
         install: string;
         installAndroidIntro: string;
         installBenefitBetter: string;
@@ -2805,6 +2838,7 @@ export declare const languages: {
         legend: string;
         libraries: string;
         libraryNotFound: string;
+        line: string;
         lineTotal: string;
         listening: string;
         loadFiles: string;
@@ -2933,6 +2967,7 @@ export declare const languages: {
         noContacts: string;
         noSales: string;
         noSection: string;
+        noSrc: string;
         noSubject: string;
         noTemplatesAvailable: string;
         notes: string;
@@ -2980,6 +3015,8 @@ export declare const languages: {
         overdue: string;
         overdueAmount: string;
         page: string;
+        pageNumber: string;
+        pageNumTemplate: string;
         paid: string;
         password: string;
         passwordAlt: string;
@@ -3088,6 +3125,7 @@ export declare const languages: {
         purchases: string;
         purchasesAndExpenses: string;
         purchasesExpenses: string;
+        qr: string;
         quantity: string;
         quantityPlaceholder: string;
         quantityToReturn: string;
@@ -3284,6 +3322,7 @@ export declare const languages: {
         testConnection: string;
         testing: string;
         testStampService: string;
+        text: string;
         textExtracted: string;
         thanksForCompletingExam: string;
         themePreview: string;
