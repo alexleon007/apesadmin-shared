@@ -27,6 +27,7 @@ export declare const languages: {
         addProductsToStart: string;
         address: string;
         addressShort: string;
+        addOrdersToTicket: string;
         addToTask: string;
         addWidget: string;
         admin: string;
@@ -1245,6 +1246,7 @@ export declare const languages: {
         addProductsToStart: string;
         address: string;
         addressShort: string;
+        addOrdersToTicket: string;
         addToTask: string;
         addWidget: string;
         admin: string;
@@ -2463,6 +2465,7 @@ export declare const languages: {
         addProductsToStart: string;
         address: string;
         addressShort: string;
+        addOrdersToTicket: string;
         addToTask: string;
         addWidget: string;
         admin: string;
