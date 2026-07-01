@@ -273,6 +273,14 @@ export type ActionUserValueType = {
     team?: number[];
 };
 export type ClockType = "in" | "break_start" | "break_end" | "out";
+export type ClasificationsType = {
+    idclas: number;
+    name: string;
+    type: string;
+    level: number;
+    color: string;
+    status: number;
+};
 export type AttendanceStatusType = "idle" | "working" | "onBreak";
 export type PartyAttendanceType = {
     idassist: number;
@@ -1101,6 +1109,7 @@ export type PartyType = {
         address: string;
         cp: string;
         latlong: string;
+        references: string;
     }[];
     partyrecord: RecordType[];
     partyfields: ConceptFieldsValuesType[];
@@ -1554,6 +1563,7 @@ export type SupplierType = {
         address: string;
         cp: string;
         latlong: string;
+        references: string;
     }[];
     suppfields: ConceptFieldsValuesType[];
     supprecord: RecordType[];
@@ -1571,6 +1581,7 @@ export type SystemSettingsType = {
     pos_warehouse_mode: string;
     pos_pricelist_mode: string;
     pos_blind_cash_count: boolean;
+    pos_docnumber_capture: boolean;
     pos_self_billing: boolean;
     project_property_managment: boolean;
     inventory_addition_on_po: boolean;
@@ -2210,6 +2221,7 @@ export type TableElementType = BaseElementType & TextStyleType & {
     paginate?: boolean;
     repeatHeader?: boolean;
     rowsPerPage?: number;
+    expandConcepts?: boolean;
     columns: TableColumnType[];
 };
 export type PageNumElementType = BaseElementType & TextStyleType & {
@@ -2314,6 +2326,7 @@ export type EditorTableType = Base & {
     paginate?: boolean;
     repeatHeader?: boolean;
     rowsPerPage?: number;
+    expandConcepts?: boolean;
 };
 export type EditorPageNumType = Base & {
     type: "pagenum";

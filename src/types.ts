@@ -1200,7 +1200,7 @@ export type PartyType = {
   partyorigin: number;
   partyoriginname?: string;
   contacts: { name: string; position: string; tel1: string; email: string }[];
-  addresses: { name: string; address: string; cp: string; latlong: string }[];
+  addresses: { name: string; address: string; cp: string; latlong: string; references: string }[];
   partyrecord: RecordType[];
   partyfields: ConceptFieldsValuesType[];
   logs: PartyLogType[];
@@ -1675,7 +1675,7 @@ export type SupplierType = {
   suppcreditdays: number;
   suppcreditlimit: number;
   contacts: { name: string; position: string; tel1: string; email: string }[];
-  addresses: { name: string; address: string; cp: string; latlong: string }[];
+  addresses: { name: string; address: string; cp: string; latlong: string; references: string }[];
   suppfields: ConceptFieldsValuesType[];
   supprecord: RecordType[];
   suppobs: string;
@@ -2491,6 +2491,7 @@ export type TableElementType = BaseElementType &
     paginate?: boolean;
     repeatHeader?: boolean;
     rowsPerPage?: number; // 0 or undefined = let pdfkit handle overflow
+    expandConcepts?: boolean; // when true, split "concepts" cell by ", " → one line per concept
     columns: TableColumnType[];
   };
 
@@ -2619,6 +2620,7 @@ export type EditorTableType = Base & {
   paginate?: boolean;
   repeatHeader?: boolean;
   rowsPerPage?: number;
+  expandConcepts?: boolean;
 };
 
 export type EditorPageNumType = Base & {

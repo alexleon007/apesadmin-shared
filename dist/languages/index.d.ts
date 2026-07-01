@@ -27,6 +27,7 @@ export declare const languages: {
         addProductsToStart: string;
         address: string;
         addressShort: string;
+        addOrdersToTicket: string;
         addToTask: string;
         addWidget: string;
         admin: string;
@@ -213,6 +214,7 @@ export declare const languages: {
         convert: string;
         convertToOrder: string;
         coordinates: string;
+        references: string;
         copy: string;
         correct: string;
         correctColumn: string;
@@ -1245,6 +1247,7 @@ export declare const languages: {
         addProductsToStart: string;
         address: string;
         addressShort: string;
+        addOrdersToTicket: string;
         addToTask: string;
         addWidget: string;
         admin: string;
@@ -1431,6 +1434,7 @@ export declare const languages: {
         convert: string;
         convertToOrder: string;
         coordinates: string;
+        references: string;
         copy: string;
         correct: string;
         correctColumn: string;
@@ -2463,6 +2467,7 @@ export declare const languages: {
         addProductsToStart: string;
         address: string;
         addressShort: string;
+        addOrdersToTicket: string;
         addToTask: string;
         addWidget: string;
         admin: string;
@@ -2646,6 +2651,7 @@ export declare const languages: {
         convert: string;
         convertToOrder: string;
         coordinates: string;
+        references: string;
         copy: string;
         correct: string;
         correctColumn: string;
