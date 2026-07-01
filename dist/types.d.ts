@@ -1429,6 +1429,7 @@ export type PODetailType = {
     produnitname: string;
     taxes: TaxType[];
     quantity: number;
+    qtyrecived: number;
     price: number;
     subtotal: number;
     total: number;
