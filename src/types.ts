@@ -2490,6 +2490,7 @@ export type TableElementType = BaseElementType &
     paginate?: boolean;
     repeatHeader?: boolean;
     rowsPerPage?: number; // 0 or undefined = let pdfkit handle overflow
+    expandConcepts?: boolean; // when true, split "concepts" cell by ", " → one line per concept
     columns: TableColumnType[];
   };
 
@@ -2618,6 +2619,7 @@ export type EditorTableType = Base & {
   paginate?: boolean;
   repeatHeader?: boolean;
   rowsPerPage?: number;
+  expandConcepts?: boolean;
 };
 
 export type EditorPageNumType = Base & {

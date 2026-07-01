@@ -2219,6 +2219,7 @@ export type TableElementType = BaseElementType & TextStyleType & {
     paginate?: boolean;
     repeatHeader?: boolean;
     rowsPerPage?: number;
+    expandConcepts?: boolean;
     columns: TableColumnType[];
 };
 export type PageNumElementType = BaseElementType & TextStyleType & {
@@ -2323,6 +2324,7 @@ export type EditorTableType = Base & {
     paginate?: boolean;
     repeatHeader?: boolean;
     rowsPerPage?: number;
+    expandConcepts?: boolean;
 };
 export type EditorPageNumType = Base & {
     type: "pagenum";
