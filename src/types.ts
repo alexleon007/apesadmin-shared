@@ -1200,7 +1200,7 @@ export type PartyType = {
   partyorigin: number;
   partyoriginname?: string;
   contacts: { name: string; position: string; tel1: string; email: string }[];
-  addresses: { name: string; address: string; cp: string; latlong: string }[];
+  addresses: { name: string; address: string; cp: string; latlong: string; references: string }[];
   partyrecord: RecordType[];
   partyfields: ConceptFieldsValuesType[];
   logs: PartyLogType[];
@@ -1674,7 +1674,7 @@ export type SupplierType = {
   suppcreditdays: number;
   suppcreditlimit: number;
   contacts: { name: string; position: string; tel1: string; email: string }[];
-  addresses: { name: string; address: string; cp: string; latlong: string }[];
+  addresses: { name: string; address: string; cp: string; latlong: string; references: string }[];
   suppfields: ConceptFieldsValuesType[];
   supprecord: RecordType[];
   suppobs: string;

@@ -1109,6 +1109,7 @@ export type PartyType = {
         address: string;
         cp: string;
         latlong: string;
+        references: string;
     }[];
     partyrecord: RecordType[];
     partyfields: ConceptFieldsValuesType[];
@@ -1562,6 +1563,7 @@ export type SupplierType = {
         address: string;
         cp: string;
         latlong: string;
+        references: string;
     }[];
     suppfields: ConceptFieldsValuesType[];
     supprecord: RecordType[];
