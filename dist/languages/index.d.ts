@@ -3,6 +3,7 @@ import en from "./en.json";
 import zhTW from "./zh-TW.json";
 export declare const languages: {
     readonly es: {
+        absent: string;
         account: string;
         accountHolder: string;
         accountInformation: string;
@@ -123,6 +124,7 @@ export declare const languages: {
         cancelPayment: string;
         cancelReason: string;
         cancelSubscription: string;
+        captureDate: string;
         card: string;
         cardHeader: string;
         cash: string;
@@ -328,6 +330,7 @@ export declare const languages: {
         deliveryStandard: string;
         deliveryState: string;
         deliveryZipCode: string;
+        departure: string;
         description: string;
         descriptionOptional: string;
         destinationAccount: string;
@@ -563,6 +566,7 @@ export declare const languages: {
         language: string;
         lastContactDate: string;
         lastPurchaseDate: string;
+        late: string;
         later: string;
         lead: string;
         leConceptFields: string;
@@ -733,6 +737,8 @@ export declare const languages: {
         of: string;
         onBehalfOf: string;
         onBreak: string;
+        online: string;
+        onTime: string;
         open: string;
         openAll: string;
         openCashSession: string;
@@ -1294,6 +1300,7 @@ export declare const languages: {
         zone: string;
     };
     readonly en: {
+        absent: string;
         account: string;
         accountHolder: string;
         accountInformation: string;
@@ -1414,6 +1421,7 @@ export declare const languages: {
         cancelPayment: string;
         cancelReason: string;
         cancelSubscription: string;
+        captureDate: string;
         card: string;
         cardHeader: string;
         cash: string;
@@ -1619,6 +1627,7 @@ export declare const languages: {
         deliveryStandard: string;
         deliveryState: string;
         deliveryZipCode: string;
+        departure: string;
         description: string;
         descriptionOptional: string;
         destinationAccount: string;
@@ -1854,6 +1863,7 @@ export declare const languages: {
         language: string;
         lastContactDate: string;
         lastPurchaseDate: string;
+        late: string;
         later: string;
         lead: string;
         leConceptFields: string;
@@ -2024,6 +2034,8 @@ export declare const languages: {
         of: string;
         onBehalfOf: string;
         onBreak: string;
+        online: string;
+        onTime: string;
         open: string;
         openAll: string;
         openCashSession: string;
@@ -2585,6 +2597,7 @@ export declare const languages: {
         zone: string;
     };
     readonly "zh-TW": {
+        absent: string;
         account: string;
         accountHolder: string;
         accountInformation: string;
@@ -2702,6 +2715,7 @@ export declare const languages: {
         cancelPayment: string;
         cancelReason: string;
         cancelSubscription: string;
+        captureDate: string;
         card: string;
         cardHeader: string;
         cash: string;
@@ -2906,6 +2920,7 @@ export declare const languages: {
         deliveryStandard: string;
         deliveryState: string;
         deliveryZipCode: string;
+        departure: string;
         description: string;
         descriptionOptional: string;
         destinationAccount: string;
@@ -3141,6 +3156,7 @@ export declare const languages: {
         language: string;
         lastContactDate: string;
         lastPurchaseDate: string;
+        late: string;
         later: string;
         lead: string;
         leConceptFields: string;
@@ -3311,6 +3327,8 @@ export declare const languages: {
         of: string;
         onBehalfOf: string;
         onBreak: string;
+        online: string;
+        onTime: string;
         open: string;
         openAll: string;
         openCashSession: string;
