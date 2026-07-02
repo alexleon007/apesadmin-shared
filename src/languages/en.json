@@ -332,6 +332,7 @@
   "direct": "Direct",
   "directInventoryDeduction": "Direct inventory deduction",
   "directInventoryEntry": "Direct inventory entry",
+  "directInventoryTransfer": "Direct inventory transfer",
   "disableAll": "Disable all",
   "discard": "Discard",
   "disconnect": "Disconnect",

@@ -328,6 +328,7 @@
     "direct": "私訊",
     "directInventoryDeduction": "直接庫存扣除",
     "directInventoryEntry": "直接庫存入庫",
+    "directInventoryTransfer": "直接庫存調撥",
     "disableAll": "全部停用",
     "discard": "捨棄",
     "disconnect": "中斷連接",

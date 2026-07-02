@@ -332,6 +332,7 @@
     "direct": "Directo",
     "directInventoryDeduction": "Salida de mercancía directa",
     "directInventoryEntry": "Entrada de mercancía directa",
+    "directInventoryTransfer": "Salida de mercancía directa",
     "disableAll": "Desactivar todos",
     "discard": "Descartar",
     "disconnect": "Desconectar",

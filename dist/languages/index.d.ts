@@ -336,6 +336,7 @@ export declare const languages: {
         direct: string;
         directInventoryDeduction: string;
         directInventoryEntry: string;
+        directInventoryTransfer: string;
         disableAll: string;
         discard: string;
         disconnect: string;
@@ -1626,6 +1627,7 @@ export declare const languages: {
         direct: string;
         directInventoryDeduction: string;
         directInventoryEntry: string;
+        directInventoryTransfer: string;
         disableAll: string;
         discard: string;
         disconnect: string;
@@ -2912,6 +2914,7 @@ export declare const languages: {
         direct: string;
         directInventoryDeduction: string;
         directInventoryEntry: string;
+        directInventoryTransfer: string;
         disableAll: string;
         discard: string;
         disconnect: string;
