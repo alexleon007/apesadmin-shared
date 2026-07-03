@@ -36,6 +36,7 @@ export declare const RECORD_DOC = "doc";
 export declare const RECORD_RECORD = "record";
 export declare const RECORD_RECORDS = "records";
 export declare const RECORD_FOLDERS = "folders";
+export declare const RECORD_DOCUMENTS = "record-documents";
 export declare const OS_ANDROID = "android";
 export declare const OS_IOS = "ios";
 export declare const SIZE_FULLSCREN = "fullscreen";

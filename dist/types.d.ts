@@ -1504,6 +1504,7 @@ export type RecordType = {
     recordstatus?: number;
     recordstatusname?: string;
     recordcreatedat?: string;
+    recordexpiration?: string;
     section?: string;
     recordsection?: string;
 };
