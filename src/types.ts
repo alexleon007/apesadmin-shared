@@ -450,6 +450,7 @@ export type AttachedFileType = {
   file: any;
   previewUrl: string;
   type: "image" | "pdf" | "other";
+  expiration?: string;
 };
 
 export type BankAccountType = {
@@ -572,6 +573,7 @@ export type ConceptFieldsValuesType = {
   fieldcode: string;
   fieldname: string;
   fvalue: string;
+  fexpiration?: string;
 };
 
 export type ConceptType = {
