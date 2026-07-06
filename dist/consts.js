@@ -36,7 +36,6 @@ export const RECORD_DOC = "doc";
 export const RECORD_RECORD = "record";
 export const RECORD_RECORDS = "records";
 export const RECORD_FOLDERS = "folders";
-export const RECORD_DOCUMENTS = "record-documents";
 export const OS_ANDROID = "android";
 export const OS_IOS = "ios";
 export const SIZE_FULLSCREN = "fullscreen";
@@ -248,7 +247,12 @@ export const CFDI_USES = [
 ];
 export const GRID_SIZE = 10;
 export const DASHBOARD_CATEGORIES = ["all", "general", "reports"];
-export const VALID_CLOCK_TYPES = ["in", "break_start", "break_end", "out"];
+export const VALID_CLOCK_TYPES = [
+    "in",
+    "break_start",
+    "break_end",
+    "out",
+];
 export const CLOCK_TYPE_TO_STATUS = {
     in: "working",
     break_start: "onBreak",
