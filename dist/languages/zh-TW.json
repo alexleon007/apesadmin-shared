@@ -501,6 +501,8 @@
     "haber": "貸方",
     "help": "說明",
     "helpTitle": "如何取得憑證？",
+    "hiddenFiltersActive": "隱藏欄位有啟用的篩選",
+    "hiddenFiltersActiveCount": "{{count}} 個啟用中",
     "hide": "隱藏",
     "hideAnalytics": "隱藏分析資料",
     "hideNotes": "隱藏備註",

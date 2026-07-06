@@ -505,6 +505,8 @@
     "haber": "Haber",
     "help": "Ayuda",
     "helpTitle": "¿Cómo obtener las credenciales?",
+    "hiddenFiltersActive": "Filtros activos en columnas ocultas",
+    "hiddenFiltersActiveCount": "{{count}} activos",
     "hide": "Ocultar",
     "hideAnalytics": "Ocultar datos de análisis",
     "hideNotes": "Ocultar notas",

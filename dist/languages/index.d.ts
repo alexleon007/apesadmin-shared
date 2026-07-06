@@ -509,6 +509,8 @@ export declare const languages: {
         haber: string;
         help: string;
         helpTitle: string;
+        hiddenFiltersActive: string;
+        hiddenFiltersActiveCount: string;
         hide: string;
         hideAnalytics: string;
         hideNotes: string;
@@ -1824,6 +1826,8 @@ export declare const languages: {
         haber: string;
         help: string;
         helpTitle: string;
+        hiddenFiltersActive: string;
+        hiddenFiltersActiveCount: string;
         hide: string;
         hideAnalytics: string;
         hideNotes: string;
@@ -3135,6 +3139,8 @@ export declare const languages: {
         haber: string;
         help: string;
         helpTitle: string;
+        hiddenFiltersActive: string;
+        hiddenFiltersActiveCount: string;
         hide: string;
         hideAnalytics: string;
         hideNotes: string;

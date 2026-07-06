@@ -505,6 +505,8 @@
     "haber": "Credit",
     "help": "Help",
     "helpTitle": "How to obtain credentials?",
+    "hiddenFiltersActive": "Active filters on hidden columns",
+    "hiddenFiltersActiveCount": "{{count}} active",
     "hide": "Hide",
     "hideAnalytics": "Hide analytics data",
     "hideNotes": "Hide notes",
