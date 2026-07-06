@@ -53,6 +53,7 @@ export declare const languages: {
         all: string;
         allDay: string;
         allPaid: string;
+        allUsersIfEmpty: string;
         amazonSetupDescription: string;
         amazonSetupTitle: string;
         amount: string;
@@ -66,6 +67,7 @@ export declare const languages: {
         approachingLimit: string;
         archive: string;
         arrival: string;
+        arrivalDate: string;
         assign: string;
         assignAgentsOnOrder: string;
         assignedUsers: string;
@@ -289,6 +291,7 @@ export declare const languages: {
         customerNotesPlaceholder: string;
         customers: string;
         customThemes: string;
+        cyclicInventory: string;
         danger: string;
         dashboard: string;
         dashboardAIInstructions: string;
@@ -333,6 +336,7 @@ export declare const languages: {
         departure: string;
         description: string;
         descriptionOptional: string;
+        destination: string;
         destinationAccount: string;
         developerConsole: string;
         difference: string;
@@ -441,6 +445,7 @@ export declare const languages: {
         expenseRequests: string;
         expenses: string;
         expiration: string;
+        expires: string;
         export: string;
         external: string;
         externalServices: string;
@@ -489,6 +494,7 @@ export declare const languages: {
         getOrders: string;
         getProducts: string;
         gmailConnection: string;
+        goodsReceipt: string;
         goToAdvancedPanel: string;
         grade: string;
         group: string;
@@ -550,6 +556,7 @@ export declare const languages: {
         invalidAmount: string;
         invalidValue: string;
         inventoriable: string;
+        inventories: string;
         inventory: string;
         inventoryCorrection: string;
         invoice: string;
@@ -621,6 +628,7 @@ export declare const languages: {
         messagePlaceholder: string;
         min: string;
         minStock: string;
+        missing: string;
         modality: string;
         modalUploadTitle: string;
         model: string;
@@ -648,10 +656,12 @@ export declare const languages: {
         new: string;
         newAccount: string;
         newAuraConversation: string;
+        newBatch: string;
         newChart: string;
         newChat: string;
         newCompany: string;
         newContact: string;
+        newCount: string;
         newCustomer: string;
         newExpense: string;
         newForm: string;
@@ -769,6 +779,7 @@ export declare const languages: {
         pageNumber: string;
         pageNumTemplate: string;
         paid: string;
+        partial: string;
         password: string;
         passwordAlt: string;
         paused: string;
@@ -908,7 +919,11 @@ export declare const languages: {
         readStatus: string;
         realTimePreview: string;
         reason: string;
+        receiptContents: string;
+        receive: string;
+        received: string;
         receivedDate: string;
+        receivedQuantity: string;
         recentMovements: string;
         record: string;
         recordAudio: string;
@@ -1018,6 +1033,7 @@ export declare const languages: {
         sender: string;
         sendError: string;
         sendTitle: string;
+        separate: string;
         series: string;
         seriesSection: string;
         service: string;
@@ -1080,6 +1096,7 @@ export declare const languages: {
         suppliers: string;
         support: string;
         supportAdmin: string;
+        surplus: string;
         swiftCode: string;
         syncInventory: string;
         syncOrders: string;
@@ -1259,6 +1276,7 @@ export declare const languages: {
         userConfiguration: string;
         username: string;
         users: string;
+        usersWithAccess: string;
         usingDefaultStyles: string;
         validationError: string;
         value: string;
@@ -1350,6 +1368,7 @@ export declare const languages: {
         all: string;
         allDay: string;
         allPaid: string;
+        allUsersIfEmpty: string;
         amazonSetupDescription: string;
         amazonSetupTitle: string;
         amount: string;
@@ -1363,6 +1382,7 @@ export declare const languages: {
         approachingLimit: string;
         archive: string;
         arrival: string;
+        arrivalDate: string;
         assign: string;
         assignAgentsOnOrder: string;
         assignedUsers: string;
@@ -1586,6 +1606,7 @@ export declare const languages: {
         customerNotesPlaceholder: string;
         customers: string;
         customThemes: string;
+        cyclicInventory: string;
         danger: string;
         dashboard: string;
         dashboardAIInstructions: string;
@@ -1630,6 +1651,7 @@ export declare const languages: {
         departure: string;
         description: string;
         descriptionOptional: string;
+        destination: string;
         destinationAccount: string;
         developerConsole: string;
         difference: string;
@@ -1738,6 +1760,7 @@ export declare const languages: {
         expenseRequests: string;
         expenses: string;
         expiration: string;
+        expires: string;
         export: string;
         external: string;
         externalServices: string;
@@ -1786,6 +1809,7 @@ export declare const languages: {
         getOrders: string;
         getProducts: string;
         gmailConnection: string;
+        goodsReceipt: string;
         goToAdvancedPanel: string;
         grade: string;
         group: string;
@@ -1847,6 +1871,7 @@ export declare const languages: {
         invalidAmount: string;
         invalidValue: string;
         inventoriable: string;
+        inventories: string;
         inventory: string;
         inventoryCorrection: string;
         invoice: string;
@@ -1918,6 +1943,7 @@ export declare const languages: {
         messagePlaceholder: string;
         min: string;
         minStock: string;
+        missing: string;
         modality: string;
         modalUploadTitle: string;
         model: string;
@@ -1945,10 +1971,12 @@ export declare const languages: {
         new: string;
         newAccount: string;
         newAuraConversation: string;
+        newBatch: string;
         newChart: string;
         newChat: string;
         newCompany: string;
         newContact: string;
+        newCount: string;
         newCustomer: string;
         newExpense: string;
         newForm: string;
@@ -2066,6 +2094,7 @@ export declare const languages: {
         pageNumber: string;
         pageNumTemplate: string;
         paid: string;
+        partial: string;
         password: string;
         passwordAlt: string;
         paused: string;
@@ -2205,7 +2234,11 @@ export declare const languages: {
         readStatus: string;
         realTimePreview: string;
         reason: string;
+        receiptContents: string;
+        receive: string;
+        received: string;
         receivedDate: string;
+        receivedQuantity: string;
         recentMovements: string;
         record: string;
         recordAudio: string;
@@ -2315,6 +2348,7 @@ export declare const languages: {
         sender: string;
         sendError: string;
         sendTitle: string;
+        separate: string;
         series: string;
         seriesSection: string;
         service: string;
@@ -2377,6 +2411,7 @@ export declare const languages: {
         suppliers: string;
         support: string;
         supportAdmin: string;
+        surplus: string;
         swiftCode: string;
         syncInventory: string;
         syncOrders: string;
@@ -2556,6 +2591,7 @@ export declare const languages: {
         userConfiguration: string;
         username: string;
         users: string;
+        usersWithAccess: string;
         usingDefaultStyles: string;
         validationError: string;
         value: string;
@@ -2647,6 +2683,7 @@ export declare const languages: {
         all: string;
         allDay: string;
         allPaid: string;
+        allUsersIfEmpty: string;
         amazonSetupDescription: string;
         amazonSetupTitle: string;
         amount: string;
@@ -2660,6 +2697,7 @@ export declare const languages: {
         approachingLimit: string;
         archive: string;
         arrival: string;
+        arrivalDate: string;
         assign: string;
         assignedUsers: string;
         assignProvidersTo: string;
@@ -2880,6 +2918,7 @@ export declare const languages: {
         customerNotesPlaceholder: string;
         customers: string;
         customThemes: string;
+        cyclicInventory: string;
         danger: string;
         dashboard: string;
         dashboardAIInstructions: string;
@@ -2923,6 +2962,7 @@ export declare const languages: {
         departure: string;
         description: string;
         descriptionOptional: string;
+        destination: string;
         destinationAccount: string;
         developerConsole: string;
         difference: string;
@@ -3031,6 +3071,7 @@ export declare const languages: {
         expenseRequests: string;
         expenses: string;
         expiration: string;
+        expires: string;
         export: string;
         external: string;
         externalServices: string;
@@ -3079,6 +3120,7 @@ export declare const languages: {
         getOrders: string;
         getProducts: string;
         gmailConnection: string;
+        goodsReceipt: string;
         goToAdvancedPanel: string;
         grade: string;
         group: string;
@@ -3140,6 +3182,7 @@ export declare const languages: {
         invalidAmount: string;
         invalidValue: string;
         inventoriable: string;
+        inventories: string;
         inventory: string;
         inventoryCorrection: string;
         invoice: string;
@@ -3211,6 +3254,7 @@ export declare const languages: {
         messagePlaceholder: string;
         min: string;
         minStock: string;
+        missing: string;
         modality: string;
         modalUploadTitle: string;
         model: string;
@@ -3238,10 +3282,12 @@ export declare const languages: {
         new: string;
         newAccount: string;
         newAuraConversation: string;
+        newBatch: string;
         newChart: string;
         newChat: string;
         newCompany: string;
         newContact: string;
+        newCount: string;
         newCustomer: string;
         newExpense: string;
         newForm: string;
@@ -3359,6 +3405,7 @@ export declare const languages: {
         pageNumber: string;
         pageNumTemplate: string;
         paid: string;
+        partial: string;
         password: string;
         passwordAlt: string;
         paused: string;
@@ -3498,7 +3545,11 @@ export declare const languages: {
         readStatus: string;
         realTimePreview: string;
         reason: string;
+        receiptContents: string;
+        receive: string;
+        received: string;
         receivedDate: string;
+        receivedQuantity: string;
         recentMovements: string;
         record: string;
         recordAudio: string;
@@ -3608,6 +3659,7 @@ export declare const languages: {
         sender: string;
         sendError: string;
         sendTitle: string;
+        separate: string;
         series: string;
         seriesSection: string;
         service: string;
@@ -3669,6 +3721,7 @@ export declare const languages: {
         suppliers: string;
         support: string;
         supportAdmin: string;
+        surplus: string;
         swiftCode: string;
         syncInventory: string;
         syncOrders: string;
@@ -3848,6 +3901,7 @@ export declare const languages: {
         userConfiguration: string;
         username: string;
         users: string;
+        usersWithAccess: string;
         usingDefaultStyles: string;
         validationError: string;
         value: string;

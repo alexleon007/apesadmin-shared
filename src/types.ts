@@ -468,6 +468,7 @@ export type BankAccountType = {
   accountcurrentamount: number;
   accountstatus: number;
   accountclassification?: string;
+  accountusers?: number[];
 };
 
 export type CalendarEventType = {
