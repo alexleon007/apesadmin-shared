@@ -1518,7 +1518,7 @@ export type RecordType = {
         fexpiration?: string;
     }[];
     recordfieldfiles?: Record<string, {
-        file: File;
+        file: any;
         expiration?: string;
     }>;
 };

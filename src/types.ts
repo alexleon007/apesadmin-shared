@@ -1642,7 +1642,7 @@ export type RecordType = {
     fieldname?: string;
     fexpiration?: string;
   }[];
-  recordfieldfiles?: Record<string, { file: File; expiration?: string }>;
+  recordfieldfiles?: Record<string, { file: any; expiration?: string }>;
 };
 
 export type RegimeType = {
