@@ -1510,6 +1510,17 @@ export type RecordType = {
     recordexpiration?: string;
     section?: string;
     recordsection?: string;
+    recordfields?: {
+        idconcept: number;
+        fieldcode: string;
+        fvalue: string;
+        fieldname?: string;
+        fexpiration?: string;
+    }[];
+    recordfieldfiles?: Record<string, {
+        file: File;
+        expiration?: string;
+    }>;
 };
 export type RegimeType = {
     idreg: number;
