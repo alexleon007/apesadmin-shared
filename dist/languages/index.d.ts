@@ -583,6 +583,7 @@ export declare const languages: {
         inventory: string;
         inventoryCorrection: string;
         inventoryManagement: string;
+        inventoryRecept: string;
         invoice: string;
         invoiceLegend: string;
         invoices: string;
@@ -1952,6 +1953,7 @@ export declare const languages: {
         inventory: string;
         inventoryCorrection: string;
         inventoryManagement: string;
+        inventoryRecept: string;
         invoice: string;
         invoiceLegend: string;
         invoices: string;
@@ -3317,6 +3319,7 @@ export declare const languages: {
         inventory: string;
         inventoryCorrection: string;
         inventoryManagement: string;
+        inventoryReceipt: string;
         invoice: string;
         invoiceLegend: string;
         invoices: string;
