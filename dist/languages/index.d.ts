@@ -74,6 +74,7 @@ export declare const languages: {
         assignedUsers: string;
         assignOperatorsOnOrder: string;
         assignProvidersTo: string;
+        assignStep: string;
         assignToRoute: string;
         attachments: string;
         attachPlaceholder: string;
@@ -92,6 +93,7 @@ export declare const languages: {
         availables: string;
         averageCost: string;
         avg: string;
+        avgTicket: string;
         awsAccessKey: string;
         awsAccessKeyTooltip: string;
         awsKeysRequired: string;
@@ -198,6 +200,7 @@ export declare const languages: {
         columnM: string;
         columnN: string;
         comment: string;
+        comments: string;
         commission: string;
         commissionPercentage: string;
         companies: string;
@@ -292,10 +295,12 @@ export declare const languages: {
         currencyPlaceholder: string;
         currentDate: string;
         customer: string;
+        customerAnalytics: string;
         customerDocuments: string;
         customerNotes: string;
         customerNotesPlaceholder: string;
         customers: string;
+        customerSince: string;
         customThemes: string;
         cyclicInventories: string;
         cyclicInventory: string;
@@ -310,7 +315,9 @@ export declare const languages: {
         date2: string;
         datePrefix: string;
         day: string;
+        days: string;
         daysAbbr: string;
+        daysBetweenPurchases: string;
         daysSinceLastPurchase: string;
         deactivate: string;
         debit: string;
@@ -490,6 +497,7 @@ export declare const languages: {
         from: string;
         fullName: string;
         funnel: string;
+        funnels: string;
         future: string;
         gallery: string;
         general: string;
@@ -500,6 +508,7 @@ export declare const languages: {
         generateReport: string;
         generateReportWithAI: string;
         generating: string;
+        geographic: string;
         getInventory: string;
         getOrder: string;
         getOrders: string;
@@ -632,6 +641,7 @@ export declare const languages: {
         markAsReadEmail: string;
         markAsUnread: string;
         markAsUnreadEmail: string;
+        maps: string;
         marketplace: string;
         marketplacePlaceholder: string;
         material: string;
@@ -647,12 +657,14 @@ export declare const languages: {
         modality: string;
         modalUploadTitle: string;
         model: string;
+        moderate: string;
         modify: string;
         modifyPlan: string;
         module: string;
         moduleManagement: string;
         month: string;
         monthlyExpenses: string;
+        months: string;
         movementHistory: string;
         movements: string;
         multiDay: string;
@@ -725,9 +737,12 @@ export declare const languages: {
         noMessagesYet: string;
         noName: string;
         none: string;
+        noPipelinesMessage: string;
+        noPipelinesRegistered: string;
         noProcesses: string;
         noProcessesToShow: string;
         noPromotions: string;
+        noPurchases: string;
         noQuestionsAdded: string;
         noQuotations: string;
         noRecords: string;
@@ -861,6 +876,7 @@ export declare const languages: {
         portrait: string;
         pos: string;
         position: string;
+        possibleDuplicates: string;
         postalCode: string;
         predefinedThemes: string;
         preview: string;
@@ -882,8 +898,11 @@ export declare const languages: {
         privateGroup: string;
         problemOccurred: string;
         processing: string;
+        processSteps: string;
         product: string;
         productCatalog: string;
+        productCode: string;
+        productOrderDetail: string;
         products: string;
         productsManagement: string;
         productTypeFormat: string;
@@ -907,6 +926,8 @@ export declare const languages: {
         protocol: string;
         provider: string;
         publicLink: string;
+        purchaseCycle: string;
+        purchaseCycleByProduct: string;
         purchaseFrequency: string;
         purchaseInvoices: string;
         purchaseOrders: string;
@@ -942,6 +963,7 @@ export declare const languages: {
         received: string;
         receivedDate: string;
         receivedQuantity: string;
+        recent: string;
         recentMovements: string;
         record: string;
         recordAudio: string;
@@ -964,6 +986,7 @@ export declare const languages: {
         registerWebhooks: string;
         registrationDate: string;
         relatedDocuments: string;
+        relational: string;
         relationType: string;
         remaining: string;
         reminder: string;
@@ -1005,9 +1028,11 @@ export declare const languages: {
         sales: string;
         salesAgent: string;
         salesAnalysis: string;
+        salesByMonth: string;
         salesControl: string;
         salesLastMonth: string;
         salesOrders: string;
+        salesRecord: string;
         salesWithoutStock: string;
         satKey: string;
         satUnit: string;
@@ -1019,6 +1044,7 @@ export declare const languages: {
         savedTickets: string;
         saving: string;
         scheduledAppointment: string;
+        scheduledDeliveries: string;
         score: string;
         search: string;
         searchAction: string;
@@ -1056,6 +1082,7 @@ export declare const languages: {
         sendError: string;
         sendTitle: string;
         separate: string;
+        sequence: string;
         series: string;
         seriesSection: string;
         service: string;
@@ -1098,6 +1125,7 @@ export declare const languages: {
         statusRejected: string;
         statusResolved: string;
         statusUnread: string;
+        stepName: string;
         stock: string;
         stripeVersion: string;
         subClass: string;
@@ -1247,6 +1275,7 @@ export declare const languages: {
         today: string;
         toInvoice: string;
         tools: string;
+        top10Products: string;
         toPay: string;
         topCustomers: string;
         toPlaceholder: string;
@@ -1257,6 +1286,7 @@ export declare const languages: {
         totalPending: string;
         totalPendingActive: string;
         totalQtyCalcTooltip: string;
+        totalSales: string;
         totalToCollect: string;
         totalWithoutCommission: string;
         trackingLog: string;
@@ -1413,6 +1443,7 @@ export declare const languages: {
         assignedUsers: string;
         assignOperatorsOnOrder: string;
         assignProvidersTo: string;
+        assignStep: string;
         assignToRoute: string;
         attachments: string;
         attachPlaceholder: string;
@@ -1431,6 +1462,7 @@ export declare const languages: {
         availables: string;
         averageCost: string;
         avg: string;
+        avgTicket: string;
         awsAccessKey: string;
         awsAccessKeyTooltip: string;
         awsKeysRequired: string;
@@ -1537,6 +1569,7 @@ export declare const languages: {
         columnM: string;
         columnN: string;
         comment: string;
+        comments: string;
         commission: string;
         commissionPercentage: string;
         companies: string;
@@ -1631,10 +1664,12 @@ export declare const languages: {
         currencyPlaceholder: string;
         currentDate: string;
         customer: string;
+        customerAnalytics: string;
         customerDocuments: string;
         customerNotes: string;
         customerNotesPlaceholder: string;
         customers: string;
+        customerSince: string;
         customThemes: string;
         cyclicInventories: string;
         cyclicInventory: string;
@@ -1649,7 +1684,9 @@ export declare const languages: {
         date2: string;
         datePrefix: string;
         day: string;
+        days: string;
         daysAbbr: string;
+        daysBetweenPurchases: string;
         daysSinceLastPurchase: string;
         deactivate: string;
         debit: string;
@@ -1829,6 +1866,7 @@ export declare const languages: {
         from: string;
         fullName: string;
         funnel: string;
+        funnels: string;
         future: string;
         gallery: string;
         general: string;
@@ -1839,6 +1877,7 @@ export declare const languages: {
         generateReport: string;
         generateReportWithAI: string;
         generating: string;
+        geographic: string;
         getInventory: string;
         getOrder: string;
         getOrders: string;
@@ -1971,6 +2010,7 @@ export declare const languages: {
         markAsReadEmail: string;
         markAsUnread: string;
         markAsUnreadEmail: string;
+        maps: string;
         marketplace: string;
         marketplacePlaceholder: string;
         material: string;
@@ -1986,12 +2026,14 @@ export declare const languages: {
         modality: string;
         modalUploadTitle: string;
         model: string;
+        moderate: string;
         modify: string;
         modifyPlan: string;
         module: string;
         moduleManagement: string;
         month: string;
         monthlyExpenses: string;
+        months: string;
         movementHistory: string;
         movements: string;
         multiDay: string;
@@ -2064,9 +2106,12 @@ export declare const languages: {
         noMessagesYet: string;
         noName: string;
         none: string;
+        noPipelinesMessage: string;
+        noPipelinesRegistered: string;
         noProcesses: string;
         noProcessesToShow: string;
         noPromotions: string;
+        noPurchases: string;
         noQuestionsAdded: string;
         noQuotations: string;
         noRecords: string;
@@ -2200,6 +2245,7 @@ export declare const languages: {
         portrait: string;
         pos: string;
         position: string;
+        possibleDuplicates: string;
         postalCode: string;
         predefinedThemes: string;
         preview: string;
@@ -2221,8 +2267,11 @@ export declare const languages: {
         privateGroup: string;
         problemOccurred: string;
         processing: string;
+        processSteps: string;
         product: string;
         productCatalog: string;
+        productCode: string;
+        productOrderDetail: string;
         products: string;
         productsManagement: string;
         productTypeFormat: string;
@@ -2246,6 +2295,8 @@ export declare const languages: {
         protocol: string;
         provider: string;
         publicLink: string;
+        purchaseCycle: string;
+        purchaseCycleByProduct: string;
         purchaseFrequency: string;
         purchaseInvoices: string;
         purchaseOrders: string;
@@ -2281,6 +2332,7 @@ export declare const languages: {
         received: string;
         receivedDate: string;
         receivedQuantity: string;
+        recent: string;
         recentMovements: string;
         record: string;
         recordAudio: string;
@@ -2303,6 +2355,7 @@ export declare const languages: {
         registerWebhooks: string;
         registrationDate: string;
         relatedDocuments: string;
+        relational: string;
         relationType: string;
         remaining: string;
         reminder: string;
@@ -2344,9 +2397,11 @@ export declare const languages: {
         sales: string;
         salesAgent: string;
         salesAnalysis: string;
+        salesByMonth: string;
         salesControl: string;
         salesLastMonth: string;
         salesOrders: string;
+        salesRecord: string;
         salesWithoutStock: string;
         satKey: string;
         satUnit: string;
@@ -2358,6 +2413,7 @@ export declare const languages: {
         savedTickets: string;
         saving: string;
         scheduledAppointment: string;
+        scheduledDeliveries: string;
         score: string;
         search: string;
         searchAction: string;
@@ -2395,6 +2451,7 @@ export declare const languages: {
         sendError: string;
         sendTitle: string;
         separate: string;
+        sequence: string;
         series: string;
         seriesSection: string;
         service: string;
@@ -2437,6 +2494,7 @@ export declare const languages: {
         statusRejected: string;
         statusResolved: string;
         statusUnread: string;
+        stepName: string;
         stock: string;
         stripeVersion: string;
         subClass: string;
@@ -2586,6 +2644,7 @@ export declare const languages: {
         today: string;
         toInvoice: string;
         tools: string;
+        top10Products: string;
         toPay: string;
         topCustomers: string;
         toPlaceholder: string;
@@ -2596,6 +2655,7 @@ export declare const languages: {
         totalPending: string;
         totalPendingActive: string;
         totalQtyCalcTooltip: string;
+        totalSales: string;
         totalToCollect: string;
         totalWithoutCommission: string;
         trackingLog: string;
@@ -2750,6 +2810,7 @@ export declare const languages: {
         assigned: string;
         assignedUsers: string;
         assignProvidersTo: string;
+        assignStep: string;
         assignToRoute: string;
         attachments: string;
         attachPlaceholder: string;
@@ -2768,6 +2829,7 @@ export declare const languages: {
         availables: string;
         averageCost: string;
         avg: string;
+        avgTicket: string;
         awsAccessKey: string;
         awsAccessKeyTooltip: string;
         awsKeysRequired: string;
@@ -2873,6 +2935,7 @@ export declare const languages: {
         columnM: string;
         columnN: string;
         comment: string;
+        comments: string;
         commission: string;
         commissionPercentage: string;
         companies: string;
@@ -2967,10 +3030,12 @@ export declare const languages: {
         currencyPlaceholder: string;
         currentDate: string;
         customer: string;
+        customerAnalytics: string;
         customerDocuments: string;
         customerNotes: string;
         customerNotesPlaceholder: string;
         customers: string;
+        customerSince: string;
         customThemes: string;
         cyclicInventories: string;
         cyclicInventory: string;
@@ -2984,7 +3049,9 @@ export declare const languages: {
         date1: string;
         date2: string;
         day: string;
+        days: string;
         daysAbbr: string;
+        daysBetweenPurchases: string;
         daysSinceLastPurchase: string;
         deactivate: string;
         debit: string;
@@ -3164,6 +3231,7 @@ export declare const languages: {
         from: string;
         fullName: string;
         funnel: string;
+        funnels: string;
         future: string;
         gallery: string;
         general: string;
@@ -3174,6 +3242,7 @@ export declare const languages: {
         generateReport: string;
         generateReportWithAI: string;
         generating: string;
+        geographic: string;
         getInventory: string;
         getOrder: string;
         getOrders: string;
@@ -3306,6 +3375,7 @@ export declare const languages: {
         markAsReadEmail: string;
         markAsUnread: string;
         markAsUnreadEmail: string;
+        maps: string;
         marketplace: string;
         marketplacePlaceholder: string;
         material: string;
@@ -3321,12 +3391,14 @@ export declare const languages: {
         modality: string;
         modalUploadTitle: string;
         model: string;
+        moderate: string;
         modify: string;
         modifyPlan: string;
         module: string;
         moduleManagement: string;
         month: string;
         monthlyExpenses: string;
+        months: string;
         movementHistory: string;
         movements: string;
         multiDay: string;
@@ -3399,9 +3471,12 @@ export declare const languages: {
         noMessagesYet: string;
         noName: string;
         none: string;
+        noPipelinesMessage: string;
+        noPipelinesRegistered: string;
         noProcesses: string;
         noProcessesToShow: string;
         noPromotions: string;
+        noPurchases: string;
         noQuestionsAdded: string;
         noQuotations: string;
         noRecords: string;
@@ -3535,6 +3610,7 @@ export declare const languages: {
         portrait: string;
         pos: string;
         position: string;
+        possibleDuplicates: string;
         postalCode: string;
         predefinedThemes: string;
         preview: string;
@@ -3556,8 +3632,11 @@ export declare const languages: {
         privateGroup: string;
         problemOccurred: string;
         processing: string;
+        processSteps: string;
         product: string;
         productCatalog: string;
+        productCode: string;
+        productOrderDetail: string;
         products: string;
         productsManagement: string;
         productTypeFormat: string;
@@ -3581,6 +3660,8 @@ export declare const languages: {
         protocol: string;
         provider: string;
         publicLink: string;
+        purchaseCycle: string;
+        purchaseCycleByProduct: string;
         purchaseFrequency: string;
         purchaseInvoices: string;
         purchaseOrders: string;
@@ -3616,6 +3697,7 @@ export declare const languages: {
         received: string;
         receivedDate: string;
         receivedQuantity: string;
+        recent: string;
         recentMovements: string;
         record: string;
         recordAudio: string;
@@ -3638,6 +3720,7 @@ export declare const languages: {
         registerWebhooks: string;
         registrationDate: string;
         relatedDocuments: string;
+        relational: string;
         relationType: string;
         remaining: string;
         reminder: string;
@@ -3679,9 +3762,11 @@ export declare const languages: {
         sales: string;
         salesAgent: string;
         salesAnalysis: string;
+        salesByMonth: string;
         salesControl: string;
         salesLastMonth: string;
         salesOrders: string;
+        salesRecord: string;
         salesWithoutStock: string;
         satKey: string;
         satUnit: string;
@@ -3693,6 +3778,7 @@ export declare const languages: {
         savedTickets: string;
         saving: string;
         scheduledAppointment: string;
+        scheduledDeliveries: string;
         score: string;
         search: string;
         searchAction: string;
@@ -3730,6 +3816,7 @@ export declare const languages: {
         sendError: string;
         sendTitle: string;
         separate: string;
+        sequence: string;
         series: string;
         seriesSection: string;
         service: string;
@@ -3771,6 +3858,7 @@ export declare const languages: {
         statusRejected: string;
         statusResolved: string;
         statusUnread: string;
+        stepName: string;
         stock: string;
         stripeVersion: string;
         subClass: string;
@@ -3920,6 +4008,7 @@ export declare const languages: {
         today: string;
         toInvoice: string;
         tools: string;
+        top10Products: string;
         toPay: string;
         topCustomers: string;
         toPlaceholder: string;
@@ -3930,6 +4019,7 @@ export declare const languages: {
         totalPending: string;
         totalPendingActive: string;
         totalQtyCalcTooltip: string;
+        totalSales: string;
         totalToCollect: string;
         totalWithoutCommission: string;
         trackingLog: string;
