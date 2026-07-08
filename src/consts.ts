@@ -37,6 +37,7 @@ export const STATUS_NUMBER_RESERVED = 6;
 export const RECORD_BIT = "bit";
 export const RECORD_DOC = "doc";
 export const RECORD_RECORD = "record";
+export const RECORD_BITACORA = "bitacora";
 export const RECORD_RECORDS = "records";
 export const RECORD_FOLDERS = "folders";
 

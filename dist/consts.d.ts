@@ -34,6 +34,7 @@ export declare const STATUS_NUMBER_RESERVED = 6;
 export declare const RECORD_BIT = "bit";
 export declare const RECORD_DOC = "doc";
 export declare const RECORD_RECORD = "record";
+export declare const RECORD_BITACORA = "bitacora";
 export declare const RECORD_RECORDS = "records";
 export declare const RECORD_FOLDERS = "folders";
 export declare const OS_ANDROID = "android";
