@@ -1489,6 +1489,26 @@ export type AssortionType = {
   relatedDocs: AssortionRelatedDoc[];
 };
 
+export interface ReceptionType {
+  idrecep: number;
+  recepnumber: string;
+  idcmp: number;
+  cmpname: string;
+  idwh: number;
+  whname: string;
+  idwhloc?: number;
+  party: number;
+  partyname: string;
+  recepdate: string;
+  recepobs: string;
+  status: number;
+  statusname: string;
+  createdat: string;
+  evidence: string;
+  recepdetail: any[];
+  selectedDocs: any[];
+}
+
 export type UnitRow = {
   idunit: number;
   unitname: string;
