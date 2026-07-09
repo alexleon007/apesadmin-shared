@@ -54,6 +54,7 @@ export declare const languages: {
         allDay: string;
         allPaid: string;
         allUsersIfEmpty: string;
+        alreadyAssorted: string;
         amazonSetupDescription: string;
         amazonSetupTitle: string;
         amount: string;
@@ -76,6 +77,10 @@ export declare const languages: {
         assignProvidersTo: string;
         assignStep: string;
         assignToRoute: string;
+        assortOrderNo: string;
+        assortedProducts: string;
+        assortedQuantity: string;
+        assortmentNo: string;
         attachments: string;
         attachPlaceholder: string;
         attendance: string;
@@ -104,6 +109,7 @@ export declare const languages: {
         bankAccount: string;
         bankAccounts: string;
         barcode: string;
+        barcodeNotFound: string;
         barcodes: string;
         batch: string;
         beneficiary: string;
@@ -400,6 +406,7 @@ export declare const languages: {
         end: string;
         endDate: string;
         endTime: string;
+        enterAtLeastOneQtyToAssort: string;
         enterFolderName: string;
         enterQuestion: string;
         enterUsername: string;
@@ -515,6 +522,7 @@ export declare const languages: {
         getOrders: string;
         getProducts: string;
         gmailConnection: string;
+        goodsAssortment: string;
         goodsReceipt: string;
         goodsReceiptShort: string;
         goToAdvancedPanel: string;
@@ -684,6 +692,7 @@ export declare const languages: {
         ncOption07: string;
         new: string;
         newAccount: string;
+        newAssortment: string;
         newAuraConversation: string;
         newBatch: string;
         newChart: string;
@@ -694,6 +703,8 @@ export declare const languages: {
         newCustomer: string;
         newExpense: string;
         newForm: string;
+        newGoodsAssortment: string;
+        newGoodsReception: string;
         newHR: string;
         newInvoice: string;
         newItem: string;
@@ -708,6 +719,7 @@ export declare const languages: {
         newPurchaseOrder: string;
         newQuestionnaire: string;
         newQuotation: string;
+        newReception: string;
         newRecurrence: string;
         newSalesOrder: string;
         newSupplier: string;
@@ -737,6 +749,7 @@ export declare const languages: {
         noItemsInCart: string;
         noLogRecorded: string;
         noMessagesYet: string;
+        noMorePendingToAssort: string;
         noName: string;
         none: string;
         noPipelinesMessage: string;
@@ -798,9 +811,12 @@ export declare const languages: {
         order: string;
         orderLegend: string;
         orderNo: string;
+        orderQuantity: string;
         orderQuery: string;
+        ordered: string;
         orders: string;
         ordersManagement: string;
+        ordersToAssort: string;
         origin: string;
         originalQuantity: string;
         other: string;
@@ -904,6 +920,7 @@ export declare const languages: {
         product: string;
         productCatalog: string;
         productCode: string;
+        productNotInOrder: string;
         productOrderDetail: string;
         products: string;
         productsManagement: string;
@@ -940,6 +957,7 @@ export declare const languages: {
         qr: string;
         quantity: string;
         quantityPlaceholder: string;
+        quantityToAssort: string;
         quantityToReturn: string;
         query: string;
         questionnaire: string;
@@ -987,6 +1005,7 @@ export declare const languages: {
         registerMovement: string;
         registerWebhooks: string;
         registrationDate: string;
+        relate: string;
         relatedDocuments: string;
         relational: string;
         relationType: string;
@@ -1067,6 +1086,8 @@ export declare const languages: {
         selectAllCount: string;
         selectAtLeastOneDocument: string;
         selectCancellationMotive: string;
+        selectOrderFirst: string;
+        selectOrderToAssort: string;
         selected: string;
         selectedCount: string;
         selectedOrder: string;
@@ -1173,6 +1194,7 @@ export declare const languages: {
         textExtracted: string;
         thanksForCompletingExam: string;
         themePreview: string;
+        thisReception: string;
         thumbnail: string;
         ticketDetailTitle: string;
         ticketEmpty: string;
@@ -1425,6 +1447,7 @@ export declare const languages: {
         allDay: string;
         allPaid: string;
         allUsersIfEmpty: string;
+        alreadyAssorted: string;
         amazonSetupDescription: string;
         amazonSetupTitle: string;
         amount: string;
@@ -1447,6 +1470,10 @@ export declare const languages: {
         assignProvidersTo: string;
         assignStep: string;
         assignToRoute: string;
+        assortOrderNo: string;
+        assortedProducts: string;
+        assortedQuantity: string;
+        assortmentNo: string;
         attachments: string;
         attachPlaceholder: string;
         attendance: string;
@@ -1475,6 +1502,7 @@ export declare const languages: {
         bankAccount: string;
         bankAccounts: string;
         barcode: string;
+        barcodeNotFound: string;
         barcodes: string;
         batch: string;
         beneficiary: string;
@@ -1771,6 +1799,7 @@ export declare const languages: {
         end: string;
         endDate: string;
         endTime: string;
+        enterAtLeastOneQtyToAssort: string;
         enterFolderName: string;
         enterQuestion: string;
         enterUsername: string;
@@ -1886,6 +1915,7 @@ export declare const languages: {
         getOrders: string;
         getProducts: string;
         gmailConnection: string;
+        goodsAssortment: string;
         goodsReceipt: string;
         goodsReceiptShort: string;
         goToAdvancedPanel: string;
@@ -2055,6 +2085,7 @@ export declare const languages: {
         ncOption07: string;
         new: string;
         newAccount: string;
+        newAssortment: string;
         newAuraConversation: string;
         newBatch: string;
         newChart: string;
@@ -2065,6 +2096,8 @@ export declare const languages: {
         newCustomer: string;
         newExpense: string;
         newForm: string;
+        newGoodsAssortment: string;
+        newGoodsReception: string;
         newHR: string;
         newInvoice: string;
         newItem: string;
@@ -2079,6 +2112,7 @@ export declare const languages: {
         newPurchaseOrder: string;
         newQuestionnaire: string;
         newQuotation: string;
+        newReception: string;
         newRecurrence: string;
         newSalesOrder: string;
         newSupplier: string;
@@ -2108,6 +2142,7 @@ export declare const languages: {
         noItemsInCart: string;
         noLogRecorded: string;
         noMessagesYet: string;
+        noMorePendingToAssort: string;
         noName: string;
         none: string;
         noPipelinesMessage: string;
@@ -2169,9 +2204,12 @@ export declare const languages: {
         order: string;
         orderLegend: string;
         orderNo: string;
+        orderQuantity: string;
         orderQuery: string;
+        ordered: string;
         orders: string;
         ordersManagement: string;
+        ordersToAssort: string;
         origin: string;
         originalQuantity: string;
         other: string;
@@ -2275,6 +2313,7 @@ export declare const languages: {
         product: string;
         productCatalog: string;
         productCode: string;
+        productNotInOrder: string;
         productOrderDetail: string;
         products: string;
         productsManagement: string;
@@ -2311,6 +2350,7 @@ export declare const languages: {
         qr: string;
         quantity: string;
         quantityPlaceholder: string;
+        quantityToAssort: string;
         quantityToReturn: string;
         query: string;
         questionnaire: string;
@@ -2358,6 +2398,7 @@ export declare const languages: {
         registerMovement: string;
         registerWebhooks: string;
         registrationDate: string;
+        relate: string;
         relatedDocuments: string;
         relational: string;
         relationType: string;
@@ -2438,6 +2479,8 @@ export declare const languages: {
         selectAllCount: string;
         selectAtLeastOneDocument: string;
         selectCancellationMotive: string;
+        selectOrderFirst: string;
+        selectOrderToAssort: string;
         selected: string;
         selectedCount: string;
         selectedOrder: string;
@@ -2544,6 +2587,7 @@ export declare const languages: {
         textExtracted: string;
         thanksForCompletingExam: string;
         themePreview: string;
+        thisReception: string;
         thumbnail: string;
         ticketDetailTitle: string;
         ticketEmpty: string;
@@ -2796,6 +2840,7 @@ export declare const languages: {
         allDay: string;
         allPaid: string;
         allUsersIfEmpty: string;
+        alreadyAssorted: string;
         amazonSetupDescription: string;
         amazonSetupTitle: string;
         amount: string;
@@ -2816,6 +2861,10 @@ export declare const languages: {
         assignProvidersTo: string;
         assignStep: string;
         assignToRoute: string;
+        assortOrderNo: string;
+        assortedProducts: string;
+        assortedQuantity: string;
+        assortmentNo: string;
         attachments: string;
         attachPlaceholder: string;
         attendance: string;
@@ -2844,6 +2893,7 @@ export declare const languages: {
         bankAccount: string;
         bankAccounts: string;
         barcode: string;
+        barcodeNotFound: string;
         barcodes: string;
         batch: string;
         beneficiary: string;
@@ -3138,6 +3188,7 @@ export declare const languages: {
         end: string;
         endDate: string;
         endTime: string;
+        enterAtLeastOneQtyToAssort: string;
         enterFolderName: string;
         enterQuestion: string;
         enterUsername: string;
@@ -3253,6 +3304,7 @@ export declare const languages: {
         getOrders: string;
         getProducts: string;
         gmailConnection: string;
+        goodsAssortment: string;
         goodsReceipt: string;
         goodsReceiptShort: string;
         goToAdvancedPanel: string;
@@ -3422,6 +3474,7 @@ export declare const languages: {
         ncOption07: string;
         new: string;
         newAccount: string;
+        newAssortment: string;
         newAuraConversation: string;
         newBatch: string;
         newChart: string;
@@ -3432,6 +3485,8 @@ export declare const languages: {
         newCustomer: string;
         newExpense: string;
         newForm: string;
+        newGoodsAssortment: string;
+        newGoodsReception: string;
         newHR: string;
         newInvoice: string;
         newItem: string;
@@ -3446,6 +3501,7 @@ export declare const languages: {
         newPurchaseOrder: string;
         newQuestionnaire: string;
         newQuotation: string;
+        newReception: string;
         newRecurrence: string;
         newSalesOrder: string;
         newSupplier: string;
@@ -3475,6 +3531,7 @@ export declare const languages: {
         noItemsInCart: string;
         noLogRecorded: string;
         noMessagesYet: string;
+        noMorePendingToAssort: string;
         noName: string;
         none: string;
         noPipelinesMessage: string;
@@ -3536,9 +3593,12 @@ export declare const languages: {
         order: string;
         orderLegend: string;
         orderNo: string;
+        orderQuantity: string;
         orderQuery: string;
+        ordered: string;
         orders: string;
         ordersManagement: string;
+        ordersToAssort: string;
         origin: string;
         originalQuantity: string;
         other: string;
@@ -3642,6 +3702,7 @@ export declare const languages: {
         product: string;
         productCatalog: string;
         productCode: string;
+        productNotInOrder: string;
         productOrderDetail: string;
         products: string;
         productsManagement: string;
@@ -3678,6 +3739,7 @@ export declare const languages: {
         qr: string;
         quantity: string;
         quantityPlaceholder: string;
+        quantityToAssort: string;
         quantityToReturn: string;
         query: string;
         questionnaire: string;
@@ -3725,6 +3787,7 @@ export declare const languages: {
         registerMovement: string;
         registerWebhooks: string;
         registrationDate: string;
+        relate: string;
         relatedDocuments: string;
         relational: string;
         relationType: string;
@@ -3805,6 +3868,8 @@ export declare const languages: {
         selectAllCount: string;
         selectAtLeastOneDocument: string;
         selectCancellationMotive: string;
+        selectOrderFirst: string;
+        selectOrderToAssort: string;
         selected: string;
         selectedCount: string;
         selectedOrder: string;
@@ -3910,6 +3975,7 @@ export declare const languages: {
         textExtracted: string;
         thanksForCompletingExam: string;
         themePreview: string;
+        thisReception: string;
         thumbnail: string;
         ticketDetailTitle: string;
         ticketEmpty: string;
