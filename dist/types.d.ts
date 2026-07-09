@@ -967,6 +967,7 @@ export type OrderDetailType = {
     produnitname: string;
     taxes: TaxType[];
     quantity: number;
+    quantityassorted?: number;
     price: number;
     subtotal: number;
     total: number;
@@ -1053,6 +1054,7 @@ export type OrderType = {
     oridcfdi: number;
     orxmlurl: string;
     orstatusinbox?: string;
+    orisassorted?: number;
     ordetail: OrderDetailType[];
     orfields: ConceptFieldsValuesType[];
     ormovements?: OrderMovementType[];
@@ -1343,6 +1345,39 @@ export type ProductType = {
     prodbarcodes: BarcodeType[];
     maxqty: number;
     minqty: number;
+};
+export type AssortionDetailType = {
+    idad: number;
+    idprod: number;
+    prodcode: string;
+    prodname: string;
+    produnit: number;
+    produnitname: string;
+    quantity: number;
+    orderquantity: number;
+};
+export type AssortionRelatedDoc = {
+    iddoc: number;
+    docnumber: string;
+    type: number;
+    quantity: number;
+};
+export type AssortionType = {
+    idassort: number;
+    assortnumber: string;
+    idcmp: number;
+    cmpname: string;
+    idwh: number;
+    whname: string;
+    party: number;
+    partyname: string;
+    assortdate: string;
+    assortobs: string;
+    status: number;
+    statusname: string;
+    createdat: string;
+    assortdetail: AssortionDetailType[];
+    relatedDocs: AssortionRelatedDoc[];
 };
 export type UnitRow = {
     idunit: number;

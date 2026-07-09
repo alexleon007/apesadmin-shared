@@ -337,6 +337,7 @@ export declare const languages: {
         deliverAt: string;
         deliverTo: string;
         delivery: string;
+        assorted: string;
         deliveryAddress: string;
         deliveryCity: string;
         deliveryCourier: string;
@@ -1707,6 +1708,7 @@ export declare const languages: {
         deliverAt: string;
         deliverTo: string;
         delivery: string;
+        assorted: string;
         deliveryAddress: string;
         deliveryCity: string;
         deliveryCourier: string;
@@ -3073,6 +3075,7 @@ export declare const languages: {
         deliverAt: string;
         deliverTo: string;
         delivery: string;
+        assorted: string;
         deliveryAddress: string;
         deliveryCity: string;
         deliveryCourier: string;
