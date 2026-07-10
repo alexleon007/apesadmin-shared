@@ -1235,6 +1235,7 @@ export type POSSessionType = {
     posstatus: number;
     statusname: string;
     tickets: POSTicketType[];
+    payformAccounts: Record<string, number>;
 };
 export type POSTicketType = {
     idticket: number;
