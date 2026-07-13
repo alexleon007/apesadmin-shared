@@ -964,6 +964,7 @@ export type LogisticsRoutesType = {
     stopstatusname: string;
     notes: string;
     proditems: { prodname: string; quantity: number; produnitname: string }[];
+    orfields: ConceptFieldsValuesType[];
   }[];
   finished: boolean;
 };

@@ -875,6 +875,7 @@ export type LogisticsRoutesType = {
             quantity: number;
             produnitname: string;
         }[];
+        orfields: ConceptFieldsValuesType[];
     }[];
     finished: boolean;
 };
