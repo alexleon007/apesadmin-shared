@@ -1400,6 +1400,15 @@ export interface ReceptionType {
     recepdetail: any[];
     selectedDocs: any[];
 }
+export type InvOrderRow = {
+    idassort: number;
+    assortnumber: string;
+    cmpname: string;
+    whname: string;
+    partyname: string;
+    assortdate: string;
+    statusname: string;
+};
 export type UnitRow = {
     idunit: number;
     unitname: string;
