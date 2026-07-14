@@ -36,6 +36,7 @@ export declare const languages: {
         addToTask: string;
         addWidget: string;
         admin: string;
+        administration: string;
         advance: string;
         advanced: string;
         advancedOptions: string;
@@ -259,12 +260,14 @@ export declare const languages: {
         contacts: string;
         contactsByStatus: string;
         content: string;
+        contentAdmin: string;
         control: string;
         conversionFactors: string;
         convert: string;
         convertToOrder: string;
         coordinates: string;
         copy: string;
+        corporate: string;
         correct: string;
         correctColumn: string;
         correctErrorsByQuestion: string;
@@ -936,6 +939,7 @@ export declare const languages: {
         product: string;
         productCatalog: string;
         productCode: string;
+        production: string;
         productNotInOrder: string;
         productOrderDetail: string;
         products: string;
@@ -1064,6 +1068,7 @@ export declare const languages: {
         routeControl: string;
         routeDate: string;
         routeDetail: string;
+        routing: string;
         rowFiltersSection: string;
         rowStart: string;
         sales: string;
@@ -1129,6 +1134,7 @@ export declare const languages: {
         series: string;
         seriesSection: string;
         service: string;
+        settings: string;
         shop: string;
         shopifyInstructions: string;
         shortName: string;
@@ -1413,6 +1419,7 @@ export declare const languages: {
         whatReportNeeded: string;
         without: string;
         working: string;
+        workspace: string;
         writeYourAnswer: string;
         xAxis: string;
         xAxisGrouping: string;
@@ -1456,6 +1463,7 @@ export declare const languages: {
         addToTask: string;
         addWidget: string;
         admin: string;
+        administration: string;
         advance: string;
         advanced: string;
         advancedOptions: string;
@@ -1679,12 +1687,14 @@ export declare const languages: {
         contacts: string;
         contactsByStatus: string;
         content: string;
+        contentAdmin: string;
         control: string;
         conversionFactors: string;
         convert: string;
         convertToOrder: string;
         coordinates: string;
         copy: string;
+        corporate: string;
         correct: string;
         correctColumn: string;
         correctErrorsByQuestion: string;
@@ -2356,6 +2366,7 @@ export declare const languages: {
         product: string;
         productCatalog: string;
         productCode: string;
+        production: string;
         productNotInOrder: string;
         productOrderDetail: string;
         products: string;
@@ -2484,6 +2495,7 @@ export declare const languages: {
         routeControl: string;
         routeDate: string;
         routeDetail: string;
+        routing: string;
         rowFiltersSection: string;
         rowStart: string;
         sales: string;
@@ -2549,6 +2561,7 @@ export declare const languages: {
         series: string;
         seriesSection: string;
         service: string;
+        settings: string;
         shop: string;
         shopifyInstructions: string;
         shortName: string;
@@ -2833,6 +2846,7 @@ export declare const languages: {
         whatReportNeeded: string;
         without: string;
         working: string;
+        workspace: string;
         writeYourAnswer: string;
         xAxis: string;
         xAxisGrouping: string;
@@ -2876,6 +2890,7 @@ export declare const languages: {
         addToTask: string;
         addWidget: string;
         admin: string;
+        administration: string;
         advance: string;
         advanced: string;
         advancedOptions: string;
@@ -3096,12 +3111,14 @@ export declare const languages: {
         contacts: string;
         contactsByStatus: string;
         content: string;
+        contentAdmin: string;
         control: string;
         conversionFactors: string;
         convert: string;
         convertToOrder: string;
         coordinates: string;
         copy: string;
+        corporate: string;
         correct: string;
         correctColumn: string;
         correctErrorsByQuestion: string;
@@ -3772,6 +3789,7 @@ export declare const languages: {
         product: string;
         productCatalog: string;
         productCode: string;
+        production: string;
         productNotInOrder: string;
         productOrderDetail: string;
         products: string;
@@ -3900,6 +3918,7 @@ export declare const languages: {
         routeControl: string;
         routeDate: string;
         routeDetail: string;
+        routing: string;
         rowFiltersSection: string;
         rowStart: string;
         sales: string;
@@ -3965,6 +3984,7 @@ export declare const languages: {
         series: string;
         seriesSection: string;
         service: string;
+        settings: string;
         shop: string;
         shopifyInstructions: string;
         shortName: string;
@@ -4248,6 +4268,7 @@ export declare const languages: {
         whatReportNeeded: string;
         without: string;
         working: string;
+        workspace: string;
         writeYourAnswer: string;
         xAxis: string;
         xAxisGrouping: string;
