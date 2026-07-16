@@ -1792,6 +1792,7 @@ export type SystemSettingsType = {
   project_property_managment: boolean;
   inventory_addition_on_po: boolean;
   inventory_movement_on_transfer: boolean;
+  inventory_picking_scanner_only: boolean;
   f_order_field_value_date1: string;
   f_order_field_show_date1: boolean;
   f_order_field_value_datetype1: string;
