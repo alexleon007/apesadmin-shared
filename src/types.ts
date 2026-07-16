@@ -2713,6 +2713,8 @@ export type EditorTableType = Base & {
   data: string;
   columns: TableColumnType[];
   width?: number;
+  fontFamily?: string;
+  fontSize?: number;
   paginate?: boolean;
   repeatHeader?: boolean;
   rowsPerPage?: number;
