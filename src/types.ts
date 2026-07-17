@@ -545,6 +545,7 @@ export type CompanyType = {
   cmpiconourl: string;
   cmpsatkeyurl: string;
   cmpsatcerurl: string;
+  cmpdefaultcurrency: string;
 };
 
 export type ConceptFieldsType = {
