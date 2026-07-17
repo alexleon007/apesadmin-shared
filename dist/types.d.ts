@@ -1548,6 +1548,11 @@ export type POType = {
     pofunnel: number;
     pofields: ConceptFieldsValuesType[];
 };
+export type CurrencyType = {
+    idcur: number;
+    curcode: string;
+    curname: string;
+};
 export type QuickActionType = {
     key: string;
     icon: any;
