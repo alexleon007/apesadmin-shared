@@ -1284,6 +1284,7 @@
   "toastLoginLimitReached": "您已達到登入嘗試限制。請稍候再試一次。",
   "toastNetworkLimit": "您辦公室的網路已超過登入嘗試限制。請於約 {{mins}} 分鐘後再試，或聯絡管理員。",
   "toastLoginErrorAttempts": "使用者名稱或密碼錯誤。網路被封鎖前還剩 {{left}} 次嘗試。",
+  "loginBlockedTitle": "網路暫時被封鎖",
   "toastMissingFields": "請填寫所有欄位",
   "toastNetworkError": "網路錯誤",
   "toastNoBills": "找不到帳單",

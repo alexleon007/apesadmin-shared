@@ -1289,6 +1289,7 @@
   "toastLoginLimitReached": "You have reached the login attempt limit. Please wait before trying again.",
   "toastNetworkLimit": "Your office network exceeded the login attempt limit. Try again in ~{{mins}} min or contact the administrator.",
   "toastLoginErrorAttempts": "Wrong username or password. {{left}} attempt(s) left before the network is blocked.",
+  "loginBlockedTitle": "Network temporarily blocked",
   "toastMissingFields": "Please complete all fields",
   "toastNetworkError": "Network error",
   "toastNoBills": "No bills found",
