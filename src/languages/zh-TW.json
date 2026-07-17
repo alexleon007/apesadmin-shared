@@ -1282,6 +1282,7 @@
   "toastLoadError": "載入錯誤",
   "toastLoginError": "使用者名稱或密碼不正確。",
   "toastLoginLimitReached": "您已達到登入嘗試限制。請稍候再試一次。",
+  "toastNetworkLimit": "您辦公室的網路已超過登入嘗試限制。請於約 {{mins}} 分鐘後再試，或聯絡管理員。",
   "toastMissingFields": "請填寫所有欄位",
   "toastNetworkError": "網路錯誤",
   "toastNoBills": "找不到帳單",

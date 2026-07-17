@@ -1287,6 +1287,7 @@
     "toastLoadError": "Error al cargar",
     "toastLoginError": "Usuario o contraseña incorrectos.",
     "toastLoginLimitReached": "Has alcanzado el límite de intentos de inicio de sesión. Por favor espera antes de intentar de nuevo.",
+    "toastNetworkLimit": "La red de tu oficina superó el límite de intentos. Reintenta en ~{{mins}} min o contacta al administrador.",
     "toastMissingFields": "Por favor complete todos los campos",
     "toastNetworkError": "Error de red",
     "toastNoBills": "No se encontraron facturas",
