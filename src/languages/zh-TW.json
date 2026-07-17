@@ -594,6 +594,7 @@
   "inventory": "庫存",
   "inventoryCorrection": "庫存修正",
   "inventoryManagement": "庫存管理",
+  "inventoryOrder": "庫存訂單",
   "inventoryReception": "庫存入庫",
   "invoice": "發票",
   "invoiceLegend": "發票說明",

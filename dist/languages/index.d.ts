@@ -113,6 +113,7 @@ export declare const languages: {
         bankAccounts: string;
         barcode: string;
         barcodeNotFound: string;
+        barcodeNotFoundBody: string;
         barcodes: string;
         batch: string;
         beneficiary: string;
@@ -138,6 +139,8 @@ export declare const languages: {
         cancelPayment: string;
         cancelReason: string;
         cancelSubscription: string;
+        cannotAssortMoreThanPending: string;
+        cannotAssortMoreThanPendingBody: string;
         captureDate: string;
         card: string;
         cardHeader: string;
@@ -599,6 +602,7 @@ export declare const languages: {
         inventory: string;
         inventoryCorrection: string;
         inventoryManagement: string;
+        inventoryOrder: string;
         inventoryReception: string;
         invoice: string;
         invoiceLegend: string;
@@ -1540,6 +1544,7 @@ export declare const languages: {
         bankAccounts: string;
         barcode: string;
         barcodeNotFound: string;
+        barcodeNotFoundBody: string;
         barcodes: string;
         batch: string;
         beneficiary: string;
@@ -1565,6 +1570,8 @@ export declare const languages: {
         cancelPayment: string;
         cancelReason: string;
         cancelSubscription: string;
+        cannotAssortMoreThanPending: string;
+        cannotAssortMoreThanPendingBody: string;
         captureDate: string;
         card: string;
         cardHeader: string;
@@ -2026,6 +2033,7 @@ export declare const languages: {
         inventory: string;
         inventoryCorrection: string;
         inventoryManagement: string;
+        inventoryOrder: string;
         inventoryReception: string;
         invoice: string;
         invoiceLegend: string;
@@ -2965,6 +2973,7 @@ export declare const languages: {
         bankAccounts: string;
         barcode: string;
         barcodeNotFound: string;
+        barcodeNotFoundBody: string;
         barcodes: string;
         batch: string;
         beneficiary: string;
@@ -2989,6 +2998,8 @@ export declare const languages: {
         cancelPayment: string;
         cancelReason: string;
         cancelSubscription: string;
+        cannotAssortMoreThanPending: string;
+        cannotAssortMoreThanPendingBody: string;
         captureDate: string;
         card: string;
         cardHeader: string;
@@ -3449,6 +3460,7 @@ export declare const languages: {
         inventory: string;
         inventoryCorrection: string;
         inventoryManagement: string;
+        inventoryOrder: string;
         inventoryReception: string;
         invoice: string;
         invoiceLegend: string;
