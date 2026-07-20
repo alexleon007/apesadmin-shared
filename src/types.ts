@@ -1673,6 +1673,7 @@ export type POType = {
   poevidence1: string;
   poaccount?: number;
   poaccountdest?: number;
+  pocredit?: number;
   podetail: PODetailType[];
   pofunnel: number;
   pofields: ConceptFieldsValuesType[];
