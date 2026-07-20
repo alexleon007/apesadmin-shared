@@ -482,6 +482,7 @@ export type CompanyType = {
     cmpiconourl: string;
     cmpsatkeyurl: string;
     cmpsatcerurl: string;
+    cmpdefaultcurrency: string;
 };
 export type ConceptFieldsType = {
     idcfield: number;
@@ -1544,6 +1545,7 @@ export type POType = {
     poevidence1: string;
     poaccount?: number;
     poaccountdest?: number;
+    pocredit?: number;
     podetail: PODetailType[];
     pofunnel: number;
     pofields: ConceptFieldsValuesType[];
