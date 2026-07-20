@@ -1565,6 +1565,25 @@ export type QuickActionType = {
     access: number[];
     actionKey?: string;
 };
+export type CascadeDiscountProduct = {
+    idprod: number;
+    prodcode: string;
+    prodname: string;
+};
+export type CascadeDiscount = {
+    idpromo: number;
+    name: string;
+    mode: "authorized" | "open";
+    tier1: number[];
+    tier2: number[];
+    openMin: number;
+    openMax: number;
+    openCascade: boolean;
+    products: CascadeDiscountProduct[];
+};
+export type OrderDetailWithDiscount = OrderDetailType & {
+    discount?: number;
+};
 export type RecordType = {
     idrecord?: number;
     rocordparent?: number;
