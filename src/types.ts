@@ -1785,6 +1785,8 @@ export type SupplierType = {
 export type SystemSettingsType = {
   sw_cfdi: boolean;
   decimals: number;
+  orders_pricelist_mode: string;
+  price_list_by_line: boolean;
   reserve_inventory_on_order: boolean;
   allow_orders_without_stock: boolean;
   inventory_deduction_on_invoice: boolean;
