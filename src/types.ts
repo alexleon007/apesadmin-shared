@@ -1837,6 +1837,9 @@ export type SystemSettingsType = {
   f_order_field_show_cfdiuse: boolean;
   f_order_field_show_bankaccount: boolean;
   f_order_field_show_project: boolean;
+  f_order_field_value_statusinbox: string;
+  f_order_field_show_statusinbox: boolean;
+  f_order_field_default_credit: number;
   f_expense_field_show_folio: boolean;
   f_expense_field_show_supplier: boolean;
   f_expense_field_show_warehouse: boolean;
