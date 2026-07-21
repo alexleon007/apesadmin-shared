@@ -339,6 +339,7 @@ export declare const languages: {
         debit: string;
         debitCard: string;
         decimals: string;
+        defaultCredit: string;
         defaultPDFTemplate: string;
         delete: string;
         deleteCompany: string;
@@ -1386,6 +1387,7 @@ export declare const languages: {
         uploadImage: string;
         uploadPlaceholder: string;
         uploadProduct: string;
+        uploadPrices: string;
         uploadProducts: string;
         url: string;
         user: string;
@@ -1773,6 +1775,7 @@ export declare const languages: {
         debit: string;
         debitCard: string;
         decimals: string;
+        defaultCredit: string;
         defaultPDFTemplate: string;
         delete: string;
         deleteCompany: string;
@@ -2820,6 +2823,7 @@ export declare const languages: {
         uploadImage: string;
         uploadPlaceholder: string;
         uploadProduct: string;
+        uploadPrices: string;
         uploadProducts: string;
         url: string;
         user: string;
@@ -3203,6 +3207,7 @@ export declare const languages: {
         debit: string;
         debitCard: string;
         decimals: string;
+        defaultCredit: string;
         defaultPDFTemplate: string;
         delete: string;
         deleteCompany: string;
@@ -4249,6 +4254,7 @@ export declare const languages: {
         uploadImage: string;
         uploadPlaceholder: string;
         uploadProduct: string;
+        uploadPrices: string;
         uploadProducts: string;
         url: string;
         user: string;
