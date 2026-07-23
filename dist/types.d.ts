@@ -971,6 +971,7 @@ export type OrderDetailType = {
     quantity: number;
     quantityassorted?: number;
     price: number;
+    pricelist?: number;
     subtotal: number;
     total: number;
     obsRow?: string;
