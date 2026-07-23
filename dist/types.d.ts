@@ -1511,6 +1511,7 @@ export type POType = {
     idsupp: number;
     suppcode: string;
     suppname: string;
+    supprfc?: string;
     idcmp: number;
     cmpname: string;
     idwh: number;
