@@ -1427,5 +1427,15 @@
     "you": "你",
     "youHaveFinishedTheExam": "您已完成了測驗",
     "zipCode": "郵遞區號",
-    "zone": "區域"
+    "zone": "區域",
+    "advancedFilter": "進階篩選",
+    "filterOpLike": "包含",
+    "filterOpNotLike": "不包含",
+    "filterOpEq": "等於",
+    "filterOpNotEq": "不等於",
+    "filterOpGt": "大於",
+    "filterOpLt": "小於",
+    "filterOpIn": "在清單中",
+    "filterOpNotIn": "不在清單中",
+    "filterOpInHint": "以逗號分隔多個值"
 }

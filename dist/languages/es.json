@@ -1432,5 +1432,15 @@
     "you": "Tú",
     "youHaveFinishedTheExam": "Has terminado el examen",
     "zipCode": "Código Postal",
-    "zone": "Zona"
+    "zone": "Zona",
+    "advancedFilter": "Filtro avanzado",
+    "filterOpLike": "Contiene",
+    "filterOpNotLike": "No contiene",
+    "filterOpEq": "Igual a",
+    "filterOpNotEq": "Distinto de",
+    "filterOpGt": "Mayor que",
+    "filterOpLt": "Menor que",
+    "filterOpIn": "Está en la lista",
+    "filterOpNotIn": "No está en la lista",
+    "filterOpInHint": "Separa los valores con comas"
 }

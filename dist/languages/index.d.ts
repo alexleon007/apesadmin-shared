@@ -1437,6 +1437,16 @@ export declare const languages: {
         youHaveFinishedTheExam: string;
         zipCode: string;
         zone: string;
+        advancedFilter: string;
+        filterOpLike: string;
+        filterOpNotLike: string;
+        filterOpEq: string;
+        filterOpNotEq: string;
+        filterOpGt: string;
+        filterOpLt: string;
+        filterOpIn: string;
+        filterOpNotIn: string;
+        filterOpInHint: string;
     };
     readonly en: {
         absent: string;
@@ -2873,6 +2883,16 @@ export declare const languages: {
         youHaveFinishedTheExam: string;
         zipCode: string;
         zone: string;
+        advancedFilter: string;
+        filterOpLike: string;
+        filterOpNotLike: string;
+        filterOpEq: string;
+        filterOpNotEq: string;
+        filterOpGt: string;
+        filterOpLt: string;
+        filterOpIn: string;
+        filterOpNotIn: string;
+        filterOpInHint: string;
     };
     readonly "zh-TW": {
         absent: string;
@@ -4304,6 +4324,16 @@ export declare const languages: {
         youHaveFinishedTheExam: string;
         zipCode: string;
         zone: string;
+        advancedFilter: string;
+        filterOpLike: string;
+        filterOpNotLike: string;
+        filterOpEq: string;
+        filterOpNotEq: string;
+        filterOpGt: string;
+        filterOpLt: string;
+        filterOpIn: string;
+        filterOpNotIn: string;
+        filterOpInHint: string;
     };
 };
 export type LanguageKey = keyof typeof languages;

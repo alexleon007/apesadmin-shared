@@ -1432,5 +1432,15 @@
     "you": "You",
     "youHaveFinishedTheExam": "You have finished the exam",
     "zipCode": "Zip Code",
-    "zone": "Zone"
+    "zone": "Zone",
+    "advancedFilter": "Advanced filter",
+    "filterOpLike": "Contains",
+    "filterOpNotLike": "Does not contain",
+    "filterOpEq": "Equals",
+    "filterOpNotEq": "Not equal to",
+    "filterOpGt": "Greater than",
+    "filterOpLt": "Less than",
+    "filterOpIn": "Is in the list",
+    "filterOpNotIn": "Is not in the list",
+    "filterOpInHint": "Separate values with commas"
 }
