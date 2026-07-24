@@ -1450,6 +1450,14 @@ export declare const languages: {
         filterOpIn: string;
         filterOpNotIn: string;
         filterOpInHint: string;
+        movementNotFound: string;
+        movementAlreadyCancelled: string;
+        invalidActionOrState: string;
+        invalidType: string;
+        invalidSession: string;
+        invalidData: string;
+        ticketNotFound: string;
+        cannotReplyClosedTicket: string;
     };
     readonly en: {
         absent: string;
@@ -2899,6 +2907,14 @@ export declare const languages: {
         filterOpIn: string;
         filterOpNotIn: string;
         filterOpInHint: string;
+        movementNotFound: string;
+        movementAlreadyCancelled: string;
+        invalidActionOrState: string;
+        invalidType: string;
+        invalidSession: string;
+        invalidData: string;
+        ticketNotFound: string;
+        cannotReplyClosedTicket: string;
     };
     readonly "zh-TW": {
         absent: string;
@@ -4343,6 +4359,14 @@ export declare const languages: {
         filterOpIn: string;
         filterOpNotIn: string;
         filterOpInHint: string;
+        movementNotFound: string;
+        movementAlreadyCancelled: string;
+        invalidActionOrState: string;
+        invalidType: string;
+        invalidSession: string;
+        invalidData: string;
+        ticketNotFound: string;
+        cannotReplyClosedTicket: string;
     };
 };
 export type LanguageKey = keyof typeof languages;

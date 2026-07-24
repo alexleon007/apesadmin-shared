@@ -1445,5 +1445,13 @@
   "filterOpLt": "Menor que",
   "filterOpIn": "Está en la lista",
   "filterOpNotIn": "No está en la lista",
-  "filterOpInHint": "Separa los valores con comas"
+  "filterOpInHint": "Separa los valores con comas",
+  "movementNotFound": "Movimiento no encontrado",
+  "movementAlreadyCancelled": "El movimiento ya fue cancelado",
+  "invalidActionOrState": "Acción inválida o estado incorrecto",
+  "invalidType": "Tipo inválido",
+  "invalidSession": "Sesión inválida",
+  "invalidData": "Datos inválidos",
+  "ticketNotFound": "Ticket no encontrado",
+  "cannotReplyClosedTicket": "No se puede responder un ticket cancelado o finalizado"
 }

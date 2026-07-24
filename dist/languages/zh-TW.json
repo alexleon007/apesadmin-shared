@@ -1440,5 +1440,13 @@
     "filterOpLt": "小於",
     "filterOpIn": "在清單中",
     "filterOpNotIn": "不在清單中",
-    "filterOpInHint": "以逗號分隔多個值"
+    "filterOpInHint": "以逗號分隔多個值",
+    "movementNotFound": "找不到異動",
+    "movementAlreadyCancelled": "異動已取消",
+    "invalidActionOrState": "動作無效或狀態不正確",
+    "invalidType": "類型無效",
+    "invalidSession": "工作階段無效",
+    "invalidData": "資料無效",
+    "ticketNotFound": "找不到工單",
+    "cannotReplyClosedTicket": "無法回覆已取消或已結束的工單"
 }

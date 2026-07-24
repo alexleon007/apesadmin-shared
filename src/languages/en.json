@@ -1445,5 +1445,13 @@
   "filterOpLt": "Less than",
   "filterOpIn": "Is in the list",
   "filterOpNotIn": "Is not in the list",
-  "filterOpInHint": "Separate values with commas"
+  "filterOpInHint": "Separate values with commas",
+  "movementNotFound": "Movement not found",
+  "movementAlreadyCancelled": "Movement already cancelled",
+  "invalidActionOrState": "Invalid action or incorrect state",
+  "invalidType": "Invalid type",
+  "invalidSession": "Invalid session",
+  "invalidData": "Invalid data",
+  "ticketNotFound": "Ticket not found",
+  "cannotReplyClosedTicket": "Cannot reply to a cancelled or closed ticket"
 }
