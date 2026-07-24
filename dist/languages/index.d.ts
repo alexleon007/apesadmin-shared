@@ -506,6 +506,8 @@ export declare const languages: {
         fiscalInformationLowercase: string;
         foldersTitle: string;
         folio: string;
+        orderFolio: string;
+        assortedBy: string;
         folioTracking: string;
         followup: string;
         forms: string;
@@ -1952,6 +1954,8 @@ export declare const languages: {
         fiscalInformationLowercase: string;
         foldersTitle: string;
         folio: string;
+        orderFolio: string;
+        assortedBy: string;
         folioTracking: string;
         followup: string;
         forms: string;
@@ -3394,6 +3398,8 @@ export declare const languages: {
         fiscalInformationLowercase: string;
         foldersTitle: string;
         folio: string;
+        orderFolio: string;
+        assortedBy: string;
         folioTracking: string;
         followup: string;
         forms: string;

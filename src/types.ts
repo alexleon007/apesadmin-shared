@@ -1478,6 +1478,7 @@ export type AssortionRelatedDoc = {
 export type AssortionType = {
   idassort: number;
   assortnumber: string;
+  ordernumber?: string;
   idcmp: number;
   cmpname: string;
   idwh: number;
@@ -1486,6 +1487,7 @@ export type AssortionType = {
   partyname: string;
   assortdate: string;
   assortobs: string;
+  assortuser?: string;
   status: number;
   statusname: string;
   createdat: string;
