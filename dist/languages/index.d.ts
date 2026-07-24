@@ -536,6 +536,7 @@ export declare const languages: {
         getProducts: string;
         gmailConnection: string;
         goodsAssortment: string;
+        assortmentProgress: string;
         goodsReceipt: string;
         goodsReceiptShort: string;
         goToAdvancedPanel: string;
@@ -1984,6 +1985,7 @@ export declare const languages: {
         getProducts: string;
         gmailConnection: string;
         goodsAssortment: string;
+        assortmentProgress: string;
         goodsReceipt: string;
         goodsReceiptShort: string;
         goToAdvancedPanel: string;
@@ -3428,6 +3430,7 @@ export declare const languages: {
         getProducts: string;
         gmailConnection: string;
         goodsAssortment: string;
+        assortmentProgress: string;
         goodsReceipt: string;
         goodsReceiptShort: string;
         goToAdvancedPanel: string;
