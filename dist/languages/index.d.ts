@@ -1458,6 +1458,11 @@ export declare const languages: {
         invalidData: string;
         ticketNotFound: string;
         cannotReplyClosedTicket: string;
+        auraProposalNotFound: string;
+        auraProposalUnavailable: string;
+        auraTaskInProgress: string;
+        auraAgentStartFailed: string;
+        chatAlreadyExists: string;
     };
     readonly en: {
         absent: string;
@@ -2915,6 +2920,11 @@ export declare const languages: {
         invalidData: string;
         ticketNotFound: string;
         cannotReplyClosedTicket: string;
+        auraProposalNotFound: string;
+        auraProposalUnavailable: string;
+        auraTaskInProgress: string;
+        auraAgentStartFailed: string;
+        chatAlreadyExists: string;
     };
     readonly "zh-TW": {
         absent: string;
@@ -4367,6 +4377,11 @@ export declare const languages: {
         invalidData: string;
         ticketNotFound: string;
         cannotReplyClosedTicket: string;
+        auraProposalNotFound: string;
+        auraProposalUnavailable: string;
+        auraTaskInProgress: string;
+        auraAgentStartFailed: string;
+        chatAlreadyExists: string;
     };
 };
 export type LanguageKey = keyof typeof languages;

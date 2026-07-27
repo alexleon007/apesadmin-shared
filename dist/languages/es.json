@@ -1453,5 +1453,10 @@
     "invalidSession": "Sesión inválida",
     "invalidData": "Datos inválidos",
     "ticketNotFound": "Ticket no encontrado",
-    "cannotReplyClosedTicket": "No se puede responder un ticket cancelado o finalizado"
+    "cannotReplyClosedTicket": "No se puede responder un ticket cancelado o finalizado",
+    "auraProposalNotFound": "Propuesta de acción no encontrada",
+    "auraProposalUnavailable": "Esta propuesta ya no está disponible",
+    "auraTaskInProgress": "Ya hay una tarea de AURA en curso, espera a que termine",
+    "auraAgentStartFailed": "No se pudo iniciar el browser agent",
+    "chatAlreadyExists": "El chat ya existe"
 }

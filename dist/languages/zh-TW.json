@@ -1448,5 +1448,10 @@
     "invalidSession": "工作階段無效",
     "invalidData": "資料無效",
     "ticketNotFound": "找不到工單",
-    "cannotReplyClosedTicket": "無法回覆已取消或已結束的工單"
+    "cannotReplyClosedTicket": "無法回覆已取消或已結束的工單",
+    "auraProposalNotFound": "找不到動作提案",
+    "auraProposalUnavailable": "此提案已不再可用",
+    "auraTaskInProgress": "已有一個 AURA 任務正在進行中，請等待其完成",
+    "auraAgentStartFailed": "無法啟動瀏覽器代理程式",
+    "chatAlreadyExists": "聊天已存在"
 }
