@@ -1969,6 +1969,13 @@ export type WorkItemsType = {
     parentTitle?: string;
     parentType?: WorkItemsClasifType;
     idchat?: number | null;
+    wiidclas?: number | null;
+    wiclasname?: string;
+    wiclascolor?: string;
+    wisprintnames?: string;
+    wiprojectname?: string;
+    wicmpname?: string;
+    wicreatedat?: string;
 };
 export type PublicServiceKeyType = "calendar" | "cfdi" | "ticket" | "account" | "chat";
 export type PublicNavItemType = {
