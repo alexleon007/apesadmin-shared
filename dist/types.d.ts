@@ -1347,8 +1347,18 @@ export type ProductType = {
     inventoryTracked: boolean;
     pricePerUnit: boolean;
     prodbarcodes: BarcodeType[];
+    prodlocations: ProductLocationType[];
     maxqty: number;
     minqty: number;
+};
+export type ProductLocationType = {
+    idprodloc: number;
+    idprod: number;
+    idwh: number;
+    whname: string;
+    idwhloc: number;
+    whlocname: string;
+    qty: number;
 };
 export type AssortionDetailType = {
     idad: number;
