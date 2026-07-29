@@ -855,6 +855,8 @@ export declare const languages: {
         pageNumTemplate: string;
         paid: string;
         partial: string;
+        partialSale: string;
+        partialSaleHelp: string;
         password: string;
         passwordAlt: string;
         paused: string;
@@ -883,6 +885,7 @@ export declare const languages: {
         pDFTemplates: string;
         ped: string;
         pending: string;
+        pendingToSell: string;
         pendingCount: string;
         pendingInvoices: string;
         pendingStops: string;
@@ -987,6 +990,7 @@ export declare const languages: {
         quantityAbbr: string;
         quantityPlaceholder: string;
         quantityToAssort: string;
+        quantityToSell: string;
         quantityToReturn: string;
         query: string;
         questionnaire: string;
@@ -1317,6 +1321,7 @@ export declare const languages: {
         toastSaved: string;
         toastSaveError: string;
         toastSelectAtLeastOne: string;
+        toastQuantityExceedsPending: string;
         toastSelectEquivalent: string;
         toastSelectRequired: string;
         toastSent: string;
@@ -1353,6 +1358,7 @@ export declare const languages: {
         totalSales: string;
         totalStops: string;
         totalToCollect: string;
+        totalToPay: string;
         totalWithoutCommission: string;
         trackingLog: string;
         transcriptionPrompt: string;
@@ -2317,6 +2323,8 @@ export declare const languages: {
         pageNumTemplate: string;
         paid: string;
         partial: string;
+        partialSale: string;
+        partialSaleHelp: string;
         password: string;
         passwordAlt: string;
         paused: string;
@@ -2345,6 +2353,7 @@ export declare const languages: {
         pDFTemplates: string;
         ped: string;
         pending: string;
+        pendingToSell: string;
         pendingCount: string;
         pendingInvoices: string;
         pendingStops: string;
@@ -2449,6 +2458,7 @@ export declare const languages: {
         quantityAbbr: string;
         quantityPlaceholder: string;
         quantityToAssort: string;
+        quantityToSell: string;
         quantityToReturn: string;
         query: string;
         questionnaire: string;
@@ -2779,6 +2789,7 @@ export declare const languages: {
         toastSaved: string;
         toastSaveError: string;
         toastSelectAtLeastOne: string;
+        toastQuantityExceedsPending: string;
         toastSelectEquivalent: string;
         toastSelectRequired: string;
         toastSent: string;
@@ -2815,6 +2826,7 @@ export declare const languages: {
         totalSales: string;
         totalStops: string;
         totalToCollect: string;
+        totalToPay: string;
         totalWithoutCommission: string;
         trackingLog: string;
         transcriptionPrompt: string;
@@ -3775,6 +3787,8 @@ export declare const languages: {
         pageNumTemplate: string;
         paid: string;
         partial: string;
+        partialSale: string;
+        partialSaleHelp: string;
         password: string;
         passwordAlt: string;
         paused: string;
@@ -3803,6 +3817,7 @@ export declare const languages: {
         pDFTemplates: string;
         ped: string;
         pending: string;
+        pendingToSell: string;
         pendingCount: string;
         pendingInvoices: string;
         pendingStops: string;
@@ -3907,6 +3922,7 @@ export declare const languages: {
         quantityAbbr: string;
         quantityPlaceholder: string;
         quantityToAssort: string;
+        quantityToSell: string;
         quantityToReturn: string;
         query: string;
         questionnaire: string;
@@ -4236,6 +4252,7 @@ export declare const languages: {
         toastSaved: string;
         toastSaveError: string;
         toastSelectAtLeastOne: string;
+        toastQuantityExceedsPending: string;
         toastSelectEquivalent: string;
         toastSelectRequired: string;
         toastSent: string;
@@ -4272,6 +4289,7 @@ export declare const languages: {
         totalSales: string;
         totalStops: string;
         totalToCollect: string;
+        totalToPay: string;
         totalWithoutCommission: string;
         trackingLog: string;
         transcriptionPrompt: string;

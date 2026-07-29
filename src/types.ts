@@ -1065,6 +1065,8 @@ export type OrderDetailType = {
   taxes: TaxType[];
   quantity: number;
   quantityassorted?: number;
+  /** Cantidad ya convertida a un documento posterior (venta parcial). */
+  quantitysold?: number;
   price: number;
   pricelist?: number;
   subtotal: number;
@@ -1156,6 +1158,8 @@ export type OrderType = {
   orxmlurl: string;
   orstatusinbox?: string;
   orisassorted?: number;
+  /** 1 si alguna partida ya se vendió (total o parcialmente). */
+  orhaspartial?: number;
   ordetail: OrderDetailType[];
   orfields: ConceptFieldsValuesType[];
   ormovements?: OrderMovementType[];
