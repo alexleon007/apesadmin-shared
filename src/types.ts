@@ -947,6 +947,7 @@ export type LogisticsRoutesType = {
     idrst: number;
     idcmp: number;
     cmpname: string;
+    idwh: number;
     iddoc: number;
     doccode: string;
     docnumber: number;

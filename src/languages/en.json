@@ -977,6 +977,7 @@
   "protocol": "Protocol",
   "provider": "Provider",
   "publicLink": "Public calendar link",
+  "purchase": "Purchase",
   "purchaseCycle": "Purchase Cycle",
   "purchaseCycleByProduct": "Purchase Cycle by Product (Top 10)",
   "purchaseFrequency": "Purchase frequency",
