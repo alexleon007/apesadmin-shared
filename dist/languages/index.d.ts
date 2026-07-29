@@ -215,6 +215,10 @@ export declare const languages: {
         comments: string;
         commission: string;
         commissionPercentage: string;
+        commitment: string;
+        commitmentContact: string;
+        commitmentTime: string;
+        commitmentTitle: string;
         companies: string;
         companiesManagement: string;
         company: string;
@@ -714,6 +718,7 @@ export declare const languages: {
         newBatch: string;
         newChart: string;
         newChat: string;
+        newCommitment: string;
         newCompany: string;
         newContact: string;
         newCount: string;
@@ -1683,6 +1688,10 @@ export declare const languages: {
         comments: string;
         commission: string;
         commissionPercentage: string;
+        commitment: string;
+        commitmentContact: string;
+        commitmentTime: string;
+        commitmentTitle: string;
         companies: string;
         companiesManagement: string;
         company: string;
@@ -2182,6 +2191,7 @@ export declare const languages: {
         newBatch: string;
         newChart: string;
         newChat: string;
+        newCommitment: string;
         newCompany: string;
         newContact: string;
         newCount: string;
