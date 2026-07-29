@@ -400,6 +400,7 @@
   "editingTicketNo": "Editing Ticket No",
   "editLibrary": "Edit Library",
   "editMailAccount": "Edit Mail Account",
+  "editPreset": "Edit Preset",
   "editSupplier": "Edit Supplier",
   "editTheme": "Edit Theme",
   "editUser": "Edit User",
@@ -929,6 +930,9 @@
   "postalCode": "ZIP",
   "predefinedThemes": "Predefined Themes",
   "preview": "Preview",
+  "presetAccess": "Who has access",
+  "presetAccessHelp": "Selected users get a copy of this preset; unselecting removes it for them.",
+  "presetNameTaken": "A preset with that name already exists",
   "previous": "Previous",
   "price": "Price",
   "priceControl": "Price Control",
@@ -1470,5 +1474,6 @@
   "auraTaskInProgress": "An AURA task is already running, wait for it to finish",
   "auraAgentStartFailed": "Could not start the browser agent",
   "chatAlreadyExists": "Chat already exists",
-  "pemConversionFailed": "Could not convert the private key to PEM format"
+  "pemConversionFailed": "Could not convert the private key to PEM format",
+  "noActiveConnection": "No active connection"
 }

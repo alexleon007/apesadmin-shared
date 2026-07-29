@@ -400,6 +400,7 @@
   "editingTicketNo": "Editando Ticket No",
   "editLibrary": "Editar Biblioteca",
   "editMailAccount": "Editar Cuenta de Correo",
+  "editPreset": "Editar Preset",
   "editSupplier": "Editar Proveedor",
   "editTheme": "Editar Tema",
   "editUser": "Editar Usuario",
@@ -929,6 +930,9 @@
   "postalCode": "CP",
   "predefinedThemes": "Temas Predefinidos",
   "preview": "Vista previa",
+  "presetAccess": "Quién tiene acceso",
+  "presetAccessHelp": "Los usuarios seleccionados reciben una copia de este preset; al quitarlos se les elimina.",
+  "presetNameTaken": "Ya existe un preset con ese nombre",
   "previous": "Anterior",
   "price": "Precio",
   "priceControl": "Control de Precios",
@@ -1470,5 +1474,6 @@
   "auraTaskInProgress": "Ya hay una tarea de AURA en curso, espera a que termine",
   "auraAgentStartFailed": "No se pudo iniciar el browser agent",
   "chatAlreadyExists": "El chat ya existe",
-  "pemConversionFailed": "No se pudo convertir la llave privada a formato PEM"
+  "pemConversionFailed": "No se pudo convertir la llave privada a formato PEM",
+  "noActiveConnection": "No hay conexión activa"
 }

@@ -404,6 +404,7 @@ export declare const languages: {
         editingTicketNo: string;
         editLibrary: string;
         editMailAccount: string;
+        editPreset: string;
         editSupplier: string;
         editTheme: string;
         editUser: string;
@@ -933,6 +934,9 @@ export declare const languages: {
         postalCode: string;
         predefinedThemes: string;
         preview: string;
+        presetAccess: string;
+        presetAccessHelp: string;
+        presetNameTaken: string;
         previous: string;
         price: string;
         priceControl: string;
@@ -1475,6 +1479,7 @@ export declare const languages: {
         auraAgentStartFailed: string;
         chatAlreadyExists: string;
         pemConversionFailed: string;
+        noActiveConnection: string;
     };
     readonly en: {
         absent: string;
@@ -1878,6 +1883,7 @@ export declare const languages: {
         editingTicketNo: string;
         editLibrary: string;
         editMailAccount: string;
+        editPreset: string;
         editSupplier: string;
         editTheme: string;
         editUser: string;
@@ -2407,6 +2413,9 @@ export declare const languages: {
         postalCode: string;
         predefinedThemes: string;
         preview: string;
+        presetAccess: string;
+        presetAccessHelp: string;
+        presetNameTaken: string;
         previous: string;
         price: string;
         priceControl: string;
@@ -2949,6 +2958,7 @@ export declare const languages: {
         auraAgentStartFailed: string;
         chatAlreadyExists: string;
         pemConversionFailed: string;
+        noActiveConnection: string;
     };
     readonly "zh-TW": {
         absent: string;
@@ -3344,6 +3354,7 @@ export declare const languages: {
         editingTicketNo: string;
         editLibrary: string;
         editMailAccount: string;
+        editPreset: string;
         editSupplier: string;
         editTheme: string;
         editUser: string;
@@ -3872,6 +3883,9 @@ export declare const languages: {
         postalCode: string;
         predefinedThemes: string;
         preview: string;
+        presetAccess: string;
+        presetAccessHelp: string;
+        presetNameTaken: string;
         previous: string;
         price: string;
         priceControl: string;
@@ -4413,6 +4427,7 @@ export declare const languages: {
         auraAgentStartFailed: string;
         chatAlreadyExists: string;
         pemConversionFailed: string;
+        noActiveConnection: string;
     };
 };
 export type LanguageKey = keyof typeof languages;
