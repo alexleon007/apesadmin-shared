@@ -1469,5 +1469,6 @@
   "auraProposalUnavailable": "This proposal is no longer available",
   "auraTaskInProgress": "An AURA task is already running, wait for it to finish",
   "auraAgentStartFailed": "Could not start the browser agent",
-  "chatAlreadyExists": "Chat already exists"
+  "chatAlreadyExists": "Chat already exists",
+  "pemConversionFailed": "Could not convert the private key to PEM format"
 }

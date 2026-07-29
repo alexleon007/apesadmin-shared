@@ -1469,5 +1469,6 @@
     "auraProposalUnavailable": "Esta propuesta ya no está disponible",
     "auraTaskInProgress": "Ya hay una tarea de AURA en curso, espera a que termine",
     "auraAgentStartFailed": "No se pudo iniciar el browser agent",
-    "chatAlreadyExists": "El chat ya existe"
+    "chatAlreadyExists": "El chat ya existe",
+    "pemConversionFailed": "No se pudo convertir la llave privada a formato PEM"
 }

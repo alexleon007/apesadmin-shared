@@ -1474,6 +1474,7 @@ export declare const languages: {
         auraTaskInProgress: string;
         auraAgentStartFailed: string;
         chatAlreadyExists: string;
+        pemConversionFailed: string;
     };
     readonly en: {
         absent: string;
@@ -2947,6 +2948,7 @@ export declare const languages: {
         auraTaskInProgress: string;
         auraAgentStartFailed: string;
         chatAlreadyExists: string;
+        pemConversionFailed: string;
     };
     readonly "zh-TW": {
         absent: string;
@@ -4410,6 +4412,7 @@ export declare const languages: {
         auraTaskInProgress: string;
         auraAgentStartFailed: string;
         chatAlreadyExists: string;
+        pemConversionFailed: string;
     };
 };
 export type LanguageKey = keyof typeof languages;
