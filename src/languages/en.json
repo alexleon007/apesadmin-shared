@@ -538,6 +538,7 @@
   "gmailConnection": "Gmail Connection",
   "goodsAssortment": "Merchandise Assortment",
   "assortmentProgress": "Assortment progress",
+  "orderSplitByAssortment": "Incomplete assortment: order {{folio}} was created with the shortfall",
   "goodsReceipt": "Goods Receipt",
   "goodsReceiptShort": "Goods Receipt",
   "goToAdvancedPanel": "Go to advanced panel",

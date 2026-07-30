@@ -542,6 +542,7 @@ export declare const languages: {
         gmailConnection: string;
         goodsAssortment: string;
         assortmentProgress: string;
+        orderSplitByAssortment: string;
         goodsReceipt: string;
         goodsReceiptShort: string;
         goToAdvancedPanel: string;
@@ -985,6 +986,7 @@ export declare const languages: {
         protocol: string;
         provider: string;
         publicLink: string;
+        purchase: string;
         purchaseCycle: string;
         purchaseCycleByProduct: string;
         purchaseFrequency: string;
@@ -1089,6 +1091,7 @@ export declare const languages: {
         routeControl: string;
         routeDate: string;
         routeDetail: string;
+        routeSummary: string;
         routing: string;
         rowFiltersSection: string;
         rowStart: string;
@@ -1315,6 +1318,7 @@ export declare const languages: {
         toastNetworkError: string;
         toastNoBills: string;
         toastNoChanges: string;
+        toastNoRouteSummaryTemplate: string;
         toastNoPendingBills: string;
         toastNoStock: string;
         toastNotFoundError: string;
@@ -2021,6 +2025,7 @@ export declare const languages: {
         gmailConnection: string;
         goodsAssortment: string;
         assortmentProgress: string;
+        orderSplitByAssortment: string;
         goodsReceipt: string;
         goodsReceiptShort: string;
         goToAdvancedPanel: string;
@@ -2464,6 +2469,7 @@ export declare const languages: {
         protocol: string;
         provider: string;
         publicLink: string;
+        purchase: string;
         purchaseCycle: string;
         purchaseCycleByProduct: string;
         purchaseFrequency: string;
@@ -2568,6 +2574,7 @@ export declare const languages: {
         routeControl: string;
         routeDate: string;
         routeDetail: string;
+        routeSummary: string;
         routing: string;
         rowFiltersSection: string;
         rowStart: string;
@@ -2794,6 +2801,7 @@ export declare const languages: {
         toastNetworkError: string;
         toastNoBills: string;
         toastNoChanges: string;
+        toastNoRouteSummaryTemplate: string;
         toastNoPendingBills: string;
         toastNoStock: string;
         toastNotFoundError: string;
@@ -3492,6 +3500,7 @@ export declare const languages: {
         gmailConnection: string;
         goodsAssortment: string;
         assortmentProgress: string;
+        orderSplitByAssortment: string;
         goodsReceipt: string;
         goodsReceiptShort: string;
         goToAdvancedPanel: string;
@@ -3937,6 +3946,7 @@ export declare const languages: {
         purchaseCycle: string;
         purchaseCycleByProduct: string;
         purchaseFrequency: string;
+        purchase: string;
         purchaseInvoices: string;
         purchaseOrders: string;
         purchases: string;
