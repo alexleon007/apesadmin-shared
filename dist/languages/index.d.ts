@@ -255,6 +255,7 @@ export declare const languages: {
         confirmPassword: string;
         confirmPayment: string;
         connectAmazon: string;
+        connected: string;
         connectedAs: string;
         connectedStore: string;
         connectGoogle: string;
@@ -803,6 +804,7 @@ export declare const languages: {
         noRoutesAvailable: string;
         noSales: string;
         noSection: string;
+        noServer: string;
         noSort: string;
         noSrc: string;
         noStops: string;
@@ -1713,6 +1715,7 @@ export declare const languages: {
         confirmPassword: string;
         confirmPayment: string;
         connectAmazon: string;
+        connected: string;
         connectedAs: string;
         connectedStore: string;
         connectGoogle: string;
@@ -2261,6 +2264,7 @@ export declare const languages: {
         noRoutesAvailable: string;
         noSales: string;
         noSection: string;
+        noServer: string;
         noSort: string;
         noSrc: string;
         noStops: string;
@@ -3171,6 +3175,7 @@ export declare const languages: {
         confirmPassword: string;
         confirmPayment: string;
         connectAmazon: string;
+        connected: string;
         connectedAs: string;
         connectedStore: string;
         connectGoogle: string;
@@ -3719,6 +3724,7 @@ export declare const languages: {
         noRoutesAvailable: string;
         noSales: string;
         noSection: string;
+        noServer: string;
         noSort: string;
         noSrc: string;
         noStops: string;
