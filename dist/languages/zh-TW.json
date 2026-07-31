@@ -1179,6 +1179,8 @@
     "stageCreated": "已開始",
     "stageUpdated": "已更新",
     "stamped": "已蓋章 (CFDI)",
+    "stampedAmount": "已蓋章金額",
+    "stampPaymentComplement": "開具付款補充憑證",
     "stampStop": "蓋章站點",
     "start": "開始",
     "startDate": "開始日期",

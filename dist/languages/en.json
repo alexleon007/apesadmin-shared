@@ -1179,6 +1179,8 @@
     "stageCreated": "STARTED",
     "stageUpdated": "UPDATED",
     "stamped": "Stamped (CFDI)",
+    "stampedAmount": "Stamped Amount",
+    "stampPaymentComplement": "Stamp Payment Complement",
     "stampStop": "Stamp stop",
     "start": "Start",
     "startDate": "Start Date",

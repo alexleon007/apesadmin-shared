@@ -1179,6 +1179,8 @@
     "stageCreated": "INICIO",
     "stageUpdated": "ACTUALIZADO",
     "stamped": "Timbrado (CFDI)",
+    "stampedAmount": "Monto Timbrado",
+    "stampPaymentComplement": "Timbrar Complemento de Pago",
     "stampStop": "Estampar parada",
     "start": "Inicio",
     "startDate": "Fecha de inicio",

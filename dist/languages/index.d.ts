@@ -1183,6 +1183,8 @@ export declare const languages: {
         stageCreated: string;
         stageUpdated: string;
         stamped: string;
+        stampedAmount: string;
+        stampPaymentComplement: string;
         stampStop: string;
         start: string;
         startDate: string;
@@ -2643,6 +2645,8 @@ export declare const languages: {
         stageCreated: string;
         stageUpdated: string;
         stamped: string;
+        stampedAmount: string;
+        stampPaymentComplement: string;
         stampStop: string;
         start: string;
         startDate: string;
@@ -4103,6 +4107,8 @@ export declare const languages: {
         stageCreated: string;
         stageUpdated: string;
         stamped: string;
+        stampedAmount: string;
+        stampPaymentComplement: string;
         stampStop: string;
         start: string;
         startDate: string;

@@ -304,6 +304,58 @@ export type CFDIImpuestoType = {
   Importe: number;
 };
 
+export type CFDIDoctoRelacionadoType = {
+  idDocumento: string;
+  folio: string;
+  monedaDR: string;
+  equivalenciaDR?: number;
+  numParcialidad: number;
+  impSaldoAnt: number;
+  impPagado: number;
+  impSaldoInsoluto: number;
+  objetoImpDR: "01" | "02";
+  impuestosDR?: {
+    traslados?: CFDIImpuestoType[];
+    retenciones?: CFDIImpuestoType[];
+  };
+};
+
+export type CfdiPagoDataType = {
+  version: "4.0";
+  serie: string;
+  folio: string;
+  fecha: string;
+  noCertificado: string;
+  certificado: string;
+  sello: string;
+  lugarExpedicion: string;
+  exportacion: string;
+  emisor: {
+    rfc: string;
+    nombre: string;
+    regimenFiscal: string;
+  };
+  receptor: {
+    rfc: string;
+    nombre: string;
+    usoCFDI: "CP01";
+    domicilioFiscal: string;
+    regimenFiscal: string;
+  };
+  pago: {
+    fechaPago: string;
+    formaDePagoP: string;
+    monedaP: string;
+    tipoCambioP?: number;
+    monto: number;
+    doctosRelacionados: CFDIDoctoRelacionadoType[];
+    impuestosP?: {
+      traslados?: CFDIImpuestoType[];
+      retenciones?: CFDIImpuestoType[];
+    };
+  };
+};
+
 // ─────────────────────────────────────────────────────────────────────────────
 // ERP — tipos compartidos (frontend + backend)
 // ─────────────────────────────────────────────────────────────────────────────
@@ -1287,6 +1339,10 @@ export type PaymentType = {
   paystatusname: string;
   paytotal: number;
   paydocs: PaymentDetType[];
+  idcfdi?: number;
+  paycfdiuuid?: string;
+  paycfdixmlurl?: string;
+  stampedamount?: number;
 };
 
 export type PipelineStepType = {
