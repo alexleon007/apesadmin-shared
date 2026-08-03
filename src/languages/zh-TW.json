@@ -556,6 +556,7 @@
   "groupBy": "分組依據",
   "groupInfo": "群組資訊",
   "groupNameOptional": "群組名稱（選填）",
+  "guidedAssortment": "引導揀貨",
   "groupPhoto": "群組照片",
   "groupSettings": "群組設定",
   "guideAuth": "2. 授權應用程式並從 OAuth 流程取得 Refresh Token。",

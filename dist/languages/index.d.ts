@@ -560,6 +560,7 @@ export declare const languages: {
         groupBy: string;
         groupInfo: string;
         groupNameOptional: string;
+        guidedAssortment: string;
         groupPhoto: string;
         groupSettings: string;
         guideAuth: string;
@@ -2036,6 +2037,7 @@ export declare const languages: {
         groupBy: string;
         groupInfo: string;
         groupNameOptional: string;
+        guidedAssortment: string;
         groupPhoto: string;
         groupSettings: string;
         guideAuth: string;
@@ -3512,6 +3514,7 @@ export declare const languages: {
         groupBy: string;
         groupInfo: string;
         groupNameOptional: string;
+        guidedAssortment: string;
         groupPhoto: string;
         groupSettings: string;
         guideAuth: string;

@@ -556,6 +556,7 @@
   "groupBy": "Agrupar por",
   "groupInfo": "Info del grupo",
   "groupNameOptional": "Nombre del grupo (opcional)",
+  "guidedAssortment": "Surtido guiado",
   "groupPhoto": "Foto de grupo",
   "groupSettings": "Ajustes del grupo",
   "guideAuth": "2. Autorizar la aplicación y obtener el Refresh Token desde el flujo OAuth.",
