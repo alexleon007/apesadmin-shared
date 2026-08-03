@@ -144,6 +144,8 @@ export declare const languages: {
         cancelEvent: string;
         cancelled: string;
         cancelledBy: string;
+        cancellingSat: string;
+        cancellingSatWait: string;
         cancelPayment: string;
         cancelReason: string;
         cancelSubscription: string;
@@ -1292,6 +1294,7 @@ export declare const languages: {
         toastAuthLimitReached: string;
         toastAuthStartError: string;
         toastAuthSuccess: string;
+        cancelOtherSessionNotAllowed: string;
         toastCancelled: string;
         toastCashClosed: string;
         toastCashSessionClosed: string;
@@ -1617,6 +1620,8 @@ export declare const languages: {
         cancelEvent: string;
         cancelled: string;
         cancelledBy: string;
+        cancellingSat: string;
+        cancellingSatWait: string;
         cancelPayment: string;
         cancelReason: string;
         cancelSubscription: string;
@@ -2765,6 +2770,7 @@ export declare const languages: {
         toastAuthLimitReached: string;
         toastAuthStartError: string;
         toastAuthSuccess: string;
+        cancelOtherSessionNotAllowed: string;
         toastCancelled: string;
         toastCashClosed: string;
         toastCashSessionClosed: string;
@@ -3090,6 +3096,8 @@ export declare const languages: {
         cancelEvent: string;
         cancelled: string;
         cancelledBy: string;
+        cancellingSat: string;
+        cancellingSatWait: string;
         cancelPayment: string;
         cancelReason: string;
         cancelSubscription: string;
@@ -4238,6 +4246,7 @@ export declare const languages: {
         toastAuthLimitReached: string;
         toastAuthStartError: string;
         toastAuthSuccess: string;
+        cancelOtherSessionNotAllowed: string;
         toastCancelled: string;
         toastCashClosed: string;
         toastCashSessionClosed: string;
