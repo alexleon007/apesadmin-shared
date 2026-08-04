@@ -940,9 +940,26 @@ export type MailConfigType = {
     mailport?: string | number;
     mailprotocol?: string;
     mailuser?: string | null;
+    haspassword?: 0 | 1;
+    hastoken?: 0 | 1;
+    mailusers?: number[];
     mailpassword?: string | null;
     status?: number;
     createdAt?: string | null;
+};
+export type MailAccountRowType = {
+    idmail: number;
+    name_mail: string;
+    mail_mail: string;
+    supplier_mail: string;
+    host_mail: string;
+    port_mail: string;
+    protocol_mail: string;
+    user_mail: string;
+    pass_mail: string;
+    token_mail: string;
+    status_mail: number;
+    [key: string]: any;
 };
 export type ManufactureDetType = {
     idmand: number;

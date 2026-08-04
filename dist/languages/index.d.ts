@@ -679,6 +679,7 @@ export declare const languages: {
         loyaltyProgram: string;
         mailAccounts: string;
         mailAccountsManagement: string;
+        mailPasswordUnchanged: string;
         mailSendError: string;
         mainButton: string;
         mainConfiguration: string;
@@ -2172,6 +2173,7 @@ export declare const languages: {
         loyaltyProgram: string;
         mailAccounts: string;
         mailAccountsManagement: string;
+        mailPasswordUnchanged: string;
         mailSendError: string;
         mainButton: string;
         mainConfiguration: string;
@@ -3665,6 +3667,7 @@ export declare const languages: {
         loyaltyProgram: string;
         mailAccounts: string;
         mailAccountsManagement: string;
+        mailPasswordUnchanged: string;
         mailSendError: string;
         mainButton: string;
         mainConfiguration: string;

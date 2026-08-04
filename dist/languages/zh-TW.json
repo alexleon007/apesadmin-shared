@@ -675,6 +675,7 @@
     "loyaltyProgram": "忠誠度計畫",
     "mailAccounts": "郵件帳戶",
     "mailAccountsManagement": "郵件帳戶管理",
+    "mailPasswordUnchanged": "留空以保留目前的密碼",
     "mailSendError": "傳送郵件錯誤",
     "mainButton": "主要按鈕",
     "mainConfiguration": "主要設定",

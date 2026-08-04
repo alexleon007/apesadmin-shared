@@ -675,6 +675,7 @@
   "loyaltyProgram": "Programa de Fidelización",
   "mailAccounts": "Cuentas de Correo",
   "mailAccountsManagement": "Gestión de Cuentas de correo",
+  "mailPasswordUnchanged": "Déjala vacía para conservar la contraseña actual",
   "mailSendError": "Error al enviar el correo",
   "mainButton": "Botón Principal",
   "mainConfiguration": "Configuración principal",

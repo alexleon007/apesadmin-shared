@@ -675,6 +675,7 @@
     "loyaltyProgram": "Loyalty Program",
     "mailAccounts": "Mail Accounts",
     "mailAccountsManagement": "Mail Accounts Management",
+    "mailPasswordUnchanged": "Leave blank to keep the current password",
     "mailSendError": "Error sending mail",
     "mainButton": "Main Button",
     "mainConfiguration": "Main Configuration",
