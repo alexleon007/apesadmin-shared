@@ -105,6 +105,7 @@ export declare const languages: {
         authorizeApp: string;
         authorizedUser: string;
         automaticTranscription: string;
+        availableMaterial: string;
         availablePlugins: string;
         availables: string;
         averageCost: string;
@@ -136,6 +137,7 @@ export declare const languages: {
         businessName: string;
         button: string;
         byCustomer: string;
+        calculateCuts: string;
         calendar: string;
         calendars: string;
         cancel: string;
@@ -330,6 +332,8 @@ export declare const languages: {
         customers: string;
         customerSince: string;
         customThemes: string;
+        cutLayout: string;
+        cutPiecesFromLayout: string;
         cyclicInventories: string;
         cyclicInventory: string;
         danger: string;
@@ -351,6 +355,7 @@ export declare const languages: {
         debit: string;
         debitCard: string;
         decimals: string;
+        default: string;
         defaultCredit: string;
         defaultPDFTemplate: string;
         delete: string;
@@ -435,6 +440,7 @@ export declare const languages: {
         enterUsername: string;
         error: string;
         errorAuthorizationCallback: string;
+        errorCalculatingCut: string;
         errorConnectGmail: string;
         errorConnectionSaving: string;
         errorGeneratingReport: string;
@@ -447,6 +453,7 @@ export declare const languages: {
         eventQuery: string;
         evidence: string;
         exampleQuestions: string;
+        exampleValue: string;
         excelColumnA: string;
         excelColumnB: string;
         excelColumnC: string;
@@ -632,6 +639,7 @@ export declare const languages: {
         invoicesManagement: string;
         itemCode: string;
         itemName: string;
+        kerfWidth: string;
         key: string;
         kpis: string;
         label: string;
@@ -642,9 +650,11 @@ export declare const languages: {
         lastPurchaseDate: string;
         late: string;
         later: string;
+        layoutRemainders: string;
         lead: string;
         leConceptFields: string;
         legend: string;
+        length: string;
         libraries: string;
         libraryNotFound: string;
         line: string;
@@ -687,6 +697,7 @@ export declare const languages: {
         marketplace: string;
         marketplacePlaceholder: string;
         material: string;
+        materialCut: string;
         max: string;
         maxStock: string;
         medium: string;
@@ -786,6 +797,7 @@ export declare const languages: {
         noFiltersAllData: string;
         noInboxes: string;
         noItemsInCart: string;
+        noLayoutImage: string;
         noLogRecorded: string;
         noMessagesYet: string;
         noMorePendingToAssort: string;
@@ -960,6 +972,7 @@ export declare const languages: {
         possibleDuplicates: string;
         postalCode: string;
         predefinedThemes: string;
+        preset: string;
         presetAccess: string;
         presetAccessHelp: string;
         presetNameTaken: string;
@@ -1098,7 +1111,9 @@ export declare const languages: {
         reports: string;
         representative: string;
         required: string;
+        requiredCuts: string;
         requiredField: string;
+        requiredMaterialSummary: string;
         reserveInventoryOnOrder: string;
         reset: string;
         resize: string;
@@ -1467,6 +1482,7 @@ export declare const languages: {
         welcomeBack: string;
         welcomeWidgetDesc: string;
         whatReportNeeded: string;
+        width: string;
         without: string;
         working: string;
         workspace: string;
@@ -1582,6 +1598,7 @@ export declare const languages: {
         authorizeApp: string;
         authorizedUser: string;
         automaticTranscription: string;
+        availableMaterial: string;
         availablePlugins: string;
         availables: string;
         averageCost: string;
@@ -1613,6 +1630,7 @@ export declare const languages: {
         businessName: string;
         button: string;
         byCustomer: string;
+        calculateCuts: string;
         calendar: string;
         calendars: string;
         cancel: string;
@@ -1807,6 +1825,8 @@ export declare const languages: {
         customers: string;
         customerSince: string;
         customThemes: string;
+        cutLayout: string;
+        cutPiecesFromLayout: string;
         cyclicInventories: string;
         cyclicInventory: string;
         danger: string;
@@ -1828,6 +1848,7 @@ export declare const languages: {
         debit: string;
         debitCard: string;
         decimals: string;
+        default: string;
         defaultCredit: string;
         defaultPDFTemplate: string;
         delete: string;
@@ -1912,6 +1933,7 @@ export declare const languages: {
         enterUsername: string;
         error: string;
         errorAuthorizationCallback: string;
+        errorCalculatingCut: string;
         errorConnectGmail: string;
         errorConnectionSaving: string;
         errorGeneratingReport: string;
@@ -1924,6 +1946,7 @@ export declare const languages: {
         eventQuery: string;
         evidence: string;
         exampleQuestions: string;
+        exampleValue: string;
         excelColumnA: string;
         excelColumnB: string;
         excelColumnC: string;
@@ -2109,6 +2132,7 @@ export declare const languages: {
         invoicesManagement: string;
         itemCode: string;
         itemName: string;
+        kerfWidth: string;
         key: string;
         kpis: string;
         label: string;
@@ -2119,9 +2143,11 @@ export declare const languages: {
         lastPurchaseDate: string;
         late: string;
         later: string;
+        layoutRemainders: string;
         lead: string;
         leConceptFields: string;
         legend: string;
+        length: string;
         libraries: string;
         libraryNotFound: string;
         line: string;
@@ -2164,6 +2190,7 @@ export declare const languages: {
         marketplace: string;
         marketplacePlaceholder: string;
         material: string;
+        materialCut: string;
         max: string;
         maxStock: string;
         medium: string;
@@ -2263,6 +2290,7 @@ export declare const languages: {
         noFiltersAllData: string;
         noInboxes: string;
         noItemsInCart: string;
+        noLayoutImage: string;
         noLogRecorded: string;
         noMessagesYet: string;
         noMorePendingToAssort: string;
@@ -2437,6 +2465,7 @@ export declare const languages: {
         possibleDuplicates: string;
         postalCode: string;
         predefinedThemes: string;
+        preset: string;
         presetAccess: string;
         presetAccessHelp: string;
         presetNameTaken: string;
@@ -2575,7 +2604,9 @@ export declare const languages: {
         reports: string;
         representative: string;
         required: string;
+        requiredCuts: string;
         requiredField: string;
+        requiredMaterialSummary: string;
         reserveInventoryOnOrder: string;
         reset: string;
         resize: string;
@@ -2944,6 +2975,7 @@ export declare const languages: {
         welcomeBack: string;
         welcomeWidgetDesc: string;
         whatReportNeeded: string;
+        width: string;
         without: string;
         working: string;
         workspace: string;
@@ -3059,6 +3091,7 @@ export declare const languages: {
         authorizeApp: string;
         authorizedUser: string;
         automaticTranscription: string;
+        availableMaterial: string;
         availablePlugins: string;
         availables: string;
         averageCost: string;
@@ -3090,6 +3123,7 @@ export declare const languages: {
         businessName: string;
         button: string;
         byCustomer: string;
+        calculateCuts: string;
         calendar: string;
         calendars: string;
         cancel: string;
@@ -3284,6 +3318,8 @@ export declare const languages: {
         customers: string;
         customerSince: string;
         customThemes: string;
+        cutLayout: string;
+        cutPiecesFromLayout: string;
         cyclicInventories: string;
         cyclicInventory: string;
         danger: string;
@@ -3305,6 +3341,7 @@ export declare const languages: {
         debit: string;
         debitCard: string;
         decimals: string;
+        default: string;
         defaultCredit: string;
         defaultPDFTemplate: string;
         delete: string;
@@ -3389,6 +3426,7 @@ export declare const languages: {
         enterUsername: string;
         error: string;
         errorAuthorizationCallback: string;
+        errorCalculatingCut: string;
         errorConnectGmail: string;
         errorConnectionSaving: string;
         errorGeneratingReport: string;
@@ -3401,6 +3439,7 @@ export declare const languages: {
         eventQuery: string;
         evidence: string;
         exampleQuestions: string;
+        exampleValue: string;
         excelColumnA: string;
         excelColumnB: string;
         excelColumnC: string;
@@ -3586,6 +3625,7 @@ export declare const languages: {
         invoicesManagement: string;
         itemCode: string;
         itemName: string;
+        kerfWidth: string;
         key: string;
         kpis: string;
         label: string;
@@ -3596,9 +3636,11 @@ export declare const languages: {
         lastPurchaseDate: string;
         late: string;
         later: string;
+        layoutRemainders: string;
         lead: string;
         leConceptFields: string;
         legend: string;
+        length: string;
         libraries: string;
         libraryNotFound: string;
         line: string;
@@ -3641,6 +3683,7 @@ export declare const languages: {
         marketplace: string;
         marketplacePlaceholder: string;
         material: string;
+        materialCut: string;
         max: string;
         maxStock: string;
         medium: string;
@@ -3740,6 +3783,7 @@ export declare const languages: {
         noFiltersAllData: string;
         noInboxes: string;
         noItemsInCart: string;
+        noLayoutImage: string;
         noLogRecorded: string;
         noMessagesYet: string;
         noMorePendingToAssort: string;
@@ -3914,6 +3958,7 @@ export declare const languages: {
         possibleDuplicates: string;
         postalCode: string;
         predefinedThemes: string;
+        preset: string;
         presetAccess: string;
         presetAccessHelp: string;
         presetNameTaken: string;
@@ -4052,7 +4097,9 @@ export declare const languages: {
         reports: string;
         representative: string;
         required: string;
+        requiredCuts: string;
         requiredField: string;
+        requiredMaterialSummary: string;
         reserveInventoryOnOrder: string;
         reset: string;
         resize: string;
@@ -4421,6 +4468,7 @@ export declare const languages: {
         welcomeBack: string;
         welcomeWidgetDesc: string;
         whatReportNeeded: string;
+        width: string;
         without: string;
         working: string;
         workspace: string;

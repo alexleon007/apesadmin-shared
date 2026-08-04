@@ -1029,6 +1029,8 @@ export type OrderDetailType = {
     total: number;
     obsRow?: string;
     section?: string;
+    /** Sólo viene cuando se pide get-orders con withlocations. */
+    prodlocations?: ProductLocationType[];
 };
 export type OrderLogType = {
     idhistory: number;
