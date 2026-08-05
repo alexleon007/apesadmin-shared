@@ -1023,16 +1023,35 @@ export type LogisticsRoutesType = {
   finished: boolean;
 };
 
+/**
+ * Cara publica de una cuenta de correo. `mailpassword` y `smtppassword` son de
+ * solo escritura (formulario -> servidor); el servidor nunca los devuelve, para
+ * eso estan `haspassword` / `hassmtppassword`.
+ */
 export type MailConfigType = {
   idmail: number;
   mailname: string;
   mailstring: string;
   mailsupplier?: string;
   mailuser?: string | null;
+  fromname?: string;
+  imaphost?: string;
+  imapport?: number;
+  imapsecurity?: MailSecurityType;
+  smtphost?: string;
+  smtpport?: number;
+  smtpsecurity?: MailSecurityType;
+  smtpuser?: string;
+  samecreds?: 0 | 1;
+  allowinvalidcert?: 0 | 1;
   haspassword?: 0 | 1;
+  hassmtppassword?: 0 | 1;
   hastoken?: 0 | 1;
   mailusers?: number[];
   mailpassword?: string | null;
+  smtppassword?: string | null;
+  lastcheck?: string | null;
+  lasterror?: string;
   status?: number;
   createdAt?: string | null;
 };
@@ -1156,6 +1175,7 @@ export type MailProviderType = {
   markUnread: (opts: MailMessageRefType) => Promise<void>;
   trash: (opts: MailMessageRefType) => Promise<void>;
   attachment: (opts: MailAttachmentRefType) => Promise<MailAttachmentDataType>;
+  folders: () => Promise<MailFolderType[]>;
   testConnection: () => Promise<MailTestResultType>;
 };
 
