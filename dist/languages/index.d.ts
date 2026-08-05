@@ -646,6 +646,7 @@ export declare const languages: {
         labelTo: string;
         landscape: string;
         language: string;
+        lastCheck: string;
         lastContactDate: string;
         lastPurchaseDate: string;
         late: string;
@@ -683,6 +684,7 @@ export declare const languages: {
         mailAllowInvalidCertWarning: string;
         mailAttachmentTooLarge: string;
         mailErrAuth: string;
+        mailErrDisabled: string;
         mailErrHost: string;
         mailErrTimeout: string;
         mailErrTls: string;
@@ -693,7 +695,7 @@ export declare const languages: {
         mailOutgoingServer: string;
         mailPasswordUnchanged: string;
         mailPresetCustom: string;
-        mailSameCreds: string;
+        mailPresetNeedsAddress: string;
         mailSecurity: string;
         mailSendError: string;
         mailSendNotSupported: string;
@@ -2159,6 +2161,7 @@ export declare const languages: {
         labelTo: string;
         landscape: string;
         language: string;
+        lastCheck: string;
         lastContactDate: string;
         lastPurchaseDate: string;
         late: string;
@@ -2196,6 +2199,7 @@ export declare const languages: {
         mailAllowInvalidCertWarning: string;
         mailAttachmentTooLarge: string;
         mailErrAuth: string;
+        mailErrDisabled: string;
         mailErrHost: string;
         mailErrTimeout: string;
         mailErrTls: string;
@@ -2206,7 +2210,7 @@ export declare const languages: {
         mailOutgoingServer: string;
         mailPasswordUnchanged: string;
         mailPresetCustom: string;
-        mailSameCreds: string;
+        mailPresetNeedsAddress: string;
         mailSecurity: string;
         mailSendError: string;
         mailSendNotSupported: string;
@@ -3672,6 +3676,7 @@ export declare const languages: {
         labelTo: string;
         landscape: string;
         language: string;
+        lastCheck: string;
         lastContactDate: string;
         lastPurchaseDate: string;
         late: string;
@@ -3709,6 +3714,7 @@ export declare const languages: {
         mailAllowInvalidCertWarning: string;
         mailAttachmentTooLarge: string;
         mailErrAuth: string;
+        mailErrDisabled: string;
         mailErrHost: string;
         mailErrTimeout: string;
         mailErrTls: string;
@@ -3719,7 +3725,7 @@ export declare const languages: {
         mailOutgoingServer: string;
         mailPasswordUnchanged: string;
         mailPresetCustom: string;
-        mailSameCreds: string;
+        mailPresetNeedsAddress: string;
         mailSecurity: string;
         mailSendError: string;
         mailSendNotSupported: string;

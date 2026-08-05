@@ -950,7 +950,6 @@ export type MailConfigType = {
     smtpport?: number;
     smtpsecurity?: MailSecurityType;
     smtpuser?: string;
-    samecreds?: 0 | 1;
     allowinvalidcert?: 0 | 1;
     haspassword?: 0 | 1;
     hassmtppassword?: 0 | 1;
@@ -1014,12 +1013,14 @@ export type MailChannelTestType = {
     ok: boolean;
     errorKey?: string;
 };
+/** Que canales prueba /mail/test-connection. */
+export type MailTestChannelType = "imap" | "smtp" | "both";
 export type MailTestResultType = {
     ok: boolean;
     imap: MailChannelTestType;
     smtp: MailChannelTestType;
 };
-export type MailErrorKeyType = "mailErrAuth" | "mailErrHost" | "mailErrTls" | "mailErrTimeout" | "mailErrUnknown";
+export type MailErrorKeyType = "mailErrAuth" | "mailErrDisabled" | "mailErrHost" | "mailErrTls" | "mailErrTimeout" | "mailErrUnknown";
 export type MailAttachmentDataType = {
     filename: string;
     mimeType: string;
@@ -1062,7 +1063,9 @@ export type MailProviderType = {
     trash: (opts: MailMessageRefType) => Promise<void>;
     attachment: (opts: MailAttachmentRefType) => Promise<MailAttachmentDataType>;
     folders: () => Promise<MailFolderType[]>;
-    testConnection: () => Promise<MailTestResultType>;
+    testConnection: (opts?: {
+        channel?: MailTestChannelType;
+    }) => Promise<MailTestResultType>;
 };
 /** Solo backend: lleva credenciales descifradas. Nunca serializar al cliente. */
 export type MailAccountEndpointType = {
