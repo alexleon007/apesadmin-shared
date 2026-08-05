@@ -83,6 +83,9 @@ export declare const MAILSUPPLIER_OTHER = "other";
 export declare const MAILSECURITY_SSL = "ssl";
 export declare const MAILSECURITY_STARTTLS = "starttls";
 export declare const MAILSECURITY_NONE = "none";
+/** Fila de main_menu2 del modulo Correo: grupo 6 (Administracion), submenu 25. */
+export declare const MAILMENU_IDMM = 6;
+export declare const MAILMENU_IDMM2 = 25;
 export declare const MAILFOLDER_INBOX = "INBOX";
 export declare const MAILFOLDER_SENT = "SENT";
 export declare const MAILFOLDER_DRAFTS = "DRAFTS";
