@@ -971,9 +971,14 @@ export type MailAttachmentMetaType = {
     attachmentId: string;
 };
 export type MailMessageType = {
+    /** Id del proveedor: gmail `messageId` | imap `uidValidity.uid`. */
     id: string;
+    /** Cabecera RFC `Message-ID`, la que enhebra una respuesta. */
+    messageId?: string;
+    references?: string[];
     from: string;
     to: string;
+    cc?: string;
     subject: string;
     snippet: string;
     body: string;
@@ -1020,7 +1025,7 @@ export type MailTestResultType = {
     imap: MailChannelTestType;
     smtp: MailChannelTestType;
 };
-export type MailErrorKeyType = "mailErrAuth" | "mailErrDisabled" | "mailErrHost" | "mailErrTls" | "mailErrTimeout" | "mailErrUnknown";
+export type MailErrorKeyType = "mailErrAuth" | "mailErrDisabled" | "mailErrHost" | "mailErrSender" | "mailErrTls" | "mailErrTimeout" | "mailErrUnknown";
 export type MailAttachmentDataType = {
     filename: string;
     mimeType: string;
@@ -1047,6 +1052,9 @@ export type MailMessagesType = {
     folderChanged: string;
     timeout: string;
     attachmentTooLarge: string;
+    invalidAttachment: string;
+    invalidRecipient: string;
+    tooManyRecipients: string;
     sendNotSupported: string;
     unsupportedSupplier: string;
 };
