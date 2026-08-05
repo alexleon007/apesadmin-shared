@@ -1028,9 +1028,6 @@ export type MailConfigType = {
   mailname: string;
   mailstring: string;
   mailsupplier?: string;
-  mailhost?: string;
-  mailport?: string | number;
-  mailprotocol?: string;
   mailuser?: string | null;
   haspassword?: 0 | 1;
   hastoken?: 0 | 1;
@@ -1040,14 +1037,155 @@ export type MailConfigType = {
   createdAt?: string | null;
 };
 
+export type MailFolderType =
+  | "INBOX"
+  | "SENT"
+  | "DRAFTS"
+  | "TRASH"
+  | "SPAM"
+  | "ARCHIVE";
+
+export type MailSecurityType = "ssl" | "starttls" | "none";
+
+export type MailAttachmentMetaType = {
+  filename: string;
+  mimeType: string;
+  size: number;
+  attachmentId: string;
+};
+
+export type MailMessageType = {
+  id: string;
+  from: string;
+  to: string;
+  subject: string;
+  snippet: string;
+  body: string;
+  htmlBody?: string;
+  date: string;
+  labelIds: string[];
+  attachments: MailAttachmentMetaType[];
+  blockedImages?: number;
+};
+
+export type MailListResultType = {
+  emails: MailMessageType[];
+  nextPageToken: string | null;
+  total: number;
+};
+
+export type MailSearchCriteriaType = {
+  text?: string;
+  from?: string;
+  subject?: string;
+  unreadOnly?: boolean;
+  since?: string;
+};
+
+export type MailSendOptionsType = {
+  to: string[];
+  cc?: string[];
+  bcc?: string[];
+  subject: string;
+  text?: string;
+  attachments?: Array<{
+    filename: string;
+    contentBase64: string;
+    contentType?: string;
+  }>;
+  inReplyTo?: string;
+  references?: string[];
+};
+
+export type MailChannelTestType = { ok: boolean; errorKey?: string };
+
+export type MailTestResultType = {
+  ok: boolean;
+  imap: MailChannelTestType;
+  smtp: MailChannelTestType;
+};
+
+export type MailErrorKeyType =
+  | "mailErrAuth"
+  | "mailErrHost"
+  | "mailErrTls"
+  | "mailErrTimeout"
+  | "mailErrUnknown";
+
+export type MailAttachmentDataType = {
+  filename: string;
+  mimeType: string;
+  size: number;
+  data: string;
+};
+
+export type MailMessageRefType = {
+  id: string;
+  folder?: MailFolderType;
+};
+
+export type MailAttachmentRefType = MailMessageRefType & {
+  attachmentId: string;
+};
+
+export type MailListOptionsType = {
+  folder?: MailFolderType;
+  maxResults?: number;
+  cursor?: string | null;
+  criteria?: MailSearchCriteriaType;
+};
+
+/** Textos ya traducidos que el servicio de correo necesita para lanzar errores. */
+export type MailMessagesType = {
+  invalidHost: string;
+  notFound: string;
+  folderChanged: string;
+  timeout: string;
+  attachmentTooLarge: string;
+  sendNotSupported: string;
+  unsupportedSupplier: string;
+};
+
+/** Contrato comun de Gmail e IMAP. Lo cumple lo que devuelve getMailProvider(). */
+export type MailProviderType = {
+  kind: "gmail" | "imap";
+  list: (opts: MailListOptionsType) => Promise<MailListResultType>;
+  detail: (opts: MailMessageRefType) => Promise<MailMessageType>;
+  send: (opts: MailSendOptionsType) => Promise<{ messageId: string }>;
+  markRead: (opts: MailMessageRefType) => Promise<void>;
+  markUnread: (opts: MailMessageRefType) => Promise<void>;
+  trash: (opts: MailMessageRefType) => Promise<void>;
+  attachment: (opts: MailAttachmentRefType) => Promise<MailAttachmentDataType>;
+  testConnection: () => Promise<MailTestResultType>;
+};
+
+/** Solo backend: lleva credenciales descifradas. Nunca serializar al cliente. */
+export type MailAccountEndpointType = {
+  host: string;
+  port: number;
+  security: MailSecurityType;
+  user: string;
+  pass: string;
+  allowInvalidCert: boolean;
+};
+
+/** Solo backend: lleva credenciales descifradas. Nunca serializar al cliente. */
+export type MailAccountType = {
+  idmail: number;
+  displayName: string;
+  fromName: string;
+  address: string;
+  supplier: string;
+  imap: MailAccountEndpointType;
+  smtp: MailAccountEndpointType;
+  token: string;
+};
+
 export type MailAccountRowType = {
   idmail: number;
   name_mail: string;
   mail_mail: string;
   supplier_mail: string;
-  host_mail: string;
-  port_mail: string;
-  protocol_mail: string;
   user_mail: string;
   pass_mail: string;
   token_mail: string;
