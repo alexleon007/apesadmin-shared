@@ -187,8 +187,6 @@ export declare const languages: {
         cfdiQRCode: string;
         cfdiSeal: string;
         cFDIUse: string;
-        cfdiUseCode: string;
-        cfdiUseName: string;
         cfdiUUID: string;
         change: string;
         changePassword: string;
@@ -269,8 +267,7 @@ export declare const languages: {
         companyReference: string;
         companyRFC: string;
         companySatCode: string;
-        companyTaxRegimeCode: string;
-        companyTaxRegimeName: string;
+        companyTaxRegime: string;
         companyZipCode: string;
         complaint: string;
         completed: string;
@@ -383,8 +380,7 @@ export declare const languages: {
         customers: string;
         customerSince: string;
         customerSubclass: string;
-        customerTaxRegimeCode: string;
-        customerTaxRegimeName: string;
+        customerTaxRegime: string;
         customerUsers: string;
         customerZipCode: string;
         customThemes: string;
@@ -1069,13 +1065,9 @@ export declare const languages: {
         paymentDate: string;
         paymentDebitCard: string;
         paymentForm: string;
-        paymentFormCode: string;
-        paymentFormName: string;
         paymentForms: string;
         paymentHistory: string;
-        paymentMethodCode: string;
         paymentMethodFull: string;
-        paymentMethodName: string;
         paymentMethodShort: string;
         payments: string;
         paymentsByForm: string;
@@ -1900,8 +1892,6 @@ export declare const languages: {
         cfdiQRCode: string;
         cfdiSeal: string;
         cFDIUse: string;
-        cfdiUseCode: string;
-        cfdiUseName: string;
         cfdiUUID: string;
         change: string;
         changePassword: string;
@@ -1982,8 +1972,7 @@ export declare const languages: {
         companyReference: string;
         companyRFC: string;
         companySatCode: string;
-        companyTaxRegimeCode: string;
-        companyTaxRegimeName: string;
+        companyTaxRegime: string;
         companyZipCode: string;
         complaint: string;
         completed: string;
@@ -2096,8 +2085,7 @@ export declare const languages: {
         customers: string;
         customerSince: string;
         customerSubclass: string;
-        customerTaxRegimeCode: string;
-        customerTaxRegimeName: string;
+        customerTaxRegime: string;
         customerUsers: string;
         customerZipCode: string;
         customThemes: string;
@@ -2782,13 +2770,9 @@ export declare const languages: {
         paymentDate: string;
         paymentDebitCard: string;
         paymentForm: string;
-        paymentFormCode: string;
-        paymentFormName: string;
         paymentForms: string;
         paymentHistory: string;
-        paymentMethodCode: string;
         paymentMethodFull: string;
-        paymentMethodName: string;
         paymentMethodShort: string;
         payments: string;
         paymentsByForm: string;
@@ -3613,8 +3597,6 @@ export declare const languages: {
         cfdiQRCode: string;
         cfdiSeal: string;
         cFDIUse: string;
-        cfdiUseCode: string;
-        cfdiUseName: string;
         cfdiUUID: string;
         change: string;
         changePassword: string;
@@ -3695,8 +3677,7 @@ export declare const languages: {
         companyReference: string;
         companyRFC: string;
         companySatCode: string;
-        companyTaxRegimeCode: string;
-        companyTaxRegimeName: string;
+        companyTaxRegime: string;
         companyZipCode: string;
         complaint: string;
         completed: string;
@@ -3809,8 +3790,7 @@ export declare const languages: {
         customers: string;
         customerSince: string;
         customerSubclass: string;
-        customerTaxRegimeCode: string;
-        customerTaxRegimeName: string;
+        customerTaxRegime: string;
         customerUsers: string;
         customerZipCode: string;
         customThemes: string;
@@ -4495,13 +4475,9 @@ export declare const languages: {
         paymentDate: string;
         paymentDebitCard: string;
         paymentForm: string;
-        paymentFormCode: string;
-        paymentFormName: string;
         paymentForms: string;
         paymentHistory: string;
-        paymentMethodCode: string;
         paymentMethodFull: string;
-        paymentMethodName: string;
         paymentMethodShort: string;
         payments: string;
         paymentsByForm: string;
