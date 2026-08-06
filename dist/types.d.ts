@@ -2624,6 +2624,7 @@ export type DocumentDefaultsType = {
 export type TableColumnType = {
     key: string;
     title: string;
+    titleKey?: string;
     width?: number;
     align?: "left" | "center" | "right";
     format?: "number" | "currency" | "date" | string;

@@ -2959,7 +2959,13 @@ export type DocumentDefaultsType = {
 
 export type TableColumnType = {
   key: string;
+  // Texto congelado al añadir la columna. Es lo que se imprime si no hay
+  // titleKey (plantillas anteriores a i18n) o si el usuario lo editó a mano.
   title: string;
+  // Clave i18n de la cabecera. Si está, el generador de PDF la traduce al
+  // idioma de la petición; se borra en cuanto el usuario escribe su propio
+  // título, para que su texto siempre gane.
+  titleKey?: string;
   width?: number;
   align?: "left" | "center" | "right";
   format?: "number" | "currency" | "date" | string;

@@ -330,11 +330,13 @@ export declare const languages: {
         currentRoute: string;
         customer: string;
         customerAnalytics: string;
+        customerClass: string;
         customerDocuments: string;
         customerNotes: string;
         customerNotesPlaceholder: string;
         customers: string;
         customerSince: string;
+        customerSubclass: string;
         customThemes: string;
         cutLayout: string;
         cutPiecesFromLayout: string;
@@ -387,6 +389,7 @@ export declare const languages: {
         deliveryStandard: string;
         deliveryState: string;
         deliveryZipCode: string;
+        denomination: string;
         departure: string;
         description: string;
         descriptionOptional: string;
@@ -407,8 +410,10 @@ export declare const languages: {
         docs: string;
         document: string;
         documentCancelled: string;
+        documentClass: string;
         documentLowercase: string;
         documents: string;
+        documentSubclass: string;
         download: string;
         dragToReorder: string;
         dueDate: string;
@@ -785,6 +790,7 @@ export declare const languages: {
         month: string;
         monthlyExpenses: string;
         months: string;
+        movement: string;
         movementAlreadyCancelled: string;
         movementHistory: string;
         movementNotFound: string;
@@ -1076,6 +1082,7 @@ export declare const languages: {
         productCode: string;
         production: string;
         productNotInOrder: string;
+        productOrConcept: string;
         productOrderDetail: string;
         products: string;
         productsManagement: string;
@@ -1322,6 +1329,7 @@ export declare const languages: {
         stepName: string;
         stickyNotes: string;
         stock: string;
+        stop: string;
         stopDetail: string;
         stops: string;
         stripeVersion: string;
@@ -1370,6 +1378,7 @@ export declare const languages: {
         themePreview: string;
         thisReception: string;
         thumbnail: string;
+        ticket: string;
         ticketDetailTitle: string;
         ticketEmpty: string;
         ticketLegend: string;
@@ -1911,11 +1920,13 @@ export declare const languages: {
         currentRoute: string;
         customer: string;
         customerAnalytics: string;
+        customerClass: string;
         customerDocuments: string;
         customerNotes: string;
         customerNotesPlaceholder: string;
         customers: string;
         customerSince: string;
+        customerSubclass: string;
         customThemes: string;
         cutLayout: string;
         cutPiecesFromLayout: string;
@@ -1968,6 +1979,7 @@ export declare const languages: {
         deliveryStandard: string;
         deliveryState: string;
         deliveryZipCode: string;
+        denomination: string;
         departure: string;
         description: string;
         descriptionOptional: string;
@@ -1988,8 +2000,10 @@ export declare const languages: {
         docs: string;
         document: string;
         documentCancelled: string;
+        documentClass: string;
         documentLowercase: string;
         documents: string;
+        documentSubclass: string;
         download: string;
         dragToReorder: string;
         dueDate: string;
@@ -2366,6 +2380,7 @@ export declare const languages: {
         month: string;
         monthlyExpenses: string;
         months: string;
+        movement: string;
         movementAlreadyCancelled: string;
         movementHistory: string;
         movementNotFound: string;
@@ -2657,6 +2672,7 @@ export declare const languages: {
         productCode: string;
         production: string;
         productNotInOrder: string;
+        productOrConcept: string;
         productOrderDetail: string;
         products: string;
         productsManagement: string;
@@ -2903,6 +2919,7 @@ export declare const languages: {
         stepName: string;
         stickyNotes: string;
         stock: string;
+        stop: string;
         stopDetail: string;
         stops: string;
         stripeVersion: string;
@@ -2951,6 +2968,7 @@ export declare const languages: {
         themePreview: string;
         thisReception: string;
         thumbnail: string;
+        ticket: string;
         ticketDetailTitle: string;
         ticketEmpty: string;
         ticketLegend: string;
@@ -3492,11 +3510,13 @@ export declare const languages: {
         currentRoute: string;
         customer: string;
         customerAnalytics: string;
+        customerClass: string;
         customerDocuments: string;
         customerNotes: string;
         customerNotesPlaceholder: string;
         customers: string;
         customerSince: string;
+        customerSubclass: string;
         customThemes: string;
         cutLayout: string;
         cutPiecesFromLayout: string;
@@ -3549,6 +3569,7 @@ export declare const languages: {
         deliveryStandard: string;
         deliveryState: string;
         deliveryZipCode: string;
+        denomination: string;
         departure: string;
         description: string;
         descriptionOptional: string;
@@ -3569,8 +3590,10 @@ export declare const languages: {
         docs: string;
         document: string;
         documentCancelled: string;
+        documentClass: string;
         documentLowercase: string;
         documents: string;
+        documentSubclass: string;
         download: string;
         dragToReorder: string;
         dueDate: string;
@@ -3947,6 +3970,7 @@ export declare const languages: {
         month: string;
         monthlyExpenses: string;
         months: string;
+        movement: string;
         movementAlreadyCancelled: string;
         movementHistory: string;
         movementNotFound: string;
@@ -4238,6 +4262,7 @@ export declare const languages: {
         productCode: string;
         production: string;
         productNotInOrder: string;
+        productOrConcept: string;
         productOrderDetail: string;
         products: string;
         productsManagement: string;
@@ -4484,6 +4509,7 @@ export declare const languages: {
         stepName: string;
         stickyNotes: string;
         stock: string;
+        stop: string;
         stopDetail: string;
         stops: string;
         stripeVersion: string;
@@ -4532,6 +4558,7 @@ export declare const languages: {
         themePreview: string;
         thisReception: string;
         thumbnail: string;
+        ticket: string;
         ticketDetailTitle: string;
         ticketEmpty: string;
         ticketLegend: string;
