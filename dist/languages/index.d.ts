@@ -148,6 +148,7 @@ export declare const languages: {
         cancelledBy: string;
         cancellingSat: string;
         cancellingSatWait: string;
+        cancelOtherSessionNotAllowed: string;
         cancelPayment: string;
         cancelReason: string;
         cancelSubscription: string;
@@ -403,6 +404,7 @@ export declare const languages: {
         document: string;
         documentCancelled: string;
         documentLowercase: string;
+        documents: string;
         download: string;
         dragToReorder: string;
         dueDate: string;
@@ -567,10 +569,10 @@ export declare const languages: {
         groupBy: string;
         groupInfo: string;
         groupNameOptional: string;
-        guidedAssortment: string;
         groupPhoto: string;
         groupSettings: string;
         guideAuth: string;
+        guidedAssortment: string;
         guideIAM: string;
         guideRegister: string;
         haber: string;
@@ -734,6 +736,7 @@ export declare const languages: {
         mailUnsupportedSupplier: string;
         mailViewHtml: string;
         mailViewPlain: string;
+        main: string;
         mainButton: string;
         mainConfiguration: string;
         mainTitle: string;
@@ -1124,6 +1127,7 @@ export declare const languages: {
         recordAudio: string;
         records: string;
         recurrence: string;
+        recurrences: string;
         recurrencesManagement: string;
         recurringSales: string;
         reference: string;
@@ -1364,7 +1368,6 @@ export declare const languages: {
         toastAuthLimitReached: string;
         toastAuthStartError: string;
         toastAuthSuccess: string;
-        cancelOtherSessionNotAllowed: string;
         toastCancelled: string;
         toastCashClosed: string;
         toastCashSessionClosed: string;
@@ -1480,6 +1483,8 @@ export declare const languages: {
         typeNote: string;
         unassigned: string;
         unassignedUsers: string;
+        unauthorizedAccess: string;
+        unauthorizedAccessMessage: string;
         understood: string;
         unit: string;
         unitPrice: string;
@@ -1695,6 +1700,7 @@ export declare const languages: {
         cancelledBy: string;
         cancellingSat: string;
         cancellingSatWait: string;
+        cancelOtherSessionNotAllowed: string;
         cancelPayment: string;
         cancelReason: string;
         cancelSubscription: string;
@@ -1950,6 +1956,7 @@ export declare const languages: {
         document: string;
         documentCancelled: string;
         documentLowercase: string;
+        documents: string;
         download: string;
         dragToReorder: string;
         dueDate: string;
@@ -2114,10 +2121,10 @@ export declare const languages: {
         groupBy: string;
         groupInfo: string;
         groupNameOptional: string;
-        guidedAssortment: string;
         groupPhoto: string;
         groupSettings: string;
         guideAuth: string;
+        guidedAssortment: string;
         guideIAM: string;
         guideRegister: string;
         haber: string;
@@ -2281,6 +2288,7 @@ export declare const languages: {
         mailUnsupportedSupplier: string;
         mailViewHtml: string;
         mailViewPlain: string;
+        main: string;
         mainButton: string;
         mainConfiguration: string;
         mainTitle: string;
@@ -2671,6 +2679,7 @@ export declare const languages: {
         recordAudio: string;
         records: string;
         recurrence: string;
+        recurrences: string;
         recurrencesManagement: string;
         recurringSales: string;
         reference: string;
@@ -2911,7 +2920,6 @@ export declare const languages: {
         toastAuthLimitReached: string;
         toastAuthStartError: string;
         toastAuthSuccess: string;
-        cancelOtherSessionNotAllowed: string;
         toastCancelled: string;
         toastCashClosed: string;
         toastCashSessionClosed: string;
@@ -3027,6 +3035,8 @@ export declare const languages: {
         typeNote: string;
         unassigned: string;
         unassignedUsers: string;
+        unauthorizedAccess: string;
+        unauthorizedAccessMessage: string;
         understood: string;
         unit: string;
         unitPrice: string;
@@ -3242,6 +3252,7 @@ export declare const languages: {
         cancelledBy: string;
         cancellingSat: string;
         cancellingSatWait: string;
+        cancelOtherSessionNotAllowed: string;
         cancelPayment: string;
         cancelReason: string;
         cancelSubscription: string;
@@ -3497,6 +3508,7 @@ export declare const languages: {
         document: string;
         documentCancelled: string;
         documentLowercase: string;
+        documents: string;
         download: string;
         dragToReorder: string;
         dueDate: string;
@@ -3661,10 +3673,10 @@ export declare const languages: {
         groupBy: string;
         groupInfo: string;
         groupNameOptional: string;
-        guidedAssortment: string;
         groupPhoto: string;
         groupSettings: string;
         guideAuth: string;
+        guidedAssortment: string;
         guideIAM: string;
         guideRegister: string;
         haber: string;
@@ -3828,6 +3840,7 @@ export declare const languages: {
         mailUnsupportedSupplier: string;
         mailViewHtml: string;
         mailViewPlain: string;
+        main: string;
         mainButton: string;
         mainConfiguration: string;
         mainTitle: string;
@@ -4218,6 +4231,7 @@ export declare const languages: {
         recordAudio: string;
         records: string;
         recurrence: string;
+        recurrences: string;
         recurrencesManagement: string;
         recurringSales: string;
         reference: string;
@@ -4458,7 +4472,6 @@ export declare const languages: {
         toastAuthLimitReached: string;
         toastAuthStartError: string;
         toastAuthSuccess: string;
-        cancelOtherSessionNotAllowed: string;
         toastCancelled: string;
         toastCashClosed: string;
         toastCashSessionClosed: string;
@@ -4574,6 +4587,8 @@ export declare const languages: {
         typeNote: string;
         unassigned: string;
         unassignedUsers: string;
+        unauthorizedAccess: string;
+        unauthorizedAccessMessage: string;
         understood: string;
         unit: string;
         unitPrice: string;
