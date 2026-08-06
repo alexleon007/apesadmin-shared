@@ -972,7 +972,7 @@ export type InventoryType = {
 
 export type KpiItemType = {
   icon: any;
-  label: string;
+  labelKey: string;
   value: string;
   trend: string;
   trendUp: boolean;

@@ -13,6 +13,8 @@ export declare const languages: {
         accountsPayable: string;
         accountsReceivable: string;
         accountStatement: string;
+        actionCancelled: string;
+        actionConfirmed: string;
         actions: string;
         activate: string;
         active: string;
@@ -100,6 +102,7 @@ export declare const languages: {
         auraGreeting: string;
         auraProposalNotFound: string;
         auraProposalUnavailable: string;
+        auraStillWorking: string;
         auraTaskInProgress: string;
         authorization: string;
         authorizationDescription: string;
@@ -290,6 +293,7 @@ export declare const languages: {
         confirmDelete: string;
         confirmDeleteCompany: string;
         confirmDeleteProduct: string;
+        confirmDeleteProject: string;
         confirmDeleteTray: string;
         confirmDeleteUser: string;
         confirmPassword: string;
@@ -330,6 +334,7 @@ export declare const languages: {
         correctQuestions: string;
         cost: string;
         cot: string;
+        couldNotLoad: string;
         count: string;
         countedQuantity: string;
         country: string;
@@ -387,6 +392,7 @@ export declare const languages: {
         cutPiecesFromLayout: string;
         cyclicInventories: string;
         cyclicInventory: string;
+        dailyBilling: string;
         danger: string;
         dashboard: string;
         dashboardAIInstructions: string;
@@ -415,6 +421,7 @@ export declare const languages: {
         deleteConnection: string;
         deleteCustomer: string;
         deleteProduct: string;
+        deleteProject: string;
         deletePromotion: string;
         deleteSelectedElement: string;
         deleteTray: string;
@@ -879,6 +886,7 @@ export declare const languages: {
         newContact: string;
         newCount: string;
         newCustomer: string;
+        newCustomersPerMonth: string;
         newCyclicCount: string;
         newExpense: string;
         newForm: string;
@@ -918,6 +926,7 @@ export declare const languages: {
         noAssignedTickets: string;
         noCalendarsToShow: string;
         noCashSessions: string;
+        noCharts: string;
         noChartsConfigured: string;
         noClassification: string;
         noCompanies: string;
@@ -983,6 +992,9 @@ export declare const languages: {
         of: string;
         onBehalfOf: string;
         onBreak: string;
+        oneDay: string;
+        oneMonth: string;
+        oneWeek: string;
         online: string;
         onTime: string;
         open: string;
@@ -1595,9 +1607,11 @@ export declare const languages: {
         totalDoc: string;
         totalExpenses: string;
         totalInWords: string;
+        totalPayable: string;
         totalPending: string;
         totalPendingActive: string;
         totalQtyCalcTooltip: string;
+        totalReceivable: string;
         totals: string;
         totalSales: string;
         totalStops: string;
@@ -1698,6 +1712,7 @@ export declare const languages: {
         you: string;
         youHaveFinishedTheExam: string;
         zipCode: string;
+        zohoOwnDomain: string;
         zone: string;
     };
     readonly en: {
@@ -1711,6 +1726,8 @@ export declare const languages: {
         accountsPayable: string;
         accountsReceivable: string;
         accountStatement: string;
+        actionCancelled: string;
+        actionConfirmed: string;
         actions: string;
         activate: string;
         active: string;
@@ -1798,6 +1815,7 @@ export declare const languages: {
         auraGreeting: string;
         auraProposalNotFound: string;
         auraProposalUnavailable: string;
+        auraStillWorking: string;
         auraTaskInProgress: string;
         authorization: string;
         authorizationDescription: string;
@@ -1988,6 +2006,7 @@ export declare const languages: {
         confirmDelete: string;
         confirmDeleteCompany: string;
         confirmDeleteProduct: string;
+        confirmDeleteProject: string;
         confirmDeleteTray: string;
         confirmDeleteUser: string;
         confirmPassword: string;
@@ -2028,6 +2047,7 @@ export declare const languages: {
         correctQuestions: string;
         cost: string;
         cot: string;
+        couldNotLoad: string;
         count: string;
         countedQuantity: string;
         country: string;
@@ -2085,6 +2105,7 @@ export declare const languages: {
         cutPiecesFromLayout: string;
         cyclicInventories: string;
         cyclicInventory: string;
+        dailyBilling: string;
         danger: string;
         dashboard: string;
         dashboardAIInstructions: string;
@@ -2113,6 +2134,7 @@ export declare const languages: {
         deleteConnection: string;
         deleteCustomer: string;
         deleteProduct: string;
+        deleteProject: string;
         deletePromotion: string;
         deleteSelectedElement: string;
         deleteTray: string;
@@ -2577,6 +2599,7 @@ export declare const languages: {
         newContact: string;
         newCount: string;
         newCustomer: string;
+        newCustomersPerMonth: string;
         newCyclicCount: string;
         newExpense: string;
         newForm: string;
@@ -2616,6 +2639,7 @@ export declare const languages: {
         noAssignedTickets: string;
         noCalendarsToShow: string;
         noCashSessions: string;
+        noCharts: string;
         noChartsConfigured: string;
         noClassification: string;
         noCompanies: string;
@@ -2681,6 +2705,9 @@ export declare const languages: {
         of: string;
         onBehalfOf: string;
         onBreak: string;
+        oneDay: string;
+        oneMonth: string;
+        oneWeek: string;
         online: string;
         onTime: string;
         open: string;
@@ -3293,9 +3320,11 @@ export declare const languages: {
         totalDoc: string;
         totalExpenses: string;
         totalInWords: string;
+        totalPayable: string;
         totalPending: string;
         totalPendingActive: string;
         totalQtyCalcTooltip: string;
+        totalReceivable: string;
         totals: string;
         totalSales: string;
         totalStops: string;
@@ -3396,6 +3425,7 @@ export declare const languages: {
         you: string;
         youHaveFinishedTheExam: string;
         zipCode: string;
+        zohoOwnDomain: string;
         zone: string;
     };
     readonly "zh-TW": {
@@ -3409,6 +3439,8 @@ export declare const languages: {
         accountsPayable: string;
         accountsReceivable: string;
         accountStatement: string;
+        actionCancelled: string;
+        actionConfirmed: string;
         actions: string;
         activate: string;
         active: string;
@@ -3496,6 +3528,7 @@ export declare const languages: {
         auraGreeting: string;
         auraProposalNotFound: string;
         auraProposalUnavailable: string;
+        auraStillWorking: string;
         auraTaskInProgress: string;
         authorization: string;
         authorizationDescription: string;
@@ -3686,6 +3719,7 @@ export declare const languages: {
         confirmDelete: string;
         confirmDeleteCompany: string;
         confirmDeleteProduct: string;
+        confirmDeleteProject: string;
         confirmDeleteTray: string;
         confirmDeleteUser: string;
         confirmPassword: string;
@@ -3726,6 +3760,7 @@ export declare const languages: {
         correctQuestions: string;
         cost: string;
         cot: string;
+        couldNotLoad: string;
         count: string;
         countedQuantity: string;
         country: string;
@@ -3783,6 +3818,7 @@ export declare const languages: {
         cutPiecesFromLayout: string;
         cyclicInventories: string;
         cyclicInventory: string;
+        dailyBilling: string;
         danger: string;
         dashboard: string;
         dashboardAIInstructions: string;
@@ -3811,6 +3847,7 @@ export declare const languages: {
         deleteConnection: string;
         deleteCustomer: string;
         deleteProduct: string;
+        deleteProject: string;
         deletePromotion: string;
         deleteSelectedElement: string;
         deleteTray: string;
@@ -4275,6 +4312,7 @@ export declare const languages: {
         newContact: string;
         newCount: string;
         newCustomer: string;
+        newCustomersPerMonth: string;
         newCyclicCount: string;
         newExpense: string;
         newForm: string;
@@ -4314,6 +4352,7 @@ export declare const languages: {
         noAssignedTickets: string;
         noCalendarsToShow: string;
         noCashSessions: string;
+        noCharts: string;
         noChartsConfigured: string;
         noClassification: string;
         noCompanies: string;
@@ -4379,6 +4418,9 @@ export declare const languages: {
         of: string;
         onBehalfOf: string;
         onBreak: string;
+        oneDay: string;
+        oneMonth: string;
+        oneWeek: string;
         online: string;
         onTime: string;
         open: string;
@@ -4991,9 +5033,11 @@ export declare const languages: {
         totalDoc: string;
         totalExpenses: string;
         totalInWords: string;
+        totalPayable: string;
         totalPending: string;
         totalPendingActive: string;
         totalQtyCalcTooltip: string;
+        totalReceivable: string;
         totals: string;
         totalSales: string;
         totalStops: string;
@@ -5094,6 +5138,7 @@ export declare const languages: {
         you: string;
         youHaveFinishedTheExam: string;
         zipCode: string;
+        zohoOwnDomain: string;
         zone: string;
     };
 };
