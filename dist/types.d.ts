@@ -859,6 +859,7 @@ export type InventoryMovsType = {
 export type InventoryType = {
     idinv: number;
     idprod: number;
+    prodcode: string;
     prodname: string;
     idunit: number;
     unitname: string;
