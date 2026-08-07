@@ -653,6 +653,7 @@ export declare const languages: {
         generateReport: string;
         generateReportWithAI: string;
         generating: string;
+        generationDate: string;
         geographic: string;
         getInventory: string;
         getOrder: string;
@@ -2461,6 +2462,7 @@ export declare const languages: {
         generateReport: string;
         generateReportWithAI: string;
         generating: string;
+        generationDate: string;
         geographic: string;
         getInventory: string;
         getOrder: string;
@@ -4269,6 +4271,7 @@ export declare const languages: {
         generateReport: string;
         generateReportWithAI: string;
         generating: string;
+        generationDate: string;
         geographic: string;
         getInventory: string;
         getOrder: string;

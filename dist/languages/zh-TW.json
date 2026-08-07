@@ -649,6 +649,7 @@
     "generateReport": "產生報表",
     "generateReportWithAI": "以 AI 產生報表",
     "generating": "正在產生...",
+    "generationDate": "產生日期",
     "geographic": "地理",
     "getInventory": "取得庫存",
     "getOrder": "取得訂單",
