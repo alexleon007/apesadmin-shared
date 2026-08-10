@@ -7,6 +7,9 @@ export declare const languages: {
         account: string;
         accountHolder: string;
         accountInformation: string;
+        accounting: string;
+        accountingModule: string;
+        accountingModuleDesc: string;
         accountList: string;
         accountNumber: string;
         accounts: string;
@@ -42,9 +45,13 @@ export declare const languages: {
         administration: string;
         advance: string;
         advanced: string;
+        advancedCRM: string;
+        advancedCRMDesc: string;
         advancedFilter: string;
         advancedOptions: string;
         advancedPanel: string;
+        advancedReporting: string;
+        advancedReportingDesc: string;
         agenda: string;
         agent: string;
         agentDateAsign: string;
@@ -63,6 +70,7 @@ export declare const languages: {
         allPaid: string;
         allUsersIfEmpty: string;
         alreadyAssorted: string;
+        amazonDesc: string;
         amazonSetupDescription: string;
         amazonSetupTitle: string;
         amount: string;
@@ -96,6 +104,7 @@ export declare const languages: {
         attachedEvidence: string;
         attachedFile: string;
         attachImage: string;
+        attachImages: string;
         attachments: string;
         attachPlaceholder: string;
         attendance: string;
@@ -130,6 +139,7 @@ export declare const languages: {
         awsSecretKey: string;
         back: string;
         backToPos: string;
+        balance: string;
         bank: string;
         bankAccount: string;
         bankAccounts: string;
@@ -139,6 +149,7 @@ export declare const languages: {
         barcodes: string;
         batch: string;
         beneficiary: string;
+        biblyDesc: string;
         billHistory: string;
         billingSeries: string;
         blindCashClosing: string;
@@ -149,6 +160,9 @@ export declare const languages: {
         brand: string;
         break: string;
         budget: string;
+        budgeted: string;
+        budgetVsActualExpenses: string;
+        budgetVsExpenses: string;
         businessName: string;
         button: string;
         byCustomer: string;
@@ -173,6 +187,7 @@ export declare const languages: {
         captureDate: string;
         card: string;
         cardHeader: string;
+        carouselImages: string;
         cash: string;
         cashBox: string;
         cashBreakdown: string;
@@ -228,6 +243,8 @@ export declare const languages: {
         class: string;
         classification: string;
         classificationFormat: string;
+        classSubclass: string;
+        classTotals: string;
         clear: string;
         clientId: string;
         clientIdTooltip: string;
@@ -266,6 +283,7 @@ export declare const languages: {
         commitment: string;
         commitmentContact: string;
         commitmentTime: string;
+        communication: string;
         companies: string;
         companiesManagement: string;
         company: string;
@@ -335,6 +353,9 @@ export declare const languages: {
         coordinates: string;
         copy: string;
         copySuffix: string;
+        core: string;
+        coreOperation: string;
+        coreOperationDesc: string;
         corporate: string;
         correct: string;
         correctColumn: string;
@@ -348,6 +369,7 @@ export declare const languages: {
         count: string;
         countedQuantity: string;
         country: string;
+        cover: string;
         create: string;
         createChat: string;
         created: string;
@@ -370,6 +392,7 @@ export declare const languages: {
         creditNote: string;
         creditTooltip: string;
         critical: string;
+        crm: string;
         currencies: string;
         currenciesManagement: string;
         currency: string;
@@ -400,6 +423,8 @@ export declare const languages: {
         customThemes: string;
         cutLayout: string;
         cutPiecesFromLayout: string;
+        cybersecurity: string;
+        cybersecurityDesc: string;
         cyclicInventories: string;
         cyclicInventory: string;
         dailyBilling: string;
@@ -462,6 +487,7 @@ export declare const languages: {
         destinationLocation: string;
         destinationWarehouseName: string;
         developerConsole: string;
+        developmentRoadmap: string;
         difference: string;
         direct: string;
         directInventoryDeduction: string;
@@ -505,6 +531,7 @@ export declare const languages: {
         editSupplier: string;
         editTheme: string;
         editUser: string;
+        education: string;
         element: string;
         elements: string;
         eliminated: string;
@@ -584,6 +611,8 @@ export declare const languages: {
         expenseRequest: string;
         expenseRequests: string;
         expenses: string;
+        expensesByClass: string;
+        expensesBySubclass: string;
         expiration: string;
         expires: string;
         export: string;
@@ -594,6 +623,7 @@ export declare const languages: {
         failedOperation: string;
         family: string;
         favoriteTemplate: string;
+        features: string;
         field: string;
         fieldConfiguration: string;
         file: string;
@@ -625,6 +655,7 @@ export declare const languages: {
         fiscalDataTab: string;
         fiscalInformation: string;
         fit: string;
+        fix: string;
         foldersTitle: string;
         folio: string;
         folioTracking: string;
@@ -633,6 +664,7 @@ export declare const languages: {
         fontFamily: string;
         fontSize: string;
         fontSizeAppliesToTable: string;
+        foreignTrade: string;
         format: string;
         forms: string;
         formsManagement: string;
@@ -647,6 +679,8 @@ export declare const languages: {
         gallery: string;
         general: string;
         generalData: string;
+        generalInfo: string;
+        generalSummary: string;
         generated: string;
         generatedReport: string;
         generateOrder: string;
@@ -703,6 +737,7 @@ export declare const languages: {
         image: string;
         images: string;
         import: string;
+        improvement: string;
         improvementSuggestion: string;
         in: string;
         inactive: string;
@@ -710,9 +745,11 @@ export declare const languages: {
         inboxAdmin: string;
         inboxTitle: string;
         income: string;
+        incomes: string;
         incorrect: string;
         info: string;
         information: string;
+        infrastructure: string;
         inheritsFromDefaults: string;
         initialCash: string;
         initialList: string;
@@ -729,7 +766,9 @@ export declare const languages: {
         installIOSStep3: string;
         installTitle: string;
         integrated: string;
+        integrations: string;
         internal: string;
+        internationalization: string;
         invalidActionOrState: string;
         invalidData: string;
         invalidSession: string;
@@ -746,6 +785,8 @@ export declare const languages: {
         invoiceLegend: string;
         invoices: string;
         invoicesManagement: string;
+        invoicing: string;
+        invoicingDesc: string;
         itemCode: string;
         itemName: string;
         items: string;
@@ -754,6 +795,7 @@ export declare const languages: {
         kpis: string;
         label: string;
         labelTo: string;
+        landPlan: string;
         landscape: string;
         language: string;
         lastCheck: string;
@@ -786,11 +828,13 @@ export declare const languages: {
         locations: string;
         log: string;
         loginBlockedTitle: string;
+        logistics: string;
         logo: string;
         logoAlt: string;
         logotipo: string;
         logout: string;
         logs: string;
+        longDescription: string;
         low: string;
         lowerToHigher: string;
         loyaltyProgram: string;
@@ -867,15 +911,18 @@ export declare const languages: {
         markAsFavorite: string;
         markAsRead: string;
         markAsUnread: string;
+        marketing: string;
         marketplace: string;
         marketplacePlaceholder: string;
         material: string;
         materialCut: string;
         materials: string;
         max: string;
+        maxPeople: string;
         maxStock: string;
         medium: string;
         members: string;
+        mercadoLibreDesc: string;
         message: string;
         messagePlaceholder: string;
         min: string;
@@ -902,7 +949,11 @@ export declare const languages: {
         movementType: string;
         moveTo: string;
         multiDay: string;
+        multilanguage: string;
+        multilanguageDesc: string;
         multilineText: string;
+        multiTenantArchitecture: string;
+        multiTenantArchitectureDesc: string;
         myAssignedQuestionnaires: string;
         myProfile: string;
         mySales: string;
@@ -975,6 +1026,7 @@ export declare const languages: {
         noCompanies: string;
         noContacts: string;
         noCustomThemes: string;
+        noData: string;
         noDate: string;
         noDiscount: string;
         noDynamicFields: string;
@@ -1124,6 +1176,7 @@ export declare const languages: {
         paymentForm: string;
         paymentForms: string;
         paymentHistory: string;
+        paymentMethod: string;
         paymentMethodFull: string;
         paymentMethodShort: string;
         payments: string;
@@ -1180,6 +1233,7 @@ export declare const languages: {
         possibleDuplicates: string;
         postalCode: string;
         predefinedThemes: string;
+        presentationVideo: string;
         preset: string;
         presetAccess: string;
         presetAccessHelp: string;
@@ -1197,6 +1251,8 @@ export declare const languages: {
         priceList5: string;
         priceList6: string;
         priceLists: string;
+        pricePerNight: string;
+        pricePerPerson: string;
         prices: string;
         pricesPerUnit: string;
         pricesPerUnitHint: string;
@@ -1236,6 +1292,8 @@ export declare const languages: {
         promotions: string;
         prompt: string;
         properties: string;
+        property: string;
+        propertyConfig: string;
         prospect: string;
         protocol: string;
         provider: string;
@@ -1314,6 +1372,7 @@ export declare const languages: {
         relatedDocuments: string;
         relational: string;
         relationType: string;
+        releaseNotes: string;
         remaining: string;
         reminder: string;
         remindersEvents: string;
@@ -1324,6 +1383,8 @@ export declare const languages: {
         removeSeries: string;
         rename: string;
         renewAuthorization: string;
+        rentInfo: string;
+        rentPrice: string;
         reorder: string;
         repeat: string;
         repeatDaily: string;
@@ -1350,6 +1411,7 @@ export declare const languages: {
         returnItems: string;
         returnOf: string;
         rfc: string;
+        roadmapSubtitle: string;
         role: string;
         roles: string;
         route: string;
@@ -1361,6 +1423,7 @@ export declare const languages: {
         routeNumber: string;
         routeSummary: string;
         routing: string;
+        routingDesc: string;
         rowFiltersSection: string;
         rowsPerPage: string;
         rowStart: string;
@@ -1374,6 +1437,8 @@ export declare const languages: {
         salesPerMonth: string;
         salesRecord: string;
         salesTicket: string;
+        salesVsExpenses: string;
+        salesVsExpenses12m: string;
         salesWithoutStock: string;
         sampleText: string;
         satKey: string;
@@ -1409,6 +1474,7 @@ export declare const languages: {
         seconds: string;
         secretKey: string;
         section: string;
+        security: string;
         select: string;
         selectAccount: string;
         selectAllCount: string;
@@ -1497,11 +1563,13 @@ export declare const languages: {
         stop: string;
         stopDetail: string;
         stops: string;
+        stripeDesc: string;
         stripeVersion: string;
         style: string;
         subClass: string;
         subclass: string;
         subclassification: string;
+        subclassTotals: string;
         subgroup: string;
         subject: string;
         subjectPlaceholder: string;
@@ -1571,6 +1639,7 @@ export declare const languages: {
         ticketReturnTitle: string;
         tickets: string;
         ticketTypeConsult: string;
+        tiktokDesc: string;
         time: string;
         timeHour: string;
         timeInSeconds: string;
@@ -1694,6 +1763,7 @@ export declare const languages: {
         toReturn: string;
         total: string;
         totalBreakdown: string;
+        totalBudgeted: string;
         totalCollected: string;
         totalDoc: string;
         totalExpenses: string;
@@ -1705,6 +1775,7 @@ export declare const languages: {
         totalReceivable: string;
         totals: string;
         totalSales: string;
+        totalSpent: string;
         totalStops: string;
         totalToCollect: string;
         totalToPay: string;
@@ -1753,6 +1824,8 @@ export declare const languages: {
         user: string;
         userConfiguration: string;
         userEmail: string;
+        userManagement: string;
+        userManagementDesc: string;
         username: string;
         userName: string;
         userPhone: string;
@@ -1782,6 +1855,9 @@ export declare const languages: {
         viewTicket: string;
         visibleIfExpression: string;
         visualization: string;
+        vusemImports: string;
+        vusemImportsDesc: string;
+        wappConnectDesc: string;
         warehouse: string;
         warehouseName: string;
         warehouses: string;
@@ -1816,6 +1892,9 @@ export declare const languages: {
         account: string;
         accountHolder: string;
         accountInformation: string;
+        accounting: string;
+        accountingModule: string;
+        accountingModuleDesc: string;
         accountList: string;
         accountNumber: string;
         accounts: string;
@@ -1851,9 +1930,13 @@ export declare const languages: {
         administration: string;
         advance: string;
         advanced: string;
+        advancedCRM: string;
+        advancedCRMDesc: string;
         advancedFilter: string;
         advancedOptions: string;
         advancedPanel: string;
+        advancedReporting: string;
+        advancedReportingDesc: string;
         agenda: string;
         agent: string;
         agentDateAsign: string;
@@ -1872,6 +1955,7 @@ export declare const languages: {
         allPaid: string;
         allUsersIfEmpty: string;
         alreadyAssorted: string;
+        amazonDesc: string;
         amazonSetupDescription: string;
         amazonSetupTitle: string;
         amount: string;
@@ -1905,6 +1989,7 @@ export declare const languages: {
         attachedEvidence: string;
         attachedFile: string;
         attachImage: string;
+        attachImages: string;
         attachments: string;
         attachPlaceholder: string;
         attendance: string;
@@ -1939,6 +2024,7 @@ export declare const languages: {
         awsSecretKey: string;
         back: string;
         backToPos: string;
+        balance: string;
         bank: string;
         bankAccount: string;
         bankAccounts: string;
@@ -1948,6 +2034,7 @@ export declare const languages: {
         barcodes: string;
         batch: string;
         beneficiary: string;
+        biblyDesc: string;
         billHistory: string;
         billingSeries: string;
         blindCashClosing: string;
@@ -1958,6 +2045,9 @@ export declare const languages: {
         brand: string;
         break: string;
         budget: string;
+        budgeted: string;
+        budgetVsActualExpenses: string;
+        budgetVsExpenses: string;
         businessName: string;
         button: string;
         byCustomer: string;
@@ -1982,6 +2072,7 @@ export declare const languages: {
         captureDate: string;
         card: string;
         cardHeader: string;
+        carouselImages: string;
         cash: string;
         cashBox: string;
         cashBreakdown: string;
@@ -2037,6 +2128,8 @@ export declare const languages: {
         class: string;
         classification: string;
         classificationFormat: string;
+        classSubclass: string;
+        classTotals: string;
         clear: string;
         clientId: string;
         clientIdTooltip: string;
@@ -2075,6 +2168,7 @@ export declare const languages: {
         commitment: string;
         commitmentContact: string;
         commitmentTime: string;
+        communication: string;
         companies: string;
         companiesManagement: string;
         company: string;
@@ -2144,6 +2238,9 @@ export declare const languages: {
         coordinates: string;
         copy: string;
         copySuffix: string;
+        core: string;
+        coreOperation: string;
+        coreOperationDesc: string;
         corporate: string;
         correct: string;
         correctColumn: string;
@@ -2157,6 +2254,7 @@ export declare const languages: {
         count: string;
         countedQuantity: string;
         country: string;
+        cover: string;
         create: string;
         createChat: string;
         created: string;
@@ -2179,6 +2277,7 @@ export declare const languages: {
         creditNote: string;
         creditTooltip: string;
         critical: string;
+        crm: string;
         currencies: string;
         currenciesManagement: string;
         currency: string;
@@ -2209,6 +2308,8 @@ export declare const languages: {
         customThemes: string;
         cutLayout: string;
         cutPiecesFromLayout: string;
+        cybersecurity: string;
+        cybersecurityDesc: string;
         cyclicInventories: string;
         cyclicInventory: string;
         dailyBilling: string;
@@ -2271,6 +2372,7 @@ export declare const languages: {
         destinationLocation: string;
         destinationWarehouseName: string;
         developerConsole: string;
+        developmentRoadmap: string;
         difference: string;
         direct: string;
         directInventoryDeduction: string;
@@ -2314,6 +2416,7 @@ export declare const languages: {
         editSupplier: string;
         editTheme: string;
         editUser: string;
+        education: string;
         element: string;
         elements: string;
         eliminated: string;
@@ -2393,6 +2496,8 @@ export declare const languages: {
         expenseRequest: string;
         expenseRequests: string;
         expenses: string;
+        expensesByClass: string;
+        expensesBySubclass: string;
         expiration: string;
         expires: string;
         export: string;
@@ -2403,6 +2508,7 @@ export declare const languages: {
         failedOperation: string;
         family: string;
         favoriteTemplate: string;
+        features: string;
         field: string;
         fieldConfiguration: string;
         file: string;
@@ -2434,6 +2540,7 @@ export declare const languages: {
         fiscalDataTab: string;
         fiscalInformation: string;
         fit: string;
+        fix: string;
         foldersTitle: string;
         folio: string;
         folioTracking: string;
@@ -2442,6 +2549,7 @@ export declare const languages: {
         fontFamily: string;
         fontSize: string;
         fontSizeAppliesToTable: string;
+        foreignTrade: string;
         format: string;
         forms: string;
         formsManagement: string;
@@ -2456,6 +2564,8 @@ export declare const languages: {
         gallery: string;
         general: string;
         generalData: string;
+        generalInfo: string;
+        generalSummary: string;
         generated: string;
         generatedReport: string;
         generateOrder: string;
@@ -2512,6 +2622,7 @@ export declare const languages: {
         image: string;
         images: string;
         import: string;
+        improvement: string;
         improvementSuggestion: string;
         in: string;
         inactive: string;
@@ -2519,9 +2630,11 @@ export declare const languages: {
         inboxAdmin: string;
         inboxTitle: string;
         income: string;
+        incomes: string;
         incorrect: string;
         info: string;
         information: string;
+        infrastructure: string;
         inheritsFromDefaults: string;
         initialCash: string;
         initialList: string;
@@ -2538,7 +2651,9 @@ export declare const languages: {
         installIOSStep3: string;
         installTitle: string;
         integrated: string;
+        integrations: string;
         internal: string;
+        internationalization: string;
         invalidActionOrState: string;
         invalidData: string;
         invalidSession: string;
@@ -2555,6 +2670,8 @@ export declare const languages: {
         invoiceLegend: string;
         invoices: string;
         invoicesManagement: string;
+        invoicing: string;
+        invoicingDesc: string;
         itemCode: string;
         itemName: string;
         items: string;
@@ -2563,6 +2680,7 @@ export declare const languages: {
         kpis: string;
         label: string;
         labelTo: string;
+        landPlan: string;
         landscape: string;
         language: string;
         lastCheck: string;
@@ -2595,11 +2713,13 @@ export declare const languages: {
         locations: string;
         log: string;
         loginBlockedTitle: string;
+        logistics: string;
         logo: string;
         logoAlt: string;
         logotipo: string;
         logout: string;
         logs: string;
+        longDescription: string;
         low: string;
         lowerToHigher: string;
         loyaltyProgram: string;
@@ -2676,15 +2796,18 @@ export declare const languages: {
         markAsFavorite: string;
         markAsRead: string;
         markAsUnread: string;
+        marketing: string;
         marketplace: string;
         marketplacePlaceholder: string;
         material: string;
         materialCut: string;
         materials: string;
         max: string;
+        maxPeople: string;
         maxStock: string;
         medium: string;
         members: string;
+        mercadoLibreDesc: string;
         message: string;
         messagePlaceholder: string;
         min: string;
@@ -2711,7 +2834,11 @@ export declare const languages: {
         movementType: string;
         moveTo: string;
         multiDay: string;
+        multilanguage: string;
+        multilanguageDesc: string;
         multilineText: string;
+        multiTenantArchitecture: string;
+        multiTenantArchitectureDesc: string;
         myAssignedQuestionnaires: string;
         myProfile: string;
         mySales: string;
@@ -2784,6 +2911,7 @@ export declare const languages: {
         noCompanies: string;
         noContacts: string;
         noCustomThemes: string;
+        noData: string;
         noDate: string;
         noDiscount: string;
         noDynamicFields: string;
@@ -2933,6 +3061,7 @@ export declare const languages: {
         paymentForm: string;
         paymentForms: string;
         paymentHistory: string;
+        paymentMethod: string;
         paymentMethodFull: string;
         paymentMethodShort: string;
         payments: string;
@@ -2989,6 +3118,7 @@ export declare const languages: {
         possibleDuplicates: string;
         postalCode: string;
         predefinedThemes: string;
+        presentationVideo: string;
         preset: string;
         presetAccess: string;
         presetAccessHelp: string;
@@ -3006,6 +3136,8 @@ export declare const languages: {
         priceList5: string;
         priceList6: string;
         priceLists: string;
+        pricePerNight: string;
+        pricePerPerson: string;
         prices: string;
         pricesPerUnit: string;
         pricesPerUnitHint: string;
@@ -3045,6 +3177,8 @@ export declare const languages: {
         promotions: string;
         prompt: string;
         properties: string;
+        property: string;
+        propertyConfig: string;
         prospect: string;
         protocol: string;
         provider: string;
@@ -3123,6 +3257,7 @@ export declare const languages: {
         relatedDocuments: string;
         relational: string;
         relationType: string;
+        releaseNotes: string;
         remaining: string;
         reminder: string;
         remindersEvents: string;
@@ -3133,6 +3268,8 @@ export declare const languages: {
         removeSeries: string;
         rename: string;
         renewAuthorization: string;
+        rentInfo: string;
+        rentPrice: string;
         reorder: string;
         repeat: string;
         repeatDaily: string;
@@ -3159,6 +3296,7 @@ export declare const languages: {
         returnItems: string;
         returnOf: string;
         rfc: string;
+        roadmapSubtitle: string;
         role: string;
         roles: string;
         route: string;
@@ -3170,6 +3308,7 @@ export declare const languages: {
         routeNumber: string;
         routeSummary: string;
         routing: string;
+        routingDesc: string;
         rowFiltersSection: string;
         rowsPerPage: string;
         rowStart: string;
@@ -3183,6 +3322,8 @@ export declare const languages: {
         salesPerMonth: string;
         salesRecord: string;
         salesTicket: string;
+        salesVsExpenses: string;
+        salesVsExpenses12m: string;
         salesWithoutStock: string;
         sampleText: string;
         satKey: string;
@@ -3218,6 +3359,7 @@ export declare const languages: {
         seconds: string;
         secretKey: string;
         section: string;
+        security: string;
         select: string;
         selectAccount: string;
         selectAllCount: string;
@@ -3306,11 +3448,13 @@ export declare const languages: {
         stop: string;
         stopDetail: string;
         stops: string;
+        stripeDesc: string;
         stripeVersion: string;
         style: string;
         subClass: string;
         subclass: string;
         subclassification: string;
+        subclassTotals: string;
         subgroup: string;
         subject: string;
         subjectPlaceholder: string;
@@ -3380,6 +3524,7 @@ export declare const languages: {
         ticketReturnTitle: string;
         tickets: string;
         ticketTypeConsult: string;
+        tiktokDesc: string;
         time: string;
         timeHour: string;
         timeInSeconds: string;
@@ -3503,6 +3648,7 @@ export declare const languages: {
         toReturn: string;
         total: string;
         totalBreakdown: string;
+        totalBudgeted: string;
         totalCollected: string;
         totalDoc: string;
         totalExpenses: string;
@@ -3514,6 +3660,7 @@ export declare const languages: {
         totalReceivable: string;
         totals: string;
         totalSales: string;
+        totalSpent: string;
         totalStops: string;
         totalToCollect: string;
         totalToPay: string;
@@ -3562,6 +3709,8 @@ export declare const languages: {
         user: string;
         userConfiguration: string;
         userEmail: string;
+        userManagement: string;
+        userManagementDesc: string;
         username: string;
         userName: string;
         userPhone: string;
@@ -3591,6 +3740,9 @@ export declare const languages: {
         viewTicket: string;
         visibleIfExpression: string;
         visualization: string;
+        vusemImports: string;
+        vusemImportsDesc: string;
+        wappConnectDesc: string;
         warehouse: string;
         warehouseName: string;
         warehouses: string;
@@ -3625,6 +3777,9 @@ export declare const languages: {
         account: string;
         accountHolder: string;
         accountInformation: string;
+        accounting: string;
+        accountingModule: string;
+        accountingModuleDesc: string;
         accountList: string;
         accountNumber: string;
         accounts: string;
@@ -3660,9 +3815,13 @@ export declare const languages: {
         administration: string;
         advance: string;
         advanced: string;
+        advancedCRM: string;
+        advancedCRMDesc: string;
         advancedFilter: string;
         advancedOptions: string;
         advancedPanel: string;
+        advancedReporting: string;
+        advancedReportingDesc: string;
         agenda: string;
         agent: string;
         agentDateAsign: string;
@@ -3681,6 +3840,7 @@ export declare const languages: {
         allPaid: string;
         allUsersIfEmpty: string;
         alreadyAssorted: string;
+        amazonDesc: string;
         amazonSetupDescription: string;
         amazonSetupTitle: string;
         amount: string;
@@ -3714,6 +3874,7 @@ export declare const languages: {
         attachedEvidence: string;
         attachedFile: string;
         attachImage: string;
+        attachImages: string;
         attachments: string;
         attachPlaceholder: string;
         attendance: string;
@@ -3748,6 +3909,7 @@ export declare const languages: {
         awsSecretKey: string;
         back: string;
         backToPos: string;
+        balance: string;
         bank: string;
         bankAccount: string;
         bankAccounts: string;
@@ -3757,6 +3919,7 @@ export declare const languages: {
         barcodes: string;
         batch: string;
         beneficiary: string;
+        biblyDesc: string;
         billHistory: string;
         billingSeries: string;
         blindCashClosing: string;
@@ -3767,6 +3930,9 @@ export declare const languages: {
         brand: string;
         break: string;
         budget: string;
+        budgeted: string;
+        budgetVsActualExpenses: string;
+        budgetVsExpenses: string;
         businessName: string;
         button: string;
         byCustomer: string;
@@ -3791,6 +3957,7 @@ export declare const languages: {
         captureDate: string;
         card: string;
         cardHeader: string;
+        carouselImages: string;
         cash: string;
         cashBox: string;
         cashBreakdown: string;
@@ -3846,6 +4013,8 @@ export declare const languages: {
         class: string;
         classification: string;
         classificationFormat: string;
+        classSubclass: string;
+        classTotals: string;
         clear: string;
         clientId: string;
         clientIdTooltip: string;
@@ -3884,6 +4053,7 @@ export declare const languages: {
         commitment: string;
         commitmentContact: string;
         commitmentTime: string;
+        communication: string;
         companies: string;
         companiesManagement: string;
         company: string;
@@ -3953,6 +4123,9 @@ export declare const languages: {
         coordinates: string;
         copy: string;
         copySuffix: string;
+        core: string;
+        coreOperation: string;
+        coreOperationDesc: string;
         corporate: string;
         correct: string;
         correctColumn: string;
@@ -3966,6 +4139,7 @@ export declare const languages: {
         count: string;
         countedQuantity: string;
         country: string;
+        cover: string;
         create: string;
         createChat: string;
         created: string;
@@ -3988,6 +4162,7 @@ export declare const languages: {
         creditNote: string;
         creditTooltip: string;
         critical: string;
+        crm: string;
         currencies: string;
         currenciesManagement: string;
         currency: string;
@@ -4018,6 +4193,8 @@ export declare const languages: {
         customThemes: string;
         cutLayout: string;
         cutPiecesFromLayout: string;
+        cybersecurity: string;
+        cybersecurityDesc: string;
         cyclicInventories: string;
         cyclicInventory: string;
         dailyBilling: string;
@@ -4080,6 +4257,7 @@ export declare const languages: {
         destinationLocation: string;
         destinationWarehouseName: string;
         developerConsole: string;
+        developmentRoadmap: string;
         difference: string;
         direct: string;
         directInventoryDeduction: string;
@@ -4123,6 +4301,7 @@ export declare const languages: {
         editSupplier: string;
         editTheme: string;
         editUser: string;
+        education: string;
         element: string;
         elements: string;
         eliminated: string;
@@ -4202,6 +4381,8 @@ export declare const languages: {
         expenseRequest: string;
         expenseRequests: string;
         expenses: string;
+        expensesByClass: string;
+        expensesBySubclass: string;
         expiration: string;
         expires: string;
         export: string;
@@ -4212,6 +4393,7 @@ export declare const languages: {
         failedOperation: string;
         family: string;
         favoriteTemplate: string;
+        features: string;
         field: string;
         fieldConfiguration: string;
         file: string;
@@ -4243,6 +4425,7 @@ export declare const languages: {
         fiscalDataTab: string;
         fiscalInformation: string;
         fit: string;
+        fix: string;
         foldersTitle: string;
         folio: string;
         folioTracking: string;
@@ -4251,6 +4434,7 @@ export declare const languages: {
         fontFamily: string;
         fontSize: string;
         fontSizeAppliesToTable: string;
+        foreignTrade: string;
         format: string;
         forms: string;
         formsManagement: string;
@@ -4265,6 +4449,8 @@ export declare const languages: {
         gallery: string;
         general: string;
         generalData: string;
+        generalInfo: string;
+        generalSummary: string;
         generated: string;
         generatedReport: string;
         generateOrder: string;
@@ -4321,6 +4507,7 @@ export declare const languages: {
         image: string;
         images: string;
         import: string;
+        improvement: string;
         improvementSuggestion: string;
         in: string;
         inactive: string;
@@ -4328,9 +4515,11 @@ export declare const languages: {
         inboxAdmin: string;
         inboxTitle: string;
         income: string;
+        incomes: string;
         incorrect: string;
         info: string;
         information: string;
+        infrastructure: string;
         inheritsFromDefaults: string;
         initialCash: string;
         initialList: string;
@@ -4347,7 +4536,9 @@ export declare const languages: {
         installIOSStep3: string;
         installTitle: string;
         integrated: string;
+        integrations: string;
         internal: string;
+        internationalization: string;
         invalidActionOrState: string;
         invalidData: string;
         invalidSession: string;
@@ -4364,6 +4555,8 @@ export declare const languages: {
         invoiceLegend: string;
         invoices: string;
         invoicesManagement: string;
+        invoicing: string;
+        invoicingDesc: string;
         itemCode: string;
         itemName: string;
         items: string;
@@ -4372,6 +4565,7 @@ export declare const languages: {
         kpis: string;
         label: string;
         labelTo: string;
+        landPlan: string;
         landscape: string;
         language: string;
         lastCheck: string;
@@ -4404,11 +4598,13 @@ export declare const languages: {
         locations: string;
         log: string;
         loginBlockedTitle: string;
+        logistics: string;
         logo: string;
         logoAlt: string;
         logotipo: string;
         logout: string;
         logs: string;
+        longDescription: string;
         low: string;
         lowerToHigher: string;
         loyaltyProgram: string;
@@ -4485,15 +4681,18 @@ export declare const languages: {
         markAsFavorite: string;
         markAsRead: string;
         markAsUnread: string;
+        marketing: string;
         marketplace: string;
         marketplacePlaceholder: string;
         material: string;
         materialCut: string;
         materials: string;
         max: string;
+        maxPeople: string;
         maxStock: string;
         medium: string;
         members: string;
+        mercadoLibreDesc: string;
         message: string;
         messagePlaceholder: string;
         min: string;
@@ -4520,7 +4719,11 @@ export declare const languages: {
         movementType: string;
         moveTo: string;
         multiDay: string;
+        multilanguage: string;
+        multilanguageDesc: string;
         multilineText: string;
+        multiTenantArchitecture: string;
+        multiTenantArchitectureDesc: string;
         myAssignedQuestionnaires: string;
         myProfile: string;
         mySales: string;
@@ -4593,6 +4796,7 @@ export declare const languages: {
         noCompanies: string;
         noContacts: string;
         noCustomThemes: string;
+        noData: string;
         noDate: string;
         noDiscount: string;
         noDynamicFields: string;
@@ -4742,6 +4946,7 @@ export declare const languages: {
         paymentForm: string;
         paymentForms: string;
         paymentHistory: string;
+        paymentMethod: string;
         paymentMethodFull: string;
         paymentMethodShort: string;
         payments: string;
@@ -4798,6 +5003,7 @@ export declare const languages: {
         possibleDuplicates: string;
         postalCode: string;
         predefinedThemes: string;
+        presentationVideo: string;
         preset: string;
         presetAccess: string;
         presetAccessHelp: string;
@@ -4815,6 +5021,8 @@ export declare const languages: {
         priceList5: string;
         priceList6: string;
         priceLists: string;
+        pricePerNight: string;
+        pricePerPerson: string;
         prices: string;
         pricesPerUnit: string;
         pricesPerUnitHint: string;
@@ -4854,6 +5062,8 @@ export declare const languages: {
         promotions: string;
         prompt: string;
         properties: string;
+        property: string;
+        propertyConfig: string;
         prospect: string;
         protocol: string;
         provider: string;
@@ -4932,6 +5142,7 @@ export declare const languages: {
         relatedDocuments: string;
         relational: string;
         relationType: string;
+        releaseNotes: string;
         remaining: string;
         reminder: string;
         remindersEvents: string;
@@ -4942,6 +5153,8 @@ export declare const languages: {
         removeSeries: string;
         rename: string;
         renewAuthorization: string;
+        rentInfo: string;
+        rentPrice: string;
         reorder: string;
         repeat: string;
         repeatDaily: string;
@@ -4968,6 +5181,7 @@ export declare const languages: {
         returnItems: string;
         returnOf: string;
         rfc: string;
+        roadmapSubtitle: string;
         role: string;
         roles: string;
         route: string;
@@ -4979,6 +5193,7 @@ export declare const languages: {
         routeNumber: string;
         routeSummary: string;
         routing: string;
+        routingDesc: string;
         rowFiltersSection: string;
         rowsPerPage: string;
         rowStart: string;
@@ -4992,6 +5207,8 @@ export declare const languages: {
         salesPerMonth: string;
         salesRecord: string;
         salesTicket: string;
+        salesVsExpenses: string;
+        salesVsExpenses12m: string;
         salesWithoutStock: string;
         sampleText: string;
         satKey: string;
@@ -5027,6 +5244,7 @@ export declare const languages: {
         seconds: string;
         secretKey: string;
         section: string;
+        security: string;
         select: string;
         selectAccount: string;
         selectAllCount: string;
@@ -5115,11 +5333,13 @@ export declare const languages: {
         stop: string;
         stopDetail: string;
         stops: string;
+        stripeDesc: string;
         stripeVersion: string;
         style: string;
         subClass: string;
         subclass: string;
         subclassification: string;
+        subclassTotals: string;
         subgroup: string;
         subject: string;
         subjectPlaceholder: string;
@@ -5189,6 +5409,7 @@ export declare const languages: {
         ticketReturnTitle: string;
         tickets: string;
         ticketTypeConsult: string;
+        tiktokDesc: string;
         time: string;
         timeHour: string;
         timeInSeconds: string;
@@ -5312,6 +5533,7 @@ export declare const languages: {
         toReturn: string;
         total: string;
         totalBreakdown: string;
+        totalBudgeted: string;
         totalCollected: string;
         totalDoc: string;
         totalExpenses: string;
@@ -5323,6 +5545,7 @@ export declare const languages: {
         totalReceivable: string;
         totals: string;
         totalSales: string;
+        totalSpent: string;
         totalStops: string;
         totalToCollect: string;
         totalToPay: string;
@@ -5371,6 +5594,8 @@ export declare const languages: {
         user: string;
         userConfiguration: string;
         userEmail: string;
+        userManagement: string;
+        userManagementDesc: string;
         username: string;
         userName: string;
         userPhone: string;
@@ -5400,6 +5625,9 @@ export declare const languages: {
         viewTicket: string;
         visibleIfExpression: string;
         visualization: string;
+        vusemImports: string;
+        vusemImportsDesc: string;
+        wappConnectDesc: string;
         warehouse: string;
         warehouseName: string;
         warehouses: string;
