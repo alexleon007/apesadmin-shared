@@ -531,25 +531,3 @@ export const PRODUCT_ACCOUNTTYPES_SERVICE: string[] = [
   PROFILE_ACCOUNTTYPE_SALES_REVENUE,
   PROFILE_ACCOUNTTYPE_COST_OF_SALES,
 ];
-
-// Conceptos "principales" usados para calcular el estado de configuración
-// contable de un producto (sin configurar / parcial / completo).
-export const PRODUCT_ACCOUNTTYPES_REQUIRED_INVENTORIED: string[] = [
-  PROFILE_ACCOUNTTYPE_SALES_REVENUE,
-  PROFILE_ACCOUNTTYPE_INVENTORY_ASSET,
-  PROFILE_ACCOUNTTYPE_COST_OF_SALES,
-];
-
-export const PRODUCT_ACCOUNTTYPES_REQUIRED_SERVICE: string[] = [
-  PROFILE_ACCOUNTTYPE_SALES_REVENUE,
-];
-
-export const ACCOUNTING_CONFIG_STATUS_UNCONFIGURED = "unconfigured";
-export const ACCOUNTING_CONFIG_STATUS_PARTIAL = "partial";
-export const ACCOUNTING_CONFIG_STATUS_COMPLETE = "complete";
-
-export const ACCOUNTING_CONFIG_STATUS_LABELS: Record<string, string> = {
-  [ACCOUNTING_CONFIG_STATUS_UNCONFIGURED]: "Sin configurar",
-  [ACCOUNTING_CONFIG_STATUS_PARTIAL]: "Parcial",
-  [ACCOUNTING_CONFIG_STATUS_COMPLETE]: "Completa",
-};
