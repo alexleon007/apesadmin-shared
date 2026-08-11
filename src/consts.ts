@@ -320,3 +320,53 @@ export const CLOCK_TYPE_TO_STATUS: Record<string, string> = {
   break_end: "working",
   out: "idle",
 };
+
+// -------------- Contabilidad: Catálogo de Cuentas --------------
+
+export const ACCOUNT_TYPE_ASSET = "asset";
+export const ACCOUNT_TYPE_LIABILITY = "liability";
+export const ACCOUNT_TYPE_EQUITY = "equity";
+export const ACCOUNT_TYPE_REVENUE = "revenue";
+export const ACCOUNT_TYPE_COST = "cost";
+export const ACCOUNT_TYPE_EXPENSE = "expense";
+export const ACCOUNT_TYPE_MEMO = "memo";
+
+export const ACCOUNT_TYPE_OPTIONS: { value: string; label: string }[] = [
+  { value: ACCOUNT_TYPE_ASSET, label: "Activo" },
+  { value: ACCOUNT_TYPE_LIABILITY, label: "Pasivo" },
+  { value: ACCOUNT_TYPE_EQUITY, label: "Capital" },
+  { value: ACCOUNT_TYPE_REVENUE, label: "Ingreso" },
+  { value: ACCOUNT_TYPE_COST, label: "Costo" },
+  { value: ACCOUNT_TYPE_EXPENSE, label: "Gasto" },
+  { value: ACCOUNT_TYPE_MEMO, label: "Cuenta de orden" },
+];
+
+export const ACCOUNT_TYPE_LABELS: Record<string, string> =
+  ACCOUNT_TYPE_OPTIONS.reduce(
+    (acc, opt) => {
+      acc[opt.value] = opt.label;
+      return acc;
+    },
+    {} as Record<string, string>,
+  );
+
+export const ACCOUNT_NATURE_DEBIT = "debit";
+export const ACCOUNT_NATURE_CREDIT = "credit";
+
+export const ACCOUNT_NATURE_OPTIONS: { value: string; label: string }[] = [
+  { value: ACCOUNT_NATURE_DEBIT, label: "Deudora" },
+  { value: ACCOUNT_NATURE_CREDIT, label: "Acreedora" },
+];
+
+export const ACCOUNT_NATURE_LABELS: Record<string, string> =
+  ACCOUNT_NATURE_OPTIONS.reduce(
+    (acc, opt) => {
+      acc[opt.value] = opt.label;
+      return acc;
+    },
+    {} as Record<string, string>,
+  );
+
+/** Fila de main_menu / main_menu2 del modulo Contabilidad: grupo 7, submenu 26. */
+export const ACCOUNTINGMENU_IDMM = 7;
+export const ACCOUNTINGMENU_IDMM2 = 26;
