@@ -83,7 +83,6 @@ export declare const MAILSUPPLIER_OTHER = "other";
 export declare const MAILSECURITY_SSL = "ssl";
 export declare const MAILSECURITY_STARTTLS = "starttls";
 export declare const MAILSECURITY_NONE = "none";
-/** Fila de main_menu2 del modulo Correo: grupo 6 (Administracion), submenu 25. */
 export declare const MAILMENU_IDMM = 6;
 export declare const MAILMENU_IDMM2 = 25;
 export declare const MAILFOLDER_INBOX = "INBOX";
@@ -143,12 +142,8 @@ export declare const ACCOUNT_NATURE_OPTIONS: {
     label: string;
 }[];
 export declare const ACCOUNT_NATURE_LABELS: Record<string, string>;
-/** Fila de main_menu / main_menu2 del modulo Contabilidad: grupo 7, submenu 26. */
 export declare const ACCOUNTINGMENU_IDMM = 7;
 export declare const ACCOUNTINGMENU_IDMM2 = 26;
-/** Fila de main_menu2 del submodulo Perfiles Contables: grupo 7, submenu 27. */
-export declare const ACCOUNTINGPROFILESMENU_IDMM = 7;
-export declare const ACCOUNTINGPROFILESMENU_IDMM2 = 27;
 export declare const ACCOUNTPROFILE_TYPE_PRODUCT = "product";
 export declare const ACCOUNTPROFILE_TYPE_EXPENSE = "expense";
 export declare const ACCOUNTPROFILE_TYPE_OPTIONS: {
@@ -166,4 +161,34 @@ export declare const PROFILE_ACCOUNTTYPE_INVENTORY_LOSS = "inventory_loss";
 export declare const PROFILE_ACCOUNTTYPE_PURCHASE_EXPENSE = "purchase_expense";
 export declare const PROFILE_ACCOUNTTYPE_LABELS: Record<string, string>;
 export declare const PROFILE_ACCOUNTTYPES_BY_PROFILETYPE: Record<string, string[]>;
+export declare const ACCOUNTING_ENTITYTYPE_COMPANY = "company";
+export declare const GENERAL_ACCOUNTTYPE_CUSTOMERS_RECEIVABLE = "customers_receivable";
+export declare const GENERAL_ACCOUNTTYPE_SUPPLIERS_PAYABLE = "suppliers_payable";
+export declare const GENERAL_ACCOUNTTYPE_CUSTOMER_ADVANCES = "customer_advances";
+export declare const GENERAL_ACCOUNTTYPE_SUPPLIER_ADVANCES = "supplier_advances";
+export declare const GENERAL_ACCOUNTTYPE_EXCHANGE_GAIN = "exchange_gain";
+export declare const GENERAL_ACCOUNTTYPE_EXCHANGE_LOSS = "exchange_loss";
+export declare const GENERAL_ACCOUNTTYPE_OPTIONS: {
+    value: string;
+    label: string;
+}[];
+export declare const GENERAL_ACCOUNTTYPE_LABELS: Record<string, string>;
+export declare const ACCOUNTING_ENTITYTYPE_TAX = "tax";
+export declare const TAX_CLAS_RETENTION = "ret";
+export declare const TAX_ACCOUNTTYPE_OUTPUT = "tax_output";
+export declare const TAX_ACCOUNTTYPE_INPUT = "tax_input";
+export declare const TAX_ACCOUNTTYPE_WITHHOLDING_RECEIVABLE = "withholding_receivable";
+export declare const TAX_ACCOUNTTYPE_WITHHOLDING_PAYABLE = "withholding_payable";
+export declare const TAX_ACCOUNTTYPE_LABELS: Record<string, string>;
+export declare const TAX_ACCOUNTTYPES_BY_CLAS: Record<string, string[]>;
+export declare const TAX_ACCOUNTTYPES_DEFAULT: string[];
+export declare const ACCOUNTING_ENTITYTYPE_PRODUCT = "product";
+export declare const PRODUCT_ACCOUNTTYPES_INVENTORIED: string[];
+export declare const PRODUCT_ACCOUNTTYPES_SERVICE: string[];
+export declare const PRODUCT_ACCOUNTTYPES_REQUIRED_INVENTORIED: string[];
+export declare const PRODUCT_ACCOUNTTYPES_REQUIRED_SERVICE: string[];
+export declare const ACCOUNTING_CONFIG_STATUS_UNCONFIGURED = "unconfigured";
+export declare const ACCOUNTING_CONFIG_STATUS_PARTIAL = "partial";
+export declare const ACCOUNTING_CONFIG_STATUS_COMPLETE = "complete";
+export declare const ACCOUNTING_CONFIG_STATUS_LABELS: Record<string, string>;
 //# sourceMappingURL=consts.d.ts.map

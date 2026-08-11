@@ -2728,6 +2728,8 @@ export type FilterDefinition = {
   rangeEnd?: string;
   isClearable?: boolean;
   formatOptionLabel?: string;
+  // filtros "date": muestra un check "Fecha actual" que fija el valor al token $today
+  todayToggle?: boolean;
 };
 
 export type FilterOperator =
