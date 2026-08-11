@@ -510,3 +510,46 @@ export const TAX_ACCOUNTTYPES_DEFAULT: string[] = [
   TAX_ACCOUNTTYPE_OUTPUT,
   TAX_ACCOUNTTYPE_INPUT,
 ];
+
+// -------------- Contabilidad: Configuración Contable → Productos --------------
+// entitytype "product" + idtarget = products.idprod. Reutiliza el mismo
+// vocabulario de accounttype que accounting_profiles tipo "product"
+// (PROFILE_ACCOUNTTYPE_* / PROFILE_ACCOUNTTYPES_BY_PROFILETYPE) — un perfil
+// es solo una plantilla de estos mismos conceptos, no un vocabulario aparte.
+
+export const ACCOUNTING_ENTITYTYPE_PRODUCT = "product";
+
+// Todos los conceptos aplican a un producto inventariable (mismo set que un
+// perfil tipo "product"). Un producto no inventariable (servicio) solo
+// necesita, como máximo, ingresos y costo de ventas — no se le exige
+// inventario ni ajustes. Basado en `inventorytracked_prod`, el único campo
+// que products ya usa con lógica real de negocio para esta distinción.
+export const PRODUCT_ACCOUNTTYPES_INVENTORIED: string[] =
+  PROFILE_ACCOUNTTYPES_BY_PROFILETYPE[ACCOUNTPROFILE_TYPE_PRODUCT];
+
+export const PRODUCT_ACCOUNTTYPES_SERVICE: string[] = [
+  PROFILE_ACCOUNTTYPE_SALES_REVENUE,
+  PROFILE_ACCOUNTTYPE_COST_OF_SALES,
+];
+
+// Conceptos "principales" usados para calcular el estado de configuración
+// contable de un producto (sin configurar / parcial / completo).
+export const PRODUCT_ACCOUNTTYPES_REQUIRED_INVENTORIED: string[] = [
+  PROFILE_ACCOUNTTYPE_SALES_REVENUE,
+  PROFILE_ACCOUNTTYPE_INVENTORY_ASSET,
+  PROFILE_ACCOUNTTYPE_COST_OF_SALES,
+];
+
+export const PRODUCT_ACCOUNTTYPES_REQUIRED_SERVICE: string[] = [
+  PROFILE_ACCOUNTTYPE_SALES_REVENUE,
+];
+
+export const ACCOUNTING_CONFIG_STATUS_UNCONFIGURED = "unconfigured";
+export const ACCOUNTING_CONFIG_STATUS_PARTIAL = "partial";
+export const ACCOUNTING_CONFIG_STATUS_COMPLETE = "complete";
+
+export const ACCOUNTING_CONFIG_STATUS_LABELS: Record<string, string> = {
+  [ACCOUNTING_CONFIG_STATUS_UNCONFIGURED]: "Sin configurar",
+  [ACCOUNTING_CONFIG_STATUS_PARTIAL]: "Parcial",
+  [ACCOUNTING_CONFIG_STATUS_COMPLETE]: "Completa",
+};
