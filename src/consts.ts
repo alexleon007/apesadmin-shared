@@ -531,3 +531,13 @@ export const PRODUCT_ACCOUNTTYPES_SERVICE: string[] = [
   PROFILE_ACCOUNTTYPE_SALES_REVENUE,
   PROFILE_ACCOUNTTYPE_COST_OF_SALES,
 ];
+
+// -------------- Contabilidad: Configuración Contable → Cuentas Bancarias --------------
+// entitytype "bank_account" + idtarget = accounts.idacc (la cuenta
+// bancaria/financiera de Tesorería, NO accounting_accounts). Cubre banco,
+// efectivo y pasarela por igual — el tipo operativo ya vive en
+// accounts.type_acc, no hace falta un entitytype distinto solo por eso.
+
+export const ACCOUNTING_ENTITYTYPE_BANK_ACCOUNT = "bank_account";
+
+export const BANKACCOUNT_ACCOUNTTYPE_CASH_ACCOUNT = "cash_account";
