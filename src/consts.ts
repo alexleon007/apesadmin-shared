@@ -416,3 +416,55 @@ export const PROFILE_ACCOUNTTYPES_BY_PROFILETYPE: Record<string, string[]> = {
   ],
   [ACCOUNTPROFILE_TYPE_EXPENSE]: [PROFILE_ACCOUNTTYPE_PURCHASE_EXPENSE],
 };
+
+// -------------- Contabilidad: Configuración Contable (asignaciones reales) --------------
+// accounting_entity_accounts es la fuente REAL de configuración contable
+// (a diferencia de accounting_profiles, que son solo plantillas). Fase 3
+// únicamente usa entitytype "company" para la configuración general de cada
+// idcmp; la arquitectura queda lista para agregar más entitytype después
+// (product, party_customer, party_supplier, bank_account, expense_category,
+// warehouse, tax...) sin cambiar la tabla.
+
+export const ACCOUNTING_ENTITYTYPE_COMPANY = "company";
+
+export const GENERAL_ACCOUNTTYPE_CUSTOMERS_RECEIVABLE = "customers_receivable";
+export const GENERAL_ACCOUNTTYPE_SUPPLIERS_PAYABLE = "suppliers_payable";
+export const GENERAL_ACCOUNTTYPE_CUSTOMER_ADVANCES = "customer_advances";
+export const GENERAL_ACCOUNTTYPE_SUPPLIER_ADVANCES = "supplier_advances";
+export const GENERAL_ACCOUNTTYPE_VAT_OUTPUT = "vat_output";
+export const GENERAL_ACCOUNTTYPE_VAT_INPUT = "vat_input";
+export const GENERAL_ACCOUNTTYPE_EXCHANGE_GAIN = "exchange_gain";
+export const GENERAL_ACCOUNTTYPE_EXCHANGE_LOSS = "exchange_loss";
+
+export const GENERAL_ACCOUNTTYPE_OPTIONS: { value: string; label: string }[] =
+  [
+    {
+      value: GENERAL_ACCOUNTTYPE_CUSTOMERS_RECEIVABLE,
+      label: "Clientes / Cuentas por cobrar",
+    },
+    {
+      value: GENERAL_ACCOUNTTYPE_SUPPLIERS_PAYABLE,
+      label: "Proveedores / Cuentas por pagar",
+    },
+    {
+      value: GENERAL_ACCOUNTTYPE_CUSTOMER_ADVANCES,
+      label: "Anticipos de clientes",
+    },
+    {
+      value: GENERAL_ACCOUNTTYPE_SUPPLIER_ADVANCES,
+      label: "Anticipos a proveedores",
+    },
+    { value: GENERAL_ACCOUNTTYPE_VAT_OUTPUT, label: "IVA trasladado" },
+    { value: GENERAL_ACCOUNTTYPE_VAT_INPUT, label: "IVA acreditable" },
+    { value: GENERAL_ACCOUNTTYPE_EXCHANGE_GAIN, label: "Ganancia cambiaria" },
+    { value: GENERAL_ACCOUNTTYPE_EXCHANGE_LOSS, label: "Pérdida cambiaria" },
+  ];
+
+export const GENERAL_ACCOUNTTYPE_LABELS: Record<string, string> =
+  GENERAL_ACCOUNTTYPE_OPTIONS.reduce(
+    (acc, opt) => {
+      acc[opt.value] = opt.label;
+      return acc;
+    },
+    {} as Record<string, string>,
+  );

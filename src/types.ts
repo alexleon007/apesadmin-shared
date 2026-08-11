@@ -407,6 +407,19 @@ export type AccountingProfileDetailType = AccountingProfileType & {
   accounts: Record<string, number>;
 };
 
+export type AccountingEntityAccountType = {
+  idaccentity: number;
+  idcmp: number;
+  entitytype: string;
+  idtarget: number;
+  accounttype: string;
+  idaccount: number;
+  status: number;
+  iduser?: number;
+  createdat?: string;
+  updatedat?: string;
+};
+
 export type PartyAttendanceType = {
   idassist: number;
   assisttype: ClockType;
