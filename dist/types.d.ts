@@ -378,16 +378,6 @@ export type AccountingTaxCatalogType = {
     clas: string;
     order: number;
 };
-export type AccountingProductConfigRowType = {
-    idprod: number;
-    idcmp: number;
-    code: string;
-    name: string;
-    type: string;
-    inventorytracked: number;
-    status: string;
-    accountscount: number;
-};
 export type PartyAttendanceType = {
     idassist: number;
     assisttype: ClockType;

@@ -185,10 +185,4 @@ export declare const TAX_ACCOUNTTYPES_DEFAULT: string[];
 export declare const ACCOUNTING_ENTITYTYPE_PRODUCT = "product";
 export declare const PRODUCT_ACCOUNTTYPES_INVENTORIED: string[];
 export declare const PRODUCT_ACCOUNTTYPES_SERVICE: string[];
-export declare const PRODUCT_ACCOUNTTYPES_REQUIRED_INVENTORIED: string[];
-export declare const PRODUCT_ACCOUNTTYPES_REQUIRED_SERVICE: string[];
-export declare const ACCOUNTING_CONFIG_STATUS_UNCONFIGURED = "unconfigured";
-export declare const ACCOUNTING_CONFIG_STATUS_PARTIAL = "partial";
-export declare const ACCOUNTING_CONFIG_STATUS_COMPLETE = "complete";
-export declare const ACCOUNTING_CONFIG_STATUS_LABELS: Record<string, string>;
 //# sourceMappingURL=consts.d.ts.map
