@@ -1563,6 +1563,7 @@ export declare const languages: {
         rowFiltersSection: string;
         rowsPerPage: string;
         rowStart: string;
+        saleNote: string;
         sales: string;
         salesAgent: string;
         salesAnalysis: string;
@@ -1645,6 +1646,9 @@ export declare const languages: {
         selectType: string;
         selectUser: string;
         selectWarehouseFirst: string;
+        selfBillingFolio: string;
+        selfBillingIntro: string;
+        selfBillingToken: string;
         selfInvoice: string;
         sellerId: string;
         send: string;
@@ -3657,6 +3661,7 @@ export declare const languages: {
         rowFiltersSection: string;
         rowsPerPage: string;
         rowStart: string;
+        saleNote: string;
         sales: string;
         salesAgent: string;
         salesAnalysis: string;
@@ -3739,6 +3744,9 @@ export declare const languages: {
         selectType: string;
         selectUser: string;
         selectWarehouseFirst: string;
+        selfBillingFolio: string;
+        selfBillingIntro: string;
+        selfBillingToken: string;
         selfInvoice: string;
         sellerId: string;
         send: string;
@@ -5751,6 +5759,7 @@ export declare const languages: {
         rowFiltersSection: string;
         rowsPerPage: string;
         rowStart: string;
+        saleNote: string;
         sales: string;
         salesAgent: string;
         salesAnalysis: string;
@@ -5833,6 +5842,9 @@ export declare const languages: {
         selectType: string;
         selectUser: string;
         selectWarehouseFirst: string;
+        selfBillingFolio: string;
+        selfBillingIntro: string;
+        selfBillingToken: string;
         selfInvoice: string;
         sellerId: string;
         send: string;

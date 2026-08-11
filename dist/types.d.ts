@@ -2099,6 +2099,8 @@ export type TicketDetail = {
 export type TicketInfo = {
     idor: number;
     folio: string;
+    /** type_or del documento: 3 = nota, 4 = ticket */
+    doctype: number;
     docdate: string;
     subtotal: number;
     taxes: number;
