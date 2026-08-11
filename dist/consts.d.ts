@@ -124,4 +124,46 @@ export declare const GRID_SIZE = 10;
 export declare const DASHBOARD_CATEGORIES: string[];
 export declare const VALID_CLOCK_TYPES: readonly ["in", "break_start", "break_end", "out"];
 export declare const CLOCK_TYPE_TO_STATUS: Record<string, string>;
+export declare const ACCOUNT_TYPE_ASSET = "asset";
+export declare const ACCOUNT_TYPE_LIABILITY = "liability";
+export declare const ACCOUNT_TYPE_EQUITY = "equity";
+export declare const ACCOUNT_TYPE_REVENUE = "revenue";
+export declare const ACCOUNT_TYPE_COST = "cost";
+export declare const ACCOUNT_TYPE_EXPENSE = "expense";
+export declare const ACCOUNT_TYPE_MEMO = "memo";
+export declare const ACCOUNT_TYPE_OPTIONS: {
+    value: string;
+    label: string;
+}[];
+export declare const ACCOUNT_TYPE_LABELS: Record<string, string>;
+export declare const ACCOUNT_NATURE_DEBIT = "debit";
+export declare const ACCOUNT_NATURE_CREDIT = "credit";
+export declare const ACCOUNT_NATURE_OPTIONS: {
+    value: string;
+    label: string;
+}[];
+export declare const ACCOUNT_NATURE_LABELS: Record<string, string>;
+/** Fila de main_menu / main_menu2 del modulo Contabilidad: grupo 7, submenu 26. */
+export declare const ACCOUNTINGMENU_IDMM = 7;
+export declare const ACCOUNTINGMENU_IDMM2 = 26;
+/** Fila de main_menu2 del submodulo Perfiles Contables: grupo 7, submenu 27. */
+export declare const ACCOUNTINGPROFILESMENU_IDMM = 7;
+export declare const ACCOUNTINGPROFILESMENU_IDMM2 = 27;
+export declare const ACCOUNTPROFILE_TYPE_PRODUCT = "product";
+export declare const ACCOUNTPROFILE_TYPE_EXPENSE = "expense";
+export declare const ACCOUNTPROFILE_TYPE_OPTIONS: {
+    value: string;
+    label: string;
+}[];
+export declare const ACCOUNTPROFILE_TYPE_LABELS: Record<string, string>;
+export declare const PROFILE_ACCOUNTTYPE_SALES_REVENUE = "sales_revenue";
+export declare const PROFILE_ACCOUNTTYPE_INVENTORY_ASSET = "inventory_asset";
+export declare const PROFILE_ACCOUNTTYPE_COST_OF_SALES = "cost_of_sales";
+export declare const PROFILE_ACCOUNTTYPE_SALES_RETURN = "sales_return";
+export declare const PROFILE_ACCOUNTTYPE_SALES_DISCOUNT = "sales_discount";
+export declare const PROFILE_ACCOUNTTYPE_INVENTORY_GAIN = "inventory_gain";
+export declare const PROFILE_ACCOUNTTYPE_INVENTORY_LOSS = "inventory_loss";
+export declare const PROFILE_ACCOUNTTYPE_PURCHASE_EXPENSE = "purchase_expense";
+export declare const PROFILE_ACCOUNTTYPE_LABELS: Record<string, string>;
+export declare const PROFILE_ACCOUNTTYPES_BY_PROFILETYPE: Record<string, string[]>;
 //# sourceMappingURL=consts.d.ts.map

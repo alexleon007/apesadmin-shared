@@ -332,6 +332,33 @@ export type ClasificationsType = {
     status: number;
 };
 export type AttendanceStatusType = "idle" | "working" | "onBreak";
+export type AccountingAccountType = {
+    idacc: number;
+    idcmp: number;
+    code: string;
+    name: string;
+    type: string;
+    nature: string;
+    idparent: number;
+    level: number;
+    allowsmovements: number;
+    satgroupcode: string;
+    currency: string;
+    status: number;
+    createdat?: string;
+};
+export type AccountingProfileType = {
+    idaccprof: number;
+    idcmp: number;
+    code: string;
+    name: string;
+    type: string;
+    status: number;
+    accountscount?: number;
+};
+export type AccountingProfileDetailType = AccountingProfileType & {
+    accounts: Record<string, number>;
+};
 export type PartyAttendanceType = {
     idassist: number;
     assisttype: ClockType;

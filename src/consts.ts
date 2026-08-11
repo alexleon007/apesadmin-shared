@@ -370,3 +370,65 @@ export const ACCOUNT_NATURE_LABELS: Record<string, string> =
 /** Fila de main_menu / main_menu2 del modulo Contabilidad: grupo 7, submenu 26. */
 export const ACCOUNTINGMENU_IDMM = 7;
 export const ACCOUNTINGMENU_IDMM2 = 26;
+
+// -------------- Contabilidad: Perfiles Contables --------------
+
+/** Fila de main_menu2 del submodulo Perfiles Contables: grupo 7, submenu 27. */
+export const ACCOUNTINGPROFILESMENU_IDMM = 7;
+export const ACCOUNTINGPROFILESMENU_IDMM2 = 27;
+
+export const ACCOUNTPROFILE_TYPE_PRODUCT = "product";
+export const ACCOUNTPROFILE_TYPE_EXPENSE = "expense";
+
+export const ACCOUNTPROFILE_TYPE_OPTIONS: { value: string; label: string }[] =
+  [
+    { value: ACCOUNTPROFILE_TYPE_PRODUCT, label: "Producto / Servicio" },
+    { value: ACCOUNTPROFILE_TYPE_EXPENSE, label: "Gasto" },
+  ];
+
+export const ACCOUNTPROFILE_TYPE_LABELS: Record<string, string> =
+  ACCOUNTPROFILE_TYPE_OPTIONS.reduce(
+    (acc, opt) => {
+      acc[opt.value] = opt.label;
+      return acc;
+    },
+    {} as Record<string, string>,
+  );
+
+// Conceptos de cuenta que puede contener un perfil (accounttype_accprofa).
+export const PROFILE_ACCOUNTTYPE_SALES_REVENUE = "sales_revenue";
+export const PROFILE_ACCOUNTTYPE_INVENTORY_ASSET = "inventory_asset";
+export const PROFILE_ACCOUNTTYPE_COST_OF_SALES = "cost_of_sales";
+export const PROFILE_ACCOUNTTYPE_SALES_RETURN = "sales_return";
+export const PROFILE_ACCOUNTTYPE_SALES_DISCOUNT = "sales_discount";
+export const PROFILE_ACCOUNTTYPE_INVENTORY_GAIN = "inventory_gain";
+export const PROFILE_ACCOUNTTYPE_INVENTORY_LOSS = "inventory_loss";
+export const PROFILE_ACCOUNTTYPE_PURCHASE_EXPENSE = "purchase_expense";
+
+export const PROFILE_ACCOUNTTYPE_LABELS: Record<string, string> = {
+  [PROFILE_ACCOUNTTYPE_SALES_REVENUE]: "Ingresos por ventas",
+  [PROFILE_ACCOUNTTYPE_INVENTORY_ASSET]: "Inventario",
+  [PROFILE_ACCOUNTTYPE_COST_OF_SALES]: "Costo de ventas",
+  [PROFILE_ACCOUNTTYPE_SALES_RETURN]: "Devoluciones sobre ventas",
+  [PROFILE_ACCOUNTTYPE_SALES_DISCOUNT]: "Descuentos sobre ventas",
+  [PROFILE_ACCOUNTTYPE_INVENTORY_GAIN]: "Ajuste positivo de inventario",
+  [PROFILE_ACCOUNTTYPE_INVENTORY_LOSS]: "Ajuste negativo de inventario",
+  [PROFILE_ACCOUNTTYPE_PURCHASE_EXPENSE]: "Cuenta de gasto",
+};
+
+// Qué conceptos de cuenta aplican según el type_accprof del perfil — controla
+// qué selectores se dibujan en el formulario. Ninguno es obligatorio: un
+// perfil puede dejar conceptos sin asignar (ej. un perfil de servicios sin
+// inventario/costo).
+export const PROFILE_ACCOUNTTYPES_BY_PROFILETYPE: Record<string, string[]> = {
+  [ACCOUNTPROFILE_TYPE_PRODUCT]: [
+    PROFILE_ACCOUNTTYPE_SALES_REVENUE,
+    PROFILE_ACCOUNTTYPE_INVENTORY_ASSET,
+    PROFILE_ACCOUNTTYPE_COST_OF_SALES,
+    PROFILE_ACCOUNTTYPE_SALES_RETURN,
+    PROFILE_ACCOUNTTYPE_SALES_DISCOUNT,
+    PROFILE_ACCOUNTTYPE_INVENTORY_GAIN,
+    PROFILE_ACCOUNTTYPE_INVENTORY_LOSS,
+  ],
+  [ACCOUNTPROFILE_TYPE_EXPENSE]: [PROFILE_ACCOUNTTYPE_PURCHASE_EXPENSE],
+};
