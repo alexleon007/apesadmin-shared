@@ -2463,7 +2463,9 @@ export type PublicServiceKeyType =
 
 export type PublicNavItemType = {
   key: PublicServiceKeyType;
-  label: string;
+  // Clave i18n: la lista vive a nivel de módulo, fuera de cualquier componente,
+  // así que la traduce quien la pinta.
+  labelKey: string;
   icon: any;
   color: string;
   requiresAuth?: boolean;

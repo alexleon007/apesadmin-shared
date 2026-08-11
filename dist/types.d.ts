@@ -2261,7 +2261,7 @@ export type WorkItemsType = {
 export type PublicServiceKeyType = "calendar" | "cfdi" | "ticket" | "account" | "chat";
 export type PublicNavItemType = {
     key: PublicServiceKeyType;
-    label: string;
+    labelKey: string;
     icon: any;
     color: string;
     requiresAuth?: boolean;
