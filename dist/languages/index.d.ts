@@ -33,6 +33,7 @@ export declare const languages: {
         addColumnForXAxis: string;
         addContacts: string;
         added: string;
+        addFile: string;
         addFilter: string;
         addGroupingColumn: string;
         additionalFields: string;
@@ -101,6 +102,7 @@ export declare const languages: {
         assignAgentsOnOrder: string;
         assigned: string;
         assignedUsers: string;
+        assignees: string;
         assignOperatorsOnOrder: string;
         assignOrdersToRoute: string;
         assignProvidersTo: string;
@@ -263,7 +265,9 @@ export declare const languages: {
         clabe: string;
         class: string;
         classification: string;
+        classificationAndHierarchy: string;
         classificationFormat: string;
+        classifications: string;
         classSubclass: string;
         classTotals: string;
         clear: string;
@@ -278,6 +282,8 @@ export declare const languages: {
         closingDate: string;
         closingObservations: string;
         code: string;
+        collaborator: string;
+        collaborators: string;
         collect: string;
         collecting: string;
         color: string;
@@ -507,6 +513,7 @@ export declare const languages: {
         denomination: string;
         denominations: string;
         departure: string;
+        describeTicket: string;
         description: string;
         descriptionOptional: string;
         destination: string;
@@ -687,6 +694,7 @@ export declare const languages: {
         finalUser: string;
         financialResolution: string;
         finishBreak: string;
+        finished: string;
         finishedProduct: string;
         firstSessionFolio: string;
         fiscalDataTab: string;
@@ -869,6 +877,7 @@ export declare const languages: {
         location: string;
         locations: string;
         log: string;
+        loggedTime: string;
         loginBlockedTitle: string;
         logistics: string;
         logo: string;
@@ -1035,6 +1044,7 @@ export declare const languages: {
         newLoyaltyProgram: string;
         newMailAccount: string;
         newOrder: string;
+        newParentItem: string;
         newPDFTemplate: string;
         newProduct: string;
         newProfile: string;
@@ -1093,6 +1103,7 @@ export declare const languages: {
         noParentAccount: string;
         noPipelinesMessage: string;
         noPipelinesRegistered: string;
+        noPriority: string;
         noProcesses: string;
         noProcessesToShow: string;
         noPromotions: string;
@@ -1187,6 +1198,8 @@ export declare const languages: {
         overdueAmount: string;
         overflowed: string;
         own: string;
+        owner: string;
+        ownerRoleRequired: string;
         page: string;
         pageNumber: string;
         pageNumTemplate: string;
@@ -1205,7 +1218,10 @@ export declare const languages: {
         paletteNeutralManagement: string;
         paletteSystemStates: string;
         paletteVibrantSunset: string;
+        parent: string;
         parentAccount: string;
+        parentItemNamePlaceholder: string;
+        parentOptional: string;
         partial: string;
         partialSale: string;
         partialSaleHelp: string;
@@ -1337,6 +1353,7 @@ export declare const languages: {
         projectName: string;
         projectPlugin: string;
         projects: string;
+        projectsAndSprints: string;
         promotionAmount: string;
         promotionDescription: string;
         promotionEndDate: string;
@@ -1437,6 +1454,7 @@ export declare const languages: {
         removeColor: string;
         removeColumn: string;
         removeLine: string;
+        removeMember: string;
         removeSeries: string;
         rename: string;
         renewAuthorization: string;
@@ -1540,6 +1558,7 @@ export declare const languages: {
         selectAllCount: string;
         selectAtLeastOneDocument: string;
         selectCancellationMotive: string;
+        selectCompany: string;
         selectCompanyFirstForAccounting: string;
         selected: string;
         selectedCount: string;
@@ -1549,12 +1568,14 @@ export declare const languages: {
         selectOption: string;
         selectOrderFirst: string;
         selectOrderToAssort: string;
+        selectProject: string;
         selectPrompt: string;
         selectTeam: string;
         selectTemplate: string;
         selectTemplateTypeForColumns: string;
         selectTheme: string;
         selectType: string;
+        selectUser: string;
         selectWarehouseFirst: string;
         sellerId: string;
         send: string;
@@ -1589,6 +1610,7 @@ export declare const languages: {
         sourceLocation: string;
         sourceWarehouseName: string;
         spent: string;
+        sprint: string;
         sqlQuery: string;
         srcUrlOrVariable: string;
         stageCreated: string;
@@ -1663,6 +1685,7 @@ export declare const languages: {
         tag: string;
         tagExample: string;
         tags: string;
+        task: string;
         tax: string;
         taxes: string;
         taxRegime: string;
@@ -1690,6 +1713,7 @@ export declare const languages: {
         thisReception: string;
         thumbnail: string;
         ticket: string;
+        ticketClassifications: string;
         ticketCode: string;
         ticketDetailTitle: string;
         ticketEmpty: string;
@@ -1700,6 +1724,8 @@ export declare const languages: {
         ticketObsPlaceholder: string;
         ticketReturnTitle: string;
         tickets: string;
+        ticketsGantt: string;
+        ticketTitle: string;
         ticketTypeConsult: string;
         tiktokDesc: string;
         time: string;
@@ -1805,6 +1831,8 @@ export declare const languages: {
         toastTemplateUpdated: string;
         toastTestConnectionError: string;
         toastTextCopied: string;
+        toastTicketDeleted: string;
+        toastTitleRequired: string;
         toastUpdated: string;
         toastUpdateError: string;
         toastUploadError: string;
@@ -1891,6 +1919,7 @@ export declare const languages: {
         uploadPrices: string;
         uploadProduct: string;
         uploadProducts: string;
+        urgent: string;
         url: string;
         user: string;
         userConfiguration: string;
@@ -1938,6 +1967,8 @@ export declare const languages: {
         warehouseTransport: string;
         warehouseUser: string;
         warning: string;
+        watcher: string;
+        watchers: string;
         week: string;
         weekAbbr: string;
         weekOf: string;
@@ -1991,6 +2022,7 @@ export declare const languages: {
         addColumnForXAxis: string;
         addContacts: string;
         added: string;
+        addFile: string;
         addFilter: string;
         addGroupingColumn: string;
         additionalFields: string;
@@ -2059,6 +2091,7 @@ export declare const languages: {
         assignAgentsOnOrder: string;
         assigned: string;
         assignedUsers: string;
+        assignees: string;
         assignOperatorsOnOrder: string;
         assignOrdersToRoute: string;
         assignProvidersTo: string;
@@ -2221,7 +2254,9 @@ export declare const languages: {
         clabe: string;
         class: string;
         classification: string;
+        classificationAndHierarchy: string;
         classificationFormat: string;
+        classifications: string;
         classSubclass: string;
         classTotals: string;
         clear: string;
@@ -2236,6 +2271,8 @@ export declare const languages: {
         closingDate: string;
         closingObservations: string;
         code: string;
+        collaborator: string;
+        collaborators: string;
         collect: string;
         collecting: string;
         color: string;
@@ -2465,6 +2502,7 @@ export declare const languages: {
         denomination: string;
         denominations: string;
         departure: string;
+        describeTicket: string;
         description: string;
         descriptionOptional: string;
         destination: string;
@@ -2645,6 +2683,7 @@ export declare const languages: {
         finalUser: string;
         financialResolution: string;
         finishBreak: string;
+        finished: string;
         finishedProduct: string;
         firstSessionFolio: string;
         fiscalDataTab: string;
@@ -2827,6 +2866,7 @@ export declare const languages: {
         location: string;
         locations: string;
         log: string;
+        loggedTime: string;
         loginBlockedTitle: string;
         logistics: string;
         logo: string;
@@ -2993,6 +3033,7 @@ export declare const languages: {
         newLoyaltyProgram: string;
         newMailAccount: string;
         newOrder: string;
+        newParentItem: string;
         newPDFTemplate: string;
         newProduct: string;
         newProfile: string;
@@ -3051,6 +3092,7 @@ export declare const languages: {
         noParentAccount: string;
         noPipelinesMessage: string;
         noPipelinesRegistered: string;
+        noPriority: string;
         noProcesses: string;
         noProcessesToShow: string;
         noPromotions: string;
@@ -3145,6 +3187,8 @@ export declare const languages: {
         overdueAmount: string;
         overflowed: string;
         own: string;
+        owner: string;
+        ownerRoleRequired: string;
         page: string;
         pageNumber: string;
         pageNumTemplate: string;
@@ -3163,7 +3207,10 @@ export declare const languages: {
         paletteNeutralManagement: string;
         paletteSystemStates: string;
         paletteVibrantSunset: string;
+        parent: string;
         parentAccount: string;
+        parentItemNamePlaceholder: string;
+        parentOptional: string;
         partial: string;
         partialSale: string;
         partialSaleHelp: string;
@@ -3295,6 +3342,7 @@ export declare const languages: {
         projectName: string;
         projectPlugin: string;
         projects: string;
+        projectsAndSprints: string;
         promotionAmount: string;
         promotionDescription: string;
         promotionEndDate: string;
@@ -3395,6 +3443,7 @@ export declare const languages: {
         removeColor: string;
         removeColumn: string;
         removeLine: string;
+        removeMember: string;
         removeSeries: string;
         rename: string;
         renewAuthorization: string;
@@ -3498,6 +3547,7 @@ export declare const languages: {
         selectAllCount: string;
         selectAtLeastOneDocument: string;
         selectCancellationMotive: string;
+        selectCompany: string;
         selectCompanyFirstForAccounting: string;
         selected: string;
         selectedCount: string;
@@ -3507,12 +3557,14 @@ export declare const languages: {
         selectOption: string;
         selectOrderFirst: string;
         selectOrderToAssort: string;
+        selectProject: string;
         selectPrompt: string;
         selectTeam: string;
         selectTemplate: string;
         selectTemplateTypeForColumns: string;
         selectTheme: string;
         selectType: string;
+        selectUser: string;
         selectWarehouseFirst: string;
         sellerId: string;
         send: string;
@@ -3547,6 +3599,7 @@ export declare const languages: {
         sourceLocation: string;
         sourceWarehouseName: string;
         spent: string;
+        sprint: string;
         sqlQuery: string;
         srcUrlOrVariable: string;
         stageCreated: string;
@@ -3621,6 +3674,7 @@ export declare const languages: {
         tag: string;
         tagExample: string;
         tags: string;
+        task: string;
         tax: string;
         taxes: string;
         taxRegime: string;
@@ -3648,6 +3702,7 @@ export declare const languages: {
         thisReception: string;
         thumbnail: string;
         ticket: string;
+        ticketClassifications: string;
         ticketCode: string;
         ticketDetailTitle: string;
         ticketEmpty: string;
@@ -3658,6 +3713,8 @@ export declare const languages: {
         ticketObsPlaceholder: string;
         ticketReturnTitle: string;
         tickets: string;
+        ticketsGantt: string;
+        ticketTitle: string;
         ticketTypeConsult: string;
         tiktokDesc: string;
         time: string;
@@ -3763,6 +3820,8 @@ export declare const languages: {
         toastTemplateUpdated: string;
         toastTestConnectionError: string;
         toastTextCopied: string;
+        toastTicketDeleted: string;
+        toastTitleRequired: string;
         toastUpdated: string;
         toastUpdateError: string;
         toastUploadError: string;
@@ -3849,6 +3908,7 @@ export declare const languages: {
         uploadPrices: string;
         uploadProduct: string;
         uploadProducts: string;
+        urgent: string;
         url: string;
         user: string;
         userConfiguration: string;
@@ -3896,6 +3956,8 @@ export declare const languages: {
         warehouseTransport: string;
         warehouseUser: string;
         warning: string;
+        watcher: string;
+        watchers: string;
         week: string;
         weekAbbr: string;
         weekOf: string;
@@ -3949,6 +4011,7 @@ export declare const languages: {
         addColumnForXAxis: string;
         addContacts: string;
         added: string;
+        addFile: string;
         addFilter: string;
         addGroupingColumn: string;
         additionalFields: string;
@@ -4017,6 +4080,7 @@ export declare const languages: {
         assignAgentsOnOrder: string;
         assigned: string;
         assignedUsers: string;
+        assignees: string;
         assignOperatorsOnOrder: string;
         assignOrdersToRoute: string;
         assignProvidersTo: string;
@@ -4179,7 +4243,9 @@ export declare const languages: {
         clabe: string;
         class: string;
         classification: string;
+        classificationAndHierarchy: string;
         classificationFormat: string;
+        classifications: string;
         classSubclass: string;
         classTotals: string;
         clear: string;
@@ -4194,6 +4260,8 @@ export declare const languages: {
         closingDate: string;
         closingObservations: string;
         code: string;
+        collaborator: string;
+        collaborators: string;
         collect: string;
         collecting: string;
         color: string;
@@ -4423,6 +4491,7 @@ export declare const languages: {
         denomination: string;
         denominations: string;
         departure: string;
+        describeTicket: string;
         description: string;
         descriptionOptional: string;
         destination: string;
@@ -4603,6 +4672,7 @@ export declare const languages: {
         finalUser: string;
         financialResolution: string;
         finishBreak: string;
+        finished: string;
         finishedProduct: string;
         firstSessionFolio: string;
         fiscalDataTab: string;
@@ -4785,6 +4855,7 @@ export declare const languages: {
         location: string;
         locations: string;
         log: string;
+        loggedTime: string;
         loginBlockedTitle: string;
         logistics: string;
         logo: string;
@@ -4951,6 +5022,7 @@ export declare const languages: {
         newLoyaltyProgram: string;
         newMailAccount: string;
         newOrder: string;
+        newParentItem: string;
         newPDFTemplate: string;
         newProduct: string;
         newProfile: string;
@@ -5009,6 +5081,7 @@ export declare const languages: {
         noParentAccount: string;
         noPipelinesMessage: string;
         noPipelinesRegistered: string;
+        noPriority: string;
         noProcesses: string;
         noProcessesToShow: string;
         noPromotions: string;
@@ -5103,6 +5176,8 @@ export declare const languages: {
         overdueAmount: string;
         overflowed: string;
         own: string;
+        owner: string;
+        ownerRoleRequired: string;
         page: string;
         pageNumber: string;
         pageNumTemplate: string;
@@ -5121,7 +5196,10 @@ export declare const languages: {
         paletteNeutralManagement: string;
         paletteSystemStates: string;
         paletteVibrantSunset: string;
+        parent: string;
         parentAccount: string;
+        parentItemNamePlaceholder: string;
+        parentOptional: string;
         partial: string;
         partialSale: string;
         partialSaleHelp: string;
@@ -5253,6 +5331,7 @@ export declare const languages: {
         projectName: string;
         projectPlugin: string;
         projects: string;
+        projectsAndSprints: string;
         promotionAmount: string;
         promotionDescription: string;
         promotionEndDate: string;
@@ -5353,6 +5432,7 @@ export declare const languages: {
         removeColor: string;
         removeColumn: string;
         removeLine: string;
+        removeMember: string;
         removeSeries: string;
         rename: string;
         renewAuthorization: string;
@@ -5456,6 +5536,7 @@ export declare const languages: {
         selectAllCount: string;
         selectAtLeastOneDocument: string;
         selectCancellationMotive: string;
+        selectCompany: string;
         selectCompanyFirstForAccounting: string;
         selected: string;
         selectedCount: string;
@@ -5465,12 +5546,14 @@ export declare const languages: {
         selectOption: string;
         selectOrderFirst: string;
         selectOrderToAssort: string;
+        selectProject: string;
         selectPrompt: string;
         selectTeam: string;
         selectTemplate: string;
         selectTemplateTypeForColumns: string;
         selectTheme: string;
         selectType: string;
+        selectUser: string;
         selectWarehouseFirst: string;
         sellerId: string;
         send: string;
@@ -5505,6 +5588,7 @@ export declare const languages: {
         sourceLocation: string;
         sourceWarehouseName: string;
         spent: string;
+        sprint: string;
         sqlQuery: string;
         srcUrlOrVariable: string;
         stageCreated: string;
@@ -5579,6 +5663,7 @@ export declare const languages: {
         tag: string;
         tagExample: string;
         tags: string;
+        task: string;
         tax: string;
         taxes: string;
         taxRegime: string;
@@ -5606,6 +5691,7 @@ export declare const languages: {
         thisReception: string;
         thumbnail: string;
         ticket: string;
+        ticketClassifications: string;
         ticketCode: string;
         ticketDetailTitle: string;
         ticketEmpty: string;
@@ -5616,6 +5702,8 @@ export declare const languages: {
         ticketObsPlaceholder: string;
         ticketReturnTitle: string;
         tickets: string;
+        ticketsGantt: string;
+        ticketTitle: string;
         ticketTypeConsult: string;
         tiktokDesc: string;
         time: string;
@@ -5721,6 +5809,8 @@ export declare const languages: {
         toastTemplateUpdated: string;
         toastTestConnectionError: string;
         toastTextCopied: string;
+        toastTicketDeleted: string;
+        toastTitleRequired: string;
         toastUpdated: string;
         toastUpdateError: string;
         toastUploadError: string;
@@ -5807,6 +5897,7 @@ export declare const languages: {
         uploadPrices: string;
         uploadProduct: string;
         uploadProducts: string;
+        urgent: string;
         url: string;
         user: string;
         userConfiguration: string;
@@ -5854,6 +5945,8 @@ export declare const languages: {
         warehouseTransport: string;
         warehouseUser: string;
         warning: string;
+        watcher: string;
+        watchers: string;
         week: string;
         weekAbbr: string;
         weekOf: string;
