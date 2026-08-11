@@ -393,6 +393,20 @@ export type AccountingAccountType = {
   createdat?: string;
 };
 
+export type AccountingProfileType = {
+  idaccprof: number;
+  idcmp: number;
+  code: string;
+  name: string;
+  type: string;
+  status: number;
+  accountscount?: number;
+};
+
+export type AccountingProfileDetailType = AccountingProfileType & {
+  accounts: Record<string, number>;
+};
+
 export type PartyAttendanceType = {
   idassist: number;
   assisttype: ClockType;
