@@ -99,7 +99,6 @@ export const MAILSUPPLIER_OTHER = "other";
 export const MAILSECURITY_SSL = "ssl";
 export const MAILSECURITY_STARTTLS = "starttls";
 export const MAILSECURITY_NONE = "none";
-/** Fila de main_menu2 del modulo Correo: grupo 6 (Administracion), submenu 25. */
 export const MAILMENU_IDMM = 6;
 export const MAILMENU_IDMM2 = 25;
 export const MAILFOLDER_INBOX = "INBOX";
@@ -272,7 +271,6 @@ export const CLOCK_TYPE_TO_STATUS = {
     break_end: "working",
     out: "idle",
 };
-// -------------- Contabilidad: Catálogo de Cuentas --------------
 export const ACCOUNT_TYPE_ASSET = "asset";
 export const ACCOUNT_TYPE_LIABILITY = "liability";
 export const ACCOUNT_TYPE_EQUITY = "equity";
@@ -303,13 +301,8 @@ export const ACCOUNT_NATURE_LABELS = ACCOUNT_NATURE_OPTIONS.reduce((acc, opt) =>
     acc[opt.value] = opt.label;
     return acc;
 }, {});
-/** Fila de main_menu / main_menu2 del modulo Contabilidad: grupo 7, submenu 26. */
 export const ACCOUNTINGMENU_IDMM = 7;
 export const ACCOUNTINGMENU_IDMM2 = 26;
-// -------------- Contabilidad: Perfiles Contables --------------
-/** Fila de main_menu2 del submodulo Perfiles Contables: grupo 7, submenu 27. */
-export const ACCOUNTINGPROFILESMENU_IDMM = 7;
-export const ACCOUNTINGPROFILESMENU_IDMM2 = 27;
 export const ACCOUNTPROFILE_TYPE_PRODUCT = "product";
 export const ACCOUNTPROFILE_TYPE_EXPENSE = "expense";
 export const ACCOUNTPROFILE_TYPE_OPTIONS = [
@@ -320,7 +313,6 @@ export const ACCOUNTPROFILE_TYPE_LABELS = ACCOUNTPROFILE_TYPE_OPTIONS.reduce((ac
     acc[opt.value] = opt.label;
     return acc;
 }, {});
-// Conceptos de cuenta que puede contener un perfil (accounttype_accprofa).
 export const PROFILE_ACCOUNTTYPE_SALES_REVENUE = "sales_revenue";
 export const PROFILE_ACCOUNTTYPE_INVENTORY_ASSET = "inventory_asset";
 export const PROFILE_ACCOUNTTYPE_COST_OF_SALES = "cost_of_sales";
@@ -339,10 +331,6 @@ export const PROFILE_ACCOUNTTYPE_LABELS = {
     [PROFILE_ACCOUNTTYPE_INVENTORY_LOSS]: "Ajuste negativo de inventario",
     [PROFILE_ACCOUNTTYPE_PURCHASE_EXPENSE]: "Cuenta de gasto",
 };
-// Qué conceptos de cuenta aplican según el type_accprof del perfil — controla
-// qué selectores se dibujan en el formulario. Ninguno es obligatorio: un
-// perfil puede dejar conceptos sin asignar (ej. un perfil de servicios sin
-// inventario/costo).
 export const PROFILE_ACCOUNTTYPES_BY_PROFILETYPE = {
     [ACCOUNTPROFILE_TYPE_PRODUCT]: [
         PROFILE_ACCOUNTTYPE_SALES_REVENUE,
@@ -354,5 +342,113 @@ export const PROFILE_ACCOUNTTYPES_BY_PROFILETYPE = {
         PROFILE_ACCOUNTTYPE_INVENTORY_LOSS,
     ],
     [ACCOUNTPROFILE_TYPE_EXPENSE]: [PROFILE_ACCOUNTTYPE_PURCHASE_EXPENSE],
+};
+// -------------- Contabilidad: Configuración Contable (asignaciones reales) --------------
+// accounting_entity_accounts es la fuente REAL de configuración contable
+// (a diferencia de accounting_profiles, que son solo plantillas). Fase 3
+// únicamente usa entitytype "company" para la configuración general de cada
+// idcmp; la arquitectura queda lista para agregar más entitytype después
+// (product, party_customer, party_supplier, bank_account, expense_category,
+// warehouse, tax...) sin cambiar la tabla.
+export const ACCOUNTING_ENTITYTYPE_COMPANY = "company";
+export const GENERAL_ACCOUNTTYPE_CUSTOMERS_RECEIVABLE = "customers_receivable";
+export const GENERAL_ACCOUNTTYPE_SUPPLIERS_PAYABLE = "suppliers_payable";
+export const GENERAL_ACCOUNTTYPE_CUSTOMER_ADVANCES = "customer_advances";
+export const GENERAL_ACCOUNTTYPE_SUPPLIER_ADVANCES = "supplier_advances";
+export const GENERAL_ACCOUNTTYPE_EXCHANGE_GAIN = "exchange_gain";
+export const GENERAL_ACCOUNTTYPE_EXCHANGE_LOSS = "exchange_loss";
+// vat_output/vat_input NO viven aquí: los impuestos ahora se configuran de
+// forma dinámica a partir del catálogo `taxes` (ver sección Impuestos).
+export const GENERAL_ACCOUNTTYPE_OPTIONS = [
+    {
+        value: GENERAL_ACCOUNTTYPE_CUSTOMERS_RECEIVABLE,
+        label: "Clientes / Cuentas por cobrar",
+    },
+    {
+        value: GENERAL_ACCOUNTTYPE_SUPPLIERS_PAYABLE,
+        label: "Proveedores / Cuentas por pagar",
+    },
+    {
+        value: GENERAL_ACCOUNTTYPE_CUSTOMER_ADVANCES,
+        label: "Anticipos de clientes",
+    },
+    {
+        value: GENERAL_ACCOUNTTYPE_SUPPLIER_ADVANCES,
+        label: "Anticipos a proveedores",
+    },
+    { value: GENERAL_ACCOUNTTYPE_EXCHANGE_GAIN, label: "Ganancia cambiaria" },
+    { value: GENERAL_ACCOUNTTYPE_EXCHANGE_LOSS, label: "Pérdida cambiaria" },
+];
+export const GENERAL_ACCOUNTTYPE_LABELS = GENERAL_ACCOUNTTYPE_OPTIONS.reduce((acc, opt) => {
+    acc[opt.value] = opt.label;
+    return acc;
+}, {});
+// -------------- Contabilidad: Configuración Contable → Impuestos --------------
+// entitytype "tax" + idtarget = taxes.idtax. El catálogo `taxes` es
+// compartido en toda la BD (no tiene idcmp), pero cada idcmp asigna sus
+// propias cuentas por impuesto en accounting_entity_accounts.
+//
+// clas_tax ("tax" | "ret") SÍ se usa en todo el proyecto para distinguir
+// impuesto trasladable vs. retención (ver ordersPrc.ts / toolBox.tsx).
+// side_tax existe en la tabla `taxes` pero NINGÚN cálculo real del proyecto
+// lo usa como interruptor de comportamiento — por eso no se usa aquí para
+// decidir qué campos mostrar; se usa únicamente clas_tax.
+export const ACCOUNTING_ENTITYTYPE_TAX = "tax";
+export const TAX_CLAS_RETENTION = "ret";
+export const TAX_ACCOUNTTYPE_OUTPUT = "tax_output";
+export const TAX_ACCOUNTTYPE_INPUT = "tax_input";
+export const TAX_ACCOUNTTYPE_WITHHOLDING_RECEIVABLE = "withholding_receivable";
+export const TAX_ACCOUNTTYPE_WITHHOLDING_PAYABLE = "withholding_payable";
+export const TAX_ACCOUNTTYPE_LABELS = {
+    [TAX_ACCOUNTTYPE_OUTPUT]: "Impuesto trasladado / ventas",
+    [TAX_ACCOUNTTYPE_INPUT]: "Impuesto acreditable / compras",
+    [TAX_ACCOUNTTYPE_WITHHOLDING_RECEIVABLE]: "Retención a favor / que nos retienen",
+    [TAX_ACCOUNTTYPE_WITHHOLDING_PAYABLE]: "Retención por pagar / que nosotros retenemos",
+};
+// Qué conceptos de cuenta mostrar según clas_tax del impuesto. Ninguno es
+// obligatorio: un impuesto puede quedar sin ninguna cuenta configurada.
+export const TAX_ACCOUNTTYPES_BY_CLAS = {
+    [TAX_CLAS_RETENTION]: [
+        TAX_ACCOUNTTYPE_WITHHOLDING_RECEIVABLE,
+        TAX_ACCOUNTTYPE_WITHHOLDING_PAYABLE,
+    ],
+};
+export const TAX_ACCOUNTTYPES_DEFAULT = [
+    TAX_ACCOUNTTYPE_OUTPUT,
+    TAX_ACCOUNTTYPE_INPUT,
+];
+// -------------- Contabilidad: Configuración Contable → Productos --------------
+// entitytype "product" + idtarget = products.idprod. Reutiliza el mismo
+// vocabulario de accounttype que accounting_profiles tipo "product"
+// (PROFILE_ACCOUNTTYPE_* / PROFILE_ACCOUNTTYPES_BY_PROFILETYPE) — un perfil
+// es solo una plantilla de estos mismos conceptos, no un vocabulario aparte.
+export const ACCOUNTING_ENTITYTYPE_PRODUCT = "product";
+// Todos los conceptos aplican a un producto inventariable (mismo set que un
+// perfil tipo "product"). Un producto no inventariable (servicio) solo
+// necesita, como máximo, ingresos y costo de ventas — no se le exige
+// inventario ni ajustes. Basado en `inventorytracked_prod`, el único campo
+// que products ya usa con lógica real de negocio para esta distinción.
+export const PRODUCT_ACCOUNTTYPES_INVENTORIED = PROFILE_ACCOUNTTYPES_BY_PROFILETYPE[ACCOUNTPROFILE_TYPE_PRODUCT];
+export const PRODUCT_ACCOUNTTYPES_SERVICE = [
+    PROFILE_ACCOUNTTYPE_SALES_REVENUE,
+    PROFILE_ACCOUNTTYPE_COST_OF_SALES,
+];
+// Conceptos "principales" usados para calcular el estado de configuración
+// contable de un producto (sin configurar / parcial / completo).
+export const PRODUCT_ACCOUNTTYPES_REQUIRED_INVENTORIED = [
+    PROFILE_ACCOUNTTYPE_SALES_REVENUE,
+    PROFILE_ACCOUNTTYPE_INVENTORY_ASSET,
+    PROFILE_ACCOUNTTYPE_COST_OF_SALES,
+];
+export const PRODUCT_ACCOUNTTYPES_REQUIRED_SERVICE = [
+    PROFILE_ACCOUNTTYPE_SALES_REVENUE,
+];
+export const ACCOUNTING_CONFIG_STATUS_UNCONFIGURED = "unconfigured";
+export const ACCOUNTING_CONFIG_STATUS_PARTIAL = "partial";
+export const ACCOUNTING_CONFIG_STATUS_COMPLETE = "complete";
+export const ACCOUNTING_CONFIG_STATUS_LABELS = {
+    [ACCOUNTING_CONFIG_STATUS_UNCONFIGURED]: "Sin configurar",
+    [ACCOUNTING_CONFIG_STATUS_PARTIAL]: "Parcial",
+    [ACCOUNTING_CONFIG_STATUS_COMPLETE]: "Completa",
 };
 //# sourceMappingURL=consts.js.map

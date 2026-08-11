@@ -359,6 +359,35 @@ export type AccountingProfileType = {
 export type AccountingProfileDetailType = AccountingProfileType & {
     accounts: Record<string, number>;
 };
+export type AccountingEntityAccountType = {
+    idaccentity: number;
+    idcmp: number;
+    entitytype: string;
+    idtarget: number;
+    accounttype: string;
+    idaccount: number;
+    status: number;
+    iduser?: number;
+    createdat?: string;
+    updatedat?: string;
+};
+export type AccountingTaxCatalogType = {
+    idtax: number;
+    code: string;
+    name: string;
+    clas: string;
+    order: number;
+};
+export type AccountingProductConfigRowType = {
+    idprod: number;
+    idcmp: number;
+    code: string;
+    name: string;
+    type: string;
+    inventorytracked: number;
+    status: string;
+    accountscount: number;
+};
 export type PartyAttendanceType = {
     idassist: number;
     assisttype: ClockType;
@@ -2458,6 +2487,7 @@ export type FilterDefinition = {
     rangeEnd?: string;
     isClearable?: boolean;
     formatOptionLabel?: string;
+    todayToggle?: boolean;
 };
 export type FilterOperator = "=" | "!=" | ">" | ">=" | "<" | "<=" | "LIKE" | "IN" | "NOT IN";
 export type FilterOption = {

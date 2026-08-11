@@ -26,6 +26,7 @@ export declare const languages: {
         newAccountingProfile: string;
         profileAccounts: string;
         accountsConfigured: string;
+        accountingSettings: string;
         actionCancelled: string;
         actionConfirmed: string;
         actions: string;
@@ -88,6 +89,7 @@ export declare const languages: {
         and: string;
         annualExpensesByCategory: string;
         apply: string;
+        applyProfile: string;
         applyPayment: string;
         applyPayments: string;
         appointment: string;
@@ -1285,6 +1287,7 @@ export declare const languages: {
         products: string;
         productsManagement: string;
         productTypeFormat: string;
+        profile: string;
         profilePhoto: string;
         profilePhotoPng: string;
         profiles: string;
@@ -1921,6 +1924,7 @@ export declare const languages: {
         newAccountingProfile: string;
         profileAccounts: string;
         accountsConfigured: string;
+        accountingSettings: string;
         actionCancelled: string;
         actionConfirmed: string;
         actions: string;
@@ -1983,6 +1987,7 @@ export declare const languages: {
         and: string;
         annualExpensesByCategory: string;
         apply: string;
+        applyProfile: string;
         applyPayment: string;
         applyPayments: string;
         appointment: string;
@@ -3180,6 +3185,7 @@ export declare const languages: {
         products: string;
         productsManagement: string;
         productTypeFormat: string;
+        profile: string;
         profilePhoto: string;
         profilePhotoPng: string;
         profiles: string;
@@ -3816,6 +3822,7 @@ export declare const languages: {
         newAccountingProfile: string;
         profileAccounts: string;
         accountsConfigured: string;
+        accountingSettings: string;
         actionCancelled: string;
         actionConfirmed: string;
         actions: string;
@@ -3878,6 +3885,7 @@ export declare const languages: {
         and: string;
         annualExpensesByCategory: string;
         apply: string;
+        applyProfile: string;
         applyPayment: string;
         applyPayments: string;
         appointment: string;
@@ -5075,6 +5083,7 @@ export declare const languages: {
         products: string;
         productsManagement: string;
         productTypeFormat: string;
+        profile: string;
         profilePhoto: string;
         profilePhotoPng: string;
         profiles: string;
