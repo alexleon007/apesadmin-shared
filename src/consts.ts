@@ -431,10 +431,11 @@ export const GENERAL_ACCOUNTTYPE_CUSTOMERS_RECEIVABLE = "customers_receivable";
 export const GENERAL_ACCOUNTTYPE_SUPPLIERS_PAYABLE = "suppliers_payable";
 export const GENERAL_ACCOUNTTYPE_CUSTOMER_ADVANCES = "customer_advances";
 export const GENERAL_ACCOUNTTYPE_SUPPLIER_ADVANCES = "supplier_advances";
-export const GENERAL_ACCOUNTTYPE_VAT_OUTPUT = "vat_output";
-export const GENERAL_ACCOUNTTYPE_VAT_INPUT = "vat_input";
 export const GENERAL_ACCOUNTTYPE_EXCHANGE_GAIN = "exchange_gain";
 export const GENERAL_ACCOUNTTYPE_EXCHANGE_LOSS = "exchange_loss";
+
+// vat_output/vat_input NO viven aquí: los impuestos ahora se configuran de
+// forma dinámica a partir del catálogo `taxes` (ver sección Impuestos).
 
 export const GENERAL_ACCOUNTTYPE_OPTIONS: { value: string; label: string }[] =
   [
@@ -454,8 +455,6 @@ export const GENERAL_ACCOUNTTYPE_OPTIONS: { value: string; label: string }[] =
       value: GENERAL_ACCOUNTTYPE_SUPPLIER_ADVANCES,
       label: "Anticipos a proveedores",
     },
-    { value: GENERAL_ACCOUNTTYPE_VAT_OUTPUT, label: "IVA trasladado" },
-    { value: GENERAL_ACCOUNTTYPE_VAT_INPUT, label: "IVA acreditable" },
     { value: GENERAL_ACCOUNTTYPE_EXCHANGE_GAIN, label: "Ganancia cambiaria" },
     { value: GENERAL_ACCOUNTTYPE_EXCHANGE_LOSS, label: "Pérdida cambiaria" },
   ];
@@ -468,3 +467,46 @@ export const GENERAL_ACCOUNTTYPE_LABELS: Record<string, string> =
     },
     {} as Record<string, string>,
   );
+
+// -------------- Contabilidad: Configuración Contable → Impuestos --------------
+// entitytype "tax" + idtarget = taxes.idtax. El catálogo `taxes` es
+// compartido en toda la BD (no tiene idcmp), pero cada idcmp asigna sus
+// propias cuentas por impuesto en accounting_entity_accounts.
+//
+// clas_tax ("tax" | "ret") SÍ se usa en todo el proyecto para distinguir
+// impuesto trasladable vs. retención (ver ordersPrc.ts / toolBox.tsx).
+// side_tax existe en la tabla `taxes` pero NINGÚN cálculo real del proyecto
+// lo usa como interruptor de comportamiento — por eso no se usa aquí para
+// decidir qué campos mostrar; se usa únicamente clas_tax.
+
+export const ACCOUNTING_ENTITYTYPE_TAX = "tax";
+
+export const TAX_CLAS_RETENTION = "ret";
+
+export const TAX_ACCOUNTTYPE_OUTPUT = "tax_output";
+export const TAX_ACCOUNTTYPE_INPUT = "tax_input";
+export const TAX_ACCOUNTTYPE_WITHHOLDING_RECEIVABLE = "withholding_receivable";
+export const TAX_ACCOUNTTYPE_WITHHOLDING_PAYABLE = "withholding_payable";
+
+export const TAX_ACCOUNTTYPE_LABELS: Record<string, string> = {
+  [TAX_ACCOUNTTYPE_OUTPUT]: "Impuesto trasladado / ventas",
+  [TAX_ACCOUNTTYPE_INPUT]: "Impuesto acreditable / compras",
+  [TAX_ACCOUNTTYPE_WITHHOLDING_RECEIVABLE]:
+    "Retención a favor / que nos retienen",
+  [TAX_ACCOUNTTYPE_WITHHOLDING_PAYABLE]:
+    "Retención por pagar / que nosotros retenemos",
+};
+
+// Qué conceptos de cuenta mostrar según clas_tax del impuesto. Ninguno es
+// obligatorio: un impuesto puede quedar sin ninguna cuenta configurada.
+export const TAX_ACCOUNTTYPES_BY_CLAS: Record<string, string[]> = {
+  [TAX_CLAS_RETENTION]: [
+    TAX_ACCOUNTTYPE_WITHHOLDING_RECEIVABLE,
+    TAX_ACCOUNTTYPE_WITHHOLDING_PAYABLE,
+  ],
+};
+
+export const TAX_ACCOUNTTYPES_DEFAULT: string[] = [
+  TAX_ACCOUNTTYPE_OUTPUT,
+  TAX_ACCOUNTTYPE_INPUT,
+];

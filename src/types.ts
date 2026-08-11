@@ -420,6 +420,14 @@ export type AccountingEntityAccountType = {
   updatedat?: string;
 };
 
+export type AccountingTaxCatalogType = {
+  idtax: number;
+  code: string;
+  name: string;
+  clas: string;
+  order: number;
+};
+
 export type PartyAttendanceType = {
   idassist: number;
   assisttype: ClockType;
