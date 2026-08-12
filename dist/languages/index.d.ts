@@ -1617,6 +1617,7 @@ export declare const languages: {
         registerWebhooks: string;
         relate: string;
         relateContact: string;
+        related: string;
         relatedDocuments: string;
         relational: string;
         relationType: string;
@@ -3894,6 +3895,7 @@ export declare const languages: {
         registerWebhooks: string;
         relate: string;
         relateContact: string;
+        related: string;
         relatedDocuments: string;
         relational: string;
         relationType: string;
@@ -6171,6 +6173,7 @@ export declare const languages: {
         registerWebhooks: string;
         relate: string;
         relateContact: string;
+        related: string;
         relatedDocuments: string;
         relational: string;
         relationType: string;

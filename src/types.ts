@@ -1479,8 +1479,8 @@ export type PartyLogType = {
 };
 
 // Un contacto se captura a mano o se relaciona con un party existente
-// (idparty > 0). Al relacionarlo, nombre/tel/email se leen del party en cada
-// consulta, por lo que se mantienen sincronizados.
+// (idparty > 0): el party autorrellena los campos al darlo de alta, pero los
+// valores guardados son los del formulario y siguen siendo editables.
 export type ContactType = {
   name: string;
   position: string;
