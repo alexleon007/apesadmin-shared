@@ -185,4 +185,6 @@ export declare const TAX_ACCOUNTTYPES_DEFAULT: string[];
 export declare const ACCOUNTING_ENTITYTYPE_PRODUCT = "product";
 export declare const PRODUCT_ACCOUNTTYPES_INVENTORIED: string[];
 export declare const PRODUCT_ACCOUNTTYPES_SERVICE: string[];
+export declare const ACCOUNTING_ENTITYTYPE_BANK_ACCOUNT = "bank_account";
+export declare const BANKACCOUNT_ACCOUNTTYPE_CASH_ACCOUNT = "cash_account";
 //# sourceMappingURL=consts.d.ts.map

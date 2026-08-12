@@ -8,6 +8,7 @@ export declare const languages: {
         accountHolder: string;
         accountInformation: string;
         accounting: string;
+        accountingAccount: string;
         accountingModule: string;
         accountingModuleDesc: string;
         accountingProfiles: string;
@@ -2106,6 +2107,7 @@ export declare const languages: {
         accountHolder: string;
         accountInformation: string;
         accounting: string;
+        accountingAccount: string;
         accountingModule: string;
         accountingModuleDesc: string;
         accountingProfiles: string;
@@ -4204,6 +4206,7 @@ export declare const languages: {
         accountHolder: string;
         accountInformation: string;
         accounting: string;
+        accountingAccount: string;
         accountingModule: string;
         accountingModuleDesc: string;
         accountingProfiles: string;
