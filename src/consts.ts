@@ -147,6 +147,11 @@ export const ROLE_LABELS: Record<string, string> = {
   agent: "Agente",
 };
 
+// users.type_party: quién es el usuario, no a qué empresa pertenece.
+export const USERPARTY_INTERNAL = 1;
+export const USERPARTY_EXTERNAL = 2; // portal de clientes/proveedores
+export const USERPARTY_AI = 3; // agentes automatizados
+
 export const ROLE_CUSTOMER = "customer";
 export const ROLE_SUPPLIER = "supplier";
 export const ROLE_RH = "rh";
