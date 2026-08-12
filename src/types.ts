@@ -1108,12 +1108,7 @@ export type MailConfigType = {
 };
 
 export type MailFolderType =
-  | "INBOX"
-  | "SENT"
-  | "DRAFTS"
-  | "TRASH"
-  | "SPAM"
-  | "ARCHIVE";
+  "INBOX" | "SENT" | "DRAFTS" | "TRASH" | "SPAM" | "ARCHIVE";
 
 export type MailSecurityType = "ssl" | "starttls" | "none";
 
@@ -1368,7 +1363,8 @@ export type OrderDetailType = {
   total: number;
   obsRow?: string;
   section?: string;
-  /** Sólo viene cuando se pide get-orders con withlocations. */
+  /** Sólo vienen cuando se pide get-orders con withlocations. */
+  prodgroupname?: string;
   prodlocations?: ProductLocationType[];
 };
 
@@ -1482,6 +1478,18 @@ export type PartyLogType = {
   logcreatedat: string;
 };
 
+// Un contacto se captura a mano o se relaciona con un party existente
+// (idparty > 0). Al relacionarlo, nombre/tel/email se leen del party en cada
+// consulta, por lo que se mantienen sincronizados.
+export type ContactType = {
+  name: string;
+  position: string;
+  tel1: string;
+  email: string;
+  idparty?: number;
+  partycode?: string;
+};
+
 export type PartyType = {
   idparty: number;
   uuidparty: string;
@@ -1508,7 +1516,7 @@ export type PartyType = {
   partycsf: string;
   partyorigin: number;
   partyoriginname?: string;
-  contacts: { name: string; position: string; tel1: string; email: string }[];
+  contacts: ContactType[];
   addresses: {
     name: string;
     address: string;
@@ -2112,7 +2120,7 @@ export type SupplierType = {
   suppsubclas: string;
   suppcreditdays: number;
   suppcreditlimit: number;
-  contacts: { name: string; position: string; tel1: string; email: string }[];
+  contacts: ContactType[];
   addresses: {
     name: string;
     address: string;
@@ -2318,9 +2326,7 @@ export type ProfileType = {
 };
 
 export type ViewType =
-  | typeof VIEW_TABLE
-  | typeof VIEW_BOARD
-  | typeof VIEW_GALLERY;
+  typeof VIEW_TABLE | typeof VIEW_BOARD | typeof VIEW_GALLERY;
 
 export type WarehouseLocationType = {
   idwhloc: number;
@@ -2398,12 +2404,7 @@ export type WorkflowType = {
 };
 
 export type WorkItemsClasifType =
-  | "project"
-  | "sprint"
-  | "task"
-  | "ticket"
-  | "block"
-  | string;
+  "project" | "sprint" | "task" | "ticket" | "block" | string;
 
 export type WorkItemMemberType = {
   iduser: number;
@@ -2457,11 +2458,7 @@ export type WorkItemsType = {
 // ─────────────────────────────────────────────────────────────────────────────
 
 export type PublicServiceKeyType =
-  | "calendar"
-  | "cfdi"
-  | "ticket"
-  | "account"
-  | "chat";
+  "calendar" | "cfdi" | "ticket" | "account" | "chat";
 
 export type PublicNavItemType = {
   key: PublicServiceKeyType;
@@ -2726,15 +2723,7 @@ export type FilterDefinition = {
 };
 
 export type FilterOperator =
-  | "="
-  | "!="
-  | ">"
-  | ">="
-  | "<"
-  | "<="
-  | "LIKE"
-  | "IN"
-  | "NOT IN";
+  "=" | "!=" | ">" | ">=" | "<" | "<=" | "LIKE" | "IN" | "NOT IN";
 
 export type FilterOption = {
   value: string | number;
@@ -2869,8 +2858,7 @@ export type DocumentMetaType = {
     size: PageSizeType;
     layout?: PageLayoutType;
     margin?:
-      | number
-      | { top: number; right: number; bottom: number; left: number };
+      number | { top: number; right: number; bottom: number; left: number };
     autoHeight?: boolean;
   };
 };

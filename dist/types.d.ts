@@ -1238,7 +1238,8 @@ export type OrderDetailType = {
     total: number;
     obsRow?: string;
     section?: string;
-    /** Sólo viene cuando se pide get-orders con withlocations. */
+    /** Sólo vienen cuando se pide get-orders con withlocations. */
+    prodgroupname?: string;
     prodlocations?: ProductLocationType[];
 };
 export type OrderLogType = {
@@ -1346,6 +1347,14 @@ export type PartyLogType = {
     logusername: string;
     logcreatedat: string;
 };
+export type ContactType = {
+    name: string;
+    position: string;
+    tel1: string;
+    email: string;
+    idparty?: number;
+    partycode?: string;
+};
 export type PartyType = {
     idparty: number;
     uuidparty: string;
@@ -1372,12 +1381,7 @@ export type PartyType = {
     partycsf: string;
     partyorigin: number;
     partyoriginname?: string;
-    contacts: {
-        name: string;
-        position: string;
-        tel1: string;
-        email: string;
-    }[];
+    contacts: ContactType[];
     addresses: {
         name: string;
         address: string;
@@ -1943,12 +1947,7 @@ export type SupplierType = {
     suppsubclas: string;
     suppcreditdays: number;
     suppcreditlimit: number;
-    contacts: {
-        name: string;
-        position: string;
-        tel1: string;
-        email: string;
-    }[];
+    contacts: ContactType[];
     addresses: {
         name: string;
         address: string;

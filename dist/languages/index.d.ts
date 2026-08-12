@@ -420,6 +420,7 @@ export declare const languages: {
         contactNotesPlaceholder: string;
         contactPhone: string;
         contactProviderForTokens: string;
+        contactAlreadyLinked: string;
         contacts: string;
         contactsByStatus: string;
         contactSupportPayment: string;
@@ -1615,6 +1616,7 @@ export declare const languages: {
         registerMovement: string;
         registerWebhooks: string;
         relate: string;
+        relateContact: string;
         relatedDocuments: string;
         relational: string;
         relationType: string;
@@ -2695,6 +2697,7 @@ export declare const languages: {
         contactNotesPlaceholder: string;
         contactPhone: string;
         contactProviderForTokens: string;
+        contactAlreadyLinked: string;
         contacts: string;
         contactsByStatus: string;
         contactSupportPayment: string;
@@ -3890,6 +3893,7 @@ export declare const languages: {
         registerMovement: string;
         registerWebhooks: string;
         relate: string;
+        relateContact: string;
         relatedDocuments: string;
         relational: string;
         relationType: string;
@@ -4970,6 +4974,7 @@ export declare const languages: {
         contactNotesPlaceholder: string;
         contactPhone: string;
         contactProviderForTokens: string;
+        contactAlreadyLinked: string;
         contacts: string;
         contactsByStatus: string;
         contactSupportPayment: string;
@@ -6165,6 +6170,7 @@ export declare const languages: {
         registerMovement: string;
         registerWebhooks: string;
         relate: string;
+        relateContact: string;
         relatedDocuments: string;
         relational: string;
         relationType: string;
