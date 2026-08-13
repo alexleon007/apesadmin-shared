@@ -638,6 +638,7 @@ export declare const languages: {
         edit: string;
         editClassification: string;
         editCompany: string;
+        editComission: string;
         editContact: string;
         editCustomer: string;
         editHR: string;
@@ -1176,6 +1177,7 @@ export declare const languages: {
         newChart: string;
         newChat: string;
         newClassification: string;
+        newComission: string;
         newCommitment: string;
         newCompany: string;
         newConcept: string;
@@ -2270,6 +2272,7 @@ export declare const languages: {
         viewMailAccount: string;
         viewMore: string;
         viewProduct: string;
+        viewComission: string;
         viewProductionOrder: string;
         viewRoadmap: string;
         viewSupplier: string;
@@ -2971,6 +2974,7 @@ export declare const languages: {
         edit: string;
         editClassification: string;
         editCompany: string;
+        editComission: string;
         editContact: string;
         editCustomer: string;
         editHR: string;
@@ -3509,6 +3513,7 @@ export declare const languages: {
         newChart: string;
         newChat: string;
         newClassification: string;
+        newComission: string;
         newCommitment: string;
         newCompany: string;
         newConcept: string;
@@ -4603,6 +4608,7 @@ export declare const languages: {
         viewMailAccount: string;
         viewMore: string;
         viewProduct: string;
+        viewComission: string;
         viewProductionOrder: string;
         viewRoadmap: string;
         viewSupplier: string;
@@ -5304,6 +5310,7 @@ export declare const languages: {
         edit: string;
         editClassification: string;
         editCompany: string;
+        editComission: string;
         editContact: string;
         editCustomer: string;
         editHR: string;
@@ -5842,6 +5849,7 @@ export declare const languages: {
         newChart: string;
         newChat: string;
         newClassification: string;
+        newComission: string;
         newCommitment: string;
         newCompany: string;
         newConcept: string;
@@ -6936,6 +6944,7 @@ export declare const languages: {
         viewMailAccount: string;
         viewMore: string;
         viewProduct: string;
+        viewComission: string;
         viewProductionOrder: string;
         viewRoadmap: string;
         viewSupplier: string;
