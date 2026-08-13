@@ -1098,6 +1098,7 @@ export type MailConfigType = {
   haspassword?: 0 | 1;
   hassmtppassword?: 0 | 1;
   hastoken?: 0 | 1;
+  hasaccess?: 0 | 1;
   mailusers?: number[];
   mailpassword?: string | null;
   smtppassword?: string | null;
@@ -1108,7 +1109,12 @@ export type MailConfigType = {
 };
 
 export type MailFolderType =
-  "INBOX" | "SENT" | "DRAFTS" | "TRASH" | "SPAM" | "ARCHIVE";
+  | "INBOX"
+  | "SENT"
+  | "DRAFTS"
+  | "TRASH"
+  | "SPAM"
+  | "ARCHIVE";
 
 export type MailSecurityType = "ssl" | "starttls" | "none";
 
@@ -2326,7 +2332,9 @@ export type ProfileType = {
 };
 
 export type ViewType =
-  typeof VIEW_TABLE | typeof VIEW_BOARD | typeof VIEW_GALLERY;
+  | typeof VIEW_TABLE
+  | typeof VIEW_BOARD
+  | typeof VIEW_GALLERY;
 
 export type WarehouseLocationType = {
   idwhloc: number;
@@ -2404,7 +2412,12 @@ export type WorkflowType = {
 };
 
 export type WorkItemsClasifType =
-  "project" | "sprint" | "task" | "ticket" | "block" | string;
+  | "project"
+  | "sprint"
+  | "task"
+  | "ticket"
+  | "block"
+  | string;
 
 export type WorkItemMemberType = {
   iduser: number;
@@ -2458,7 +2471,11 @@ export type WorkItemsType = {
 // ─────────────────────────────────────────────────────────────────────────────
 
 export type PublicServiceKeyType =
-  "calendar" | "cfdi" | "ticket" | "account" | "chat";
+  | "calendar"
+  | "cfdi"
+  | "ticket"
+  | "account"
+  | "chat";
 
 export type PublicNavItemType = {
   key: PublicServiceKeyType;
@@ -2723,7 +2740,15 @@ export type FilterDefinition = {
 };
 
 export type FilterOperator =
-  "=" | "!=" | ">" | ">=" | "<" | "<=" | "LIKE" | "IN" | "NOT IN";
+  | "="
+  | "!="
+  | ">"
+  | ">="
+  | "<"
+  | "<="
+  | "LIKE"
+  | "IN"
+  | "NOT IN";
 
 export type FilterOption = {
   value: string | number;
@@ -2858,7 +2883,8 @@ export type DocumentMetaType = {
     size: PageSizeType;
     layout?: PageLayoutType;
     margin?:
-      number | { top: number; right: number; bottom: number; left: number };
+      | number
+      | { top: number; right: number; bottom: number; left: number };
     autoHeight?: boolean;
   };
 };
