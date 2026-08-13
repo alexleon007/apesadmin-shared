@@ -100,6 +100,8 @@ export declare const languages: {
         and: string;
         annualExpensesByCategory: string;
         anythingWeShouldKnow: string;
+        anyValue: string;
+        apesAdminErp: string;
         appliesTo: string;
         apply: string;
         applyAll: string;
@@ -144,6 +146,7 @@ export declare const languages: {
         attendanceWidgetDesc: string;
         attended: string;
         attention: string;
+        aura: string;
         auraAgentStartFailed: string;
         auraGreeting: string;
         auraProposalNotFound: string;
@@ -179,6 +182,7 @@ export declare const languages: {
         bank: string;
         bankAccount: string;
         bankAccounts: string;
+        banking: string;
         banknote: string;
         barcode: string;
         barcodeNotFound: string;
@@ -306,6 +310,7 @@ export declare const languages: {
         classSubclass: string;
         classTotals: string;
         clear: string;
+        clickToRename: string;
         clientId: string;
         clientIdTooltip: string;
         clientSecret: string;
@@ -317,6 +322,7 @@ export declare const languages: {
         closingDate: string;
         closingObservations: string;
         code: string;
+        codeAndNameRequired: string;
         coin: string;
         collaborator: string;
         collaborators: string;
@@ -343,6 +349,7 @@ export declare const languages: {
         comments: string;
         commission: string;
         commissionPercentage: string;
+        commissions: string;
         commitment: string;
         commitmentContact: string;
         commitmentTime: string;
@@ -358,6 +365,7 @@ export declare const languages: {
         companyNotFound: string;
         companyPhone: string;
         companyReference: string;
+        companyRequired: string;
         companyRFC: string;
         companySatCode: string;
         companyTaxRegime: string;
@@ -367,6 +375,7 @@ export declare const languages: {
         completedStops: string;
         completeFieldsToRegister: string;
         completeNameAndPhone: string;
+        completeProductQtyAndMaterial: string;
         completeReportNameCode: string;
         completeYourData: string;
         concept: string;
@@ -379,6 +388,8 @@ export declare const languages: {
         configurationColon: string;
         configureChartForPreview: string;
         configuredServices: string;
+        configureNode: string;
+        configureNodeName: string;
         configureReport: string;
         configureView: string;
         confirm: string;
@@ -387,6 +398,7 @@ export declare const languages: {
         confirmationEmailSentTo: string;
         confirmBooking: string;
         confirmCancelDocument: string;
+        confirmClearWorkflow: string;
         confirmCode: string;
         confirmDelete: string;
         confirmDeleteCompany: string;
@@ -395,6 +407,7 @@ export declare const languages: {
         confirmDeleteReport: string;
         confirmDeleteTray: string;
         confirmDeleteUser: string;
+        confirmDeleteWorkflow: string;
         confirmDeletion: string;
         confirmPassword: string;
         confirmPayment: string;
@@ -411,6 +424,7 @@ export declare const languages: {
         connectYourMailAccounts: string;
         consignment: string;
         consolidatedBalance: string;
+        contactAlreadyLinked: string;
         contactDate: string;
         contactedToday: string;
         contactEmail: string;
@@ -420,7 +434,6 @@ export declare const languages: {
         contactNotesPlaceholder: string;
         contactPhone: string;
         contactProviderForTokens: string;
-        contactAlreadyLinked: string;
         contacts: string;
         contactsByStatus: string;
         contactSupportPayment: string;
@@ -671,6 +684,7 @@ export declare const languages: {
         enterUsername: string;
         enterYourUsername: string;
         entry: string;
+        equalTo: string;
         error: string;
         errorAuthorizationCallback: string;
         errorCalculatingCut: string;
@@ -752,6 +766,7 @@ export declare const languages: {
         field: string;
         fieldConfiguration: string;
         file: string;
+        fileCabinet: string;
         fileSize: string;
         fill: string;
         filter: string;
@@ -788,6 +803,7 @@ export declare const languages: {
         fiscalInformation: string;
         fit: string;
         fix: string;
+        flowName: string;
         foldersTitle: string;
         folio: string;
         folioCapture: string;
@@ -820,6 +836,7 @@ export declare const languages: {
         generalSummary: string;
         generate: string;
         generated: string;
+        generatedOnSave: string;
         generatedReport: string;
         generateOrder: string;
         generateReport: string;
@@ -843,6 +860,7 @@ export declare const languages: {
         grade: string;
         group: string;
         groupBy: string;
+        groupByGreenDot: string;
         groupInfo: string;
         groupNameOptional: string;
         groupPhoto: string;
@@ -980,6 +998,7 @@ export declare const languages: {
         loadingColumn: string;
         loadingData: string;
         loadingDetail: string;
+        loadingOptions: string;
         loadingRoute: string;
         loadingTemplates: string;
         loadingTokensInfo: string;
@@ -1074,6 +1093,7 @@ export declare const languages: {
         manualPaymentRequired: string;
         map: string;
         maps: string;
+        mapSettings: string;
         margin: string;
         markAsAttended: string;
         markAsFavorite: string;
@@ -1084,6 +1104,7 @@ export declare const languages: {
         marketplacePlaceholder: string;
         material: string;
         materialCut: string;
+        materialCutting: string;
         materials: string;
         max: string;
         maxAndMin: string;
@@ -1178,7 +1199,9 @@ export declare const languages: {
         newParentItem: string;
         newPDFTemplate: string;
         newPrice: string;
+        newProcess: string;
         newProduct: string;
+        newProductionOrder: string;
         newProfile: string;
         newPromotion: string;
         newPurchaseInvoice: string;
@@ -1196,6 +1219,7 @@ export declare const languages: {
         newTicket: string;
         newUser: string;
         newWarehouse: string;
+        newWorkflow: string;
         next: string;
         nextFollowup: string;
         no: string;
@@ -1203,6 +1227,7 @@ export declare const languages: {
         noActiveChats: string;
         noActiveChatsYet: string;
         noActiveConnection: string;
+        noActiveFilters: string;
         noActiveProcesses: string;
         noAddresses: string;
         noAssignedQuestionnaires: string;
@@ -1219,6 +1244,9 @@ export declare const languages: {
         noData: string;
         noDate: string;
         noDatesAvailable: string;
+        nodeIdDb: string;
+        nodeNeedsNoConfig: string;
+        nodes: string;
         noDiscount: string;
         noDynamicFields: string;
         noElements: string;
@@ -1261,6 +1289,7 @@ export declare const languages: {
         noSales: string;
         noSalesYet: string;
         noSection: string;
+        noSelectionFirstFieldUsed: string;
         noServer: string;
         noSort: string;
         noSrc: string;
@@ -1269,12 +1298,15 @@ export declare const languages: {
         noSubject: string;
         notConfigured: string;
         noTemplatesAvailable: string;
+        notEqualTo: string;
         notes: string;
         noTickets: string;
         noTicketsToChart: string;
         noTicketsYet: string;
         notification: string;
+        notifications: string;
         notIn: string;
+        notInList: string;
         noTitle: string;
         noTraysRegistered: string;
         notRegistered: string;
@@ -1291,6 +1323,7 @@ export declare const languages: {
         observations: string;
         ocrDescription: string;
         ocrExtractText: string;
+        ocrScan: string;
         ocrTitle: string;
         of: string;
         onBehalfOf: string;
@@ -1391,6 +1424,7 @@ export declare const languages: {
         paymentDetails: string;
         paymentForm: string;
         paymentForms: string;
+        paymentGateway: string;
         paymentHistory: string;
         paymentMethod: string;
         paymentMethodFull: string;
@@ -1493,6 +1527,7 @@ export declare const languages: {
         priority: string;
         privateGroup: string;
         problemSummary: string;
+        processes: string;
         processing: string;
         processSteps: string;
         product: string;
@@ -1508,14 +1543,17 @@ export declare const languages: {
         productNotInOrder: string;
         productOrConcept: string;
         productOrderDetail: string;
+        productRawMaterial: string;
         products: string;
         productsManagement: string;
+        productToProduce: string;
         productTypeFormat: string;
         profile: string;
         profileAccounts: string;
         profilePhoto: string;
         profilePhotoPng: string;
         profiles: string;
+        profileTypeRequired: string;
         profileUpdated: string;
         progress: string;
         project: string;
@@ -1557,6 +1595,7 @@ export declare const languages: {
         quantityAbbr: string;
         quantityAndPrice: string;
         quantityToAssort: string;
+        quantityToProduce: string;
         quantityToReturn: string;
         quantityToSell: string;
         query: string;
@@ -1578,6 +1617,7 @@ export declare const languages: {
         raiseOrCheckTicket: string;
         range: string;
         rawMaterial: string;
+        rawMaterialToConsume: string;
         readNotifications: string;
         readStatus: string;
         realTimePreview: string;
@@ -1628,6 +1668,7 @@ export declare const languages: {
         remove: string;
         removeColor: string;
         removeColumn: string;
+        removeFilter: string;
         removeLine: string;
         removeMember: string;
         removeSeries: string;
@@ -1724,6 +1765,7 @@ export declare const languages: {
         saveProductFirstForGallery: string;
         saveProductFirstForStats: string;
         savePromotion: string;
+        saveWorkflowToGetNodeId: string;
         saving: string;
         scannerEntry: string;
         scannerThenManual: string;
@@ -1770,6 +1812,7 @@ export declare const languages: {
         selectOrderToAssort: string;
         selectProject: string;
         selectPrompt: string;
+        selectRawMaterialAndQty: string;
         selectReportForFilters: string;
         selectReportToStart: string;
         selectServiceFromMenu: string;
@@ -1918,6 +1961,7 @@ export declare const languages: {
         tags: string;
         targetPriceList: string;
         task: string;
+        tasks: string;
         tax: string;
         taxes: string;
         taxRegime: string;
@@ -2050,7 +2094,9 @@ export declare const languages: {
         toastPasswordMismatch: string;
         toastPaymentProcessError: string;
         toastProblem: string;
+        toastProcessCreated: string;
         toastProductAdded: string;
+        toastProductionOrderGenerated: string;
         toastProductRemoved: string;
         toastQuantityExceedsPending: string;
         toastQuickAccessAdded: string;
@@ -2089,6 +2135,8 @@ export declare const languages: {
         toastVerificationError: string;
         toastVideoError: string;
         toastWarehouseHasStock: string;
+        toastWorkflowActivated: string;
+        toastWorkflowPaused: string;
         toastWrongCredentials: string;
         toastXMLError: string;
         today: string;
@@ -2140,6 +2188,7 @@ export declare const languages: {
         tryAskingAura: string;
         tuesday: string;
         type: string;
+        typeAndNatureRequired: string;
         typeFolder: string;
         typeMultiApi: string;
         typeNote: string;
@@ -2157,6 +2206,7 @@ export declare const languages: {
         unitPrice: string;
         unitPriceShort: string;
         unknown: string;
+        unknownError: string;
         unsavedChanges: string;
         unsupportedChartType: string;
         update: string;
@@ -2177,6 +2227,7 @@ export declare const languages: {
         urgent: string;
         url: string;
         usedCapacity: string;
+        useItInTemplates: string;
         user: string;
         userConfiguration: string;
         userEmail: string;
@@ -2219,6 +2270,7 @@ export declare const languages: {
         viewMailAccount: string;
         viewMore: string;
         viewProduct: string;
+        viewProductionOrder: string;
         viewRoadmap: string;
         viewSupplier: string;
         viewTicket: string;
@@ -2229,6 +2281,7 @@ export declare const languages: {
         vusemImports: string;
         vusemImportsDesc: string;
         waitWhileConfirming: string;
+        wappConnect: string;
         wappConnectDesc: string;
         warehouse: string;
         warehouseControl: string;
@@ -2259,6 +2312,8 @@ export declare const languages: {
         willContactYou: string;
         withholdings: string;
         without: string;
+        workflows: string;
+        workflowsManagement: string;
         working: string;
         workspace: string;
         writeYourAnswer: string;
@@ -2378,6 +2433,8 @@ export declare const languages: {
         and: string;
         annualExpensesByCategory: string;
         anythingWeShouldKnow: string;
+        anyValue: string;
+        apesAdminErp: string;
         appliesTo: string;
         apply: string;
         applyAll: string;
@@ -2422,6 +2479,7 @@ export declare const languages: {
         attendanceWidgetDesc: string;
         attended: string;
         attention: string;
+        aura: string;
         auraAgentStartFailed: string;
         auraGreeting: string;
         auraProposalNotFound: string;
@@ -2457,6 +2515,7 @@ export declare const languages: {
         bank: string;
         bankAccount: string;
         bankAccounts: string;
+        banking: string;
         banknote: string;
         barcode: string;
         barcodeNotFound: string;
@@ -2584,6 +2643,7 @@ export declare const languages: {
         classSubclass: string;
         classTotals: string;
         clear: string;
+        clickToRename: string;
         clientId: string;
         clientIdTooltip: string;
         clientSecret: string;
@@ -2595,6 +2655,7 @@ export declare const languages: {
         closingDate: string;
         closingObservations: string;
         code: string;
+        codeAndNameRequired: string;
         coin: string;
         collaborator: string;
         collaborators: string;
@@ -2621,6 +2682,7 @@ export declare const languages: {
         comments: string;
         commission: string;
         commissionPercentage: string;
+        commissions: string;
         commitment: string;
         commitmentContact: string;
         commitmentTime: string;
@@ -2636,6 +2698,7 @@ export declare const languages: {
         companyNotFound: string;
         companyPhone: string;
         companyReference: string;
+        companyRequired: string;
         companyRFC: string;
         companySatCode: string;
         companyTaxRegime: string;
@@ -2645,6 +2708,7 @@ export declare const languages: {
         completedStops: string;
         completeFieldsToRegister: string;
         completeNameAndPhone: string;
+        completeProductQtyAndMaterial: string;
         completeReportNameCode: string;
         completeYourData: string;
         concept: string;
@@ -2657,6 +2721,8 @@ export declare const languages: {
         configurationColon: string;
         configureChartForPreview: string;
         configuredServices: string;
+        configureNode: string;
+        configureNodeName: string;
         configureReport: string;
         configureView: string;
         confirm: string;
@@ -2665,6 +2731,7 @@ export declare const languages: {
         confirmationEmailSentTo: string;
         confirmBooking: string;
         confirmCancelDocument: string;
+        confirmClearWorkflow: string;
         confirmCode: string;
         confirmDelete: string;
         confirmDeleteCompany: string;
@@ -2673,6 +2740,7 @@ export declare const languages: {
         confirmDeleteReport: string;
         confirmDeleteTray: string;
         confirmDeleteUser: string;
+        confirmDeleteWorkflow: string;
         confirmDeletion: string;
         confirmPassword: string;
         confirmPayment: string;
@@ -2689,6 +2757,7 @@ export declare const languages: {
         connectYourMailAccounts: string;
         consignment: string;
         consolidatedBalance: string;
+        contactAlreadyLinked: string;
         contactDate: string;
         contactedToday: string;
         contactEmail: string;
@@ -2698,7 +2767,6 @@ export declare const languages: {
         contactNotesPlaceholder: string;
         contactPhone: string;
         contactProviderForTokens: string;
-        contactAlreadyLinked: string;
         contacts: string;
         contactsByStatus: string;
         contactSupportPayment: string;
@@ -2949,6 +3017,7 @@ export declare const languages: {
         enterUsername: string;
         enterYourUsername: string;
         entry: string;
+        equalTo: string;
         error: string;
         errorAuthorizationCallback: string;
         errorCalculatingCut: string;
@@ -3030,6 +3099,7 @@ export declare const languages: {
         field: string;
         fieldConfiguration: string;
         file: string;
+        fileCabinet: string;
         fileSize: string;
         fill: string;
         filter: string;
@@ -3066,6 +3136,7 @@ export declare const languages: {
         fiscalInformation: string;
         fit: string;
         fix: string;
+        flowName: string;
         foldersTitle: string;
         folio: string;
         folioCapture: string;
@@ -3098,6 +3169,7 @@ export declare const languages: {
         generalSummary: string;
         generate: string;
         generated: string;
+        generatedOnSave: string;
         generatedReport: string;
         generateOrder: string;
         generateReport: string;
@@ -3121,6 +3193,7 @@ export declare const languages: {
         grade: string;
         group: string;
         groupBy: string;
+        groupByGreenDot: string;
         groupInfo: string;
         groupNameOptional: string;
         groupPhoto: string;
@@ -3258,6 +3331,7 @@ export declare const languages: {
         loadingColumn: string;
         loadingData: string;
         loadingDetail: string;
+        loadingOptions: string;
         loadingRoute: string;
         loadingTemplates: string;
         loadingTokensInfo: string;
@@ -3352,6 +3426,7 @@ export declare const languages: {
         manualPaymentRequired: string;
         map: string;
         maps: string;
+        mapSettings: string;
         margin: string;
         markAsAttended: string;
         markAsFavorite: string;
@@ -3362,6 +3437,7 @@ export declare const languages: {
         marketplacePlaceholder: string;
         material: string;
         materialCut: string;
+        materialCutting: string;
         materials: string;
         max: string;
         maxAndMin: string;
@@ -3456,7 +3532,9 @@ export declare const languages: {
         newParentItem: string;
         newPDFTemplate: string;
         newPrice: string;
+        newProcess: string;
         newProduct: string;
+        newProductionOrder: string;
         newProfile: string;
         newPromotion: string;
         newPurchaseInvoice: string;
@@ -3474,6 +3552,7 @@ export declare const languages: {
         newTicket: string;
         newUser: string;
         newWarehouse: string;
+        newWorkflow: string;
         next: string;
         nextFollowup: string;
         no: string;
@@ -3481,6 +3560,7 @@ export declare const languages: {
         noActiveChats: string;
         noActiveChatsYet: string;
         noActiveConnection: string;
+        noActiveFilters: string;
         noActiveProcesses: string;
         noAddresses: string;
         noAssignedQuestionnaires: string;
@@ -3497,6 +3577,9 @@ export declare const languages: {
         noData: string;
         noDate: string;
         noDatesAvailable: string;
+        nodeIdDb: string;
+        nodeNeedsNoConfig: string;
+        nodes: string;
         noDiscount: string;
         noDynamicFields: string;
         noElements: string;
@@ -3539,6 +3622,7 @@ export declare const languages: {
         noSales: string;
         noSalesYet: string;
         noSection: string;
+        noSelectionFirstFieldUsed: string;
         noServer: string;
         noSort: string;
         noSrc: string;
@@ -3547,12 +3631,15 @@ export declare const languages: {
         noSubject: string;
         notConfigured: string;
         noTemplatesAvailable: string;
+        notEqualTo: string;
         notes: string;
         noTickets: string;
         noTicketsToChart: string;
         noTicketsYet: string;
         notification: string;
+        notifications: string;
         notIn: string;
+        notInList: string;
         noTitle: string;
         noTraysRegistered: string;
         notRegistered: string;
@@ -3569,6 +3656,7 @@ export declare const languages: {
         observations: string;
         ocrDescription: string;
         ocrExtractText: string;
+        ocrScan: string;
         ocrTitle: string;
         of: string;
         onBehalfOf: string;
@@ -3669,6 +3757,7 @@ export declare const languages: {
         paymentDetails: string;
         paymentForm: string;
         paymentForms: string;
+        paymentGateway: string;
         paymentHistory: string;
         paymentMethod: string;
         paymentMethodFull: string;
@@ -3771,6 +3860,7 @@ export declare const languages: {
         priority: string;
         privateGroup: string;
         problemSummary: string;
+        processes: string;
         processing: string;
         processSteps: string;
         product: string;
@@ -3786,14 +3876,17 @@ export declare const languages: {
         productNotInOrder: string;
         productOrConcept: string;
         productOrderDetail: string;
+        productRawMaterial: string;
         products: string;
         productsManagement: string;
+        productToProduce: string;
         productTypeFormat: string;
         profile: string;
         profileAccounts: string;
         profilePhoto: string;
         profilePhotoPng: string;
         profiles: string;
+        profileTypeRequired: string;
         profileUpdated: string;
         progress: string;
         project: string;
@@ -3835,6 +3928,7 @@ export declare const languages: {
         quantityAbbr: string;
         quantityAndPrice: string;
         quantityToAssort: string;
+        quantityToProduce: string;
         quantityToReturn: string;
         quantityToSell: string;
         query: string;
@@ -3856,6 +3950,7 @@ export declare const languages: {
         raiseOrCheckTicket: string;
         range: string;
         rawMaterial: string;
+        rawMaterialToConsume: string;
         readNotifications: string;
         readStatus: string;
         realTimePreview: string;
@@ -3906,6 +4001,7 @@ export declare const languages: {
         remove: string;
         removeColor: string;
         removeColumn: string;
+        removeFilter: string;
         removeLine: string;
         removeMember: string;
         removeSeries: string;
@@ -4002,6 +4098,7 @@ export declare const languages: {
         saveProductFirstForGallery: string;
         saveProductFirstForStats: string;
         savePromotion: string;
+        saveWorkflowToGetNodeId: string;
         saving: string;
         scannerEntry: string;
         scannerThenManual: string;
@@ -4048,6 +4145,7 @@ export declare const languages: {
         selectOrderToAssort: string;
         selectProject: string;
         selectPrompt: string;
+        selectRawMaterialAndQty: string;
         selectReportForFilters: string;
         selectReportToStart: string;
         selectServiceFromMenu: string;
@@ -4196,6 +4294,7 @@ export declare const languages: {
         tags: string;
         targetPriceList: string;
         task: string;
+        tasks: string;
         tax: string;
         taxes: string;
         taxRegime: string;
@@ -4328,7 +4427,9 @@ export declare const languages: {
         toastPasswordMismatch: string;
         toastPaymentProcessError: string;
         toastProblem: string;
+        toastProcessCreated: string;
         toastProductAdded: string;
+        toastProductionOrderGenerated: string;
         toastProductRemoved: string;
         toastQuantityExceedsPending: string;
         toastQuickAccessAdded: string;
@@ -4367,6 +4468,8 @@ export declare const languages: {
         toastVerificationError: string;
         toastVideoError: string;
         toastWarehouseHasStock: string;
+        toastWorkflowActivated: string;
+        toastWorkflowPaused: string;
         toastWrongCredentials: string;
         toastXMLError: string;
         today: string;
@@ -4418,6 +4521,7 @@ export declare const languages: {
         tryAskingAura: string;
         tuesday: string;
         type: string;
+        typeAndNatureRequired: string;
         typeFolder: string;
         typeMultiApi: string;
         typeNote: string;
@@ -4435,6 +4539,7 @@ export declare const languages: {
         unitPrice: string;
         unitPriceShort: string;
         unknown: string;
+        unknownError: string;
         unsavedChanges: string;
         unsupportedChartType: string;
         update: string;
@@ -4455,6 +4560,7 @@ export declare const languages: {
         urgent: string;
         url: string;
         usedCapacity: string;
+        useItInTemplates: string;
         user: string;
         userConfiguration: string;
         userEmail: string;
@@ -4497,6 +4603,7 @@ export declare const languages: {
         viewMailAccount: string;
         viewMore: string;
         viewProduct: string;
+        viewProductionOrder: string;
         viewRoadmap: string;
         viewSupplier: string;
         viewTicket: string;
@@ -4507,6 +4614,7 @@ export declare const languages: {
         vusemImports: string;
         vusemImportsDesc: string;
         waitWhileConfirming: string;
+        wappConnect: string;
         wappConnectDesc: string;
         warehouse: string;
         warehouseControl: string;
@@ -4537,6 +4645,8 @@ export declare const languages: {
         willContactYou: string;
         withholdings: string;
         without: string;
+        workflows: string;
+        workflowsManagement: string;
         working: string;
         workspace: string;
         writeYourAnswer: string;
@@ -4656,6 +4766,8 @@ export declare const languages: {
         and: string;
         annualExpensesByCategory: string;
         anythingWeShouldKnow: string;
+        anyValue: string;
+        apesAdminErp: string;
         appliesTo: string;
         apply: string;
         applyAll: string;
@@ -4700,6 +4812,7 @@ export declare const languages: {
         attendanceWidgetDesc: string;
         attended: string;
         attention: string;
+        aura: string;
         auraAgentStartFailed: string;
         auraGreeting: string;
         auraProposalNotFound: string;
@@ -4735,6 +4848,7 @@ export declare const languages: {
         bank: string;
         bankAccount: string;
         bankAccounts: string;
+        banking: string;
         banknote: string;
         barcode: string;
         barcodeNotFound: string;
@@ -4862,6 +4976,7 @@ export declare const languages: {
         classSubclass: string;
         classTotals: string;
         clear: string;
+        clickToRename: string;
         clientId: string;
         clientIdTooltip: string;
         clientSecret: string;
@@ -4873,6 +4988,7 @@ export declare const languages: {
         closingDate: string;
         closingObservations: string;
         code: string;
+        codeAndNameRequired: string;
         coin: string;
         collaborator: string;
         collaborators: string;
@@ -4899,6 +5015,7 @@ export declare const languages: {
         comments: string;
         commission: string;
         commissionPercentage: string;
+        commissions: string;
         commitment: string;
         commitmentContact: string;
         commitmentTime: string;
@@ -4914,6 +5031,7 @@ export declare const languages: {
         companyNotFound: string;
         companyPhone: string;
         companyReference: string;
+        companyRequired: string;
         companyRFC: string;
         companySatCode: string;
         companyTaxRegime: string;
@@ -4923,6 +5041,7 @@ export declare const languages: {
         completedStops: string;
         completeFieldsToRegister: string;
         completeNameAndPhone: string;
+        completeProductQtyAndMaterial: string;
         completeReportNameCode: string;
         completeYourData: string;
         concept: string;
@@ -4935,6 +5054,8 @@ export declare const languages: {
         configurationColon: string;
         configureChartForPreview: string;
         configuredServices: string;
+        configureNode: string;
+        configureNodeName: string;
         configureReport: string;
         configureView: string;
         confirm: string;
@@ -4943,6 +5064,7 @@ export declare const languages: {
         confirmationEmailSentTo: string;
         confirmBooking: string;
         confirmCancelDocument: string;
+        confirmClearWorkflow: string;
         confirmCode: string;
         confirmDelete: string;
         confirmDeleteCompany: string;
@@ -4951,6 +5073,7 @@ export declare const languages: {
         confirmDeleteReport: string;
         confirmDeleteTray: string;
         confirmDeleteUser: string;
+        confirmDeleteWorkflow: string;
         confirmDeletion: string;
         confirmPassword: string;
         confirmPayment: string;
@@ -4967,6 +5090,7 @@ export declare const languages: {
         connectYourMailAccounts: string;
         consignment: string;
         consolidatedBalance: string;
+        contactAlreadyLinked: string;
         contactDate: string;
         contactedToday: string;
         contactEmail: string;
@@ -4976,7 +5100,6 @@ export declare const languages: {
         contactNotesPlaceholder: string;
         contactPhone: string;
         contactProviderForTokens: string;
-        contactAlreadyLinked: string;
         contacts: string;
         contactsByStatus: string;
         contactSupportPayment: string;
@@ -5227,6 +5350,7 @@ export declare const languages: {
         enterUsername: string;
         enterYourUsername: string;
         entry: string;
+        equalTo: string;
         error: string;
         errorAuthorizationCallback: string;
         errorCalculatingCut: string;
@@ -5308,6 +5432,7 @@ export declare const languages: {
         field: string;
         fieldConfiguration: string;
         file: string;
+        fileCabinet: string;
         fileSize: string;
         fill: string;
         filter: string;
@@ -5344,6 +5469,7 @@ export declare const languages: {
         fiscalInformation: string;
         fit: string;
         fix: string;
+        flowName: string;
         foldersTitle: string;
         folio: string;
         folioCapture: string;
@@ -5376,6 +5502,7 @@ export declare const languages: {
         generalSummary: string;
         generate: string;
         generated: string;
+        generatedOnSave: string;
         generatedReport: string;
         generateOrder: string;
         generateReport: string;
@@ -5399,6 +5526,7 @@ export declare const languages: {
         grade: string;
         group: string;
         groupBy: string;
+        groupByGreenDot: string;
         groupInfo: string;
         groupNameOptional: string;
         groupPhoto: string;
@@ -5536,6 +5664,7 @@ export declare const languages: {
         loadingColumn: string;
         loadingData: string;
         loadingDetail: string;
+        loadingOptions: string;
         loadingRoute: string;
         loadingTemplates: string;
         loadingTokensInfo: string;
@@ -5630,6 +5759,7 @@ export declare const languages: {
         manualPaymentRequired: string;
         map: string;
         maps: string;
+        mapSettings: string;
         margin: string;
         markAsAttended: string;
         markAsFavorite: string;
@@ -5640,6 +5770,7 @@ export declare const languages: {
         marketplacePlaceholder: string;
         material: string;
         materialCut: string;
+        materialCutting: string;
         materials: string;
         max: string;
         maxAndMin: string;
@@ -5734,7 +5865,9 @@ export declare const languages: {
         newParentItem: string;
         newPDFTemplate: string;
         newPrice: string;
+        newProcess: string;
         newProduct: string;
+        newProductionOrder: string;
         newProfile: string;
         newPromotion: string;
         newPurchaseInvoice: string;
@@ -5752,6 +5885,7 @@ export declare const languages: {
         newTicket: string;
         newUser: string;
         newWarehouse: string;
+        newWorkflow: string;
         next: string;
         nextFollowup: string;
         no: string;
@@ -5759,6 +5893,7 @@ export declare const languages: {
         noActiveChats: string;
         noActiveChatsYet: string;
         noActiveConnection: string;
+        noActiveFilters: string;
         noActiveProcesses: string;
         noAddresses: string;
         noAssignedQuestionnaires: string;
@@ -5775,6 +5910,9 @@ export declare const languages: {
         noData: string;
         noDate: string;
         noDatesAvailable: string;
+        nodeIdDb: string;
+        nodeNeedsNoConfig: string;
+        nodes: string;
         noDiscount: string;
         noDynamicFields: string;
         noElements: string;
@@ -5817,6 +5955,7 @@ export declare const languages: {
         noSales: string;
         noSalesYet: string;
         noSection: string;
+        noSelectionFirstFieldUsed: string;
         noServer: string;
         noSort: string;
         noSrc: string;
@@ -5825,12 +5964,15 @@ export declare const languages: {
         noSubject: string;
         notConfigured: string;
         noTemplatesAvailable: string;
+        notEqualTo: string;
         notes: string;
         noTickets: string;
         noTicketsToChart: string;
         noTicketsYet: string;
         notification: string;
+        notifications: string;
         notIn: string;
+        notInList: string;
         noTitle: string;
         noTraysRegistered: string;
         notRegistered: string;
@@ -5847,6 +5989,7 @@ export declare const languages: {
         observations: string;
         ocrDescription: string;
         ocrExtractText: string;
+        ocrScan: string;
         ocrTitle: string;
         of: string;
         onBehalfOf: string;
@@ -5947,6 +6090,7 @@ export declare const languages: {
         paymentDetails: string;
         paymentForm: string;
         paymentForms: string;
+        paymentGateway: string;
         paymentHistory: string;
         paymentMethod: string;
         paymentMethodFull: string;
@@ -6049,6 +6193,7 @@ export declare const languages: {
         priority: string;
         privateGroup: string;
         problemSummary: string;
+        processes: string;
         processing: string;
         processSteps: string;
         product: string;
@@ -6064,14 +6209,17 @@ export declare const languages: {
         productNotInOrder: string;
         productOrConcept: string;
         productOrderDetail: string;
+        productRawMaterial: string;
         products: string;
         productsManagement: string;
+        productToProduce: string;
         productTypeFormat: string;
         profile: string;
         profileAccounts: string;
         profilePhoto: string;
         profilePhotoPng: string;
         profiles: string;
+        profileTypeRequired: string;
         profileUpdated: string;
         progress: string;
         project: string;
@@ -6113,6 +6261,7 @@ export declare const languages: {
         quantityAbbr: string;
         quantityAndPrice: string;
         quantityToAssort: string;
+        quantityToProduce: string;
         quantityToReturn: string;
         quantityToSell: string;
         query: string;
@@ -6134,6 +6283,7 @@ export declare const languages: {
         raiseOrCheckTicket: string;
         range: string;
         rawMaterial: string;
+        rawMaterialToConsume: string;
         readNotifications: string;
         readStatus: string;
         realTimePreview: string;
@@ -6184,6 +6334,7 @@ export declare const languages: {
         remove: string;
         removeColor: string;
         removeColumn: string;
+        removeFilter: string;
         removeLine: string;
         removeMember: string;
         removeSeries: string;
@@ -6280,6 +6431,7 @@ export declare const languages: {
         saveProductFirstForGallery: string;
         saveProductFirstForStats: string;
         savePromotion: string;
+        saveWorkflowToGetNodeId: string;
         saving: string;
         scannerEntry: string;
         scannerThenManual: string;
@@ -6326,6 +6478,7 @@ export declare const languages: {
         selectOrderToAssort: string;
         selectProject: string;
         selectPrompt: string;
+        selectRawMaterialAndQty: string;
         selectReportForFilters: string;
         selectReportToStart: string;
         selectServiceFromMenu: string;
@@ -6474,6 +6627,7 @@ export declare const languages: {
         tags: string;
         targetPriceList: string;
         task: string;
+        tasks: string;
         tax: string;
         taxes: string;
         taxRegime: string;
@@ -6606,7 +6760,9 @@ export declare const languages: {
         toastPasswordMismatch: string;
         toastPaymentProcessError: string;
         toastProblem: string;
+        toastProcessCreated: string;
         toastProductAdded: string;
+        toastProductionOrderGenerated: string;
         toastProductRemoved: string;
         toastQuantityExceedsPending: string;
         toastQuickAccessAdded: string;
@@ -6645,6 +6801,8 @@ export declare const languages: {
         toastVerificationError: string;
         toastVideoError: string;
         toastWarehouseHasStock: string;
+        toastWorkflowActivated: string;
+        toastWorkflowPaused: string;
         toastWrongCredentials: string;
         toastXMLError: string;
         today: string;
@@ -6696,6 +6854,7 @@ export declare const languages: {
         tryAskingAura: string;
         tuesday: string;
         type: string;
+        typeAndNatureRequired: string;
         typeFolder: string;
         typeMultiApi: string;
         typeNote: string;
@@ -6713,6 +6872,7 @@ export declare const languages: {
         unitPrice: string;
         unitPriceShort: string;
         unknown: string;
+        unknownError: string;
         unsavedChanges: string;
         unsupportedChartType: string;
         update: string;
@@ -6733,6 +6893,7 @@ export declare const languages: {
         urgent: string;
         url: string;
         usedCapacity: string;
+        useItInTemplates: string;
         user: string;
         userConfiguration: string;
         userEmail: string;
@@ -6775,6 +6936,7 @@ export declare const languages: {
         viewMailAccount: string;
         viewMore: string;
         viewProduct: string;
+        viewProductionOrder: string;
         viewRoadmap: string;
         viewSupplier: string;
         viewTicket: string;
@@ -6785,6 +6947,7 @@ export declare const languages: {
         vusemImports: string;
         vusemImportsDesc: string;
         waitWhileConfirming: string;
+        wappConnect: string;
         wappConnectDesc: string;
         warehouse: string;
         warehouseControl: string;
@@ -6815,6 +6978,8 @@ export declare const languages: {
         willContactYou: string;
         withholdings: string;
         without: string;
+        workflows: string;
+        workflowsManagement: string;
         working: string;
         workspace: string;
         writeYourAnswer: string;
