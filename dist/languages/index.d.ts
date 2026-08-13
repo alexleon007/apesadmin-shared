@@ -200,6 +200,8 @@ export declare const languages: {
         bookAppointment: string;
         bookingConfirmed: string;
         border: string;
+        byPaidProduct: string;
+        bySoldProduct: string;
         borderWidth: string;
         brand: string;
         break: string;
@@ -2536,6 +2538,8 @@ export declare const languages: {
         bookAppointment: string;
         bookingConfirmed: string;
         border: string;
+        byPaidProduct: string;
+        bySoldProduct: string;
         borderWidth: string;
         brand: string;
         break: string;
@@ -4872,6 +4876,8 @@ export declare const languages: {
         bookAppointment: string;
         bookingConfirmed: string;
         border: string;
+        byPaidProduct: string;
+        bySoldProduct: string;
         borderWidth: string;
         brand: string;
         break: string;
