@@ -1454,6 +1454,7 @@
     "pendingCount": "{{count}} pending",
     "pendingInvoices": "Pending Invoices",
     "pendingStops": "Pending stops",
+    "pendingToApply": "To apply",
     "pendingToSell": "Pending to sell",
     "perMonth": "per MONTH",
     "perProduct": "Per product",

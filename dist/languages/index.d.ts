@@ -1458,6 +1458,7 @@ export declare const languages: {
         pendingCount: string;
         pendingInvoices: string;
         pendingStops: string;
+        pendingToApply: string;
         pendingToSell: string;
         perMonth: string;
         perProduct: string;
@@ -3801,6 +3802,7 @@ export declare const languages: {
         pendingCount: string;
         pendingInvoices: string;
         pendingStops: string;
+        pendingToApply: string;
         pendingToSell: string;
         perMonth: string;
         perProduct: string;
@@ -6144,6 +6146,7 @@ export declare const languages: {
         pendingCount: string;
         pendingInvoices: string;
         pendingStops: string;
+        pendingToApply: string;
         pendingToSell: string;
         perMonth: string;
         perProduct: string;
