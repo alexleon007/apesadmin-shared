@@ -512,6 +512,7 @@ export declare const languages: {
         creditLimit: string;
         creditNote: string;
         creditTooltip: string;
+        creditTooltipPurchase: string;
         criterion: string;
         critical: string;
         crm: string;
@@ -2980,6 +2981,7 @@ export declare const languages: {
         creditLimit: string;
         creditNote: string;
         creditTooltip: string;
+        creditTooltipPurchase: string;
         criterion: string;
         critical: string;
         crm: string;
@@ -5448,6 +5450,7 @@ export declare const languages: {
         creditLimit: string;
         creditNote: string;
         creditTooltip: string;
+        creditTooltipPurchase: string;
         criterion: string;
         critical: string;
         crm: string;

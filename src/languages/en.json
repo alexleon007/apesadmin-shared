@@ -508,6 +508,7 @@
   "creditLimit": "Credit Limit",
   "creditNote": "Credit Note",
   "creditTooltip": "\"No\" applies payment automatically. \"Yes\" sends to accounts receivable",
+  "creditTooltipPurchase": "\"No\" applies payment automatically. \"Yes\" sends to accounts payable",
   "criterion": "Criterion",
   "critical": "Critical",
   "crm": "CRM",

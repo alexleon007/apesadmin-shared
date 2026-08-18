@@ -508,6 +508,7 @@
     "creditLimit": "信用額度",
     "creditNote": "貸項通知單",
     "creditTooltip": "\"否\"自動套用付款。\"是\"送至應收帳款",
+    "creditTooltipPurchase": "\"否\"自動套用付款。\"是\"送至應付帳款",
     "criterion": "條件",
     "critical": "嚴重",
     "crm": "CRM",

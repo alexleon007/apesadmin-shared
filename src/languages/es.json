@@ -508,6 +508,7 @@
   "creditLimit": "Límite de Crédito",
   "creditNote": "Nota de Crédito",
   "creditTooltip": "\"No\" aplica el pago en automatico. \"Si\" manda a cuentas por cobrar",
+  "creditTooltipPurchase": "\"No\" aplica el pago en automatico. \"Si\" manda a cuentas por pagar",
   "criterion": "Criterio",
   "critical": "Crítica",
   "crm": "CRM",
