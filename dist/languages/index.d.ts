@@ -1761,6 +1761,7 @@ export declare const languages: {
         relateContact: string;
         related: string;
         relatedDocuments: string;
+        previousDocument: string;
         relationType: string;
         relational: string;
         release: string;
@@ -4226,6 +4227,7 @@ export declare const languages: {
         relateContact: string;
         related: string;
         relatedDocuments: string;
+        previousDocument: string;
         relationType: string;
         relational: string;
         release: string;
@@ -6691,6 +6693,7 @@ export declare const languages: {
         relateContact: string;
         related: string;
         relatedDocuments: string;
+        previousDocument: string;
         relationType: string;
         relational: string;
         release: string;
