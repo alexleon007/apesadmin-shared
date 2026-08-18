@@ -2087,6 +2087,8 @@
     "tax": "Tax",
     "taxRegime": "Tax Regime",
     "taxes": "Taxes",
+    "toastTaxesRecalculated": "Taxes recalculated",
+    "recalcTaxes": "Recalculate Taxes",
     "team": "Team",
     "teamRole": "Team Role",
     "teammates": "Teammates",

@@ -2091,6 +2091,8 @@ export declare const languages: {
         tax: string;
         taxRegime: string;
         taxes: string;
+        toastTaxesRecalculated: string;
+        recalcTaxes: string;
         team: string;
         teamRole: string;
         teammates: string;
@@ -4557,6 +4559,8 @@ export declare const languages: {
         tax: string;
         taxRegime: string;
         taxes: string;
+        toastTaxesRecalculated: string;
+        recalcTaxes: string;
         team: string;
         teamRole: string;
         teammates: string;
@@ -7023,6 +7027,8 @@ export declare const languages: {
         tax: string;
         taxRegime: string;
         taxes: string;
+        toastTaxesRecalculated: string;
+        recalcTaxes: string;
         team: string;
         teamRole: string;
         teammates: string;

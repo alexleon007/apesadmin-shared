@@ -2087,6 +2087,8 @@
     "tax": "Impuesto",
     "taxRegime": "Régimen Fiscal",
     "taxes": "Impuestos",
+    "toastTaxesRecalculated": "Impuestos recalculados",
+    "recalcTaxes": "Recalcular Impuestos",
     "team": "Equipo",
     "teamRole": "Rol Equipo",
     "teammates": "Compañeros",
