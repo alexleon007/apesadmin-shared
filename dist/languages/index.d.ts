@@ -213,6 +213,7 @@ export declare const languages: {
         borderWidthHelp: string;
         brand: string;
         break: string;
+        browserAgentLoginInvalid: string;
         budget: string;
         budgetVsActualExpenses: string;
         budgetVsExpenses: string;
@@ -1190,6 +1191,7 @@ export declare const languages: {
         multilanguage: string;
         multilanguageDesc: string;
         multilineText: string;
+        multipleActiveBrowserAgents: string;
         myAccount: string;
         myAssignedQuestionnaires: string;
         myChats: string;
@@ -1294,6 +1296,7 @@ export declare const languages: {
         nextFollowup: string;
         no: string;
         noAccountRegister: string;
+        noActiveBrowserAgent: string;
         noActiveChats: string;
         noActiveChatsYet: string;
         noActiveConnection: string;
@@ -2277,6 +2280,7 @@ export declare const languages: {
         toastXMLError: string;
         today: string;
         todayStops: string;
+        tokenGenerationFailed: string;
         tools: string;
         top10Products: string;
         topCustomers: string;
@@ -2682,6 +2686,7 @@ export declare const languages: {
         borderWidthHelp: string;
         brand: string;
         break: string;
+        browserAgentLoginInvalid: string;
         budget: string;
         budgetVsActualExpenses: string;
         budgetVsExpenses: string;
@@ -3659,6 +3664,7 @@ export declare const languages: {
         multilanguage: string;
         multilanguageDesc: string;
         multilineText: string;
+        multipleActiveBrowserAgents: string;
         myAccount: string;
         myAssignedQuestionnaires: string;
         myChats: string;
@@ -3763,6 +3769,7 @@ export declare const languages: {
         nextFollowup: string;
         no: string;
         noAccountRegister: string;
+        noActiveBrowserAgent: string;
         noActiveChats: string;
         noActiveChatsYet: string;
         noActiveConnection: string;
@@ -4746,6 +4753,7 @@ export declare const languages: {
         toastXMLError: string;
         today: string;
         todayStops: string;
+        tokenGenerationFailed: string;
         tools: string;
         top10Products: string;
         topCustomers: string;
@@ -5151,6 +5159,7 @@ export declare const languages: {
         borderWidthHelp: string;
         brand: string;
         break: string;
+        browserAgentLoginInvalid: string;
         budget: string;
         budgetVsActualExpenses: string;
         budgetVsExpenses: string;
@@ -6128,6 +6137,7 @@ export declare const languages: {
         multilanguage: string;
         multilanguageDesc: string;
         multilineText: string;
+        multipleActiveBrowserAgents: string;
         myAccount: string;
         myAssignedQuestionnaires: string;
         myChats: string;
@@ -6232,6 +6242,7 @@ export declare const languages: {
         nextFollowup: string;
         no: string;
         noAccountRegister: string;
+        noActiveBrowserAgent: string;
         noActiveChats: string;
         noActiveChatsYet: string;
         noActiveConnection: string;
@@ -7215,6 +7226,7 @@ export declare const languages: {
         toastXMLError: string;
         today: string;
         todayStops: string;
+        tokenGenerationFailed: string;
         tools: string;
         top10Products: string;
         topCustomers: string;
