@@ -973,6 +973,7 @@
     "inventoriable": "Inventariable",
     "inventories": "Inventarios",
     "inventory": "Inventario",
+    "taxNotApplicableHint": "Vacío: el impuesto no aplica. 0: aplica a tasa cero y se muestra en pedidos, facturas y CFDI",
     "inventoryControlHint": "Marcado si el producto lleva control de inventarios",
     "inventoryCorrection": "Corrección de Inventario",
     "inventoryManagement": "Gestión de Inventarios",

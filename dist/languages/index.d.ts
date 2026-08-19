@@ -977,6 +977,7 @@ export declare const languages: {
         inventoriable: string;
         inventories: string;
         inventory: string;
+        taxNotApplicableHint: string;
         inventoryControlHint: string;
         inventoryCorrection: string;
         inventoryManagement: string;
@@ -3450,6 +3451,7 @@ export declare const languages: {
         inventoriable: string;
         inventories: string;
         inventory: string;
+        taxNotApplicableHint: string;
         inventoryControlHint: string;
         inventoryCorrection: string;
         inventoryManagement: string;
@@ -5923,6 +5925,7 @@ export declare const languages: {
         inventoriable: string;
         inventories: string;
         inventory: string;
+        taxNotApplicableHint: string;
         inventoryControlHint: string;
         inventoryCorrection: string;
         inventoryManagement: string;

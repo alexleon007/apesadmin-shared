@@ -2056,7 +2056,7 @@ export type TaxType = {
     taxentry: number;
     taxcode: string;
     taxname: string;
-    taxporc: number;
+    taxporc: number | null;
     taxvalue: number;
     taxbase: number;
     taxorder: number;
@@ -2071,7 +2071,7 @@ export type TaxValueType = {
     taxname: string;
     taxtype: string;
     taxiddoc: number;
-    taxporc: number;
+    taxporc: number | null;
     taxvalue: number;
     taxbase: number;
     taxorder: number;

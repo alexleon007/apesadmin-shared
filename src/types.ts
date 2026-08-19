@@ -2237,7 +2237,8 @@ export type TaxType = {
   taxentry: number;
   taxcode: string;
   taxname: string;
-  taxporc: number;
+  // null = el impuesto no aplica; 0 = aplica a tasa cero
+  taxporc: number | null;
   taxvalue: number;
   taxbase: number;
   taxorder: number;
@@ -2253,7 +2254,8 @@ export type TaxValueType = {
   taxname: string;
   taxtype: string;
   taxiddoc: number;
-  taxporc: number;
+  // null = el impuesto no aplica; 0 = aplica a tasa cero
+  taxporc: number | null;
   taxvalue: number;
   taxbase: number;
   taxorder: number;

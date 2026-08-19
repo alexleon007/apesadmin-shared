@@ -973,6 +973,7 @@
   "inventoriable": "可盤點",
   "inventories": "庫存清單",
   "inventory": "庫存",
+  "taxNotApplicableHint": "留空：不適用此稅目。填 0：以零稅率適用，並顯示於訂單、發票與 CFDI",
   "inventoryControlHint": "勾選代表此產品納入庫存管理",
   "inventoryCorrection": "庫存修正",
   "inventoryManagement": "庫存管理",
