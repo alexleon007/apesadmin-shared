@@ -6,6 +6,7 @@ export declare const languages: {
         aboveMax: string;
         absent: string;
         accessGranted: string;
+        accessToken: string;
         account: string;
         accountCannotBeOwnParent: string;
         accountHolder: string;
@@ -310,6 +311,8 @@ export declare const languages: {
         changeTheme: string;
         changeTicket: string;
         changeView: string;
+        channel: string;
+        channelAccounts: string;
         chart: string;
         chartArea: string;
         chartAreaDesc: string;
@@ -654,6 +657,7 @@ export declare const languages: {
         destination: string;
         destinationAccount: string;
         destinationLocation: string;
+        destinationPhone: string;
         destinationWarehouse: string;
         destinationWarehouseName: string;
         detail: string;
@@ -987,6 +991,7 @@ export declare const languages: {
         improvement: string;
         improvementSuggestion: string;
         in: string;
+        inboxWebhookHint: string;
         inList: string;
         inRange: string;
         inStock: string;
@@ -1043,6 +1048,7 @@ export declare const languages: {
         invoiceGenerationError: string;
         itemNotInDocument: string;
         itemsNotInCompany: string;
+        keepCurrentToken: string;
         linkExpired: string;
         mailCredentialError: string;
         materialStockShortfall: string;
@@ -1051,7 +1057,10 @@ export declare const languages: {
         mlOrderNoAccess: string;
         mlOrderNotFound: string;
         nameAndPhoneRequired: string;
+        newConversation: string;
         noCashClosingTemplateConfigured: string;
+        noChannelAccounts: string;
+        noConversations: string;
         noHandlersRegistered: string;
         noPendingItemsToSell: string;
         noPermissionCancelOtherRegisters: string;
@@ -1076,6 +1085,7 @@ export declare const languages: {
         paymentNotFound: string;
         pdfGenerationError: string;
         phoneAlreadyInUse: string;
+        phoneNumberId: string;
         phoneRequired: string;
         posTicketMailText: string;
         ppdInvoicesWithoutCfdi: string;
@@ -2235,6 +2245,7 @@ export declare const languages: {
         taxes: string;
         ticketAlreadyClosed: string;
         toastCalculated: string;
+        toastConnectionOk: string;
         toastTaxesRecalculated: string;
         recalcTaxes: string;
         team: string;
@@ -2611,6 +2622,7 @@ export declare const languages: {
         workflowsManagement: string;
         working: string;
         workspace: string;
+        writeMessage: string;
         writeYourAnswer: string;
         writeYourMessage: string;
         wrongCredentials: string;
@@ -2635,6 +2647,7 @@ export declare const languages: {
         aboveMax: string;
         absent: string;
         accessGranted: string;
+        accessToken: string;
         account: string;
         accountCannotBeOwnParent: string;
         accountHolder: string;
@@ -2939,6 +2952,8 @@ export declare const languages: {
         changeTheme: string;
         changeTicket: string;
         changeView: string;
+        channel: string;
+        channelAccounts: string;
         chart: string;
         chartArea: string;
         chartAreaDesc: string;
@@ -3283,6 +3298,7 @@ export declare const languages: {
         destination: string;
         destinationAccount: string;
         destinationLocation: string;
+        destinationPhone: string;
         destinationWarehouse: string;
         destinationWarehouseName: string;
         detail: string;
@@ -3616,6 +3632,7 @@ export declare const languages: {
         improvement: string;
         improvementSuggestion: string;
         in: string;
+        inboxWebhookHint: string;
         inList: string;
         inRange: string;
         inStock: string;
@@ -3672,6 +3689,7 @@ export declare const languages: {
         invoiceGenerationError: string;
         itemNotInDocument: string;
         itemsNotInCompany: string;
+        keepCurrentToken: string;
         linkExpired: string;
         mailCredentialError: string;
         materialStockShortfall: string;
@@ -3680,7 +3698,10 @@ export declare const languages: {
         mlOrderNoAccess: string;
         mlOrderNotFound: string;
         nameAndPhoneRequired: string;
+        newConversation: string;
         noCashClosingTemplateConfigured: string;
+        noChannelAccounts: string;
+        noConversations: string;
         noHandlersRegistered: string;
         noPendingItemsToSell: string;
         noPermissionCancelOtherRegisters: string;
@@ -3705,6 +3726,7 @@ export declare const languages: {
         paymentNotFound: string;
         pdfGenerationError: string;
         phoneAlreadyInUse: string;
+        phoneNumberId: string;
         phoneRequired: string;
         posTicketMailText: string;
         ppdInvoicesWithoutCfdi: string;
@@ -4864,6 +4886,7 @@ export declare const languages: {
         taxes: string;
         ticketAlreadyClosed: string;
         toastCalculated: string;
+        toastConnectionOk: string;
         toastTaxesRecalculated: string;
         recalcTaxes: string;
         team: string;
@@ -5240,6 +5263,7 @@ export declare const languages: {
         workflowsManagement: string;
         working: string;
         workspace: string;
+        writeMessage: string;
         writeYourAnswer: string;
         writeYourMessage: string;
         wrongCredentials: string;
@@ -5264,6 +5288,7 @@ export declare const languages: {
         aboveMax: string;
         absent: string;
         accessGranted: string;
+        accessToken: string;
         account: string;
         accountCannotBeOwnParent: string;
         accountHolder: string;
@@ -5568,6 +5593,8 @@ export declare const languages: {
         changeTheme: string;
         changeTicket: string;
         changeView: string;
+        channel: string;
+        channelAccounts: string;
         chart: string;
         chartArea: string;
         chartAreaDesc: string;
@@ -5912,6 +5939,7 @@ export declare const languages: {
         destination: string;
         destinationAccount: string;
         destinationLocation: string;
+        destinationPhone: string;
         destinationWarehouse: string;
         destinationWarehouseName: string;
         detail: string;
@@ -6245,6 +6273,7 @@ export declare const languages: {
         improvement: string;
         improvementSuggestion: string;
         in: string;
+        inboxWebhookHint: string;
         inList: string;
         inRange: string;
         inStock: string;
@@ -6301,6 +6330,7 @@ export declare const languages: {
         invoiceGenerationError: string;
         itemNotInDocument: string;
         itemsNotInCompany: string;
+        keepCurrentToken: string;
         linkExpired: string;
         mailCredentialError: string;
         materialStockShortfall: string;
@@ -6309,7 +6339,10 @@ export declare const languages: {
         mlOrderNoAccess: string;
         mlOrderNotFound: string;
         nameAndPhoneRequired: string;
+        newConversation: string;
         noCashClosingTemplateConfigured: string;
+        noChannelAccounts: string;
+        noConversations: string;
         noHandlersRegistered: string;
         noPendingItemsToSell: string;
         noPermissionCancelOtherRegisters: string;
@@ -6334,6 +6367,7 @@ export declare const languages: {
         paymentNotFound: string;
         pdfGenerationError: string;
         phoneAlreadyInUse: string;
+        phoneNumberId: string;
         phoneRequired: string;
         posTicketMailText: string;
         ppdInvoicesWithoutCfdi: string;
@@ -7493,6 +7527,7 @@ export declare const languages: {
         taxes: string;
         ticketAlreadyClosed: string;
         toastCalculated: string;
+        toastConnectionOk: string;
         toastTaxesRecalculated: string;
         recalcTaxes: string;
         team: string;
@@ -7869,6 +7904,7 @@ export declare const languages: {
         workflowsManagement: string;
         working: string;
         workspace: string;
+        writeMessage: string;
         writeYourAnswer: string;
         writeYourMessage: string;
         wrongCredentials: string;

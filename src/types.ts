@@ -141,6 +141,67 @@ export type WappRawMessageType = {
 // WHATSAPP — tipos del plugin WappConnect (frontend UI)
 // ─────────────────────────────────────────────────────────────────────────────
 
+/**
+ * Inbox omnicanal (APIs de Meta).
+ *
+ * Cloud API no expone historial: el backend guarda cada mensaje que entra por
+ * webhook y cada uno que sale, y estas son las formas que devuelve. Nada aquí
+ * es específico de WhatsApp — Instagram y Messenger usan los mismos tipos con
+ * otro valor en `channel`.
+ */
+export type ChannelKeyType = "whatsapp" | "instagram" | "messenger";
+
+export type ChannelAccountType = {
+  idca: number;
+  name: string;
+  provider: string;
+  channel: string;
+  /** phone_number_id (WhatsApp), IG user id o page id. */
+  externalId: string;
+  businessId: string;
+  displayName: string;
+  lastcheck: string | null;
+  lasterror: string;
+  status: number;
+  /** 1 = ya tiene token guardado. El token nunca viaja al frontend. */
+  hasToken: number;
+};
+
+export type ChannelConversationType = {
+  idcc: number;
+  idca: number;
+  channel: string;
+  accountName: string;
+  /** wa_id / IGSID / PSID del contacto. */
+  externalId: string;
+  name: string;
+  avatar: string;
+  idparty: number;
+  lastMessage: string;
+  lastMessageType: string;
+  /** 1 = el último mensaje lo mandamos nosotros. */
+  lastMessageOwner: number;
+  lastMessageAt: string | null;
+  unread: number;
+  archived: number;
+  pinned: number;
+};
+
+export type ChannelMessageType = {
+  idcm: number;
+  idcc: number;
+  externalId: string;
+  /** 1 = saliente. */
+  owner: number;
+  type: string;
+  body: string;
+  payload: Record<string, any>;
+  /** sent | delivered | read | failed | received */
+  status: string;
+  error: string;
+  sentAt: string;
+};
+
 export type WappChatListType = {
   idch: number;
   type: string;
