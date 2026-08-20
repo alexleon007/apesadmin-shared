@@ -232,6 +232,7 @@
   "byPaidProduct": "依已付款產品",
   "bySoldProduct": "依已售產品",
   "cannotChatOnClosedTicket": "已關閉的工單無法開始聊天",
+  "cannotDeleteProductWithStock": "有庫存的產品無法刪除",
   "cannotDeleteSystemReports": "無法刪除系統報表",
   "cannotEditDeletedRecurrence": "已刪除的週期性項目無法修改",
   "cannotEditPartiallySold": "已套用部分銷售的單據無法編輯",

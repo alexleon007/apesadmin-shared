@@ -1624,6 +1624,8 @@ export type ProductType = {
     pricePerUnit: boolean;
     prodbarcodes: BarcodeType[];
     prodlocations: ProductLocationType[];
+    /** Existencia total (solo cantidades positivas). La manda get-products. */
+    prodstock?: number;
     maxqty: number;
     minqty: number;
 };

@@ -236,6 +236,7 @@ export declare const languages: {
         byPaidProduct: string;
         bySoldProduct: string;
         cannotChatOnClosedTicket: string;
+        cannotDeleteProductWithStock: string;
         cannotDeleteSystemReports: string;
         cannotEditDeletedRecurrence: string;
         cannotEditPartiallySold: string;
@@ -2864,6 +2865,7 @@ export declare const languages: {
         byPaidProduct: string;
         bySoldProduct: string;
         cannotChatOnClosedTicket: string;
+        cannotDeleteProductWithStock: string;
         cannotDeleteSystemReports: string;
         cannotEditDeletedRecurrence: string;
         cannotEditPartiallySold: string;
@@ -5492,6 +5494,7 @@ export declare const languages: {
         byPaidProduct: string;
         bySoldProduct: string;
         cannotChatOnClosedTicket: string;
+        cannotDeleteProductWithStock: string;
         cannotDeleteSystemReports: string;
         cannotEditDeletedRecurrence: string;
         cannotEditPartiallySold: string;

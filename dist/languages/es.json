@@ -232,6 +232,7 @@
     "byPaidProduct": "Por producto pagado",
     "bySoldProduct": "Por producto vendido",
     "cannotChatOnClosedTicket": "No se puede iniciar chat en un ticket cerrado",
+    "cannotDeleteProductWithStock": "No se puede borrar un producto con existencias en inventario",
     "cannotDeleteSystemReports": "No se pueden eliminar reportes del sistema",
     "cannotEditDeletedRecurrence": "No se puede modificar una recurrencia eliminada",
     "cannotEditPartiallySold": "No se puede editar un documento con ventas parciales aplicadas",
