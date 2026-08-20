@@ -1002,6 +1002,7 @@ export type MailConfigType = {
     hassmtppassword?: 0 | 1;
     hastoken?: 0 | 1;
     hasaccess?: 0 | 1;
+    canmanage?: 0 | 1;
     mailusers?: number[];
     mailpassword?: string | null;
     smtppassword?: string | null;

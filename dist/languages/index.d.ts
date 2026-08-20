@@ -1076,6 +1076,7 @@ export declare const languages: {
         pdfGenerationError: string;
         phoneAlreadyInUse: string;
         phoneRequired: string;
+        posTicketMailText: string;
         ppdInvoicesWithoutCfdi: string;
         productFactorMissing: string;
         productNotFound: string;
@@ -3703,6 +3704,7 @@ export declare const languages: {
         pdfGenerationError: string;
         phoneAlreadyInUse: string;
         phoneRequired: string;
+        posTicketMailText: string;
         ppdInvoicesWithoutCfdi: string;
         productFactorMissing: string;
         productNotFound: string;
@@ -6330,6 +6332,7 @@ export declare const languages: {
         pdfGenerationError: string;
         phoneAlreadyInUse: string;
         phoneRequired: string;
+        posTicketMailText: string;
         ppdInvoicesWithoutCfdi: string;
         productFactorMissing: string;
         productNotFound: string;

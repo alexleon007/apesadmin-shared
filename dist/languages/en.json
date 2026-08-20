@@ -1072,6 +1072,7 @@
     "pdfGenerationError": "Error generating PDF",
     "phoneAlreadyInUse": "Phone number already in use",
     "phoneRequired": "Phone is required",
+    "posTicketMailText": "Attached is your purchase ticket. Thank you for your business.",
     "ppdInvoicesWithoutCfdi": "The following PPD invoices have no stamped CFDI and cannot be included in the Payment Complement: {{invoices}}",
     "productFactorMissing": "The product factor does not exist",
     "productNotFound": "Product not found",
