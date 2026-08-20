@@ -202,6 +202,86 @@ export type ChannelMessageType = {
   sentAt: string;
 };
 
+/**
+ * Contrato agnóstico de canal (lo consume el backend).
+ *
+ * Todo lo que entra por el webhook de Meta se normaliza a estas formas ANTES
+ * de tocar la base de datos, así que agregar Instagram significa escribir un
+ * adaptador nuevo, no tocar el controlador, el store ni la UI.
+ */
+
+/** Contraparte humana de la conversación (wa_id, IGSID, PSID). */
+export type NormalizedContactType = {
+  externalId: string;
+  name: string;
+};
+
+export type NormalizedMessageType = {
+  /** Id de la cuenta receptora en Meta: phone_number_id / ig id / page id. */
+  accountExternalId: string;
+  contact: NormalizedContactType;
+  /** Id del mensaje en Meta (wamid...). Vacío = no deduplicable. */
+  externalId: string;
+  /** 1 = salió de nosotros, 0 = lo mandó el contacto. */
+  owner: 0 | 1;
+  type: string;
+  body: string;
+  payload: Record<string, any>;
+  sentAt: Date;
+  status: string;
+};
+
+/** Acuse de recibo de un mensaje saliente (sent → delivered → read | failed). */
+export type NormalizedStatusType = {
+  accountExternalId: string;
+  externalId: string;
+  status: string;
+  error: string;
+};
+
+export type ParsedWebhookType = {
+  messages: NormalizedMessageType[];
+  statuses: NormalizedStatusType[];
+};
+
+export type ChannelSendTextParamsType = {
+  accountExternalId: string;
+  accessToken: string;
+  to: string;
+  body: string;
+};
+
+export type ChannelSendTextResultType = {
+  externalId: string;
+  error?: string;
+};
+
+export type ChannelProbeParamsType = {
+  accountExternalId: string;
+  accessToken: string;
+};
+
+export type ChannelProbeResultType = {
+  displayName: string;
+  businessId: string;
+  detail: Record<string, any>;
+};
+
+export type ChannelAdapterType = {
+  channel: ChannelKeyType;
+  /**
+   * Valor del campo `object` del webhook que le pertenece a este canal.
+   * Meta manda "whatsapp_business_account" | "instagram" | "page".
+   */
+  webhookObject: string;
+  parseWebhook(body: any): ParsedWebhookType;
+  sendText(
+    params: ChannelSendTextParamsType,
+  ): Promise<ChannelSendTextResultType>;
+  /** Valida credenciales contra Graph y devuelve cómo se llama la cuenta. */
+  probe(params: ChannelProbeParamsType): Promise<ChannelProbeResultType>;
+};
+
 export type WappChatListType = {
   idch: number;
   type: string;
@@ -1171,12 +1251,7 @@ export type MailConfigType = {
 };
 
 export type MailFolderType =
-  | "INBOX"
-  | "SENT"
-  | "DRAFTS"
-  | "TRASH"
-  | "SPAM"
-  | "ARCHIVE";
+  "INBOX" | "SENT" | "DRAFTS" | "TRASH" | "SPAM" | "ARCHIVE";
 
 export type MailSecurityType = "ssl" | "starttls" | "none";
 
@@ -2398,9 +2473,7 @@ export type ProfileType = {
 };
 
 export type ViewType =
-  | typeof VIEW_TABLE
-  | typeof VIEW_BOARD
-  | typeof VIEW_GALLERY;
+  typeof VIEW_TABLE | typeof VIEW_BOARD | typeof VIEW_GALLERY;
 
 export type WarehouseLocationType = {
   idwhloc: number;
@@ -2478,12 +2551,7 @@ export type WorkflowType = {
 };
 
 export type WorkItemsClasifType =
-  | "project"
-  | "sprint"
-  | "task"
-  | "ticket"
-  | "block"
-  | string;
+  "project" | "sprint" | "task" | "ticket" | "block" | string;
 
 export type WorkItemMemberType = {
   iduser: number;
@@ -2537,11 +2605,7 @@ export type WorkItemsType = {
 // ─────────────────────────────────────────────────────────────────────────────
 
 export type PublicServiceKeyType =
-  | "calendar"
-  | "cfdi"
-  | "ticket"
-  | "account"
-  | "chat";
+  "calendar" | "cfdi" | "ticket" | "account" | "chat";
 
 export type PublicNavItemType = {
   key: PublicServiceKeyType;
@@ -2806,15 +2870,7 @@ export type FilterDefinition = {
 };
 
 export type FilterOperator =
-  | "="
-  | "!="
-  | ">"
-  | ">="
-  | "<"
-  | "<="
-  | "LIKE"
-  | "IN"
-  | "NOT IN";
+  "=" | "!=" | ">" | ">=" | "<" | "<=" | "LIKE" | "IN" | "NOT IN";
 
 export type FilterOption = {
   value: string | number;
@@ -2949,8 +3005,7 @@ export type DocumentMetaType = {
     size: PageSizeType;
     layout?: PageLayoutType;
     margin?:
-      | number
-      | { top: number; right: number; bottom: number; left: number };
+      number | { top: number; right: number; bottom: number; left: number };
     autoHeight?: boolean;
   };
 };
