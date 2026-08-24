@@ -161,6 +161,7 @@ export declare const languages: {
         attendanceWidgetDesc: string;
         attended: string;
         attention: string;
+        audio: string;
         aura: string;
         auraAgentStartFailed: string;
         auraGreeting: string;
@@ -1122,6 +1123,7 @@ export declare const languages: {
         shopifyApiTypeNotFound: string;
         someProductsDoNotExist: string;
         stampingLimitReached: string;
+        sticker: string;
         stopNotFound: string;
         targetEntityRequired: string;
         taxNotApplicableHint: string;
@@ -2802,6 +2804,7 @@ export declare const languages: {
         attendanceWidgetDesc: string;
         attended: string;
         attention: string;
+        audio: string;
         aura: string;
         auraAgentStartFailed: string;
         auraGreeting: string;
@@ -3763,6 +3766,7 @@ export declare const languages: {
         shopifyApiTypeNotFound: string;
         someProductsDoNotExist: string;
         stampingLimitReached: string;
+        sticker: string;
         stopNotFound: string;
         targetEntityRequired: string;
         taxNotApplicableHint: string;
@@ -5443,6 +5447,7 @@ export declare const languages: {
         attendanceWidgetDesc: string;
         attended: string;
         attention: string;
+        audio: string;
         aura: string;
         auraAgentStartFailed: string;
         auraGreeting: string;
@@ -6404,6 +6409,7 @@ export declare const languages: {
         shopifyApiTypeNotFound: string;
         someProductsDoNotExist: string;
         stampingLimitReached: string;
+        sticker: string;
         stopNotFound: string;
         targetEntityRequired: string;
         taxNotApplicableHint: string;

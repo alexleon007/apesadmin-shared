@@ -187,6 +187,26 @@ export type ChannelConversationType = {
   pinned: number;
 };
 
+/**
+ * Adjunto de un mensaje, ya descargado de Meta y guardado por nosotros.
+ *
+ * Meta borra los archivos del webhook a los 30 dias y su URL exige el token
+ * de la cuenta, asi que no sirve para pintar un <img>. El archivo se baja una
+ * sola vez al recibirlo y se guarda en la tabla `media` (table_media =
+ * 'channel_messages', idtarget_media = idcm); lo que viaja al frontend es una
+ * URL firmada temporal, regenerada en cada lectura.
+ */
+export type ChannelMediaType = {
+  idmedia: number;
+  /** Nombre original si el canal lo manda; si no, uno derivado del tipo. */
+  name: string;
+  mime: string;
+  /** Bytes. 0 = el canal no lo informo. */
+  size: number;
+  /** URL firmada de GCS. Caduca: no guardarla ni cachearla. */
+  url: string;
+};
+
 export type ChannelMessageType = {
   idcm: number;
   idcc: number;
@@ -200,6 +220,8 @@ export type ChannelMessageType = {
   status: string;
   error: string;
   sentAt: string;
+  /** null = mensaje sin adjunto, o adjunto que no se pudo descargar. */
+  media?: ChannelMediaType | null;
 };
 
 /**
@@ -216,6 +238,20 @@ export type NormalizedContactType = {
   name: string;
 };
 
+/**
+ * Referencia a un adjunto tal como viene en el webhook: todavia no hay bytes.
+ * El adaptador la extrae de su propio formato; quien la descarga es el
+ * backend, que es el unico que tiene el token de la cuenta.
+ */
+export type NormalizedMediaRefType = {
+  /** Id del archivo en Meta. Caduca a los 30 dias. */
+  externalId: string;
+  /** Puede venir vacio: Graph lo confirma al pedir la metadata. */
+  mime: string;
+  /** Solo los documentos traen nombre; el resto se deriva del tipo. */
+  filename: string;
+};
+
 export type NormalizedMessageType = {
   /** Id de la cuenta receptora en Meta: phone_number_id / ig id / page id. */
   accountExternalId: string;
@@ -229,6 +265,8 @@ export type NormalizedMessageType = {
   payload: Record<string, any>;
   sentAt: Date;
   status: string;
+  /** Adjunto pendiente de descargar. Ausente = mensaje sin media. */
+  media?: NormalizedMediaRefType | null;
 };
 
 /** Acuse de recibo de un mensaje saliente (sent → delivered → read | failed). */
