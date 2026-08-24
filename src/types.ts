@@ -246,6 +246,15 @@ export type NormalizedContactType = {
 export type NormalizedMediaRefType = {
   /** Id del archivo en Meta. Caduca a los 30 dias. */
   externalId: string;
+  /**
+   * URL directa al archivo, cuando el canal la manda en vez de un id.
+   *
+   * WhatsApp entrega un media id que hay que canjear en Graph; Instagram y
+   * Messenger entregan ya la URL del CDN dentro de `attachments[].payload`.
+   * Son dos formas de descarga distintas, no dos nombres del mismo dato: si
+   * viene `url` se baja de ahi y `externalId` queda vacio.
+   */
+  url?: string;
   /** Puede venir vacio: Graph lo confirma al pedir la metadata. */
   mime: string;
   /** Solo los documentos traen nombre; el resto se deriva del tipo. */
@@ -269,12 +278,25 @@ export type NormalizedMessageType = {
   media?: NormalizedMediaRefType | null;
 };
 
-/** Acuse de recibo de un mensaje saliente (sent → delivered → read | failed). */
+/**
+ * Acuse de recibo de un mensaje saliente (sent → delivered → read | failed).
+ *
+ * WhatsApp identifica el mensaje acusado por su id (`externalId`). Messenger
+ * e Instagram no siempre: el evento `read` no trae ids, trae una marca de
+ * agua — "todo lo que le mandé a este contacto hasta este instante ya lo
+ * leyó". Por eso el acuse admite las dos formas y quien lo aplica decide:
+ * con `externalId` se actualiza un mensaje, con `watermark` un rango.
+ */
 export type NormalizedStatusType = {
   accountExternalId: string;
+  /** Vacio en los acuses por marca de agua. */
   externalId: string;
   status: string;
   error: string;
+  /** Contraparte del chat acusado. Sólo en acuses por marca de agua. */
+  contactExternalId?: string;
+  /** Instante hasta el que aplica el acuse. Sólo en acuses por marca de agua. */
+  watermark?: Date;
 };
 
 export type ParsedWebhookType = {
@@ -305,6 +327,18 @@ export type ChannelProbeResultType = {
   detail: Record<string, any>;
 };
 
+export type ChannelProfileParamsType = {
+  accountExternalId: string;
+  accessToken: string;
+  /** PSID / IGSID del contacto. */
+  contactExternalId: string;
+};
+
+export type ChannelProfileResultType = {
+  /** Vacío = Graph no lo devolvió; se conserva lo que ya hubiera. */
+  name: string;
+};
+
 export type ChannelAdapterType = {
   channel: ChannelKeyType;
   /**
@@ -318,6 +352,17 @@ export type ChannelAdapterType = {
   ): Promise<ChannelSendTextResultType>;
   /** Valida credenciales contra Graph y devuelve cómo se llama la cuenta. */
   probe(params: ChannelProbeParamsType): Promise<ChannelProbeResultType>;
+  /**
+   * Nombre del contacto, para los canales cuyo webhook no lo manda.
+   *
+   * WhatsApp lo incluye en cada evento y no implementa esto. Instagram y
+   * Messenger sólo mandan el id, así que sin esta llamada la lista de chats
+   * muestra PSIDs de 16 dígitos. Es opcional porque cuesta una petición a
+   * Graph: quien la define asume que sólo se llama una vez por conversación.
+   */
+  fetchProfile?(
+    params: ChannelProfileParamsType,
+  ): Promise<ChannelProfileResultType>;
 };
 
 export type WappChatListType = {
