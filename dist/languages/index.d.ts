@@ -1089,6 +1089,7 @@ export declare const languages: {
         phoneNumberId: string;
         phoneRequired: string;
         posTicketMailText: string;
+        poll: string;
         ppdInvoicesWithoutCfdi: string;
         productFactorMissing: string;
         productNotFound: string;
@@ -2503,6 +2504,7 @@ export declare const languages: {
         understood: string;
         unit: string;
         unitCost: string;
+        unsupportedMessage: string;
         unitHasProducts: string;
         unitPrice: string;
         unitPriceShort: string;
@@ -3732,6 +3734,7 @@ export declare const languages: {
         phoneNumberId: string;
         phoneRequired: string;
         posTicketMailText: string;
+        poll: string;
         ppdInvoicesWithoutCfdi: string;
         productFactorMissing: string;
         productNotFound: string;
@@ -5146,6 +5149,7 @@ export declare const languages: {
         understood: string;
         unit: string;
         unitCost: string;
+        unsupportedMessage: string;
         unitHasProducts: string;
         unitPrice: string;
         unitPriceShort: string;
@@ -6375,6 +6379,7 @@ export declare const languages: {
         phoneNumberId: string;
         phoneRequired: string;
         posTicketMailText: string;
+        poll: string;
         ppdInvoicesWithoutCfdi: string;
         productFactorMissing: string;
         productNotFound: string;
@@ -7789,6 +7794,7 @@ export declare const languages: {
         understood: string;
         unit: string;
         unitCost: string;
+        unsupportedMessage: string;
         unitHasProducts: string;
         unitPrice: string;
         unitPriceShort: string;
