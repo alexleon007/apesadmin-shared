@@ -1529,6 +1529,14 @@ export type OrderType = {
     orisassorted?: number;
     /** 1 si alguna partida ya se vendió (total o parcialmente). */
     orhaspartial?: number;
+    /** 1 si el CFDI se timbra como factura global (público en general). */
+    orisglobal?: number;
+    /** c_Periodicidad del SAT (01-05). Sólo con orisglobal = 1. */
+    orglobalperiod?: string;
+    /** c_Meses del SAT (01-12 meses, 13-18 bimestres). Sólo con orisglobal = 1. */
+    orglobalmonths?: string;
+    /** Año del periodo facturado. Sólo con orisglobal = 1. */
+    orglobalyear?: string;
     ordetail: OrderDetailType[];
     orfields: ConceptFieldsValuesType[];
     ormovements?: OrderMovementType[];

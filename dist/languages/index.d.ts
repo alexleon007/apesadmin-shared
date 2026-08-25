@@ -301,6 +301,10 @@ export declare const languages: {
         cfdi: string;
         cfdiChain: string;
         cfdiDate: string;
+        cfdiGlobalDataRequired: string;
+        cfdiGlobalPartyRequired: string;
+        cfdiGlobalPaymethodInvalid: string;
+        cfdiGlobalRfcInvalid: string;
         cfdiQRCode: string;
         cfdiSeal: string;
         cfdiUseRequired: string;
@@ -935,6 +939,7 @@ export declare const languages: {
         getOrder: string;
         getOrders: string;
         getProducts: string;
+        globalInvoice: string;
         globalStyles: string;
         gmailConnection: string;
         goBack: string;
@@ -1701,6 +1706,7 @@ export declare const languages: {
         perYear: string;
         percentage: string;
         percentageUsed: string;
+        periodicity: string;
         permissions: string;
         permissionsConfiguration: string;
         permissionsManagement: string;
@@ -2633,6 +2639,7 @@ export declare const languages: {
         xAxis: string;
         xAxisGrouping: string;
         xml: string;
+        year: string;
         yes: string;
         yesShort: string;
         you: string;
@@ -2946,6 +2953,10 @@ export declare const languages: {
         cfdi: string;
         cfdiChain: string;
         cfdiDate: string;
+        cfdiGlobalDataRequired: string;
+        cfdiGlobalPartyRequired: string;
+        cfdiGlobalPaymethodInvalid: string;
+        cfdiGlobalRfcInvalid: string;
         cfdiQRCode: string;
         cfdiSeal: string;
         cfdiUseRequired: string;
@@ -3580,6 +3591,7 @@ export declare const languages: {
         getOrder: string;
         getOrders: string;
         getProducts: string;
+        globalInvoice: string;
         globalStyles: string;
         gmailConnection: string;
         goBack: string;
@@ -4346,6 +4358,7 @@ export declare const languages: {
         perYear: string;
         percentage: string;
         percentageUsed: string;
+        periodicity: string;
         permissions: string;
         permissionsConfiguration: string;
         permissionsManagement: string;
@@ -5278,6 +5291,7 @@ export declare const languages: {
         xAxis: string;
         xAxisGrouping: string;
         xml: string;
+        year: string;
         yes: string;
         yesShort: string;
         you: string;
@@ -5591,6 +5605,10 @@ export declare const languages: {
         cfdi: string;
         cfdiChain: string;
         cfdiDate: string;
+        cfdiGlobalDataRequired: string;
+        cfdiGlobalPartyRequired: string;
+        cfdiGlobalPaymethodInvalid: string;
+        cfdiGlobalRfcInvalid: string;
         cfdiQRCode: string;
         cfdiSeal: string;
         cfdiUseRequired: string;
@@ -6225,6 +6243,7 @@ export declare const languages: {
         getOrder: string;
         getOrders: string;
         getProducts: string;
+        globalInvoice: string;
         globalStyles: string;
         gmailConnection: string;
         goBack: string;
@@ -6991,6 +7010,7 @@ export declare const languages: {
         perYear: string;
         percentage: string;
         percentageUsed: string;
+        periodicity: string;
         permissions: string;
         permissionsConfiguration: string;
         permissionsManagement: string;
@@ -7923,6 +7943,7 @@ export declare const languages: {
         xAxis: string;
         xAxisGrouping: string;
         xml: string;
+        year: string;
         yes: string;
         yesShort: string;
         you: string;

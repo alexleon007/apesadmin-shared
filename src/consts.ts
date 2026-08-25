@@ -85,6 +85,50 @@ export const RECURRENCE_FREQUENCY_LABELS: Record<string, string> =
     {} as Record<string, string>,
   );
 
+// CFDI 4.0 factura global (público en general): catálogos c_Periodicidad y
+// c_Meses del SAT, más los valores fijos que el nodo InformacionGlobal obliga
+// a usar en el receptor.
+export const CFDI_GLOBAL_RFC = "XAXX010101000";
+export const CFDI_GLOBAL_CFDIUSE = "S01";
+export const CFDI_GLOBAL_TAX_REGIME = "616";
+export const CFDI_GLOBAL_PAYMETHOD = "PUE";
+
+export const CFDI_GLOBAL_PERIODICITY_OPTIONS: {
+  value: string;
+  label: string;
+}[] = [
+  { value: "01", label: "Diaria" },
+  { value: "02", label: "Semanal" },
+  { value: "03", label: "Quincenal" },
+  { value: "04", label: "Mensual" },
+  { value: "05", label: "Bimestral" },
+];
+
+// 01-12 son meses; 13-18 son bimestres y sólo aplican con periodicidad 05.
+export const CFDI_GLOBAL_MONTH_OPTIONS: {
+  value: string;
+  label: string;
+}[] = [
+  { value: "01", label: "Enero" },
+  { value: "02", label: "Febrero" },
+  { value: "03", label: "Marzo" },
+  { value: "04", label: "Abril" },
+  { value: "05", label: "Mayo" },
+  { value: "06", label: "Junio" },
+  { value: "07", label: "Julio" },
+  { value: "08", label: "Agosto" },
+  { value: "09", label: "Septiembre" },
+  { value: "10", label: "Octubre" },
+  { value: "11", label: "Noviembre" },
+  { value: "12", label: "Diciembre" },
+  { value: "13", label: "Enero-Febrero" },
+  { value: "14", label: "Marzo-Abril" },
+  { value: "15", label: "Mayo-Junio" },
+  { value: "16", label: "Julio-Agosto" },
+  { value: "17", label: "Septiembre-Octubre" },
+  { value: "18", label: "Noviembre-Diciembre" },
+];
+
 export const ORDER_TYPE_LABELS: Record<number, string> = {
   1: "Cotización",
   2: "Pedido",

@@ -58,6 +58,18 @@ export declare const RECURRENCE_FREQUENCY_OPTIONS: {
     label: string;
 }[];
 export declare const RECURRENCE_FREQUENCY_LABELS: Record<string, string>;
+export declare const CFDI_GLOBAL_RFC = "XAXX010101000";
+export declare const CFDI_GLOBAL_CFDIUSE = "S01";
+export declare const CFDI_GLOBAL_TAX_REGIME = "616";
+export declare const CFDI_GLOBAL_PAYMETHOD = "PUE";
+export declare const CFDI_GLOBAL_PERIODICITY_OPTIONS: {
+    value: string;
+    label: string;
+}[];
+export declare const CFDI_GLOBAL_MONTH_OPTIONS: {
+    value: string;
+    label: string;
+}[];
 export declare const ORDER_TYPE_LABELS: Record<number, string>;
 export declare const TYPE_PROJECTS = "projects";
 export declare const TYPE_POS = "pos";
