@@ -298,6 +298,7 @@
   "cfdiChain": "Cadena del CFDI",
   "cfdiDate": "Fecha del CFDI",
   "cfdiGlobalDataRequired": "La factura global requiere periodicidad, meses y año",
+  "cfdiGlobalOrdersUnavailable": "Alguna de las operaciones seleccionadas ya no está disponible para facturar (pudo haberse facturado o cancelado); vuelve a seleccionarlas",
   "cfdiGlobalPartyRequired": "No hay un cliente con RFC XAXX010101000 (público en general) en el catálogo",
   "cfdiGlobalPaymethodInvalid": "La factura global debe usar método de pago PUE",
   "cfdiGlobalRfcInvalid": "La factura global sólo puede emitirse al RFC genérico XAXX010101000",
@@ -2648,5 +2649,28 @@
   "yourPhone": "Tu teléfono",
   "zipCode": "Código Postal",
   "zohoOwnDomain": "Zoho Mail (dominio propio)",
-  "zone": "Zona"
+  "zone": "Zona",
+
+  "helpSeeExamples": "Ver ejemplos en el SAT",
+  "satHelpPaymentMethodTitle": "Método de pago",
+  "satHelpPaymentMethodBody": "PUE es cuando el cliente paga todo al momento de emitir la factura. PPD es cuando pagará después o en parcialidades, y entonces cada pago necesita su propio complemento de pago.",
+  "satHelpCfdiUseTitle": "Uso del CFDI",
+  "satHelpCfdiUseBody": "Es para qué va a usar el cliente esta factura al deducirla. Lo decide el cliente, no tú, y tiene que ser compatible con su régimen fiscal: si no coincide, el SAT rechaza el timbrado.",
+  "satHelpProductKeyTitle": "Clave de producto o servicio",
+  "satHelpProductKeyBody": "Clave del catálogo del SAT que dice qué estás vendiendo. Si no encuentras tu producto exacto, basta con identificar la clase a la que pertenece.",
+  "satHelpProductKeyLink": "Buscar clave en el SAT",
+  "satHelpPaymentComplementTitle": "Complemento de pago",
+  "satHelpPaymentComplementBody": "Es el CFDI que comprueba que se recibió un pago de una factura PPD. Se timbra uno por cada pago, a más tardar el día 5 del mes siguiente. Las facturas PUE no lo llevan, porque ya se pagaron al emitirse.",
+  "satHelpUnitKeyTitle": "Clave de unidad",
+  "satHelpUnitKeyBody": "Unidad de medida del catálogo del SAT, por ejemplo E48 para servicios o H87 para piezas. Se busca en el mismo catálogo que la clave de producto.",
+
+  "uiPrefsActionsTitle": "Botones de acción",
+  "uiPrefsActionsDescription": "Se aplica en toda la aplicación al momento y se guarda en este navegador.",
+  "uiPrefsColorfulActions": "Acciones a color",
+  "uiPrefsColorfulActionsHelp": "Cada acción toma el color de su tipo: editar en amarillo, pedidos en verde, procesos en azul. Apagado, todas son grises y solo eliminar conserva el rojo.",
+  "uiPrefsPreview": "Vista previa",
+
+  "cfdiMixedDocTypesNotAllowed": "Selecciona documentos del mismo tipo (todas notas o todos tickets, sin mezclar)",
+  "cancelRestoreSourceOrders": "Reactivar los documentos que este documento había marcado como Finalizado",
+  "cancelRestoreSourceOrdersHelp": "Si no se activa, esos documentos permanecerán en estatus Finalizado y no podrán volver a facturarse."
 }

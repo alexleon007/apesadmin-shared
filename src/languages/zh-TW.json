@@ -298,6 +298,7 @@
   "cfdiChain": "CFDI 字串",
   "cfdiDate": "CFDI 日期",
   "cfdiGlobalDataRequired": "全域發票需要週期、月份與年份",
+  "cfdiGlobalOrdersUnavailable": "部分選取的操作已無法開立發票（可能已開票或已取消），請重新選取",
   "cfdiGlobalPartyRequired": "目錄中沒有 RFC 為 XAXX010101000（一般公眾）的客戶",
   "cfdiGlobalPaymethodInvalid": "全域發票必須使用 PUE 付款方式",
   "cfdiGlobalRfcInvalid": "全域發票只能開立給通用 RFC XAXX010101000",
@@ -2648,5 +2649,28 @@
   "yourPhone": "您的電話",
   "zipCode": "郵遞區號",
   "zohoOwnDomain": "Zoho Mail（自訂網域）",
-  "zone": "區域"
+  "zone": "區域",
+
+  "helpSeeExamples": "查看 SAT 範例",
+  "satHelpPaymentMethodTitle": "付款方式",
+  "satHelpPaymentMethodBody": "PUE 是開立發票時客戶一次付清。PPD 是客戶稍後付款或分期付款，此時每筆付款都需要各自的付款附件。",
+  "satHelpCfdiUseTitle": "CFDI 用途",
+  "satHelpCfdiUseBody": "客戶申報扣除時要如何使用這張發票。由客戶決定而非由你決定，且必須符合其稅務制度；不相符時 SAT 會拒絕蓋章。",
+  "satHelpProductKeyTitle": "商品或服務代碼",
+  "satHelpProductKeyBody": "SAT 目錄中說明你所銷售內容的代碼。若找不到完全相符的商品，只要辨識其所屬類別即可。",
+  "satHelpProductKeyLink": "在 SAT 查詢代碼",
+  "satHelpPaymentComplementTitle": "付款附件",
+  "satHelpPaymentComplementBody": "用以證明已收到 PPD 發票款項的 CFDI。每筆付款各蓋章一份，最遲於次月 5 日前完成。PUE 發票開立時即已付清，因此不需要附件。",
+  "satHelpUnitKeyTitle": "計量單位代碼",
+  "satHelpUnitKeyBody": "SAT 目錄中的計量單位，例如服務為 E48、件數為 H87。與商品代碼位於同一份目錄。",
+
+  "uiPrefsActionsTitle": "操作按鈕",
+  "uiPrefsActionsDescription": "立即套用至整個應用程式，並儲存在此瀏覽器中。",
+  "uiPrefsColorfulActions": "彩色操作按鈕",
+  "uiPrefsColorfulActionsHelp": "每個操作依類型顯示顏色：編輯為黃色、訂單為綠色、流程為藍色。關閉時全部為灰色，僅刪除保留紅色。",
+  "uiPrefsPreview": "預覽",
+
+  "cfdiMixedDocTypesNotAllowed": "請選擇相同類型的單據（全部為備註或全部為票券，不可混合）",
+  "cancelRestoreSourceOrders": "重新啟用此文件先前標記為「已完成」的文件",
+  "cancelRestoreSourceOrdersHelp": "若不啟用，這些文件將維持「已完成」狀態，且無法再次開立發票。"
 }

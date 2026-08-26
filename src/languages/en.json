@@ -298,6 +298,7 @@
   "cfdiChain": "CFDI chain",
   "cfdiDate": "CFDI date",
   "cfdiGlobalDataRequired": "A global invoice requires periodicity, months and year",
+  "cfdiGlobalOrdersUnavailable": "Some of the selected operations are no longer available to invoice (they may already be invoiced or cancelled); please select them again",
   "cfdiGlobalPartyRequired": "There is no customer with RFC XAXX010101000 (general public) in the catalog",
   "cfdiGlobalPaymethodInvalid": "A global invoice must use payment method PUE",
   "cfdiGlobalRfcInvalid": "A global invoice can only be issued to the generic RFC XAXX010101000",
@@ -2648,5 +2649,28 @@
   "yourPhone": "Your phone",
   "zipCode": "Zip Code",
   "zohoOwnDomain": "Zoho Mail (custom domain)",
-  "zone": "Zone"
+  "zone": "Zone",
+
+  "helpSeeExamples": "See SAT examples",
+  "satHelpPaymentMethodTitle": "Payment method",
+  "satHelpPaymentMethodBody": "PUE is when the customer pays in full as the invoice is issued. PPD is when they will pay later or in installments, and then every payment needs its own payment complement.",
+  "satHelpCfdiUseTitle": "CFDI use",
+  "satHelpCfdiUseBody": "What the customer will use this invoice for when deducting it. The customer decides, not you, and it must match their tax regime: if it does not, the SAT rejects the stamping.",
+  "satHelpProductKeyTitle": "Product or service key",
+  "satHelpProductKeyBody": "SAT catalog key that states what you are selling. If you cannot find your exact product, identifying the class it belongs to is enough.",
+  "satHelpProductKeyLink": "Search the SAT catalog",
+  "satHelpPaymentComplementTitle": "Payment complement",
+  "satHelpPaymentComplementBody": "The CFDI that proves a payment against a PPD invoice was received. One is stamped per payment, no later than the 5th of the following month. PUE invoices do not need one, since they were paid as they were issued.",
+  "satHelpUnitKeyTitle": "Unit key",
+  "satHelpUnitKeyBody": "Unit of measure from the SAT catalog, for example E48 for services or H87 for pieces. It lives in the same catalog as the product key.",
+
+  "uiPrefsActionsTitle": "Action buttons",
+  "uiPrefsActionsDescription": "Applies across the app right away and is saved in this browser.",
+  "uiPrefsColorfulActions": "Colored actions",
+  "uiPrefsColorfulActionsHelp": "Each action takes the color of its kind: edit in yellow, orders in green, pipelines in blue. Turned off, they are all grey and only delete keeps its red.",
+  "uiPrefsPreview": "Preview",
+
+  "cfdiMixedDocTypesNotAllowed": "Select documents of the same type (all notes or all tickets, not mixed)",
+  "cancelRestoreSourceOrders": "Reactivate the documents this document had marked as Finished",
+  "cancelRestoreSourceOrdersHelp": "If left off, those documents will stay Finished and cannot be invoiced again."
 }

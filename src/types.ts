@@ -507,6 +507,9 @@ export type CfdiDataType = {
 
 export type CFDIConceptoType = {
   ClaveProdServ: string;
+  // Sólo la usa la factura global: referencia el/los folio(s) de las
+  // operaciones (tickets/notas) que ampara el concepto agregado.
+  NoIdentificacion?: string;
   Cantidad: number;
   ClaveUnidad: string;
   Descripcion: string;
