@@ -450,6 +450,7 @@ export type CfdiDataType = {
 };
 export type CFDIConceptoType = {
     ClaveProdServ: string;
+    NoIdentificacion?: string;
     Cantidad: number;
     ClaveUnidad: string;
     Descripcion: string;
