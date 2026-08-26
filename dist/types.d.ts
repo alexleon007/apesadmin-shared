@@ -268,9 +268,34 @@ export type NormalizedStatusType = {
     /** Instante hasta el que aplica el acuse. Sólo en acuses por marca de agua. */
     watermark?: Date;
 };
+/**
+ * Edición de un mensaje ya enviado.
+ *
+ * Instagram deja editar un DM y avisa por `message_edit`, con el MISMO `mid`
+ * y el texto nuevo. No es un mensaje aparte: si se tratara como tal, cada
+ * corrección de dedo dejaría una burbuja duplicada en el chat.
+ *
+ * Puede llegar de un mensaje que nunca vimos —la cuenta se dio de alta
+ * después, o el webhook estuvo caído—, así que quien la aplica tiene que
+ * poder insertarla y no sólo actualizar.
+ */
+export type NormalizedEditType = {
+    accountExternalId: string;
+    /** PSID / IGSID de la contraparte: sin él no hay conversación a la que ir. */
+    contactExternalId: string;
+    /** `mid` del mensaje editado. Es la llave contra `externalid_cm`. */
+    externalId: string;
+    body: string;
+    /** 1 = editamos nosotros, 0 = editó el contacto. */
+    owner: 0 | 1;
+    editedAt: Date;
+    payload: Record<string, any>;
+};
 export type ParsedWebhookType = {
     messages: NormalizedMessageType[];
     statuses: NormalizedStatusType[];
+    /** Ausente en los canales que no admiten edición (WhatsApp Cloud). */
+    edits?: NormalizedEditType[];
 };
 export type ChannelSendTextParamsType = {
     accountExternalId: string;
