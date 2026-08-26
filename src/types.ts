@@ -163,6 +163,14 @@ export type ChannelAccountType = {
   lastcheck: string | null;
   lasterror: string;
   status: number;
+  /**
+   * Color de identificacion de ESTA cuenta, `#rrggbb`, o '' para ninguno.
+   *
+   * No es el color del canal — ese ya lo pone la marca en el icono. Este
+   * distingue dos cuentas del mismo canal, que de otro modo comparten icono,
+   * color y fila.
+   */
+  color: string;
   /** 1 = ya tiene token guardado. El token nunca viaja al frontend. */
   hasToken: number;
 };
@@ -172,6 +180,8 @@ export type ChannelConversationType = {
   idca: number;
   channel: string;
   accountName: string;
+  /** Color de la cuenta, denormalizado para no pedir la lista de cuentas. */
+  accountColor: string;
   /** wa_id / IGSID / PSID del contacto. */
   externalId: string;
   name: string;
