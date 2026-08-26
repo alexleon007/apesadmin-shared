@@ -599,6 +599,7 @@ export declare const languages: {
         dailyBilling: string;
         dailyPromotion: string;
         danger: string;
+        darkMode: string;
         dashboard: string;
         dashboardAIInstructions: string;
         data: string;
@@ -1056,9 +1057,15 @@ export declare const languages: {
         itemNotInDocument: string;
         itemsNotInCompany: string;
         keepCurrentToken: string;
+        lightMode: string;
         linkExpired: string;
         mailCredentialError: string;
         materialStockShortfall: string;
+        messageDelivered: string;
+        messageFailed: string;
+        messagePending: string;
+        messageRead: string;
+        messageSent: string;
         missingOrderToFulfill: string;
         missingRequiredParams: string;
         mlOrderNoAccess: string;
@@ -1124,6 +1131,7 @@ export declare const languages: {
         selectAtLeastOneForm: string;
         selectAtLeastOneItem: string;
         selectAtLeastOneToApplyProfile: string;
+        selectChatToStart: string;
         sellQtyExceedsPending: string;
         sessionExpired: string;
         sessionNotFound: string;
@@ -2644,6 +2652,7 @@ export declare const languages: {
         year: string;
         yes: string;
         yesShort: string;
+        yesterday: string;
         you: string;
         youCancelledPayment: string;
         youClosedPaymentWindow: string;
@@ -3273,6 +3282,7 @@ export declare const languages: {
         dailyBilling: string;
         dailyPromotion: string;
         danger: string;
+        darkMode: string;
         dashboard: string;
         dashboardAIInstructions: string;
         data: string;
@@ -3730,9 +3740,15 @@ export declare const languages: {
         itemNotInDocument: string;
         itemsNotInCompany: string;
         keepCurrentToken: string;
+        lightMode: string;
         linkExpired: string;
         mailCredentialError: string;
         materialStockShortfall: string;
+        messageDelivered: string;
+        messageFailed: string;
+        messagePending: string;
+        messageRead: string;
+        messageSent: string;
         missingOrderToFulfill: string;
         missingRequiredParams: string;
         mlOrderNoAccess: string;
@@ -3798,6 +3814,7 @@ export declare const languages: {
         selectAtLeastOneForm: string;
         selectAtLeastOneItem: string;
         selectAtLeastOneToApplyProfile: string;
+        selectChatToStart: string;
         sellQtyExceedsPending: string;
         sessionExpired: string;
         sessionNotFound: string;
@@ -5318,6 +5335,7 @@ export declare const languages: {
         year: string;
         yes: string;
         yesShort: string;
+        yesterday: string;
         you: string;
         youCancelledPayment: string;
         youClosedPaymentWindow: string;
@@ -5947,6 +5965,7 @@ export declare const languages: {
         dailyBilling: string;
         dailyPromotion: string;
         danger: string;
+        darkMode: string;
         dashboard: string;
         dashboardAIInstructions: string;
         data: string;
@@ -6404,9 +6423,15 @@ export declare const languages: {
         itemNotInDocument: string;
         itemsNotInCompany: string;
         keepCurrentToken: string;
+        lightMode: string;
         linkExpired: string;
         mailCredentialError: string;
         materialStockShortfall: string;
+        messageDelivered: string;
+        messageFailed: string;
+        messagePending: string;
+        messageRead: string;
+        messageSent: string;
         missingOrderToFulfill: string;
         missingRequiredParams: string;
         mlOrderNoAccess: string;
@@ -6472,6 +6497,7 @@ export declare const languages: {
         selectAtLeastOneForm: string;
         selectAtLeastOneItem: string;
         selectAtLeastOneToApplyProfile: string;
+        selectChatToStart: string;
         sellQtyExceedsPending: string;
         sessionExpired: string;
         sessionNotFound: string;
@@ -7992,6 +8018,7 @@ export declare const languages: {
         year: string;
         yes: string;
         yesShort: string;
+        yesterday: string;
         you: string;
         youCancelledPayment: string;
         youClosedPaymentWindow: string;
