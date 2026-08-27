@@ -307,6 +307,34 @@ export type ChannelSendTextResultType = {
     externalId: string;
     error?: string;
 };
+/**
+ * Envio de un adjunto.
+ *
+ * `url` es una URL publica temporal NUESTRA, no una ruta del disco: los tres
+ * canales de Meta descargan el archivo ellos mismos desde donde se les diga.
+ * Por eso el adjunto se guarda primero en nuestro almacenamiento y lo que
+ * viaja a Meta es un enlace firmado.
+ *
+ * El camino alterno —subir los bytes a `/{phone_number_id}/media` en WhatsApp
+ * y a `/me/message_attachments` en Messenger— son dos formatos distintos, deja
+ * el archivo solo en Meta (que lo borra a los 30 dias) y obligaria a bajarlo
+ * de vuelta para pintar la burbuja. Con el enlace hay un solo camino para los
+ * tres canales y el archivo queda de nuestro lado, que es lo que la burbuja
+ * necesita para pintarse igual que un adjunto recibido.
+ */
+export type ChannelSendMediaParamsType = {
+    accountExternalId: string;
+    accessToken: string;
+    to: string;
+    /** image | video | audio | document. */
+    type: string;
+    /** URL publica temporal desde la que Meta baja el archivo. */
+    url: string;
+    /** Pie de foto. Vacio = sin pie; no todos los canales lo admiten. */
+    caption: string;
+    filename: string;
+    mime: string;
+};
 export type ChannelProbeParamsType = {
     accountExternalId: string;
     accessToken: string;
@@ -335,6 +363,12 @@ export type ChannelAdapterType = {
     webhookObject: string;
     parseWebhook(body: any): ParsedWebhookType;
     sendText(params: ChannelSendTextParamsType): Promise<ChannelSendTextResultType>;
+    /**
+     * Envia un adjunto. No es opcional: los tres canales de Meta lo soportan, y
+     * dejarlo opcional trasladaria el fallo de un canal sin implementar al
+     * momento de pulsar el clip en vez de a la compilacion.
+     */
+    sendMedia(params: ChannelSendMediaParamsType): Promise<ChannelSendTextResultType>;
     /** Valida credenciales contra Graph y devuelve cómo se llama la cuenta. */
     probe(params: ChannelProbeParamsType): Promise<ChannelProbeResultType>;
     /**

@@ -149,6 +149,10 @@ export declare const languages: {
         assortmentProgress: string;
         attachEvidence: string;
         attachFile: string;
+        micDenied: string;
+        addCaption: string;
+        removeAttachment: string;
+        fileTooLarge: string;
         attachFilesMax: string;
         attachImage: string;
         attachImages: string;
@@ -2835,6 +2839,10 @@ export declare const languages: {
         assortmentProgress: string;
         attachEvidence: string;
         attachFile: string;
+        micDenied: string;
+        addCaption: string;
+        removeAttachment: string;
+        fileTooLarge: string;
         attachFilesMax: string;
         attachImage: string;
         attachImages: string;
@@ -5521,6 +5529,10 @@ export declare const languages: {
         assortmentProgress: string;
         attachEvidence: string;
         attachFile: string;
+        micDenied: string;
+        addCaption: string;
+        removeAttachment: string;
+        fileTooLarge: string;
         attachFilesMax: string;
         attachImage: string;
         attachImages: string;
