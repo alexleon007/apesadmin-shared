@@ -656,6 +656,8 @@ export declare const languages: {
         deliveryZipCode: string;
         denomination: string;
         denominations: string;
+        department: string;
+        departments: string;
         departure: string;
         describeRequest: string;
         describeTicket: string;
@@ -1286,6 +1288,7 @@ export declare const languages: {
         management: string;
         managementOfContacts: string;
         managementOfCustomers: string;
+        managementOfDepartments: string;
         managementOfHR: string;
         managementOfSuppliers: string;
         manualAndScanner: string;
@@ -3339,6 +3342,8 @@ export declare const languages: {
         deliveryZipCode: string;
         denomination: string;
         denominations: string;
+        department: string;
+        departments: string;
         departure: string;
         describeRequest: string;
         describeTicket: string;
@@ -3969,6 +3974,7 @@ export declare const languages: {
         management: string;
         managementOfContacts: string;
         managementOfCustomers: string;
+        managementOfDepartments: string;
         managementOfHR: string;
         managementOfSuppliers: string;
         manualAndScanner: string;
@@ -6022,6 +6028,8 @@ export declare const languages: {
         deliveryZipCode: string;
         denomination: string;
         denominations: string;
+        department: string;
+        departments: string;
         departure: string;
         describeRequest: string;
         describeTicket: string;
@@ -6652,6 +6660,7 @@ export declare const languages: {
         management: string;
         managementOfContacts: string;
         managementOfCustomers: string;
+        managementOfDepartments: string;
         managementOfHR: string;
         managementOfSuppliers: string;
         manualAndScanner: string;

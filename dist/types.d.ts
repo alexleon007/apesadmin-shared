@@ -947,6 +947,12 @@ export type ReportWidgetType = {
     color: string;
 };
 export type CatalogWidgetEntryType = StaticWidgetType | ReportWidgetType;
+export type DepartmentType = {
+    idept: number;
+    idcmp: number;
+    cmpname?: string;
+    deptname: string;
+};
 export type ExamQuestionType = {
     idexq: number;
     qrytitle: string;
@@ -1645,6 +1651,8 @@ export type PartyType = {
     iscustomer: number;
     issupplier: number;
     isrh: number;
+    partydepartment?: number;
+    partydepartmentname?: string;
     partyphoto?: string;
     partypipelines?: {
         idpipe: number;
