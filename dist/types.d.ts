@@ -152,6 +152,7 @@ export type ChannelConversationType = {
     /** wa_id / IGSID / PSID del contacto. */
     externalId: string;
     name: string;
+    /** URL firmada de nuestro bucket, regenerada en cada lectura. '' = ninguna. */
     avatar: string;
     idparty: number;
     lastMessage: string;
@@ -353,6 +354,16 @@ export type ChannelProfileParamsType = {
 export type ChannelProfileResultType = {
     /** Vacío = Graph no lo devolvió; se conserva lo que ya hubiera. */
     name: string;
+    /**
+     * URL de la foto de perfil en el CDN de Meta.
+     *
+     * No se guarda tal cual: Meta la firma y caduca en días, así que un <img>
+     * apuntando ahí funciona hoy y sale roto la semana que viene. El archivo se
+     * baja y se queda en nuestro bucket, igual que los adjuntos.
+     *
+     * Vacío = el contacto no tiene foto, o el canal no la entrega.
+     */
+    avatar: string;
 };
 export type ChannelAdapterType = {
     channel: ChannelKeyType;
@@ -372,12 +383,16 @@ export type ChannelAdapterType = {
     /** Valida credenciales contra Graph y devuelve cómo se llama la cuenta. */
     probe(params: ChannelProbeParamsType): Promise<ChannelProbeResultType>;
     /**
-     * Nombre del contacto, para los canales cuyo webhook no lo manda.
+     * Nombre y foto del contacto, para los canales cuyo webhook no los manda.
      *
-     * WhatsApp lo incluye en cada evento y no implementa esto. Instagram y
-     * Messenger sólo mandan el id, así que sin esta llamada la lista de chats
-     * muestra PSIDs de 16 dígitos. Es opcional porque cuesta una petición a
-     * Graph: quien la define asume que sólo se llama una vez por conversación.
+     * WhatsApp no implementa esto, y no por olvido: la Cloud API entrega el
+     * nombre en cada evento y NO expone la foto de perfil de nadie: no hay
+     * endpoint que la dé. Ahí la lista se queda con la inicial.
+     *
+     * Instagram y Messenger sólo mandan el id, así que sin esta llamada la
+     * lista de chats muestra PSIDs de 16 dígitos y ni una cara. Es opcional
+     * porque cuesta una petición a Graph, y quien la define asume que se llama
+     * una vez por conversación, no una por mensaje.
      */
     fetchProfile?(params: ChannelProfileParamsType): Promise<ChannelProfileResultType>;
 };
