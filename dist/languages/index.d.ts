@@ -614,6 +614,7 @@ export declare const languages: {
         dataSeries: string;
         datasetTooLarge: string;
         date: string;
+        dateMustBeFuture: string;
         date1: string;
         date2: string;
         datePrefix: string;
@@ -848,6 +849,7 @@ export declare const languages: {
         externalServices: string;
         extra: string;
         factor: string;
+        failed: string;
         failedOperation: string;
         family: string;
         favoriteTemplate: string;
@@ -1916,6 +1918,7 @@ export declare const languages: {
         receivedQuantity: string;
         recent: string;
         recentMovements: string;
+        recipients: string;
         record: string;
         recordAssistantUnavailable: string;
         recordAudio: string;
@@ -2065,6 +2068,16 @@ export declare const languages: {
         scannerThenManual: string;
         scheduleAnother: string;
         scheduleMessages: string;
+        scheduledMessages: string;
+        scheduleMessage: string;
+        addScheduledMessage: string;
+        whatAreScheduledMessages: string;
+        scheduledMessagesIntro: string;
+        howScheduledMessagesWork: string;
+        scheduledMessagesStep1: string;
+        scheduledMessagesStep2: string;
+        scheduledMessagesStep3: string;
+        scheduledMessagesOutro: string;
         scheduledAppointment: string;
         scheduledDeliveries: string;
         scope: string;
@@ -3315,6 +3328,7 @@ export declare const languages: {
         dataSeries: string;
         datasetTooLarge: string;
         date: string;
+        dateMustBeFuture: string;
         date1: string;
         date2: string;
         datePrefix: string;
@@ -3549,6 +3563,7 @@ export declare const languages: {
         externalServices: string;
         extra: string;
         factor: string;
+        failed: string;
         failedOperation: string;
         family: string;
         favoriteTemplate: string;
@@ -4617,6 +4632,7 @@ export declare const languages: {
         receivedQuantity: string;
         recent: string;
         recentMovements: string;
+        recipients: string;
         record: string;
         recordAssistantUnavailable: string;
         recordAudio: string;
@@ -4766,6 +4782,16 @@ export declare const languages: {
         scannerThenManual: string;
         scheduleAnother: string;
         scheduleMessages: string;
+        scheduledMessages: string;
+        scheduleMessage: string;
+        addScheduledMessage: string;
+        whatAreScheduledMessages: string;
+        scheduledMessagesIntro: string;
+        howScheduledMessagesWork: string;
+        scheduledMessagesStep1: string;
+        scheduledMessagesStep2: string;
+        scheduledMessagesStep3: string;
+        scheduledMessagesOutro: string;
         scheduledAppointment: string;
         scheduledDeliveries: string;
         scope: string;
@@ -6016,6 +6042,7 @@ export declare const languages: {
         dataSeries: string;
         datasetTooLarge: string;
         date: string;
+        dateMustBeFuture: string;
         date1: string;
         date2: string;
         datePrefix: string;
@@ -6250,6 +6277,7 @@ export declare const languages: {
         externalServices: string;
         extra: string;
         factor: string;
+        failed: string;
         failedOperation: string;
         family: string;
         favoriteTemplate: string;
@@ -7318,6 +7346,7 @@ export declare const languages: {
         receivedQuantity: string;
         recent: string;
         recentMovements: string;
+        recipients: string;
         record: string;
         recordAssistantUnavailable: string;
         recordAudio: string;
@@ -7467,6 +7496,16 @@ export declare const languages: {
         scannerThenManual: string;
         scheduleAnother: string;
         scheduleMessages: string;
+        scheduledMessages: string;
+        scheduleMessage: string;
+        addScheduledMessage: string;
+        whatAreScheduledMessages: string;
+        scheduledMessagesIntro: string;
+        howScheduledMessagesWork: string;
+        scheduledMessagesStep1: string;
+        scheduledMessagesStep2: string;
+        scheduledMessagesStep3: string;
+        scheduledMessagesOutro: string;
         scheduledAppointment: string;
         scheduledDeliveries: string;
         scope: string;
