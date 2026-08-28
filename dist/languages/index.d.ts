@@ -633,6 +633,7 @@ export declare const languages: {
         defaultCredit: string;
         defaultPDFTemplate: string;
         definedDiscounts: string;
+        delayed: string;
         delete: string;
         deleteCompany: string;
         deleteConfirm: string;
@@ -2078,6 +2079,7 @@ export declare const languages: {
         scheduledMessagesStep2: string;
         scheduledMessagesStep3: string;
         scheduledMessagesOutro: string;
+        scheduledDelayedHint: string;
         scheduledAppointment: string;
         scheduledDeliveries: string;
         scope: string;
@@ -3347,6 +3349,7 @@ export declare const languages: {
         defaultCredit: string;
         defaultPDFTemplate: string;
         definedDiscounts: string;
+        delayed: string;
         delete: string;
         deleteCompany: string;
         deleteConfirm: string;
@@ -4792,6 +4795,7 @@ export declare const languages: {
         scheduledMessagesStep2: string;
         scheduledMessagesStep3: string;
         scheduledMessagesOutro: string;
+        scheduledDelayedHint: string;
         scheduledAppointment: string;
         scheduledDeliveries: string;
         scope: string;
@@ -6061,6 +6065,7 @@ export declare const languages: {
         defaultCredit: string;
         defaultPDFTemplate: string;
         definedDiscounts: string;
+        delayed: string;
         delete: string;
         deleteCompany: string;
         deleteConfirm: string;
@@ -7506,6 +7511,7 @@ export declare const languages: {
         scheduledMessagesStep2: string;
         scheduledMessagesStep3: string;
         scheduledMessagesOutro: string;
+        scheduledDelayedHint: string;
         scheduledAppointment: string;
         scheduledDeliveries: string;
         scope: string;
