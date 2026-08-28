@@ -344,6 +344,7 @@ export declare const languages: {
         chat: string;
         chatAlreadyExists: string;
         chatNotStarted: string;
+        chatbot: string;
         chats: string;
         chooseDay: string;
         circle: string;
@@ -2063,6 +2064,7 @@ export declare const languages: {
         scannerEntry: string;
         scannerThenManual: string;
         scheduleAnother: string;
+        scheduleMessages: string;
         scheduledAppointment: string;
         scheduledDeliveries: string;
         scope: string;
@@ -3043,6 +3045,7 @@ export declare const languages: {
         chat: string;
         chatAlreadyExists: string;
         chatNotStarted: string;
+        chatbot: string;
         chats: string;
         chooseDay: string;
         circle: string;
@@ -4762,6 +4765,7 @@ export declare const languages: {
         scannerEntry: string;
         scannerThenManual: string;
         scheduleAnother: string;
+        scheduleMessages: string;
         scheduledAppointment: string;
         scheduledDeliveries: string;
         scope: string;
@@ -5742,6 +5746,7 @@ export declare const languages: {
         chat: string;
         chatAlreadyExists: string;
         chatNotStarted: string;
+        chatbot: string;
         chats: string;
         chooseDay: string;
         circle: string;
@@ -7461,6 +7466,7 @@ export declare const languages: {
         scannerEntry: string;
         scannerThenManual: string;
         scheduleAnother: string;
+        scheduleMessages: string;
         scheduledAppointment: string;
         scheduledDeliveries: string;
         scope: string;
