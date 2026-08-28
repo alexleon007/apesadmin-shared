@@ -193,6 +193,18 @@ export type ChannelConversationType = {
   /** 1 = el último mensaje lo mandamos nosotros. */
   lastMessageOwner: number;
   lastMessageAt: string | null;
+  /**
+   * Ultimo mensaje ENTRANTE. De aqui sale la ventana de 24 h.
+   *
+   * Va aparte de `lastMessageAt` porque son cosas distintas: contestar mueve
+   * el ultimo mensaje pero NO reabre la ventana. Solo la reabre que escriba
+   * el contacto. Usar `lastMessageAt` dejaria la bandeja diciendo que se
+   * puede escribir libre justo despues de cada respuesta nuestra, que es
+   * exactamente cuando no se puede.
+   *
+   * null = nunca escribio: nunca hubo ventana.
+   */
+  lastInboundAt: string | null;
   unread: number;
   archived: number;
   pinned: number;
@@ -287,6 +299,18 @@ export type NormalizedMessageType = {
   status: string;
   /** Adjunto pendiente de descargar. Ausente = mensaje sin media. */
   media?: NormalizedMediaRefType | null;
+  /**
+   * Id de la WhatsApp Business Account, tomado de `entry.id` del webhook.
+   *
+   * No se pide en el alta porque no hace falta para recibir ni para enviar:
+   * el webhook resuelve por phone_number_id y los envios cuelgan del numero.
+   * Solo las PLANTILLAS viven en el WABA, y ese id no se puede deducir del
+   * numero — Graph no expone el campo. Asi que se recoge de aqui, que es el
+   * unico sitio donde Meta lo regala.
+   *
+   * Ausente en los canales que no son WhatsApp.
+   */
+  accountBusinessId?: string;
 };
 
 /**
@@ -382,6 +406,70 @@ export type ChannelSendMediaParamsType = {
   mime: string;
 };
 
+/**
+ * Plantilla aprobada de WhatsApp.
+ *
+ * Fuera de la ventana de 24 h Cloud API rechaza cualquier mensaje libre, y lo
+ * unico que deja pasar es una plantilla que Meta haya aprobado antes. No se
+ * pueden crear al vuelo: se redactan en el Administrador de WhatsApp, pasan
+ * revision y solo entonces se pueden enviar.
+ *
+ * Es un concepto de WhatsApp y de nadie mas. Messenger e Instagram tienen su
+ * propia ventana de 24 h pero no plantillas: alli lo que existe son etiquetas
+ * de mensaje, que son otra cosa y no se piden a Graph asi.
+ */
+export type ChannelTemplateType = {
+  name: string;
+  /** Codigo de idioma de Meta: es_MX, en_US. Va junto al nombre al enviar. */
+  language: string;
+  /** MARKETING | UTILITY | AUTHENTICATION. */
+  category: string;
+  /**
+   * Texto del cuerpo tal cual lo aprobo Meta, con sus `{{1}}` sin sustituir.
+   * Es lo que se previsualiza y de donde salen los huecos a rellenar.
+   */
+  body: string;
+  /** Cuantos `{{n}}` tiene el cuerpo. 0 = se envia sin parametros. */
+  variables: number;
+  /** Texto de la cabecera si es de texto; '' si no tiene o es de archivo. */
+  header: string;
+  /** TEXT | IMAGE | VIDEO | DOCUMENT | LOCATION | '' cuando no hay cabecera. */
+  headerType: string;
+  /** Cuantos `{{n}}` tiene la cabecera de texto. */
+  headerVariables: number;
+  footer: string;
+  /** Rotulos de los botones, solo para previsualizar. */
+  buttons: string[];
+  /**
+   * Por que NO se puede enviar desde aqui, o '' si se puede.
+   *
+   * Una plantilla con cabecera de imagen exige que el envio adjunte esa
+   * imagen, y una con boton dinamico exige el valor del boton. Enviarlas sin
+   * eso no manda un mensaje incompleto: Graph rechaza el envio entero. Se
+   * listan igualmente, con el motivo a la vista, porque ocultarlas dejaria al
+   * usuario buscando en la bandeja una plantilla que si existe en Meta.
+   */
+  unsupported: string;
+};
+
+export type ChannelTemplateListParamsType = {
+  /** Id del WABA. Las plantillas cuelgan de ahi, no del numero. */
+  businessId: string;
+  accessToken: string;
+};
+
+export type ChannelSendTemplateParamsType = {
+  accountExternalId: string;
+  accessToken: string;
+  to: string;
+  name: string;
+  language: string;
+  /** Valores de los `{{n}}` del cuerpo, en orden. */
+  variables: string[];
+  /** Valores de los `{{n}}` de la cabecera de texto, en orden. */
+  headerVariables: string[];
+};
+
 export type ChannelProbeParamsType = {
   accountExternalId: string;
   accessToken: string;
@@ -451,6 +539,22 @@ export type ChannelAdapterType = {
   fetchProfile?(
     params: ChannelProfileParamsType,
   ): Promise<ChannelProfileResultType>;
+  /**
+   * Plantillas aprobadas de la cuenta.
+   *
+   * Solo WhatsApp. Es opcional y no un metodo vacio en los demas porque el
+   * frontend pregunta al adaptador si el canal tiene plantillas antes de
+   * ofrecer el boton: con una lista vacia no podria distinguir "este canal no
+   * tiene plantillas" de "las tiene pero ninguna aprobada", y son dos avisos
+   * distintos para el usuario.
+   */
+  listTemplates?(
+    params: ChannelTemplateListParamsType,
+  ): Promise<ChannelTemplateType[]>;
+  /** Envia una plantilla. Va con listTemplates: quien tiene una tiene la otra. */
+  sendTemplate?(
+    params: ChannelSendTemplateParamsType,
+  ): Promise<ChannelSendTextResultType>;
 };
 
 export type WappChatListType = {
