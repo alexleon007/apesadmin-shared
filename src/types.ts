@@ -871,6 +871,10 @@ export type AccountingEntryType = {
   totalcredit: number;
   /** 0 borrador | 1 contabilizada | -2 cancelada */
   status: number;
+  /** idaccent de la poliza que esta reversa; 0 si no es reversa. */
+  idreverses?: number;
+  /** true si esta poliza ya tiene una reversa contabilizada. */
+  reversed?: boolean;
   iduser?: number;
   canceliduser?: number;
   canceldate?: string | null;

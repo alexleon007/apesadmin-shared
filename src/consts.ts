@@ -562,6 +562,16 @@ export const GENERAL_ACCOUNTTYPE_CUSTOMER_ADVANCES = "customer_advances";
 export const GENERAL_ACCOUNTTYPE_SUPPLIER_ADVANCES = "supplier_advances";
 export const GENERAL_ACCOUNTTYPE_EXCHANGE_GAIN = "exchange_gain";
 export const GENERAL_ACCOUNTTYPE_EXCHANGE_LOSS = "exchange_loss";
+// Cuentas por defecto para la contabilizacion automatica (Fase 5) cuando el
+// producto / categoria no tiene una cuenta propia asignada.
+export const GENERAL_ACCOUNTTYPE_SALES_REVENUE = "sales_revenue";
+export const GENERAL_ACCOUNTTYPE_SALES_DISCOUNT = "sales_discount";
+export const GENERAL_ACCOUNTTYPE_SALES_RETURN = "sales_return";
+export const GENERAL_ACCOUNTTYPE_PURCHASE_EXPENSE = "purchase_expense";
+export const GENERAL_ACCOUNTTYPE_INVENTORY_ASSET = "inventory_asset";
+export const GENERAL_ACCOUNTTYPE_COST_OF_SALES = "cost_of_sales";
+export const GENERAL_ACCOUNTTYPE_BANK_DEFAULT = "bank_default";
+export const GENERAL_ACCOUNTTYPE_ROUNDING = "rounding";
 
 // vat_output/vat_input NO viven aquí: los impuestos ahora se configuran de
 // forma dinámica a partir del catálogo `taxes` (ver sección Impuestos).
@@ -586,6 +596,35 @@ export const GENERAL_ACCOUNTTYPE_OPTIONS: { value: string; label: string }[] =
     },
     { value: GENERAL_ACCOUNTTYPE_EXCHANGE_GAIN, label: "Ganancia cambiaria" },
     { value: GENERAL_ACCOUNTTYPE_EXCHANGE_LOSS, label: "Pérdida cambiaria" },
+    {
+      value: GENERAL_ACCOUNTTYPE_SALES_REVENUE,
+      label: "Ventas (cuenta por defecto)",
+    },
+    {
+      value: GENERAL_ACCOUNTTYPE_SALES_DISCOUNT,
+      label: "Descuentos sobre ventas (por defecto)",
+    },
+    {
+      value: GENERAL_ACCOUNTTYPE_SALES_RETURN,
+      label: "Devoluciones sobre ventas (por defecto)",
+    },
+    {
+      value: GENERAL_ACCOUNTTYPE_PURCHASE_EXPENSE,
+      label: "Gastos (cuenta por defecto)",
+    },
+    {
+      value: GENERAL_ACCOUNTTYPE_INVENTORY_ASSET,
+      label: "Inventario (cuenta por defecto)",
+    },
+    {
+      value: GENERAL_ACCOUNTTYPE_COST_OF_SALES,
+      label: "Costo de ventas (cuenta por defecto)",
+    },
+    {
+      value: GENERAL_ACCOUNTTYPE_BANK_DEFAULT,
+      label: "Banco / caja (cuenta por defecto)",
+    },
+    { value: GENERAL_ACCOUNTTYPE_ROUNDING, label: "Ajuste por redondeo" },
   ];
 
 export const GENERAL_ACCOUNTTYPE_LABELS: Record<string, string> =
