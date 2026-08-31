@@ -945,6 +945,58 @@ export type AccountLedgerMovementType = {
   balance: number;
 };
 
+// ---- Estados financieros ----
+export type StatementLineType = {
+  idacc: number;
+  code: string;
+  name: string;
+  amount: number;
+};
+
+export type StatementSectionType = {
+  key: string;
+  total: number;
+  accounts: StatementLineType[];
+};
+
+export type IncomeStatementResponseType = {
+  period: { dateFrom: string; dateTo: string };
+  sections: Record<string, StatementSectionType>;
+  subtotals: {
+    totalRevenue: number;
+    totalCostOfSales: number;
+    grossProfit: number;
+    totalOperatingExpense: number;
+    operatingProfit: number;
+    totalOtherIncome: number;
+    totalOtherExpense: number;
+    totalFinancialIncome: number;
+    totalFinancialExpense: number;
+    financialResult: number;
+    profitBeforeTax: number;
+    totalIncomeTax: number;
+    netProfit: number;
+  };
+  unclassified: StatementLineType[];
+  hasData: boolean;
+};
+
+export type BalanceSheetResponseType = {
+  dateAs: string;
+  fiscalYearStart: string;
+  sections: Record<string, StatementSectionType>;
+  netResult: number;
+  totals: {
+    totalAsset: number;
+    totalLiability: number;
+    totalEquity: number;
+    totalLiabilityEquity: number;
+    difference: number;
+  };
+  balanced: boolean;
+  hasData: boolean;
+};
+
 export type PartyAttendanceType = {
   idassist: number;
   assisttype: ClockType;
