@@ -259,6 +259,7 @@
   "cancelReason": "Cancel Reason",
   "cancelSubscription": "Cancel Subscription",
   "cancelVisit": "Cancel visit",
+  "cancellationAcknowledgment": "Cancellation acknowledgment",
   "cancelled": "Cancelled",
   "cancelledBy": "Cancelled by",
   "cancellingSat": "Cancelling with SAT...",

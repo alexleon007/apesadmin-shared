@@ -259,6 +259,7 @@
   "cancelReason": "取消原因",
   "cancelSubscription": "取消訂閱",
   "cancelVisit": "取消拜訪",
+  "cancellationAcknowledgment": "取消收據",
   "cancelled": "已取消",
   "cancelledBy": "取消者",
   "cancellingSat": "正在向 SAT 取消...",
