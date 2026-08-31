@@ -894,6 +894,57 @@ export type AccountingEntryDetailType = AccountingEntryType & {
   partidas: AccountingEntryDetType[];
 };
 
+// ---- Balanza de comprobacion ----
+export type TrialBalanceRowType = {
+  idacc: number;
+  code: string;
+  name: string;
+  type: string;
+  nature: string;
+  idparent: number;
+  level: number;
+  allowsmovements: number;
+  stmtgroup: string;
+  depth: number;
+  hasChildren: boolean;
+  hasActivity: boolean;
+  openingDebit: number;
+  openingCredit: number;
+  periodDebit: number;
+  periodCredit: number;
+  closingDebit: number;
+  closingCredit: number;
+  openingBalance: number;
+  closingBalance: number;
+};
+
+export type TrialBalanceResponseType = {
+  period: { dateFrom: string; dateTo: string };
+  rows: TrialBalanceRowType[];
+  totals: {
+    openingDebit: number;
+    openingCredit: number;
+    periodDebit: number;
+    periodCredit: number;
+    closingDebit: number;
+    closingCredit: number;
+  };
+  balanced: boolean;
+};
+
+export type AccountLedgerMovementType = {
+  idaccent: number;
+  folio: string;
+  type: string;
+  date: string;
+  concept: string;
+  doctype: string;
+  iddoc: number;
+  debit: number;
+  credit: number;
+  balance: number;
+};
+
 export type PartyAttendanceType = {
   idassist: number;
   assisttype: ClockType;

@@ -420,6 +420,7 @@ export const ACCOUNT_NATURE_LABELS: Record<string, string> =
 export const ACCOUNTINGMENU_IDMM = 7;
 export const ACCOUNTINGMENU_IDMM2 = 26;
 export const ACCOUNTINGENTRIESMENU_IDMM2 = 28;
+export const ACCOUNTINGTRIALBALANCEMENU_IDMM2 = 29;
 
 // Clasificacion de cuentas para el Estado de Resultados (accounting_accounts.stmtgroup_acc).
 // Independiente de la numeracion del catalogo: cada empresa marca sus cuentas.
