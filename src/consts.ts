@@ -419,6 +419,79 @@ export const ACCOUNT_NATURE_LABELS: Record<string, string> =
 
 export const ACCOUNTINGMENU_IDMM = 7;
 export const ACCOUNTINGMENU_IDMM2 = 26;
+export const ACCOUNTINGENTRIESMENU_IDMM2 = 28;
+
+// Clasificacion de cuentas para el Estado de Resultados (accounting_accounts.stmtgroup_acc).
+// Independiente de la numeracion del catalogo: cada empresa marca sus cuentas.
+export const STMT_GROUP_REVENUE = "revenue";
+export const STMT_GROUP_COST_OF_SALES = "cost_of_sales";
+export const STMT_GROUP_OPERATING_EXPENSE = "operating_expense";
+export const STMT_GROUP_OTHER_INCOME = "other_income";
+export const STMT_GROUP_OTHER_EXPENSE = "other_expense";
+export const STMT_GROUP_FINANCIAL_INCOME = "financial_income";
+export const STMT_GROUP_FINANCIAL_EXPENSE = "financial_expense";
+export const STMT_GROUP_INCOME_TAX = "income_tax";
+
+// Orden = orden de aparicion en el reporte.
+export const STMT_GROUP_OPTIONS: {
+  value: string;
+  label: string;
+  order: number;
+}[] = [
+  { value: "", label: "Sin clasificar", order: 0 },
+  { value: STMT_GROUP_REVENUE, label: "Ingresos", order: 1 },
+  { value: STMT_GROUP_COST_OF_SALES, label: "Costo de ventas", order: 2 },
+  { value: STMT_GROUP_OPERATING_EXPENSE, label: "Gastos de operación", order: 3 },
+  { value: STMT_GROUP_OTHER_INCOME, label: "Otros ingresos", order: 4 },
+  { value: STMT_GROUP_OTHER_EXPENSE, label: "Otros gastos", order: 5 },
+  {
+    value: STMT_GROUP_FINANCIAL_INCOME,
+    label: "Productos financieros",
+    order: 6,
+  },
+  {
+    value: STMT_GROUP_FINANCIAL_EXPENSE,
+    label: "Gastos financieros",
+    order: 7,
+  },
+  { value: STMT_GROUP_INCOME_TAX, label: "Impuestos a la utilidad", order: 8 },
+];
+
+export const STMT_GROUP_LABELS: Record<string, string> =
+  STMT_GROUP_OPTIONS.reduce(
+    (acc, opt) => {
+      acc[opt.value] = opt.label;
+      return acc;
+    },
+    {} as Record<string, string>,
+  );
+
+// ---- Polizas contables ----
+export const ACCOUNTING_ENTRY_TYPE_OPTIONS: { value: string; label: string }[] =
+  [
+    { value: "diario", label: "Diario" },
+    { value: "ingresos", label: "Ingresos" },
+    { value: "egresos", label: "Egresos" },
+  ];
+
+export const ACCOUNTING_ENTRY_TYPE_LABELS: Record<string, string> =
+  ACCOUNTING_ENTRY_TYPE_OPTIONS.reduce(
+    (acc, opt) => {
+      acc[opt.value] = opt.label;
+      return acc;
+    },
+    {} as Record<string, string>,
+  );
+
+export const ACCOUNTING_ENTRY_STATUS_DRAFT = 0;
+export const ACCOUNTING_ENTRY_STATUS_POSTED = 1;
+export const ACCOUNTING_ENTRY_STATUS_CANCELLED = -2;
+
+export const ACCOUNTING_ENTRY_STATUS_LABELS: Record<number, string> = {
+  [ACCOUNTING_ENTRY_STATUS_DRAFT]: "Borrador",
+  [ACCOUNTING_ENTRY_STATUS_POSTED]: "Contabilizada",
+  [ACCOUNTING_ENTRY_STATUS_CANCELLED]: "Cancelada",
+};
 
 export const ACCOUNTPROFILE_TYPE_PRODUCT = "product";
 export const ACCOUNTPROFILE_TYPE_EXPENSE = "expense";

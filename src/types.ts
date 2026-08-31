@@ -807,6 +807,8 @@ export type AccountingAccountType = {
   level: number;
   allowsmovements: number;
   satgroupcode: string;
+  /** Clasificacion para el Estado de Resultados. Ver STMT_GROUP_OPTIONS. */
+  stmtgroup: string;
   currency: string;
   status: number;
   createdat?: string;
@@ -845,6 +847,51 @@ export type AccountingTaxCatalogType = {
   name: string;
   clas: string;
   order: number;
+};
+
+// ---- Polizas contables ----
+export type AccountingEntryType = {
+  idaccent: number;
+  idcmp: number;
+  /** diario | ingresos | egresos */
+  type: string;
+  serie: string;
+  /** Folio consecutivo; 0 mientras es borrador. */
+  number: number;
+  date: string;
+  concept: string | null;
+  /** '' (manual) | orders | purchaseorders | payments | inventory_movs */
+  doctype: string;
+  iddoc: number;
+  /** manual | auto */
+  source: string;
+  currency: string;
+  exchangerate: number;
+  totaldebit: number;
+  totalcredit: number;
+  /** 0 borrador | 1 contabilizada | -2 cancelada */
+  status: number;
+  iduser?: number;
+  canceliduser?: number;
+  canceldate?: string | null;
+  cancelobs?: string | null;
+  createdat?: string;
+  updatedat?: string;
+};
+
+export type AccountingEntryDetType = {
+  idaccentd?: number;
+  idaccount: number;
+  code?: string;
+  name?: string;
+  debit: number;
+  credit: number;
+  concept: string;
+  order: number;
+};
+
+export type AccountingEntryDetailType = AccountingEntryType & {
+  partidas: AccountingEntryDetType[];
 };
 
 export type PartyAttendanceType = {
