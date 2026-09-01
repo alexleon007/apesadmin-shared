@@ -43,6 +43,8 @@
   "period": "Period",
   "thisMonth": "This month",
   "thisYear": "This year",
+  "accountingReports": "Accounting Reports",
+  "accountingClosing": "Accounting Close",
   "trialBalance": "Trial balance",
   "trialBalanceUnbalanced": "The trial balance does not balance: review the period's entries",
   "accountMovements": "Account movements",

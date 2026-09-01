@@ -418,16 +418,10 @@ export const ACCOUNT_NATURE_LABELS: Record<string, string> =
   );
 
 export const ACCOUNTINGMENU_IDMM = 7;
-export const ACCOUNTINGMENU_IDMM2 = 26;
-export const ACCOUNTINGENTRIESMENU_IDMM2 = 28;
-export const ACCOUNTINGTRIALBALANCEMENU_IDMM2 = 29;
-export const ACCOUNTINGINCOMESTATEMENTMENU_IDMM2 = 30;
-export const ACCOUNTINGBALANCESHEETMENU_IDMM2 = 31;
-export const ACCOUNTINGOPENINGMENU_IDMM2 = 32;
-export const ACCOUNTINGPERIODMENU_IDMM2 = 33;
-export const ACCOUNTINGBOOKSMENU_IDMM2 = 34;
-export const ACCOUNTINGRECURRINGMENU_IDMM2 = 35;
-export const ACCOUNTINGFXMENU_IDMM2 = 36;
+export const ACCOUNTINGMENU_IDMM2 = 26; // Catalogo de Cuentas (+ perfiles y config)
+export const ACCOUNTINGENTRIESMENU_IDMM2 = 28; // Polizas (+ polizas recurrentes)
+export const ACCOUNTINGREPORTSMENU_IDMM2 = 29; // Reportes: balanza, ER, BG, libros
+export const ACCOUNTINGCLOSINGMENU_IDMM2 = 33; // Cierre: saldos iniciales, cierre, revaluacion
 
 // Clasificacion de cuentas para el Estado de Resultados (accounting_accounts.stmtgroup_acc).
 // Independiente de la numeracion del catalogo: cada empresa marca sus cuentas.

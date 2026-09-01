@@ -43,6 +43,8 @@
   "period": "期間",
   "thisMonth": "本月",
   "thisYear": "今年",
+  "accountingReports": "會計報表",
+  "accountingClosing": "會計結帳",
   "trialBalance": "試算表",
   "trialBalanceUnbalanced": "試算表不平衡：請檢查該期間的分錄",
   "accountMovements": "科目異動明細",

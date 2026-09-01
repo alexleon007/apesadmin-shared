@@ -43,6 +43,8 @@
   "period": "Periodo",
   "thisMonth": "Este mes",
   "thisYear": "Este año",
+  "accountingReports": "Reportes Contables",
+  "accountingClosing": "Cierre Contable",
   "trialBalance": "Balanza de comprobación",
   "trialBalanceUnbalanced": "La balanza no cuadra: revisa las pólizas del periodo",
   "accountMovements": "Movimientos de la cuenta",
