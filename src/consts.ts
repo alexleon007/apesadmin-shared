@@ -423,6 +423,11 @@ export const ACCOUNTINGENTRIESMENU_IDMM2 = 28;
 export const ACCOUNTINGTRIALBALANCEMENU_IDMM2 = 29;
 export const ACCOUNTINGINCOMESTATEMENTMENU_IDMM2 = 30;
 export const ACCOUNTINGBALANCESHEETMENU_IDMM2 = 31;
+export const ACCOUNTINGOPENINGMENU_IDMM2 = 32;
+export const ACCOUNTINGPERIODMENU_IDMM2 = 33;
+export const ACCOUNTINGBOOKSMENU_IDMM2 = 34;
+export const ACCOUNTINGRECURRINGMENU_IDMM2 = 35;
+export const ACCOUNTINGFXMENU_IDMM2 = 36;
 
 // Clasificacion de cuentas para el Estado de Resultados (accounting_accounts.stmtgroup_acc).
 // Independiente de la numeracion del catalogo: cada empresa marca sus cuentas.
@@ -572,6 +577,8 @@ export const GENERAL_ACCOUNTTYPE_INVENTORY_ASSET = "inventory_asset";
 export const GENERAL_ACCOUNTTYPE_COST_OF_SALES = "cost_of_sales";
 export const GENERAL_ACCOUNTTYPE_BANK_DEFAULT = "bank_default";
 export const GENERAL_ACCOUNTTYPE_ROUNDING = "rounding";
+// Resultados de ejercicios anteriores: destino del resultado en el cierre anual.
+export const GENERAL_ACCOUNTTYPE_RETAINED_EARNINGS = "retained_earnings";
 
 // vat_output/vat_input NO viven aquí: los impuestos ahora se configuran de
 // forma dinámica a partir del catálogo `taxes` (ver sección Impuestos).
@@ -625,6 +632,10 @@ export const GENERAL_ACCOUNTTYPE_OPTIONS: { value: string; label: string }[] =
       label: "Banco / caja (cuenta por defecto)",
     },
     { value: GENERAL_ACCOUNTTYPE_ROUNDING, label: "Ajuste por redondeo" },
+    {
+      value: GENERAL_ACCOUNTTYPE_RETAINED_EARNINGS,
+      label: "Resultado de ejercicios anteriores",
+    },
   ];
 
 export const GENERAL_ACCOUNTTYPE_LABELS: Record<string, string> =

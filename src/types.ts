@@ -891,6 +891,9 @@ export type AccountingEntryDetType = {
   debit: number;
   credit: number;
   concept: string;
+  idthird?: number;
+  thirdtype?: string;
+  thirdname?: string;
   order: number;
 };
 
@@ -947,6 +950,57 @@ export type AccountLedgerMovementType = {
   debit: number;
   credit: number;
   balance: number;
+};
+
+// ---- Libros contables ----
+export type JournalEntryType = {
+  idaccent: number;
+  folio: string;
+  type: string;
+  date: string;
+  concept: string;
+  totaldebit: number;
+  totalcredit: number;
+  lines: {
+    code: string;
+    name: string;
+    concept: string;
+    debit: number;
+    credit: number;
+  }[];
+};
+
+export type LedgerAccountType = {
+  idacc: number;
+  code: string;
+  name: string;
+  nature: string;
+  openingBalance: number;
+  closingBalance: number;
+  totalDebit: number;
+  totalCredit: number;
+  movements: AccountLedgerMovementType[];
+};
+
+// ---- Polizas recurrentes ----
+export type AccountingRecurringLine = {
+  idaccount: number;
+  debit: number;
+  credit: number;
+  concept: string;
+};
+
+export type AccountingRecurringType = {
+  idaccrec: number;
+  idcmp: number;
+  name: string;
+  type: string;
+  concept: string | null;
+  dayofmonth: number;
+  nextrun: string;
+  lastrun: string | null;
+  lines: AccountingRecurringLine[];
+  status: number;
 };
 
 // ---- Estados financieros ----
@@ -1221,6 +1275,9 @@ export type CompanyType = {
   cmpiconourl: string;
   cmpsatkeyurl: string;
   cmpsatcerurl: string;
+  cmpfielcerurl?: string;
+  cmpfielkeyurl?: string;
+  cmphasfielpass?: number;
   cmpdefaultcurrency: string;
 };
 
