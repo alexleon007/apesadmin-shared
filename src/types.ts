@@ -173,6 +173,15 @@ export type ChannelAccountType = {
   color: string;
   /** 1 = ya tiene token guardado. El token nunca viaja al frontend. */
   hasToken: number;
+  /**
+   * Usuarios con acceso a esta cuenta.
+   *
+   * Vacio NO significa "nadie": significa que la cuenta no esta restringida y
+   * la ve toda la plataforma. Es la misma regla que users_mails en el correo,
+   * y lo que evita que dar de alta un numero exija acordarse de asignarselo a
+   * uno mismo antes de poder abrirlo.
+   */
+  channelUsers: number[];
 };
 
 export type ChannelConversationType = {
