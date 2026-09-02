@@ -344,7 +344,62 @@ export const ACCOUNT_NATURE_LABELS = ACCOUNT_NATURE_OPTIONS.reduce((acc, opt) =>
     return acc;
 }, {});
 export const ACCOUNTINGMENU_IDMM = 7;
-export const ACCOUNTINGMENU_IDMM2 = 26;
+export const ACCOUNTINGMENU_IDMM2 = 26; // Catalogo de Cuentas (+ perfiles y config)
+export const ACCOUNTINGENTRIESMENU_IDMM2 = 28; // Polizas (+ polizas recurrentes)
+export const ACCOUNTINGREPORTSMENU_IDMM2 = 29; // Reportes: balanza, ER, BG, libros
+export const ACCOUNTINGCLOSINGMENU_IDMM2 = 33; // Cierre: saldos iniciales, cierre, revaluacion
+// Clasificacion de cuentas para el Estado de Resultados (accounting_accounts.stmtgroup_acc).
+// Independiente de la numeracion del catalogo: cada empresa marca sus cuentas.
+export const STMT_GROUP_REVENUE = "revenue";
+export const STMT_GROUP_COST_OF_SALES = "cost_of_sales";
+export const STMT_GROUP_OPERATING_EXPENSE = "operating_expense";
+export const STMT_GROUP_OTHER_INCOME = "other_income";
+export const STMT_GROUP_OTHER_EXPENSE = "other_expense";
+export const STMT_GROUP_FINANCIAL_INCOME = "financial_income";
+export const STMT_GROUP_FINANCIAL_EXPENSE = "financial_expense";
+export const STMT_GROUP_INCOME_TAX = "income_tax";
+// Orden = orden de aparicion en el reporte.
+export const STMT_GROUP_OPTIONS = [
+    { value: "", label: "Sin clasificar", order: 0 },
+    { value: STMT_GROUP_REVENUE, label: "Ingresos", order: 1 },
+    { value: STMT_GROUP_COST_OF_SALES, label: "Costo de ventas", order: 2 },
+    { value: STMT_GROUP_OPERATING_EXPENSE, label: "Gastos de operación", order: 3 },
+    { value: STMT_GROUP_OTHER_INCOME, label: "Otros ingresos", order: 4 },
+    { value: STMT_GROUP_OTHER_EXPENSE, label: "Otros gastos", order: 5 },
+    {
+        value: STMT_GROUP_FINANCIAL_INCOME,
+        label: "Productos financieros",
+        order: 6,
+    },
+    {
+        value: STMT_GROUP_FINANCIAL_EXPENSE,
+        label: "Gastos financieros",
+        order: 7,
+    },
+    { value: STMT_GROUP_INCOME_TAX, label: "Impuestos a la utilidad", order: 8 },
+];
+export const STMT_GROUP_LABELS = STMT_GROUP_OPTIONS.reduce((acc, opt) => {
+    acc[opt.value] = opt.label;
+    return acc;
+}, {});
+// ---- Polizas contables ----
+export const ACCOUNTING_ENTRY_TYPE_OPTIONS = [
+    { value: "diario", label: "Diario" },
+    { value: "ingresos", label: "Ingresos" },
+    { value: "egresos", label: "Egresos" },
+];
+export const ACCOUNTING_ENTRY_TYPE_LABELS = ACCOUNTING_ENTRY_TYPE_OPTIONS.reduce((acc, opt) => {
+    acc[opt.value] = opt.label;
+    return acc;
+}, {});
+export const ACCOUNTING_ENTRY_STATUS_DRAFT = 0;
+export const ACCOUNTING_ENTRY_STATUS_POSTED = 1;
+export const ACCOUNTING_ENTRY_STATUS_CANCELLED = -2;
+export const ACCOUNTING_ENTRY_STATUS_LABELS = {
+    [ACCOUNTING_ENTRY_STATUS_DRAFT]: "Borrador",
+    [ACCOUNTING_ENTRY_STATUS_POSTED]: "Contabilizada",
+    [ACCOUNTING_ENTRY_STATUS_CANCELLED]: "Cancelada",
+};
 export const ACCOUNTPROFILE_TYPE_PRODUCT = "product";
 export const ACCOUNTPROFILE_TYPE_EXPENSE = "expense";
 export const ACCOUNTPROFILE_TYPE_OPTIONS = [
@@ -399,6 +454,18 @@ export const GENERAL_ACCOUNTTYPE_CUSTOMER_ADVANCES = "customer_advances";
 export const GENERAL_ACCOUNTTYPE_SUPPLIER_ADVANCES = "supplier_advances";
 export const GENERAL_ACCOUNTTYPE_EXCHANGE_GAIN = "exchange_gain";
 export const GENERAL_ACCOUNTTYPE_EXCHANGE_LOSS = "exchange_loss";
+// Cuentas por defecto para la contabilizacion automatica (Fase 5) cuando el
+// producto / categoria no tiene una cuenta propia asignada.
+export const GENERAL_ACCOUNTTYPE_SALES_REVENUE = "sales_revenue";
+export const GENERAL_ACCOUNTTYPE_SALES_DISCOUNT = "sales_discount";
+export const GENERAL_ACCOUNTTYPE_SALES_RETURN = "sales_return";
+export const GENERAL_ACCOUNTTYPE_PURCHASE_EXPENSE = "purchase_expense";
+export const GENERAL_ACCOUNTTYPE_INVENTORY_ASSET = "inventory_asset";
+export const GENERAL_ACCOUNTTYPE_COST_OF_SALES = "cost_of_sales";
+export const GENERAL_ACCOUNTTYPE_BANK_DEFAULT = "bank_default";
+export const GENERAL_ACCOUNTTYPE_ROUNDING = "rounding";
+// Resultados de ejercicios anteriores: destino del resultado en el cierre anual.
+export const GENERAL_ACCOUNTTYPE_RETAINED_EARNINGS = "retained_earnings";
 // vat_output/vat_input NO viven aquí: los impuestos ahora se configuran de
 // forma dinámica a partir del catálogo `taxes` (ver sección Impuestos).
 export const GENERAL_ACCOUNTTYPE_OPTIONS = [
@@ -420,6 +487,39 @@ export const GENERAL_ACCOUNTTYPE_OPTIONS = [
     },
     { value: GENERAL_ACCOUNTTYPE_EXCHANGE_GAIN, label: "Ganancia cambiaria" },
     { value: GENERAL_ACCOUNTTYPE_EXCHANGE_LOSS, label: "Pérdida cambiaria" },
+    {
+        value: GENERAL_ACCOUNTTYPE_SALES_REVENUE,
+        label: "Ventas (cuenta por defecto)",
+    },
+    {
+        value: GENERAL_ACCOUNTTYPE_SALES_DISCOUNT,
+        label: "Descuentos sobre ventas (por defecto)",
+    },
+    {
+        value: GENERAL_ACCOUNTTYPE_SALES_RETURN,
+        label: "Devoluciones sobre ventas (por defecto)",
+    },
+    {
+        value: GENERAL_ACCOUNTTYPE_PURCHASE_EXPENSE,
+        label: "Gastos (cuenta por defecto)",
+    },
+    {
+        value: GENERAL_ACCOUNTTYPE_INVENTORY_ASSET,
+        label: "Inventario (cuenta por defecto)",
+    },
+    {
+        value: GENERAL_ACCOUNTTYPE_COST_OF_SALES,
+        label: "Costo de ventas (cuenta por defecto)",
+    },
+    {
+        value: GENERAL_ACCOUNTTYPE_BANK_DEFAULT,
+        label: "Banco / caja (cuenta por defecto)",
+    },
+    { value: GENERAL_ACCOUNTTYPE_ROUNDING, label: "Ajuste por redondeo" },
+    {
+        value: GENERAL_ACCOUNTTYPE_RETAINED_EARNINGS,
+        label: "Resultado de ejercicios anteriores",
+    },
 ];
 export const GENERAL_ACCOUNTTYPE_LABELS = GENERAL_ACCOUNTTYPE_OPTIONS.reduce((acc, opt) => {
     acc[opt.value] = opt.label;

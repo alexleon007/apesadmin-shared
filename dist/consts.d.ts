@@ -161,6 +161,32 @@ export declare const ACCOUNT_NATURE_OPTIONS: {
 export declare const ACCOUNT_NATURE_LABELS: Record<string, string>;
 export declare const ACCOUNTINGMENU_IDMM = 7;
 export declare const ACCOUNTINGMENU_IDMM2 = 26;
+export declare const ACCOUNTINGENTRIESMENU_IDMM2 = 28;
+export declare const ACCOUNTINGREPORTSMENU_IDMM2 = 29;
+export declare const ACCOUNTINGCLOSINGMENU_IDMM2 = 33;
+export declare const STMT_GROUP_REVENUE = "revenue";
+export declare const STMT_GROUP_COST_OF_SALES = "cost_of_sales";
+export declare const STMT_GROUP_OPERATING_EXPENSE = "operating_expense";
+export declare const STMT_GROUP_OTHER_INCOME = "other_income";
+export declare const STMT_GROUP_OTHER_EXPENSE = "other_expense";
+export declare const STMT_GROUP_FINANCIAL_INCOME = "financial_income";
+export declare const STMT_GROUP_FINANCIAL_EXPENSE = "financial_expense";
+export declare const STMT_GROUP_INCOME_TAX = "income_tax";
+export declare const STMT_GROUP_OPTIONS: {
+    value: string;
+    label: string;
+    order: number;
+}[];
+export declare const STMT_GROUP_LABELS: Record<string, string>;
+export declare const ACCOUNTING_ENTRY_TYPE_OPTIONS: {
+    value: string;
+    label: string;
+}[];
+export declare const ACCOUNTING_ENTRY_TYPE_LABELS: Record<string, string>;
+export declare const ACCOUNTING_ENTRY_STATUS_DRAFT = 0;
+export declare const ACCOUNTING_ENTRY_STATUS_POSTED = 1;
+export declare const ACCOUNTING_ENTRY_STATUS_CANCELLED = -2;
+export declare const ACCOUNTING_ENTRY_STATUS_LABELS: Record<number, string>;
 export declare const ACCOUNTPROFILE_TYPE_PRODUCT = "product";
 export declare const ACCOUNTPROFILE_TYPE_EXPENSE = "expense";
 export declare const ACCOUNTPROFILE_TYPE_OPTIONS: {
@@ -185,6 +211,15 @@ export declare const GENERAL_ACCOUNTTYPE_CUSTOMER_ADVANCES = "customer_advances"
 export declare const GENERAL_ACCOUNTTYPE_SUPPLIER_ADVANCES = "supplier_advances";
 export declare const GENERAL_ACCOUNTTYPE_EXCHANGE_GAIN = "exchange_gain";
 export declare const GENERAL_ACCOUNTTYPE_EXCHANGE_LOSS = "exchange_loss";
+export declare const GENERAL_ACCOUNTTYPE_SALES_REVENUE = "sales_revenue";
+export declare const GENERAL_ACCOUNTTYPE_SALES_DISCOUNT = "sales_discount";
+export declare const GENERAL_ACCOUNTTYPE_SALES_RETURN = "sales_return";
+export declare const GENERAL_ACCOUNTTYPE_PURCHASE_EXPENSE = "purchase_expense";
+export declare const GENERAL_ACCOUNTTYPE_INVENTORY_ASSET = "inventory_asset";
+export declare const GENERAL_ACCOUNTTYPE_COST_OF_SALES = "cost_of_sales";
+export declare const GENERAL_ACCOUNTTYPE_BANK_DEFAULT = "bank_default";
+export declare const GENERAL_ACCOUNTTYPE_ROUNDING = "rounding";
+export declare const GENERAL_ACCOUNTTYPE_RETAINED_EARNINGS = "retained_earnings";
 export declare const GENERAL_ACCOUNTTYPE_OPTIONS: {
     value: string;
     label: string;

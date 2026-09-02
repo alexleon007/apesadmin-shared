@@ -727,6 +727,8 @@ export type AccountingAccountType = {
     level: number;
     allowsmovements: number;
     satgroupcode: string;
+    /** Clasificacion para el Estado de Resultados. Ver STMT_GROUP_OPTIONS. */
+    stmtgroup: string;
     currency: string;
     status: number;
     createdat?: string;
@@ -761,6 +763,199 @@ export type AccountingTaxCatalogType = {
     name: string;
     clas: string;
     order: number;
+};
+export type AccountingEntryType = {
+    idaccent: number;
+    idcmp: number;
+    /** diario | ingresos | egresos */
+    type: string;
+    serie: string;
+    /** Folio consecutivo; 0 mientras es borrador. */
+    number: number;
+    date: string;
+    concept: string | null;
+    /** '' (manual) | orders | purchaseorders | payments | inventory_movs */
+    doctype: string;
+    iddoc: number;
+    /** manual | auto */
+    source: string;
+    currency: string;
+    exchangerate: number;
+    totaldebit: number;
+    totalcredit: number;
+    /** 0 borrador | 1 contabilizada | -2 cancelada */
+    status: number;
+    /** idaccent de la poliza que esta reversa; 0 si no es reversa. */
+    idreverses?: number;
+    /** true si esta poliza ya tiene una reversa contabilizada. */
+    reversed?: boolean;
+    iduser?: number;
+    canceliduser?: number;
+    canceldate?: string | null;
+    cancelobs?: string | null;
+    createdat?: string;
+    updatedat?: string;
+};
+export type AccountingEntryDetType = {
+    idaccentd?: number;
+    idaccount: number;
+    code?: string;
+    name?: string;
+    debit: number;
+    credit: number;
+    concept: string;
+    idthird?: number;
+    thirdtype?: string;
+    thirdname?: string;
+    order: number;
+};
+export type AccountingEntryDetailType = AccountingEntryType & {
+    partidas: AccountingEntryDetType[];
+};
+export type TrialBalanceRowType = {
+    idacc: number;
+    code: string;
+    name: string;
+    type: string;
+    nature: string;
+    idparent: number;
+    level: number;
+    allowsmovements: number;
+    stmtgroup: string;
+    depth: number;
+    hasChildren: boolean;
+    hasActivity: boolean;
+    openingDebit: number;
+    openingCredit: number;
+    periodDebit: number;
+    periodCredit: number;
+    closingDebit: number;
+    closingCredit: number;
+    openingBalance: number;
+    closingBalance: number;
+};
+export type TrialBalanceResponseType = {
+    period: {
+        dateFrom: string;
+        dateTo: string;
+    };
+    rows: TrialBalanceRowType[];
+    totals: {
+        openingDebit: number;
+        openingCredit: number;
+        periodDebit: number;
+        periodCredit: number;
+        closingDebit: number;
+        closingCredit: number;
+    };
+    balanced: boolean;
+};
+export type AccountLedgerMovementType = {
+    idaccent: number;
+    folio: string;
+    type: string;
+    date: string;
+    concept: string;
+    doctype: string;
+    iddoc: number;
+    debit: number;
+    credit: number;
+    balance: number;
+};
+export type JournalEntryType = {
+    idaccent: number;
+    folio: string;
+    type: string;
+    date: string;
+    concept: string;
+    totaldebit: number;
+    totalcredit: number;
+    lines: {
+        code: string;
+        name: string;
+        concept: string;
+        debit: number;
+        credit: number;
+    }[];
+};
+export type LedgerAccountType = {
+    idacc: number;
+    code: string;
+    name: string;
+    nature: string;
+    openingBalance: number;
+    closingBalance: number;
+    totalDebit: number;
+    totalCredit: number;
+    movements: AccountLedgerMovementType[];
+};
+export type AccountingRecurringLine = {
+    idaccount: number;
+    debit: number;
+    credit: number;
+    concept: string;
+};
+export type AccountingRecurringType = {
+    idaccrec: number;
+    idcmp: number;
+    name: string;
+    type: string;
+    concept: string | null;
+    dayofmonth: number;
+    nextrun: string;
+    lastrun: string | null;
+    lines: AccountingRecurringLine[];
+    status: number;
+};
+export type StatementLineType = {
+    idacc: number;
+    code: string;
+    name: string;
+    amount: number;
+};
+export type StatementSectionType = {
+    key: string;
+    total: number;
+    accounts: StatementLineType[];
+};
+export type IncomeStatementResponseType = {
+    period: {
+        dateFrom: string;
+        dateTo: string;
+    };
+    sections: Record<string, StatementSectionType>;
+    subtotals: {
+        totalRevenue: number;
+        totalCostOfSales: number;
+        grossProfit: number;
+        totalOperatingExpense: number;
+        operatingProfit: number;
+        totalOtherIncome: number;
+        totalOtherExpense: number;
+        totalFinancialIncome: number;
+        totalFinancialExpense: number;
+        financialResult: number;
+        profitBeforeTax: number;
+        totalIncomeTax: number;
+        netProfit: number;
+    };
+    unclassified: StatementLineType[];
+    hasData: boolean;
+};
+export type BalanceSheetResponseType = {
+    dateAs: string;
+    fiscalYearStart: string;
+    sections: Record<string, StatementSectionType>;
+    netResult: number;
+    totals: {
+        totalAsset: number;
+        totalLiability: number;
+        totalEquity: number;
+        totalLiabilityEquity: number;
+        difference: number;
+    };
+    balanced: boolean;
+    hasData: boolean;
 };
 export type PartyAttendanceType = {
     idassist: number;
@@ -962,6 +1157,9 @@ export type CompanyType = {
     cmpiconourl: string;
     cmpsatkeyurl: string;
     cmpsatcerurl: string;
+    cmpfielcerurl?: string;
+    cmpfielkeyurl?: string;
+    cmphasfielpass?: number;
     cmpdefaultcurrency: string;
 };
 export type ConceptFieldsType = {
