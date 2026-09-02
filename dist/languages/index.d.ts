@@ -1176,6 +1176,7 @@ export declare const languages: {
         mlOrderNotFound: string;
         nameAndPhoneRequired: string;
         newConversation: string;
+        newConversationHint: string;
         noCashClosingTemplateConfigured: string;
         noChannelAccounts: string;
         noConversations: string;
@@ -4005,6 +4006,7 @@ export declare const languages: {
         mlOrderNotFound: string;
         nameAndPhoneRequired: string;
         newConversation: string;
+        newConversationHint: string;
         noCashClosingTemplateConfigured: string;
         noChannelAccounts: string;
         noConversations: string;
@@ -6834,6 +6836,7 @@ export declare const languages: {
         mlOrderNotFound: string;
         nameAndPhoneRequired: string;
         newConversation: string;
+        newConversationHint: string;
         noCashClosingTemplateConfigured: string;
         noChannelAccounts: string;
         noConversations: string;

@@ -331,6 +331,20 @@ export type ChannelSendTextParamsType = {
 export type ChannelSendTextResultType = {
     externalId: string;
     error?: string;
+    /**
+     * Id del contacto tal y como lo tiene Meta, cuando la respuesta del envio
+     * lo trae.
+     *
+     * No siempre coincide con lo que se marco. WhatsApp normaliza el numero
+     * —Mexico es el caso conocido: se escribe `521...` y Meta responde y manda
+     * los webhooks con `52...`— y la conversacion se empareja por ese id. Sin
+     * esto, escribir primero a un numero abria un chat con la forma marcada y
+     * la respuesta del contacto abria OTRO con la forma de Meta.
+     *
+     * Vacio o ausente significa que el canal no lo informa: quien llama se
+     * queda con el destino que uso.
+     */
+    contactExternalId?: string;
 };
 /**
  * Envio de un adjunto.

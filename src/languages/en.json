@@ -1172,6 +1172,7 @@
   "mlOrderNotFound": "Order {{id}} does not exist in MercadoLibre",
   "nameAndPhoneRequired": "Name and phone are required",
   "newConversation": "New conversation",
+  "newConversationHint": "WhatsApp only. Type the number with its country code, no symbols. The first conversation goes out as an approved template — the only thing Meta accepts before the contact replies.",
   "noCashClosingTemplateConfigured": "No cash closing template is configured",
   "noChannelAccounts": "No channel accounts configured",
   "noConversations": "No conversations",

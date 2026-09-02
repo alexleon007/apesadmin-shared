@@ -1172,6 +1172,7 @@
     "mlOrderNotFound": "La orden {{id}} no existe en MercadoLibre",
     "nameAndPhoneRequired": "Nombre y teléfono son requeridos",
     "newConversation": "Nueva conversación",
+    "newConversationHint": "Sólo WhatsApp. Escribe el número con lada, sin signos. La primera conversación sale con una plantilla aprobada: es lo único que Meta acepta antes de que el contacto conteste.",
     "noCashClosingTemplateConfigured": "No hay plantilla de corte de caja configurada",
     "noChannelAccounts": "No hay cuentas de canal configuradas",
     "noConversations": "Sin conversaciones",

@@ -1172,6 +1172,7 @@
   "mlOrderNotFound": "MercadoLibre 中沒有訂單 {{id}}",
   "nameAndPhoneRequired": "姓名與電話為必填",
   "newConversation": "新對話",
+  "newConversationHint": "僅限 WhatsApp。請輸入含國碼的號碼，不要加符號。第一則對話會以已核准的範本送出：在對方回覆之前，Meta 只接受這種方式。",
   "noCashClosingTemplateConfigured": "尚未設定結帳範本",
   "noChannelAccounts": "尚未設定頻道帳號",
   "noConversations": "沒有對話",
