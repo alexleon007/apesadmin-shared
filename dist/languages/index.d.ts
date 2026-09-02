@@ -3,6 +3,16 @@ import en from "./en.json";
 import zhTW from "./zh-TW.json";
 export declare const languages: {
     readonly es: {
+        labelsHint: string;
+        foldersHint: string;
+        manageLabels: string;
+        noLabelsYet: string;
+        allFolders: string;
+        unclassified: string;
+        labels: string;
+        folders: string;
+        folder: string;
+        classify: string;
         aboveMax: string;
         absent: string;
         accessGranted: string;
@@ -2833,6 +2843,16 @@ export declare const languages: {
         noThird: string;
     };
     readonly en: {
+        labelsHint: string;
+        foldersHint: string;
+        manageLabels: string;
+        noLabelsYet: string;
+        allFolders: string;
+        unclassified: string;
+        labels: string;
+        folders: string;
+        folder: string;
+        classify: string;
         aboveMax: string;
         absent: string;
         accessGranted: string;
@@ -5663,6 +5683,16 @@ export declare const languages: {
         noThird: string;
     };
     readonly "zh-TW": {
+        labelsHint: string;
+        foldersHint: string;
+        manageLabels: string;
+        noLabelsYet: string;
+        allFolders: string;
+        unclassified: string;
+        labels: string;
+        folders: string;
+        folder: string;
+        classify: string;
         aboveMax: string;
         absent: string;
         accessGranted: string;

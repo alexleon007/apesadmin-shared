@@ -184,6 +184,33 @@ export type ChannelAccountType = {
   channelUsers: number[];
 };
 
+/**
+ * Bandeja: donde vive una conversacion. Una sola por conversacion.
+ *
+ * Es la division del trabajo —Ventas, Soporte, Cobranza—, no un estado. Por
+ * eso es excluyente: una conversacion que estuviera en dos bandejas a la vez
+ * no separaria nada.
+ */
+export type ChannelFolderType = {
+  idcf: number;
+  name: string;
+  /** '#rrggbb' o '' para ninguno. */
+  color: string;
+};
+
+/**
+ * Etiqueta: como esta una conversacion. Varias a la vez.
+ *
+ * Al reves que la bandeja, se acumulan: "Pago pendiente" y "Urgente" no
+ * compiten. Se pintan como DotBadges en la lista y en la cabecera del chat.
+ */
+export type ChannelLabelType = {
+  idcl: number;
+  name: string;
+  /** '#rrggbb' o '' para ninguno. */
+  color: string;
+};
+
 export type ChannelConversationType = {
   idcc: number;
   idca: number;
@@ -217,6 +244,11 @@ export type ChannelConversationType = {
   unread: number;
   archived: number;
   pinned: number;
+  /** Bandeja donde vive. 0 = sin clasificar. */
+  folder: number;
+  /** Etiquetas ya resueltas —nombre y color—, no solo sus ids: la lista de
+      chats las pinta sin esperar al catalogo. */
+  labels: ChannelLabelType[];
 };
 
 /**
