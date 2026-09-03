@@ -1235,6 +1235,8 @@
     "routeNotFound": "找不到路線",
     "rowFieldTooLong": "第 {{row}} 列，欄位「{{label}}」：「{{value}}」有 {{length}} 個字元，最多允許 {{max}} 個。",
     "rowUnexpectedError": "第 {{row}} 列：發生非預期錯誤 — {{detail}}",
+    "sheet": "工作表",
+    "sheetRowError": "工作表「{{sheet}}」第 {{row}} 列：{{detail}}",
     "rowValueTooLong": "第 {{row}} 列：某個值超過允許的字元上限。",
     "rowValueTooLongCheckText": "第 {{row}} 列：某個值超過允許的字元上限。請檢查文字欄位（例如分類、SAT 代碼）。",
     "securityCheckFailed": "安全驗證失敗，請重新整理頁面後再試一次。",

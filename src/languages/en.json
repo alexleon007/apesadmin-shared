@@ -1235,6 +1235,8 @@
   "routeNotFound": "Route not found",
   "rowFieldTooLong": "Row {{row}}, field «{{label}}»: «{{value}}» has {{length}} characters, maximum allowed {{max}}.",
   "rowUnexpectedError": "Row {{row}}: unexpected error — {{detail}}",
+  "sheet": "Sheet",
+  "sheetRowError": "Sheet «{{sheet}}», row {{row}}: {{detail}}",
   "rowValueTooLong": "Row {{row}}: a value exceeds the allowed character limit.",
   "rowValueTooLongCheckText": "Row {{row}}: a value exceeds the allowed character limit. Check the text fields (e.g. classification, SAT code).",
   "securityCheckFailed": "Security validation failed. Please reload the page and try again.",

@@ -1235,6 +1235,8 @@
     "routeNotFound": "Ruta no encontrada",
     "rowFieldTooLong": "Fila {{row}}, campo «{{label}}»: «{{value}}» tiene {{length}} caracteres, máximo permitido {{max}}.",
     "rowUnexpectedError": "Fila {{row}}: error inesperado — {{detail}}",
+    "sheet": "Hoja",
+    "sheetRowError": "Hoja «{{sheet}}», fila {{row}}: {{detail}}",
     "rowValueTooLong": "Fila {{row}}: un valor excede el límite de caracteres permitido.",
     "rowValueTooLongCheckText": "Fila {{row}}: un valor excede el límite de caracteres permitido. Verifica los campos de texto (ej. clasificación, clave SAT).",
     "securityCheckFailed": "Validación de seguridad fallida. Por favor, recarga la página e intenta de nuevo.",

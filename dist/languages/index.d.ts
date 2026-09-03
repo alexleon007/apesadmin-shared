@@ -1239,6 +1239,8 @@ export declare const languages: {
         routeNotFound: string;
         rowFieldTooLong: string;
         rowUnexpectedError: string;
+        sheet: string;
+        sheetRowError: string;
         rowValueTooLong: string;
         rowValueTooLongCheckText: string;
         securityCheckFailed: string;
@@ -4079,6 +4081,8 @@ export declare const languages: {
         routeNotFound: string;
         rowFieldTooLong: string;
         rowUnexpectedError: string;
+        sheet: string;
+        sheetRowError: string;
         rowValueTooLong: string;
         rowValueTooLongCheckText: string;
         securityCheckFailed: string;
@@ -6919,6 +6923,8 @@ export declare const languages: {
         routeNotFound: string;
         rowFieldTooLong: string;
         rowUnexpectedError: string;
+        sheet: string;
+        sheetRowError: string;
         rowValueTooLong: string;
         rowValueTooLongCheckText: string;
         securityCheckFailed: string;
