@@ -3285,6 +3285,14 @@ export type TableElementType = BaseElementType & TextStyleType & {
     repeatHeader?: boolean;
     rowsPerPage?: number;
     expandConcepts?: boolean;
+    headerBg?: string;
+    headerColor?: string;
+    stripeBg?: string;
+    borderColor?: string;
+    sectionBy?: string;
+    sectionTotalKey?: string;
+    sectionBg?: string;
+    sectionColor?: string;
     columns: TableColumnType[];
 };
 export type PageNumElementType = BaseElementType & TextStyleType & {
@@ -3393,6 +3401,15 @@ export type EditorTableType = Base & {
     repeatHeader?: boolean;
     rowsPerPage?: number;
     expandConcepts?: boolean;
+    color?: string;
+    headerBg?: string;
+    headerColor?: string;
+    stripeBg?: string;
+    borderColor?: string;
+    sectionBy?: string;
+    sectionTotalKey?: string;
+    sectionBg?: string;
+    sectionColor?: string;
 };
 export type EditorPageNumType = Base & {
     type: "pagenum";

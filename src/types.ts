@@ -3653,6 +3653,22 @@ export type TableElementType = BaseElementType &
     repeatHeader?: boolean;
     rowsPerPage?: number; // 0 or undefined = let pdfkit handle overflow
     expandConcepts?: boolean; // when true, split "concepts" cell by ", " → one line per concept
+    // Colores de la tabla. Todos opcionales y con el gris de siempre por
+    // defecto, para que las plantillas guardadas se sigan viendo igual.
+    headerBg?: string;
+    headerColor?: string;
+    stripeBg?: string;
+    borderColor?: string;
+    // Agrupación por secciones. `sectionBy` es la clave del renglón que las
+    // nombra (p. ej. "section" ← orders_det.section_ord); el generador emite
+    // una banda cada vez que ese valor cambia, sin reordenar los renglones.
+    // Si ningún renglón la trae, la tabla sale plana: no hace falta apagarlo.
+    // `sectionTotalKey` es la clave que se suma para el subtotal del grupo, y
+    // se imprime en la columna cuyo `key` coincide con ella.
+    sectionBy?: string;
+    sectionTotalKey?: string;
+    sectionBg?: string;
+    sectionColor?: string;
     columns: TableColumnType[];
   };
 
@@ -3790,6 +3806,15 @@ export type EditorTableType = Base & {
   repeatHeader?: boolean;
   rowsPerPage?: number;
   expandConcepts?: boolean;
+  color?: string;
+  headerBg?: string;
+  headerColor?: string;
+  stripeBg?: string;
+  borderColor?: string;
+  sectionBy?: string;
+  sectionTotalKey?: string;
+  sectionBg?: string;
+  sectionColor?: string;
 };
 
 export type EditorPageNumType = Base & {
