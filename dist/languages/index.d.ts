@@ -1485,6 +1485,7 @@ export declare const languages: {
         name: string;
         nameFunnelBeforeUpload: string;
         nameSearch: string;
+        nationalNumber: string;
         navBar: string;
         navPresetApes: string;
         navPresetContrast: string;
@@ -4327,6 +4328,7 @@ export declare const languages: {
         name: string;
         nameFunnelBeforeUpload: string;
         nameSearch: string;
+        nationalNumber: string;
         navBar: string;
         navPresetApes: string;
         navPresetContrast: string;
@@ -7169,6 +7171,7 @@ export declare const languages: {
         name: string;
         nameFunnelBeforeUpload: string;
         nameSearch: string;
+        nationalNumber: string;
         navBar: string;
         navPresetApes: string;
         navPresetContrast: string;

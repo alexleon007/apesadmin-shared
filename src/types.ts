@@ -2779,6 +2779,18 @@ export type RecordType = {
   recordfieldfiles?: Record<string, { file: any; expiration?: string }>;
 };
 
+export type CountryType = {
+  idcon: number;
+  /** ISO 3166-1 alfa-2, en mayusculas. */
+  code: string;
+  name: string;
+  /** Lada de la UIT, sin el `+` y sin el area: 1 para todo el plan
+      norteamericano, 52 para Mexico. */
+  phonecode: number;
+  /** Nombre del icono de Iconify, p. ej. `circle-flags:mx`. */
+  flagicon: string;
+};
+
 export type RegimeType = {
   idreg: number;
   regcode: number;
