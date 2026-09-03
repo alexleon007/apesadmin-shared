@@ -8,6 +8,7 @@ export declare const languages: {
         manageLabels: string;
         noLabelsYet: string;
         allFolders: string;
+        allLabels: string;
         unclassified: string;
         labels: string;
         folders: string;
@@ -2851,6 +2852,7 @@ export declare const languages: {
         manageLabels: string;
         noLabelsYet: string;
         allFolders: string;
+        allLabels: string;
         unclassified: string;
         labels: string;
         folders: string;
@@ -5694,6 +5696,7 @@ export declare const languages: {
         manageLabels: string;
         noLabelsYet: string;
         allFolders: string;
+        allLabels: string;
         unclassified: string;
         labels: string;
         folders: string;
