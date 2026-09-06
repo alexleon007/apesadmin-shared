@@ -1058,6 +1058,29 @@ export type AccountingRecurringType = {
   status: number;
 };
 
+// ---- Contabilidad electronica SAT ----
+export type SatCodigoAgrupador = {
+  codigo: string;
+  nombre: string;
+  nivel: number | null;
+};
+
+export type ContaeStatusType = {
+  hasFiel: boolean;
+  rfc: string;
+  accounts: number;
+  accountsWithCode: number;
+  accountsInvalidCode: number;
+  closedThrough: string | null;
+};
+
+export type ContaeFileType = {
+  doc: "catalogo" | "balanza" | "polizas" | "auxctas" | "auxfol";
+  filename: string;
+  xmlBase64: string;
+  warnings: string[];
+};
+
 // ---- Estados financieros ----
 export type StatementLineType = {
   idacc: number;
