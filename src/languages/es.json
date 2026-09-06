@@ -1675,6 +1675,7 @@
   "notInList": "no en lista",
   "notRegistered": "No registrado",
   "notStamped": "No Timbrado",
+  "noteOwnerLabel": "Nota de {{name}}",
   "notes": "Notas",
   "notification": "Notificación",
   "notifications": "Notificaciones",
