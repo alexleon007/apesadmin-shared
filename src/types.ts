@@ -3074,6 +3074,7 @@ export type ViewType =
 export type WarehouseLocationType = {
   idwhloc: number;
   whlocidwh: number;
+  whlocidparty?: number;
   whlocname: string;
   whloccolor: string;
 };

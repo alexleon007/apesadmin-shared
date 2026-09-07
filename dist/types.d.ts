@@ -960,6 +960,25 @@ export type AccountingRecurringType = {
     lines: AccountingRecurringLine[];
     status: number;
 };
+export type SatCodigoAgrupador = {
+    codigo: string;
+    nombre: string;
+    nivel: number | null;
+};
+export type ContaeStatusType = {
+    hasFiel: boolean;
+    rfc: string;
+    accounts: number;
+    accountsWithCode: number;
+    accountsInvalidCode: number;
+    closedThrough: string | null;
+};
+export type ContaeFileType = {
+    doc: "catalogo" | "balanza" | "polizas" | "auxctas" | "auxfol";
+    filename: string;
+    xmlBase64: string;
+    warnings: string[];
+};
 export type StatementLineType = {
     idacc: number;
     code: string;
@@ -2814,6 +2833,7 @@ export type ViewType = typeof VIEW_TABLE | typeof VIEW_BOARD | typeof VIEW_GALLE
 export type WarehouseLocationType = {
     idwhloc: number;
     whlocidwh: number;
+    whlocidparty?: number;
     whlocname: string;
     whloccolor: string;
 };
