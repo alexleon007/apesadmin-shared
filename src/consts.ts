@@ -381,20 +381,20 @@ export const ACCOUNT_TYPE_COST = "cost";
 export const ACCOUNT_TYPE_EXPENSE = "expense";
 export const ACCOUNT_TYPE_MEMO = "memo";
 
-export const ACCOUNT_TYPE_OPTIONS: { value: string; label: string }[] = [
-  { value: ACCOUNT_TYPE_ASSET, label: "Activo" },
-  { value: ACCOUNT_TYPE_LIABILITY, label: "Pasivo" },
-  { value: ACCOUNT_TYPE_EQUITY, label: "Capital" },
-  { value: ACCOUNT_TYPE_REVENUE, label: "Ingreso" },
-  { value: ACCOUNT_TYPE_COST, label: "Costo" },
-  { value: ACCOUNT_TYPE_EXPENSE, label: "Gasto" },
-  { value: ACCOUNT_TYPE_MEMO, label: "Cuenta de orden" },
+export const ACCOUNT_TYPE_OPTIONS: { value: string; labelKey: string }[] = [
+  { value: ACCOUNT_TYPE_ASSET, labelKey: "accountTypeAsset" },
+  { value: ACCOUNT_TYPE_LIABILITY, labelKey: "accountTypeLiability" },
+  { value: ACCOUNT_TYPE_EQUITY, labelKey: "accountTypeEquity" },
+  { value: ACCOUNT_TYPE_REVENUE, labelKey: "income" },
+  { value: ACCOUNT_TYPE_COST, labelKey: "cost" },
+  { value: ACCOUNT_TYPE_EXPENSE, labelKey: "expenseDoc" },
+  { value: ACCOUNT_TYPE_MEMO, labelKey: "accountTypeMemo" },
 ];
 
-export const ACCOUNT_TYPE_LABELS: Record<string, string> =
+export const ACCOUNT_TYPE_LABEL_KEYS: Record<string, string> =
   ACCOUNT_TYPE_OPTIONS.reduce(
     (acc, opt) => {
-      acc[opt.value] = opt.label;
+      acc[opt.value] = opt.labelKey;
       return acc;
     },
     {} as Record<string, string>,
@@ -403,15 +403,15 @@ export const ACCOUNT_TYPE_LABELS: Record<string, string> =
 export const ACCOUNT_NATURE_DEBIT = "debit";
 export const ACCOUNT_NATURE_CREDIT = "credit";
 
-export const ACCOUNT_NATURE_OPTIONS: { value: string; label: string }[] = [
-  { value: ACCOUNT_NATURE_DEBIT, label: "Deudora" },
-  { value: ACCOUNT_NATURE_CREDIT, label: "Acreedora" },
+export const ACCOUNT_NATURE_OPTIONS: { value: string; labelKey: string }[] = [
+  { value: ACCOUNT_NATURE_DEBIT, labelKey: "accountNatureDebit" },
+  { value: ACCOUNT_NATURE_CREDIT, labelKey: "accountNatureCredit" },
 ];
 
-export const ACCOUNT_NATURE_LABELS: Record<string, string> =
+export const ACCOUNT_NATURE_LABEL_KEYS: Record<string, string> =
   ACCOUNT_NATURE_OPTIONS.reduce(
     (acc, opt) => {
-      acc[opt.value] = opt.label;
+      acc[opt.value] = opt.labelKey;
       return acc;
     },
     {} as Record<string, string>,
@@ -437,49 +437,67 @@ export const STMT_GROUP_INCOME_TAX = "income_tax";
 // Orden = orden de aparicion en el reporte.
 export const STMT_GROUP_OPTIONS: {
   value: string;
-  label: string;
+  labelKey: string;
   order: number;
 }[] = [
-  { value: "", label: "Sin clasificar", order: 0 },
-  { value: STMT_GROUP_REVENUE, label: "Ingresos", order: 1 },
-  { value: STMT_GROUP_COST_OF_SALES, label: "Costo de ventas", order: 2 },
-  { value: STMT_GROUP_OPERATING_EXPENSE, label: "Gastos de operación", order: 3 },
-  { value: STMT_GROUP_OTHER_INCOME, label: "Otros ingresos", order: 4 },
-  { value: STMT_GROUP_OTHER_EXPENSE, label: "Otros gastos", order: 5 },
+  { value: "", labelKey: "unclassified", order: 0 },
+  { value: STMT_GROUP_REVENUE, labelKey: "statementGroupRevenue", order: 1 },
+  { value: STMT_GROUP_COST_OF_SALES, labelKey: "statementGroupCost", order: 2 },
+  {
+    value: STMT_GROUP_OPERATING_EXPENSE,
+    labelKey: "statementGroupOpex",
+    order: 3,
+  },
+  {
+    value: STMT_GROUP_OTHER_INCOME,
+    labelKey: "statementGroupOtherIncome",
+    order: 4,
+  },
+  {
+    value: STMT_GROUP_OTHER_EXPENSE,
+    labelKey: "statementGroupOtherExpense",
+    order: 5,
+  },
   {
     value: STMT_GROUP_FINANCIAL_INCOME,
-    label: "Productos financieros",
+    labelKey: "statementGroupFinIncome",
     order: 6,
   },
   {
     value: STMT_GROUP_FINANCIAL_EXPENSE,
-    label: "Gastos financieros",
+    labelKey: "statementGroupFinExpense",
     order: 7,
   },
-  { value: STMT_GROUP_INCOME_TAX, label: "Impuestos a la utilidad", order: 8 },
+  {
+    value: STMT_GROUP_INCOME_TAX,
+    labelKey: "statementGroupIncomeTax",
+    order: 8,
+  },
 ];
 
-export const STMT_GROUP_LABELS: Record<string, string> =
+export const STMT_GROUP_LABEL_KEYS: Record<string, string> =
   STMT_GROUP_OPTIONS.reduce(
     (acc, opt) => {
-      acc[opt.value] = opt.label;
+      acc[opt.value] = opt.labelKey;
       return acc;
     },
     {} as Record<string, string>,
   );
 
 // ---- Polizas contables ----
-export const ACCOUNTING_ENTRY_TYPE_OPTIONS: { value: string; label: string }[] =
-  [
-    { value: "diario", label: "Diario" },
-    { value: "ingresos", label: "Ingresos" },
-    { value: "egresos", label: "Egresos" },
-  ];
+export const ACCOUNTING_ENTRY_TYPE_OPTIONS: {
+  value: string;
+  labelKey: string;
+}[] = [
+  { value: "diario", labelKey: "entryTypeDiario" },
+  { value: "ingresos", labelKey: "entryTypeIngresos" },
+  { value: "egresos", labelKey: "entryTypeEgresos" },
+];
 
-export const ACCOUNTING_ENTRY_TYPE_LABELS: Record<string, string> =
+export const ACCOUNTING_ENTRY_TYPE_LABEL_KEYS: Record<string, string> =
   ACCOUNTING_ENTRY_TYPE_OPTIONS.reduce(
     (acc, opt) => {
-      acc[opt.value] = opt.label;
+      acc[opt.value] = opt.labelKey;
       return acc;
     },
     {} as Record<string, string>,
@@ -489,24 +507,27 @@ export const ACCOUNTING_ENTRY_STATUS_DRAFT = 0;
 export const ACCOUNTING_ENTRY_STATUS_POSTED = 1;
 export const ACCOUNTING_ENTRY_STATUS_CANCELLED = -2;
 
-export const ACCOUNTING_ENTRY_STATUS_LABELS: Record<number, string> = {
-  [ACCOUNTING_ENTRY_STATUS_DRAFT]: "Borrador",
-  [ACCOUNTING_ENTRY_STATUS_POSTED]: "Contabilizada",
-  [ACCOUNTING_ENTRY_STATUS_CANCELLED]: "Cancelada",
+export const ACCOUNTING_ENTRY_STATUS_LABEL_KEYS: Record<number, string> = {
+  [ACCOUNTING_ENTRY_STATUS_DRAFT]: "entryStatusDraft",
+  [ACCOUNTING_ENTRY_STATUS_POSTED]: "entryStatusPosted",
+  [ACCOUNTING_ENTRY_STATUS_CANCELLED]: "entryStatusCancelled",
 };
 
 export const ACCOUNTPROFILE_TYPE_PRODUCT = "product";
 export const ACCOUNTPROFILE_TYPE_EXPENSE = "expense";
 
-export const ACCOUNTPROFILE_TYPE_OPTIONS: { value: string; label: string }[] = [
-  { value: ACCOUNTPROFILE_TYPE_PRODUCT, label: "Producto / Servicio" },
-  { value: ACCOUNTPROFILE_TYPE_EXPENSE, label: "Gasto" },
+export const ACCOUNTPROFILE_TYPE_OPTIONS: {
+  value: string;
+  labelKey: string;
+}[] = [
+  { value: ACCOUNTPROFILE_TYPE_PRODUCT, labelKey: "productOrService" },
+  { value: ACCOUNTPROFILE_TYPE_EXPENSE, labelKey: "expenseDoc" },
 ];
 
-export const ACCOUNTPROFILE_TYPE_LABELS: Record<string, string> =
+export const ACCOUNTPROFILE_TYPE_LABEL_KEYS: Record<string, string> =
   ACCOUNTPROFILE_TYPE_OPTIONS.reduce(
     (acc, opt) => {
-      acc[opt.value] = opt.label;
+      acc[opt.value] = opt.labelKey;
       return acc;
     },
     {} as Record<string, string>,
@@ -521,15 +542,15 @@ export const PROFILE_ACCOUNTTYPE_INVENTORY_GAIN = "inventory_gain";
 export const PROFILE_ACCOUNTTYPE_INVENTORY_LOSS = "inventory_loss";
 export const PROFILE_ACCOUNTTYPE_PURCHASE_EXPENSE = "purchase_expense";
 
-export const PROFILE_ACCOUNTTYPE_LABELS: Record<string, string> = {
-  [PROFILE_ACCOUNTTYPE_SALES_REVENUE]: "Ingresos por ventas",
-  [PROFILE_ACCOUNTTYPE_INVENTORY_ASSET]: "Inventario",
-  [PROFILE_ACCOUNTTYPE_COST_OF_SALES]: "Costo de ventas",
-  [PROFILE_ACCOUNTTYPE_SALES_RETURN]: "Devoluciones sobre ventas",
-  [PROFILE_ACCOUNTTYPE_SALES_DISCOUNT]: "Descuentos sobre ventas",
-  [PROFILE_ACCOUNTTYPE_INVENTORY_GAIN]: "Ajuste positivo de inventario",
-  [PROFILE_ACCOUNTTYPE_INVENTORY_LOSS]: "Ajuste negativo de inventario",
-  [PROFILE_ACCOUNTTYPE_PURCHASE_EXPENSE]: "Cuenta de gasto",
+export const PROFILE_ACCOUNTTYPE_LABEL_KEYS: Record<string, string> = {
+  [PROFILE_ACCOUNTTYPE_SALES_REVENUE]: "salesRevenue",
+  [PROFILE_ACCOUNTTYPE_INVENTORY_ASSET]: "inventory",
+  [PROFILE_ACCOUNTTYPE_COST_OF_SALES]: "statementGroupCost",
+  [PROFILE_ACCOUNTTYPE_SALES_RETURN]: "salesReturns",
+  [PROFILE_ACCOUNTTYPE_SALES_DISCOUNT]: "salesDiscounts",
+  [PROFILE_ACCOUNTTYPE_INVENTORY_GAIN]: "inventoryAdjustmentGain",
+  [PROFILE_ACCOUNTTYPE_INVENTORY_LOSS]: "inventoryAdjustmentLoss",
+  [PROFILE_ACCOUNTTYPE_PURCHASE_EXPENSE]: "expenseAccount",
 };
 
 export const PROFILE_ACCOUNTTYPES_BY_PROFILETYPE: Record<string, string[]> = {
@@ -577,65 +598,64 @@ export const GENERAL_ACCOUNTTYPE_RETAINED_EARNINGS = "retained_earnings";
 // vat_output/vat_input NO viven aquí: los impuestos ahora se configuran de
 // forma dinámica a partir del catálogo `taxes` (ver sección Impuestos).
 
-export const GENERAL_ACCOUNTTYPE_OPTIONS: { value: string; label: string }[] =
-  [
-    {
-      value: GENERAL_ACCOUNTTYPE_CUSTOMERS_RECEIVABLE,
-      label: "Clientes / Cuentas por cobrar",
-    },
-    {
-      value: GENERAL_ACCOUNTTYPE_SUPPLIERS_PAYABLE,
-      label: "Proveedores / Cuentas por pagar",
-    },
-    {
-      value: GENERAL_ACCOUNTTYPE_CUSTOMER_ADVANCES,
-      label: "Anticipos de clientes",
-    },
-    {
-      value: GENERAL_ACCOUNTTYPE_SUPPLIER_ADVANCES,
-      label: "Anticipos a proveedores",
-    },
-    { value: GENERAL_ACCOUNTTYPE_EXCHANGE_GAIN, label: "Ganancia cambiaria" },
-    { value: GENERAL_ACCOUNTTYPE_EXCHANGE_LOSS, label: "Pérdida cambiaria" },
-    {
-      value: GENERAL_ACCOUNTTYPE_SALES_REVENUE,
-      label: "Ventas (cuenta por defecto)",
-    },
-    {
-      value: GENERAL_ACCOUNTTYPE_SALES_DISCOUNT,
-      label: "Descuentos sobre ventas (por defecto)",
-    },
-    {
-      value: GENERAL_ACCOUNTTYPE_SALES_RETURN,
-      label: "Devoluciones sobre ventas (por defecto)",
-    },
-    {
-      value: GENERAL_ACCOUNTTYPE_PURCHASE_EXPENSE,
-      label: "Gastos (cuenta por defecto)",
-    },
-    {
-      value: GENERAL_ACCOUNTTYPE_INVENTORY_ASSET,
-      label: "Inventario (cuenta por defecto)",
-    },
-    {
-      value: GENERAL_ACCOUNTTYPE_COST_OF_SALES,
-      label: "Costo de ventas (cuenta por defecto)",
-    },
-    {
-      value: GENERAL_ACCOUNTTYPE_BANK_DEFAULT,
-      label: "Banco / caja (cuenta por defecto)",
-    },
-    { value: GENERAL_ACCOUNTTYPE_ROUNDING, label: "Ajuste por redondeo" },
-    {
-      value: GENERAL_ACCOUNTTYPE_RETAINED_EARNINGS,
-      label: "Resultado de ejercicios anteriores",
-    },
-  ];
+export const GENERAL_ACCOUNTTYPE_OPTIONS: {
+  value: string;
+  labelKey: string;
+}[] = [
+  {
+    value: GENERAL_ACCOUNTTYPE_CUSTOMERS_RECEIVABLE,
+    labelKey: "customersReceivable",
+  },
+  {
+    value: GENERAL_ACCOUNTTYPE_SUPPLIERS_PAYABLE,
+    labelKey: "suppliersPayable",
+  },
+  {
+    value: GENERAL_ACCOUNTTYPE_CUSTOMER_ADVANCES,
+    labelKey: "customerAdvances",
+  },
+  {
+    value: GENERAL_ACCOUNTTYPE_SUPPLIER_ADVANCES,
+    labelKey: "supplierAdvances",
+  },
+  { value: GENERAL_ACCOUNTTYPE_EXCHANGE_GAIN, labelKey: "exchangeGain" },
+  { value: GENERAL_ACCOUNTTYPE_EXCHANGE_LOSS, labelKey: "exchangeLoss" },
+  {
+    value: GENERAL_ACCOUNTTYPE_SALES_REVENUE,
+    labelKey: "salesDefaultAccount",
+  },
+  {
+    value: GENERAL_ACCOUNTTYPE_SALES_DISCOUNT,
+    labelKey: "salesDiscountDefaultAccount",
+  },
+  {
+    value: GENERAL_ACCOUNTTYPE_SALES_RETURN,
+    labelKey: "salesReturnDefaultAccount",
+  },
+  {
+    value: GENERAL_ACCOUNTTYPE_PURCHASE_EXPENSE,
+    labelKey: "expenseDefaultAccount",
+  },
+  {
+    value: GENERAL_ACCOUNTTYPE_INVENTORY_ASSET,
+    labelKey: "inventoryDefaultAccount",
+  },
+  {
+    value: GENERAL_ACCOUNTTYPE_COST_OF_SALES,
+    labelKey: "costOfSalesDefaultAccount",
+  },
+  { value: GENERAL_ACCOUNTTYPE_BANK_DEFAULT, labelKey: "bankDefaultAccount" },
+  { value: GENERAL_ACCOUNTTYPE_ROUNDING, labelKey: "roundingAdjustment" },
+  {
+    value: GENERAL_ACCOUNTTYPE_RETAINED_EARNINGS,
+    labelKey: "retainedEarnings",
+  },
+];
 
-export const GENERAL_ACCOUNTTYPE_LABELS: Record<string, string> =
+export const GENERAL_ACCOUNTTYPE_LABEL_KEYS: Record<string, string> =
   GENERAL_ACCOUNTTYPE_OPTIONS.reduce(
     (acc, opt) => {
-      acc[opt.value] = opt.label;
+      acc[opt.value] = opt.labelKey;
       return acc;
     },
     {} as Record<string, string>,
@@ -661,13 +681,11 @@ export const TAX_ACCOUNTTYPE_INPUT = "tax_input";
 export const TAX_ACCOUNTTYPE_WITHHOLDING_RECEIVABLE = "withholding_receivable";
 export const TAX_ACCOUNTTYPE_WITHHOLDING_PAYABLE = "withholding_payable";
 
-export const TAX_ACCOUNTTYPE_LABELS: Record<string, string> = {
-  [TAX_ACCOUNTTYPE_OUTPUT]: "Impuesto trasladado / ventas",
-  [TAX_ACCOUNTTYPE_INPUT]: "Impuesto acreditable / compras",
-  [TAX_ACCOUNTTYPE_WITHHOLDING_RECEIVABLE]:
-    "Retención a favor / que nos retienen",
-  [TAX_ACCOUNTTYPE_WITHHOLDING_PAYABLE]:
-    "Retención por pagar / que nosotros retenemos",
+export const TAX_ACCOUNTTYPE_LABEL_KEYS: Record<string, string> = {
+  [TAX_ACCOUNTTYPE_OUTPUT]: "taxOutputAccount",
+  [TAX_ACCOUNTTYPE_INPUT]: "taxInputAccount",
+  [TAX_ACCOUNTTYPE_WITHHOLDING_RECEIVABLE]: "withholdingReceivableAccount",
+  [TAX_ACCOUNTTYPE_WITHHOLDING_PAYABLE]: "withholdingPayableAccount",
 };
 
 // Qué conceptos de cuenta mostrar según clas_tax del impuesto. Ninguno es
