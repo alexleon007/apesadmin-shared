@@ -1724,6 +1724,8 @@ export type InventoryType = {
   unitname: string;
   idwh: number;
   whname: string;
+  idloc?: number;
+  locname?: string;
   idcmp: number;
   cmpname: string;
   prodbatch: number;
