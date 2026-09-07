@@ -2138,6 +2138,7 @@ export type OrderType = {
   cmpname: string;
   idwh: number;
   whname: string;
+  idwhloc?: number;
   username: string;
   orstatus: number;
   orstatusname: string;
