@@ -1320,6 +1320,7 @@
     "invoicesManagement": "Invoices Management",
     "invoicing": "Invoicing",
     "invoicingDesc": "SAT tax stamping",
+    "isRecurrent": "Is it recurring?",
     "itemCode": "Item Code",
     "itemName": "Item Name",
     "items": "Items",

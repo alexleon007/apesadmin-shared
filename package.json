@@ -17,9 +17,7 @@
     }
   },
   "scripts": {
-    "build": "tsc",
-    "dev": "tsc --watch",
-    "prepare": "tsc"
+    "build": "tsc"
   },
   "files": [
     "dist",

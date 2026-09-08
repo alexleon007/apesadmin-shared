@@ -1324,6 +1324,7 @@ export declare const languages: {
         invoicesManagement: string;
         invoicing: string;
         invoicingDesc: string;
+        isRecurrent: string;
         itemCode: string;
         itemName: string;
         items: string;
@@ -4256,6 +4257,7 @@ export declare const languages: {
         invoicesManagement: string;
         invoicing: string;
         invoicingDesc: string;
+        isRecurrent: string;
         itemCode: string;
         itemName: string;
         items: string;
@@ -7188,6 +7190,7 @@ export declare const languages: {
         invoicesManagement: string;
         invoicing: string;
         invoicingDesc: string;
+        isRecurrent: string;
         itemCode: string;
         itemName: string;
         items: string;

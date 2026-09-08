@@ -1320,6 +1320,7 @@
     "invoicesManagement": "發票管理",
     "invoicing": "開立發票",
     "invoicingDesc": "SAT 稅務簽章",
+    "isRecurrent": "是否為定期？",
     "itemCode": "項目代碼",
     "itemName": "項目名稱",
     "items": "項目",

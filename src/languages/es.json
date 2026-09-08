@@ -1320,6 +1320,7 @@
   "invoicesManagement": "Gestión de Facturas",
   "invoicing": "Facturación",
   "invoicingDesc": "Timbrado fiscal SAT",
+  "isRecurrent": "¿Es recurrente?",
   "itemCode": "Código del Artículo",
   "itemName": "Nombre del Artículo",
   "items": "Items",
