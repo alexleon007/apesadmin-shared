@@ -199,6 +199,9 @@ export const USERPARTY_AI = 3; // agentes automatizados
 // comissions.type_com: sobre qué evento del producto se calcula la comisión.
 export const COMISSION_TYPE_PAYED = "payedbyproduct";
 export const COMISSION_TYPE_SOLD = "soldbyproduct";
+// Captura directa, sin disparador automatico (ordenes de produccion, rutas,
+// etc. tendran su propio tipo cuando exista su logica de alta).
+export const COMISSION_TYPE_MANUAL = "manual";
 
 export const ROLE_CUSTOMER = "customer";
 export const ROLE_SUPPLIER = "supplier";
