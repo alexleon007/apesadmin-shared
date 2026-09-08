@@ -115,6 +115,7 @@ export declare const USERPARTY_EXTERNAL = 2;
 export declare const USERPARTY_AI = 3;
 export declare const COMISSION_TYPE_PAYED = "payedbyproduct";
 export declare const COMISSION_TYPE_SOLD = "soldbyproduct";
+export declare const COMISSION_TYPE_MANUAL = "manual";
 export declare const ROLE_CUSTOMER = "customer";
 export declare const ROLE_SUPPLIER = "supplier";
 export declare const ROLE_RH = "rh";

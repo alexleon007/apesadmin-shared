@@ -196,6 +196,7 @@ export declare const languages: {
         addFile: string;
         addFilter: string;
         addGroupingColumn: string;
+        addManualEntry: string;
         addMissing: string;
         addNew: string;
         addNote: string;
@@ -383,6 +384,7 @@ export declare const languages: {
         businessName: string;
         button: string;
         byCustomer: string;
+        byManual: string;
         byPaidProduct: string;
         bySoldProduct: string;
         cannotChatOnClosedTicket: string;
@@ -399,6 +401,7 @@ export declare const languages: {
         calendar: string;
         calendars: string;
         cancel: string;
+        cancelComissionEntry: string;
         cancelDate: string;
         cancelEdit: string;
         cancelEvent: string;
@@ -429,6 +432,8 @@ export declare const languages: {
         cashChange: string;
         cashClosing: string;
         cashCollected: string;
+        collected: string;
+        netCash: string;
         cashCounted: string;
         cashCut: string;
         cashDifference: string;
@@ -1454,6 +1459,7 @@ export declare const languages: {
         managementOfHR: string;
         managementOfSuppliers: string;
         manualAndScanner: string;
+        manualEntry: string;
         manualPaymentRequired: string;
         map: string;
         mapSettings: string;
@@ -2089,6 +2095,7 @@ export declare const languages: {
         recurrencesManagement: string;
         recurringSales: string;
         reference: string;
+        referenceDate: string;
         references: string;
         refresh: string;
         refreshReportData: string;
@@ -2550,6 +2557,7 @@ export declare const languages: {
         toastClassificationDeactivated: string;
         toastClassificationSaved: string;
         toastComingSoon: string;
+        toastComissionEntryCancelled: string;
         toastComissionsApplied: string;
         toastCompleted: string;
         toastConfigApplied: string;
@@ -2588,6 +2596,7 @@ export declare const languages: {
         toastLoginError: string;
         toastLoginErrorAttempts: string;
         toastLoginLimitReached: string;
+        toastManualEntryAdded: string;
         toastMissingFields: string;
         toastNameRequired: string;
         toastNameRequiredShort: string;
@@ -2668,6 +2677,7 @@ export declare const languages: {
         totalInWords: string;
         totalPayable: string;
         totalPending: string;
+        totalPurchases: string;
         totalPendingActive: string;
         totalQtyCalcTooltip: string;
         totalQuantity: string;
@@ -3118,6 +3128,7 @@ export declare const languages: {
         addFile: string;
         addFilter: string;
         addGroupingColumn: string;
+        addManualEntry: string;
         addMissing: string;
         addNew: string;
         addNote: string;
@@ -3305,6 +3316,7 @@ export declare const languages: {
         businessName: string;
         button: string;
         byCustomer: string;
+        byManual: string;
         byPaidProduct: string;
         bySoldProduct: string;
         cannotChatOnClosedTicket: string;
@@ -3321,6 +3333,7 @@ export declare const languages: {
         calendar: string;
         calendars: string;
         cancel: string;
+        cancelComissionEntry: string;
         cancelDate: string;
         cancelEdit: string;
         cancelEvent: string;
@@ -3351,6 +3364,8 @@ export declare const languages: {
         cashChange: string;
         cashClosing: string;
         cashCollected: string;
+        collected: string;
+        netCash: string;
         cashCounted: string;
         cashCut: string;
         cashDifference: string;
@@ -4376,6 +4391,7 @@ export declare const languages: {
         managementOfHR: string;
         managementOfSuppliers: string;
         manualAndScanner: string;
+        manualEntry: string;
         manualPaymentRequired: string;
         map: string;
         mapSettings: string;
@@ -5011,6 +5027,7 @@ export declare const languages: {
         recurrencesManagement: string;
         recurringSales: string;
         reference: string;
+        referenceDate: string;
         references: string;
         refresh: string;
         refreshReportData: string;
@@ -5472,6 +5489,7 @@ export declare const languages: {
         toastClassificationDeactivated: string;
         toastClassificationSaved: string;
         toastComingSoon: string;
+        toastComissionEntryCancelled: string;
         toastComissionsApplied: string;
         toastCompleted: string;
         toastConfigApplied: string;
@@ -5510,6 +5528,7 @@ export declare const languages: {
         toastLoginError: string;
         toastLoginErrorAttempts: string;
         toastLoginLimitReached: string;
+        toastManualEntryAdded: string;
         toastMissingFields: string;
         toastNameRequired: string;
         toastNameRequiredShort: string;
@@ -5590,6 +5609,7 @@ export declare const languages: {
         totalInWords: string;
         totalPayable: string;
         totalPending: string;
+        totalPurchases: string;
         totalPendingActive: string;
         totalQtyCalcTooltip: string;
         totalQuantity: string;
@@ -6040,6 +6060,7 @@ export declare const languages: {
         addFile: string;
         addFilter: string;
         addGroupingColumn: string;
+        addManualEntry: string;
         addMissing: string;
         addNew: string;
         addNote: string;
@@ -6227,6 +6248,7 @@ export declare const languages: {
         businessName: string;
         button: string;
         byCustomer: string;
+        byManual: string;
         byPaidProduct: string;
         bySoldProduct: string;
         cannotChatOnClosedTicket: string;
@@ -6243,6 +6265,7 @@ export declare const languages: {
         calendar: string;
         calendars: string;
         cancel: string;
+        cancelComissionEntry: string;
         cancelDate: string;
         cancelEdit: string;
         cancelEvent: string;
@@ -6273,6 +6296,8 @@ export declare const languages: {
         cashChange: string;
         cashClosing: string;
         cashCollected: string;
+        collected: string;
+        netCash: string;
         cashCounted: string;
         cashCut: string;
         cashDifference: string;
@@ -7298,6 +7323,7 @@ export declare const languages: {
         managementOfHR: string;
         managementOfSuppliers: string;
         manualAndScanner: string;
+        manualEntry: string;
         manualPaymentRequired: string;
         map: string;
         mapSettings: string;
@@ -7933,6 +7959,7 @@ export declare const languages: {
         recurrencesManagement: string;
         recurringSales: string;
         reference: string;
+        referenceDate: string;
         references: string;
         refresh: string;
         refreshReportData: string;
@@ -8394,6 +8421,7 @@ export declare const languages: {
         toastClassificationDeactivated: string;
         toastClassificationSaved: string;
         toastComingSoon: string;
+        toastComissionEntryCancelled: string;
         toastComissionsApplied: string;
         toastCompleted: string;
         toastConfigApplied: string;
@@ -8432,6 +8460,7 @@ export declare const languages: {
         toastLoginError: string;
         toastLoginErrorAttempts: string;
         toastLoginLimitReached: string;
+        toastManualEntryAdded: string;
         toastMissingFields: string;
         toastNameRequired: string;
         toastNameRequiredShort: string;
@@ -8512,6 +8541,7 @@ export declare const languages: {
         totalInWords: string;
         totalPayable: string;
         totalPending: string;
+        totalPurchases: string;
         totalPendingActive: string;
         totalQtyCalcTooltip: string;
         totalQuantity: string;
