@@ -2640,5 +2640,8 @@
   "youSave": "You save",
   "zipCode": "Zip Code",
   "zohoOwnDomain": "Zoho Mail (custom domain)",
-  "zone": "Zone"
+  "zone": "Zone",
+  "customColor": "Custom color",
+  "palettes": "Palettes",
+  "hue": "Hue"
 }

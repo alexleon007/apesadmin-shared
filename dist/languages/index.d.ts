@@ -2645,6 +2645,9 @@ export declare const languages: {
         zipCode: string;
         zohoOwnDomain: string;
         zone: string;
+        customColor: string;
+        palettes: string;
+        hue: string;
     };
     readonly en: {
         aboveMax: string;
@@ -5289,6 +5292,9 @@ export declare const languages: {
         zipCode: string;
         zohoOwnDomain: string;
         zone: string;
+        customColor: string;
+        palettes: string;
+        hue: string;
     };
     readonly "zh-TW": {
         aboveMax: string;
@@ -7933,6 +7939,9 @@ export declare const languages: {
         zipCode: string;
         zohoOwnDomain: string;
         zone: string;
+        customColor: string;
+        palettes: string;
+        hue: string;
     };
 };
 export type LanguageKey = keyof typeof languages;

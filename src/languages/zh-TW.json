@@ -2640,5 +2640,8 @@
   "youSave": "省下",
   "zipCode": "郵遞區號",
   "zohoOwnDomain": "Zoho Mail（自訂網域）",
-  "zone": "區域"
+  "zone": "區域",
+  "customColor": "自訂顏色",
+  "palettes": "調色盤",
+  "hue": "色相"
 }
