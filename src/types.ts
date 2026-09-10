@@ -2683,6 +2683,8 @@ export type PODetailType = {
   prodname: string;
   produnit: number;
   produnitname: string;
+  xmlprodcode?: string;
+  xmlprodname?: string;
   taxes: TaxType[];
   quantity: number;
   qtyrecived?: number;
