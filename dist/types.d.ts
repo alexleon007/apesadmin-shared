@@ -1987,6 +1987,7 @@ export type OrderType = {
     oridcfdi: number;
     orxmlurl: string;
     orstatusinbox?: string;
+    ortags?: TagType[];
     orisassorted?: number;
     /** 1 si alguna partida ya se vendió (total o parcialmente). */
     orhaspartial?: number;
