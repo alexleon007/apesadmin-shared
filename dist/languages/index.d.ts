@@ -1320,6 +1320,11 @@ export declare const languages: {
         navThemePillShape: string;
         navThemePillSize: string;
         navThemeTitle: string;
+        navThemeTopbar: string;
+        navThemeTopbarFloating: string;
+        navThemeTopbarSolid: string;
+        navThemeTopbarStyle: string;
+        navThemeTopbarStyleHelp: string;
         ncOption01: string;
         ncOption03: string;
         ncOption04: string;
@@ -3967,6 +3972,11 @@ export declare const languages: {
         navThemePillShape: string;
         navThemePillSize: string;
         navThemeTitle: string;
+        navThemeTopbar: string;
+        navThemeTopbarFloating: string;
+        navThemeTopbarSolid: string;
+        navThemeTopbarStyle: string;
+        navThemeTopbarStyleHelp: string;
         ncOption01: string;
         ncOption03: string;
         ncOption04: string;
@@ -6614,6 +6624,11 @@ export declare const languages: {
         navThemePillShape: string;
         navThemePillSize: string;
         navThemeTitle: string;
+        navThemeTopbar: string;
+        navThemeTopbarFloating: string;
+        navThemeTopbarSolid: string;
+        navThemeTopbarStyle: string;
+        navThemeTopbarStyleHelp: string;
         ncOption01: string;
         ncOption03: string;
         ncOption04: string;
