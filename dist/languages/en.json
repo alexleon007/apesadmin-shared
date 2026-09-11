@@ -2704,5 +2704,6 @@
     "vacation": "Vacation",
     "disability": "Disability leave",
     "justifiedAbsence": "Justified absence",
-    "unjustifiedAbsence": "Unjustified absence"
+    "unjustifiedAbsence": "Unjustified absence",
+    "generalPolicy": "General (all schedules)"
 }

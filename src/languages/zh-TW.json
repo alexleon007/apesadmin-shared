@@ -2705,5 +2705,6 @@
   "vacation": "休假",
   "disability": "病假",
   "justifiedAbsence": "有正當理由缺勤",
-  "unjustifiedAbsence": "無正當理由缺勤"
+  "unjustifiedAbsence": "無正當理由缺勤",
+  "generalPolicy": "一般（所有班表）"
 }

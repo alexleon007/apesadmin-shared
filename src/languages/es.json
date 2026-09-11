@@ -2705,5 +2705,6 @@
   "vacation": "Vacaciones",
   "disability": "Incapacidad",
   "justifiedAbsence": "Falta justificada",
-  "unjustifiedAbsence": "Falta injustificada"
+  "unjustifiedAbsence": "Falta injustificada",
+  "generalPolicy": "General (todos los horarios)"
 }
