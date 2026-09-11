@@ -1,6 +1,6 @@
-import es from "./es.json" with { type: "json" };
-import en from "./en.json" with { type: "json" };
-import zhTW from "./zh-TW.json" with { type: "json" };
+import es from "./es.json";
+import en from "./en.json";
+import zhTW from "./zh-TW.json";
 
 export const languages = { es, en, "zh-TW": zhTW } as const;
 export type LanguageKey = keyof typeof languages;

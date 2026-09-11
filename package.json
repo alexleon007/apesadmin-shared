@@ -2,7 +2,6 @@
   "name": "@apesdev/shared",
   "version": "1.0.0",
   "description": "Shared types, constants and languages for ApesAdmin ecosystem",
-  "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "exports": {
@@ -18,8 +17,7 @@
     }
   },
   "scripts": {
-    "build": "tsc",
-    "prepare": "tsc"
+    "build": "tsc"
   },
   "files": [
     "dist",

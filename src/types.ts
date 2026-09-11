@@ -1,4 +1,4 @@
-import { VIEW_BOARD, VIEW_GALLERY, VIEW_TABLE } from "./consts.js";
+import { VIEW_BOARD, VIEW_GALLERY, VIEW_TABLE } from "./consts";
 
 // ─────────────────────────────────────────────────────────────────────────────
 // SAMS
