@@ -1,3 +1,6 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.OR_FIELD_MAP = exports.TYPE_LABELS = exports.FIELDS_BY_TYPE = exports.DETAIL_COLUMNS_BY_TYPE = void 0;
 const OR_DETAIL_COLUMNS = [
     {
         group: "Producto",
@@ -23,7 +26,7 @@ const OR_DETAIL_COLUMNS = [
         columns: [{ key: "obsRow", title: "Observaciones" }],
     },
 ];
-export const DETAIL_COLUMNS_BY_TYPE = {
+exports.DETAIL_COLUMNS_BY_TYPE = {
     cot: OR_DETAIL_COLUMNS,
     ped: OR_DETAIL_COLUMNS,
     fac: OR_DETAIL_COLUMNS,
@@ -112,14 +115,14 @@ const OR_FIELDS = [
         ],
     },
 ];
-export const FIELDS_BY_TYPE = {
+exports.FIELDS_BY_TYPE = {
     cot: OR_FIELDS,
     ped: OR_FIELDS,
     fac: OR_FIELDS,
     note: OR_FIELDS,
     pos: [],
 };
-export const TYPE_LABELS = {
+exports.TYPE_LABELS = {
     cot: "Cotización",
     ped: "Pedido",
     fac: "Factura",
@@ -130,7 +133,7 @@ export const TYPE_LABELS = {
  * Mapeo de clave amigable → campo real del resultado de la query (ordersResult).
  * El generador de PDF usa este mapa para resolver {{variable}} en la plantilla.
  */
-export const OR_FIELD_MAP = {
+exports.OR_FIELD_MAP = {
     doc_codigo: "doccode_or",
     doc_numero: "docnumber_or",
     doc_fecha_creacion: "createdat_or",
