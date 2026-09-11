@@ -1287,6 +1287,103 @@ export type CalendarEventType = {
   isvisible: number;
 };
 
+export type AttendanceScheduleType = {
+  idsched: number;
+  name: string;
+  idcmp: number;
+  cmpname?: string;
+  entrytime: string; // "09:00:00"
+  exittime: string;
+  breakminutes: number;
+  workdays: number[]; // 0=domingo..6=sábado (Date.getDay())
+  notes: string;
+  status: number;
+};
+
+export type PartyScheduleType = {
+  idpsched: number;
+  idparty: number;
+  partyname?: string;
+  idsched: number;
+  schedname?: string;
+  entrytime?: string;
+  exittime?: string;
+  workdays?: number[];
+  datefrom: string;
+  dateto: string | null;
+  status: number;
+};
+
+export type AttendancePolicyType = {
+  idpol: number;
+  name: string;
+  idsched: number;
+  schedname?: string;
+  tolerance: number;
+  latethreshold: number;
+  absentthreshold: number;
+  earlyleavethreshold: number;
+  maxbreakminutes: number;
+  expectedhours: number;
+  overtimeafter: number;
+  status: number;
+};
+
+export type AttendanceRecordType = {
+  idassist: number;
+  type: string; // in | break_start | break_end | out
+  workdate: string;
+  idparty: number;
+  partyname?: string;
+  date: string | null;
+  notes: string;
+  source: string; // widget | manual | import
+  externalcode: string;
+  latitude: number | null;
+  longitude: number | null;
+  status: number;
+};
+
+export type AttendanceIncidenceType = {
+  idinc: number;
+  idparty: number;
+  partyname?: string;
+  workdate: string;
+  type: string;
+  origin: string; // auto | manual
+  idassist: number;
+  idsched: number;
+  minutes: number;
+  notes: string;
+  status: number;
+  createdat: string;
+};
+
+export type AttendanceImportType = {
+  idaimp: number;
+  filename: string;
+  totalrows: number;
+  okrows: number;
+  duplicaterows: number;
+  errorrows: number;
+  unmatchedrows: number;
+  status: number;
+  createdat: string;
+};
+
+export type AttendanceImportRowType = {
+  idaimprow: number;
+  idimport: number;
+  rownumber: number;
+  raw: Record<string, any>;
+  externalcode: string;
+  idparty: number;
+  partyname?: string;
+  idassist: number;
+  status: string; // ok | duplicate | error | unmatched
+  errormsg: string;
+};
+
 export type CalendarType = {
   idcal: number;
   title: string;

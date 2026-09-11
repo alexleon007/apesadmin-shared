@@ -158,6 +158,7 @@ export const FORM_RECORDS = "records";
 export const FORM_FISCAL = "fiscal";
 export const FORM_STATS = "stats";
 export const FORM_OTHER = "other";
+export const FORM_ATTENDANCE = "attendance";
 
 export const MAILSUPPLIER_GMAIL = "gmail";
 export const MAILSUPPLIER_OUTLOOK = "outlook";
@@ -372,6 +373,106 @@ export const CLOCK_TYPE_TO_STATUS: Record<string, string> = {
   break_end: "working",
   out: "idle",
 };
+
+// Llave de traducción (no el texto) para cada type_assist — reutiliza los
+// mismos labels que ya usan los botones del reloj checador (AttendanceTracker).
+export const ATTENDANCE_RECORD_TYPE_LABEL_KEYS: Record<string, string> = {
+  in: "arrival",
+  break_start: "break",
+  break_end: "finishBreak",
+  out: "exit",
+};
+
+// source_assist: de dónde salió la checada.
+export const ATTENDANCE_SOURCE_WIDGET = "widget";
+export const ATTENDANCE_SOURCE_MANUAL = "manual";
+export const ATTENDANCE_SOURCE_IMPORT = "import";
+
+// type_inc — capa de incidencias (attendance_incidences). Las primeras tres
+// (ontime/late/absent) y earlyleave/missingpunch/excessbreak las genera el
+// motor de políticas a partir de las checadas; el resto RH las captura a mano.
+export const ATTENDANCE_INCIDENCE_ONTIME = "ontime";
+export const ATTENDANCE_INCIDENCE_LATE = "late";
+export const ATTENDANCE_INCIDENCE_ABSENT = "absent";
+export const ATTENDANCE_INCIDENCE_EARLYLEAVE = "earlyleave";
+export const ATTENDANCE_INCIDENCE_MISSINGPUNCH = "missingpunch";
+export const ATTENDANCE_INCIDENCE_EXCESSBREAK = "excessbreak";
+export const ATTENDANCE_INCIDENCE_PERMISSION = "permission";
+export const ATTENDANCE_INCIDENCE_VACATION = "vacation";
+export const ATTENDANCE_INCIDENCE_DISABILITY = "disability";
+export const ATTENDANCE_INCIDENCE_JUSTIFIEDABSENCE = "justifiedabsence";
+export const ATTENDANCE_INCIDENCE_UNJUSTIFIEDABSENCE = "unjustifiedabsence";
+
+export const ATTENDANCE_INCIDENCE_TYPES = [
+  ATTENDANCE_INCIDENCE_ONTIME,
+  ATTENDANCE_INCIDENCE_LATE,
+  ATTENDANCE_INCIDENCE_ABSENT,
+  ATTENDANCE_INCIDENCE_EARLYLEAVE,
+  ATTENDANCE_INCIDENCE_MISSINGPUNCH,
+  ATTENDANCE_INCIDENCE_EXCESSBREAK,
+  ATTENDANCE_INCIDENCE_PERMISSION,
+  ATTENDANCE_INCIDENCE_VACATION,
+  ATTENDANCE_INCIDENCE_DISABILITY,
+  ATTENDANCE_INCIDENCE_JUSTIFIEDABSENCE,
+  ATTENDANCE_INCIDENCE_UNJUSTIFIEDABSENCE,
+] as const;
+
+// Las que RH captura/edita a mano; las demás solo las escribe el motor.
+export const ATTENDANCE_INCIDENCE_MANUAL_TYPES = [
+  ATTENDANCE_INCIDENCE_PERMISSION,
+  ATTENDANCE_INCIDENCE_VACATION,
+  ATTENDANCE_INCIDENCE_DISABILITY,
+  ATTENDANCE_INCIDENCE_JUSTIFIEDABSENCE,
+  ATTENDANCE_INCIDENCE_UNJUSTIFIEDABSENCE,
+] as const;
+
+export const ATTENDANCE_INCIDENCE_ORIGIN_AUTO = "auto";
+export const ATTENDANCE_INCIDENCE_ORIGIN_MANUAL = "manual";
+
+// Llave de traducción (no el texto) por tipo de incidencia — reutiliza las que
+// ya existen (onTime/late/absent) y agrega las que faltaban.
+export const ATTENDANCE_INCIDENCE_LABEL_KEYS: Record<string, string> = {
+  [ATTENDANCE_INCIDENCE_ONTIME]: "onTime",
+  [ATTENDANCE_INCIDENCE_LATE]: "late",
+  [ATTENDANCE_INCIDENCE_ABSENT]: "absent",
+  [ATTENDANCE_INCIDENCE_EARLYLEAVE]: "earlyLeave",
+  [ATTENDANCE_INCIDENCE_MISSINGPUNCH]: "missingPunch",
+  [ATTENDANCE_INCIDENCE_EXCESSBREAK]: "excessBreak",
+  [ATTENDANCE_INCIDENCE_PERMISSION]: "permission",
+  [ATTENDANCE_INCIDENCE_VACATION]: "vacation",
+  [ATTENDANCE_INCIDENCE_DISABILITY]: "disability",
+  [ATTENDANCE_INCIDENCE_JUSTIFIEDABSENCE]: "justifiedAbsence",
+  [ATTENDANCE_INCIDENCE_UNJUSTIFIEDABSENCE]: "unjustifiedAbsence",
+};
+
+// Color por tipo de incidencia — se usa tanto en el badge del detalle del día
+// como en calendar_events (mismo código de color, sembrado por db.txt) para
+// que el calendario de asistencia y la UI de RH pinten exactamente igual.
+export const ATTENDANCE_INCIDENCE_COLORS: Record<string, string> = {
+  [ATTENDANCE_INCIDENCE_ONTIME]: "#2e7d32",
+  [ATTENDANCE_INCIDENCE_LATE]: "#f9a825",
+  [ATTENDANCE_INCIDENCE_ABSENT]: "#c62828",
+  [ATTENDANCE_INCIDENCE_EARLYLEAVE]: "#ef6c00",
+  [ATTENDANCE_INCIDENCE_MISSINGPUNCH]: "#757575",
+  [ATTENDANCE_INCIDENCE_EXCESSBREAK]: "#6a1b9a",
+  [ATTENDANCE_INCIDENCE_PERMISSION]: "#1565c0",
+  [ATTENDANCE_INCIDENCE_VACATION]: "#00897b",
+  [ATTENDANCE_INCIDENCE_DISABILITY]: "#5e35b1",
+  [ATTENDANCE_INCIDENCE_JUSTIFIEDABSENCE]: "#0097a7",
+  [ATTENDANCE_INCIDENCE_UNJUSTIFIEDABSENCE]: "#b71c1c",
+};
+
+// El "tipo de calendario" (typedoc_cal / calendar_events.code_caleve) que usa
+// el calendario de asistencia al espejear una incidencia en `calendar`.
+export const ATTENDANCE_CALENDAR_TYPEDOC_PREFIX = "attendance_";
+export const attendanceCalendarTypedoc = (typeInc: string): string =>
+  `${ATTENDANCE_CALENDAR_TYPEDOC_PREFIX}${typeInc}`;
+
+// attendance_imports_rows.status_aimprow
+export const ATTENDANCE_IMPORT_ROW_OK = "ok";
+export const ATTENDANCE_IMPORT_ROW_DUPLICATE = "duplicate";
+export const ATTENDANCE_IMPORT_ROW_ERROR = "error";
+export const ATTENDANCE_IMPORT_ROW_UNMATCHED = "unmatched";
 
 export const ACCOUNT_TYPE_ASSET = "asset";
 export const ACCOUNT_TYPE_LIABILITY = "liability";
