@@ -1350,9 +1350,12 @@ export type AttendanceIncidenceType = {
   partyname?: string;
   workdate: string;
   type: string;
-  origin: string; // auto | manual
+  origtype: string;
+  justified: boolean;
+  origin: string;
   idassist: number;
   idsched: number;
+  idreq: number;
   minutes: number;
   notes: string;
   status: number;
@@ -1380,8 +1383,56 @@ export type AttendanceImportRowType = {
   idparty: number;
   partyname?: string;
   idassist: number;
-  status: string; // ok | duplicate | error | unmatched
+  status: string;
   errormsg: string;
+};
+
+export type AttendanceRequestType = {
+  idreq: number;
+  type: string;
+  idparty: number;
+  partyname?: string;
+  status: string;
+  payload: Record<string, any>;
+  comments: string;
+  requestedby: number;
+  requestedbyname?: string;
+  resolvedby: number;
+  resolvedbyname?: string;
+  requestedat: string;
+  resolvedat: string | null;
+};
+
+export type AttendanceRequestHistoryType = {
+  idreqhist: number;
+  idreq: number;
+  fromstatus: string;
+  tostatus: string;
+  iduser: number;
+  username?: string;
+  notes: string;
+  createdat: string;
+};
+
+export type AttendanceVacationBalanceType = {
+  idvacbal: number;
+  idparty: number;
+  partyname?: string;
+  year: number;
+  daysavailable: number;
+  daysused: number;
+  daysremaining: number;
+  notes: string;
+};
+
+export type AttendanceCalendarDayType = {
+  idcalday: number;
+  idcmp: number;
+  cmpname?: string;
+  date: string;
+  type: string;
+  name: string;
+  status: number;
 };
 
 export type CalendarType = {

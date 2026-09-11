@@ -374,8 +374,6 @@ export const CLOCK_TYPE_TO_STATUS: Record<string, string> = {
   out: "idle",
 };
 
-// Llave de traducción (no el texto) para cada type_assist — reutiliza los
-// mismos labels que ya usan los botones del reloj checador (AttendanceTracker).
 export const ATTENDANCE_RECORD_TYPE_LABEL_KEYS: Record<string, string> = {
   in: "arrival",
   break_start: "break",
@@ -383,14 +381,10 @@ export const ATTENDANCE_RECORD_TYPE_LABEL_KEYS: Record<string, string> = {
   out: "exit",
 };
 
-// source_assist: de dónde salió la checada.
 export const ATTENDANCE_SOURCE_WIDGET = "widget";
 export const ATTENDANCE_SOURCE_MANUAL = "manual";
 export const ATTENDANCE_SOURCE_IMPORT = "import";
 
-// type_inc — capa de incidencias (attendance_incidences). Las primeras tres
-// (ontime/late/absent) y earlyleave/missingpunch/excessbreak las genera el
-// motor de políticas a partir de las checadas; el resto RH las captura a mano.
 export const ATTENDANCE_INCIDENCE_ONTIME = "ontime";
 export const ATTENDANCE_INCIDENCE_LATE = "late";
 export const ATTENDANCE_INCIDENCE_ABSENT = "absent";
@@ -417,7 +411,6 @@ export const ATTENDANCE_INCIDENCE_TYPES = [
   ATTENDANCE_INCIDENCE_UNJUSTIFIEDABSENCE,
 ] as const;
 
-// Las que RH captura/edita a mano; las demás solo las escribe el motor.
 export const ATTENDANCE_INCIDENCE_MANUAL_TYPES = [
   ATTENDANCE_INCIDENCE_PERMISSION,
   ATTENDANCE_INCIDENCE_VACATION,
@@ -426,11 +419,16 @@ export const ATTENDANCE_INCIDENCE_MANUAL_TYPES = [
   ATTENDANCE_INCIDENCE_UNJUSTIFIEDABSENCE,
 ] as const;
 
+export const ATTENDANCE_INCIDENCE_JUSTIFIABLE_TYPES = [
+  ATTENDANCE_INCIDENCE_LATE,
+  ATTENDANCE_INCIDENCE_EARLYLEAVE,
+  ATTENDANCE_INCIDENCE_MISSINGPUNCH,
+  ATTENDANCE_INCIDENCE_UNJUSTIFIEDABSENCE,
+] as const;
+
 export const ATTENDANCE_INCIDENCE_ORIGIN_AUTO = "auto";
 export const ATTENDANCE_INCIDENCE_ORIGIN_MANUAL = "manual";
 
-// Llave de traducción (no el texto) por tipo de incidencia — reutiliza las que
-// ya existen (onTime/late/absent) y agrega las que faltaban.
 export const ATTENDANCE_INCIDENCE_LABEL_KEYS: Record<string, string> = {
   [ATTENDANCE_INCIDENCE_ONTIME]: "onTime",
   [ATTENDANCE_INCIDENCE_LATE]: "late",
@@ -445,9 +443,6 @@ export const ATTENDANCE_INCIDENCE_LABEL_KEYS: Record<string, string> = {
   [ATTENDANCE_INCIDENCE_UNJUSTIFIEDABSENCE]: "unjustifiedAbsence",
 };
 
-// Color por tipo de incidencia — se usa tanto en el badge del detalle del día
-// como en calendar_events (mismo código de color, sembrado por db.txt) para
-// que el calendario de asistencia y la UI de RH pinten exactamente igual.
 export const ATTENDANCE_INCIDENCE_COLORS: Record<string, string> = {
   [ATTENDANCE_INCIDENCE_ONTIME]: "#2e7d32",
   [ATTENDANCE_INCIDENCE_LATE]: "#f9a825",
@@ -462,17 +457,87 @@ export const ATTENDANCE_INCIDENCE_COLORS: Record<string, string> = {
   [ATTENDANCE_INCIDENCE_UNJUSTIFIEDABSENCE]: "#b71c1c",
 };
 
-// El "tipo de calendario" (typedoc_cal / calendar_events.code_caleve) que usa
-// el calendario de asistencia al espejear una incidencia en `calendar`.
-export const ATTENDANCE_CALENDAR_TYPEDOC_PREFIX = "attendance_";
-export const attendanceCalendarTypedoc = (typeInc: string): string =>
-  `${ATTENDANCE_CALENDAR_TYPEDOC_PREFIX}${typeInc}`;
+export const ATTENDANCE_CALENDAR_TYPEDOC = "attendance";
 
-// attendance_imports_rows.status_aimprow
 export const ATTENDANCE_IMPORT_ROW_OK = "ok";
 export const ATTENDANCE_IMPORT_ROW_DUPLICATE = "duplicate";
 export const ATTENDANCE_IMPORT_ROW_ERROR = "error";
 export const ATTENDANCE_IMPORT_ROW_UNMATCHED = "unmatched";
+
+export const ATTENDANCE_REQUEST_VACATION = "vacation";
+export const ATTENDANCE_REQUEST_PERMISSION = "permission";
+export const ATTENDANCE_REQUEST_DISABILITY = "disability";
+export const ATTENDANCE_REQUEST_OVERTIME = "overtime";
+export const ATTENDANCE_REQUEST_JUSTIFY = "justify_absence";
+export const ATTENDANCE_REQUEST_CORRECTION = "correction";
+
+export const ATTENDANCE_REQUEST_TYPES = [
+  ATTENDANCE_REQUEST_VACATION,
+  ATTENDANCE_REQUEST_PERMISSION,
+  ATTENDANCE_REQUEST_DISABILITY,
+  ATTENDANCE_REQUEST_OVERTIME,
+  ATTENDANCE_REQUEST_JUSTIFY,
+  ATTENDANCE_REQUEST_CORRECTION,
+] as const;
+
+export const ATTENDANCE_REQUEST_TYPES_WITH_INCIDENCE = [
+  ATTENDANCE_REQUEST_VACATION,
+  ATTENDANCE_REQUEST_PERMISSION,
+  ATTENDANCE_REQUEST_DISABILITY,
+] as const;
+
+export const ATTENDANCE_REQUEST_TYPE_INCIDENCE: Record<string, string> = {
+  [ATTENDANCE_REQUEST_VACATION]: ATTENDANCE_INCIDENCE_VACATION,
+  [ATTENDANCE_REQUEST_PERMISSION]: ATTENDANCE_INCIDENCE_PERMISSION,
+  [ATTENDANCE_REQUEST_DISABILITY]: ATTENDANCE_INCIDENCE_DISABILITY,
+};
+
+export const ATTENDANCE_REQUEST_LABEL_KEYS: Record<string, string> = {
+  [ATTENDANCE_REQUEST_VACATION]: "vacation",
+  [ATTENDANCE_REQUEST_PERMISSION]: "permission",
+  [ATTENDANCE_REQUEST_DISABILITY]: "disability",
+  [ATTENDANCE_REQUEST_OVERTIME]: "overtimeRequest",
+  [ATTENDANCE_REQUEST_JUSTIFY]: "justifyRequest",
+  [ATTENDANCE_REQUEST_CORRECTION]: "correctionRequest",
+};
+
+export const ATTENDANCE_REQUEST_PENDING = "pending";
+export const ATTENDANCE_REQUEST_APPROVED = "approved";
+export const ATTENDANCE_REQUEST_REJECTED = "rejected";
+export const ATTENDANCE_REQUEST_CANCELLED = "cancelled";
+
+export const ATTENDANCE_REQUEST_STATUSES = [
+  ATTENDANCE_REQUEST_PENDING,
+  ATTENDANCE_REQUEST_APPROVED,
+  ATTENDANCE_REQUEST_REJECTED,
+  ATTENDANCE_REQUEST_CANCELLED,
+] as const;
+
+export const ATTENDANCE_REQUEST_STATUS_LABEL_KEYS: Record<string, string> = {
+  [ATTENDANCE_REQUEST_PENDING]: "requestPending",
+  [ATTENDANCE_REQUEST_APPROVED]: "requestApproved",
+  [ATTENDANCE_REQUEST_REJECTED]: "requestRejected",
+  [ATTENDANCE_REQUEST_CANCELLED]: "requestCancelled",
+};
+
+export const ATTENDANCE_CALENDAR_DAY_HOLIDAY = "holiday";
+export const ATTENDANCE_CALENDAR_DAY_NONWORKING = "nonworking";
+export const ATTENDANCE_CALENDAR_DAY_CLOSURE = "closure";
+export const ATTENDANCE_CALENDAR_DAY_EXTRAREST = "extrarest";
+
+export const ATTENDANCE_CALENDAR_DAY_TYPES = [
+  ATTENDANCE_CALENDAR_DAY_HOLIDAY,
+  ATTENDANCE_CALENDAR_DAY_NONWORKING,
+  ATTENDANCE_CALENDAR_DAY_CLOSURE,
+  ATTENDANCE_CALENDAR_DAY_EXTRAREST,
+] as const;
+
+export const ATTENDANCE_CALENDAR_DAY_LABEL_KEYS: Record<string, string> = {
+  [ATTENDANCE_CALENDAR_DAY_HOLIDAY]: "holiday",
+  [ATTENDANCE_CALENDAR_DAY_NONWORKING]: "nonworkingDay",
+  [ATTENDANCE_CALENDAR_DAY_CLOSURE]: "specialClosure",
+  [ATTENDANCE_CALENDAR_DAY_EXTRAREST]: "extraRestDay",
+};
 
 export const ACCOUNT_TYPE_ASSET = "asset";
 export const ACCOUNT_TYPE_LIABILITY = "liability";
