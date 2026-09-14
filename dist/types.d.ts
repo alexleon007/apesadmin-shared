@@ -1226,9 +1226,12 @@ export type AttendanceIncidenceType = {
     partyname?: string;
     workdate: string;
     type: string;
+    origtype: string;
+    justified: boolean;
     origin: string;
     idassist: number;
     idsched: number;
+    idreq: number;
     minutes: number;
     notes: string;
     status: number;
@@ -1256,6 +1259,114 @@ export type AttendanceImportRowType = {
     idassist: number;
     status: string;
     errormsg: string;
+};
+export type AttendanceRequestType = {
+    idreq: number;
+    type: string;
+    idparty: number;
+    partyname?: string;
+    status: string;
+    payload: Record<string, any>;
+    comments: string;
+    requestedby: number;
+    requestedbyname?: string;
+    resolvedby: number;
+    resolvedbyname?: string;
+    requestedat: string;
+    resolvedat: string | null;
+};
+export type AttendanceRequestHistoryType = {
+    idreqhist: number;
+    idreq: number;
+    fromstatus: string;
+    tostatus: string;
+    iduser: number;
+    username?: string;
+    notes: string;
+    createdat: string;
+};
+export type AttendanceVacationBalanceType = {
+    idvacbal: number;
+    idparty: number;
+    partyname?: string;
+    year: number;
+    daysavailable: number;
+    daysused: number;
+    daysremaining: number;
+    notes: string;
+};
+export type AttendanceCalendarDayType = {
+    idcalday: number;
+    idcmp: number;
+    cmpname?: string;
+    date: string;
+    type: string;
+    name: string;
+    status: number;
+};
+export type PrepayrollPeriodType = {
+    idpp: number;
+    type: string;
+    idcmp: number;
+    cmpname?: string;
+    datefrom: string;
+    dateto: string;
+    status: string;
+    notes: string;
+    createdat: string;
+    closedat: string | null;
+    closedby: number;
+    closedbyname?: string;
+};
+export type PrepayrollPeriodDetailType = {
+    idppd: number;
+    idpp: number;
+    idparty: number;
+    partyname?: string;
+    partycode?: string;
+    expecteddays: number;
+    workeddays: number;
+    justifiedabsencedays: number;
+    unjustifiedabsencedays: number;
+    latecount: number;
+    lateminutes: number;
+    earlyleavecount: number;
+    permissionwithpaydays: number;
+    permissionwithoutpaydays: number;
+    vacationdays: number;
+    disabilitydays: number;
+    overtimeminutes: number;
+    adjustedfields: string[];
+    calculatedat: string;
+};
+export type PrepayrollPeriodAdjustmentType = {
+    idppadj: number;
+    idppd: number;
+    field: string;
+    oldvalue: number;
+    newvalue: number;
+    reason: string;
+    iduser: number;
+    username?: string;
+    createdat: string;
+};
+export type PrepayrollPeriodHistoryType = {
+    idpphist: number;
+    idpp: number;
+    fromstatus: string;
+    tostatus: string;
+    iduser: number;
+    username?: string;
+    notes: string;
+    createdat: string;
+};
+export type PrepayrollPeriodExceptionType = {
+    idppexc: number;
+    idpp: number;
+    idparty: number | null;
+    partyname?: string;
+    type: string;
+    detail: string;
 };
 export type CalendarType = {
     idcal: number;
