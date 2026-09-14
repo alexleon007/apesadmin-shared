@@ -954,6 +954,7 @@ export declare const languages: {
         goodsReceipt: string;
         goodsReceiptShort: string;
         goToAdvancedPanel: string;
+        googleCalendarNewAvailable: string;
         grade: string;
         grossProfit: string;
         group: string;
@@ -3737,6 +3738,7 @@ export declare const languages: {
         goodsReceipt: string;
         goodsReceiptShort: string;
         goToAdvancedPanel: string;
+        googleCalendarNewAvailable: string;
         grade: string;
         grossProfit: string;
         group: string;
@@ -6520,6 +6522,7 @@ export declare const languages: {
         goodsReceipt: string;
         goodsReceiptShort: string;
         goToAdvancedPanel: string;
+        googleCalendarNewAvailable: string;
         grade: string;
         grossProfit: string;
         group: string;

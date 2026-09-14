@@ -950,6 +950,7 @@
     "goodsReceipt": "收貨",
     "goodsReceiptShort": "收貨",
     "goToAdvancedPanel": "前往進階面板",
+    "googleCalendarNewAvailable": "你的 Google 帳戶有新的日曆：{{names}}。可在「設定 › 系統串接」中同步。",
     "grade": "等級",
     "grossProfit": "毛利",
     "group": "群組",

@@ -950,6 +950,7 @@
   "goodsReceipt": "Goods Receipt",
   "goodsReceiptShort": "Goods Receipt",
   "goToAdvancedPanel": "Go to advanced panel",
+  "googleCalendarNewAvailable": "There's a new calendar in your Google account: {{names}}. You can sync it from Configuration › Connections.",
   "grade": "Grade",
   "grossProfit": "Gross profit",
   "group": "Group",
