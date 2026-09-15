@@ -1391,6 +1391,7 @@ export declare const languages: {
         newWarehouse: string;
         newWorkflow: string;
         next: string;
+        next30Days: string;
         nextFollowup: string;
         nextRun: string;
         no: string;
@@ -4175,6 +4176,7 @@ export declare const languages: {
         newWarehouse: string;
         newWorkflow: string;
         next: string;
+        next30Days: string;
         nextFollowup: string;
         nextRun: string;
         no: string;
@@ -6959,6 +6961,7 @@ export declare const languages: {
         newWarehouse: string;
         newWorkflow: string;
         next: string;
+        next30Days: string;
         nextFollowup: string;
         nextRun: string;
         no: string;
