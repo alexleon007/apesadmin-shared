@@ -61,6 +61,7 @@ export declare const languages: {
         addFile: string;
         addFilter: string;
         addGroupingColumn: string;
+        addition: string;
         additionalFields: string;
         additionalNotes: string;
         addLine: string;
@@ -131,6 +132,7 @@ export declare const languages: {
         applyAll: string;
         applyChanges: string;
         applyComission: string;
+        applyComissionByAgent: string;
         applyFiltersAndRefresh: string;
         applyPayment: string;
         applyPayments: string;
@@ -401,6 +403,7 @@ export declare const languages: {
         colors: string;
         cols: string;
         column: string;
+        comissionApplication: string;
         comissionsByAgent: string;
         comissionsToPay: string;
         comment: string;
@@ -639,6 +642,7 @@ export declare const languages: {
         deactivate: string;
         debit: string;
         decimals: string;
+        deduction: string;
         default: string;
         defaultCredit: string;
         definedDiscounts: string;
@@ -2846,6 +2850,7 @@ export declare const languages: {
         addFile: string;
         addFilter: string;
         addGroupingColumn: string;
+        addition: string;
         additionalFields: string;
         additionalNotes: string;
         addLine: string;
@@ -2916,6 +2921,7 @@ export declare const languages: {
         applyAll: string;
         applyChanges: string;
         applyComission: string;
+        applyComissionByAgent: string;
         applyFiltersAndRefresh: string;
         applyPayment: string;
         applyPayments: string;
@@ -3186,6 +3192,7 @@ export declare const languages: {
         colors: string;
         cols: string;
         column: string;
+        comissionApplication: string;
         comissionsByAgent: string;
         comissionsToPay: string;
         comment: string;
@@ -3424,6 +3431,7 @@ export declare const languages: {
         deactivate: string;
         debit: string;
         decimals: string;
+        deduction: string;
         default: string;
         defaultCredit: string;
         definedDiscounts: string;
@@ -5631,6 +5639,7 @@ export declare const languages: {
         addFile: string;
         addFilter: string;
         addGroupingColumn: string;
+        addition: string;
         additionalFields: string;
         additionalNotes: string;
         addLine: string;
@@ -5701,6 +5710,7 @@ export declare const languages: {
         applyAll: string;
         applyChanges: string;
         applyComission: string;
+        applyComissionByAgent: string;
         applyFiltersAndRefresh: string;
         applyPayment: string;
         applyPayments: string;
@@ -5971,6 +5981,7 @@ export declare const languages: {
         colors: string;
         cols: string;
         column: string;
+        comissionApplication: string;
         comissionsByAgent: string;
         comissionsToPay: string;
         comment: string;
@@ -6209,6 +6220,7 @@ export declare const languages: {
         deactivate: string;
         debit: string;
         decimals: string;
+        deduction: string;
         default: string;
         defaultCredit: string;
         definedDiscounts: string;
