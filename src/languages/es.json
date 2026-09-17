@@ -836,6 +836,8 @@
   "expensesNotEditable": "Los gastos no son editables; cancélalo y genera uno nuevo",
   "expiration": "Expiración",
   "expires": "Expira",
+  "expiredBatches": "Lotes vencidos",
+  "expiringBatches": "Lotes por vencer (14 días)",
   "export": "Exportar",
   "exports": "Exportaciones",
   "external": "Externo",

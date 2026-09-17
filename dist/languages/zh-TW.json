@@ -836,6 +836,8 @@
     "expensesNotEditable": "支出無法編輯，請取消後重新建立",
     "expiration": "過期",
     "expires": "到期",
+    "expiredBatches": "已過期批次",
+    "expiringBatches": "即將到期批次（14天）",
     "export": "匯出",
     "exports": "匯出",
     "external": "外部",

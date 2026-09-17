@@ -840,6 +840,8 @@ export declare const languages: {
         expensesNotEditable: string;
         expiration: string;
         expires: string;
+        expiredBatches: string;
+        expiringBatches: string;
         export: string;
         exports: string;
         external: string;
@@ -3629,6 +3631,8 @@ export declare const languages: {
         expensesNotEditable: string;
         expiration: string;
         expires: string;
+        expiredBatches: string;
+        expiringBatches: string;
         export: string;
         exports: string;
         external: string;
@@ -6418,6 +6422,8 @@ export declare const languages: {
         expensesNotEditable: string;
         expiration: string;
         expires: string;
+        expiredBatches: string;
+        expiringBatches: string;
         export: string;
         exports: string;
         external: string;

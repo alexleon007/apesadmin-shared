@@ -836,6 +836,8 @@
   "expensesNotEditable": "Expenses are not editable; cancel it and create a new one",
   "expiration": "Expiration",
   "expires": "Expires",
+  "expiredBatches": "Expired batches",
+  "expiringBatches": "Batches expiring (14 days)",
   "export": "Export",
   "exports": "Exports",
   "external": "External",
