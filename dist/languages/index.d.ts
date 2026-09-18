@@ -971,6 +971,7 @@ export declare const languages: {
         groupPhoto: string;
         groupSettings: string;
         guidedAssortment: string;
+        guidedReception: string;
         haber: string;
         haveAccountSignIn: string;
         header: string;
@@ -3762,6 +3763,7 @@ export declare const languages: {
         groupPhoto: string;
         groupSettings: string;
         guidedAssortment: string;
+        guidedReception: string;
         haber: string;
         haveAccountSignIn: string;
         header: string;
@@ -6553,6 +6555,7 @@ export declare const languages: {
         groupPhoto: string;
         groupSettings: string;
         guidedAssortment: string;
+        guidedReception: string;
         haber: string;
         haveAccountSignIn: string;
         header: string;
