@@ -1024,6 +1024,7 @@ export declare const languages: {
         inList: string;
         inRange: string;
         insert: string;
+        insidePacking: string;
         install: string;
         installAndroidIntro: string;
         installBenefitBetter: string;
@@ -1585,6 +1586,7 @@ export declare const languages: {
         own: string;
         owner: string;
         ownerRoleRequired: string;
+        packing: string;
         page: string;
         pageNumber: string;
         pageNumTemplate: string;
@@ -3816,6 +3818,7 @@ export declare const languages: {
         inList: string;
         inRange: string;
         insert: string;
+        insidePacking: string;
         install: string;
         installAndroidIntro: string;
         installBenefitBetter: string;
@@ -4377,6 +4380,7 @@ export declare const languages: {
         own: string;
         owner: string;
         ownerRoleRequired: string;
+        packing: string;
         page: string;
         pageNumber: string;
         pageNumTemplate: string;
@@ -6608,6 +6612,7 @@ export declare const languages: {
         inList: string;
         inRange: string;
         insert: string;
+        insidePacking: string;
         install: string;
         installAndroidIntro: string;
         installBenefitBetter: string;
@@ -7169,6 +7174,7 @@ export declare const languages: {
         own: string;
         owner: string;
         ownerRoleRequired: string;
+        packing: string;
         page: string;
         pageNumber: string;
         pageNumTemplate: string;

@@ -1779,12 +1779,18 @@ export type InventoryType = {
     prodbatch: number;
     idbatch: number;
     batchname: string;
+    packingname?: string;
     prodexpiration: number;
     batchexpirationdate: string;
     batchorgquantity: number;
     invquantity: number;
     invstatus: number;
     statusname: string;
+};
+export type PackingBatchType = {
+    idbatch: number;
+    packingname: string;
+    parentname: string;
 };
 export type KpiItemType = {
     icon: any;
