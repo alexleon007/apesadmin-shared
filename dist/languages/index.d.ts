@@ -2029,6 +2029,10 @@ export declare const languages: {
         saving: string;
         scallop: string;
         scannerEntry: string;
+        scanBatchOnly: string;
+        scanCodeOrBatch: string;
+        scanValidation: string;
+        scanned: string;
         scannerThenManual: string;
         scheduleAnother: string;
         scheduledAppointment: string;
@@ -2327,6 +2331,7 @@ export declare const languages: {
         toastActivated: string;
         toastAddAtLeastOne: string;
         toastAllFieldsRequired: string;
+        toastAlreadyScanned: string;
         toastApplied: string;
         toastAudioProcessError: string;
         toastAudioProcessing: string;
@@ -2561,6 +2566,7 @@ export declare const languages: {
         useSelectorOrAI: string;
         usingDefaultStyles: string;
         validityDate: string;
+        validateAndSave: string;
         value: string;
         valueToCalculate: string;
         valueUrlSupportsVariables: string;
@@ -4825,6 +4831,10 @@ export declare const languages: {
         saving: string;
         scallop: string;
         scannerEntry: string;
+        scanBatchOnly: string;
+        scanCodeOrBatch: string;
+        scanValidation: string;
+        scanned: string;
         scannerThenManual: string;
         scheduleAnother: string;
         scheduledAppointment: string;
@@ -5123,6 +5133,7 @@ export declare const languages: {
         toastActivated: string;
         toastAddAtLeastOne: string;
         toastAllFieldsRequired: string;
+        toastAlreadyScanned: string;
         toastApplied: string;
         toastAudioProcessError: string;
         toastAudioProcessing: string;
@@ -5357,6 +5368,7 @@ export declare const languages: {
         useSelectorOrAI: string;
         usingDefaultStyles: string;
         validityDate: string;
+        validateAndSave: string;
         value: string;
         valueToCalculate: string;
         valueUrlSupportsVariables: string;
@@ -7621,6 +7633,10 @@ export declare const languages: {
         saving: string;
         scallop: string;
         scannerEntry: string;
+        scanBatchOnly: string;
+        scanCodeOrBatch: string;
+        scanValidation: string;
+        scanned: string;
         scannerThenManual: string;
         scheduleAnother: string;
         scheduledAppointment: string;
@@ -7919,6 +7935,7 @@ export declare const languages: {
         toastActivated: string;
         toastAddAtLeastOne: string;
         toastAllFieldsRequired: string;
+        toastAlreadyScanned: string;
         toastApplied: string;
         toastAudioProcessError: string;
         toastAudioProcessing: string;
@@ -8153,6 +8170,7 @@ export declare const languages: {
         useSelectorOrAI: string;
         usingDefaultStyles: string;
         validityDate: string;
+        validateAndSave: string;
         value: string;
         valueToCalculate: string;
         valueUrlSupportsVariables: string;
