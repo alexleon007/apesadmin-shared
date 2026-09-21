@@ -2793,5 +2793,7 @@
     "noScheduleException": "未指派班表",
     "forceClose": "仍要關閉",
     "closedBy": "關閉人員",
-    "closedAt": "關閉日期"
+    "closedAt": "關閉日期",
+    "connectMicrosoft": "與 Microsoft 連接",
+    "outlookConnection": "Outlook 連接"
 }

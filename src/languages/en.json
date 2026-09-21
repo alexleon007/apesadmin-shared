@@ -2794,5 +2794,7 @@
   "noScheduleException": "No schedule assigned",
   "forceClose": "Close anyway",
   "closedBy": "Closed by",
-  "closedAt": "Closing date"
+  "closedAt": "Closing date",
+  "connectMicrosoft": "Connect with Microsoft",
+  "outlookConnection": "Outlook Connection"
 }

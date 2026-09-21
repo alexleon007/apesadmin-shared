@@ -2793,5 +2793,7 @@
     "noScheduleException": "Sin horario asignado",
     "forceClose": "Cerrar de todas formas",
     "closedBy": "Cerrado por",
-    "closedAt": "Fecha de cierre"
+    "closedAt": "Fecha de cierre",
+    "connectMicrosoft": "Conectar con Microsoft",
+    "outlookConnection": "Conexión Outlook"
 }

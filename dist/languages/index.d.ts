@@ -2795,6 +2795,8 @@ export declare const languages: {
         forceClose: string;
         closedBy: string;
         closedAt: string;
+        connectMicrosoft: string;
+        outlookConnection: string;
     };
     readonly en: {
         aboveMax: string;
@@ -5589,6 +5591,8 @@ export declare const languages: {
         forceClose: string;
         closedBy: string;
         closedAt: string;
+        connectMicrosoft: string;
+        outlookConnection: string;
     };
     readonly "zh-TW": {
         aboveMax: string;
@@ -8383,6 +8387,8 @@ export declare const languages: {
         forceClose: string;
         closedBy: string;
         closedAt: string;
+        connectMicrosoft: string;
+        outlookConnection: string;
     };
 };
 export type LanguageKey = keyof typeof languages;

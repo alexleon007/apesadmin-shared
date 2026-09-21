@@ -2167,9 +2167,9 @@ export type MailMessagesType = {
   unsupportedSupplier: string;
 };
 
-/** Contrato comun de Gmail e IMAP. Lo cumple lo que devuelve getMailProvider(). */
+/** Contrato comun de Gmail, Outlook e IMAP. Lo cumple lo que devuelve getMailProvider(). */
 export type MailProviderType = {
-  kind: "gmail" | "imap";
+  kind: "gmail" | "outlook" | "imap";
   list: (opts: MailListOptionsType) => Promise<MailListResultType>;
   detail: (opts: MailMessageRefType) => Promise<MailMessageType>;
   send: (opts: MailSendOptionsType) => Promise<{ messageId: string }>;
