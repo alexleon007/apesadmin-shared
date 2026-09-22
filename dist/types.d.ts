@@ -2581,6 +2581,12 @@ export type InvOrderRow = {
     partyname: string;
     assortdate: string;
     statusname: string;
+    idcmp?: number;
+    idwh?: number;
+    idwhloc?: number;
+    party?: number;
+    assortobs?: string;
+    assortdetail?: any[];
     scanned?: number;
     scannedlines?: number;
     scannablelines?: number;
