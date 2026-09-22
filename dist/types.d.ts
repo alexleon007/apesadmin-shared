@@ -2581,6 +2581,9 @@ export type InvOrderRow = {
     partyname: string;
     assortdate: string;
     statusname: string;
+    scanned?: number;
+    scannedlines?: number;
+    scannablelines?: number;
 };
 export type UnitRow = {
     idunit: number;
