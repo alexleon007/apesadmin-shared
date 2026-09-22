@@ -2026,7 +2026,7 @@
     "scallop": "Festón",
     "scannerEntry": "Ingreso con escáner",
     "scanBatchOnly": "Esta modalidad es exclusiva para productos con control de lotes",
-    "scanCodeOrBatch": "Escanea código, código de barras o lote",
+    "scanCodeOrBatch": "Escanea código, código de barras, lote o empaque",
     "scanValidation": "Validación por escaneo",
     "scanned": "Escaneado",
     "scannerThenManual": "Ingreso con escáner y después manual",

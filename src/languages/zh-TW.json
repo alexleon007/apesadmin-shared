@@ -2026,7 +2026,7 @@
   "scallop": "扇貝形",
   "scannerEntry": "掃描輸入",
   "scanBatchOnly": "此模式僅適用於具批號管制的產品",
-  "scanCodeOrBatch": "掃描代碼、條碼或批號",
+  "scanCodeOrBatch": "掃描代碼、條碼、批號或包裝",
   "scanValidation": "掃描驗證",
   "scanned": "已掃描",
   "scannerThenManual": "先掃描後手動輸入",

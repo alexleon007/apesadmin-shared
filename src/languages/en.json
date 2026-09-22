@@ -2026,7 +2026,7 @@
   "scallop": "Scallop",
   "scannerEntry": "Scanner entry",
   "scanBatchOnly": "This mode is only for batch-controlled products",
-  "scanCodeOrBatch": "Scan code, barcode or batch",
+  "scanCodeOrBatch": "Scan code, barcode, batch or packing",
   "scanValidation": "Scan validation",
   "scanned": "Scanned",
   "scannerThenManual": "Scanner entry, then manual",
