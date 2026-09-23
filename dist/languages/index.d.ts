@@ -2324,6 +2324,7 @@ export declare const languages: {
         timeHour: string;
         timeInSeconds: string;
         timeLeft: string;
+        timeZone: string;
         title: string;
         titleRequired: string;
         to: string;
@@ -5126,6 +5127,7 @@ export declare const languages: {
         timeHour: string;
         timeInSeconds: string;
         timeLeft: string;
+        timeZone: string;
         title: string;
         titleRequired: string;
         to: string;
@@ -7928,6 +7930,7 @@ export declare const languages: {
         timeHour: string;
         timeInSeconds: string;
         timeLeft: string;
+        timeZone: string;
         title: string;
         titleRequired: string;
         to: string;

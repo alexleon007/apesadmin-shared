@@ -2870,6 +2870,7 @@ export type SupplierType = {
 export type SystemSettingsType = {
     sw_cfdi: boolean;
     decimals: number;
+    timezone: string;
     orders_pricelist_mode: string;
     price_list_by_line: boolean;
     reserve_inventory_on_order: boolean;
