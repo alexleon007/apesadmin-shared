@@ -730,6 +730,10 @@ export type CfdiDataType = {
     usoCFDI: string;
     domicilioFiscal: string;
     regimenFiscal: string;
+    // Sólo con el RFC genérico extranjero: clave c_Pais (3 letras) y número de
+    // registro tributario del receptor en ese país.
+    residenciaFiscal?: string;
+    numRegIdTrib?: string;
   };
   conceptos: CFDIConceptoType[];
   impuestos?: {
@@ -815,6 +819,10 @@ export type CfdiPagoDataType = {
     usoCFDI: "CP01";
     domicilioFiscal: string;
     regimenFiscal: string;
+    // Sólo con el RFC genérico extranjero: clave c_Pais (3 letras) y número de
+    // registro tributario del receptor en ese país.
+    residenciaFiscal?: string;
+    numRegIdTrib?: string;
   };
   pago: {
     fechaPago: string;
@@ -2453,6 +2461,10 @@ export type PartyType = {
   partyrf: number;
   partyaddress: string;
   partycp: string;
+  // Sólo con el RFC genérico extranjero (XEXX010101000): registro tributario
+  // en su país y ese país en ISO2 (catálogo `countries`).
+  partynumregidtrib?: string;
+  partytaxcountry?: string;
   partyagent: number;
   partyagentname: string;
   partypricelist: number;
@@ -3051,6 +3063,9 @@ export type CountryType = {
   phonecode: number;
   /** Nombre del icono de Iconify, p. ej. `circle-flags:mx`. */
   flagicon: string;
+  /** ISO 3166-1 alfa-3 = clave c_Pais del SAT (ResidenciaFiscal). Vacio si
+      el SAT no la tiene en su catalogo. */
+  code3: string;
 };
 
 export type RegimeType = {

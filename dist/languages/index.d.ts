@@ -591,6 +591,7 @@ export declare const languages: {
         customerFiscalAddress: string;
         customerName: string;
         customerNotFound: string;
+        customerNumRegIdTribRequired: string;
         customerPhone: string;
         customerReference: string;
         customerRFC: string;
@@ -601,6 +602,7 @@ export declare const languages: {
         customerSubclass: string;
         customerTaxRegime: string;
         customerTaxRegimeRequired: string;
+        customerTaxResidenceRequired: string;
         customerUsers: string;
         customerZipCode: string;
         customThemes: string;
@@ -1509,6 +1511,7 @@ export declare const languages: {
         noXmlFileUploaded: string;
         number: string;
         numQuestions: string;
+        numRegIdTrib: string;
         obsAbbr: string;
         observations: string;
         ocrDescription: string;
@@ -1616,6 +1619,7 @@ export declare const languages: {
         partialProductionShortfall: string;
         partialSale: string;
         partialSaleHelp: string;
+        participations: string;
         password: string;
         passwordsDoNotMatch: string;
         paused: string;
@@ -2267,6 +2271,7 @@ export declare const languages: {
         taxNotApplicableHint: string;
         taxOutputAccount: string;
         taxRegime: string;
+        taxResidence: string;
         team: string;
         teammates: string;
         teamRole: string;
@@ -3394,6 +3399,7 @@ export declare const languages: {
         customerFiscalAddress: string;
         customerName: string;
         customerNotFound: string;
+        customerNumRegIdTribRequired: string;
         customerPhone: string;
         customerReference: string;
         customerRFC: string;
@@ -3404,6 +3410,7 @@ export declare const languages: {
         customerSubclass: string;
         customerTaxRegime: string;
         customerTaxRegimeRequired: string;
+        customerTaxResidenceRequired: string;
         customerUsers: string;
         customerZipCode: string;
         customThemes: string;
@@ -4312,6 +4319,7 @@ export declare const languages: {
         noXmlFileUploaded: string;
         number: string;
         numQuestions: string;
+        numRegIdTrib: string;
         obsAbbr: string;
         observations: string;
         ocrDescription: string;
@@ -4419,6 +4427,7 @@ export declare const languages: {
         partialProductionShortfall: string;
         partialSale: string;
         partialSaleHelp: string;
+        participations: string;
         password: string;
         passwordsDoNotMatch: string;
         paused: string;
@@ -5070,6 +5079,7 @@ export declare const languages: {
         taxNotApplicableHint: string;
         taxOutputAccount: string;
         taxRegime: string;
+        taxResidence: string;
         team: string;
         teammates: string;
         teamRole: string;
@@ -6197,6 +6207,7 @@ export declare const languages: {
         customerFiscalAddress: string;
         customerName: string;
         customerNotFound: string;
+        customerNumRegIdTribRequired: string;
         customerPhone: string;
         customerReference: string;
         customerRFC: string;
@@ -6207,6 +6218,7 @@ export declare const languages: {
         customerSubclass: string;
         customerTaxRegime: string;
         customerTaxRegimeRequired: string;
+        customerTaxResidenceRequired: string;
         customerUsers: string;
         customerZipCode: string;
         customThemes: string;
@@ -7115,6 +7127,7 @@ export declare const languages: {
         noXmlFileUploaded: string;
         number: string;
         numQuestions: string;
+        numRegIdTrib: string;
         obsAbbr: string;
         observations: string;
         ocrDescription: string;
@@ -7222,6 +7235,7 @@ export declare const languages: {
         partialProductionShortfall: string;
         partialSale: string;
         partialSaleHelp: string;
+        participations: string;
         password: string;
         passwordsDoNotMatch: string;
         paused: string;
@@ -7873,6 +7887,7 @@ export declare const languages: {
         taxNotApplicableHint: string;
         taxOutputAccount: string;
         taxRegime: string;
+        taxResidence: string;
         team: string;
         teammates: string;
         teamRole: string;

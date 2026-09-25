@@ -93,6 +93,10 @@ export const CFDI_GLOBAL_CFDIUSE = "S01";
 export const CFDI_GLOBAL_TAX_REGIME = "616";
 export const CFDI_GLOBAL_PAYMETHOD = "PUE";
 
+// Receptor residente en el extranjero: RFC genérico que, en vez de régimen y
+// CP propios, pide su número de registro tributario y su país de residencia.
+export const CFDI_FOREIGN_RFC = "XEXX010101000";
+
 export const CFDI_GLOBAL_PERIODICITY_OPTIONS: {
   value: string;
   label: string;

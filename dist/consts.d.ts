@@ -62,6 +62,7 @@ export declare const CFDI_GLOBAL_RFC = "XAXX010101000";
 export declare const CFDI_GLOBAL_CFDIUSE = "S01";
 export declare const CFDI_GLOBAL_TAX_REGIME = "616";
 export declare const CFDI_GLOBAL_PAYMETHOD = "PUE";
+export declare const CFDI_FOREIGN_RFC = "XEXX010101000";
 export declare const CFDI_GLOBAL_PERIODICITY_OPTIONS: {
     value: string;
     label: string;
