@@ -591,6 +591,7 @@ export declare const languages: {
         customerFiscalAddress: string;
         customerName: string;
         customerNotFound: string;
+        customerNumRegIdTrib: string;
         customerNumRegIdTribRequired: string;
         customerPhone: string;
         customerReference: string;
@@ -602,6 +603,7 @@ export declare const languages: {
         customerSubclass: string;
         customerTaxRegime: string;
         customerTaxRegimeRequired: string;
+        customerTaxResidence: string;
         customerTaxResidenceRequired: string;
         customerUsers: string;
         customerZipCode: string;
@@ -3399,6 +3401,7 @@ export declare const languages: {
         customerFiscalAddress: string;
         customerName: string;
         customerNotFound: string;
+        customerNumRegIdTrib: string;
         customerNumRegIdTribRequired: string;
         customerPhone: string;
         customerReference: string;
@@ -3410,6 +3413,7 @@ export declare const languages: {
         customerSubclass: string;
         customerTaxRegime: string;
         customerTaxRegimeRequired: string;
+        customerTaxResidence: string;
         customerTaxResidenceRequired: string;
         customerUsers: string;
         customerZipCode: string;
@@ -6207,6 +6211,7 @@ export declare const languages: {
         customerFiscalAddress: string;
         customerName: string;
         customerNotFound: string;
+        customerNumRegIdTrib: string;
         customerNumRegIdTribRequired: string;
         customerPhone: string;
         customerReference: string;
@@ -6218,6 +6223,7 @@ export declare const languages: {
         customerSubclass: string;
         customerTaxRegime: string;
         customerTaxRegimeRequired: string;
+        customerTaxResidence: string;
         customerTaxResidenceRequired: string;
         customerUsers: string;
         customerZipCode: string;
