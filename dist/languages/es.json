@@ -1638,6 +1638,8 @@
     "paymentDetails": "Detalles del Pago",
     "paymentForm": "Forma de Pago",
     "paymentForms": "Formas de pago",
+    "docPaymentForm": "F. pago documento",
+    "paidWithPaymentForm": "Pagado con",
     "paymentGateway": "Pasarela de Pago",
     "paymentHasNoPpdDocs": "El pago no incluye documentos con método de pago PPD; no es posible generar un Complemento de Pago.",
     "paymentHistory": "Historial de Pagos",

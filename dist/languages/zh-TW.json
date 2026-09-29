@@ -1638,6 +1638,8 @@
     "paymentDetails": "付款明細",
     "paymentForm": "付款形式",
     "paymentForms": "付款形式",
+    "docPaymentForm": "單據付款方式",
+    "paidWithPaymentForm": "實際付款方式",
     "paymentGateway": "支付閘道",
     "paymentHasNoPpdDocs": "此付款不含付款方法為 PPD 的單據，因此無法產生付款補充單。",
     "paymentHistory": "付款歷史記錄",

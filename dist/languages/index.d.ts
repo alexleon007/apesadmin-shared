@@ -1642,6 +1642,8 @@ export declare const languages: {
         paymentDetails: string;
         paymentForm: string;
         paymentForms: string;
+        docPaymentForm: string;
+        paidWithPaymentForm: string;
         paymentGateway: string;
         paymentHasNoPpdDocs: string;
         paymentHistory: string;
@@ -4455,6 +4457,8 @@ export declare const languages: {
         paymentDetails: string;
         paymentForm: string;
         paymentForms: string;
+        docPaymentForm: string;
+        paidWithPaymentForm: string;
         paymentGateway: string;
         paymentHasNoPpdDocs: string;
         paymentHistory: string;
@@ -7268,6 +7272,8 @@ export declare const languages: {
         paymentDetails: string;
         paymentForm: string;
         paymentForms: string;
+        docPaymentForm: string;
+        paidWithPaymentForm: string;
         paymentGateway: string;
         paymentHasNoPpdDocs: string;
         paymentHistory: string;

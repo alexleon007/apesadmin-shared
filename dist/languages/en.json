@@ -1638,6 +1638,8 @@
     "paymentDetails": "Payment details",
     "paymentForm": "Payment Form",
     "paymentForms": "Payment Forms",
+    "docPaymentForm": "Document payment form",
+    "paidWithPaymentForm": "Paid with",
     "paymentGateway": "Payment gateway",
     "paymentHasNoPpdDocs": "The payment includes no documents with the PPD payment method, so a Payment Complement cannot be generated.",
     "paymentHistory": "Payment History",
