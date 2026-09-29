@@ -517,6 +517,8 @@ export declare const languages: {
         contentOf: string;
         control: string;
         conversionFactors: string;
+        conversionFactorHelp: string;
+        conversionFactorExample: string;
         conversionUnit: string;
         convert: string;
         coordinates: string;
@@ -800,6 +802,7 @@ export declare const languages: {
         entryTypeIngresos: string;
         entryTypeInvalid: string;
         equalTo: string;
+        equivalence: string;
         error: string;
         errorAuthorizationCallback: string;
         errorCalculatingCut: string;
@@ -3327,6 +3330,8 @@ export declare const languages: {
         contentOf: string;
         control: string;
         conversionFactors: string;
+        conversionFactorHelp: string;
+        conversionFactorExample: string;
         conversionUnit: string;
         convert: string;
         coordinates: string;
@@ -3610,6 +3615,7 @@ export declare const languages: {
         entryTypeIngresos: string;
         entryTypeInvalid: string;
         equalTo: string;
+        equivalence: string;
         error: string;
         errorAuthorizationCallback: string;
         errorCalculatingCut: string;
@@ -6137,6 +6143,8 @@ export declare const languages: {
         contentOf: string;
         control: string;
         conversionFactors: string;
+        conversionFactorHelp: string;
+        conversionFactorExample: string;
         conversionUnit: string;
         convert: string;
         coordinates: string;
@@ -6420,6 +6428,7 @@ export declare const languages: {
         entryTypeIngresos: string;
         entryTypeInvalid: string;
         equalTo: string;
+        equivalence: string;
         error: string;
         errorAuthorizationCallback: string;
         errorCalculatingCut: string;
