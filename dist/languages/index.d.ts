@@ -244,6 +244,7 @@ export declare const languages: {
         budgetVsActualExpenses: string;
         budgetVsExpenses: string;
         bulkPriceUpdate: string;
+        bulkDeleteSkippedStock: string;
         bulkUpdate: string;
         burst: string;
         businessName: string;
@@ -1745,6 +1746,7 @@ export declare const languages: {
         previousDocument: string;
         price: string;
         priceControl: string;
+        priceControlScoped: string;
         priceHistory: string;
         priceList: string;
         priceListDefaultLocked: string;
@@ -2150,6 +2152,7 @@ export declare const languages: {
         seriesSection: string;
         serverCSVNote: string;
         serverUnreachable: string;
+        service: string;
         serviceRequiresAuth: string;
         servicesPortal: string;
         session: string;
@@ -3070,6 +3073,7 @@ export declare const languages: {
         budgetVsActualExpenses: string;
         budgetVsExpenses: string;
         bulkPriceUpdate: string;
+        bulkDeleteSkippedStock: string;
         bulkUpdate: string;
         burst: string;
         businessName: string;
@@ -4571,6 +4575,7 @@ export declare const languages: {
         previousDocument: string;
         price: string;
         priceControl: string;
+        priceControlScoped: string;
         priceHistory: string;
         priceList: string;
         priceListDefaultLocked: string;
@@ -4976,6 +4981,7 @@ export declare const languages: {
         seriesSection: string;
         serverCSVNote: string;
         serverUnreachable: string;
+        service: string;
         serviceRequiresAuth: string;
         servicesPortal: string;
         session: string;
@@ -5896,6 +5902,7 @@ export declare const languages: {
         budgetVsActualExpenses: string;
         budgetVsExpenses: string;
         bulkPriceUpdate: string;
+        bulkDeleteSkippedStock: string;
         bulkUpdate: string;
         burst: string;
         businessName: string;
@@ -7397,6 +7404,7 @@ export declare const languages: {
         previousDocument: string;
         price: string;
         priceControl: string;
+        priceControlScoped: string;
         priceHistory: string;
         priceList: string;
         priceListDefaultLocked: string;
@@ -7802,6 +7810,7 @@ export declare const languages: {
         seriesSection: string;
         serverCSVNote: string;
         serverUnreachable: string;
+        service: string;
         serviceRequiresAuth: string;
         servicesPortal: string;
         session: string;
