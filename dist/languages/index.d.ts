@@ -244,6 +244,7 @@ export declare const languages: {
         budgetVsActualExpenses: string;
         budgetVsExpenses: string;
         bulkPriceUpdate: string;
+        bulkDeleteSkippedStock: string;
         bulkUpdate: string;
         burst: string;
         businessName: string;
@@ -435,6 +436,7 @@ export declare const languages: {
         completed: string;
         completedStops: string;
         completeFieldsToRegister: string;
+        completeMovementDataToAddProducts: string;
         completeNameAndPhone: string;
         completeReportNameCode: string;
         completeYourData: string;
@@ -1744,8 +1746,15 @@ export declare const languages: {
         previousDocument: string;
         price: string;
         priceControl: string;
+        priceControlScoped: string;
         priceHistory: string;
         priceList: string;
+        priceListDefaultLocked: string;
+        priceListInUse: string;
+        priceListUsedByParties: string;
+        priceListUsedByPos: string;
+        priceListUsedByFormulas: string;
+        priceListUsedByForms: string;
         priceLists: string;
         pricePerLineList: string;
         pricePerNight: string;
@@ -1901,6 +1910,7 @@ export declare const languages: {
         relationType: string;
         release: string;
         releaseNotes: string;
+        relocation: string;
         remaining: string;
         reminder: string;
         remove: string;
@@ -2040,8 +2050,11 @@ export declare const languages: {
         saving: string;
         scallop: string;
         scannerEntry: string;
+        scanAddedBatches: string;
         scanBatchOnly: string;
+        scanBatchOrPacking: string;
         scanCodeOrBatch: string;
+        scanNotInOrigin: string;
         scanValidation: string;
         scanned: string;
         scannerThenManual: string;
@@ -2139,6 +2152,7 @@ export declare const languages: {
         seriesSection: string;
         serverCSVNote: string;
         serverUnreachable: string;
+        service: string;
         serviceRequiresAuth: string;
         servicesPortal: string;
         session: string;
@@ -3059,6 +3073,7 @@ export declare const languages: {
         budgetVsActualExpenses: string;
         budgetVsExpenses: string;
         bulkPriceUpdate: string;
+        bulkDeleteSkippedStock: string;
         bulkUpdate: string;
         burst: string;
         businessName: string;
@@ -3250,6 +3265,7 @@ export declare const languages: {
         completed: string;
         completedStops: string;
         completeFieldsToRegister: string;
+        completeMovementDataToAddProducts: string;
         completeNameAndPhone: string;
         completeReportNameCode: string;
         completeYourData: string;
@@ -4559,8 +4575,15 @@ export declare const languages: {
         previousDocument: string;
         price: string;
         priceControl: string;
+        priceControlScoped: string;
         priceHistory: string;
         priceList: string;
+        priceListDefaultLocked: string;
+        priceListInUse: string;
+        priceListUsedByParties: string;
+        priceListUsedByPos: string;
+        priceListUsedByFormulas: string;
+        priceListUsedByForms: string;
         priceLists: string;
         pricePerLineList: string;
         pricePerNight: string;
@@ -4716,6 +4739,7 @@ export declare const languages: {
         relationType: string;
         release: string;
         releaseNotes: string;
+        relocation: string;
         remaining: string;
         reminder: string;
         remove: string;
@@ -4855,8 +4879,11 @@ export declare const languages: {
         saving: string;
         scallop: string;
         scannerEntry: string;
+        scanAddedBatches: string;
         scanBatchOnly: string;
+        scanBatchOrPacking: string;
         scanCodeOrBatch: string;
+        scanNotInOrigin: string;
         scanValidation: string;
         scanned: string;
         scannerThenManual: string;
@@ -4954,6 +4981,7 @@ export declare const languages: {
         seriesSection: string;
         serverCSVNote: string;
         serverUnreachable: string;
+        service: string;
         serviceRequiresAuth: string;
         servicesPortal: string;
         session: string;
@@ -5874,6 +5902,7 @@ export declare const languages: {
         budgetVsActualExpenses: string;
         budgetVsExpenses: string;
         bulkPriceUpdate: string;
+        bulkDeleteSkippedStock: string;
         bulkUpdate: string;
         burst: string;
         businessName: string;
@@ -6065,6 +6094,7 @@ export declare const languages: {
         completed: string;
         completedStops: string;
         completeFieldsToRegister: string;
+        completeMovementDataToAddProducts: string;
         completeNameAndPhone: string;
         completeReportNameCode: string;
         completeYourData: string;
@@ -7374,8 +7404,15 @@ export declare const languages: {
         previousDocument: string;
         price: string;
         priceControl: string;
+        priceControlScoped: string;
         priceHistory: string;
         priceList: string;
+        priceListDefaultLocked: string;
+        priceListInUse: string;
+        priceListUsedByParties: string;
+        priceListUsedByPos: string;
+        priceListUsedByFormulas: string;
+        priceListUsedByForms: string;
         priceLists: string;
         pricePerLineList: string;
         pricePerNight: string;
@@ -7531,6 +7568,7 @@ export declare const languages: {
         relationType: string;
         release: string;
         releaseNotes: string;
+        relocation: string;
         remaining: string;
         reminder: string;
         remove: string;
@@ -7670,8 +7708,11 @@ export declare const languages: {
         saving: string;
         scallop: string;
         scannerEntry: string;
+        scanAddedBatches: string;
         scanBatchOnly: string;
+        scanBatchOrPacking: string;
         scanCodeOrBatch: string;
+        scanNotInOrigin: string;
         scanValidation: string;
         scanned: string;
         scannerThenManual: string;
@@ -7769,6 +7810,7 @@ export declare const languages: {
         seriesSection: string;
         serverCSVNote: string;
         serverUnreachable: string;
+        service: string;
         serviceRequiresAuth: string;
         servicesPortal: string;
         session: string;
