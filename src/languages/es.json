@@ -2815,5 +2815,20 @@
   "closedBy": "Cerrado por",
   "closedAt": "Fecha de cierre",
   "connectMicrosoft": "Conectar con Microsoft",
-  "outlookConnection": "Conexión Outlook"
+  "outlookConnection": "Conexión Outlook",
+  "uploadOrders": "Cargar documentos",
+  "orderUploadDuplicateRef": "Referencia repetida: {{ref}}",
+  "orderUploadUnknownRef": "La referencia {{ref}} no existe en la hoja General",
+  "orderUploadNoConcepts": "El documento {{ref}} no tiene conceptos",
+  "orderUploadPriceMissing": "El producto {{code}} no tiene precio en la lista {{pricelist}}",
+  "orderUploadInvalidNumber": "Valor no válido en {{label}}: {{value}}",
+  "orderUploadInvalidDate": "Fecha no válida: {{value}} (usa AAAA-MM-DD o DD/MM/AAAA)",
+  "orderUploadPayformNeedsCredit": "La forma de pago 99 (Por definir) requiere crédito",
+  "unitNotFound": "Unidad no encontrada",
+  "emptyUsesProduct": "vacío = el del producto",
+  "emptyUsesPriceList": "vacío = lista de precios",
+  "salesOnly": "solo ventas",
+  "codeOrRfc": "código o RFC",
+  "codeOrName": "código o nombre",
+  "uploadOrdersDone": "{{count}} documento(s) cargado(s)"
 }
