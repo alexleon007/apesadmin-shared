@@ -1901,6 +1901,7 @@ export declare const languages: {
         relationType: string;
         release: string;
         releaseNotes: string;
+        relocation: string;
         remaining: string;
         reminder: string;
         remove: string;
@@ -4716,6 +4717,7 @@ export declare const languages: {
         relationType: string;
         release: string;
         releaseNotes: string;
+        relocation: string;
         remaining: string;
         reminder: string;
         remove: string;
@@ -7531,6 +7533,7 @@ export declare const languages: {
         relationType: string;
         release: string;
         releaseNotes: string;
+        relocation: string;
         remaining: string;
         reminder: string;
         remove: string;
