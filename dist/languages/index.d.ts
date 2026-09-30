@@ -1747,6 +1747,12 @@ export declare const languages: {
         priceControl: string;
         priceHistory: string;
         priceList: string;
+        priceListDefaultLocked: string;
+        priceListInUse: string;
+        priceListUsedByParties: string;
+        priceListUsedByPos: string;
+        priceListUsedByFormulas: string;
+        priceListUsedByForms: string;
         priceLists: string;
         pricePerLineList: string;
         pricePerNight: string;
@@ -4567,6 +4573,12 @@ export declare const languages: {
         priceControl: string;
         priceHistory: string;
         priceList: string;
+        priceListDefaultLocked: string;
+        priceListInUse: string;
+        priceListUsedByParties: string;
+        priceListUsedByPos: string;
+        priceListUsedByFormulas: string;
+        priceListUsedByForms: string;
         priceLists: string;
         pricePerLineList: string;
         pricePerNight: string;
@@ -7387,6 +7399,12 @@ export declare const languages: {
         priceControl: string;
         priceHistory: string;
         priceList: string;
+        priceListDefaultLocked: string;
+        priceListInUse: string;
+        priceListUsedByParties: string;
+        priceListUsedByPos: string;
+        priceListUsedByFormulas: string;
+        priceListUsedByForms: string;
         priceLists: string;
         pricePerLineList: string;
         pricePerNight: string;
