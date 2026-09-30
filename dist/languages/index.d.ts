@@ -435,6 +435,7 @@ export declare const languages: {
         completed: string;
         completedStops: string;
         completeFieldsToRegister: string;
+        completeMovementDataToAddProducts: string;
         completeNameAndPhone: string;
         completeReportNameCode: string;
         completeYourData: string;
@@ -2041,8 +2042,11 @@ export declare const languages: {
         saving: string;
         scallop: string;
         scannerEntry: string;
+        scanAddedBatches: string;
         scanBatchOnly: string;
+        scanBatchOrPacking: string;
         scanCodeOrBatch: string;
+        scanNotInOrigin: string;
         scanValidation: string;
         scanned: string;
         scannerThenManual: string;
@@ -3251,6 +3255,7 @@ export declare const languages: {
         completed: string;
         completedStops: string;
         completeFieldsToRegister: string;
+        completeMovementDataToAddProducts: string;
         completeNameAndPhone: string;
         completeReportNameCode: string;
         completeYourData: string;
@@ -4857,8 +4862,11 @@ export declare const languages: {
         saving: string;
         scallop: string;
         scannerEntry: string;
+        scanAddedBatches: string;
         scanBatchOnly: string;
+        scanBatchOrPacking: string;
         scanCodeOrBatch: string;
+        scanNotInOrigin: string;
         scanValidation: string;
         scanned: string;
         scannerThenManual: string;
@@ -6067,6 +6075,7 @@ export declare const languages: {
         completed: string;
         completedStops: string;
         completeFieldsToRegister: string;
+        completeMovementDataToAddProducts: string;
         completeNameAndPhone: string;
         completeReportNameCode: string;
         completeYourData: string;
@@ -7673,8 +7682,11 @@ export declare const languages: {
         saving: string;
         scallop: string;
         scannerEntry: string;
+        scanAddedBatches: string;
         scanBatchOnly: string;
+        scanBatchOrPacking: string;
         scanCodeOrBatch: string;
+        scanNotInOrigin: string;
         scanValidation: string;
         scanned: string;
         scannerThenManual: string;
