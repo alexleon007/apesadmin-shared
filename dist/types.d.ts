@@ -3485,7 +3485,7 @@ export type DocumentMetaType = {
         autoHeight?: boolean;
     };
 };
-export type ElementTypeType = "image" | "text" | "line" | "circle" | "group" | "table" | "pagenum" | "qr" | "currentdate";
+export type ElementTypeType = "image" | "text" | "line" | "circle" | "group" | "table" | "pagenum" | "qr" | "barcode" | "currentdate";
 export type BaseElementType = {
     type: ElementTypeType;
     x?: number;
@@ -3573,6 +3573,14 @@ export type QRElementType = BaseElementType & {
     value: string;
     size?: number;
 };
+export type BarcodeElementType = BaseElementType & {
+    type: "barcode";
+    value: string;
+    width?: number;
+    height?: number;
+    showText?: boolean;
+    fontSize?: number;
+};
 export type CurrentDateElementType = BaseElementType & {
     type: "currentdate";
     format?: string;
@@ -3582,7 +3590,7 @@ export type CurrentDateElementType = BaseElementType & {
     align?: "left" | "center" | "right";
     width?: number;
 };
-export type DocumentElementType = ImageElementType | TextElementType | LineElementType | CircleElementType | GroupElementType | TableElementType | PageNumElementType | QRElementType | CurrentDateElementType;
+export type DocumentElementType = ImageElementType | TextElementType | LineElementType | CircleElementType | GroupElementType | TableElementType | PageNumElementType | QRElementType | BarcodeElementType | CurrentDateElementType;
 export type PDFTemplateDefType = {
     meta: DocumentMetaType;
     defaults?: DocumentDefaultsType;
@@ -3692,6 +3700,16 @@ export type EditorQRType = Base & {
     value: string;
     size?: number;
 };
+export type EditorBarcodeType = Base & {
+    type: "barcode";
+    x?: number;
+    y?: number;
+    value: string;
+    width?: number;
+    height?: number;
+    showText?: boolean;
+    fontSize?: number;
+};
 export type EditorCurrentDateType = Base & {
     type: "currentdate";
     x?: number;
@@ -3703,7 +3721,7 @@ export type EditorCurrentDateType = Base & {
     align?: "left" | "center" | "right";
     width?: number;
 };
-export type EditorElementType = EditorTextType | EditorImageType | EditorLineType | EditorCircleType | EditorTableType | EditorPageNumType | EditorQRType | EditorCurrentDateType;
+export type EditorElementType = EditorTextType | EditorImageType | EditorLineType | EditorCircleType | EditorTableType | EditorPageNumType | EditorQRType | EditorBarcodeType | EditorCurrentDateType;
 export type BuilderStateType = {
     elements: EditorElementType[];
     selectedId: string | null;

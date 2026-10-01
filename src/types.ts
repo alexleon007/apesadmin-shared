@@ -3871,6 +3871,7 @@ export type ElementTypeType =
   | "table"
   | "pagenum"
   | "qr"
+  | "barcode"
   | "currentdate";
 
 export type BaseElementType = {
@@ -3982,6 +3983,17 @@ export type QRElementType = BaseElementType & {
   size?: number;
 };
 
+// Code 128. Las barras se estiran a width × height; con showText el valor se
+// imprime debajo como texto y las barras ocupan el alto restante.
+export type BarcodeElementType = BaseElementType & {
+  type: "barcode";
+  value: string;
+  width?: number;
+  height?: number;
+  showText?: boolean;
+  fontSize?: number;
+};
+
 export type CurrentDateElementType = BaseElementType & {
   type: "currentdate";
   format?: string;
@@ -4001,6 +4013,7 @@ export type DocumentElementType =
   | TableElementType
   | PageNumElementType
   | QRElementType
+  | BarcodeElementType
   | CurrentDateElementType;
 
 export type PDFTemplateDefType = {
@@ -4128,6 +4141,17 @@ export type EditorQRType = Base & {
   size?: number;
 };
 
+export type EditorBarcodeType = Base & {
+  type: "barcode";
+  x?: number;
+  y?: number;
+  value: string;
+  width?: number;
+  height?: number;
+  showText?: boolean;
+  fontSize?: number;
+};
+
 export type EditorCurrentDateType = Base & {
   type: "currentdate";
   x?: number;
@@ -4148,6 +4172,7 @@ export type EditorElementType =
   | EditorTableType
   | EditorPageNumType
   | EditorQRType
+  | EditorBarcodeType
   | EditorCurrentDateType;
 
 export type BuilderStateType = {
