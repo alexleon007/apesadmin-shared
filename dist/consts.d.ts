@@ -1,3 +1,4 @@
+import type { ClasifTypeKey } from "./types";
 export declare const MODE_CREATE = "create";
 export declare const MODE_NEW = "new";
 export declare const MODE_EDIT = "edit";
@@ -108,6 +109,9 @@ export declare const MAILFOLDER_ARCHIVE = "ARCHIVE";
 export declare const CONCEPT_MAIN = "main";
 export declare const CONCEPT_FORM = "form";
 export declare const CONCEPT_PRODUCTS = "product";
+export declare const CLASIF_TYPES: readonly ["party", "product", "warehouse", "purchase"];
+export declare const CLASIF_TYPE_LABEL_KEYS: Record<ClasifTypeKey, string>;
+export declare const isClasifType: (type: string) => type is ClasifTypeKey;
 export declare const VIEW_BOARD = "board";
 export declare const VIEW_GALLERY = "gallery";
 export declare const VIEW_TABLE = "table";

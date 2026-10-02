@@ -149,6 +149,20 @@ export const MAILFOLDER_ARCHIVE = "ARCHIVE";
 export const CONCEPT_MAIN = "main";
 export const CONCEPT_FORM = "form";
 export const CONCEPT_PRODUCTS = "product";
+// clasifications.type_clas: a qué documentos aplica cada clase/subclase.
+export const CLASIF_TYPES = [
+    "party",
+    "product",
+    "warehouse",
+    "purchase",
+];
+export const CLASIF_TYPE_LABEL_KEYS = {
+    party: "contacts",
+    product: "products",
+    warehouse: "warehouses",
+    purchase: "purchasesAndExpenses",
+};
+export const isClasifType = (type) => CLASIF_TYPES.includes(type);
 export const VIEW_BOARD = "board";
 export const VIEW_GALLERY = "gallery";
 export const VIEW_TABLE = "table";

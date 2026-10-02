@@ -1,3 +1,5 @@
+import type { ClasifTypeKey } from "./types";
+
 export const MODE_CREATE = "create";
 export const MODE_NEW = "new";
 export const MODE_EDIT = "edit";
@@ -185,6 +187,24 @@ export const MAILFOLDER_ARCHIVE = "ARCHIVE";
 export const CONCEPT_MAIN = "main";
 export const CONCEPT_FORM = "form";
 export const CONCEPT_PRODUCTS = "product";
+
+// clasifications.type_clas: a qué documentos aplica cada clase/subclase.
+export const CLASIF_TYPES = [
+  "party",
+  "product",
+  "warehouse",
+  "purchase",
+] as const;
+
+export const CLASIF_TYPE_LABEL_KEYS: Record<ClasifTypeKey, string> = {
+  party: "contacts",
+  product: "products",
+  warehouse: "warehouses",
+  purchase: "purchasesAndExpenses",
+};
+
+export const isClasifType = (type: string): type is ClasifTypeKey =>
+  (CLASIF_TYPES as readonly string[]).includes(type);
 
 export const VIEW_BOARD = "board";
 export const VIEW_GALLERY = "gallery";

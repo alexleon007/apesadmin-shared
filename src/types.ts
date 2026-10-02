@@ -1,4 +1,4 @@
-import { VIEW_BOARD, VIEW_GALLERY, VIEW_TABLE } from "./consts";
+import { CLASIF_TYPES, VIEW_BOARD, VIEW_GALLERY, VIEW_TABLE } from "./consts";
 
 // ─────────────────────────────────────────────────────────────────────────────
 // SAMS
@@ -857,6 +857,7 @@ export type ClasificationsType = {
   color: string;
   status: number;
 };
+export type ClasifTypeKey = (typeof CLASIF_TYPES)[number];
 export type AttendanceStatusType = "idle" | "working" | "onBreak";
 
 export type AccountingAccountType = {
@@ -2701,6 +2702,8 @@ export type ProductType = {
   prodgroupname: string;
   prodsubgroup: number;
   prodsubgroupname: string;
+  prodclas?: string;
+  prodsubclas?: string;
   prodbatch: number;
   prodexpiration: number;
   prodprice1: number;
