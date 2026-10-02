@@ -2021,6 +2021,7 @@ export declare const languages: {
         runReportFirstExport: string;
         runReportFirstMap: string;
         saleNote: string;
+        sale: string;
         sales: string;
         salesAgent: string;
         salesByMonth: string;
@@ -4891,6 +4892,7 @@ export declare const languages: {
         runReportFirstExport: string;
         runReportFirstMap: string;
         saleNote: string;
+        sale: string;
         sales: string;
         salesAgent: string;
         salesByMonth: string;
@@ -7761,6 +7763,7 @@ export declare const languages: {
         runReportFirstExport: string;
         runReportFirstMap: string;
         saleNote: string;
+        sale: string;
         sales: string;
         salesAgent: string;
         salesByMonth: string;
