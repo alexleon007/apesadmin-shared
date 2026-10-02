@@ -331,6 +331,9 @@ export declare const languages: {
         cfdiQRCode: string;
         cfdiSeal: string;
         cfdiStampError: string;
+        cfdiStampMaybeIssued: string;
+        cfdiStampUnreachable: string;
+        cfdiStampInternalError: string;
         cFDIUse: string;
         cfdiUseRequired: string;
         cfdiUUID: string;
@@ -3220,6 +3223,9 @@ export declare const languages: {
         cfdiQRCode: string;
         cfdiSeal: string;
         cfdiStampError: string;
+        cfdiStampMaybeIssued: string;
+        cfdiStampUnreachable: string;
+        cfdiStampInternalError: string;
         cFDIUse: string;
         cfdiUseRequired: string;
         cfdiUUID: string;
@@ -6109,6 +6115,9 @@ export declare const languages: {
         cfdiQRCode: string;
         cfdiSeal: string;
         cfdiStampError: string;
+        cfdiStampMaybeIssued: string;
+        cfdiStampUnreachable: string;
+        cfdiStampInternalError: string;
         cFDIUse: string;
         cfdiUseRequired: string;
         cfdiUUID: string;
