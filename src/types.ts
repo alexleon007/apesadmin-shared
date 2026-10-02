@@ -3626,18 +3626,45 @@ export type ProductItem = {
 // REPORTS
 // ─────────────────────────────────────────────────────────────────────────────
 
-export type AggregationOperation = "sum" | "avg" | "count" | "min" | "max";
+export type AggregationOperation =
+  | "sum"
+  | "avg"
+  | "count"
+  | "count_distinct"
+  | "min"
+  | "max";
 
 export type BarConfig = {
   dataKey: string;
   fill: string;
   name: string;
+  stackId?: string;
+};
+
+// Columna virtual calculada fila por fila antes de agrupar.
+// expression usa [Nombre de columna]: "[Total] - [Costo]"
+export type CalculatedColumn = {
+  name: string;
+  expression: string;
 };
 
 export type ChartAggregation = {
   column: string;
-  operation: AggregationOperation;
+  // "formula": se calcula después de agrupar a partir de otras series
+  operation: AggregationOperation | "formula";
   label: string;
+  expression?: string; // solo formula: "[Ingresos] - [Gastos]"
+  hidden?: boolean; // serie auxiliar (se calcula pero no se dibuja)
+  rowFilter?: RowFilter[]; // filtro propio de la serie
+};
+
+// Serie de un gráfico combinado (barras + líneas, eje izquierdo/derecho)
+export type ComposedSeriesConfig = {
+  dataKey: string;
+  name: string;
+  color: string;
+  kind: "bar" | "line" | "area";
+  yAxis?: "left" | "right";
 };
 
 export type ChartConfig = {
@@ -3645,8 +3672,18 @@ export type ChartConfig = {
   bars?: BarConfig[];
   lines?: LineConfig[];
   radars?: RadarConfig[];
+  series?: ComposedSeriesConfig[]; // type "composed"
   dataKey?: string;
   nameKey?: string;
+  layout?: "horizontal" | "vertical"; // vertical = barras horizontales
+  stacked?: boolean;
+  valueFormat?: ValueFormat;
+};
+
+export type ChartCustomGroup = {
+  name: string;
+  columns: string[];
+  operation: AggregationOperation;
 };
 
 export type ChartDataConfig = {
@@ -3655,10 +3692,16 @@ export type ChartDataConfig = {
   groupColumn?: string;
   groupColumns?: string[]; // Multiple columns → composite key on X-axis (overrides groupColumn)
   pivotColumn?: string;
+  ranges?: ChartRange[]; // groupBy "range"
+  customGroups?: ChartCustomGroup[]; // groupBy "custom"
+  calculated?: { label: string; formula: string }[]; // legado: usar operation "formula"
   rowFilter?: RowFilter[];
   aggregations: ChartAggregation[];
-  sortBy?: { key: string; dir: "asc" | "desc" };
+  // "asc" | "desc" es el formato legado: ordena por la primera serie
+  sortBy?: { key: string; dir: "asc" | "desc" } | "asc" | "desc";
   limit?: number;
+  groupOthers?: boolean; // con limit: suma el resto en "Otros"
+  fillGaps?: boolean; // groupBy por fecha: incluye periodos sin datos
 };
 
 export type ChartDefinition = {
@@ -3667,6 +3710,13 @@ export type ChartDefinition = {
   title: string;
   dataConfig: ChartDataConfig;
   chartConfig: ChartConfig;
+  width?: "half" | "full";
+};
+
+export type ChartRange = {
+  min: number;
+  max: number;
+  label: string;
 };
 
 export type ChartType = "bar" | "line" | "pie" | "area" | "composed" | "radar";
@@ -3722,6 +3772,8 @@ export type FilterDefinition = {
   formatOptionLabel?: string;
   // filtros "date": muestra un check "Fecha actual" que fija el valor al token $today
   todayToggle?: boolean;
+  // parámetro {{inject}} del SQL en vez de condición WHERE
+  inject?: string;
 };
 
 export type FilterOperator =
@@ -3755,20 +3807,33 @@ export type GraphsConfig = {
   enabled: boolean;
   kpis?: KPIConfig[];
   charts: ChartDefinition[];
+  calculatedColumns?: CalculatedColumn[];
 };
 
-export type GroupByType = "day" | "week" | "month" | "year" | "column";
+export type GroupByType =
+  | "day"
+  | "week"
+  | "month"
+  | "quarter"
+  | "year"
+  | "column"
+  | "range"
+  | "custom";
 
 export type KPIConfig = {
   id: string;
   label: string;
   column: string;
-  operation: AggregationOperation;
-  format?: "number" | "currency" | "percentage" | "integer";
+  // "formula": combina otros KPIs por su etiqueta, ej. "[Total] - [Subtotal]"
+  operation: AggregationOperation | "formula";
+  expression?: string;
+  format?: ValueFormat;
+  decimals?: number;
   prefix?: string;
   suffix?: string;
   color?: string;
   rowFilter?: RowFilter[];
+  hidden?: boolean; // KPI auxiliar para fórmulas, no se muestra
 };
 
 export type LineConfig = {
@@ -3786,9 +3851,26 @@ export type RadarConfig = {
 
 export type RowFilter = {
   column: string;
-  op: "=" | "!=" | "in" | "not_in";
-  value: string | string[];
+  op: RowFilterOperator;
+  value: string | string[]; // "between": [desde, hasta]; acepta tokens $today…
 };
+
+export type RowFilterOperator =
+  | "="
+  | "!="
+  | "in"
+  | "not_in"
+  | ">"
+  | ">="
+  | "<"
+  | "<="
+  | "between"
+  | "contains"
+  | "not_contains"
+  | "empty"
+  | "not_empty";
+
+export type ValueFormat = "number" | "currency" | "percentage" | "integer";
 
 export type LogType = {
   idlog: number;
