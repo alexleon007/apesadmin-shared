@@ -67,6 +67,18 @@ export const RECURRENCE_FREQUENCY_LABELS = RECURRENCE_FREQUENCY_OPTIONS.reduce((
     acc[opt.value] = opt.label;
     return acc;
 }, {});
+// Motivo por el que se detuvo una recurrencia -> clave i18n del mensaje que le
+// dice al usuario qué corregir. El backend guarda el código en errorcode_rec.
+export const RECURRENCE_ERROR_KEYS = {
+    customer: "recErrorCustomer",
+    billing: "recErrorBilling",
+    company: "recErrorCompany",
+    stamping: "recErrorStamping",
+    stock: "recErrorStock",
+    product: "recErrorProduct",
+    template: "recErrorTemplate",
+    unknown: "recErrorUnknown",
+};
 // CFDI 4.0 factura global (público en general): catálogos c_Periodicidad y
 // c_Meses del SAT, más los valores fijos que el nodo InformacionGlobal obliga
 // a usar en el receptor.

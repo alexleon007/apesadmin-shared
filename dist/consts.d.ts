@@ -1,4 +1,4 @@
-import type { ClasifTypeKey } from "./types";
+import type { ClasifTypeKey, RecurrenceErrorCode } from "./types";
 export declare const MODE_CREATE = "create";
 export declare const MODE_NEW = "new";
 export declare const MODE_EDIT = "edit";
@@ -59,6 +59,7 @@ export declare const RECURRENCE_FREQUENCY_OPTIONS: {
     label: string;
 }[];
 export declare const RECURRENCE_FREQUENCY_LABELS: Record<string, string>;
+export declare const RECURRENCE_ERROR_KEYS: Record<RecurrenceErrorCode, string>;
 export declare const CFDI_GLOBAL_RFC = "XAXX010101000";
 export declare const CFDI_GLOBAL_CFDIUSE = "S01";
 export declare const CFDI_GLOBAL_TAX_REGIME = "616";

@@ -4469,6 +4469,17 @@ export type OpticutterCutResultType = {
   layouts: OpticutterLayoutResultType[];
 };
 
+/** Por qué se detuvo una recurrencia: agrupa las causas por lo que hay que corregir. */
+export type RecurrenceErrorCode =
+  | "customer"
+  | "billing"
+  | "company"
+  | "stamping"
+  | "stock"
+  | "product"
+  | "template"
+  | "unknown";
+
 export type RecurrenceType = {
   idrec: number;
   doctype: string;
@@ -4483,6 +4494,12 @@ export type RecurrenceType = {
   iduser: number;
   username?: string;
   targettype?: number;
+  stamp?: number;
+  errorcode?: RecurrenceErrorCode | "";
+  errordetail?: string;
+  errordate?: string | null;
+  missedruns?: number;
+  oldruns?: number;
 };
 
 export type OrderRecurrenceType = RecurrenceType & {

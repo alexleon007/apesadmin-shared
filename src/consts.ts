@@ -1,4 +1,4 @@
-import type { ClasifTypeKey } from "./types";
+import type { ClasifTypeKey, RecurrenceErrorCode } from "./types";
 
 export const MODE_CREATE = "create";
 export const MODE_NEW = "new";
@@ -86,6 +86,19 @@ export const RECURRENCE_FREQUENCY_LABELS: Record<string, string> =
     },
     {} as Record<string, string>,
   );
+
+// Motivo por el que se detuvo una recurrencia -> clave i18n del mensaje que le
+// dice al usuario qué corregir. El backend guarda el código en errorcode_rec.
+export const RECURRENCE_ERROR_KEYS: Record<RecurrenceErrorCode, string> = {
+  customer: "recErrorCustomer",
+  billing: "recErrorBilling",
+  company: "recErrorCompany",
+  stamping: "recErrorStamping",
+  stock: "recErrorStock",
+  product: "recErrorProduct",
+  template: "recErrorTemplate",
+  unknown: "recErrorUnknown",
+};
 
 // CFDI 4.0 factura global (público en general): catálogos c_Periodicidad y
 // c_Meses del SAT, más los valores fijos que el nodo InformacionGlobal obliga
