@@ -2614,6 +2614,7 @@
   "uploadPlaceholder": "Agrega tu archivo aquí",
   "uploadPrices": "Cargar Precios",
   "uploadProducts": "Cargar Productos",
+  "uploadProductsWithoutSupplier": "{{count}} producto(s) se cargaron sin proveedor; código(s) de proveedor no encontrado(s): {{codes}}",
   "urgent": "Urgente",
   "url": "URL",
   "usedCapacity": "Capacidad usada",

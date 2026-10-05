@@ -2614,6 +2614,7 @@
   "uploadPlaceholder": "將您的檔案新增至此",
   "uploadPrices": "上傳價格",
   "uploadProducts": "上傳產品",
+  "uploadProductsWithoutSupplier": "{{count}} 項產品已上傳但未關聯供應商；找不到供應商代碼：{{codes}}",
   "urgent": "緊急",
   "url": "網址",
   "usedCapacity": "已用容量",

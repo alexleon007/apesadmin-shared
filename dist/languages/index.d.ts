@@ -2618,6 +2618,7 @@ export declare const languages: {
         uploadPlaceholder: string;
         uploadPrices: string;
         uploadProducts: string;
+        uploadProductsWithoutSupplier: string;
         urgent: string;
         url: string;
         usedCapacity: string;
@@ -5624,6 +5625,7 @@ export declare const languages: {
         uploadPlaceholder: string;
         uploadPrices: string;
         uploadProducts: string;
+        uploadProductsWithoutSupplier: string;
         urgent: string;
         url: string;
         usedCapacity: string;
@@ -8630,6 +8632,7 @@ export declare const languages: {
         uploadPlaceholder: string;
         uploadPrices: string;
         uploadProducts: string;
+        uploadProductsWithoutSupplier: string;
         urgent: string;
         url: string;
         usedCapacity: string;
