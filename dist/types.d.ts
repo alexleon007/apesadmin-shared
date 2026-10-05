@@ -2117,6 +2117,8 @@ export type OrderDetailType = {
     /** Sólo vienen cuando se pide get-orders con withlocations. */
     prodgroupname?: string;
     prodlocations?: ProductLocationType[];
+    /** 1 = el producto se controla por lote. */
+    prodbatch?: number;
 };
 export type OrderLogType = {
     idhistory: number;
@@ -3446,6 +3448,7 @@ export type FilterDefinition = {
     formatOptionLabel?: string;
     todayToggle?: boolean;
     inject?: string;
+    multiple?: boolean;
 };
 export type FilterOperator = "=" | "!=" | ">" | ">=" | "<" | "<=" | "LIKE" | "IN" | "NOT IN";
 export type FilterOption = {
@@ -3456,7 +3459,7 @@ export type FiltersConfig = {
     enabled: boolean;
     filters: FilterDefinition[];
 };
-export type FilterType = "date" | "select" | "text" | "number" | "select-api" | "searchable-select" | "multi-select" | "multi-select-api";
+export type FilterType = "date" | "select" | "text" | "number" | "select-api" | "searchable-select" | "multi-select" | "multi-select-api" | "dataset-select";
 export type FilterValues = {
     [key: string]: any;
 };

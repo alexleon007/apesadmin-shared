@@ -2323,6 +2323,8 @@ export type OrderDetailType = {
   /** Sólo vienen cuando se pide get-orders con withlocations. */
   prodgroupname?: string;
   prodlocations?: ProductLocationType[];
+  /** 1 = el producto se controla por lote. */
+  prodbatch?: number;
 };
 
 export type OrderLogType = {
