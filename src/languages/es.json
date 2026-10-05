@@ -3058,5 +3058,20 @@
   "selectBatch": "Selecciona lote",
   "selectBatchForProduct": "Selecciona el lote de {{product}}",
   "noBatchStock": "Sin lotes con existencia",
-  "orderNotPendingAssort": "El documento ya no está pendiente de surtir"
+  "orderNotPendingAssort": "El documento ya no está pendiente de surtir",
+  "orderUploadAgentNotFound": "No se encontró el agente {{agent}} (usa usuario, correo o nombre de un usuario activo)",
+  "orderUploadAgentAmbiguous": "Hay varios usuarios llamados {{agent}}: usa su usuario o correo",
+  "orderUploadLotNoProduct": "No hay ningún producto con el lote {{lot}}: indica el código de producto",
+  "orderUploadLotAmbiguous": "El lote {{lot}} lo tienen varios productos ({{codes}}): indica el código de producto",
+  "importColumnsSuggested": "Se sugirieron {{count}} columna(s). Revísalas antes de guardar",
+  "importNoMoreSuggestions": "No hay más columnas que sugerir para los campos vacíos",
+  "importSuggestColumnsHint": "Llena los campos que siguen sin columna, según los encabezados de tu archivo",
+  "importResuggestColumns": "Volver a sugerir todo",
+  "importResuggestColumnsHint": "Descarta lo asignado y vuelve a sugerir todas las columnas",
+  "importOneOfHint": "basta con uno de estos (el producto se busca por el lote)",
+  "agentUserEmailOrName": "usuario, correo o nombre",
+  "batchColumnHint": "opcional; sin código de producto, se busca el producto por el lote",
+  "importHeaderRowHelp": "Número de la fila de Excel donde están los nombres de las columnas (Cliente, Producto, Cantidad…). Si tu archivo trae un título o renglones vacíos arriba, indica la fila donde empiezan los encabezados; los datos se leen a partir de la siguiente. Aplica a todas las hojas.",
+  "codeRfcOrName": "código, RFC o nombre",
+  "orderUploadCustomerAmbiguous": "Hay varios clientes llamados {{customer}}: usa su código"
 }
