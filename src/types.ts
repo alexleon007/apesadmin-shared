@@ -3798,6 +3798,8 @@ export type FilterDefinition = {
   todayToggle?: boolean;
   // parámetro {{inject}} del SQL en vez de condición WHERE
   inject?: string;
+  // "dataset-select": permite elegir varios valores (operador IN)
+  multiple?: boolean;
 };
 
 export type FilterOperator =
@@ -3829,7 +3831,8 @@ export type FilterType =
   | "select-api"
   | "searchable-select"
   | "multi-select"
-  | "multi-select-api";
+  | "multi-select-api"
+  | "dataset-select"; // lista con los valores que trae el propio reporte
 
 export type FilterValues = {
   [key: string]: any;

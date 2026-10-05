@@ -2980,7 +2980,7 @@
   "rangesRequired": "Elige la columna numérica y al menos un rango",
   "reportBuilder": "Constructor",
   "reportFilters": "Filtros del reporte",
-  "reportFiltersHint": "Se aplican en el servidor antes de traer los datos. La columna puede ser una oculta (las que empiezan con _).",
+  "reportFiltersHint": "Elige una columna y el filtro se arma solo: las fechas crean Desde/Hasta y los textos una lista con los valores que trae el reporte.",
   "reportFiltersPreviewHint": "Así se verán en la barra lateral. Guarda y actualiza el reporte para aplicarlos.",
   "rightAxis": "Eje derecho",
   "rowFilterTokensHint": "En fechas puedes usar $today, $firstDayOfMonth, $30DaysAgo…",
@@ -3008,5 +3008,10 @@
   "verticalBars": "Barras verticales",
   "widthFull": "Ancho completo",
   "widthHalf": "Mitad",
-  "xAxisGroupsCount": "{{count}} grupo(s) en el eje X"
+  "xAxisGroupsCount": "{{count}} grupo(s) en el eje X",
+  "filterTypeDataset": "Lista de valores del reporte",
+  "advancedSystemCatalog": "Avanzado: catálogo del sistema",
+  "filterByColumn": "Filtrar por columna",
+  "multipleSelection": "Selección múltiple",
+  "typeToSearch": "Escribe para buscar…"
 }

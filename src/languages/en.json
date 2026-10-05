@@ -2980,7 +2980,7 @@
   "rangesRequired": "Choose the numeric column and at least one range",
   "reportBuilder": "Builder",
   "reportFilters": "Report filters",
-  "reportFiltersHint": "Applied on the server before loading data. The column can be a hidden one (starting with _).",
+  "reportFiltersHint": "Pick a column and the filter is built for you: dates create From/To and text columns a list with the values in the report.",
   "reportFiltersPreviewHint": "This is how they will look in the sidebar. Save and refresh the report to apply them.",
   "rightAxis": "Right axis",
   "rowFilterTokensHint": "For dates you can use $today, $firstDayOfMonth, $30DaysAgo…",
@@ -3008,5 +3008,10 @@
   "verticalBars": "Vertical bars",
   "widthFull": "Full width",
   "widthHalf": "Half",
-  "xAxisGroupsCount": "{{count}} group(s) on the X axis"
+  "xAxisGroupsCount": "{{count}} group(s) on the X axis",
+  "filterTypeDataset": "List of report values",
+  "advancedSystemCatalog": "Advanced: system catalog",
+  "filterByColumn": "Filter by column",
+  "multipleSelection": "Multiple selection",
+  "typeToSearch": "Type to search…"
 }

@@ -2980,7 +2980,7 @@
   "rangesRequired": "請選擇數值欄位並至少設定一個區間",
   "reportBuilder": "建構器",
   "reportFilters": "報表篩選",
-  "reportFiltersHint": "在載入資料前於伺服器套用。欄位可為隱藏欄位（以 _ 開頭）。",
+  "reportFiltersHint": "選擇欄位即可自動建立篩選：日期會建立起訖，文字欄位會建立報表中既有值的清單。",
   "reportFiltersPreviewHint": "側邊欄將如此顯示。儲存並重新整理報表以套用。",
   "rightAxis": "右軸",
   "rowFilterTokensHint": "日期可使用 $today、$firstDayOfMonth、$30DaysAgo…",
@@ -3008,5 +3008,10 @@
   "verticalBars": "直向長條",
   "widthFull": "全寬",
   "widthHalf": "半寬",
-  "xAxisGroupsCount": "X 軸共 {{count}} 組"
+  "xAxisGroupsCount": "X 軸共 {{count}} 組",
+  "filterTypeDataset": "報表值清單",
+  "advancedSystemCatalog": "進階：系統目錄",
+  "filterByColumn": "依欄位篩選",
+  "multipleSelection": "多選",
+  "typeToSearch": "輸入以搜尋…"
 }
