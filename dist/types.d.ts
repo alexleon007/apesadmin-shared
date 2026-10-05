@@ -3311,24 +3311,55 @@ export type ProductItem = {
     images?: string[];
     metadata?: Record<string, any>;
 };
-export type AggregationOperation = "sum" | "avg" | "count" | "min" | "max";
+export type ProductSupplierLink = {
+    idlinkps: number;
+    idsupp: number;
+    code_supp: string;
+    name_supp: string;
+    prodcode_ps: string;
+};
+export type AggregationOperation = "sum" | "avg" | "count" | "count_distinct" | "min" | "max";
 export type BarConfig = {
     dataKey: string;
     fill: string;
     name: string;
+    stackId?: string;
+};
+export type CalculatedColumn = {
+    name: string;
+    expression: string;
 };
 export type ChartAggregation = {
     column: string;
-    operation: AggregationOperation;
+    operation: AggregationOperation | "formula";
     label: string;
+    expression?: string;
+    hidden?: boolean;
+    rowFilter?: RowFilter[];
+};
+export type ComposedSeriesConfig = {
+    dataKey: string;
+    name: string;
+    color: string;
+    kind: "bar" | "line" | "area";
+    yAxis?: "left" | "right";
 };
 export type ChartConfig = {
     xAxisKey: string;
     bars?: BarConfig[];
     lines?: LineConfig[];
     radars?: RadarConfig[];
+    series?: ComposedSeriesConfig[];
     dataKey?: string;
     nameKey?: string;
+    layout?: "horizontal" | "vertical";
+    stacked?: boolean;
+    valueFormat?: ValueFormat;
+};
+export type ChartCustomGroup = {
+    name: string;
+    columns: string[];
+    operation: AggregationOperation;
 };
 export type ChartDataConfig = {
     groupBy: GroupByType;
@@ -3336,13 +3367,21 @@ export type ChartDataConfig = {
     groupColumn?: string;
     groupColumns?: string[];
     pivotColumn?: string;
+    ranges?: ChartRange[];
+    customGroups?: ChartCustomGroup[];
+    calculated?: {
+        label: string;
+        formula: string;
+    }[];
     rowFilter?: RowFilter[];
     aggregations: ChartAggregation[];
     sortBy?: {
         key: string;
         dir: "asc" | "desc";
-    };
+    } | "asc" | "desc";
     limit?: number;
+    groupOthers?: boolean;
+    fillGaps?: boolean;
 };
 export type ChartDefinition = {
     id: string;
@@ -3350,6 +3389,12 @@ export type ChartDefinition = {
     title: string;
     dataConfig: ChartDataConfig;
     chartConfig: ChartConfig;
+    width?: "half" | "full";
+};
+export type ChartRange = {
+    min: number;
+    max: number;
+    label: string;
 };
 export type ChartType = "bar" | "line" | "pie" | "area" | "composed" | "radar";
 export type ChatMessageType = {
@@ -3400,6 +3445,7 @@ export type FilterDefinition = {
     isClearable?: boolean;
     formatOptionLabel?: string;
     todayToggle?: boolean;
+    inject?: string;
 };
 export type FilterOperator = "=" | "!=" | ">" | ">=" | "<" | "<=" | "LIKE" | "IN" | "NOT IN";
 export type FilterOption = {
@@ -3418,18 +3464,22 @@ export type GraphsConfig = {
     enabled: boolean;
     kpis?: KPIConfig[];
     charts: ChartDefinition[];
+    calculatedColumns?: CalculatedColumn[];
 };
-export type GroupByType = "day" | "week" | "month" | "year" | "column";
+export type GroupByType = "day" | "week" | "month" | "quarter" | "year" | "column" | "range" | "custom";
 export type KPIConfig = {
     id: string;
     label: string;
     column: string;
-    operation: AggregationOperation;
-    format?: "number" | "currency" | "percentage" | "integer";
+    operation: AggregationOperation | "formula";
+    expression?: string;
+    format?: ValueFormat;
+    decimals?: number;
     prefix?: string;
     suffix?: string;
     color?: string;
     rowFilter?: RowFilter[];
+    hidden?: boolean;
 };
 export type LineConfig = {
     dataKey: string;
@@ -3444,9 +3494,11 @@ export type RadarConfig = {
 };
 export type RowFilter = {
     column: string;
-    op: "=" | "!=" | "in" | "not_in";
+    op: RowFilterOperator;
     value: string | string[];
 };
+export type RowFilterOperator = "=" | "!=" | "in" | "not_in" | ">" | ">=" | "<" | "<=" | "between" | "contains" | "not_contains" | "empty" | "not_empty";
+export type ValueFormat = "number" | "currency" | "percentage" | "integer";
 export type LogType = {
     idlog: number;
     logiduser: number;
