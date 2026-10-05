@@ -2450,6 +2450,7 @@
     "toastInvalidQuantityMessage": "Invalid quantity",
     "toastInvalidValue": "Invalid value",
     "toastItemsSkipped": "{{count}} line items were skipped: {{codes}}",
+    "transferUploadNotFound": "{{count}} line item(s) were skipped; warehouse(s) or location(s) not found: {{names}}",
     "toastLoadError": "Error loading",
     "toastLoginError": "Incorrect username or password.",
     "toastLoginErrorAttempts": "Wrong username or password. {{left}} attempt(s) left before the network is blocked.",

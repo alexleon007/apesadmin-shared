@@ -2450,6 +2450,7 @@
   "toastInvalidQuantityMessage": "無效數量",
   "toastInvalidValue": "無效值",
   "toastItemsSkipped": "已略過 {{count}} 筆項目：{{codes}}",
+  "transferUploadNotFound": "已略過 {{count}} 筆項目；找不到倉庫或位置：{{names}}",
   "toastLoadError": "載入錯誤",
   "toastLoginError": "使用者名稱或密碼不正確。",
   "toastLoginErrorAttempts": "使用者名稱或密碼錯誤。網路被封鎖前還剩 {{left}} 次嘗試。",

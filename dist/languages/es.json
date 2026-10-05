@@ -2450,6 +2450,7 @@
     "toastInvalidQuantityMessage": "Cantidad no válida",
     "toastInvalidValue": "Valor no válido",
     "toastItemsSkipped": "Se omitieron {{count}} partidas: {{codes}}",
+    "transferUploadNotFound": "Se omitieron {{count}} partida(s); almacén(es) o ubicación(es) no encontrado(s): {{names}}",
     "toastLoadError": "Error al cargar",
     "toastLoginError": "Usuario o contraseña incorrectos.",
     "toastLoginErrorAttempts": "Usuario o contraseña incorrectos. Te quedan {{left}} intento(s) antes de bloquear la red.",

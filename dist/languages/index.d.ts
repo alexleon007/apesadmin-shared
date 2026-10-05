@@ -2454,6 +2454,7 @@ export declare const languages: {
         toastInvalidQuantityMessage: string;
         toastInvalidValue: string;
         toastItemsSkipped: string;
+        transferUploadNotFound: string;
         toastLoadError: string;
         toastLoginError: string;
         toastLoginErrorAttempts: string;
@@ -5461,6 +5462,7 @@ export declare const languages: {
         toastInvalidQuantityMessage: string;
         toastInvalidValue: string;
         toastItemsSkipped: string;
+        transferUploadNotFound: string;
         toastLoadError: string;
         toastLoginError: string;
         toastLoginErrorAttempts: string;
@@ -8468,6 +8470,7 @@ export declare const languages: {
         toastInvalidQuantityMessage: string;
         toastInvalidValue: string;
         toastItemsSkipped: string;
+        transferUploadNotFound: string;
         toastLoadError: string;
         toastLoginError: string;
         toastLoginErrorAttempts: string;
