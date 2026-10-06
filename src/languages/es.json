@@ -1973,6 +1973,7 @@
   "requiredMaterialSummary": "Resumen de material necesario",
   "requiredPurchases": "Compras requeridas",
   "requiredQuantity": "Cant. requerida",
+  "requisitionsWithoutStock": "Pedidos sin existencia",
   "reserveInventoryOnOrder": "Apartado de mercancía",
   "reset": "Reiniciar",
   "resize": "Redimensionar",

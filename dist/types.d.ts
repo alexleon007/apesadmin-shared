@@ -2889,6 +2889,7 @@ export type SystemSettingsType = {
     price_list_by_line: boolean;
     reserve_inventory_on_order: boolean;
     allow_orders_without_stock: boolean;
+    allow_requisitions_without_stock: boolean;
     inventory_deduction_on_invoice: boolean;
     assign_agents_on_order: boolean;
     assign_operators_on_order: boolean;

@@ -1973,6 +1973,7 @@
   "requiredMaterialSummary": "所需材料摘要",
   "requiredPurchases": "所需購買數",
   "requiredQuantity": "需求數量",
+  "requisitionsWithoutStock": "無庫存訂單",
   "reserveInventoryOnOrder": "訂單庫存預留",
   "reset": "重置",
   "resize": "調整大小",
