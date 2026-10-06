@@ -2255,6 +2255,7 @@ export type PartyType = {
     partycp: string;
     partynumregidtrib?: string;
     partytaxcountry?: string;
+    partycfdiuse?: string;
     partyagent: number;
     partyagentname: string;
     partypricelist: number;
