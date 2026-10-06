@@ -2469,10 +2469,9 @@ export type PartyType = {
   partyrf: number;
   partyaddress: string;
   partycp: string;
-  // Sólo con el RFC genérico extranjero (XEXX010101000): registro tributario
-  // en su país y ese país en ISO2 (catálogo `countries`).
   partynumregidtrib?: string;
   partytaxcountry?: string;
+  partycfdiuse?: string;
   partyagent: number;
   partyagentname: string;
   partypricelist: number;
