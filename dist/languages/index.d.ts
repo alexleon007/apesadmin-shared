@@ -2340,8 +2340,10 @@ export declare const languages: {
         tasks: string;
         tax: string;
         taxes: string;
+        taxInputPendingAccount: string;
         taxInputAccount: string;
         taxNotApplicableHint: string;
+        taxOutputPendingAccount: string;
         taxOutputAccount: string;
         taxRateGeneral: string;
         taxRatePercent: string;
@@ -2349,6 +2351,7 @@ export declare const languages: {
         taxRateInvalid: string;
         taxRateDuplicated: string;
         taxRatesHelp: string;
+        taxPendingHelp: string;
         taxRateWithoutAccount: string;
         newTax: string;
         editTax: string;
@@ -2742,7 +2745,9 @@ export declare const languages: {
         windowClosedTemplates: string;
         windowLeftHours: string;
         windowLeftMinutes: string;
+        withholdingPayablePendingAccount: string;
         withholdingPayableAccount: string;
+        withholdingReceivablePendingAccount: string;
         withholdingReceivableAccount: string;
         withholdings: string;
         without: string;
@@ -5441,8 +5446,10 @@ export declare const languages: {
         tasks: string;
         tax: string;
         taxes: string;
+        taxInputPendingAccount: string;
         taxInputAccount: string;
         taxNotApplicableHint: string;
+        taxOutputPendingAccount: string;
         taxOutputAccount: string;
         taxRateGeneral: string;
         taxRatePercent: string;
@@ -5450,6 +5457,7 @@ export declare const languages: {
         taxRateInvalid: string;
         taxRateDuplicated: string;
         taxRatesHelp: string;
+        taxPendingHelp: string;
         taxRateWithoutAccount: string;
         newTax: string;
         editTax: string;
@@ -5843,7 +5851,9 @@ export declare const languages: {
         windowClosedTemplates: string;
         windowLeftHours: string;
         windowLeftMinutes: string;
+        withholdingPayablePendingAccount: string;
         withholdingPayableAccount: string;
+        withholdingReceivablePendingAccount: string;
         withholdingReceivableAccount: string;
         withholdings: string;
         without: string;
@@ -8542,8 +8552,10 @@ export declare const languages: {
         tasks: string;
         tax: string;
         taxes: string;
+        taxInputPendingAccount: string;
         taxInputAccount: string;
         taxNotApplicableHint: string;
+        taxOutputPendingAccount: string;
         taxOutputAccount: string;
         taxRateGeneral: string;
         taxRatePercent: string;
@@ -8551,6 +8563,7 @@ export declare const languages: {
         taxRateInvalid: string;
         taxRateDuplicated: string;
         taxRatesHelp: string;
+        taxPendingHelp: string;
         taxRateWithoutAccount: string;
         newTax: string;
         editTax: string;
@@ -8944,7 +8957,9 @@ export declare const languages: {
         windowClosedTemplates: string;
         windowLeftHours: string;
         windowLeftMinutes: string;
+        withholdingPayablePendingAccount: string;
         withholdingPayableAccount: string;
+        withholdingReceivablePendingAccount: string;
         withholdingReceivableAccount: string;
         withholdings: string;
         without: string;
