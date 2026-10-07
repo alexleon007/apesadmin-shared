@@ -291,6 +291,9 @@ export declare const TAX_ACCOUNTTYPE_WITHHOLDING_PAYABLE = "withholding_payable"
 export declare const TAX_ACCOUNTTYPE_LABEL_KEYS: Record<string, string>;
 export declare const TAX_ACCOUNTTYPES_BY_CLAS: Record<string, string[]>;
 export declare const TAX_ACCOUNTTYPES_DEFAULT: string[];
+export declare const TAX_RATE_SEPARATOR = "@";
+export declare const normalizeTaxRate: (rate: number | string) => string;
+export declare const taxRateAccountType: (accounttype: string, rate: string) => string;
 export declare const ACCOUNTING_ENTITYTYPE_PRODUCT = "product";
 export declare const PRODUCT_ACCOUNTTYPES_INVENTORIED: string[];
 export declare const PRODUCT_ACCOUNTTYPES_SERVICE: string[];

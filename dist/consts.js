@@ -746,6 +746,9 @@ export const TAX_ACCOUNTTYPES_DEFAULT = [
     TAX_ACCOUNTTYPE_OUTPUT,
     TAX_ACCOUNTTYPE_INPUT,
 ];
+export const TAX_RATE_SEPARATOR = "@";
+export const normalizeTaxRate = (rate) => String(Math.round(Number(rate) * 10000) / 10000);
+export const taxRateAccountType = (accounttype, rate) => `${accounttype}${TAX_RATE_SEPARATOR}${rate}`;
 // -------------- Contabilidad: Configuración Contable → Productos --------------
 // entitytype "product" + idtarget = products.idprod. Reutiliza el mismo
 // vocabulario de accounttype que accounting_profiles tipo "product"
