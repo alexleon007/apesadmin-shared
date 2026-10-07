@@ -2090,6 +2090,7 @@ export declare const languages: {
         saveDraft: string;
         savedTickets: string;
         saveProductFirstForAccounting: string;
+        savePartyFirstForAccounting: string;
         saveProductFirstForFactors: string;
         saveProductFirstForGallery: string;
         saveProductFirstForStats: string;
@@ -2155,6 +2156,9 @@ export declare const languages: {
         selectChatToStart: string;
         selectCompany: string;
         selectCompanyFirstForAccounting: string;
+        selectCompanyFirstForPartyAccounting: string;
+        partyAccountingNoRoles: string;
+        partyAccountsFallbackHelp: string;
         selectDate: string;
         selected: string;
         selectedCount: string;
@@ -5164,6 +5168,7 @@ export declare const languages: {
         saveDraft: string;
         savedTickets: string;
         saveProductFirstForAccounting: string;
+        savePartyFirstForAccounting: string;
         saveProductFirstForFactors: string;
         saveProductFirstForGallery: string;
         saveProductFirstForStats: string;
@@ -5229,6 +5234,9 @@ export declare const languages: {
         selectChatToStart: string;
         selectCompany: string;
         selectCompanyFirstForAccounting: string;
+        selectCompanyFirstForPartyAccounting: string;
+        partyAccountingNoRoles: string;
+        partyAccountsFallbackHelp: string;
         selectDate: string;
         selected: string;
         selectedCount: string;
@@ -8238,6 +8246,7 @@ export declare const languages: {
         saveDraft: string;
         savedTickets: string;
         saveProductFirstForAccounting: string;
+        savePartyFirstForAccounting: string;
         saveProductFirstForFactors: string;
         saveProductFirstForGallery: string;
         saveProductFirstForStats: string;
@@ -8303,6 +8312,9 @@ export declare const languages: {
         selectChatToStart: string;
         selectCompany: string;
         selectCompanyFirstForAccounting: string;
+        selectCompanyFirstForPartyAccounting: string;
+        partyAccountingNoRoles: string;
+        partyAccountsFallbackHelp: string;
         selectDate: string;
         selected: string;
         selectedCount: string;

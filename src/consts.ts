@@ -177,6 +177,7 @@ export const FORM_RECORDS = "records";
 export const FORM_FISCAL = "fiscal";
 export const FORM_STATS = "stats";
 export const FORM_OTHER = "other";
+export const FORM_ACCOUNTING = "accounting";
 export const FORM_ATTENDANCE = "attendance";
 
 export const MAILSUPPLIER_GMAIL = "gmail";
@@ -924,6 +925,20 @@ export const PRODUCT_ACCOUNTTYPES_INVENTORIED: string[] =
 export const PRODUCT_ACCOUNTTYPES_SERVICE: string[] = [
   PROFILE_ACCOUNTTYPE_SALES_REVENUE,
   PROFILE_ACCOUNTTYPE_COST_OF_SALES,
+];
+
+// -------------- Contabilidad: Configuración Contable → Parties --------------
+
+export const ACCOUNTING_ENTITYTYPE_PARTY = "party";
+
+export const PARTY_ACCOUNTTYPES_CUSTOMER: string[] = [
+  GENERAL_ACCOUNTTYPE_CUSTOMERS_RECEIVABLE,
+  GENERAL_ACCOUNTTYPE_CUSTOMER_ADVANCES,
+];
+
+export const PARTY_ACCOUNTTYPES_SUPPLIER: string[] = [
+  GENERAL_ACCOUNTTYPE_SUPPLIERS_PAYABLE,
+  GENERAL_ACCOUNTTYPE_SUPPLIER_ADVANCES,
 ];
 
 // -------------- Contabilidad: Configuración Contable → Cuentas Bancarias --------------

@@ -143,6 +143,7 @@ export const FORM_RECORDS = "records";
 export const FORM_FISCAL = "fiscal";
 export const FORM_STATS = "stats";
 export const FORM_OTHER = "other";
+export const FORM_ACCOUNTING = "accounting";
 export const FORM_ATTENDANCE = "attendance";
 export const MAILSUPPLIER_GMAIL = "gmail";
 export const MAILSUPPLIER_OUTLOOK = "outlook";
@@ -760,6 +761,16 @@ export const PRODUCT_ACCOUNTTYPES_INVENTORIED = PROFILE_ACCOUNTTYPES_BY_PROFILET
 export const PRODUCT_ACCOUNTTYPES_SERVICE = [
     PROFILE_ACCOUNTTYPE_SALES_REVENUE,
     PROFILE_ACCOUNTTYPE_COST_OF_SALES,
+];
+// -------------- Contabilidad: Configuración Contable → Parties --------------
+export const ACCOUNTING_ENTITYTYPE_PARTY = "party";
+export const PARTY_ACCOUNTTYPES_CUSTOMER = [
+    GENERAL_ACCOUNTTYPE_CUSTOMERS_RECEIVABLE,
+    GENERAL_ACCOUNTTYPE_CUSTOMER_ADVANCES,
+];
+export const PARTY_ACCOUNTTYPES_SUPPLIER = [
+    GENERAL_ACCOUNTTYPE_SUPPLIERS_PAYABLE,
+    GENERAL_ACCOUNTTYPE_SUPPLIER_ADVANCES,
 ];
 // -------------- Contabilidad: Configuración Contable → Cuentas Bancarias --------------
 // entitytype "bank_account" + idtarget = accounts.idacc (la cuenta

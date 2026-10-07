@@ -92,6 +92,7 @@ export declare const FORM_RECORDS = "records";
 export declare const FORM_FISCAL = "fiscal";
 export declare const FORM_STATS = "stats";
 export declare const FORM_OTHER = "other";
+export declare const FORM_ACCOUNTING = "accounting";
 export declare const FORM_ATTENDANCE = "attendance";
 export declare const MAILSUPPLIER_GMAIL = "gmail";
 export declare const MAILSUPPLIER_OUTLOOK = "outlook";
@@ -293,6 +294,9 @@ export declare const TAX_ACCOUNTTYPES_DEFAULT: string[];
 export declare const ACCOUNTING_ENTITYTYPE_PRODUCT = "product";
 export declare const PRODUCT_ACCOUNTTYPES_INVENTORIED: string[];
 export declare const PRODUCT_ACCOUNTTYPES_SERVICE: string[];
+export declare const ACCOUNTING_ENTITYTYPE_PARTY = "party";
+export declare const PARTY_ACCOUNTTYPES_CUSTOMER: string[];
+export declare const PARTY_ACCOUNTTYPES_SUPPLIER: string[];
 export declare const ACCOUNTING_ENTITYTYPE_BANK_ACCOUNT = "bank_account";
 export declare const BANKACCOUNT_ACCOUNTTYPE_CASH_ACCOUNT = "cash_account";
 //# sourceMappingURL=consts.d.ts.map
