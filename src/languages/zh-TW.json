@@ -2361,6 +2361,7 @@
   "taxDuplicated": "該公司或所有公司已有相同代碼與分類的啟用稅項。",
   "taxInUseLocked": "此稅項已用於單據：無法在轉嫁稅與預扣稅之間切換。",
   "taxNotFound": "找不到稅項。",
+  "taxNotForCompany": "稅項 {{tax}} 不適用於此單據的公司。",
   "taxRegime": "稅收制度",
   "taxResidence": "稅務居住國",
   "team": "團隊",

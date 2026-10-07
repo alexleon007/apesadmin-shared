@@ -2996,6 +2996,7 @@ export type TaxType = {
     taxorder: number;
     taxside: number;
     taxclas: string;
+    taxidcmp?: number;
 };
 export type TaxValueType = {
     idtaxval: number;
@@ -3011,6 +3012,7 @@ export type TaxValueType = {
     taxorder: number;
     taxside: number;
     taxclas: string;
+    taxidcmp?: number;
 };
 export type ThemeType = {
     secondary: string;

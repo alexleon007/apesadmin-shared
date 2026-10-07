@@ -2361,6 +2361,7 @@
   "taxDuplicated": "There is already an active tax with that code and classification for that company or for all companies.",
   "taxInUseLocked": "This tax is already used in documents: it cannot switch between transferred and withholding.",
   "taxNotFound": "Tax not found.",
+  "taxNotForCompany": "The tax {{tax}} does not apply to the document's company.",
   "taxRegime": "Tax Regime",
   "taxResidence": "Tax Residence",
   "team": "Team",

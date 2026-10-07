@@ -2365,6 +2365,7 @@ export declare const languages: {
         taxDuplicated: string;
         taxInUseLocked: string;
         taxNotFound: string;
+        taxNotForCompany: string;
         taxRegime: string;
         taxResidence: string;
         team: string;
@@ -5465,6 +5466,7 @@ export declare const languages: {
         taxDuplicated: string;
         taxInUseLocked: string;
         taxNotFound: string;
+        taxNotForCompany: string;
         taxRegime: string;
         taxResidence: string;
         team: string;
@@ -8565,6 +8567,7 @@ export declare const languages: {
         taxDuplicated: string;
         taxInUseLocked: string;
         taxNotFound: string;
+        taxNotForCompany: string;
         taxRegime: string;
         taxResidence: string;
         team: string;

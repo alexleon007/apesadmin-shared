@@ -2361,6 +2361,7 @@
   "taxDuplicated": "Ya hay un impuesto activo con ese código y clasificación para esa empresa o para todas.",
   "taxInUseLocked": "Este impuesto ya se usa en documentos: no se puede cambiar entre traslado y retención.",
   "taxNotFound": "Impuesto no encontrado.",
+  "taxNotForCompany": "El impuesto {{tax}} no aplica a la empresa del documento.",
   "taxRegime": "Régimen Fiscal",
   "taxResidence": "Residencia fiscal",
   "team": "Equipo",
