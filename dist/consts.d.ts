@@ -284,7 +284,13 @@ export declare const GENERAL_ACCOUNTTYPE_OPTIONS: {
 }[];
 export declare const GENERAL_ACCOUNTTYPE_LABEL_KEYS: Record<string, string>;
 export declare const ACCOUNTING_ENTITYTYPE_TAX = "tax";
+export declare const TAX_CLAS_TAX = "tax";
 export declare const TAX_CLAS_RETENTION = "ret";
+export declare const TAX_CLAS_LABEL_KEYS: Record<string, string>;
+export declare const TAX_SAT_CODES: {
+    code: string;
+    name: string;
+}[];
 export declare const TAX_ACCOUNTTYPE_OUTPUT = "tax_output";
 export declare const TAX_ACCOUNTTYPE_INPUT = "tax_input";
 export declare const TAX_ACCOUNTTYPE_WITHHOLDING_RECEIVABLE = "withholding_receivable";

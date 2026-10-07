@@ -716,8 +716,8 @@ export const GENERAL_ACCOUNTTYPE_LABEL_KEYS = GENERAL_ACCOUNTTYPE_OPTIONS.reduce
     return acc;
 }, {});
 // -------------- Contabilidad: Configuración Contable → Impuestos --------------
-// entitytype "tax" + idtarget = taxes.idtax. El catálogo `taxes` es
-// compartido en toda la BD (no tiene idcmp), pero cada idcmp asigna sus
+// entitytype "tax" + idtarget = taxes.idtax. Cada impuesto aplica a una
+// empresa (taxes.idcmp_tax) o a todas (0), y cada idcmp asigna sus
 // propias cuentas por impuesto en accounting_entity_accounts.
 //
 // clas_tax ("tax" | "ret") SÍ se usa en todo el proyecto para distinguir
@@ -726,7 +726,17 @@ export const GENERAL_ACCOUNTTYPE_LABEL_KEYS = GENERAL_ACCOUNTTYPE_OPTIONS.reduce
 // lo usa como interruptor de comportamiento — por eso no se usa aquí para
 // decidir qué campos mostrar; se usa únicamente clas_tax.
 export const ACCOUNTING_ENTITYTYPE_TAX = "tax";
+export const TAX_CLAS_TAX = "tax";
 export const TAX_CLAS_RETENTION = "ret";
+export const TAX_CLAS_LABEL_KEYS = {
+    [TAX_CLAS_TAX]: "taxClasTax",
+    [TAX_CLAS_RETENTION]: "taxClasRetention",
+};
+export const TAX_SAT_CODES = [
+    { code: "001", name: "ISR" },
+    { code: "002", name: "IVA" },
+    { code: "003", name: "IEPS" },
+];
 export const TAX_ACCOUNTTYPE_OUTPUT = "tax_output";
 export const TAX_ACCOUNTTYPE_INPUT = "tax_input";
 export const TAX_ACCOUNTTYPE_WITHHOLDING_RECEIVABLE = "withholding_receivable";

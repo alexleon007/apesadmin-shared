@@ -1585,6 +1585,18 @@ export type CompanyType = {
   cmpdefaultcurrency: string;
 };
 
+export type CompanyTaxType = {
+  idtax: number;
+  idcmp: number;
+  cmpname: string;
+  code: string;
+  name: string;
+  value: number | null;
+  clas: string;
+  order: number;
+  status: number;
+};
+
 export type ConceptFieldsType = {
   idcfield: number;
   iskey: number;
