@@ -259,6 +259,7 @@ export declare const PROFILE_ACCOUNTTYPE_SALES_DISCOUNT = "sales_discount";
 export declare const PROFILE_ACCOUNTTYPE_INVENTORY_GAIN = "inventory_gain";
 export declare const PROFILE_ACCOUNTTYPE_INVENTORY_LOSS = "inventory_loss";
 export declare const PROFILE_ACCOUNTTYPE_PURCHASE_EXPENSE = "purchase_expense";
+export declare const PROFILE_ACCOUNTTYPE_OTHER_INCOME = "other_income";
 export declare const PROFILE_ACCOUNTTYPE_LABEL_KEYS: Record<string, string>;
 export declare const PROFILE_ACCOUNTTYPES_BY_PROFILETYPE: Record<string, string[]>;
 export declare const ACCOUNTING_ENTITYTYPE_COMPANY = "company";

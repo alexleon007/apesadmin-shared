@@ -745,6 +745,7 @@ export const PROFILE_ACCOUNTTYPE_SALES_DISCOUNT = "sales_discount";
 export const PROFILE_ACCOUNTTYPE_INVENTORY_GAIN = "inventory_gain";
 export const PROFILE_ACCOUNTTYPE_INVENTORY_LOSS = "inventory_loss";
 export const PROFILE_ACCOUNTTYPE_PURCHASE_EXPENSE = "purchase_expense";
+export const PROFILE_ACCOUNTTYPE_OTHER_INCOME = "other_income";
 
 export const PROFILE_ACCOUNTTYPE_LABEL_KEYS: Record<string, string> = {
   [PROFILE_ACCOUNTTYPE_SALES_REVENUE]: "salesRevenue",
@@ -755,6 +756,7 @@ export const PROFILE_ACCOUNTTYPE_LABEL_KEYS: Record<string, string> = {
   [PROFILE_ACCOUNTTYPE_INVENTORY_GAIN]: "inventoryAdjustmentGain",
   [PROFILE_ACCOUNTTYPE_INVENTORY_LOSS]: "inventoryAdjustmentLoss",
   [PROFILE_ACCOUNTTYPE_PURCHASE_EXPENSE]: "expenseAccount",
+  [PROFILE_ACCOUNTTYPE_OTHER_INCOME]: "statementGroupOtherIncome",
 };
 
 export const PROFILE_ACCOUNTTYPES_BY_PROFILETYPE: Record<string, string[]> = {
@@ -766,6 +768,7 @@ export const PROFILE_ACCOUNTTYPES_BY_PROFILETYPE: Record<string, string[]> = {
     PROFILE_ACCOUNTTYPE_SALES_DISCOUNT,
     PROFILE_ACCOUNTTYPE_INVENTORY_GAIN,
     PROFILE_ACCOUNTTYPE_INVENTORY_LOSS,
+    PROFILE_ACCOUNTTYPE_OTHER_INCOME,
   ],
   [ACCOUNTPROFILE_TYPE_EXPENSE]: [PROFILE_ACCOUNTTYPE_PURCHASE_EXPENSE],
 };
@@ -933,6 +936,7 @@ export const PRODUCT_ACCOUNTTYPES_INVENTORIED: string[] =
 export const PRODUCT_ACCOUNTTYPES_SERVICE: string[] = [
   PROFILE_ACCOUNTTYPE_SALES_REVENUE,
   PROFILE_ACCOUNTTYPE_COST_OF_SALES,
+  PROFILE_ACCOUNTTYPE_OTHER_INCOME,
 ];
 
 // -------------- Contabilidad: Configuración Contable → Parties --------------
