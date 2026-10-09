@@ -2786,6 +2786,7 @@ export declare const languages: {
         shared: string;
         sharePendingSave: string;
         downloadQR: string;
+        shareAccessDenied: string;
         sheet: string;
         sheetRowError: string;
         shop: string;
@@ -6264,6 +6265,7 @@ export declare const languages: {
         shared: string;
         sharePendingSave: string;
         downloadQR: string;
+        shareAccessDenied: string;
         sheet: string;
         sheetRowError: string;
         shop: string;
@@ -9742,6 +9744,7 @@ export declare const languages: {
         shared: string;
         sharePendingSave: string;
         downloadQR: string;
+        shareAccessDenied: string;
         sheet: string;
         sheetRowError: string;
         shop: string;

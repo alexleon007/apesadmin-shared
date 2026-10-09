@@ -2782,6 +2782,7 @@
   "shared": "已分享",
   "sharePendingSave": "儲存後分享",
   "downloadQR": "下載 QR 碼",
+  "shareAccessDenied": "文件編號或密碼錯誤，或存取已失效。",
   "sheet": "工作表",
   "sheetRowError": "工作表「{{sheet}}」第 {{row}} 列：{{detail}}",
   "shop": "商店",

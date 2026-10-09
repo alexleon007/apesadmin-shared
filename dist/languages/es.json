@@ -2782,6 +2782,7 @@
     "shared": "Compartido",
     "sharePendingSave": "Se comparte al guardar",
     "downloadQR": "Descargar QR",
+    "shareAccessDenied": "Folio o contraseña incorrectos, o el acceso ya no está vigente.",
     "sheet": "Hoja",
     "sheetRowError": "Hoja «{{sheet}}», fila {{row}}: {{detail}}",
     "shop": "Tienda",

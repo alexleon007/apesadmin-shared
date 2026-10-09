@@ -2782,6 +2782,7 @@
   "shared": "Shared",
   "sharePendingSave": "Shared when saved",
   "downloadQR": "Download QR",
+  "shareAccessDenied": "Incorrect folio or password, or access is no longer valid.",
   "sheet": "Sheet",
   "sheetRowError": "Sheet «{{sheet}}», row {{row}}: {{detail}}",
   "shop": "Shop",
