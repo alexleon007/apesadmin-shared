@@ -2892,6 +2892,7 @@ export declare const languages: {
         uiPrefsColorfulActionsHelp: string;
         unassigned: string;
         unassignedUsers: string;
+        unassignFromRoute: string;
         unauthorizedAccess: string;
         unauthorizedAccessMessage: string;
         unbalanced: string;
@@ -6353,6 +6354,7 @@ export declare const languages: {
         uiPrefsColorfulActionsHelp: string;
         unassigned: string;
         unassignedUsers: string;
+        unassignFromRoute: string;
         unauthorizedAccess: string;
         unauthorizedAccessMessage: string;
         unbalanced: string;
@@ -9814,6 +9816,7 @@ export declare const languages: {
         uiPrefsColorfulActionsHelp: string;
         unassigned: string;
         unassignedUsers: string;
+        unassignFromRoute: string;
         unauthorizedAccess: string;
         unauthorizedAccessMessage: string;
         unbalanced: string;
