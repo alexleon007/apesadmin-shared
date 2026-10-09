@@ -2775,6 +2775,7 @@ export declare const languages: {
         link: string;
         linkGeneratedOnSave: string;
         sharePassHint: string;
+        validity: string;
         renew: string;
         renewsOnSave: string;
         expired: string;
@@ -6249,6 +6250,7 @@ export declare const languages: {
         link: string;
         linkGeneratedOnSave: string;
         sharePassHint: string;
+        validity: string;
         renew: string;
         renewsOnSave: string;
         expired: string;
@@ -9723,6 +9725,7 @@ export declare const languages: {
         link: string;
         linkGeneratedOnSave: string;
         sharePassHint: string;
+        validity: string;
         renew: string;
         renewsOnSave: string;
         expired: string;
