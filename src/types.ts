@@ -3492,7 +3492,8 @@ export type PublicServiceKeyType =
   | "cfdi"
   | "ticket"
   | "account"
-  | "chat";
+  | "chat"
+  | "documents";
 
 export type PublicNavItemType = {
   key: PublicServiceKeyType;
@@ -3515,6 +3516,17 @@ export type PublicUserInfoType = {
   mail: string;
   name?: string;
   tel?: string;
+};
+
+// Entrada de expediente compartida (respuesta de /open/shared-record)
+export type PublicSharedRecordType = {
+  folio: string;
+  date: string;
+  name: string;
+  plan: string;
+  expires: string;
+  fields: { label: string; value: string }[];
+  files: { name: string; ext: string; url: string }[];
 };
 
 // Ticket en la lista del usuario público (respuesta de /open/my-tickets)

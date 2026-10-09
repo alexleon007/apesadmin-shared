@@ -3197,7 +3197,7 @@ export type WorkItemsType = {
     wicmpname?: string;
     wicreatedat?: string;
 };
-export type PublicServiceKeyType = "calendar" | "cfdi" | "ticket" | "account" | "chat";
+export type PublicServiceKeyType = "calendar" | "cfdi" | "ticket" | "account" | "chat" | "documents";
 export type PublicNavItemType = {
     key: PublicServiceKeyType;
     labelKey: string;
@@ -3214,6 +3214,22 @@ export type PublicUserInfoType = {
     mail: string;
     name?: string;
     tel?: string;
+};
+export type PublicSharedRecordType = {
+    folio: string;
+    date: string;
+    name: string;
+    plan: string;
+    expires: string;
+    fields: {
+        label: string;
+        value: string;
+    }[];
+    files: {
+        name: string;
+        ext: string;
+        url: string;
+    }[];
 };
 export type PublicTicketType = {
     wiid: number;
