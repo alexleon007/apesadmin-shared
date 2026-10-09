@@ -3484,5 +3484,9 @@
     "youSave": "省下",
     "zipCode": "郵遞區號",
     "zohoOwnDomain": "Zoho Mail（自訂網域）",
-    "zone": "區域"
+    "zone": "區域",
+    "sendWhatsApp": "透過 WhatsApp 傳送",
+    "noWhatsAppPhone": "未登錄有效的手機號碼",
+    "saveChangesFirst": "請先儲存變更再傳送",
+    "shareWhatsAppMessage": "您好，我們與您分享文件「{{name}}」。\n\n請在此查看：{{link}}\n文件編號：{{folio}}\n密碼：{{password}}\n可查看至 {{date}}。"
 }

@@ -3484,5 +3484,9 @@
   "youSave": "You save",
   "zipCode": "Zip Code",
   "zohoOwnDomain": "Zoho Mail (custom domain)",
-  "zone": "Zone"
+  "zone": "Zone",
+  "sendWhatsApp": "Send via WhatsApp",
+  "noWhatsAppPhone": "No valid mobile number on file",
+  "saveChangesFirst": "Save your changes before sending",
+  "shareWhatsAppMessage": "Hello, we are sharing your document \"{{name}}\" with you.\n\nView it here: {{link}}\nFolio: {{folio}}\nPassword: {{password}}\nAvailable until {{date}}."
 }

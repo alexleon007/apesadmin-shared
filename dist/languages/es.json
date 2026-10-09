@@ -3484,5 +3484,9 @@
     "youSave": "Ahorras",
     "zipCode": "Código Postal",
     "zohoOwnDomain": "Zoho Mail (dominio propio)",
-    "zone": "Zona"
+    "zone": "Zona",
+    "sendWhatsApp": "Enviar por WhatsApp",
+    "noWhatsAppPhone": "Sin celular válido registrado",
+    "saveChangesFirst": "Guarda los cambios antes de enviar",
+    "shareWhatsAppMessage": "Hola, te compartimos tu documento \"{{name}}\".\n\nConsúltalo aquí: {{link}}\nFolio: {{folio}}\nContraseña: {{password}}\nDisponible hasta {{date}}."
 }

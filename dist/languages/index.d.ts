@@ -3489,6 +3489,10 @@ export declare const languages: {
         zipCode: string;
         zohoOwnDomain: string;
         zone: string;
+        sendWhatsApp: string;
+        noWhatsAppPhone: string;
+        saveChangesFirst: string;
+        shareWhatsAppMessage: string;
     };
     readonly en: {
         aboveMax: string;
@@ -6977,6 +6981,10 @@ export declare const languages: {
         zipCode: string;
         zohoOwnDomain: string;
         zone: string;
+        sendWhatsApp: string;
+        noWhatsAppPhone: string;
+        saveChangesFirst: string;
+        shareWhatsAppMessage: string;
     };
     readonly "zh-TW": {
         aboveMax: string;
@@ -10465,6 +10473,10 @@ export declare const languages: {
         zipCode: string;
         zohoOwnDomain: string;
         zone: string;
+        sendWhatsApp: string;
+        noWhatsAppPhone: string;
+        saveChangesFirst: string;
+        shareWhatsAppMessage: string;
     };
 };
 export type LanguageKey = keyof typeof languages;
