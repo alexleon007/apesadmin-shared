@@ -2783,6 +2783,9 @@ export declare const languages: {
         generatePassword: string;
         copyLink: string;
         copyPassword: string;
+        shared: string;
+        sharePendingSave: string;
+        downloadQR: string;
         sheet: string;
         sheetRowError: string;
         shop: string;
@@ -6258,6 +6261,9 @@ export declare const languages: {
         generatePassword: string;
         copyLink: string;
         copyPassword: string;
+        shared: string;
+        sharePendingSave: string;
+        downloadQR: string;
         sheet: string;
         sheetRowError: string;
         shop: string;
@@ -9733,6 +9739,9 @@ export declare const languages: {
         generatePassword: string;
         copyLink: string;
         copyPassword: string;
+        shared: string;
+        sharePendingSave: string;
+        downloadQR: string;
         sheet: string;
         sheetRowError: string;
         shop: string;
