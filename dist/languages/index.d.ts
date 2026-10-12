@@ -881,6 +881,10 @@ export declare const languages: {
         currencies: string;
         currenciesManagement: string;
         currency: string;
+        currencyCodeHelp: string;
+        currencyCodeInvalid: string;
+        currencyDuplicated: string;
+        currencyInUse: string;
         currentDate: string;
         currentPrice: string;
         currentRoute: string;
@@ -1054,6 +1058,7 @@ export declare const languages: {
         editComission: string;
         editCompany: string;
         editContact: string;
+        editCurrency: string;
         editCustomer: string;
         editHR: string;
         editing: string;
@@ -1829,6 +1834,7 @@ export declare const languages: {
         newConversation: string;
         newConversationHint: string;
         newCount: string;
+        newCurrency: string;
         newCustomer: string;
         newCustomersPerMonth: string;
         newCyclicCount: string;
@@ -4373,6 +4379,10 @@ export declare const languages: {
         currencies: string;
         currenciesManagement: string;
         currency: string;
+        currencyCodeHelp: string;
+        currencyCodeInvalid: string;
+        currencyDuplicated: string;
+        currencyInUse: string;
         currentDate: string;
         currentPrice: string;
         currentRoute: string;
@@ -4546,6 +4556,7 @@ export declare const languages: {
         editComission: string;
         editCompany: string;
         editContact: string;
+        editCurrency: string;
         editCustomer: string;
         editHR: string;
         editing: string;
@@ -5321,6 +5332,7 @@ export declare const languages: {
         newConversation: string;
         newConversationHint: string;
         newCount: string;
+        newCurrency: string;
         newCustomer: string;
         newCustomersPerMonth: string;
         newCyclicCount: string;
@@ -7865,6 +7877,10 @@ export declare const languages: {
         currencies: string;
         currenciesManagement: string;
         currency: string;
+        currencyCodeHelp: string;
+        currencyCodeInvalid: string;
+        currencyDuplicated: string;
+        currencyInUse: string;
         currentDate: string;
         currentPrice: string;
         currentRoute: string;
@@ -8038,6 +8054,7 @@ export declare const languages: {
         editComission: string;
         editCompany: string;
         editContact: string;
+        editCurrency: string;
         editCustomer: string;
         editHR: string;
         editing: string;
@@ -8813,6 +8830,7 @@ export declare const languages: {
         newConversation: string;
         newConversationHint: string;
         newCount: string;
+        newCurrency: string;
         newCustomer: string;
         newCustomersPerMonth: string;
         newCyclicCount: string;
