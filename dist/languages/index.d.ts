@@ -550,6 +550,7 @@ export declare const languages: {
         cannotDeleteSystemReports: string;
         cannotEditDeletedRecurrence: string;
         cannotEditPartiallySold: string;
+        cannotEditAssorted: string;
         cannotReplyClosedTicket: string;
         captureDate: string;
         card: string;
@@ -4048,6 +4049,7 @@ export declare const languages: {
         cannotDeleteSystemReports: string;
         cannotEditDeletedRecurrence: string;
         cannotEditPartiallySold: string;
+        cannotEditAssorted: string;
         cannotReplyClosedTicket: string;
         captureDate: string;
         card: string;
@@ -7546,6 +7548,7 @@ export declare const languages: {
         cannotDeleteSystemReports: string;
         cannotEditDeletedRecurrence: string;
         cannotEditPartiallySold: string;
+        cannotEditAssorted: string;
         cannotReplyClosedTicket: string;
         captureDate: string;
         card: string;

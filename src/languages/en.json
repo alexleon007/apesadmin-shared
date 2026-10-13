@@ -546,6 +546,7 @@
   "cannotDeleteSystemReports": "System reports cannot be deleted",
   "cannotEditDeletedRecurrence": "A deleted recurrence cannot be modified",
   "cannotEditPartiallySold": "A document with partial sales applied cannot be edited",
+  "cannotEditAssorted": "A document that has already been assorted cannot be edited",
   "cannotReplyClosedTicket": "Cannot reply to a cancelled or closed ticket",
   "captureDate": "Capture date",
   "card": "CARD",

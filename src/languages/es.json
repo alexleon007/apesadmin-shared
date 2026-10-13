@@ -546,6 +546,7 @@
   "cannotDeleteSystemReports": "No se pueden eliminar reportes del sistema",
   "cannotEditDeletedRecurrence": "No se puede modificar una recurrencia eliminada",
   "cannotEditPartiallySold": "No se puede editar un documento con ventas parciales aplicadas",
+  "cannotEditAssorted": "No se puede editar un documento que ya fue surtido",
   "cannotReplyClosedTicket": "No se puede responder un ticket cancelado o finalizado",
   "captureDate": "Fecha de captura",
   "card": "TARJETA",
