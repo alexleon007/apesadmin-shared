@@ -3527,5 +3527,6 @@
     "pdfGroupFooter": "Fila de subtotal por grupo",
     "pdfGroupFooterHint": "Vacío = Total + el grupo. Acepta los mismos {{campos}}.",
     "pdfGrandTotalRow": "Fila de total general",
-    "hideZeros": "Ocultar ceros"
+    "hideZeros": "Ocultar ceros",
+    "websiteCheckFailed": "No se pudo verificar el subdominio: el servicio de páginas web no responde"
 }

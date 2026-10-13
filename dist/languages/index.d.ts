@@ -3532,6 +3532,7 @@ export declare const languages: {
         pdfGroupFooterHint: string;
         pdfGrandTotalRow: string;
         hideZeros: string;
+        websiteCheckFailed: string;
     };
     readonly en: {
         aboveMax: string;
@@ -7063,6 +7064,7 @@ export declare const languages: {
         pdfGroupFooterHint: string;
         pdfGrandTotalRow: string;
         hideZeros: string;
+        websiteCheckFailed: string;
     };
     readonly "zh-TW": {
         aboveMax: string;
@@ -10594,6 +10596,7 @@ export declare const languages: {
         pdfGroupFooterHint: string;
         pdfGrandTotalRow: string;
         hideZeros: string;
+        websiteCheckFailed: string;
     };
 };
 export type LanguageKey = keyof typeof languages;

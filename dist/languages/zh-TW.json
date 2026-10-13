@@ -3527,5 +3527,6 @@
     "pdfGroupFooter": "每個群組的小計列",
     "pdfGroupFooterHint": "空白 = 合計 + 群組。可使用相同的 {{欄位}}。",
     "pdfGrandTotalRow": "總計列",
-    "hideZeros": "隱藏零值"
+    "hideZeros": "隱藏零值",
+    "websiteCheckFailed": "無法檢查子網域：網站服務沒有回應"
 }

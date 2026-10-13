@@ -3527,5 +3527,6 @@
     "pdfGroupFooter": "Subtotal row per group",
     "pdfGroupFooterHint": "Empty = Total + the group. Accepts the same {{fields}}.",
     "pdfGrandTotalRow": "Grand total row",
-    "hideZeros": "Hide zeros"
+    "hideZeros": "Hide zeros",
+    "websiteCheckFailed": "Could not check the subdomain: the website service is not responding"
 }
