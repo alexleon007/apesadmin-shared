@@ -2378,6 +2378,10 @@ export type OrderType = {
   idcmer: number;
   cmercode: string;
   cmername: string;
+  cmercreatedat?: string;
+  cmertel?: string;
+  cmercreditdays?: number;
+  cmercreditlimit?: number;
   oraddress: number;
   oraddressname: string;
   oraccount: number;
@@ -4110,6 +4114,21 @@ export type TableElementType = BaseElementType &
     sectionTotalKey?: string;
     sectionBg?: string;
     sectionColor?: string;
+    // Texto de la banda. Sin él se imprime el valor agrupado; con él se
+    // interpola contra la primera fila del grupo ({{cliente}}, {{dias|number}})
+    // más {{section}}, que es el valor agrupado.
+    sectionLabel?: string;
+    // Junta las filas de cada grupo aunque lleguen intercaladas, en el orden en
+    // que aparece cada grupo. Apagado se respeta el orden de los datos, que es
+    // lo que necesitan las secciones de un documento.
+    sectionRegroup?: boolean;
+    // Claves que se suman en la fila de subtotal de cada grupo y en la de total
+    // general. Cada suma se imprime en la columna con ese `key`.
+    subtotalKeys?: string[];
+    sectionFooter?: boolean;
+    sectionFooterLabel?: string;
+    grandTotal?: boolean;
+    grandTotalLabel?: string;
     columns: TableColumnType[];
   };
 
@@ -4195,6 +4214,8 @@ export type TableColumnType = {
   wrap?: boolean;
   headerFontSize?: number;
   fontSize?: number;
+  // Un 0 se imprime vacío (columnas de antigüedad: el saldo cae en una sola).
+  hideZero?: boolean;
 };
 
 type Base = {
@@ -4268,6 +4289,13 @@ export type EditorTableType = Base & {
   sectionTotalKey?: string;
   sectionBg?: string;
   sectionColor?: string;
+  sectionLabel?: string;
+  sectionRegroup?: boolean;
+  subtotalKeys?: string[];
+  sectionFooter?: boolean;
+  sectionFooterLabel?: string;
+  grandTotal?: boolean;
+  grandTotalLabel?: string;
 };
 
 export type EditorPageNumType = Base & {
