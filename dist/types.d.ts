@@ -2168,6 +2168,10 @@ export type OrderType = {
     idcmer: number;
     cmercode: string;
     cmername: string;
+    cmercreatedat?: string;
+    cmertel?: string;
+    cmercreditdays?: number;
+    cmercreditlimit?: number;
     oraddress: number;
     oraddressname: string;
     oraccount: number;
@@ -3645,6 +3649,13 @@ export type TableElementType = BaseElementType & TextStyleType & {
     sectionTotalKey?: string;
     sectionBg?: string;
     sectionColor?: string;
+    sectionLabel?: string;
+    sectionRegroup?: boolean;
+    subtotalKeys?: string[];
+    sectionFooter?: boolean;
+    sectionFooterLabel?: string;
+    grandTotal?: boolean;
+    grandTotalLabel?: string;
     columns: TableColumnType[];
 };
 export type PageNumElementType = BaseElementType & TextStyleType & {
@@ -3703,6 +3714,7 @@ export type TableColumnType = {
     wrap?: boolean;
     headerFontSize?: number;
     fontSize?: number;
+    hideZero?: boolean;
 };
 type Base = {
     _id: string;
@@ -3770,6 +3782,13 @@ export type EditorTableType = Base & {
     sectionTotalKey?: string;
     sectionBg?: string;
     sectionColor?: string;
+    sectionLabel?: string;
+    sectionRegroup?: boolean;
+    subtotalKeys?: string[];
+    sectionFooter?: boolean;
+    sectionFooterLabel?: string;
+    grandTotal?: boolean;
+    grandTotalLabel?: string;
 };
 export type EditorPageNumType = Base & {
     type: "pagenum";
