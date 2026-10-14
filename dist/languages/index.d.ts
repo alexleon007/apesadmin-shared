@@ -2276,10 +2276,12 @@ export declare const languages: {
         portrait: string;
         pos: string;
         position: string;
+        posSessionUserBusy: string;
         possibleDuplicates: string;
         postalCode: string;
         postEntry: string;
         posTicketMailText: string;
+        posUserAlreadyInOpenSession: string;
         ppdInvoicesWithoutCfdi: string;
         predefinedThemes: string;
         prefix: string;
@@ -5808,10 +5810,12 @@ export declare const languages: {
         portrait: string;
         pos: string;
         position: string;
+        posSessionUserBusy: string;
         possibleDuplicates: string;
         postalCode: string;
         postEntry: string;
         posTicketMailText: string;
+        posUserAlreadyInOpenSession: string;
         ppdInvoicesWithoutCfdi: string;
         predefinedThemes: string;
         prefix: string;
@@ -9340,10 +9344,12 @@ export declare const languages: {
         portrait: string;
         pos: string;
         position: string;
+        posSessionUserBusy: string;
         possibleDuplicates: string;
         postalCode: string;
         postEntry: string;
         posTicketMailText: string;
+        posUserAlreadyInOpenSession: string;
         ppdInvoicesWithoutCfdi: string;
         predefinedThemes: string;
         prefix: string;
