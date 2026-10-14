@@ -2024,6 +2024,11 @@ export type LogisticsRoutesType = {
     address: string;
     totaldoc: number;
     totalduedoc: number;
+    saleid: number | null;
+    salefolio: string | null;
+    saletotal: number | null;
+    payform: string | null;
+    payformname: string | null;
     time: string;
     duration: number;
     lat: number;
