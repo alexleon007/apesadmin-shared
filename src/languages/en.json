@@ -3539,5 +3539,18 @@
   "pdfGroupFooterHint": "Empty = Total + the group. Accepts the same {{fields}}.",
   "pdfGrandTotalRow": "Grand total row",
   "hideZeros": "Hide zeros",
-  "websiteCheckFailed": "Could not check the subdomain: the website service is not responding"
+  "websiteCheckFailed": "Could not check the subdomain: the website service is not responding",
+  "buildFromPDFDesign": "Build from PDF design",
+  "buildFromPDFDesignHelp": "Upload the PDF of the document as the client uses it. Claude analyzes it and builds the template with the fields of the selected type; you can adjust and preview it before saving.",
+  "pdfDesign": "PDF design",
+  "analyzeDesign": "Analyze design",
+  "analyzingDesign": "Analyzing design...",
+  "toastDesignAnalyzed": "Template generated from the design",
+  "toastSelectTemplateType": "Select the template type first",
+  "aiWarnUnknownFields": "Fields with no match in the catalog, left empty: {{fields}}",
+  "aiWarnDroppedElements": "{{count}} elements were dropped because they could not be reproduced",
+  "aiDesignRefused": "Claude could not process this design",
+  "aiDesignTooComplex": "The design is too complex to generate in full; simplify it or split it into parts",
+  "aiDesignUnreadable": "Claude's response could not be parsed",
+  "aiDesignEmpty": "No element was recognized in the design"
 }

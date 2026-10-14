@@ -3899,6 +3899,48 @@ export type ReturnItemType = {
     taxes: any[];
     returnQty: string;
 };
+export type CreditNoteDocType = {
+    iddoc: number;
+    docnumber: string;
+    currency: string;
+    docdate: string;
+    duedate: string;
+    total: number;
+    totaldue: number;
+    amount: number;
+    status: number;
+};
+export type CreditNoteType = {
+    idor: number;
+    ncnumber: string;
+    nctype: NCFormType;
+    idcmp: number;
+    cmpname: string;
+    idcmer: number;
+    cmercode: string;
+    cmername: string;
+    idwh: number;
+    whname: string;
+    ncdate: string;
+    createdat: string;
+    currency: string;
+    exchangerate: number;
+    payform: string;
+    reltype: string;
+    financeresolution: string;
+    obs: string;
+    subtotal: number;
+    taxes: number;
+    ret: number;
+    total: number;
+    status: number;
+    statusname: string;
+    username: string;
+    file: string;
+    idcfdi: number;
+    xmlurl: string;
+    docs: CreditNoteDocType[];
+};
 export type DetailColumnDef = {
     key: string;
     title: string;
