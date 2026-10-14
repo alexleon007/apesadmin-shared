@@ -3539,5 +3539,18 @@
   "pdfGroupFooterHint": "Vacío = Total + el grupo. Acepta los mismos {{campos}}.",
   "pdfGrandTotalRow": "Fila de total general",
   "hideZeros": "Ocultar ceros",
-  "websiteCheckFailed": "No se pudo verificar el subdominio: el servicio de páginas web no responde"
+  "websiteCheckFailed": "No se pudo verificar el subdominio: el servicio de páginas web no responde",
+  "buildFromPDFDesign": "Construir desde diseño PDF",
+  "buildFromPDFDesignHelp": "Sube el PDF del documento tal como lo usa el cliente. Claude lo analiza y arma la plantilla con los campos del tipo seleccionado; después puedes ajustarla y previsualizarla antes de guardar.",
+  "pdfDesign": "Diseño PDF",
+  "analyzeDesign": "Analizar diseño",
+  "analyzingDesign": "Analizando diseño...",
+  "toastDesignAnalyzed": "Plantilla generada desde el diseño",
+  "toastSelectTemplateType": "Selecciona primero el tipo de plantilla",
+  "aiWarnUnknownFields": "Campos sin equivalente en el catálogo, quedaron vacíos: {{fields}}",
+  "aiWarnDroppedElements": "Se descartaron {{count}} elementos que no pudieron reproducirse",
+  "aiDesignRefused": "Claude no pudo procesar este diseño",
+  "aiDesignTooComplex": "El diseño es demasiado complejo para generarlo completo; simplifícalo o divídelo en partes",
+  "aiDesignUnreadable": "No se pudo interpretar la respuesta de Claude",
+  "aiDesignEmpty": "No se reconoció ningún elemento en el diseño"
 }

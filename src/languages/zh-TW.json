@@ -3539,5 +3539,18 @@
   "pdfGroupFooterHint": "空白 = 合計 + 群組。可使用相同的 {{欄位}}。",
   "pdfGrandTotalRow": "總計列",
   "hideZeros": "隱藏零值",
-  "websiteCheckFailed": "無法檢查子網域：網站服務沒有回應"
+  "websiteCheckFailed": "無法檢查子網域：網站服務沒有回應",
+  "buildFromPDFDesign": "從 PDF 設計建立",
+  "buildFromPDFDesignHelp": "上傳客戶實際使用的文件 PDF。Claude 會分析並以所選類型的欄位建立範本；儲存前可以調整並預覽。",
+  "pdfDesign": "PDF 設計",
+  "analyzeDesign": "分析設計",
+  "analyzingDesign": "分析設計中...",
+  "toastDesignAnalyzed": "已從設計產生範本",
+  "toastSelectTemplateType": "請先選擇範本類型",
+  "aiWarnUnknownFields": "目錄中沒有對應的欄位，已留空：{{fields}}",
+  "aiWarnDroppedElements": "有 {{count}} 個元素無法重現，已捨棄",
+  "aiDesignRefused": "Claude 無法處理此設計",
+  "aiDesignTooComplex": "設計過於複雜，無法完整產生；請簡化或拆分",
+  "aiDesignUnreadable": "無法解析 Claude 的回應",
+  "aiDesignEmpty": "設計中未辨識到任何元素"
 }
