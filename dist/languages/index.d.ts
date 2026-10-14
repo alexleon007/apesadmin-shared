@@ -3364,6 +3364,7 @@ export declare const languages: {
         warning: string;
         watcher: string;
         watchers: string;
+        webPage: string;
         websiteActivated: string;
         websiteAddDomain: string;
         websiteAddItem: string;
@@ -6920,6 +6921,7 @@ export declare const languages: {
         warning: string;
         watcher: string;
         watchers: string;
+        webPage: string;
         websiteActivated: string;
         websiteAddDomain: string;
         websiteAddItem: string;
@@ -10476,6 +10478,7 @@ export declare const languages: {
         warning: string;
         watcher: string;
         watchers: string;
+        webPage: string;
         websiteActivated: string;
         websiteAddDomain: string;
         websiteAddItem: string;
