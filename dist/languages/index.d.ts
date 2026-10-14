@@ -553,6 +553,8 @@ export declare const languages: {
         cannotEditDeletedRecurrence: string;
         cannotEditPartiallySold: string;
         cannotEditAssorted: string;
+        assortResetConfirm: string;
+        assortResetByEdit: string;
         cannotReplyClosedTicket: string;
         captureDate: string;
         card: string;
@@ -4110,6 +4112,8 @@ export declare const languages: {
         cannotEditDeletedRecurrence: string;
         cannotEditPartiallySold: string;
         cannotEditAssorted: string;
+        assortResetConfirm: string;
+        assortResetByEdit: string;
         cannotReplyClosedTicket: string;
         captureDate: string;
         card: string;
@@ -7667,6 +7671,8 @@ export declare const languages: {
         cannotEditDeletedRecurrence: string;
         cannotEditPartiallySold: string;
         cannotEditAssorted: string;
+        assortResetConfirm: string;
+        assortResetByEdit: string;
         cannotReplyClosedTicket: string;
         captureDate: string;
         card: string;

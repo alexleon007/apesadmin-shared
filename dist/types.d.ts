@@ -1847,6 +1847,11 @@ export type LogisticsRoutesType = {
         address: string;
         totaldoc: number;
         totalduedoc: number;
+        saleid: number | null;
+        salefolio: string | null;
+        saletotal: number | null;
+        payform: string | null;
+        payformname: string | null;
         time: string;
         duration: number;
         lat: number;
@@ -2218,6 +2223,8 @@ export type OrderType = {
     orstatusinbox?: string;
     ortags?: TagType[];
     orisassorted?: number;
+    /** 1 si el surtido ya generó movimientos de inventario (no se puede editar). */
+    orassortmoved?: number;
     /** 1 si alguna partida ya se vendió (total o parcialmente). */
     orhaspartial?: number;
     /** 1 si el CFDI se timbra como factura global (público en general). */
