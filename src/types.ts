@@ -2433,6 +2433,8 @@ export type OrderType = {
   orstatusinbox?: string;
   ortags?: TagType[];
   orisassorted?: number;
+  /** 1 si el surtido ya generó movimientos de inventario (no se puede editar). */
+  orassortmoved?: number;
   /** 1 si alguna partida ya se vendió (total o parcialmente). */
   orhaspartial?: number;
   /** 1 si el CFDI se timbra como factura global (público en general). */
