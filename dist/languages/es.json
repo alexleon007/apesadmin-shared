@@ -2174,6 +2174,7 @@
     "payAmount": "Pago",
     "payment": "Pago Factura",
     "paymentAlreadyCancelled": "Pago ya cancelado",
+    "cannotCancelClosedPosPayment": "No puedes cancelar pagos de un corte de caja ya cerrado",
     "paymentApplied": "Pago aplicado",
     "paymentCancelled": "Pago Cancelado",
     "paymentCancelledDesc": "El proceso de pago ha sido cancelado",

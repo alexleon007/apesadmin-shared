@@ -2174,6 +2174,7 @@
   "payAmount": "Payment",
   "payment": "Bill Payment",
   "paymentAlreadyCancelled": "Payment already cancelled",
+  "cannotCancelClosedPosPayment": "Payments from a closed cash session cannot be cancelled",
   "paymentApplied": "Payment applied",
   "paymentCancelled": "Payment cancelled",
   "paymentCancelledDesc": "The payment process was cancelled",

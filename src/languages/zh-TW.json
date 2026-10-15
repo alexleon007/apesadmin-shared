@@ -2174,6 +2174,7 @@
   "payAmount": "付款",
   "payment": "發票付款",
   "paymentAlreadyCancelled": "付款已取消",
+  "cannotCancelClosedPosPayment": "無法取消已結帳班別的付款",
   "paymentApplied": "付款已套用",
   "paymentCancelled": "付款已取消",
   "paymentCancelledDesc": "付款流程已取消",

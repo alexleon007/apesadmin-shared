@@ -2178,6 +2178,7 @@ export declare const languages: {
         payAmount: string;
         payment: string;
         paymentAlreadyCancelled: string;
+        cannotCancelClosedPosPayment: string;
         paymentApplied: string;
         paymentCancelled: string;
         paymentCancelledDesc: string;
@@ -5737,6 +5738,7 @@ export declare const languages: {
         payAmount: string;
         payment: string;
         paymentAlreadyCancelled: string;
+        cannotCancelClosedPosPayment: string;
         paymentApplied: string;
         paymentCancelled: string;
         paymentCancelledDesc: string;
@@ -9296,6 +9298,7 @@ export declare const languages: {
         payAmount: string;
         payment: string;
         paymentAlreadyCancelled: string;
+        cannotCancelClosedPosPayment: string;
         paymentApplied: string;
         paymentCancelled: string;
         paymentCancelledDesc: string;
