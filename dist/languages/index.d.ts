@@ -613,6 +613,8 @@ export declare const languages: {
         changePassword: string;
         changeSelection: string;
         changeTheme: string;
+        conceptSharedWarning: string;
+        fields: string;
         formAfterSubmit: string;
         formConceptsHint: string;
         formContactSettings: string;
@@ -4217,6 +4219,8 @@ export declare const languages: {
         changePassword: string;
         changeSelection: string;
         changeTheme: string;
+        conceptSharedWarning: string;
+        fields: string;
         formAfterSubmit: string;
         formConceptsHint: string;
         formContactSettings: string;
@@ -7821,6 +7825,8 @@ export declare const languages: {
         changePassword: string;
         changeSelection: string;
         changeTheme: string;
+        conceptSharedWarning: string;
+        fields: string;
         formAfterSubmit: string;
         formConceptsHint: string;
         formContactSettings: string;

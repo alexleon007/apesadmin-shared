@@ -609,6 +609,8 @@
     "changePassword": "Cambiar Contraseña",
     "changeSelection": "Cambiar selección",
     "changeTheme": "Cambiar tema",
+    "conceptSharedWarning": "Los cambios aplican en todos los lugares donde se usa este formulario.",
+    "fields": "Campos",
     "formAfterSubmit": "Al terminar",
     "formConceptsHint": "Secciones de datos que llenará el visitante.",
     "formContactSettings": "Registro del contacto",

@@ -1832,6 +1832,7 @@ export type ExternalUrlsType = {
   role: string;
   showcalendar: boolean;
   showinportal?: boolean;
+  agent?: number;
   domain?: string;
   domainstatus?: string;
 };
