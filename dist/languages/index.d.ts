@@ -3249,6 +3249,10 @@ export declare const languages: {
         typeToSearch: string;
         typing: string;
         typography: string;
+        uiPrefsDisplayTitle: string;
+        uiPrefsDisplayDescription: string;
+        uiPrefsTheme: string;
+        performanceModeHelp: string;
         uiPrefsActionsDescription: string;
         uiPrefsActionsTitle: string;
         uiPrefsColorfulActions: string;
@@ -6819,6 +6823,10 @@ export declare const languages: {
         typeToSearch: string;
         typing: string;
         typography: string;
+        uiPrefsDisplayTitle: string;
+        uiPrefsDisplayDescription: string;
+        uiPrefsTheme: string;
+        performanceModeHelp: string;
         uiPrefsActionsDescription: string;
         uiPrefsActionsTitle: string;
         uiPrefsColorfulActions: string;
@@ -10389,6 +10397,10 @@ export declare const languages: {
         typeToSearch: string;
         typing: string;
         typography: string;
+        uiPrefsDisplayTitle: string;
+        uiPrefsDisplayDescription: string;
+        uiPrefsTheme: string;
+        performanceModeHelp: string;
         uiPrefsActionsDescription: string;
         uiPrefsActionsTitle: string;
         uiPrefsColorfulActions: string;
