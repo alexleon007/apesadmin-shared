@@ -1666,6 +1666,35 @@ export type ExternalUrlsType = {
     company: number;
     role: string;
     showcalendar: boolean;
+    showinportal?: boolean;
+    domain?: string;
+    domainstatus?: string;
+};
+export type FormDomainType = {
+    id: string;
+    hostname: string;
+    kind: string;
+    status: "pending_verification" | "verified" | "active" | "failed";
+    sslStatus: string;
+    lastError: string | null;
+    instructions: {
+        verification: {
+            type: string;
+            name: string;
+            value: string;
+        } | null;
+        routing: {
+            type: string;
+            name: string;
+            value: string;
+            note?: string;
+        }[];
+    } | null;
+};
+export type FormDomainStateType = {
+    domain: FormDomainType | null;
+    url: string;
+    genericUrl: string;
 };
 export type FamiliesType = {
     idfam: number;
@@ -3212,7 +3241,24 @@ export type WorkItemsType = {
     wicmpname?: string;
     wicreatedat?: string;
 };
-export type PublicServiceKeyType = "calendar" | "cfdi" | "ticket" | "account" | "chat" | "documents";
+export type PublicServiceKeyType = "calendar" | "cfdi" | "ticket" | "account" | "chat" | "documents" | "forms";
+export type OpenMenuCodeType = Exclude<PublicServiceKeyType, "account">;
+export type OpenMenuItemType = {
+    code: OpenMenuCodeType;
+    label: string;
+    order: number;
+    status: number;
+};
+export type PublicPortalFormType = {
+    code: string;
+    name: string;
+    description: string;
+};
+export type PublicFormTargetType = {
+    company: string;
+    form: string;
+    backend: PublicBackendDataType;
+};
 export type PublicNavItemType = {
     key: PublicServiceKeyType;
     labelKey: string;

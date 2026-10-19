@@ -1831,6 +1831,28 @@ export type ExternalUrlsType = {
   company: number;
   role: string;
   showcalendar: boolean;
+  showinportal?: boolean;
+  domain?: string;
+  domainstatus?: string;
+};
+
+export type FormDomainType = {
+  id: string;
+  hostname: string;
+  kind: string;
+  status: "pending_verification" | "verified" | "active" | "failed";
+  sslStatus: string;
+  lastError: string | null;
+  instructions: {
+    verification: { type: string; name: string; value: string } | null;
+    routing: { type: string; name: string; value: string; note?: string }[];
+  } | null;
+};
+
+export type FormDomainStateType = {
+  domain: FormDomainType | null;
+  url: string;
+  genericUrl: string;
 };
 
 export type FamiliesType = {
@@ -3505,7 +3527,32 @@ export type PublicServiceKeyType =
   | "ticket"
   | "account"
   | "chat"
-  | "documents";
+  | "documents"
+  | "forms";
+
+export type OpenMenuCodeType = Exclude<PublicServiceKeyType, "account">;
+
+// Fila de open_menu (Configuración > Panel open)
+export type OpenMenuItemType = {
+  code: OpenMenuCodeType;
+  label: string;
+  order: number;
+  status: number;
+};
+
+// Formulario listado en el panel open (respuesta de /open/get-portal-forms)
+export type PublicPortalFormType = {
+  code: string;
+  name: string;
+  description: string;
+};
+
+// Destino que el edge de ApesWeb inyecta en <meta name="apes-form"> en un dominio propio
+export type PublicFormTargetType = {
+  company: string;
+  form: string;
+  backend: PublicBackendDataType;
+};
 
 export type PublicNavItemType = {
   key: PublicServiceKeyType;
