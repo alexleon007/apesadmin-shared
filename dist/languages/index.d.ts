@@ -176,6 +176,8 @@ export declare const languages: {
         assortedQuantity: string;
         assortmentNo: string;
         assortmentProgress: string;
+        assortmentReview: string;
+        assortmentReviewClear: string;
         assortOrderNo: string;
         atLeastOneColumn: string;
         attachedEvidence: string;
@@ -1503,6 +1505,7 @@ export declare const languages: {
         includeAccountsWithoutMovement: string;
         income: string;
         incomes: string;
+        incompleteWithStock: string;
         incomeStatement: string;
         incorrect: string;
         info: string;
@@ -2015,6 +2018,7 @@ export declare const languages: {
         noSrc: string;
         noStepsDefined: string;
         noStock: string;
+        noStockToAssort: string;
         noStockToProduceMore: string;
         noStops: string;
         noSubject: string;
@@ -3782,6 +3786,8 @@ export declare const languages: {
         assortedQuantity: string;
         assortmentNo: string;
         assortmentProgress: string;
+        assortmentReview: string;
+        assortmentReviewClear: string;
         assortOrderNo: string;
         atLeastOneColumn: string;
         attachedEvidence: string;
@@ -5109,6 +5115,7 @@ export declare const languages: {
         includeAccountsWithoutMovement: string;
         income: string;
         incomes: string;
+        incompleteWithStock: string;
         incomeStatement: string;
         incorrect: string;
         info: string;
@@ -5621,6 +5628,7 @@ export declare const languages: {
         noSrc: string;
         noStepsDefined: string;
         noStock: string;
+        noStockToAssort: string;
         noStockToProduceMore: string;
         noStops: string;
         noSubject: string;
@@ -7388,6 +7396,8 @@ export declare const languages: {
         assortedQuantity: string;
         assortmentNo: string;
         assortmentProgress: string;
+        assortmentReview: string;
+        assortmentReviewClear: string;
         assortOrderNo: string;
         atLeastOneColumn: string;
         attachedEvidence: string;
@@ -8715,6 +8725,7 @@ export declare const languages: {
         includeAccountsWithoutMovement: string;
         income: string;
         incomes: string;
+        incompleteWithStock: string;
         incomeStatement: string;
         incorrect: string;
         info: string;
@@ -9227,6 +9238,7 @@ export declare const languages: {
         noSrc: string;
         noStepsDefined: string;
         noStock: string;
+        noStockToAssort: string;
         noStockToProduceMore: string;
         noStops: string;
         noSubject: string;
