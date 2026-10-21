@@ -4088,5 +4088,26 @@ export type BillingSerieType = {
     iduser: number;
     createdat: string;
 };
+export type AssortStockRow = {
+    idord: number;
+    idprod: number;
+    prodcode: string;
+    prodname: string;
+    prodbatch: number;
+    tracked: boolean;
+    quantity: number;
+    quantityassorted: number;
+    pending: number;
+    available: number;
+    batches: {
+        idbatch: number;
+        available: number;
+    }[];
+};
+export type ReviewRow = {
+    row: AssortStockRow;
+    typed: number;
+    available: number | null;
+};
 export {};
 //# sourceMappingURL=types.d.ts.map
