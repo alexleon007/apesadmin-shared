@@ -1147,6 +1147,7 @@ export declare const languages: {
         editLibrary: string;
         editLocation: string;
         editMailAccount: string;
+        editChannelAccount: string;
         editPDFTemplate: string;
         editPreset: string;
         editProduct: string;
@@ -1887,10 +1888,13 @@ export declare const languages: {
         navThemeTopbarSolid: string;
         navThemeTopbarStyle: string;
         navThemeTopbarStyleHelp: string;
+        ncDocsWithoutCfdi: string;
         ncOption01: string;
         ncOption03: string;
         ncOption04: string;
         ncOption07: string;
+        ncPayFormUndefined: string;
+        ncRelationTypeRequired: string;
         needHelp: string;
         netCash: string;
         netProfit: string;
@@ -4797,6 +4801,7 @@ export declare const languages: {
         editLibrary: string;
         editLocation: string;
         editMailAccount: string;
+        editChannelAccount: string;
         editPDFTemplate: string;
         editPreset: string;
         editProduct: string;
@@ -5537,10 +5542,13 @@ export declare const languages: {
         navThemeTopbarSolid: string;
         navThemeTopbarStyle: string;
         navThemeTopbarStyleHelp: string;
+        ncDocsWithoutCfdi: string;
         ncOption01: string;
         ncOption03: string;
         ncOption04: string;
         ncOption07: string;
+        ncPayFormUndefined: string;
+        ncRelationTypeRequired: string;
         needHelp: string;
         netCash: string;
         netProfit: string;
@@ -8447,6 +8455,7 @@ export declare const languages: {
         editLibrary: string;
         editLocation: string;
         editMailAccount: string;
+        editChannelAccount: string;
         editPDFTemplate: string;
         editPreset: string;
         editProduct: string;
@@ -9187,10 +9196,13 @@ export declare const languages: {
         navThemeTopbarSolid: string;
         navThemeTopbarStyle: string;
         navThemeTopbarStyleHelp: string;
+        ncDocsWithoutCfdi: string;
         ncOption01: string;
         ncOption03: string;
         ncOption04: string;
         ncOption07: string;
+        ncPayFormUndefined: string;
+        ncRelationTypeRequired: string;
         needHelp: string;
         netCash: string;
         netProfit: string;
