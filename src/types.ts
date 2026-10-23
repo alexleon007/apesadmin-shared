@@ -249,6 +249,9 @@ export type ChannelConversationType = {
   /** Etiquetas ya resueltas —nombre y color—, no solo sus ids: la lista de
       chats las pinta sin esperar al catalogo. */
   labels: ChannelLabelType[];
+  isGroup: number;
+  /** '' | suspended | deleted */
+  groupStatus: string;
 };
 
 /**
@@ -286,6 +289,35 @@ export type ChannelMessageType = {
   sentAt: string;
   /** null = mensaje sin adjunto, o adjunto que no se pudo descargar. */
   media?: ChannelMediaType | null;
+  sender: string;
+  senderName: string;
+};
+
+export type ChannelGroupParticipantType = {
+  waId: string;
+  name: string;
+};
+
+export type ChannelGroupJoinRequestType = {
+  id: string;
+  waId: string;
+  name: string;
+  createdAt: string | null;
+};
+
+export type ChannelGroupType = {
+  idcc: number;
+  externalId: string;
+  subject: string;
+  description: string;
+  /** auto_approve | approval_required */
+  approvalMode: string;
+  suspended: boolean;
+  createdAt: string | null;
+  inviteLink: string;
+  participants: ChannelGroupParticipantType[];
+  total: number;
+  joinRequests: ChannelGroupJoinRequestType[];
 };
 
 /**
@@ -352,6 +384,7 @@ export type NormalizedMessageType = {
    * Ausente en los canales que no son WhatsApp.
    */
   accountBusinessId?: string;
+  author?: NormalizedContactType;
 };
 
 /**
@@ -399,18 +432,32 @@ export type NormalizedEditType = {
   payload: Record<string, any>;
 };
 
+export type NormalizedGroupEventType = {
+  accountExternalId: string;
+  groupExternalId: string;
+  type: string;
+  subject: string;
+  error: string;
+  payload: Record<string, any>;
+  at: Date;
+};
+
 export type ParsedWebhookType = {
   messages: NormalizedMessageType[];
   statuses: NormalizedStatusType[];
   /** Ausente en los canales que no admiten edición (WhatsApp Cloud). */
   edits?: NormalizedEditType[];
+  groups?: NormalizedGroupEventType[];
 };
+
+export type ChannelRecipientKindType = "individual" | "group";
 
 export type ChannelSendTextParamsType = {
   accountExternalId: string;
   accessToken: string;
   to: string;
   body: string;
+  recipientType?: ChannelRecipientKindType;
 };
 
 export type ChannelSendTextResultType = {
@@ -459,6 +506,7 @@ export type ChannelSendMediaParamsType = {
   caption: string;
   filename: string;
   mime: string;
+  recipientType?: ChannelRecipientKindType;
 };
 
 /**
@@ -523,6 +571,7 @@ export type ChannelSendTemplateParamsType = {
   variables: string[];
   /** Valores de los `{{n}}` de la cabecera de texto, en orden. */
   headerVariables: string[];
+  recipientType?: ChannelRecipientKindType;
 };
 
 export type ChannelProbeParamsType = {
