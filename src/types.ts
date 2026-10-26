@@ -4315,6 +4315,7 @@ export type GraphsConfig = {
   kpis?: KPIConfig[];
   charts: ChartDefinition[];
   calculatedColumns?: CalculatedColumn[];
+  columnDescriptions?: Record<string, string>;
 };
 
 export type GroupByType =
