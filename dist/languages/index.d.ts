@@ -343,6 +343,7 @@ export declare const languages: {
         botDocsWhy: string;
         botDocumentsCount: string;
         botDraftEscalates: string;
+        botDraftsInChats: string;
         botDraftsPending: string;
         botDraftTitle: string;
         botEscalatedToast: string;
@@ -1667,6 +1668,7 @@ export declare const languages: {
         lastMonth: string;
         lastPurchaseDate: string;
         lastSessionFolio: string;
+        lastUpdate: string;
         lastYear: string;
         late: string;
         lateCount: string;
@@ -4098,6 +4100,7 @@ export declare const languages: {
         botDocsWhy: string;
         botDocumentsCount: string;
         botDraftEscalates: string;
+        botDraftsInChats: string;
         botDraftsPending: string;
         botDraftTitle: string;
         botEscalatedToast: string;
@@ -5422,6 +5425,7 @@ export declare const languages: {
         lastMonth: string;
         lastPurchaseDate: string;
         lastSessionFolio: string;
+        lastUpdate: string;
         lastYear: string;
         late: string;
         lateCount: string;
@@ -7853,6 +7857,7 @@ export declare const languages: {
         botDocsWhy: string;
         botDocumentsCount: string;
         botDraftEscalates: string;
+        botDraftsInChats: string;
         botDraftsPending: string;
         botDraftTitle: string;
         botEscalatedToast: string;
@@ -9177,6 +9182,7 @@ export declare const languages: {
         lastMonth: string;
         lastPurchaseDate: string;
         lastSessionFolio: string;
+        lastUpdate: string;
         lastYear: string;
         late: string;
         lateCount: string;
