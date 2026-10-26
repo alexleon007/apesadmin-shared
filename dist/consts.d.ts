@@ -317,6 +317,7 @@ export declare const BANKACCOUNT_ACCOUNTTYPE_CASH_ACCOUNT = "cash_account";
 export declare const CUSTOMERSMENU_IDMM = 4;
 export declare const CUSTOMERSMENU_IDMM2 = 8;
 export declare const WAPP_NEUTRAL_COLOR = "#6c757d";
+export declare const WAPP_OPEN_WINDOW_COLOR = "#25d366";
 export declare const WAPP_GROUPERS_PREFS_TABLE = "wapp_groupers";
 export declare const WAPP_AUDIENCE_MAX = 2000;
 export declare const WAPP_LEGACY_PARTY_FIELDS: WappLegacyPartyFieldType[];

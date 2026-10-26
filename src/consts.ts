@@ -1010,6 +1010,7 @@ export const CUSTOMERSMENU_IDMM = 4;
 export const CUSTOMERSMENU_IDMM2 = 8;
 
 export const WAPP_NEUTRAL_COLOR = "#6c757d";
+export const WAPP_OPEN_WINDOW_COLOR = "#25d366";
 
 export const WAPP_GROUPERS_PREFS_TABLE = "wapp_groupers";
 export const WAPP_AUDIENCE_MAX = 2000;
