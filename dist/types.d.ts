@@ -668,6 +668,263 @@ export type WappUserType = {
     profileImage: string;
     loggedIn: boolean;
 };
+export type WappLegacyPartyFieldType = "partyzone" | "partyclas" | "partysubclas" | "partystatusinbox" | "partyorigin" | "partytype" | "partyagentname";
+export type WappChatFieldType = "idcls" | "idcfs";
+export type WappMapFieldType = "party" | "pipelines";
+export type WappGrouperSelectionType = {
+    idcls?: number[];
+    idcfs?: number[];
+    party?: Record<string, string[]>;
+    pipelines?: Record<string, string[]>;
+} & Partial<Record<WappLegacyPartyFieldType, string[]>>;
+export type WappGrouperItemType = {
+    key: string;
+    name: string;
+    color?: string;
+    value: number | string;
+};
+export type WappRecipientType = {
+    key: string;
+    name: string;
+    channel: string;
+    phone: string;
+    idcc?: number;
+    idca?: number;
+    idparty?: number;
+    lastInboundAt: string | null;
+};
+export type WappSendModeType = "free" | "template";
+export type WappContactFiltersType = {
+    idca?: number;
+    idcf?: number;
+    idcl?: number;
+    window?: "open" | "closed";
+};
+export type WappPartyFiltersType = {
+    partyzone?: string;
+    partyclas?: string;
+    partysubclas?: string;
+    partystatusinbox?: string;
+    partyagentname?: string;
+};
+export type WappComposerStartType = {
+    source?: "contacts" | "parties";
+    contactFilters?: WappContactFiltersType;
+    partyFilters?: WappPartyFiltersType;
+    recipients?: WappRecipientType[];
+    mode?: WappSendModeType;
+};
+export type ChannelScheduledStatusType = "pending" | "sending" | "sent" | "failed";
+export type ChannelScheduledMessageType = {
+    idcs: number;
+    idcc: number;
+    name: string;
+    avatar: string;
+    body: string;
+    sendAt: string;
+    status: ChannelScheduledStatusType;
+    error: string;
+};
+export type ChannelCatalogTemplateType = ChannelTemplateType & {
+    status?: string;
+    id?: string;
+};
+export type BotTrustLevelType = 1 | 2 | 3;
+export type BotKnowledgeKindType = "faq" | "policy" | "flow" | "identity" | "document_chunk" | "correction";
+export type BotKnowledgeSourceType = "apes_admin" | "manual" | "document" | "conversation_mining" | "sandbox_correction" | "shadow_correction";
+export type BotKnowledgeStatusType = "pending_review" | "active" | "archived";
+export type BotKnowledgeType = {
+    id: number;
+    type: BotKnowledgeKindType;
+    trustLevel: BotTrustLevelType;
+    source: BotKnowledgeSourceType;
+    question: string;
+    answer: string;
+    status: BotKnowledgeStatusType;
+    frequency: number;
+    examples: string[];
+    confidence: number;
+    updatedAt: string;
+};
+export type BotDocumentType = {
+    id: number;
+    name: string;
+    mime: string;
+    size: number;
+    process: "pending" | "processing" | "ready" | "failed";
+    error: string;
+    chars: number;
+    chunks: number;
+    active: boolean;
+    createdAt: string;
+};
+export type BotConflictKindType = "data_mismatch" | "missing_entity" | "internal_contradiction" | "stale_content" | "ambiguity" | "coverage_gap";
+export type BotConflictSeverityType = "critical" | "high" | "medium" | "low";
+export type BotConflictResolutionType = "convert_to_dynamic" | "use_canonical" | "fix_in_admin" | "use_declared" | "discard_object";
+export type BotConflictType = {
+    id: string;
+    type: BotConflictKindType;
+    severity: BotConflictSeverityType;
+    objects: string[];
+    canonicalValue?: string;
+    declaredValue?: string;
+    suggestedPlaceholder?: string;
+    canonicalUpdatedAt?: string;
+    status: "open" | "resolved" | "accepted_exception";
+    resolution?: BotConflictResolutionType;
+    justification?: string;
+};
+export type BotToneType = {
+    formality: "tu" | "usted" | "mixto";
+    emojis: "ninguno" | "moderado" | "frecuente";
+    length: "breve" | "media" | "extensa";
+    greeting: string;
+    farewell: string;
+    phrases: string[];
+};
+export type BotEscalationType = {
+    onExplicitRequest: boolean;
+    onUnrecognized: boolean;
+    unrecognizedThreshold: number;
+    onNegativeSentiment: boolean;
+    keywords: string[];
+    destination: string;
+    scheduleFrom: string;
+    scheduleTo: string;
+    transferMessage: string;
+    offHoursMessage: string;
+    resumeAfterHours: number;
+};
+export type BotLimitsType = {
+    forbiddenTopics: string[];
+    canDiscount: boolean;
+    discountCap: number;
+    canConfirmStock: boolean;
+    canPromiseDelivery: boolean;
+    onUnknown: "escalate" | "say_unknown" | "both";
+    privacyNotice: boolean;
+    identifyAsBot: boolean;
+    retentionDays: number;
+};
+export type BotContactTrustType = "verified" | "known" | "unknown";
+export type BotActionType = "quote" | "create_order" | "reserve_stock" | "book_appointment" | "send_statement" | "create_lead" | "create_ticket" | "issue_invoice";
+export type BotActionsType = {
+    enabled: BotActionType[];
+    maxAmount: number;
+    minTrustForAccountData: BotContactTrustType;
+};
+export type BotPurposeType = "sales" | "support" | "hr" | "other";
+export type BotModeType = "draft" | "shadow" | "autonomous";
+export type BotStepType = "link" | "rules" | "publish";
+export type BotMiningStatusType = "idle" | "running" | "done" | "failed";
+export type BotReadinessCriterionType = {
+    id: string;
+    label: string;
+    weight: number;
+    blocking: boolean;
+    met: boolean;
+    detail: string;
+};
+export type BotSourceType = {
+    id: string;
+    label: string;
+};
+export type BotSandboxMessageType = {
+    id: string;
+    role: "user" | "bot";
+    text: string;
+    sources?: BotSourceType[];
+    escalate?: boolean;
+    corrected?: boolean;
+};
+export type BotPreviewTurnType = Pick<BotSandboxMessageType, "role" | "text" | "escalate">;
+export type BotAccountType = {
+    idca: number;
+    name: string;
+    channel: string;
+    color: string;
+};
+export type BotLabelType = {
+    idcl: number;
+    name: string;
+    color: string;
+};
+export type BotScopeType = {
+    idcas: number[];
+    idcls: number[];
+};
+export type BotSummaryType = {
+    id: number;
+    name: string;
+    mode: BotModeType;
+    accounts: BotAccountType[];
+    labels: BotLabelType[];
+    pendingImprovements: number;
+    pendingReplies: number;
+    documents: number;
+    updatedAt: string;
+};
+export type BotSettingsType = {
+    model: string;
+    timezone: string;
+    replyDelaySeconds: number;
+    fullContextChars: number;
+};
+export type BotConfigType = {
+    name: string;
+    purpose: BotPurposeType | "";
+    description: string;
+    vertical: string;
+    valueProp: string;
+    differentiators: string[];
+    tone: BotToneType;
+    escalation: BotEscalationType;
+    limits: BotLimitsType;
+    actions: BotActionsType;
+    settings: BotSettingsType;
+};
+export type BotDraftType = BotConfigType & {
+    id: number;
+    mode: BotModeType;
+    accounts: BotAccountType[];
+    labels: BotLabelType[];
+    miningStatus: BotMiningStatusType;
+    miningDays: number;
+    miningStats: {
+        conversations?: number;
+        questions?: number;
+    };
+    miningError: string;
+    knowledge: BotKnowledgeType[];
+    documents: BotDocumentType[];
+    sandbox: BotSandboxMessageType[];
+};
+export type BotTestResultType = {
+    reply: string;
+    action: "answer" | "unknown" | "escalate";
+    reason: string;
+    sources: BotSourceType[];
+    messages: string[];
+    escalate: boolean;
+    knowledgeMode: "full" | "search" | "empty";
+};
+export type ConversationBotType = {
+    bot: {
+        id: number;
+        name: string;
+        mode: BotModeType;
+    };
+    paused: boolean;
+    reason: string;
+    pausedAt: string | null;
+    pending: {
+        id: number;
+        draft: string;
+        action: string;
+        reason: string;
+        sources: BotSourceType[];
+    } | null;
+} | null;
 export type CfdiDataType = {
     version: "4.0";
     serie: string;

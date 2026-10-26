@@ -1,4 +1,4 @@
-import type { ClasifTypeKey, RecurrenceErrorCode } from "./types";
+import type { BotActionType, BotConfigType, BotConflictKindType, BotConflictSeverityType, BotContactTrustType, BotDocumentType, BotKnowledgeSourceType, BotModeType, BotPurposeType, BotStepType, ChannelScheduledStatusType, ClasifTypeKey, RecurrenceErrorCode, WappLegacyPartyFieldType } from "./types";
 export declare const MODE_CREATE = "create";
 export declare const MODE_NEW = "new";
 export declare const MODE_EDIT = "edit";
@@ -314,4 +314,80 @@ export declare const PARTY_ACCOUNTTYPES_CUSTOMER: string[];
 export declare const PARTY_ACCOUNTTYPES_SUPPLIER: string[];
 export declare const ACCOUNTING_ENTITYTYPE_BANK_ACCOUNT = "bank_account";
 export declare const BANKACCOUNT_ACCOUNTTYPE_CASH_ACCOUNT = "cash_account";
+export declare const CUSTOMERSMENU_IDMM = 4;
+export declare const CUSTOMERSMENU_IDMM2 = 8;
+export declare const WAPP_NEUTRAL_COLOR = "#6c757d";
+export declare const WAPP_GROUPERS_PREFS_TABLE = "wapp_groupers";
+export declare const WAPP_AUDIENCE_MAX = 2000;
+export declare const WAPP_LEGACY_PARTY_FIELDS: WappLegacyPartyFieldType[];
+export declare const WAPP_WINDOW_MS: number;
+export declare const WAPP_WINDOW_WARN_MS: number;
+export declare const WAPP_MAX_FILE_MB = 25;
+export declare const WAPP_MESSAGE_STATUS_RANK: string[];
+export declare const WAPP_ATTACHABLE_TYPES: readonly ["image", "video", "audio", "document"];
+export declare const WAPP_ATTACH_META: Record<string, {
+    accept: string;
+    color: string;
+}>;
+export declare const WAPP_MEDIA_LIMITS_MB: Record<string, Record<string, number>>;
+export declare const WAPP_UNSUPPORTED_LABEL_KEYS: Record<string, string>;
+export declare const WAPP_GROUP_SUBJECT_MAX = 128;
+export declare const WAPP_GROUP_DESCRIPTION_MAX = 2048;
+export declare const WAPP_GROUP_MEMBERS_MAX = 8;
+export declare const WAPP_SCHEDULED_STATUS_META: Record<ChannelScheduledStatusType, {
+    labelKey: string;
+    color: string;
+}>;
+export declare const WAPP_SCHEDULED_OVERDUE_MS: number;
+export declare const WAPP_SCHEDULED_OVERDUE_META: {
+    labelKey: string;
+    color: string;
+};
+export declare const WAPP_TEMPLATE_LANGUAGES: string[];
+export declare const WAPP_TEMPLATE_CATEGORY_KEYS: Record<string, string>;
+export declare const WAPP_TEMPLATE_CATEGORIES: string[];
+export declare const WAPP_TEMPLATE_NAME_MAX = 120;
+export declare const WAPP_TEMPLATE_BODY_MAX = 1024;
+export declare const WAPP_TEMPLATE_HEADER_MAX = 60;
+export declare const WAPP_TEMPLATE_FOOTER_MAX = 60;
+export declare const WAPP_TEMPLATE_BUTTON_MAX = 25;
+export declare const WAPP_TEMPLATE_BUTTONS_MAX = 3;
+export declare const WAPP_TEMPLATE_STATUS_META: Record<string, {
+    color: string;
+    rank: number;
+    labelKey: string;
+}>;
+export declare const WAPP_TEMPLATE_STATUS_GROUPS: Record<string, {
+    labelKey: string;
+    statuses: string[];
+}>;
+export declare const BOT_STEPS: BotStepType[];
+export declare const BOT_PURPOSES: BotPurposeType[];
+export declare const BOT_ACTIONS: BotActionType[];
+export declare const BOT_CONTACT_TRUSTS: BotContactTrustType[];
+export declare const BOT_MODE_LABEL_KEYS: Record<BotModeType, string>;
+export declare const BOT_STEP_LABEL_KEYS: Record<BotStepType, string>;
+export declare const BOT_PURPOSE_LABEL_KEYS: Record<BotPurposeType, string>;
+export declare const BOT_PURPOSE_HINT_KEYS: Record<BotPurposeType, string>;
+export declare const BOT_SOURCE_LABEL_KEYS: Record<BotKnowledgeSourceType, string>;
+export declare const BOT_SEVERITY_LABEL_KEYS: Record<BotConflictSeverityType, string>;
+export declare const BOT_CONFLICT_TYPE_LABEL_KEYS: Record<BotConflictKindType, string>;
+export declare const BOT_PROCESS_LABEL_KEYS: Record<BotDocumentType["process"], string>;
+export declare const BOT_VERTICAL_LABEL_KEYS: Record<string, string>;
+export declare const BOT_ACTION_LABEL_KEYS: Record<BotActionType, string>;
+export declare const BOT_TRUST_LABEL_KEYS: Record<BotContactTrustType, string>;
+export declare const BOT_PAUSE_LABEL_KEYS: Record<string, string>;
+export declare const BOT_SUGGESTION_KEYS: string[];
+export declare const BOT_DEFAULT_TONE: BotConfigType["tone"];
+export declare const BOT_DEFAULT_ESCALATION: BotConfigType["escalation"];
+export declare const BOT_DEFAULT_LIMITS: BotConfigType["limits"];
+export declare const BOT_DEFAULT_ACTIONS: BotConfigType["actions"];
+export declare const BOT_MODEL_OPTIONS: {
+    value: string;
+    name: string;
+    labelKey: string;
+}[];
+export declare const BOT_TIMEZONE_OPTIONS: string[];
+export declare const BOT_VERTICAL_PRESETS: Record<string, Partial<BotConfigType>>;
+export declare const BOT_PURPOSE_PRESETS: Record<BotPurposeType, Partial<BotConfigType>>;
 //# sourceMappingURL=consts.d.ts.map

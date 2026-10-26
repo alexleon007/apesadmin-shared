@@ -809,4 +809,354 @@ export const PARTY_ACCOUNTTYPES_SUPPLIER = [
 // accounts.type_acc, no hace falta un entitytype distinto solo por eso.
 export const ACCOUNTING_ENTITYTYPE_BANK_ACCOUNT = "bank_account";
 export const BANKACCOUNT_ACCOUNTTYPE_CASH_ACCOUNT = "cash_account";
+export const CUSTOMERSMENU_IDMM = 4;
+export const CUSTOMERSMENU_IDMM2 = 8;
+export const WAPP_NEUTRAL_COLOR = "#6c757d";
+export const WAPP_GROUPERS_PREFS_TABLE = "wapp_groupers";
+export const WAPP_AUDIENCE_MAX = 2000;
+export const WAPP_LEGACY_PARTY_FIELDS = [
+    "partyzone",
+    "partyclas",
+    "partysubclas",
+    "partystatusinbox",
+    "partyorigin",
+    "partytype",
+    "partyagentname",
+];
+export const WAPP_WINDOW_MS = 24 * 60 * 60 * 1000;
+export const WAPP_WINDOW_WARN_MS = 2 * 60 * 60 * 1000;
+export const WAPP_MAX_FILE_MB = 25;
+export const WAPP_MESSAGE_STATUS_RANK = ["sent", "delivered", "read"];
+export const WAPP_ATTACHABLE_TYPES = [
+    "image",
+    "video",
+    "audio",
+    "document",
+];
+export const WAPP_ATTACH_META = {
+    image: { accept: "image/*", color: "#bf59cf" },
+    video: { accept: "video/*", color: "#d3396d" },
+    audio: { accept: "audio/*", color: "#f2a13b" },
+    document: { accept: "*/*", color: "#7f66ff" },
+};
+export const WAPP_MEDIA_LIMITS_MB = {
+    whatsapp: { image: 5, video: 16, audio: 16, document: 100 },
+    instagram: { image: 8, video: 25, audio: 25, document: 25 },
+    messenger: { image: 25, video: 25, audio: 25, document: 25 },
+};
+export const WAPP_UNSUPPORTED_LABEL_KEYS = {
+    poll_creation: "poll",
+};
+export const WAPP_GROUP_SUBJECT_MAX = 128;
+export const WAPP_GROUP_DESCRIPTION_MAX = 2048;
+export const WAPP_GROUP_MEMBERS_MAX = 8;
+export const WAPP_SCHEDULED_STATUS_META = {
+    pending: { labelKey: "pending", color: "#f0ad4e" },
+    sending: { labelKey: "pending", color: "#f0ad4e" },
+    sent: { labelKey: "messageSent", color: "#198754" },
+    failed: { labelKey: "failed", color: "#dc3545" },
+};
+export const WAPP_SCHEDULED_OVERDUE_MS = 5 * 60 * 1000;
+export const WAPP_SCHEDULED_OVERDUE_META = {
+    labelKey: "delayed",
+    color: "#e8590c",
+};
+export const WAPP_TEMPLATE_LANGUAGES = ["es_MX", "es", "en_US", "en", "pt_BR"];
+export const WAPP_TEMPLATE_CATEGORY_KEYS = {
+    utility: "templateCategoryUtility",
+    marketing: "templateCategoryMarketing",
+    authentication: "templateCategoryAuthentication",
+};
+export const WAPP_TEMPLATE_CATEGORIES = Object.keys(WAPP_TEMPLATE_CATEGORY_KEYS);
+export const WAPP_TEMPLATE_NAME_MAX = 120;
+export const WAPP_TEMPLATE_BODY_MAX = 1024;
+export const WAPP_TEMPLATE_HEADER_MAX = 60;
+export const WAPP_TEMPLATE_FOOTER_MAX = 60;
+export const WAPP_TEMPLATE_BUTTON_MAX = 25;
+export const WAPP_TEMPLATE_BUTTONS_MAX = 3;
+export const WAPP_TEMPLATE_STATUS_META = {
+    REJECTED: { color: "#d9534f", rank: 0, labelKey: "templateStatusRejected" },
+    PENDING: { color: "#fd7e14", rank: 1, labelKey: "templateStatusPending" },
+    IN_APPEAL: { color: "#fd7e14", rank: 1, labelKey: "templateStatusInAppeal" },
+    PAUSED: {
+        color: WAPP_NEUTRAL_COLOR,
+        rank: 2,
+        labelKey: "templateStatusPaused",
+    },
+    DISABLED: {
+        color: WAPP_NEUTRAL_COLOR,
+        rank: 2,
+        labelKey: "templateStatusDisabled",
+    },
+    PENDING_DELETION: {
+        color: WAPP_NEUTRAL_COLOR,
+        rank: 2,
+        labelKey: "templateStatusPendingDeletion",
+    },
+    APPROVED: { color: "#198754", rank: 3, labelKey: "templateStatusApproved" },
+};
+export const WAPP_TEMPLATE_STATUS_GROUPS = {
+    approved: { labelKey: "templateGroupApproved", statuses: ["APPROVED"] },
+    review: {
+        labelKey: "templateGroupReview",
+        statuses: ["PENDING", "IN_APPEAL"],
+    },
+    rejected: { labelKey: "templateGroupRejected", statuses: ["REJECTED"] },
+    off: {
+        labelKey: "templateGroupOff",
+        statuses: ["PAUSED", "DISABLED", "PENDING_DELETION"],
+    },
+};
+export const BOT_STEPS = ["link", "rules", "publish"];
+export const BOT_PURPOSES = [
+    "sales",
+    "support",
+    "hr",
+    "other",
+];
+export const BOT_ACTIONS = [
+    "quote",
+    "create_lead",
+    "create_ticket",
+    "book_appointment",
+    "create_order",
+    "reserve_stock",
+    "issue_invoice",
+    "send_statement",
+];
+export const BOT_CONTACT_TRUSTS = [
+    "verified",
+    "known",
+    "unknown",
+];
+export const BOT_MODE_LABEL_KEYS = {
+    draft: "botModeDraft",
+    shadow: "botModeShadow",
+    autonomous: "botModeAutonomous",
+};
+export const BOT_STEP_LABEL_KEYS = {
+    link: "botStepKnowledge",
+    rules: "rules",
+    publish: "publish",
+};
+export const BOT_PURPOSE_LABEL_KEYS = {
+    sales: "sales",
+    support: "customerSupport",
+    hr: "humanResources",
+    other: "other",
+};
+export const BOT_PURPOSE_HINT_KEYS = {
+    sales: "botPurposeSalesHint",
+    support: "botPurposeSupportHint",
+    hr: "botPurposeHrHint",
+    other: "botPurposeOtherHint",
+};
+export const BOT_SOURCE_LABEL_KEYS = {
+    manual: "botSourceManual",
+    conversation_mining: "botSourceMining",
+    sandbox_correction: "botSourceSandbox",
+    shadow_correction: "botSourceShadow",
+    document: "botSourceDocument",
+    apes_admin: "botSourceApesAdmin",
+};
+export const BOT_SEVERITY_LABEL_KEYS = {
+    critical: "critical",
+    high: "high",
+    medium: "medium",
+    low: "low",
+};
+export const BOT_CONFLICT_TYPE_LABEL_KEYS = {
+    data_mismatch: "botConflictDataMismatch",
+    missing_entity: "botConflictMissingEntity",
+    internal_contradiction: "botConflictContradiction",
+    stale_content: "botConflictStale",
+    ambiguity: "botConflictAmbiguity",
+    coverage_gap: "botConflictCoverageGap",
+};
+export const BOT_PROCESS_LABEL_KEYS = {
+    pending: "queued",
+    processing: "botReading",
+    ready: "ready",
+    failed: "failed",
+};
+export const BOT_VERTICAL_LABEL_KEYS = {
+    retail: "botVerticalRetail",
+    wholesale: "botVerticalWholesale",
+    services: "botVerticalServices",
+    realestate: "botVerticalRealEstate",
+};
+export const BOT_ACTION_LABEL_KEYS = {
+    quote: "botActionQuote",
+    create_order: "botActionCreateOrder",
+    reserve_stock: "botActionReserveStock",
+    book_appointment: "botActionBookAppointment",
+    send_statement: "botActionSendStatement",
+    create_lead: "botActionCreateLead",
+    create_ticket: "botActionCreateTicket",
+    issue_invoice: "botActionIssueInvoice",
+};
+export const BOT_TRUST_LABEL_KEYS = {
+    verified: "botTrustVerified",
+    known: "botTrustKnown",
+    unknown: "botTrustAny",
+};
+export const BOT_PAUSE_LABEL_KEYS = {
+    escalated: "botPausedEscalated",
+    human: "botPausedHuman",
+    manual: "botPaused",
+};
+export const BOT_SUGGESTION_KEYS = [
+    "botSuggestion1",
+    "botSuggestion2",
+    "botSuggestion3",
+];
+export const BOT_DEFAULT_TONE = {
+    formality: "tu",
+    emojis: "moderado",
+    length: "breve",
+    greeting: "¡Hola! Gracias por escribirnos 😊",
+    farewell: "¡Quedamos al pendiente! Que tengas excelente día.",
+    phrases: [],
+};
+export const BOT_DEFAULT_ESCALATION = {
+    onExplicitRequest: true,
+    onUnrecognized: true,
+    unrecognizedThreshold: 2,
+    onNegativeSentiment: true,
+    keywords: ["queja", "reclamo"],
+    destination: "",
+    scheduleFrom: "09:00",
+    scheduleTo: "18:00",
+    transferMessage: "Te paso con un asesor, dame un momento.",
+    offHoursMessage: "Ahora mismo no hay asesores disponibles. Te contactamos en cuanto abramos.",
+    resumeAfterHours: 12,
+};
+export const BOT_DEFAULT_LIMITS = {
+    forbiddenTopics: [],
+    canDiscount: false,
+    discountCap: 0,
+    canConfirmStock: false,
+    canPromiseDelivery: false,
+    onUnknown: "both",
+    privacyNotice: false,
+    identifyAsBot: true,
+    retentionDays: 180,
+};
+export const BOT_DEFAULT_ACTIONS = {
+    enabled: ["quote", "create_lead"],
+    maxAmount: 0,
+    minTrustForAccountData: "verified",
+};
+export const BOT_MODEL_OPTIONS = [
+    {
+        value: "claude-opus-5-5",
+        name: "Claude Opus 5.5",
+        labelKey: "botModelMostAccurate",
+    },
+    {
+        value: "claude-sonnet-5-5",
+        name: "Claude Sonnet 5.5",
+        labelKey: "botModelBalanced",
+    },
+    {
+        value: "claude-haiku-4-5",
+        name: "Claude Haiku 4.5",
+        labelKey: "botModelFastest",
+    },
+];
+export const BOT_TIMEZONE_OPTIONS = [
+    "America/Mexico_City",
+    "America/Monterrey",
+    "America/Cancun",
+    "America/Chihuahua",
+    "America/Hermosillo",
+    "America/Mazatlan",
+    "America/Tijuana",
+    "America/Bogota",
+    "America/Lima",
+    "America/Guatemala",
+    "America/Santiago",
+    "America/Argentina/Buenos_Aires",
+    "America/New_York",
+    "America/Los_Angeles",
+    "Europe/Madrid",
+];
+export const BOT_VERTICAL_PRESETS = {
+    retail: {
+        actions: {
+            enabled: ["quote", "create_lead"],
+            maxAmount: 0,
+            minTrustForAccountData: "verified",
+        },
+    },
+    wholesale: {
+        actions: {
+            enabled: [
+                "quote",
+                "create_lead",
+                "create_order",
+                "reserve_stock",
+                "issue_invoice",
+            ],
+            maxAmount: 25000,
+            minTrustForAccountData: "verified",
+        },
+    },
+    services: {
+        actions: {
+            enabled: ["quote", "create_lead", "book_appointment"],
+            maxAmount: 0,
+            minTrustForAccountData: "known",
+        },
+    },
+    realestate: {
+        actions: {
+            enabled: ["create_lead", "book_appointment"],
+            maxAmount: 0,
+            minTrustForAccountData: "known",
+        },
+    },
+};
+export const BOT_PURPOSE_PRESETS = {
+    sales: {
+        tone: { ...BOT_DEFAULT_TONE },
+        escalation: { ...BOT_DEFAULT_ESCALATION, destination: "Equipo de ventas" },
+    },
+    support: {
+        tone: {
+            ...BOT_DEFAULT_TONE,
+            length: "media",
+            greeting: "¡Hola! Cuéntame qué necesitas y lo revisamos.",
+        },
+        actions: {
+            enabled: ["create_ticket", "create_lead"],
+            maxAmount: 0,
+            minTrustForAccountData: "verified",
+        },
+        escalation: {
+            ...BOT_DEFAULT_ESCALATION,
+            destination: "Mesa de ayuda",
+            onNegativeSentiment: true,
+        },
+    },
+    hr: {
+        tone: {
+            ...BOT_DEFAULT_TONE,
+            formality: "usted",
+            emojis: "ninguno",
+            length: "media",
+            greeting: "Buen día. ¿En qué puedo ayudarle?",
+            farewell: "Quedo atento. Buen día.",
+        },
+        escalation: { ...BOT_DEFAULT_ESCALATION, destination: "Recursos Humanos" },
+        limits: {
+            ...BOT_DEFAULT_LIMITS,
+            forbiddenTopics: ["sueldos de terceros", "expedientes de otros"],
+            canDiscount: false,
+            canConfirmStock: false,
+        },
+        actions: { enabled: [], maxAmount: 0, minTrustForAccountData: "verified" },
+    },
+    other: {},
+};
 //# sourceMappingURL=consts.js.map
