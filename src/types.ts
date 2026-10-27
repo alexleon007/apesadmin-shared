@@ -830,6 +830,43 @@ export type ChannelCatalogTemplateType = ChannelTemplateType & {
   id?: string;
 };
 
+export type ChannelStatsPeriodType = "today" | "yesterday" | "week" | "month";
+
+/**
+ * Tablero de reportes de la bandeja. Los conteos de `conversations` son de
+ * las conversaciones con al menos un mensaje en el periodo (sin grupos), pero
+ * el estado que se reporta —pendiente, en visto, sin leer— es el de ahora.
+ * `windows` no depende del periodo: son las ventanas de 24 h de este momento.
+ */
+export type ChannelStatsType = {
+  period: ChannelStatsPeriodType;
+  bucket: "hour" | "day";
+  conversations: {
+    active: number;
+    started: number;
+    customerReplied: number;
+    pending: number;
+    seen: number;
+    unread: number;
+  };
+  windows: {
+    open: number;
+    closing: number;
+  };
+  messages: {
+    inbound: number;
+    outbound: number;
+    bot: number;
+    templates: number;
+    /** Mediana entre que el cliente escribe y le contestamos. null = sin datos. */
+    medianReplySeconds: number | null;
+  };
+  /** `slot` es "HH" por hora o "YYYY-MM-DD" por día, en la zona del sistema. */
+  activity: { slot: string; inbound: number; outbound: number }[];
+  /** Esperando respuesta: primero las de ventana abierta que cierran antes. */
+  pending: ChannelConversationType[];
+};
+
 // ─────────────────────────────────────────────────────────────────────────────
 // WHATSAPP — chatbots del plugin WappConnect (frontend UI)
 // ─────────────────────────────────────────────────────────────────────────────
