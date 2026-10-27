@@ -3862,6 +3862,7 @@ export type GraphsConfig = {
     kpis?: KPIConfig[];
     charts: ChartDefinition[];
     calculatedColumns?: CalculatedColumn[];
+    columnDescriptions?: Record<string, string>;
 };
 export type GroupByType = "day" | "week" | "month" | "quarter" | "year" | "column" | "range" | "custom";
 export type KPIConfig = {
