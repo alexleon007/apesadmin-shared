@@ -2454,6 +2454,7 @@
     "productCode": "Product Code",
     "productCover": "Product cover",
     "productFactorMissing": "The product factor does not exist",
+    "productPricingChangedReAdd": "The product's price or taxes changed; add the line again to apply them",
     "productHasNoRoute": "This product has no operations route yet",
     "productImage": "Product image",
     "production": "Production",

@@ -2458,6 +2458,7 @@ export declare const languages: {
         productCode: string;
         productCover: string;
         productFactorMissing: string;
+        productPricingChangedReAdd: string;
         productHasNoRoute: string;
         productImage: string;
         production: string;
@@ -6215,6 +6216,7 @@ export declare const languages: {
         productCode: string;
         productCover: string;
         productFactorMissing: string;
+        productPricingChangedReAdd: string;
         productHasNoRoute: string;
         productImage: string;
         production: string;
@@ -9972,6 +9974,7 @@ export declare const languages: {
         productCode: string;
         productCover: string;
         productFactorMissing: string;
+        productPricingChangedReAdd: string;
         productHasNoRoute: string;
         productImage: string;
         production: string;

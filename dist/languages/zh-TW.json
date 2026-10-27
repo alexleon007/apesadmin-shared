@@ -2454,6 +2454,7 @@
     "productCode": "產品代碼",
     "productCover": "產品封面",
     "productFactorMissing": "產品換算係數不存在",
+    "productPricingChangedReAdd": "產品的價格或稅項已變更；請重新加入此明細以套用",
     "productHasNoRoute": "此產品尚未設定作業路線",
     "productImage": "產品圖片",
     "production": "生產",

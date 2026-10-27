@@ -2454,6 +2454,7 @@
   "productCode": "Código Producto",
   "productCover": "Portada del Producto",
   "productFactorMissing": "El factor del producto no existe",
+  "productPricingChangedReAdd": "El precio o los impuestos del producto cambiaron; vuelve a agregar la partida para aplicarlos",
   "productHasNoRoute": "Este producto aún no tiene ruta de operaciones",
   "productImage": "Imagen del Producto",
   "production": "Producción",
