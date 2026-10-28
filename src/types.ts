@@ -830,16 +830,17 @@ export type ChannelCatalogTemplateType = ChannelTemplateType & {
   id?: string;
 };
 
-export type ChannelStatsPeriodType = "today" | "yesterday" | "week" | "month";
-
 /**
  * Tablero de reportes de la bandeja. Los conteos de `conversations` son de
- * las conversaciones con al menos un mensaje en el periodo (sin grupos), pero
+ * las conversaciones con al menos un mensaje en el rango (sin grupos), pero
  * el estado que se reporta —pendiente, en visto, sin leer— es el de ahora.
- * `windows` no depende del periodo: son las ventanas de 24 h de este momento.
+ * `windows` no depende del rango: son las ventanas de 24 h de este momento.
  */
 export type ChannelStatsType = {
-  period: ChannelStatsPeriodType;
+  /** 'YYYY-MM-DD', inclusivos, en la zona del sistema. */
+  from: string;
+  to: string;
+  /** Por hora cuando el rango es un solo día. */
   bucket: "hour" | "day";
   conversations: {
     active: number;
@@ -865,6 +866,39 @@ export type ChannelStatsType = {
   activity: { slot: string; inbound: number; outbound: number }[];
   /** Esperando respuesta: primero las de ventana abierta que cierran antes. */
   pending: ChannelConversationType[];
+};
+
+/** Estado actual de una conversación según su último mensaje. */
+export type ChannelStatsStateType =
+  | "pending"
+  | "archived"
+  | "seen"
+  | "unread"
+  | "failed";
+
+/** Una fila por conversación con actividad en el rango: el reporte plano. */
+export type ChannelStatsRowType = {
+  idcc: number;
+  name: string;
+  externalId: string;
+  channel: string;
+  accountName: string;
+  /** Cliente del ERP ligado por teléfono. '' = ninguno. */
+  partyName: string;
+  folderName: string;
+  labels: string[];
+  /** Su primer mensaje cayó en el rango. */
+  started: boolean;
+  inbound: number;
+  outbound: number;
+  bot: number;
+  templates: number;
+  /** Primer mensaje dentro del rango. */
+  firstAt: string;
+  lastMessageAt: string | null;
+  lastInboundAt: string | null;
+  state: ChannelStatsStateType;
+  medianReplySeconds: number | null;
 };
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -2939,6 +2973,8 @@ export type PartyType = {
   partynumregidtrib?: string;
   partytaxcountry?: string;
   partycfdiuse?: string;
+  partypayform?: string;
+  partypaymethod?: string;
   partyagent: number;
   partyagentname: string;
   partypricelist: number;
@@ -3062,9 +3098,19 @@ export type PipelineType = {
       stageName: string;
       stageColor: string;
       date: string;
+      createdAt?: string;
       user: string;
       comments: string;
       action: "forward" | "backward" | "created";
+      event?: {
+        idcal: number;
+        title: string;
+        start: string;
+        end: string;
+        type: string;
+        notes: string;
+        status: number;
+      } | null;
     }>;
   };
 };
