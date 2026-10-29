@@ -228,6 +228,7 @@ export declare const languages: {
         availables: string;
         averageCost: string;
         avg: string;
+        avgDaysOverdue: string;
         avgTicket: string;
         awsAccessKey: string;
         awsSecretKey: string;
@@ -554,6 +555,7 @@ export declare const languages: {
         cancelReasonRequired: string;
         cancelRestoreSourceOrders: string;
         cancelRestoreSourceOrdersHelp: string;
+        cancelReturnCreditNotesFirst: string;
         cancelSubscription: string;
         cancelVisit: string;
         cannotAssortMoreThanPending: string;
@@ -1002,6 +1004,7 @@ export declare const languages: {
         customers: string;
         customerSince: string;
         customersReceivable: string;
+        customersWithBalance: string;
         customerSubclass: string;
         customerSupport: string;
         customerTaxRegime: string;
@@ -1133,6 +1136,7 @@ export declare const languages: {
         downloadCSVOnScreen: string;
         dragToReorder: string;
         dueDate: string;
+        dueNext7Days: string;
         duplicate: string;
         duplicateFormCode: string;
         duplicateKpiLabel: string;
@@ -1473,6 +1477,8 @@ export declare const languages: {
         haveAccountSignIn: string;
         header: string;
         headerFontSize: string;
+        heatIntensityBy: string;
+        heatMap: string;
         height: string;
         help: string;
         helpSeeExamples: string;
@@ -1797,6 +1803,7 @@ export declare const languages: {
         manualPaymentRequired: string;
         map: string;
         maps: string;
+        mapPoints: string;
         mapSettings: string;
         margin: string;
         markAsAttended: string;
@@ -2246,6 +2253,8 @@ export declare const languages: {
         outlookConnection: string;
         overdue: string;
         overdueAmount: string;
+        overdueDocuments: string;
+        overduePercent: string;
         overflowed: string;
         overtimeAfter: string;
         overtimeHours: string;
@@ -2402,6 +2411,7 @@ export declare const languages: {
         pluginWappConnectDescription: string;
         plusVat: string;
         pointOfSale: string;
+        pointsAndHeat: string;
         pointsOfSale: string;
         policies: string;
         policy: string;
@@ -3080,6 +3090,7 @@ export declare const languages: {
         supplierRFC: string;
         suppliers: string;
         suppliersPayable: string;
+        suppliersWithBalance: string;
         supplierZipCode: string;
         support: string;
         supportAdmin: string;
@@ -4064,6 +4075,7 @@ export declare const languages: {
         availables: string;
         averageCost: string;
         avg: string;
+        avgDaysOverdue: string;
         avgTicket: string;
         awsAccessKey: string;
         awsSecretKey: string;
@@ -4390,6 +4402,7 @@ export declare const languages: {
         cancelReasonRequired: string;
         cancelRestoreSourceOrders: string;
         cancelRestoreSourceOrdersHelp: string;
+        cancelReturnCreditNotesFirst: string;
         cancelSubscription: string;
         cancelVisit: string;
         cannotAssortMoreThanPending: string;
@@ -4838,6 +4851,7 @@ export declare const languages: {
         customers: string;
         customerSince: string;
         customersReceivable: string;
+        customersWithBalance: string;
         customerSubclass: string;
         customerSupport: string;
         customerTaxRegime: string;
@@ -4969,6 +4983,7 @@ export declare const languages: {
         downloadCSVOnScreen: string;
         dragToReorder: string;
         dueDate: string;
+        dueNext7Days: string;
         duplicate: string;
         duplicateFormCode: string;
         duplicateKpiLabel: string;
@@ -5309,6 +5324,8 @@ export declare const languages: {
         haveAccountSignIn: string;
         header: string;
         headerFontSize: string;
+        heatIntensityBy: string;
+        heatMap: string;
         height: string;
         help: string;
         helpSeeExamples: string;
@@ -5633,6 +5650,7 @@ export declare const languages: {
         manualPaymentRequired: string;
         map: string;
         maps: string;
+        mapPoints: string;
         mapSettings: string;
         margin: string;
         markAsAttended: string;
@@ -6082,6 +6100,8 @@ export declare const languages: {
         outlookConnection: string;
         overdue: string;
         overdueAmount: string;
+        overdueDocuments: string;
+        overduePercent: string;
         overflowed: string;
         overtimeAfter: string;
         overtimeHours: string;
@@ -6238,6 +6258,7 @@ export declare const languages: {
         pluginWappConnectDescription: string;
         plusVat: string;
         pointOfSale: string;
+        pointsAndHeat: string;
         pointsOfSale: string;
         policies: string;
         policy: string;
@@ -6916,6 +6937,7 @@ export declare const languages: {
         supplierRFC: string;
         suppliers: string;
         suppliersPayable: string;
+        suppliersWithBalance: string;
         supplierZipCode: string;
         support: string;
         supportAdmin: string;
@@ -7900,6 +7922,7 @@ export declare const languages: {
         availables: string;
         averageCost: string;
         avg: string;
+        avgDaysOverdue: string;
         avgTicket: string;
         awsAccessKey: string;
         awsSecretKey: string;
@@ -8226,6 +8249,7 @@ export declare const languages: {
         cancelReasonRequired: string;
         cancelRestoreSourceOrders: string;
         cancelRestoreSourceOrdersHelp: string;
+        cancelReturnCreditNotesFirst: string;
         cancelSubscription: string;
         cancelVisit: string;
         cannotAssortMoreThanPending: string;
@@ -8674,6 +8698,7 @@ export declare const languages: {
         customers: string;
         customerSince: string;
         customersReceivable: string;
+        customersWithBalance: string;
         customerSubclass: string;
         customerSupport: string;
         customerTaxRegime: string;
@@ -8805,6 +8830,7 @@ export declare const languages: {
         downloadCSVOnScreen: string;
         dragToReorder: string;
         dueDate: string;
+        dueNext7Days: string;
         duplicate: string;
         duplicateFormCode: string;
         duplicateKpiLabel: string;
@@ -9145,6 +9171,8 @@ export declare const languages: {
         haveAccountSignIn: string;
         header: string;
         headerFontSize: string;
+        heatIntensityBy: string;
+        heatMap: string;
         height: string;
         help: string;
         helpSeeExamples: string;
@@ -9469,6 +9497,7 @@ export declare const languages: {
         manualPaymentRequired: string;
         map: string;
         maps: string;
+        mapPoints: string;
         mapSettings: string;
         margin: string;
         markAsAttended: string;
@@ -9918,6 +9947,8 @@ export declare const languages: {
         outlookConnection: string;
         overdue: string;
         overdueAmount: string;
+        overdueDocuments: string;
+        overduePercent: string;
         overflowed: string;
         overtimeAfter: string;
         overtimeHours: string;
@@ -10074,6 +10105,7 @@ export declare const languages: {
         pluginWappConnectDescription: string;
         plusVat: string;
         pointOfSale: string;
+        pointsAndHeat: string;
         pointsOfSale: string;
         policies: string;
         policy: string;
@@ -10752,6 +10784,7 @@ export declare const languages: {
         supplierRFC: string;
         suppliers: string;
         suppliersPayable: string;
+        suppliersWithBalance: string;
         supplierZipCode: string;
         support: string;
         supportAdmin: string;
