@@ -827,6 +827,7 @@ export const WAPP_LEGACY_PARTY_FIELDS = [
 export const WAPP_WINDOW_MS = 24 * 60 * 60 * 1000;
 export const WAPP_WINDOW_WARN_MS = 2 * 60 * 60 * 1000;
 export const WAPP_MAX_FILE_MB = 25;
+export const MAX_UPLOAD_MB = 95;
 export const WAPP_MESSAGE_STATUS_RANK = ["sent", "delivered", "read"];
 export const WAPP_ATTACHABLE_TYPES = [
     "image",
