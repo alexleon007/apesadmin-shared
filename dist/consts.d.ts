@@ -324,6 +324,7 @@ export declare const WAPP_LEGACY_PARTY_FIELDS: WappLegacyPartyFieldType[];
 export declare const WAPP_WINDOW_MS: number;
 export declare const WAPP_WINDOW_WARN_MS: number;
 export declare const WAPP_MAX_FILE_MB = 25;
+export declare const MAX_UPLOAD_MB = 95;
 export declare const WAPP_MESSAGE_STATUS_RANK: string[];
 export declare const WAPP_ATTACHABLE_TYPES: readonly ["image", "video", "audio", "document"];
 export declare const WAPP_ATTACH_META: Record<string, {
