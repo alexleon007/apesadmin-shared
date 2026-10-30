@@ -1,4 +1,4 @@
-import type { BotActionType, BotConfigType, BotConflictKindType, BotConflictSeverityType, BotContactTrustType, BotDocumentType, BotKnowledgeSourceType, BotModeType, BotPurposeType, BotStepType, ChannelScheduledStatusType, ClasifTypeKey, RecurrenceErrorCode, WappLegacyPartyFieldType } from "./types";
+import type { BotActionType, BotConfigType, BotConflictKindType, BotConflictSeverityType, BotContactTrustType, BotDocumentType, BotKnowledgeSourceType, BotModeType, BotPurposeType, BotStepType, ChannelScheduledStatusType, ClasifTypeKey, MailSupplierMetaType, RecurrenceErrorCode, WappLegacyPartyFieldType } from "./types";
 export declare const MODE_CREATE = "create";
 export declare const MODE_NEW = "new";
 export declare const MODE_EDIT = "edit";
@@ -97,6 +97,9 @@ export declare const FORM_ATTENDANCE = "attendance";
 export declare const MAILSUPPLIER_GMAIL = "gmail";
 export declare const MAILSUPPLIER_OUTLOOK = "outlook";
 export declare const MAILSUPPLIER_OTHER = "other";
+export declare const MAILSUPPLIER_META: Record<string, MailSupplierMetaType>;
+export declare const MAILSUPPLIER_NEUTRAL_COLOR = "#6c757d";
+export declare const MAIL_ACCOUNTS_STORAGE_KEY = "apes.mailAccounts";
 export declare const MAILSECURITY_SSL = "ssl";
 export declare const MAILSECURITY_STARTTLS = "starttls";
 export declare const MAILSECURITY_NONE = "none";

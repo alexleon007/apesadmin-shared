@@ -11,6 +11,7 @@ import type {
   BotStepType,
   ChannelScheduledStatusType,
   ClasifTypeKey,
+  MailSupplierMetaType,
   RecurrenceErrorCode,
   WappLegacyPartyFieldType,
 } from "./types";
@@ -198,6 +199,14 @@ export const FORM_ATTENDANCE = "attendance";
 export const MAILSUPPLIER_GMAIL = "gmail";
 export const MAILSUPPLIER_OUTLOOK = "outlook";
 export const MAILSUPPLIER_OTHER = "other";
+
+export const MAILSUPPLIER_META: Record<string, MailSupplierMetaType> = {
+  [MAILSUPPLIER_GMAIL]: { label: "Gmail", color: "#ea4335" },
+  [MAILSUPPLIER_OUTLOOK]: { label: "Outlook", color: "#0078d4" },
+};
+export const MAILSUPPLIER_NEUTRAL_COLOR = "#6c757d";
+
+export const MAIL_ACCOUNTS_STORAGE_KEY = "apes.mailAccounts";
 
 export const MAILSECURITY_SSL = "ssl";
 export const MAILSECURITY_STARTTLS = "starttls";

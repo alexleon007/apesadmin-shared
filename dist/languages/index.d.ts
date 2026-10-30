@@ -75,6 +75,7 @@ export declare const languages: {
         addProduct: string;
         addProductsToStart: string;
         address: string;
+        addresses: string;
         addressShort: string;
         addScheduledMessage: string;
         addSeries: string;
@@ -1053,6 +1054,7 @@ export declare const languages: {
         daysRemaining: string;
         daysSinceLastPurchase: string;
         daysUsed: string;
+        daysWithoutContact: string;
         dbColumn: string;
         deactivate: string;
         debit: string;
@@ -2059,6 +2061,7 @@ export declare const languages: {
         noFiltersConfigured: string;
         noFiltersConfiguredReport: string;
         noFoldersYetHint: string;
+        noFollowup: string;
         noGrouperSets: string;
         noGroupersYet: string;
         noHandlersRegistered: string;
@@ -2390,6 +2393,7 @@ export declare const languages: {
         pickTemplateHint: string;
         pieValue: string;
         pillColor: string;
+        pipeline: string;
         pipelines: string;
         pipelinesManagement: string;
         pivotActiveHint: string;
@@ -2560,6 +2564,7 @@ export declare const languages: {
         quickActions: string;
         quickActionsLimitReached: string;
         quickActionsWidgetDesc: string;
+        quickFilters: string;
         quotation: string;
         quotations: string;
         quotationsManagement: string;
@@ -2736,11 +2741,14 @@ export declare const languages: {
         rowFieldTooLong: string;
         rowFiltersSection: string;
         rowFilterTokensHint: string;
+        rowInvalidCoordinates: string;
         rowsNotRendered: string;
         rowsPerPage: string;
         rowStart: string;
+        rowStepNeedsPipeline: string;
         rowsVisualizationOn: string;
         rowUnexpectedError: string;
+        rowValueNotFound: string;
         rowValueTooLong: string;
         rowValueTooLongCheckText: string;
         rules: string;
@@ -3922,6 +3930,7 @@ export declare const languages: {
         addProduct: string;
         addProductsToStart: string;
         address: string;
+        addresses: string;
         addressShort: string;
         addScheduledMessage: string;
         addSeries: string;
@@ -4900,6 +4909,7 @@ export declare const languages: {
         daysRemaining: string;
         daysSinceLastPurchase: string;
         daysUsed: string;
+        daysWithoutContact: string;
         dbColumn: string;
         deactivate: string;
         debit: string;
@@ -5906,6 +5916,7 @@ export declare const languages: {
         noFiltersConfigured: string;
         noFiltersConfiguredReport: string;
         noFoldersYetHint: string;
+        noFollowup: string;
         noGrouperSets: string;
         noGroupersYet: string;
         noHandlersRegistered: string;
@@ -6237,6 +6248,7 @@ export declare const languages: {
         pickTemplateHint: string;
         pieValue: string;
         pillColor: string;
+        pipeline: string;
         pipelines: string;
         pipelinesManagement: string;
         pivotActiveHint: string;
@@ -6407,6 +6419,7 @@ export declare const languages: {
         quickActions: string;
         quickActionsLimitReached: string;
         quickActionsWidgetDesc: string;
+        quickFilters: string;
         quotation: string;
         quotations: string;
         quotationsManagement: string;
@@ -6583,11 +6596,14 @@ export declare const languages: {
         rowFieldTooLong: string;
         rowFiltersSection: string;
         rowFilterTokensHint: string;
+        rowInvalidCoordinates: string;
         rowsNotRendered: string;
         rowsPerPage: string;
         rowStart: string;
+        rowStepNeedsPipeline: string;
         rowsVisualizationOn: string;
         rowUnexpectedError: string;
+        rowValueNotFound: string;
         rowValueTooLong: string;
         rowValueTooLongCheckText: string;
         rules: string;
@@ -7769,6 +7785,7 @@ export declare const languages: {
         addProduct: string;
         addProductsToStart: string;
         address: string;
+        addresses: string;
         addressShort: string;
         addScheduledMessage: string;
         addSeries: string;
@@ -8747,6 +8764,7 @@ export declare const languages: {
         daysRemaining: string;
         daysSinceLastPurchase: string;
         daysUsed: string;
+        daysWithoutContact: string;
         dbColumn: string;
         deactivate: string;
         debit: string;
@@ -9753,6 +9771,7 @@ export declare const languages: {
         noFiltersConfigured: string;
         noFiltersConfiguredReport: string;
         noFoldersYetHint: string;
+        noFollowup: string;
         noGrouperSets: string;
         noGroupersYet: string;
         noHandlersRegistered: string;
@@ -10084,6 +10103,7 @@ export declare const languages: {
         pickTemplateHint: string;
         pieValue: string;
         pillColor: string;
+        pipeline: string;
         pipelines: string;
         pipelinesManagement: string;
         pivotActiveHint: string;
@@ -10254,6 +10274,7 @@ export declare const languages: {
         quickActions: string;
         quickActionsLimitReached: string;
         quickActionsWidgetDesc: string;
+        quickFilters: string;
         quotation: string;
         quotations: string;
         quotationsManagement: string;
@@ -10430,11 +10451,14 @@ export declare const languages: {
         rowFieldTooLong: string;
         rowFiltersSection: string;
         rowFilterTokensHint: string;
+        rowInvalidCoordinates: string;
         rowsNotRendered: string;
         rowsPerPage: string;
         rowStart: string;
+        rowStepNeedsPipeline: string;
         rowsVisualizationOn: string;
         rowUnexpectedError: string;
+        rowValueNotFound: string;
         rowValueTooLong: string;
         rowValueTooLongCheckText: string;
         rules: string;

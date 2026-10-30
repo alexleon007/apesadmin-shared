@@ -2532,6 +2532,7 @@ export type MailConfigType = {
   mailsupplier?: string;
   mailuser?: string | null;
   fromname?: string;
+  color?: string;
   imaphost?: string;
   imapport?: number;
   imapsecurity?: MailSecurityType;
@@ -2564,6 +2565,8 @@ export type MailFolderType =
 
 export type MailSecurityType = "ssl" | "starttls" | "none";
 
+export type MailSupplierMetaType = { label: string; color: string };
+
 export type MailAttachmentMetaType = {
   filename: string;
   mimeType: string;
@@ -2589,6 +2592,17 @@ export type MailMessageType = {
   attachments: MailAttachmentMetaType[];
   blockedImages?: number;
 };
+
+export type MailInboxAccountType = MailConfigType & { color: string };
+
+export type MailInboxMessageType = MailMessageType & { idmail: number };
+
+export type MailInboxPageType = {
+  emails: MailInboxMessageType[];
+  cursor: string | null;
+};
+
+export type MailInboxPageTargetType = { idmail: number; cursor: string | null };
 
 export type MailListResultType = {
   emails: MailMessageType[];
