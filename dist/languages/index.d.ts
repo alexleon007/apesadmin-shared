@@ -189,6 +189,7 @@ export declare const languages: {
         attachedFiles: string;
         attachEvidence: string;
         attachFile: string;
+        apesCloud: string;
         attachFilesMax: string;
         attachImage: string;
         attachImages: string;
@@ -4044,6 +4045,7 @@ export declare const languages: {
         attachedFiles: string;
         attachEvidence: string;
         attachFile: string;
+        apesCloud: string;
         attachFilesMax: string;
         attachImage: string;
         attachImages: string;
@@ -7899,6 +7901,7 @@ export declare const languages: {
         attachedFiles: string;
         attachEvidence: string;
         attachFile: string;
+        apesCloud: string;
         attachFilesMax: string;
         attachImage: string;
         attachImages: string;
