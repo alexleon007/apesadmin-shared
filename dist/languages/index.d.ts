@@ -3128,6 +3128,10 @@ export declare const languages: {
         taxInUseLocked: string;
         taxNotApplicableHint: string;
         taxNotForCompany: string;
+        taxRecalcAllLines: string;
+        taxRecalcHint: string;
+        taxRecalcInvalid: string;
+        taxRecalcInvalidLines: string;
         taxNotFound: string;
         taxOrderHelp: string;
         taxOutputAccount: string;
@@ -6984,6 +6988,10 @@ export declare const languages: {
         taxInUseLocked: string;
         taxNotApplicableHint: string;
         taxNotForCompany: string;
+        taxRecalcAllLines: string;
+        taxRecalcHint: string;
+        taxRecalcInvalid: string;
+        taxRecalcInvalidLines: string;
         taxNotFound: string;
         taxOrderHelp: string;
         taxOutputAccount: string;
@@ -10840,6 +10848,10 @@ export declare const languages: {
         taxInUseLocked: string;
         taxNotApplicableHint: string;
         taxNotForCompany: string;
+        taxRecalcAllLines: string;
+        taxRecalcHint: string;
+        taxRecalcInvalid: string;
+        taxRecalcInvalidLines: string;
         taxNotFound: string;
         taxOrderHelp: string;
         taxOutputAccount: string;
