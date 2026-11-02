@@ -3856,5 +3856,8 @@
     "aiDesignRefused": "Claude no pudo procesar este diseño",
     "aiDesignTooComplex": "El diseño es demasiado complejo para generarlo completo; simplifícalo o divídelo en partes",
     "aiDesignUnreadable": "No se pudo interpretar la respuesta de Claude",
-    "aiDesignEmpty": "No se reconoció ningún elemento en el diseño"
+    "aiDesignEmpty": "No se reconoció ningún elemento en el diseño",
+    "apesAdminPaywallTitle": "Contrata ApesAdmin para usar el ERP",
+    "apesAdminPaywallText": "Tu cuenta incluye WappConnect. Para entrar al ERP (ventas, compras, inventario, facturación y más) necesitas contratar ApesAdmin. Contacta a tu asesor de Apes para activarlo.",
+    "backToWappConnect": "Volver a WappConnect"
 }

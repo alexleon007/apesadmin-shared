@@ -3861,6 +3861,9 @@ export declare const languages: {
         aiDesignTooComplex: string;
         aiDesignUnreadable: string;
         aiDesignEmpty: string;
+        apesAdminPaywallTitle: string;
+        apesAdminPaywallText: string;
+        backToWappConnect: string;
     };
     readonly en: {
         aboveMax: string;
@@ -7721,6 +7724,9 @@ export declare const languages: {
         aiDesignTooComplex: string;
         aiDesignUnreadable: string;
         aiDesignEmpty: string;
+        apesAdminPaywallTitle: string;
+        apesAdminPaywallText: string;
+        backToWappConnect: string;
     };
     readonly "zh-TW": {
         aboveMax: string;
@@ -11581,6 +11587,9 @@ export declare const languages: {
         aiDesignTooComplex: string;
         aiDesignUnreadable: string;
         aiDesignEmpty: string;
+        apesAdminPaywallTitle: string;
+        apesAdminPaywallText: string;
+        backToWappConnect: string;
     };
 };
 export type LanguageKey = keyof typeof languages;

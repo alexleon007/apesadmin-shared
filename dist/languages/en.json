@@ -3856,5 +3856,8 @@
     "aiDesignRefused": "Claude could not process this design",
     "aiDesignTooComplex": "The design is too complex to generate in full; simplify it or split it into parts",
     "aiDesignUnreadable": "Claude's response could not be parsed",
-    "aiDesignEmpty": "No element was recognized in the design"
+    "aiDesignEmpty": "No element was recognized in the design",
+    "apesAdminPaywallTitle": "Get ApesAdmin to use the ERP",
+    "apesAdminPaywallText": "Your account includes WappConnect. To use the ERP (sales, purchasing, inventory, invoicing and more) you need an ApesAdmin plan. Contact your Apes advisor to activate it.",
+    "backToWappConnect": "Back to WappConnect"
 }

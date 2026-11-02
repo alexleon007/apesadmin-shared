@@ -3856,5 +3856,8 @@
   "aiDesignRefused": "Claude 無法處理此設計",
   "aiDesignTooComplex": "設計過於複雜，無法完整產生；請簡化或拆分",
   "aiDesignUnreadable": "無法解析 Claude 的回應",
-  "aiDesignEmpty": "設計中未辨識到任何元素"
+  "aiDesignEmpty": "設計中未辨識到任何元素",
+  "apesAdminPaywallTitle": "訂閱 ApesAdmin 以使用 ERP",
+  "apesAdminPaywallText": "您的帳戶包含 WappConnect。若要使用 ERP（銷售、採購、庫存、發票等），需要訂閱 ApesAdmin。請聯絡您的 Apes 顧問開通。",
+  "backToWappConnect": "返回 WappConnect"
 }
