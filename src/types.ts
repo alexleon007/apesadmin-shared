@@ -808,6 +808,21 @@ export type WappComposerStartType = {
   mode?: WappSendModeType;
 };
 
+export type ChannelAnalysisType = {
+  idcan: number;
+  from: string;
+  to: string;
+  tasks: number;
+  records: number;
+  userName: string;
+  createdAt: string;
+};
+
+export type ChannelAnalysisItemType = {
+  text: string;
+  date: string;
+};
+
 export type ChannelScheduledStatusType =
   | "pending"
   | "sending"

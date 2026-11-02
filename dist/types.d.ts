@@ -714,6 +714,19 @@ export type WappComposerStartType = {
     recipients?: WappRecipientType[];
     mode?: WappSendModeType;
 };
+export type ChannelAnalysisType = {
+    idcan: number;
+    from: string;
+    to: string;
+    tasks: number;
+    records: number;
+    userName: string;
+    createdAt: string;
+};
+export type ChannelAnalysisItemType = {
+    text: string;
+    date: string;
+};
 export type ChannelScheduledStatusType = "pending" | "sending" | "sent" | "failed";
 export type ChannelScheduledMessageType = {
     idcs: number;
