@@ -2253,6 +2253,8 @@
   "orderUpdated": "Order updated",
   "orderUploadAgentAmbiguous": "There are several users named {{agent}}: use their username or email",
   "orderUploadAgentNotFound": "Agent {{agent}} was not found (use the username, email or name of an active user)",
+  "orderUploadAgentPartyAmbiguous": "There are several Human Resources parties named {{agent}}: use their code",
+  "orderUploadAgentPartyNotFound": "Agent {{agent}} was not found (use the code, RFC or name of an active Human Resources party)",
   "orderUploadConceptsSheetMissing": "The file has no concepts sheet",
   "orderUploadCustomerAmbiguous": "There are several customers named {{customer}}: use their code",
   "orderUploadDuplicateRef": "Duplicate reference: {{ref}}",

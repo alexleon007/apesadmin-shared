@@ -2253,6 +2253,8 @@
     "orderUpdated": "Orden actualizada",
     "orderUploadAgentAmbiguous": "Hay varios usuarios llamados {{agent}}: usa su usuario o correo",
     "orderUploadAgentNotFound": "No se encontró el agente {{agent}} (usa usuario, correo o nombre de un usuario activo)",
+    "orderUploadAgentPartyAmbiguous": "Hay varios terceros de Recursos Humanos llamados {{agent}}: usa su código",
+    "orderUploadAgentPartyNotFound": "No se encontró el agente {{agent}} (usa código, RFC o nombre de un tercero activo de Recursos Humanos)",
     "orderUploadConceptsSheetMissing": "El archivo no tiene la hoja de conceptos",
     "orderUploadCustomerAmbiguous": "Hay varios clientes llamados {{customer}}: usa su código",
     "orderUploadDuplicateRef": "Referencia repetida: {{ref}}",

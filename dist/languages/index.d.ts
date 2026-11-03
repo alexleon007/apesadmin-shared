@@ -2257,6 +2257,8 @@ export declare const languages: {
         orderUpdated: string;
         orderUploadAgentAmbiguous: string;
         orderUploadAgentNotFound: string;
+        orderUploadAgentPartyAmbiguous: string;
+        orderUploadAgentPartyNotFound: string;
         orderUploadConceptsSheetMissing: string;
         orderUploadCustomerAmbiguous: string;
         orderUploadDuplicateRef: string;
@@ -6145,6 +6147,8 @@ export declare const languages: {
         orderUpdated: string;
         orderUploadAgentAmbiguous: string;
         orderUploadAgentNotFound: string;
+        orderUploadAgentPartyAmbiguous: string;
+        orderUploadAgentPartyNotFound: string;
         orderUploadConceptsSheetMissing: string;
         orderUploadCustomerAmbiguous: string;
         orderUploadDuplicateRef: string;
@@ -10033,6 +10037,8 @@ export declare const languages: {
         orderUpdated: string;
         orderUploadAgentAmbiguous: string;
         orderUploadAgentNotFound: string;
+        orderUploadAgentPartyAmbiguous: string;
+        orderUploadAgentPartyNotFound: string;
         orderUploadConceptsSheetMissing: string;
         orderUploadCustomerAmbiguous: string;
         orderUploadDuplicateRef: string;

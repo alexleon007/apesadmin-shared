@@ -2253,6 +2253,8 @@
     "orderUpdated": "訂單已更新",
     "orderUploadAgentAmbiguous": "有多位名為 {{agent}} 的使用者：請使用帳號或電子郵件",
     "orderUploadAgentNotFound": "找不到業務 {{agent}}（請使用有效使用者的帳號、電子郵件或名稱）",
+    "orderUploadAgentPartyAmbiguous": "有多位名為 {{agent}} 的人力資源對象：請使用代碼",
+    "orderUploadAgentPartyNotFound": "找不到業務 {{agent}}（請使用有效人力資源對象的代碼、統一編號或名稱）",
     "orderUploadConceptsSheetMissing": "檔案缺少明細工作表",
     "orderUploadCustomerAmbiguous": "有多位名為 {{customer}} 的客戶：請使用代碼",
     "orderUploadDuplicateRef": "參考編號重複：{{ref}}",
