@@ -534,6 +534,7 @@ export declare const languages: {
         byManual: string;
         byPaidProduct: string;
         bySoldProduct: string;
+        byUser: string;
         calculateCuts: string;
         calculatedFields: string;
         calculatedFieldsHint: string;
@@ -612,10 +613,12 @@ export declare const languages: {
         cfdiGlobalPartyRequired: string;
         cfdiGlobalPaymethodInvalid: string;
         cfdiGlobalRfcInvalid: string;
+        cfdiIssuerCertNumber: string;
         cfdiMixedDocTypesNotAllowed: string;
         cfdiPayFormRequired: string;
         cfdiPayMethodRequired: string;
         cfdiQRCode: string;
+        cfdiSatCertNumber: string;
         cfdiSeal: string;
         cfdiStampError: string;
         cfdiStampInternalError: string;
@@ -787,6 +790,7 @@ export declare const languages: {
         claudeUnreachable: string;
         clear: string;
         clearable: string;
+        clickAgainToConfirm: string;
         clickToRename: string;
         close: string;
         closeAnnouncement: string;
@@ -889,6 +893,7 @@ export declare const languages: {
         connected: string;
         connectedAs: string;
         connectGoogle: string;
+        connection: string;
         connectionConnected: string;
         connectionOffline: string;
         connections: string;
@@ -1193,6 +1198,7 @@ export declare const languages: {
         editClassification: string;
         editComission: string;
         editCompany: string;
+        editConfiguration: string;
         editContact: string;
         editCurrency: string;
         editCustomer: string;
@@ -1531,6 +1537,8 @@ export declare const languages: {
         hideAI: string;
         hideAnalytics: string;
         hideAura: string;
+        hideErrorDetail: string;
+        hideHistory: string;
         hideNotes: string;
         hideSeries: string;
         high: string;
@@ -1637,6 +1645,7 @@ export declare const languages: {
         installTitle: string;
         inStock: string;
         integrated: string;
+        integrationActionRunning: string;
         integrationNotFound: string;
         integrations: string;
         internal: string;
@@ -1982,6 +1991,7 @@ export declare const languages: {
         needHelp: string;
         netCash: string;
         netProfit: string;
+        neverRun: string;
         new: string;
         newAccount: string;
         newAccountingProfile: string;
@@ -2069,6 +2079,7 @@ export declare const languages: {
         noActiveChatsYet: string;
         noActiveConnection: string;
         noActiveFilters: string;
+        noActivityYet: string;
         noAddresses: string;
         noAssignedQuestionnaires: string;
         noAssignedTickets: string;
@@ -2794,10 +2805,15 @@ export declare const languages: {
         rowValueTooLong: string;
         rowValueTooLongCheckText: string;
         rules: string;
+        runAction: string;
+        runningAction: string;
         runNow: string;
         runReportFirstCharts: string;
         runReportFirstExport: string;
         runReportFirstMap: string;
+        runStatusInterrupted: string;
+        runStatusPartial: string;
+        runStatusRunning: string;
         sale: string;
         saleNote: string;
         sales: string;
@@ -3046,6 +3062,7 @@ export declare const languages: {
         showAnalytics: string;
         showBarcodeText: string;
         showCalendar: string;
+        showErrorDetail: string;
         showFilters: string;
         showingOfTotal: string;
         showNotes: string;
@@ -3326,6 +3343,7 @@ export declare const languages: {
         toastCashSessionOpened: string;
         toastClassificationDeactivated: string;
         toastClassificationSaved: string;
+        toastCloneLoaded: string;
         toastComissionEntryCancelled: string;
         toastComissionsApplied: string;
         toastCompleted: string;
@@ -4461,6 +4479,7 @@ export declare const languages: {
         byManual: string;
         byPaidProduct: string;
         bySoldProduct: string;
+        byUser: string;
         calculateCuts: string;
         calculatedFields: string;
         calculatedFieldsHint: string;
@@ -4539,10 +4558,12 @@ export declare const languages: {
         cfdiGlobalPartyRequired: string;
         cfdiGlobalPaymethodInvalid: string;
         cfdiGlobalRfcInvalid: string;
+        cfdiIssuerCertNumber: string;
         cfdiMixedDocTypesNotAllowed: string;
         cfdiPayFormRequired: string;
         cfdiPayMethodRequired: string;
         cfdiQRCode: string;
+        cfdiSatCertNumber: string;
         cfdiSeal: string;
         cfdiStampError: string;
         cfdiStampInternalError: string;
@@ -4714,6 +4735,7 @@ export declare const languages: {
         claudeUnreachable: string;
         clear: string;
         clearable: string;
+        clickAgainToConfirm: string;
         clickToRename: string;
         close: string;
         closeAnnouncement: string;
@@ -4816,6 +4838,7 @@ export declare const languages: {
         connected: string;
         connectedAs: string;
         connectGoogle: string;
+        connection: string;
         connectionConnected: string;
         connectionOffline: string;
         connections: string;
@@ -5120,6 +5143,7 @@ export declare const languages: {
         editClassification: string;
         editComission: string;
         editCompany: string;
+        editConfiguration: string;
         editContact: string;
         editCurrency: string;
         editCustomer: string;
@@ -5458,6 +5482,8 @@ export declare const languages: {
         hideAI: string;
         hideAnalytics: string;
         hideAura: string;
+        hideErrorDetail: string;
+        hideHistory: string;
         hideNotes: string;
         hideSeries: string;
         high: string;
@@ -5564,6 +5590,7 @@ export declare const languages: {
         installTitle: string;
         inStock: string;
         integrated: string;
+        integrationActionRunning: string;
         integrationNotFound: string;
         integrations: string;
         internal: string;
@@ -5909,6 +5936,7 @@ export declare const languages: {
         needHelp: string;
         netCash: string;
         netProfit: string;
+        neverRun: string;
         new: string;
         newAccount: string;
         newAccountingProfile: string;
@@ -5996,6 +6024,7 @@ export declare const languages: {
         noActiveChatsYet: string;
         noActiveConnection: string;
         noActiveFilters: string;
+        noActivityYet: string;
         noAddresses: string;
         noAssignedQuestionnaires: string;
         noAssignedTickets: string;
@@ -6721,10 +6750,15 @@ export declare const languages: {
         rowValueTooLong: string;
         rowValueTooLongCheckText: string;
         rules: string;
+        runAction: string;
+        runningAction: string;
         runNow: string;
         runReportFirstCharts: string;
         runReportFirstExport: string;
         runReportFirstMap: string;
+        runStatusInterrupted: string;
+        runStatusPartial: string;
+        runStatusRunning: string;
         sale: string;
         saleNote: string;
         sales: string;
@@ -6973,6 +7007,7 @@ export declare const languages: {
         showAnalytics: string;
         showBarcodeText: string;
         showCalendar: string;
+        showErrorDetail: string;
         showFilters: string;
         showingOfTotal: string;
         showNotes: string;
@@ -7253,6 +7288,7 @@ export declare const languages: {
         toastCashSessionOpened: string;
         toastClassificationDeactivated: string;
         toastClassificationSaved: string;
+        toastCloneLoaded: string;
         toastComissionEntryCancelled: string;
         toastComissionsApplied: string;
         toastCompleted: string;
@@ -8388,6 +8424,7 @@ export declare const languages: {
         byManual: string;
         byPaidProduct: string;
         bySoldProduct: string;
+        byUser: string;
         calculateCuts: string;
         calculatedFields: string;
         calculatedFieldsHint: string;
@@ -8466,10 +8503,12 @@ export declare const languages: {
         cfdiGlobalPartyRequired: string;
         cfdiGlobalPaymethodInvalid: string;
         cfdiGlobalRfcInvalid: string;
+        cfdiIssuerCertNumber: string;
         cfdiMixedDocTypesNotAllowed: string;
         cfdiPayFormRequired: string;
         cfdiPayMethodRequired: string;
         cfdiQRCode: string;
+        cfdiSatCertNumber: string;
         cfdiSeal: string;
         cfdiStampError: string;
         cfdiStampInternalError: string;
@@ -8641,6 +8680,7 @@ export declare const languages: {
         claudeUnreachable: string;
         clear: string;
         clearable: string;
+        clickAgainToConfirm: string;
         clickToRename: string;
         close: string;
         closeAnnouncement: string;
@@ -8743,6 +8783,7 @@ export declare const languages: {
         connected: string;
         connectedAs: string;
         connectGoogle: string;
+        connection: string;
         connectionConnected: string;
         connectionOffline: string;
         connections: string;
@@ -9047,6 +9088,7 @@ export declare const languages: {
         editClassification: string;
         editComission: string;
         editCompany: string;
+        editConfiguration: string;
         editContact: string;
         editCurrency: string;
         editCustomer: string;
@@ -9385,6 +9427,8 @@ export declare const languages: {
         hideAI: string;
         hideAnalytics: string;
         hideAura: string;
+        hideErrorDetail: string;
+        hideHistory: string;
         hideNotes: string;
         hideSeries: string;
         high: string;
@@ -9491,6 +9535,7 @@ export declare const languages: {
         installTitle: string;
         inStock: string;
         integrated: string;
+        integrationActionRunning: string;
         integrationNotFound: string;
         integrations: string;
         internal: string;
@@ -9836,6 +9881,7 @@ export declare const languages: {
         needHelp: string;
         netCash: string;
         netProfit: string;
+        neverRun: string;
         new: string;
         newAccount: string;
         newAccountingProfile: string;
@@ -9923,6 +9969,7 @@ export declare const languages: {
         noActiveChatsYet: string;
         noActiveConnection: string;
         noActiveFilters: string;
+        noActivityYet: string;
         noAddresses: string;
         noAssignedQuestionnaires: string;
         noAssignedTickets: string;
@@ -10648,10 +10695,15 @@ export declare const languages: {
         rowValueTooLong: string;
         rowValueTooLongCheckText: string;
         rules: string;
+        runAction: string;
+        runningAction: string;
         runNow: string;
         runReportFirstCharts: string;
         runReportFirstExport: string;
         runReportFirstMap: string;
+        runStatusInterrupted: string;
+        runStatusPartial: string;
+        runStatusRunning: string;
         sale: string;
         saleNote: string;
         sales: string;
@@ -10900,6 +10952,7 @@ export declare const languages: {
         showAnalytics: string;
         showBarcodeText: string;
         showCalendar: string;
+        showErrorDetail: string;
         showFilters: string;
         showingOfTotal: string;
         showNotes: string;
@@ -11180,6 +11233,7 @@ export declare const languages: {
         toastCashSessionOpened: string;
         toastClassificationDeactivated: string;
         toastClassificationSaved: string;
+        toastCloneLoaded: string;
         toastComissionEntryCancelled: string;
         toastComissionsApplied: string;
         toastCompleted: string;
