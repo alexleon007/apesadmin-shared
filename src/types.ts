@@ -3038,6 +3038,8 @@ export type PartyType = {
   isrh: number;
   partydepartment?: number;
   partydepartmentname?: string;
+  partyidcmp?: number;
+  partycmpname?: string;
   partyphoto?: string;
   partypipelines?: {
     idpipe: number;
@@ -4228,6 +4230,41 @@ export type ProductSupplierLink = {
   code_supp: string;
   name_supp: string;
   prodcode_ps: string;
+};
+
+export type ShopifyVariantType = {
+  productId: string;
+  variantId: string;
+  inventoryItemId: string;
+  sku: string;
+  barcode: string;
+  price: number;
+  title: string;
+  productTitle: string;
+  variantTitle: string;
+  productStatus: string;
+  hasOnlyDefaultVariant: boolean;
+  tracked: boolean;
+};
+
+export type ProductEcommerceLinkType = {
+  idpel: number;
+  idapi: number;
+  idprod: number;
+  extproductid: string;
+  extvariantid: string;
+  extinvitemid: string;
+  sku: string;
+  exttitle: string;
+  syncedat: string | null;
+  createdat: string;
+};
+
+export type ProductEcommerceStoreType = {
+  idapi: number;
+  provider: "shopify";
+  shop: string;
+  link: ProductEcommerceLinkType | null;
 };
 
 // ─────────────────────────────────────────────────────────────────────────────
