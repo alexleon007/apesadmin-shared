@@ -32,6 +32,7 @@ export declare const STATUS_NUMBER_AUTHORIZED = 3;
 export declare const STATUS_NUMBER_FINISHED = 4;
 export declare const STATUS_NUMBER_PAID = 5;
 export declare const STATUS_NUMBER_RESERVED = 6;
+export declare const STATUS_NUMBER_TEMPORARY = 7;
 export declare const RECORD_BIT = "bit";
 export declare const RECORD_DOC = "doc";
 export declare const RECORD_RECORD = "record";

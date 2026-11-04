@@ -51,6 +51,7 @@ export const STATUS_NUMBER_AUTHORIZED = 3;
 export const STATUS_NUMBER_FINISHED = 4;
 export const STATUS_NUMBER_PAID = 5;
 export const STATUS_NUMBER_RESERVED = 6;
+export const STATUS_NUMBER_TEMPORARY = 7;
 
 export const RECORD_BIT = "bit";
 export const RECORD_DOC = "doc";

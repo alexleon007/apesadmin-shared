@@ -2261,6 +2261,7 @@ export declare const languages: {
         optionsUnavailable: string;
         order: string;
         orderAlreadyFinishedOrCancelled: string;
+        orderTemporalUnavailable: string;
         orderCancelled: string;
         orderCanNoLongerBeCancelled: string;
         ordered: string;
@@ -2880,6 +2881,7 @@ export declare const languages: {
         savedCharts: string;
         savedKpis: string;
         saveDraft: string;
+        saveTemporary: string;
         savedTickets: string;
         savePartyFirstForAccounting: string;
         saveProductFirstForAccounting: string;
@@ -3250,6 +3252,7 @@ export declare const languages: {
         teamRole: string;
         tel: string;
         template: string;
+        temporary: string;
         templateApprovedNow: string;
         templateBodyPlaceholder: string;
         templateButtonEmpty: string;
@@ -3433,6 +3436,7 @@ export declare const languages: {
         toastSent: string;
         toastServerError: string;
         toastTaxesRecalculated: string;
+        toastTemporarySaved: string;
         toastTemplateCreated: string;
         toastTemplateDeleted: string;
         toastTemplateDeleteError: string;
@@ -6229,6 +6233,7 @@ export declare const languages: {
         optionsUnavailable: string;
         order: string;
         orderAlreadyFinishedOrCancelled: string;
+        orderTemporalUnavailable: string;
         orderCancelled: string;
         orderCanNoLongerBeCancelled: string;
         ordered: string;
@@ -6848,6 +6853,7 @@ export declare const languages: {
         savedCharts: string;
         savedKpis: string;
         saveDraft: string;
+        saveTemporary: string;
         savedTickets: string;
         savePartyFirstForAccounting: string;
         saveProductFirstForAccounting: string;
@@ -7218,6 +7224,7 @@ export declare const languages: {
         teamRole: string;
         tel: string;
         template: string;
+        temporary: string;
         templateApprovedNow: string;
         templateBodyPlaceholder: string;
         templateButtonEmpty: string;
@@ -7401,6 +7408,7 @@ export declare const languages: {
         toastSent: string;
         toastServerError: string;
         toastTaxesRecalculated: string;
+        toastTemporarySaved: string;
         toastTemplateCreated: string;
         toastTemplateDeleted: string;
         toastTemplateDeleteError: string;
@@ -10197,6 +10205,7 @@ export declare const languages: {
         optionsUnavailable: string;
         order: string;
         orderAlreadyFinishedOrCancelled: string;
+        orderTemporalUnavailable: string;
         orderCancelled: string;
         orderCanNoLongerBeCancelled: string;
         ordered: string;
@@ -10816,6 +10825,7 @@ export declare const languages: {
         savedCharts: string;
         savedKpis: string;
         saveDraft: string;
+        saveTemporary: string;
         savedTickets: string;
         savePartyFirstForAccounting: string;
         saveProductFirstForAccounting: string;
@@ -11186,6 +11196,7 @@ export declare const languages: {
         teamRole: string;
         tel: string;
         template: string;
+        temporary: string;
         templateApprovedNow: string;
         templateBodyPlaceholder: string;
         templateButtonEmpty: string;
@@ -11369,6 +11380,7 @@ export declare const languages: {
         toastSent: string;
         toastServerError: string;
         toastTaxesRecalculated: string;
+        toastTemporarySaved: string;
         toastTemplateCreated: string;
         toastTemplateDeleted: string;
         toastTemplateDeleteError: string;
