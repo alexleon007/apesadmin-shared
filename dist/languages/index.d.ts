@@ -2958,6 +2958,7 @@ export declare const languages: {
         selectCompany: string;
         selectCompanyFirstForAccounting: string;
         selectCompanyFirstForPartyAccounting: string;
+        selectCustomerFirst: string;
         selectDate: string;
         selectDateColumn: string;
         selected: string;
@@ -3416,6 +3417,7 @@ export declare const languages: {
         toastNothingToApply: string;
         toastPasswordLength: string;
         toastPaymentProcessError: string;
+        toastPriceListChangedContentCleared: string;
         toastProblem: string;
         toastQuantityExceedsPending: string;
         toastQuickAccessAdded: string;
@@ -6924,6 +6926,7 @@ export declare const languages: {
         selectCompany: string;
         selectCompanyFirstForAccounting: string;
         selectCompanyFirstForPartyAccounting: string;
+        selectCustomerFirst: string;
         selectDate: string;
         selectDateColumn: string;
         selected: string;
@@ -7382,6 +7385,7 @@ export declare const languages: {
         toastNothingToApply: string;
         toastPasswordLength: string;
         toastPaymentProcessError: string;
+        toastPriceListChangedContentCleared: string;
         toastProblem: string;
         toastQuantityExceedsPending: string;
         toastQuickAccessAdded: string;
@@ -10890,6 +10894,7 @@ export declare const languages: {
         selectCompany: string;
         selectCompanyFirstForAccounting: string;
         selectCompanyFirstForPartyAccounting: string;
+        selectCustomerFirst: string;
         selectDate: string;
         selectDateColumn: string;
         selected: string;
@@ -11348,6 +11353,7 @@ export declare const languages: {
         toastNothingToApply: string;
         toastPasswordLength: string;
         toastPaymentProcessError: string;
+        toastPriceListChangedContentCleared: string;
         toastProblem: string;
         toastQuantityExceedsPending: string;
         toastQuickAccessAdded: string;
