@@ -1793,6 +1793,24 @@ export type PartyScheduleType = {
   status: number;
 };
 
+export type PartyPriceListType = {
+  idpartypl: number;
+  idparty: number;
+  pricelist: number;
+  pricelistname?: string;
+  idprod: number;
+  prodcode?: string;
+  prodname?: string;
+  idfam: number;
+  famname?: string;
+  idgru: number;
+  gruname?: string;
+  idsubgru: number;
+  subgruname?: string;
+  clas: string;
+  subclas: string;
+};
+
 export type AttendancePolicyType = {
   idpol: number;
   name: string;

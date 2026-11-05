@@ -95,6 +95,7 @@ export declare const FORM_STATS = "stats";
 export declare const FORM_OTHER = "other";
 export declare const FORM_ACCOUNTING = "accounting";
 export declare const FORM_ATTENDANCE = "attendance";
+export declare const FORM_PRICELISTS = "pricelists";
 export declare const MAILSUPPLIER_GMAIL = "gmail";
 export declare const MAILSUPPLIER_OUTLOOK = "outlook";
 export declare const MAILSUPPLIER_OTHER = "other";

@@ -2538,6 +2538,7 @@ export declare const languages: {
         priceListUsedByParties: string;
         priceListUsedByPos: string;
         pricePerLineList: string;
+        pricePerLineListRequired: string;
         pricePerNight: string;
         pricePerPerson: string;
         prices: string;
@@ -2891,6 +2892,7 @@ export declare const languages: {
         saveTemporary: string;
         savedTickets: string;
         savePartyFirstForAccounting: string;
+        savePartyFirstForPriceLists: string;
         saveProductFirstForAccounting: string;
         saveProductFirstForFactors: string;
         saveProductFirstForGallery: string;
@@ -2958,6 +2960,7 @@ export declare const languages: {
         selectAtLeastOneForm: string;
         selectAtLeastOneItem: string;
         selectAtLeastOneToApplyProfile: string;
+        selectAtLeastOneCriterion: string;
         selectBatch: string;
         selectBatchForProduct: string;
         selectCancellationMotive: string;
@@ -6517,6 +6520,7 @@ export declare const languages: {
         priceListUsedByParties: string;
         priceListUsedByPos: string;
         pricePerLineList: string;
+        pricePerLineListRequired: string;
         pricePerNight: string;
         pricePerPerson: string;
         prices: string;
@@ -6870,6 +6874,7 @@ export declare const languages: {
         saveTemporary: string;
         savedTickets: string;
         savePartyFirstForAccounting: string;
+        savePartyFirstForPriceLists: string;
         saveProductFirstForAccounting: string;
         saveProductFirstForFactors: string;
         saveProductFirstForGallery: string;
@@ -6937,6 +6942,7 @@ export declare const languages: {
         selectAtLeastOneForm: string;
         selectAtLeastOneItem: string;
         selectAtLeastOneToApplyProfile: string;
+        selectAtLeastOneCriterion: string;
         selectBatch: string;
         selectBatchForProduct: string;
         selectCancellationMotive: string;
@@ -10496,6 +10502,7 @@ export declare const languages: {
         priceListUsedByParties: string;
         priceListUsedByPos: string;
         pricePerLineList: string;
+        pricePerLineListRequired: string;
         pricePerNight: string;
         pricePerPerson: string;
         prices: string;
@@ -10849,6 +10856,7 @@ export declare const languages: {
         saveTemporary: string;
         savedTickets: string;
         savePartyFirstForAccounting: string;
+        savePartyFirstForPriceLists: string;
         saveProductFirstForAccounting: string;
         saveProductFirstForFactors: string;
         saveProductFirstForGallery: string;
@@ -10916,6 +10924,7 @@ export declare const languages: {
         selectAtLeastOneForm: string;
         selectAtLeastOneItem: string;
         selectAtLeastOneToApplyProfile: string;
+        selectAtLeastOneCriterion: string;
         selectBatch: string;
         selectBatchForProduct: string;
         selectCancellationMotive: string;

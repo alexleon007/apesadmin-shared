@@ -196,6 +196,7 @@ export const FORM_STATS = "stats";
 export const FORM_OTHER = "other";
 export const FORM_ACCOUNTING = "accounting";
 export const FORM_ATTENDANCE = "attendance";
+export const FORM_PRICELISTS = "pricelists";
 
 export const MAILSUPPLIER_GMAIL = "gmail";
 export const MAILSUPPLIER_OUTLOOK = "outlook";
