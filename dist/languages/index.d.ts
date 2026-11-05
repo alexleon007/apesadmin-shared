@@ -1492,6 +1492,11 @@ export declare const languages: {
         goodsReceipt: string;
         goodsReceiptShort: string;
         googleCalendarNewAvailable: string;
+        googleCalendarSyncBusy: string;
+        googleCalendarSyncErrors: string;
+        googleCalendarSyncFailed: string;
+        googleCalendarSyncResult: string;
+        googleCalendarSyncUpToDate: string;
         goToAdvancedPanel: string;
         grade: string;
         granularity: string;
@@ -5464,6 +5469,11 @@ export declare const languages: {
         goodsReceipt: string;
         goodsReceiptShort: string;
         googleCalendarNewAvailable: string;
+        googleCalendarSyncBusy: string;
+        googleCalendarSyncErrors: string;
+        googleCalendarSyncFailed: string;
+        googleCalendarSyncResult: string;
+        googleCalendarSyncUpToDate: string;
         goToAdvancedPanel: string;
         grade: string;
         granularity: string;
@@ -9436,6 +9446,11 @@ export declare const languages: {
         goodsReceipt: string;
         goodsReceiptShort: string;
         googleCalendarNewAvailable: string;
+        googleCalendarSyncBusy: string;
+        googleCalendarSyncErrors: string;
+        googleCalendarSyncFailed: string;
+        googleCalendarSyncResult: string;
+        googleCalendarSyncUpToDate: string;
         goToAdvancedPanel: string;
         grade: string;
         granularity: string;
