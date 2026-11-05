@@ -1795,6 +1795,7 @@
   "mailAccounts": "Mail Accounts",
   "mailAccountsManagement": "Mail Accounts Management",
   "mailAttachmentTooLarge": "The attachment exceeds the allowed size",
+  "mailBodyTooLarge": "The content is too large",
   "mailCollapse": "Collapse",
   "mailCompose": "Compose",
   "mailCredentialError": "The mail credential could not be read. Contact the administrator.",

@@ -1799,6 +1799,7 @@ export declare const languages: {
         mailAccounts: string;
         mailAccountsManagement: string;
         mailAttachmentTooLarge: string;
+        mailBodyTooLarge: string;
         mailCollapse: string;
         mailCompose: string;
         mailCredentialError: string;
@@ -5781,6 +5782,7 @@ export declare const languages: {
         mailAccounts: string;
         mailAccountsManagement: string;
         mailAttachmentTooLarge: string;
+        mailBodyTooLarge: string;
         mailCollapse: string;
         mailCompose: string;
         mailCredentialError: string;
@@ -9763,6 +9765,7 @@ export declare const languages: {
         mailAccounts: string;
         mailAccountsManagement: string;
         mailAttachmentTooLarge: string;
+        mailBodyTooLarge: string;
         mailCollapse: string;
         mailCompose: string;
         mailCredentialError: string;

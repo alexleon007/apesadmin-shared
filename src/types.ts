@@ -2566,6 +2566,8 @@ export type MailConfigType = {
   mailuser?: string | null;
   fromname?: string;
   color?: string;
+  /** HTML que se agrega al redactar desde este buzón. */
+  signature?: string;
   imaphost?: string;
   imapport?: number;
   imapsecurity?: MailSecurityType;
@@ -2657,6 +2659,8 @@ export type MailSendOptionsType = {
   bcc?: string[];
   subject: string;
   text?: string;
+  /** Versión HTML; `text` viaja como alternativa en texto plano. */
+  html?: string;
   attachments?: Array<{
     filename: string;
     contentBase64: string;
@@ -2664,6 +2668,25 @@ export type MailSendOptionsType = {
   }>;
   inReplyTo?: string;
   references?: string[];
+};
+
+/** company: la ve todo el equipo; personal: solo quien la creó. */
+export type MailTemplateScopeType = "company" | "personal";
+
+/** rich: hecha con el editor visual; html: importada (se conserva tal cual). */
+export type MailTemplateFormatType = "rich" | "html";
+
+export type MailTemplateType = {
+  idtemplate: number;
+  name: string;
+  subject: string;
+  body: string;
+  format: MailTemplateFormatType;
+  scope: MailTemplateScopeType;
+  iduser: number;
+  username: string;
+  isOwner: boolean;
+  updatedat?: string;
 };
 
 export type MailChannelTestType = { ok: boolean; errorKey?: string };
@@ -2716,6 +2739,7 @@ export type MailMessagesType = {
   folderChanged: string;
   timeout: string;
   attachmentTooLarge: string;
+  bodyTooLarge: string;
   invalidAttachment: string;
   invalidRecipient: string;
   tooManyRecipients: string;

@@ -1795,6 +1795,7 @@
     "mailAccounts": "Cuentas de Correo",
     "mailAccountsManagement": "Gestión de Cuentas de correo",
     "mailAttachmentTooLarge": "El adjunto supera el tamaño permitido",
+    "mailBodyTooLarge": "El contenido es demasiado grande",
     "mailCollapse": "Contraer",
     "mailCompose": "Redactar",
     "mailCredentialError": "No se pudo leer la credencial de correo. Contacta al administrador.",

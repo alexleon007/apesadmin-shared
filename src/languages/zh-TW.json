@@ -1795,6 +1795,7 @@
   "mailAccounts": "郵件帳戶",
   "mailAccountsManagement": "郵件帳戶管理",
   "mailAttachmentTooLarge": "附件超過允許的大小",
+  "mailBodyTooLarge": "內容過大",
   "mailCollapse": "收合",
   "mailCompose": "撰寫",
   "mailCredentialError": "無法讀取郵件憑證，請聯絡管理員。",
