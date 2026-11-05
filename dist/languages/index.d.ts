@@ -1491,6 +1491,8 @@ export declare const languages: {
         goodsAssortment: string;
         goodsReceipt: string;
         goodsReceiptShort: string;
+        googleCalendarDisconnectConfirm: string;
+        googleCalendarDisconnected: string;
         googleCalendarNewAvailable: string;
         googleCalendarSyncBusy: string;
         googleCalendarSyncErrors: string;
@@ -5468,6 +5470,8 @@ export declare const languages: {
         goodsAssortment: string;
         goodsReceipt: string;
         goodsReceiptShort: string;
+        googleCalendarDisconnectConfirm: string;
+        googleCalendarDisconnected: string;
         googleCalendarNewAvailable: string;
         googleCalendarSyncBusy: string;
         googleCalendarSyncErrors: string;
@@ -9445,6 +9449,8 @@ export declare const languages: {
         goodsAssortment: string;
         goodsReceipt: string;
         goodsReceiptShort: string;
+        googleCalendarDisconnectConfirm: string;
+        googleCalendarDisconnected: string;
         googleCalendarNewAvailable: string;
         googleCalendarSyncBusy: string;
         googleCalendarSyncErrors: string;

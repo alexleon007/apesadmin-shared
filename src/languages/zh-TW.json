@@ -1487,6 +1487,8 @@
   "goodsAssortment": "商品揀貨",
   "goodsReceipt": "收貨",
   "goodsReceiptShort": "收貨",
+  "googleCalendarDisconnectConfirm": "中斷 Google 日曆連線後，將從 ERP 移除從 Google 匯入的事件。在 ERP 建立的事件會保留。要繼續嗎？",
+  "googleCalendarDisconnected": "已中斷 Google 日曆連線，已移除 {{count}} 個匯入的事件。",
   "googleCalendarNewAvailable": "你的 Google 帳戶有新的日曆：{{names}}。可在「設定 › 系統串接」中同步。",
   "googleCalendarSyncBusy": "已有同步正在進行，請稍後再試。",
   "googleCalendarSyncErrors": "有 {{count}} 個 Google 日曆無法同步。",

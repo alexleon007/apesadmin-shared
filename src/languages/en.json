@@ -1487,6 +1487,8 @@
   "goodsAssortment": "Merchandise Assortment",
   "goodsReceipt": "Goods Receipt",
   "goodsReceiptShort": "Goods Receipt",
+  "googleCalendarDisconnectConfirm": "Disconnecting Google Calendar will remove the events imported from Google from the ERP. Events created in the ERP are kept. Continue?",
+  "googleCalendarDisconnected": "Google Calendar disconnected. {{count}} imported event(s) removed.",
   "googleCalendarNewAvailable": "There's a new calendar in your Google account: {{names}}. You can sync it from Configuration › Connections.",
   "googleCalendarSyncBusy": "A sync is already running. Try again in a few seconds.",
   "googleCalendarSyncErrors": "{{count}} Google calendar(s) could not be synced.",
