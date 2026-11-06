@@ -274,6 +274,7 @@ export declare const languages: {
         borderColor: string;
         borderWidth: string;
         borderWidthHelp: string;
+        botAccountAccessSoon: string;
         botAccountNone: string;
         botAccountsCount: string;
         botActionBookAppointment: string;
@@ -312,6 +313,8 @@ export declare const languages: {
         botCanDiscount: string;
         botCanPromiseDelivery: string;
         botCap: string;
+        botCatalogAccess: string;
+        botCatalogAccessHint: string;
         botChunks: string;
         botConfigure: string;
         botConflictAmbiguity: string;
@@ -351,6 +354,8 @@ export declare const languages: {
         botDraftTitle: string;
         botEscalatedToast: string;
         botEscalation: string;
+        botFamilies: string;
+        botFamiliesHint: string;
         botFixInAdmin: string;
         botFixInAdminWhy: string;
         botForbiddenTopics: string;
@@ -420,6 +425,7 @@ export declare const languages: {
         botNoAccount: string;
         botNoAccountWhy: string;
         botNoKnowledge: string;
+        botNoPrice: string;
         botNoSources: string;
         botOffHoursMessage: string;
         botOnNegative: string;
@@ -436,6 +442,7 @@ export declare const languages: {
         botPreviewFailed: string;
         botPreviewLive: string;
         botPreviewNote: string;
+        botPriceList: string;
         botPublishedAutonomous: string;
         botPublishedShadow: string;
         botPublishLead: string;
@@ -484,6 +491,10 @@ export declare const languages: {
         botSourceShadow: string;
         botSourcesTitle: string;
         botStepKnowledge: string;
+        botStockAvailable: string;
+        botStockHint: string;
+        botStockOff: string;
+        botStockQuantity: string;
         botStopWhy: string;
         botSuggestion1: string;
         botSuggestion2: string;
@@ -4257,6 +4268,7 @@ export declare const languages: {
         borderColor: string;
         borderWidth: string;
         borderWidthHelp: string;
+        botAccountAccessSoon: string;
         botAccountNone: string;
         botAccountsCount: string;
         botActionBookAppointment: string;
@@ -4295,6 +4307,8 @@ export declare const languages: {
         botCanDiscount: string;
         botCanPromiseDelivery: string;
         botCap: string;
+        botCatalogAccess: string;
+        botCatalogAccessHint: string;
         botChunks: string;
         botConfigure: string;
         botConflictAmbiguity: string;
@@ -4334,6 +4348,8 @@ export declare const languages: {
         botDraftTitle: string;
         botEscalatedToast: string;
         botEscalation: string;
+        botFamilies: string;
+        botFamiliesHint: string;
         botFixInAdmin: string;
         botFixInAdminWhy: string;
         botForbiddenTopics: string;
@@ -4403,6 +4419,7 @@ export declare const languages: {
         botNoAccount: string;
         botNoAccountWhy: string;
         botNoKnowledge: string;
+        botNoPrice: string;
         botNoSources: string;
         botOffHoursMessage: string;
         botOnNegative: string;
@@ -4419,6 +4436,7 @@ export declare const languages: {
         botPreviewFailed: string;
         botPreviewLive: string;
         botPreviewNote: string;
+        botPriceList: string;
         botPublishedAutonomous: string;
         botPublishedShadow: string;
         botPublishLead: string;
@@ -4467,6 +4485,10 @@ export declare const languages: {
         botSourceShadow: string;
         botSourcesTitle: string;
         botStepKnowledge: string;
+        botStockAvailable: string;
+        botStockHint: string;
+        botStockOff: string;
+        botStockQuantity: string;
         botStopWhy: string;
         botSuggestion1: string;
         botSuggestion2: string;
@@ -8240,6 +8262,7 @@ export declare const languages: {
         borderColor: string;
         borderWidth: string;
         borderWidthHelp: string;
+        botAccountAccessSoon: string;
         botAccountNone: string;
         botAccountsCount: string;
         botActionBookAppointment: string;
@@ -8278,6 +8301,8 @@ export declare const languages: {
         botCanDiscount: string;
         botCanPromiseDelivery: string;
         botCap: string;
+        botCatalogAccess: string;
+        botCatalogAccessHint: string;
         botChunks: string;
         botConfigure: string;
         botConflictAmbiguity: string;
@@ -8317,6 +8342,8 @@ export declare const languages: {
         botDraftTitle: string;
         botEscalatedToast: string;
         botEscalation: string;
+        botFamilies: string;
+        botFamiliesHint: string;
         botFixInAdmin: string;
         botFixInAdminWhy: string;
         botForbiddenTopics: string;
@@ -8386,6 +8413,7 @@ export declare const languages: {
         botNoAccount: string;
         botNoAccountWhy: string;
         botNoKnowledge: string;
+        botNoPrice: string;
         botNoSources: string;
         botOffHoursMessage: string;
         botOnNegative: string;
@@ -8402,6 +8430,7 @@ export declare const languages: {
         botPreviewFailed: string;
         botPreviewLive: string;
         botPreviewNote: string;
+        botPriceList: string;
         botPublishedAutonomous: string;
         botPublishedShadow: string;
         botPublishLead: string;
@@ -8450,6 +8479,10 @@ export declare const languages: {
         botSourceShadow: string;
         botSourcesTitle: string;
         botStepKnowledge: string;
+        botStockAvailable: string;
+        botStockHint: string;
+        botStockOff: string;
+        botStockQuantity: string;
         botStopWhy: string;
         botSuggestion1: string;
         botSuggestion2: string;

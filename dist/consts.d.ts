@@ -1,4 +1,4 @@
-import type { BotActionType, BotConfigType, BotConflictKindType, BotConflictSeverityType, BotContactTrustType, BotDocumentType, BotKnowledgeSourceType, BotModeType, BotPurposeType, BotStepType, ChannelScheduledStatusType, ClasifTypeKey, MailSupplierMetaType, RecurrenceErrorCode, WappLegacyPartyFieldType } from "./types";
+import type { BotAccessType, BotActionType, BotConfigType, BotConflictKindType, BotConflictSeverityType, BotContactTrustType, BotDocumentType, BotKnowledgeSourceType, BotModeType, BotPurposeType, BotStepType, BotStockModeType, ChannelScheduledStatusType, ClasifTypeKey, MailSupplierMetaType, RecurrenceErrorCode, WappLegacyPartyFieldType } from "./types";
 export declare const MODE_CREATE = "create";
 export declare const MODE_NEW = "new";
 export declare const MODE_EDIT = "edit";
@@ -389,6 +389,9 @@ export declare const BOT_DEFAULT_TONE: BotConfigType["tone"];
 export declare const BOT_DEFAULT_ESCALATION: BotConfigType["escalation"];
 export declare const BOT_DEFAULT_LIMITS: BotConfigType["limits"];
 export declare const BOT_DEFAULT_ACTIONS: BotConfigType["actions"];
+export declare const BOT_STOCK_MODES: BotStockModeType[];
+export declare const BOT_STOCK_MODE_LABEL_KEYS: Record<BotStockModeType, string>;
+export declare const BOT_DEFAULT_ACCESS: BotAccessType;
 export declare const BOT_MODEL_OPTIONS: {
     value: string;
     name: string;

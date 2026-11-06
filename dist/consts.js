@@ -1057,6 +1057,19 @@ export const BOT_DEFAULT_ACTIONS = {
     maxAmount: 0,
     minTrustForAccountData: "verified",
 };
+export const BOT_STOCK_MODES = [
+    "off",
+    "available",
+    "quantity",
+];
+export const BOT_STOCK_MODE_LABEL_KEYS = {
+    off: "botStockOff",
+    available: "botStockAvailable",
+    quantity: "botStockQuantity",
+};
+export const BOT_DEFAULT_ACCESS = {
+    catalog: { enabled: false, pricelist: 0, stock: "off", families: [] },
+};
 export const BOT_MODEL_OPTIONS = [
     {
         value: "claude-opus-5-5",

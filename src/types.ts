@@ -1051,6 +1051,19 @@ export type BotActionsType = {
   minTrustForAccountData: BotContactTrustType;
 };
 
+export type BotStockModeType = "off" | "available" | "quantity";
+
+export type BotCatalogAccessType = {
+  enabled: boolean;
+  pricelist: number;
+  stock: BotStockModeType;
+  families: number[];
+};
+
+export type BotAccessType = {
+  catalog: BotCatalogAccessType;
+};
+
 export type BotPurposeType = "sales" | "support" | "hr" | "other";
 
 export type BotModeType = "draft" | "shadow" | "autonomous";
@@ -1125,6 +1138,7 @@ export type BotConfigType = {
   escalation: BotEscalationType;
   limits: BotLimitsType;
   actions: BotActionsType;
+  access: BotAccessType;
   settings: BotSettingsType;
 };
 

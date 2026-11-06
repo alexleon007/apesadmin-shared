@@ -1,4 +1,5 @@
 import type {
+  BotAccessType,
   BotActionType,
   BotConfigType,
   BotConflictKindType,
@@ -9,6 +10,7 @@ import type {
   BotModeType,
   BotPurposeType,
   BotStepType,
+  BotStockModeType,
   ChannelScheduledStatusType,
   ClasifTypeKey,
   MailSupplierMetaType,
@@ -1317,6 +1319,22 @@ export const BOT_DEFAULT_ACTIONS: BotConfigType["actions"] = {
   enabled: ["quote", "create_lead"],
   maxAmount: 0,
   minTrustForAccountData: "verified",
+};
+
+export const BOT_STOCK_MODES: BotStockModeType[] = [
+  "off",
+  "available",
+  "quantity",
+];
+
+export const BOT_STOCK_MODE_LABEL_KEYS: Record<BotStockModeType, string> = {
+  off: "botStockOff",
+  available: "botStockAvailable",
+  quantity: "botStockQuantity",
+};
+
+export const BOT_DEFAULT_ACCESS: BotAccessType = {
+  catalog: { enabled: false, pricelist: 0, stock: "off", families: [] },
 };
 
 export const BOT_MODEL_OPTIONS = [
