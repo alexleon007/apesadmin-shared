@@ -217,6 +217,7 @@ export type ChannelConversationType = {
     isGroup: number;
     /** '' | suspended | deleted */
     groupStatus: string;
+    partyVerified: boolean;
 };
 export type ChannelPartyLinkType = {
     idcc: number;
