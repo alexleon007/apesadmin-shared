@@ -1176,6 +1176,11 @@ export const BOT_ACTIONS: BotActionType[] = [
 
 export const BOT_CONTACT_TRUSTS: BotContactTrustType[] = ["verified", "known"];
 
+export const BOT_IMPLEMENTED_ACTIONS: BotActionType[] = [
+  "create_lead",
+  "create_ticket",
+];
+
 export const BOT_MODE_LABEL_KEYS: Record<BotModeType, string> = {
   draft: "botModeDraft",
   shadow: "botModeShadow",

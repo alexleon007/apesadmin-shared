@@ -372,6 +372,7 @@ export declare const BOT_STEPS: BotStepType[];
 export declare const BOT_PURPOSES: BotPurposeType[];
 export declare const BOT_ACTIONS: BotActionType[];
 export declare const BOT_CONTACT_TRUSTS: BotContactTrustType[];
+export declare const BOT_IMPLEMENTED_ACTIONS: BotActionType[];
 export declare const BOT_MODE_LABEL_KEYS: Record<BotModeType, string>;
 export declare const BOT_STEP_LABEL_KEYS: Record<BotStepType, string>;
 export declare const BOT_PURPOSE_LABEL_KEYS: Record<BotPurposeType, string>;

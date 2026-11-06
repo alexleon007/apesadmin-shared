@@ -935,6 +935,10 @@ export const BOT_ACTIONS = [
     "send_statement",
 ];
 export const BOT_CONTACT_TRUSTS = ["verified", "known"];
+export const BOT_IMPLEMENTED_ACTIONS = [
+    "create_lead",
+    "create_ticket",
+];
 export const BOT_MODE_LABEL_KEYS = {
     draft: "botModeDraft",
     shadow: "botModeShadow",

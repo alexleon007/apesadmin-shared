@@ -1066,6 +1066,16 @@ export type BotActionsType = {
   minTrustForAccountData: BotContactTrustType;
 };
 
+export type BotActionStatusType = "simulated" | "proposed" | "done" | "failed";
+
+export type BotActionRecordType = {
+  tool: string;
+  input: Record<string, unknown>;
+  status: BotActionStatusType;
+  result?: unknown;
+  error?: string;
+};
+
 export type BotStockModeType = "off" | "available" | "quantity";
 
 export type BotCatalogAccessType = {
@@ -1111,11 +1121,12 @@ export type BotSandboxMessageType = {
   sources?: BotSourceType[];
   escalate?: boolean;
   corrected?: boolean;
+  actions?: BotActionRecordType[];
 };
 
 export type BotPreviewTurnType = Pick<
   BotSandboxMessageType,
-  "role" | "text" | "escalate"
+  "role" | "text" | "escalate" | "actions"
 >;
 
 export type BotAccountType = {
@@ -1185,6 +1196,7 @@ export type BotTestResultType = {
   messages: string[];
   escalate: boolean;
   knowledgeMode: "full" | "search" | "empty";
+  actions?: BotActionRecordType[];
 };
 
 export type ConversationBotType = {
@@ -1198,6 +1210,7 @@ export type ConversationBotType = {
     action: string;
     reason: string;
     sources: BotSourceType[];
+    actions?: BotActionRecordType[];
   } | null;
 } | null;
 
