@@ -1174,11 +1174,7 @@ export const BOT_ACTIONS: BotActionType[] = [
   "send_statement",
 ];
 
-export const BOT_CONTACT_TRUSTS: BotContactTrustType[] = [
-  "verified",
-  "known",
-  "unknown",
-];
+export const BOT_CONTACT_TRUSTS: BotContactTrustType[] = ["verified", "known"];
 
 export const BOT_MODE_LABEL_KEYS: Record<BotModeType, string> = {
   draft: "botModeDraft",
@@ -1348,6 +1344,7 @@ export const BOT_STOCK_MODE_LABEL_KEYS: Record<BotStockModeType, string> = {
 
 export const BOT_DEFAULT_ACCESS: BotAccessType = {
   catalog: { enabled: false, pricelist: 0, stock: "off", families: [] },
+  account: { orders: false, balance: false },
 };
 
 export const BOT_MODEL_OPTIONS = [

@@ -934,11 +934,7 @@ export const BOT_ACTIONS = [
     "issue_invoice",
     "send_statement",
 ];
-export const BOT_CONTACT_TRUSTS = [
-    "verified",
-    "known",
-    "unknown",
-];
+export const BOT_CONTACT_TRUSTS = ["verified", "known"];
 export const BOT_MODE_LABEL_KEYS = {
     draft: "botModeDraft",
     shadow: "botModeShadow",
@@ -1079,6 +1075,7 @@ export const BOT_STOCK_MODE_LABEL_KEYS = {
 };
 export const BOT_DEFAULT_ACCESS = {
     catalog: { enabled: false, pricelist: 0, stock: "off", families: [] },
+    account: { orders: false, balance: false },
 };
 export const BOT_MODEL_OPTIONS = [
     {

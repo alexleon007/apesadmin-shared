@@ -1075,8 +1075,14 @@ export type BotCatalogAccessType = {
   families: number[];
 };
 
+export type BotAccountAccessType = {
+  orders: boolean;
+  balance: boolean;
+};
+
 export type BotAccessType = {
   catalog: BotCatalogAccessType;
+  account: BotAccountAccessType;
 };
 
 export type BotPurposeType = "sales" | "support" | "hr" | "other";
