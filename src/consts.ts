@@ -1261,6 +1261,19 @@ export const BOT_ACTION_LABEL_KEYS: Record<BotActionType, string> = {
   issue_invoice: "botActionIssueInvoice",
 };
 
+export const CHAT_PARTY_TRUST_LABEL_KEYS: Record<BotContactTrustType, string> =
+  {
+    verified: "chatPartyTrustVerified",
+    known: "chatPartyTrustKnown",
+    unknown: "chatPartyTrustUnknown",
+  };
+
+export const CHAT_PARTY_TRUST_HINT_KEYS: Record<BotContactTrustType, string> = {
+  verified: "chatPartyTrustVerifiedHint",
+  known: "chatPartyTrustKnownHint",
+  unknown: "chatPartyTrustUnknownHint",
+};
+
 export const BOT_TRUST_LABEL_KEYS: Record<BotContactTrustType, string> = {
   verified: "botTrustVerified",
   known: "botTrustKnown",

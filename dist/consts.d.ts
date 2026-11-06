@@ -382,6 +382,8 @@ export declare const BOT_CONFLICT_TYPE_LABEL_KEYS: Record<BotConflictKindType, s
 export declare const BOT_PROCESS_LABEL_KEYS: Record<BotDocumentType["process"], string>;
 export declare const BOT_VERTICAL_LABEL_KEYS: Record<string, string>;
 export declare const BOT_ACTION_LABEL_KEYS: Record<BotActionType, string>;
+export declare const CHAT_PARTY_TRUST_LABEL_KEYS: Record<BotContactTrustType, string>;
+export declare const CHAT_PARTY_TRUST_HINT_KEYS: Record<BotContactTrustType, string>;
 export declare const BOT_TRUST_LABEL_KEYS: Record<BotContactTrustType, string>;
 export declare const BOT_PAUSE_LABEL_KEYS: Record<string, string>;
 export declare const BOT_SUGGESTION_KEYS: string[];

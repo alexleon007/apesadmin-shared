@@ -1005,6 +1005,16 @@ export const BOT_ACTION_LABEL_KEYS = {
     create_ticket: "botActionCreateTicket",
     issue_invoice: "botActionIssueInvoice",
 };
+export const CHAT_PARTY_TRUST_LABEL_KEYS = {
+    verified: "chatPartyTrustVerified",
+    known: "chatPartyTrustKnown",
+    unknown: "chatPartyTrustUnknown",
+};
+export const CHAT_PARTY_TRUST_HINT_KEYS = {
+    verified: "chatPartyTrustVerifiedHint",
+    known: "chatPartyTrustKnownHint",
+    unknown: "chatPartyTrustUnknownHint",
+};
 export const BOT_TRUST_LABEL_KEYS = {
     verified: "botTrustVerified",
     known: "botTrustKnown",

@@ -218,6 +218,19 @@ export type ChannelConversationType = {
     /** '' | suspended | deleted */
     groupStatus: string;
 };
+export type ChannelPartyLinkType = {
+    idcc: number;
+    idparty: number;
+    partyName: string;
+    partyTel: string;
+    channel: string;
+    isGroup: boolean;
+    manual: boolean;
+    telMatch: boolean;
+    trust: BotContactTrustType;
+    verifiedAt: string | null;
+    verifiedBy: string;
+};
 /**
  * Adjunto de un mensaje, ya descargado de Meta y guardado por nosotros.
  *
