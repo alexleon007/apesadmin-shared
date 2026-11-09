@@ -947,6 +947,7 @@ export declare const languages: {
         contactPhone: string;
         contactProviderForTokens: string;
         contacts: string;
+        contact: string;
         contactSupportPayment: string;
         contaeAF: string;
         contaeAnnualBalance: string;
@@ -1716,6 +1717,7 @@ export declare const languages: {
         invalidZipCode: string;
         inventoriable: string;
         inventories: string;
+        assignInventoryToContacts: string;
         inventory: string;
         inventoryAdjustmentGain: string;
         inventoryAdjustmentLoss: string;
@@ -4965,6 +4967,7 @@ export declare const languages: {
         contactPhone: string;
         contactProviderForTokens: string;
         contacts: string;
+        contact: string;
         contactSupportPayment: string;
         contaeAF: string;
         contaeAnnualBalance: string;
@@ -5734,6 +5737,7 @@ export declare const languages: {
         invalidZipCode: string;
         inventoriable: string;
         inventories: string;
+        assignInventoryToContacts: string;
         inventory: string;
         inventoryAdjustmentGain: string;
         inventoryAdjustmentLoss: string;
@@ -8983,6 +8987,7 @@ export declare const languages: {
         contactPhone: string;
         contactProviderForTokens: string;
         contacts: string;
+        contact: string;
         contactSupportPayment: string;
         contaeAF: string;
         contaeAnnualBalance: string;
@@ -9752,6 +9757,7 @@ export declare const languages: {
         invalidZipCode: string;
         inventoriable: string;
         inventories: string;
+        assignInventoryToContacts: string;
         inventory: string;
         inventoryAdjustmentGain: string;
         inventoryAdjustmentLoss: string;

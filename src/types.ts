@@ -2523,6 +2523,8 @@ export type InventoryType = {
   whname: string;
   idloc?: number;
   locname?: string;
+  idparty?: number;
+  partyname?: string;
   idcmp: number;
   cmpname: string;
   prodbatch: number;
@@ -3793,6 +3795,7 @@ export type SystemSettingsType = {
   project_property_managment: boolean;
   inventory_addition_on_po: boolean;
   inventory_movement_on_transfer: boolean;
+  inventory_assign_to_party?: boolean;
   inventory_picking_mode: string;
   inventory_picking_scanner_only?: boolean;
   f_order_field_value_date1: string;
