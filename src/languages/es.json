@@ -4184,5 +4184,12 @@
   "entityNoFields": "Esta pestaña no tiene campos configurados",
   "entityAlreadyLinked": "Este registro ya está ligado",
   "entityPendingSave": "Se guardará junto con el registro",
-  "entityLinkRolesHelp": "Define qué papel tiene cada cliente, proveedor o colaborador con el registro. Ejemplo: en Vehículos, «Propietario, Conductor»; en Mascotas, «Dueño, Paseador». Al agregar o ligar un registro se elige uno de esta lista. Escríbelos separados por coma. Si lo dejas vacío, el rol se escribe libre, o no se pide si cada registro tiene un solo dueño."
+  "entityLinkRolesHelp": "Define qué papel tiene cada cliente, proveedor o colaborador con el registro. Ejemplo: en Vehículos, «Propietario, Conductor»; en Mascotas, «Dueño, Paseador». Al agregar o ligar un registro se elige uno de esta lista. Escríbelos separados por coma. Si lo dejas vacío, el rol se escribe libre, o no se pide si cada registro tiene un solo dueño.",
+  "orderEntityMode": "Entidades relacionadas",
+  "orderEntityModeHelp": "Permite indicar a qué mascota, vehículo o equipo del cliente corresponde la venta. Sin entidades: no se pide. Por documento: se elige una sola en el encabezado y aplica a todas las partidas. Por partida: se elige en cada partida del contenido, útil cuando una venta incluye servicios para varias (ej. baño para Max y corte para Luna). Las entidades se crean en Conceptos como «Pestaña de registros».",
+  "orderEntityModeNone": "Sin entidades",
+  "orderEntityModeDocument": "Por documento",
+  "orderEntityModeLine": "Por partida",
+  "orderEntity": "Entidad",
+  "orderEntityEmpty": "Sin asignar"
 }

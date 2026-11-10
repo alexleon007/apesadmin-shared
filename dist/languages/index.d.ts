@@ -4189,6 +4189,13 @@ export declare const languages: {
         entityAlreadyLinked: string;
         entityPendingSave: string;
         entityLinkRolesHelp: string;
+        orderEntityMode: string;
+        orderEntityModeHelp: string;
+        orderEntityModeNone: string;
+        orderEntityModeDocument: string;
+        orderEntityModeLine: string;
+        orderEntity: string;
+        orderEntityEmpty: string;
     };
     readonly en: {
         aboveMax: string;
@@ -8377,6 +8384,13 @@ export declare const languages: {
         entityAlreadyLinked: string;
         entityPendingSave: string;
         entityLinkRolesHelp: string;
+        orderEntityMode: string;
+        orderEntityModeHelp: string;
+        orderEntityModeNone: string;
+        orderEntityModeDocument: string;
+        orderEntityModeLine: string;
+        orderEntity: string;
+        orderEntityEmpty: string;
     };
     readonly "zh-TW": {
         aboveMax: string;
@@ -12565,6 +12579,13 @@ export declare const languages: {
         entityAlreadyLinked: string;
         entityPendingSave: string;
         entityLinkRolesHelp: string;
+        orderEntityMode: string;
+        orderEntityModeHelp: string;
+        orderEntityModeNone: string;
+        orderEntityModeDocument: string;
+        orderEntityModeLine: string;
+        orderEntity: string;
+        orderEntityEmpty: string;
     };
 };
 export type LanguageKey = keyof typeof languages;

@@ -68,6 +68,11 @@ export const CONCEPT_CLAS_ENTITY = "entity";
 export const CONCEPT_TYPE_PARTY_ENTITY = "party_entity";
 export const FORM_ENTITIES = "partyentities";
 
+// orders_entity_mode: cómo se elige la entidad en ventas/pedidos.
+export const ORDER_ENTITY_MODE_NONE = "none";
+export const ORDER_ENTITY_MODE_DOCUMENT = "document";
+export const ORDER_ENTITY_MODE_LINE = "line";
+
 export const OS_ANDROID = "android";
 export const OS_IOS = "ios";
 

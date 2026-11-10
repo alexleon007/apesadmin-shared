@@ -2682,6 +2682,10 @@ export type OrderDetailType = {
     prodlocations?: ProductLocationType[];
     /** 1 = el producto se controla por lote. */
     prodbatch?: number;
+    /** parties_entities.idpent de la partida (mascota, vehículo…); 0 = ninguna. */
+    identity?: number;
+    /** Nombre de la entidad al momento de leer la orden. */
+    entityname?: string;
 };
 export type OrderLogType = {
     idhistory: number;
@@ -3478,6 +3482,8 @@ export type SystemSettingsType = {
     decimals: number;
     timezone: string;
     orders_pricelist_mode: string;
+    /** none | document | line (ORDER_ENTITY_MODE_*). Falta = none. */
+    orders_entity_mode?: string;
     price_list_by_line: boolean;
     reserve_inventory_on_order: boolean;
     allow_orders_without_stock: boolean;

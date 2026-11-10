@@ -4184,5 +4184,12 @@
   "entityNoFields": "此分頁尚未設定欄位",
   "entityAlreadyLinked": "此紀錄已關聯",
   "entityPendingSave": "將與紀錄一併儲存",
-  "entityLinkRolesHelp": "定義每個客戶、供應商或員工與此紀錄的關係。例如：車輛可設「車主, 駕駛」；寵物可設「飼主, 遛狗員」。新增或關聯紀錄時，會從此清單選擇角色。請以逗號分隔。若留空，角色可自由輸入；若每筆紀錄只有一位擁有者，則不會詢問角色。"
+  "entityLinkRolesHelp": "定義每個客戶、供應商或員工與此紀錄的關係。例如：車輛可設「車主, 駕駛」；寵物可設「飼主, 遛狗員」。新增或關聯紀錄時，會從此清單選擇角色。請以逗號分隔。若留空，角色可自由輸入；若每筆紀錄只有一位擁有者，則不會詢問角色。",
+  "orderEntityMode": "相關實體",
+  "orderEntityModeHelp": "可記錄此筆銷售對應客戶的哪一隻寵物、哪一台車輛或設備。無實體：不詢問。依單據：在表頭選擇一個，套用至所有明細。依明細：在內容的每一筆明細選擇，適用於一筆銷售涵蓋多個對象時（例如替 Max 洗澡、替 Luna 剪毛）。實體在「概念」中以「紀錄分頁」建立。",
+  "orderEntityModeNone": "無實體",
+  "orderEntityModeDocument": "依單據",
+  "orderEntityModeLine": "依明細",
+  "orderEntity": "實體",
+  "orderEntityEmpty": "未指定"
 }

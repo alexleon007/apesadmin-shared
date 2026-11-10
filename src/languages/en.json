@@ -4184,5 +4184,12 @@
   "entityNoFields": "This tab has no configured fields",
   "entityAlreadyLinked": "This record is already linked",
   "entityPendingSave": "Will be saved together with the record",
-  "entityLinkRolesHelp": "Defines the role each customer, supplier or collaborator plays with the record. Example: for Vehicles, “Owner, Driver”; for Pets, “Owner, Walker”. When adding or linking a record, one of these is picked from a list. Separate them with commas. If left empty, the role is typed freely, or not asked at all when each record has a single owner."
+  "entityLinkRolesHelp": "Defines the role each customer, supplier or collaborator plays with the record. Example: for Vehicles, “Owner, Driver”; for Pets, “Owner, Walker”. When adding or linking a record, one of these is picked from a list. Separate them with commas. If left empty, the role is typed freely, or not asked at all when each record has a single owner.",
+  "orderEntityMode": "Related entities",
+  "orderEntityModeHelp": "Lets you record which of the customer's pets, vehicles or equipment the sale is for. No entities: not asked. Per document: one is chosen in the header and applies to every line. Per line: chosen on each content line, useful when a sale covers several (e.g. a bath for Max and a haircut for Luna). Entities are created in Concepts as a “Records tab”.",
+  "orderEntityModeNone": "No entities",
+  "orderEntityModeDocument": "Per document",
+  "orderEntityModeLine": "Per line",
+  "orderEntity": "Entity",
+  "orderEntityEmpty": "Unassigned"
 }
