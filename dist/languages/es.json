@@ -4171,7 +4171,7 @@
     "entitySingular": "Nombre singular",
     "entitySingularHint": "Ej. Mascota, Vehículo",
     "entityLinkRoles": "Roles del vínculo",
-    "entityLinkRolesHint": "Separados por coma, ej. Dueño, Responsable. Vacío = texto libre",
+    "entityLinkRolesHint": "Ej. Dueño, Paseador",
     "entityMultiOwner": "Permitir varios dueños",
     "entityMultiOwnerHint": "Un mismo registro puede ligarse a más de un cliente, proveedor o colaborador",
     "entityAdd": "Agregar {{name}}",
@@ -4183,5 +4183,6 @@
     "entityNameRequired": "Captura al menos el nombre",
     "entityNoFields": "Esta pestaña no tiene campos configurados",
     "entityAlreadyLinked": "Este registro ya está ligado",
-    "entityPendingSave": "Se guardará junto con el registro"
+    "entityPendingSave": "Se guardará junto con el registro",
+    "entityLinkRolesHelp": "Define qué papel tiene cada cliente, proveedor o colaborador con el registro. Ejemplo: en Vehículos, «Propietario, Conductor»; en Mascotas, «Dueño, Paseador». Al agregar o ligar un registro se elige uno de esta lista. Escríbelos separados por coma. Si lo dejas vacío, el rol se escribe libre, o no se pide si cada registro tiene un solo dueño."
 }

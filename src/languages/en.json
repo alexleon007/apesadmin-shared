@@ -4171,7 +4171,7 @@
   "entitySingular": "Singular name",
   "entitySingularHint": "E.g. Pet, Vehicle",
   "entityLinkRoles": "Link roles",
-  "entityLinkRolesHint": "Comma separated, e.g. Owner, Guardian. Empty = free text",
+  "entityLinkRolesHint": "E.g. Owner, Walker",
   "entityMultiOwner": "Allow multiple owners",
   "entityMultiOwnerHint": "The same record can be linked to more than one customer, supplier or collaborator",
   "entityAdd": "Add {{name}}",
@@ -4183,5 +4183,6 @@
   "entityNameRequired": "Enter at least the name",
   "entityNoFields": "This tab has no configured fields",
   "entityAlreadyLinked": "This record is already linked",
-  "entityPendingSave": "Will be saved together with the record"
+  "entityPendingSave": "Will be saved together with the record",
+  "entityLinkRolesHelp": "Defines the role each customer, supplier or collaborator plays with the record. Example: for Vehicles, “Owner, Driver”; for Pets, “Owner, Walker”. When adding or linking a record, one of these is picked from a list. Separate them with commas. If left empty, the role is typed freely, or not asked at all when each record has a single owner."
 }

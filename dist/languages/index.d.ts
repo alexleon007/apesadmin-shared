@@ -4188,6 +4188,7 @@ export declare const languages: {
         entityNoFields: string;
         entityAlreadyLinked: string;
         entityPendingSave: string;
+        entityLinkRolesHelp: string;
     };
     readonly en: {
         aboveMax: string;
@@ -8375,6 +8376,7 @@ export declare const languages: {
         entityNoFields: string;
         entityAlreadyLinked: string;
         entityPendingSave: string;
+        entityLinkRolesHelp: string;
     };
     readonly "zh-TW": {
         aboveMax: string;
@@ -12562,6 +12564,7 @@ export declare const languages: {
         entityNoFields: string;
         entityAlreadyLinked: string;
         entityPendingSave: string;
+        entityLinkRolesHelp: string;
     };
 };
 export type LanguageKey = keyof typeof languages;

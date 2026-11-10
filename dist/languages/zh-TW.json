@@ -4171,7 +4171,7 @@
     "entitySingular": "單數名稱",
     "entitySingularHint": "例如：寵物、車輛",
     "entityLinkRoles": "關聯角色",
-    "entityLinkRolesHint": "以逗號分隔，例如：擁有者、負責人。留空 = 自由輸入",
+    "entityLinkRolesHint": "例如：飼主, 遛狗員",
     "entityMultiOwner": "允許多個擁有者",
     "entityMultiOwnerHint": "同一筆紀錄可關聯至多個客戶、供應商或員工",
     "entityAdd": "新增{{name}}",
@@ -4183,5 +4183,6 @@
     "entityNameRequired": "請至少輸入名稱",
     "entityNoFields": "此分頁尚未設定欄位",
     "entityAlreadyLinked": "此紀錄已關聯",
-    "entityPendingSave": "將與紀錄一併儲存"
+    "entityPendingSave": "將與紀錄一併儲存",
+    "entityLinkRolesHelp": "定義每個客戶、供應商或員工與此紀錄的關係。例如：車輛可設「車主, 駕駛」；寵物可設「飼主, 遛狗員」。新增或關聯紀錄時，會從此清單選擇角色。請以逗號分隔。若留空，角色可自由輸入；若每筆紀錄只有一位擁有者，則不會詢問角色。"
 }
