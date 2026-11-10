@@ -2174,7 +2174,52 @@ export type ConceptType = {
   conceptunit: string;
   conceptstatus: number;
   conceptstatusname: string;
+  conceptconfig?: ConceptEntityConfigType;
   fields: ConceptFieldsType[];
+};
+
+// Configuración de un concepto clas_concept = "entity" (una pestaña de
+// entidades relacionadas en el formulario de parties: Mascotas, Vehículos…).
+export type ConceptEntityConfigType = {
+  roles: string[];
+  singular: string;
+  linkRoles: string[];
+  multiOwner: boolean;
+  inOrders: boolean;
+};
+
+export type PartyEntityOwnerType = {
+  idparty: number;
+  partyname: string;
+  partycode: string;
+  role: string;
+};
+
+export type PartyEntityFieldType = {
+  idconcept: number;
+  fieldcode: string;
+  fieldname?: string;
+  fvalue: string;
+  fexpiration?: string;
+};
+
+// Una entidad (Max, el Jetta…) vista desde una party: identity es la entidad,
+// idpentl el vínculo con esta party. linkstatus = 0 cierra el vínculo al
+// guardar; dirty indica que hay que reescribir sus valores.
+export type PartyEntityType = {
+  identity: number;
+  uuid?: string;
+  idconcept: number;
+  name: string;
+  status?: number;
+  createdat?: string;
+  fields: PartyEntityFieldType[];
+  owners: PartyEntityOwnerType[];
+  idpentl: number;
+  role: string;
+  isprimary: number;
+  linkstatus: number;
+  dirty?: boolean;
 };
 
 export type ConnectionStatusType = "connected" | "server-down" | "offline";
@@ -3113,7 +3158,9 @@ export type PartyType = {
   partyorigin: number;
   partyoriginname?: string;
   contacts: ContactType[];
+  entities?: PartyEntityType[];
   addresses: {
+    idaddress?: number;
     name: string;
     address: string;
     cp: string;

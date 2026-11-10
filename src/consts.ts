@@ -62,6 +62,12 @@ export const RECORD_BITACORA = "bitacora";
 export const RECORD_RECORDS = "records";
 export const RECORD_FOLDERS = "folders";
 
+// Conceptos de entidades relacionadas: cada uno es una pestaña del
+// formulario de parties (Mascotas, Vehículos…).
+export const CONCEPT_CLAS_ENTITY = "entity";
+export const CONCEPT_TYPE_PARTY_ENTITY = "party_entity";
+export const FORM_ENTITIES = "partyentities";
+
 export const OS_ANDROID = "android";
 export const OS_IOS = "ios";
 
