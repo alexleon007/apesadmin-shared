@@ -3569,7 +3569,7 @@
   "transcriptionPromptPlaceholder": "Write the prompt for audio transcription...",
   "transfer": "Transfer",
   "transferPayment": "To pay via transfer",
-  "transferUploadNotFound": "{{count}} line item(s) were skipped; warehouse(s) or location(s) not found: {{names}}",
+  "transferUploadNotFound": "{{count}} line item(s) were skipped; warehouse(s), location(s) or contact(s) not found: {{names}}",
   "transport": "Transport",
   "treasury": "Treasury",
   "tree": "Tree",

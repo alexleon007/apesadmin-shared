@@ -3569,7 +3569,7 @@
   "transcriptionPromptPlaceholder": "輸入音訊轉錄的提示詞...",
   "transfer": "轉帳",
   "transferPayment": "透過轉帳付款",
-  "transferUploadNotFound": "已略過 {{count}} 筆項目；找不到倉庫或位置：{{names}}",
+  "transferUploadNotFound": "已略過 {{count}} 筆項目；找不到倉庫、位置或聯絡人：{{names}}",
   "transport": "運輸",
   "treasury": "財務",
   "tree": "樹",

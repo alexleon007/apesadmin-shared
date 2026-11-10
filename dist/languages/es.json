@@ -3569,7 +3569,7 @@
     "transcriptionPromptPlaceholder": "Escribe el prompt para la transcripción de audio...",
     "transfer": "Transferencia",
     "transferPayment": "Para pagar mediante transferencia",
-    "transferUploadNotFound": "Se omitieron {{count}} partida(s); almacén(es) o ubicación(es) no encontrado(s): {{names}}",
+    "transferUploadNotFound": "Se omitieron {{count}} partida(s); almacén(es), ubicación(es) o contacto(s) no encontrado(s): {{names}}",
     "transport": "Transporte",
     "treasury": "Tesorería",
     "tree": "Árbol",
