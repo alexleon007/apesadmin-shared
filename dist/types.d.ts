@@ -3065,6 +3065,8 @@ export type ProductType = {
     prodfields: ConceptFieldsValuesType[];
     taxvalues: TaxValueType[];
     inventoryTracked: boolean;
+    /** Publicable en e-commerce (página web, Shopify...). */
+    ecommercePublish?: boolean;
     pricePerUnit: boolean;
     prodbarcodes: BarcodeType[];
     prodlocations: ProductLocationType[];
@@ -3940,6 +3942,86 @@ export type ProductEcommerceStoreType = {
     provider: "shopify";
     shop: string;
     link: ProductEcommerceLinkType | null;
+};
+/** list = precio de una lista; fixed = precio propio. Ambos antes de impuestos. */
+export type ProductEcommercePriceModeType = "list" | "fixed";
+/** Configuración e-commerce ÚNICA del producto, para todos los canales. */
+export type ProductEcommerceConfigType = {
+    publish: boolean;
+    pricemode: ProductEcommercePriceModeType;
+    pricelist: number;
+    price: number;
+    slug: string;
+    webdesc: string;
+    featured: boolean;
+};
+export type ProductEcommercePricingType = {
+    /** Antes de impuestos. */
+    base: number;
+    taxFactor: number;
+    /** Con impuestos, a 2 decimales: lo que ve el comprador. */
+    final: number;
+};
+export type ProductEcommerceWebsiteReasonType = "" | "not_published" | "catalog_disabled" | "filtered_family" | "filtered_company" | "no_price";
+export type ProductEcommerceWebsiteChannelType = {
+    idweb: number;
+    name: string;
+    url: string | null;
+    productUrl: string | null;
+    visible: boolean;
+    reason: ProductEcommerceWebsiteReasonType;
+};
+export type ProductEcommerceInfoType = {
+    config: ProductEcommerceConfigType;
+    pricing: ProductEcommercePricingType | null;
+    channels: {
+        website: ProductEcommerceWebsiteChannelType[];
+    };
+};
+export type WebsiteAssetRefType = {
+    assetId: string;
+    alt: string;
+    url?: string;
+};
+export type WebsitePostStateType = "draft" | "published";
+export type WebsitePostType = {
+    id: number;
+    idweb: number;
+    slug: string;
+    title: string;
+    excerpt: string;
+    bodyHtml: string;
+    cover: WebsiteAssetRefType | null;
+    seoTitle: string;
+    seoDescription: string;
+    author: string;
+    state: WebsitePostStateType;
+    publishedAt: string | null;
+    updatedAt: string;
+    url: string | null;
+};
+/** Vacío = todas las familias / empresas. */
+export type WebsiteCatalogConfigType = {
+    families: number[];
+    companies: number[];
+};
+export type WebsiteSyncStateType = {
+    at: string | null;
+    running: boolean;
+    products: number;
+    posts: number;
+    uploaded: number;
+    progress: {
+        done: number;
+        total: number;
+    } | null;
+    error: string | null;
+};
+export type WebsiteCatalogInfoType = {
+    config: WebsiteCatalogConfigType;
+    sync: WebsiteSyncStateType;
+    publishableCount: number;
+    enabled: boolean;
 };
 export type AggregationOperation = "sum" | "avg" | "count" | "count_distinct" | "min" | "max";
 export type BarConfig = {
