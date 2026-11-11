@@ -1336,6 +1336,7 @@
     "eventNotFound": "Event not found",
     "eventQuery": "Event Query",
     "evidence": "Evidence",
+    "examClosed": "The exam is already closed",
     "examNotAssigned": "Exam not assigned",
     "examNotFound": "Exam not found",
     "example": "Example",

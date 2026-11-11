@@ -2341,10 +2341,24 @@ export type ExamQuestionType = {
   answers: any[];
 };
 
+export type ExamAvailabilityType = "upcoming" | "open" | "closed";
+
+export type ExamGradeType = {
+  total: number;
+  answered: number;
+  correct: number;
+  score: number;
+  maxscore: number;
+  percentage: number;
+  finished: boolean;
+};
+
 export type ExamType = {
   iduser?: number;
   username?: string;
   result?: string;
+  availability?: ExamAvailabilityType;
+  grade?: ExamGradeType;
   userstartdate?: string | null;
   idex: number;
   name: string;
@@ -4332,6 +4346,8 @@ export type BiblyExamType = {
   status: number;
   createdat: string;
   userstartdate?: string | null;
+  availability?: ExamAvailabilityType;
+  grade?: ExamGradeType;
   questions: BiblyExamQuestionType[];
 };
 

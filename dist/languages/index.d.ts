@@ -1340,6 +1340,7 @@ export declare const languages: {
         eventNotFound: string;
         eventQuery: string;
         evidence: string;
+        examClosed: string;
         examNotAssigned: string;
         examNotFound: string;
         example: string;
@@ -5535,6 +5536,7 @@ export declare const languages: {
         eventNotFound: string;
         eventQuery: string;
         evidence: string;
+        examClosed: string;
         examNotAssigned: string;
         examNotFound: string;
         example: string;
@@ -9730,6 +9732,7 @@ export declare const languages: {
         eventNotFound: string;
         eventQuery: string;
         evidence: string;
+        examClosed: string;
         examNotAssigned: string;
         examNotFound: string;
         example: string;
