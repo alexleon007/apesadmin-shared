@@ -3354,6 +3354,7 @@ export type POSTicketType = {
   ticketstatusname: string;
   idwh: number;
   whname: string;
+  idcfdi?: number;
   payformsummary: {
     method: string;
     amount: number;
@@ -3753,6 +3754,9 @@ export type RecordType = {
   recordstatus?: number;
   recordstatusname?: string;
   recordcreatedat?: string;
+  recordupdatedat?: string;
+  recordversion?: string;
+  recordidparent?: number;
   recordexpiration?: string;
   section?: string;
   recordsection?: string;

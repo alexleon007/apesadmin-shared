@@ -1207,6 +1207,7 @@ export declare const languages: {
         documentFolio: string;
         documentLowercase: string;
         documentNotFound: string;
+        documentAlreadyStamped: string;
         documentNotFoundOrInvoiced: string;
         documentNumber: string;
         documentRows: string;
@@ -2425,6 +2426,7 @@ export declare const languages: {
         paymentControl: string;
         paymentDate: string;
         paymentDetails: string;
+        payformToBeDefined: string;
         paymentForm: string;
         paymentForms: string;
         paymentGateway: string;
@@ -4197,6 +4199,22 @@ export declare const languages: {
         orderEntityModeLine: string;
         orderEntity: string;
         orderEntityEmpty: string;
+        folderFileConflict: string;
+        folderDrawing: string;
+        folderDrawingNew: string;
+        folderDrawingDefaultName: string;
+        folderRename: string;
+        folderOpen: string;
+        folderSaved: string;
+        folderSavedAt: string;
+        folderUnsaved: string;
+        folderSaveError: string;
+        folderSaveNow: string;
+        folderConflictReload: string;
+        folderConflictKeepMine: string;
+        folderOpenError: string;
+        folderCloseUnsaved: string;
+        folderDownloadAs: string;
     };
     readonly en: {
         aboveMax: string;
@@ -5403,6 +5421,7 @@ export declare const languages: {
         documentFolio: string;
         documentLowercase: string;
         documentNotFound: string;
+        documentAlreadyStamped: string;
         documentNotFoundOrInvoiced: string;
         documentNumber: string;
         documentRows: string;
@@ -6621,6 +6640,7 @@ export declare const languages: {
         paymentControl: string;
         paymentDate: string;
         paymentDetails: string;
+        payformToBeDefined: string;
         paymentForm: string;
         paymentForms: string;
         paymentGateway: string;
@@ -8393,6 +8413,22 @@ export declare const languages: {
         orderEntityModeLine: string;
         orderEntity: string;
         orderEntityEmpty: string;
+        folderFileConflict: string;
+        folderDrawing: string;
+        folderDrawingNew: string;
+        folderDrawingDefaultName: string;
+        folderRename: string;
+        folderOpen: string;
+        folderSaved: string;
+        folderSavedAt: string;
+        folderUnsaved: string;
+        folderSaveError: string;
+        folderSaveNow: string;
+        folderConflictReload: string;
+        folderConflictKeepMine: string;
+        folderOpenError: string;
+        folderCloseUnsaved: string;
+        folderDownloadAs: string;
     };
     readonly "zh-TW": {
         aboveMax: string;
@@ -9599,6 +9635,7 @@ export declare const languages: {
         documentFolio: string;
         documentLowercase: string;
         documentNotFound: string;
+        documentAlreadyStamped: string;
         documentNotFoundOrInvoiced: string;
         documentNumber: string;
         documentRows: string;
@@ -10817,6 +10854,7 @@ export declare const languages: {
         paymentControl: string;
         paymentDate: string;
         paymentDetails: string;
+        payformToBeDefined: string;
         paymentForm: string;
         paymentForms: string;
         paymentGateway: string;
@@ -12589,6 +12627,22 @@ export declare const languages: {
         orderEntityModeLine: string;
         orderEntity: string;
         orderEntityEmpty: string;
+        folderFileConflict: string;
+        folderDrawing: string;
+        folderDrawingNew: string;
+        folderDrawingDefaultName: string;
+        folderRename: string;
+        folderOpen: string;
+        folderSaved: string;
+        folderSavedAt: string;
+        folderUnsaved: string;
+        folderSaveError: string;
+        folderSaveNow: string;
+        folderConflictReload: string;
+        folderConflictKeepMine: string;
+        folderOpenError: string;
+        folderCloseUnsaved: string;
+        folderDownloadAs: string;
     };
 };
 export type LanguageKey = keyof typeof languages;
