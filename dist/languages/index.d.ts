@@ -165,7 +165,7 @@ export declare const languages: {
         arrival: string;
         asOf: string;
         assign: string;
-        assignAgentsOnOrder: string;
+        assignCommissionRecipients: string;
         assignedUsers: string;
         assignees: string;
         assignOrdersToRoute: string;
@@ -864,6 +864,8 @@ export declare const languages: {
         comments: string;
         commission: string;
         commissions: string;
+        commissionRecipient: string;
+        commissionRecipients: string;
         commitment: string;
         commitmentContact: string;
         commitmentTime: string;
@@ -4378,7 +4380,7 @@ export declare const languages: {
         arrival: string;
         asOf: string;
         assign: string;
-        assignAgentsOnOrder: string;
+        assignCommissionRecipients: string;
         assignedUsers: string;
         assignees: string;
         assignOrdersToRoute: string;
@@ -5077,6 +5079,8 @@ export declare const languages: {
         comments: string;
         commission: string;
         commissions: string;
+        commissionRecipient: string;
+        commissionRecipients: string;
         commitment: string;
         commitmentContact: string;
         commitmentTime: string;
@@ -8591,7 +8595,7 @@ export declare const languages: {
         arrival: string;
         asOf: string;
         assign: string;
-        assignAgentsOnOrder: string;
+        assignCommissionRecipients: string;
         assignedUsers: string;
         assignees: string;
         assignOrdersToRoute: string;
@@ -9290,6 +9294,8 @@ export declare const languages: {
         comments: string;
         commission: string;
         commissions: string;
+        commissionRecipient: string;
+        commissionRecipients: string;
         commitment: string;
         commitmentContact: string;
         commitmentTime: string;
