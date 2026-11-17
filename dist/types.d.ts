@@ -4781,5 +4781,163 @@ export type ReviewRow = {
     typed: number;
     available: number | null;
 };
+export type SignRequestStateType = "pending" | "completed" | "declined" | "expired" | "canceled";
+export type SignRecipientStateType = "pending" | "viewed" | "signed" | "declined";
+export type SignFieldKindType = "signature" | "initials" | "name" | "date" | "text" | "checkbox";
+export type SignEventKindType = "created" | "sent" | "resent" | "viewed" | "signed" | "declined" | "completed" | "sealed" | "downloaded" | "canceled" | "expired";
+export type SignPageType = {
+    w: number;
+    h: number;
+    rotate: number;
+};
+export type SignFieldBoxType = {
+    page: number;
+    x: number;
+    y: number;
+    w: number;
+    h: number;
+};
+export type SignCreateRecipientType = {
+    key: string;
+    name: string;
+    email?: string;
+    phone?: string;
+    idparty?: number;
+    iduserint?: number;
+    sendEmail?: boolean;
+};
+export type SignCreateFieldType = SignFieldBoxType & {
+    recipientKey: string;
+    type: SignFieldKindType;
+    required: boolean;
+};
+export type SignCreatePayloadType = {
+    idrecord: number;
+    title: string;
+    message?: string;
+    expiresDays?: number;
+    recipients: SignCreateRecipientType[];
+    fields: SignCreateFieldType[];
+};
+export type SignCreatedRecipientType = {
+    idrsgr: number;
+    key: string;
+    name: string;
+    email: string;
+    phone: string;
+    link: string;
+    emailed: boolean;
+};
+export type SignCreateResultType = {
+    idsgr: number;
+    recipients: SignCreatedRecipientType[];
+    warnings: ("existingSignatures" | "noMailAccount" | "mailFailed")[];
+};
+export type SignRequestRowType = {
+    idsgr: number;
+    uuid: string;
+    title: string;
+    state: SignRequestStateType;
+    idrecord: number;
+    idrecordfinal: number;
+    recordname: string;
+    requester: string;
+    signed: number;
+    total: number;
+    createdat: string;
+    completedat: string | null;
+    expires: string | null;
+};
+export type SignRecipientDetailType = {
+    idrsgr: number;
+    name: string;
+    email: string;
+    phone: string;
+    state: SignRecipientStateType;
+    viewedat: string | null;
+    signedat: string | null;
+    declinereason: string;
+    link: string;
+};
+export type SignEventRowType = {
+    idesgr: number;
+    type: SignEventKindType;
+    recipient: string;
+    ip: string;
+    createdat: string;
+    data: Record<string, unknown>;
+};
+export type SignRequestDetailType = {
+    request: SignRequestRowType & {
+        message: string;
+        originalhash: string;
+        finalhash: string;
+        pages: SignPageType[];
+    };
+    recipients: SignRecipientDetailType[];
+    events: SignEventRowType[];
+};
+export type SignRecordStatusType = {
+    idsgr: number;
+    state: SignRequestStateType | "final";
+    signed: number;
+    total: number;
+};
+export type SignRecordsStatusMapType = Record<number, SignRecordStatusType>;
+export type SignPublicFieldType = SignFieldBoxType & {
+    idfsgr: number;
+    type: SignFieldKindType;
+    required: boolean;
+    value: string;
+};
+export type SignPublicViewType = {
+    company: {
+        name: string;
+    };
+    request: {
+        title: string;
+        message: string;
+        state: SignRequestStateType;
+        uuid: string;
+        originalhash: string;
+        finalhash: string;
+        pages: SignPageType[];
+        requester: string;
+        createdat: string;
+        expires: string | null;
+    };
+    recipient: {
+        name: string;
+        email: string;
+        state: SignRecipientStateType;
+        signedat: string | null;
+    };
+    fields: SignPublicFieldType[];
+    others: {
+        name: string;
+        state: SignRecipientStateType;
+    }[];
+    canSign: boolean;
+    canDownloadFinal: boolean;
+};
+export type SignCaptureType = {
+    type: "draw" | "type" | "upload";
+    image: string;
+};
+export type SignSubmitPayloadType = {
+    token: string;
+    values: {
+        idfsgr: number;
+        value: string;
+    }[];
+    signature: SignCaptureType;
+    initials?: SignCaptureType;
+    consent: true;
+};
+export type SignSubmitResultType = {
+    ok: true;
+    recipientState: SignRecipientStateType;
+    requestState: SignRequestStateType;
+};
 export {};
 //# sourceMappingURL=types.d.ts.map

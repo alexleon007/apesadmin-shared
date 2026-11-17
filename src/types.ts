@@ -5613,3 +5613,197 @@ export type ReviewRow = {
   typed: number;
   available: number | null;
 };
+
+// ApesSign: solicitudes de firma sobre PDFs del archivero.
+// Coordenadas de campos normalizadas 0..1, origen arriba-izquierda, respecto a la
+// página tal como la muestra pdf.js (viewport con la rotación /Rotate ya aplicada).
+
+export type SignRequestStateType =
+  | "pending"
+  | "completed"
+  | "declined"
+  | "expired"
+  | "canceled";
+
+export type SignRecipientStateType = "pending" | "viewed" | "signed" | "declined";
+
+export type SignFieldKindType =
+  | "signature"
+  | "initials"
+  | "name"
+  | "date"
+  | "text"
+  | "checkbox";
+
+export type SignEventKindType =
+  | "created"
+  | "sent"
+  | "resent"
+  | "viewed"
+  | "signed"
+  | "declined"
+  | "completed"
+  | "sealed"
+  | "downloaded"
+  | "canceled"
+  | "expired";
+
+export type SignPageType = { w: number; h: number; rotate: number };
+
+export type SignFieldBoxType = {
+  page: number; // 1-based
+  x: number;
+  y: number;
+  w: number;
+  h: number;
+};
+
+export type SignCreateRecipientType = {
+  key: string; // id temporal del cliente para ligar campos
+  name: string;
+  email?: string;
+  phone?: string;
+  idparty?: number;
+  iduserint?: number;
+  sendEmail?: boolean;
+};
+
+export type SignCreateFieldType = SignFieldBoxType & {
+  recipientKey: string;
+  type: SignFieldKindType;
+  required: boolean;
+};
+
+export type SignCreatePayloadType = {
+  idrecord: number;
+  title: string;
+  message?: string;
+  expiresDays?: number; // 1..365, default 30
+  recipients: SignCreateRecipientType[];
+  fields: SignCreateFieldType[];
+};
+
+export type SignCreatedRecipientType = {
+  idrsgr: number;
+  key: string;
+  name: string;
+  email: string;
+  phone: string;
+  link: string;
+  emailed: boolean;
+};
+
+export type SignCreateResultType = {
+  idsgr: number;
+  recipients: SignCreatedRecipientType[];
+  warnings: ("existingSignatures" | "noMailAccount" | "mailFailed")[];
+};
+
+export type SignRequestRowType = {
+  idsgr: number;
+  uuid: string;
+  title: string;
+  state: SignRequestStateType;
+  idrecord: number;
+  idrecordfinal: number;
+  recordname: string;
+  requester: string;
+  signed: number;
+  total: number;
+  createdat: string;
+  completedat: string | null;
+  expires: string | null;
+};
+
+export type SignRecipientDetailType = {
+  idrsgr: number;
+  name: string;
+  email: string;
+  phone: string;
+  state: SignRecipientStateType;
+  viewedat: string | null;
+  signedat: string | null;
+  declinereason: string;
+  link: string; // vacío si ya firmó/rechazó o la solicitud no está pendiente
+};
+
+export type SignEventRowType = {
+  idesgr: number;
+  type: SignEventKindType;
+  recipient: string;
+  ip: string;
+  createdat: string;
+  data: Record<string, unknown>;
+};
+
+export type SignRequestDetailType = {
+  request: SignRequestRowType & {
+    message: string;
+    originalhash: string;
+    finalhash: string;
+    pages: SignPageType[];
+  };
+  recipients: SignRecipientDetailType[];
+  events: SignEventRowType[];
+};
+
+export type SignRecordStatusType = {
+  idsgr: number;
+  state: SignRequestStateType | "final";
+  signed: number;
+  total: number;
+};
+
+export type SignRecordsStatusMapType = Record<number, SignRecordStatusType>;
+
+export type SignPublicFieldType = SignFieldBoxType & {
+  idfsgr: number;
+  type: SignFieldKindType;
+  required: boolean;
+  value: string;
+};
+
+export type SignPublicViewType = {
+  company: { name: string };
+  request: {
+    title: string;
+    message: string;
+    state: SignRequestStateType;
+    uuid: string;
+    originalhash: string;
+    finalhash: string;
+    pages: SignPageType[];
+    requester: string;
+    createdat: string;
+    expires: string | null;
+  };
+  recipient: {
+    name: string;
+    email: string;
+    state: SignRecipientStateType;
+    signedat: string | null;
+  };
+  fields: SignPublicFieldType[];
+  others: { name: string; state: SignRecipientStateType }[];
+  canSign: boolean;
+  canDownloadFinal: boolean;
+};
+
+export type SignCaptureType = {
+  type: "draw" | "type" | "upload";
+  image: string; // data URL PNG
+};
+
+export type SignSubmitPayloadType = {
+  token: string;
+  values: { idfsgr: number; value: string }[]; // solo text/checkbox ("true"/"false")
+  signature: SignCaptureType; // para campos signature
+  initials?: SignCaptureType; // para campos initials; si falta se usa signature
+  consent: true;
+};
+
+export type SignSubmitResultType = {
+  ok: true;
+  recipientState: SignRecipientStateType;
+  requestState: SignRequestStateType;
+};
