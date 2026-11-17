@@ -162,6 +162,7 @@
   "asOf": "Al",
   "assign": "Asignar",
   "assignCommissionRecipients": "Asignar comisionistas",
+  "assignCommissionRecipientsHelp": "Encendido: en cotizaciones, pedidos y ventas aparece abajo el recuadro «Asignar comisionistas», donde se eligen los Colaboradores que cobran comisión por ese documento. Apagado: aparece arriba el campo «Agente», que guarda un usuario del sistema y no genera comisión.",
   "assignedUsers": "Usuarios asignados",
   "assignees": "Responsables",
   "assignOrdersToRoute": "Asignar {{count}} pedido(s) a ruta",

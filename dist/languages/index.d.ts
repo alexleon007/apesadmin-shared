@@ -166,6 +166,7 @@ export declare const languages: {
         asOf: string;
         assign: string;
         assignCommissionRecipients: string;
+        assignCommissionRecipientsHelp: string;
         assignedUsers: string;
         assignees: string;
         assignOrdersToRoute: string;
@@ -4381,6 +4382,7 @@ export declare const languages: {
         asOf: string;
         assign: string;
         assignCommissionRecipients: string;
+        assignCommissionRecipientsHelp: string;
         assignedUsers: string;
         assignees: string;
         assignOrdersToRoute: string;
@@ -8596,6 +8598,7 @@ export declare const languages: {
         asOf: string;
         assign: string;
         assignCommissionRecipients: string;
+        assignCommissionRecipientsHelp: string;
         assignedUsers: string;
         assignees: string;
         assignOrdersToRoute: string;

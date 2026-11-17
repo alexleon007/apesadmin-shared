@@ -162,6 +162,7 @@
     "asOf": "截至",
     "assign": "指派",
     "assignCommissionRecipients": "指派抽佣人員",
+    "assignCommissionRecipientsHelp": "開啟：報價單、訂單與銷售單下方會顯示「指派抽佣人員」區塊，在此選擇可從該單據領取佣金的協作者。關閉：上方顯示「代理人」欄位，只記錄系統使用者，不會產生佣金。",
     "assignedUsers": "已指派的使用者",
     "assignees": "負責人員",
     "assignOrdersToRoute": "指派 {{count}} 筆訂單至路線",

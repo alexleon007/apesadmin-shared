@@ -162,6 +162,7 @@
   "asOf": "As of",
   "assign": "Assign",
   "assignCommissionRecipients": "Assign commission recipients",
+  "assignCommissionRecipientsHelp": "On: quotes, orders and sales show the “Assign commission recipients” section at the bottom, where you choose the Collaborators who earn commission on that document. Off: the “Agent” field appears at the top; it stores a system user and does not generate commission.",
   "assignedUsers": "Assigned Users",
   "assignees": "Assignees",
   "assignOrdersToRoute": "Assign {{count}} order(s) to route",
