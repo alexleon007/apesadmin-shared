@@ -168,7 +168,6 @@ export declare const languages: {
         assignAgentsOnOrder: string;
         assignedUsers: string;
         assignees: string;
-        assignOperatorsOnOrder: string;
         assignOrdersToRoute: string;
         assignProvidersTo: string;
         assignSchedule: string;
@@ -4382,7 +4381,6 @@ export declare const languages: {
         assignAgentsOnOrder: string;
         assignedUsers: string;
         assignees: string;
-        assignOperatorsOnOrder: string;
         assignOrdersToRoute: string;
         assignProvidersTo: string;
         assignSchedule: string;
@@ -8596,7 +8594,6 @@ export declare const languages: {
         assignAgentsOnOrder: string;
         assignedUsers: string;
         assignees: string;
-        assignOperatorsOnOrder: string;
         assignOrdersToRoute: string;
         assignProvidersTo: string;
         assignSchedule: string;

@@ -164,7 +164,6 @@
   "assignAgentsOnOrder": "Asignar agentes",
   "assignedUsers": "Usuarios asignados",
   "assignees": "Responsables",
-  "assignOperatorsOnOrder": "Asignar operadores",
   "assignOrdersToRoute": "Asignar {{count}} pedido(s) a ruta",
   "assignProvidersTo": "Asignar proveedores a",
   "assignSchedule": "Asignar horario",
