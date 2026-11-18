@@ -1206,4 +1206,6 @@ export const BOT_PURPOSE_PRESETS = {
     },
     other: {},
 };
+/** Serie (máximo 3 letras) de los pedidos que llegan desde Veta. */
+export const VETA_DOCCODE = "VET";
 //# sourceMappingURL=consts.js.map

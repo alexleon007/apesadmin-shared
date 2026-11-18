@@ -3104,6 +3104,10 @@ export type ProductType = {
     specsheeturl: string;
     prodcvesat: string;
     produnisat: string;
+    /** Medidas en mm. */
+    prodlength?: number;
+    prodwidth?: number;
+    prodthickness?: number;
     unitPrices: {
         idunit: number;
         unitname: string;
@@ -4016,6 +4020,10 @@ export type ProductEcommerceConfigType = {
     slug: string;
     webdesc: string;
     featured: boolean;
+    /** Se ofrece como tablero en Veta (necesita largo, ancho y espesor). */
+    veta: boolean;
+    /** Cubrecanto del tablero en Veta (idprod, 0 = sin cubrecanto). */
+    vetaedge: number;
 };
 export type ProductEcommercePricingType = {
     /** Antes de impuestos. */
@@ -4039,6 +4047,88 @@ export type ProductEcommerceInfoType = {
     channels: {
         website: ProductEcommerceWebsiteChannelType[];
     };
+};
+/** Lados de la pieza: l = largo, a = ancho. */
+export type VetaEdgeKeyType = "l1" | "l2" | "a1" | "a2";
+export type VetaEdgesType = Record<VetaEdgeKeyType, boolean>;
+/** Cubrecanto asignado al tablero; se cobra por metro. */
+export type VetaEdgeType = {
+    id: number;
+    code: string;
+    name: string;
+    unit: string;
+    /** Precio por unidad con impuestos (lista de la conexión Veta). */
+    price: number;
+};
+/** Tablero que el carpintero puede pedir. Medidas en mm. */
+export type VetaMaterialType = {
+    id: number;
+    code: string;
+    name: string;
+    length: number;
+    width: number;
+    thickness: number;
+    unit: string;
+    /** Precio por hoja con impuestos (lista de la conexión Veta). */
+    price: number;
+    edge: VetaEdgeType | null;
+};
+export type VetaConfigType = {
+    /** La maderería ya dio de alta la conexión Veta. */
+    ready: boolean;
+    /** Tiene Stripe conectado: el carpintero puede pagar en línea. */
+    payments: boolean;
+    currency: string;
+    /** Aprovechamiento del tablero con que se estiman las hojas (0.85 = 85 %). */
+    boardUsage: number;
+};
+export type VetaPieceType = {
+    label: string;
+    length: number;
+    width: number;
+    quantity: number;
+    edges: VetaEdgesType;
+    grain: boolean;
+};
+export type VetaOrderInputType = {
+    /** Id del borrador en el navegador: un reintento no duplica el pedido. */
+    draftId: string;
+    name: string;
+    materialId: number;
+    pieces: VetaPieceType[];
+};
+/** pending = por pagar, partial = con abono, paid = pagado. */
+export type VetaPaymentStatusType = "pending" | "partial" | "paid";
+export type VetaOrderStatusType = "active" | "billed" | "cancelled";
+export type VetaOrderLineType = {
+    code: string;
+    name: string;
+    unit: string;
+    quantity: number;
+    /** Importe con impuestos. */
+    total: number;
+};
+export type VetaOrderSummaryType = {
+    id: number;
+    folio: string;
+    name: string;
+    date: string;
+    material: string;
+    pieces: number;
+    total: number;
+    /** Saldo con impuestos; si ya se facturó, el de la factura. */
+    due: number;
+    currency: string;
+    status: VetaOrderStatusType;
+    payment: VetaPaymentStatusType;
+};
+export type VetaOrderDetailType = VetaOrderSummaryType & {
+    lines: VetaOrderLineType[];
+    cutlist: VetaPieceType[];
+};
+export type VetaCheckoutType = {
+    url: string;
+    sessionId: string;
 };
 export type WebsiteAssetRefType = {
     assetId: string;

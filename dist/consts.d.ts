@@ -409,4 +409,6 @@ export declare const BOT_MODEL_OPTIONS: {
 export declare const BOT_TIMEZONE_OPTIONS: string[];
 export declare const BOT_VERTICAL_PRESETS: Record<string, Partial<BotConfigType>>;
 export declare const BOT_PURPOSE_PRESETS: Record<BotPurposeType, Partial<BotConfigType>>;
+/** Serie (máximo 3 letras) de los pedidos que llegan desde Veta. */
+export declare const VETA_DOCCODE = "VET";
 //# sourceMappingURL=consts.d.ts.map
