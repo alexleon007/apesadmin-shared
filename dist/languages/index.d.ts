@@ -1875,6 +1875,8 @@ export declare const languages: {
         mailPresetCustom: string;
         mailPresetNeedsAddress: string;
         mailRecipientsPlaceholder: string;
+        mailCc: string;
+        mailBcc: string;
         mailReplyAll: string;
         mailSearchPlaceholder: string;
         mailSendError: string;
@@ -6337,6 +6339,8 @@ export declare const languages: {
         mailPresetCustom: string;
         mailPresetNeedsAddress: string;
         mailRecipientsPlaceholder: string;
+        mailCc: string;
+        mailBcc: string;
         mailReplyAll: string;
         mailSearchPlaceholder: string;
         mailSendError: string;
@@ -10799,6 +10803,8 @@ export declare const languages: {
         mailPresetCustom: string;
         mailPresetNeedsAddress: string;
         mailRecipientsPlaceholder: string;
+        mailCc: string;
+        mailBcc: string;
         mailReplyAll: string;
         mailSearchPlaceholder: string;
         mailSendError: string;
