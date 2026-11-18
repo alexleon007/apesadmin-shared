@@ -14,6 +14,11 @@
       "import": "./dist/languages/index.js",
       "require": "./dist/languages/index.js",
       "types": "./dist/languages/index.d.ts"
+    },
+    "./languages/veta": {
+      "import": "./dist/languages/veta/index.js",
+      "require": "./dist/languages/veta/index.js",
+      "types": "./dist/languages/veta/index.d.ts"
     }
   },
   "scripts": {

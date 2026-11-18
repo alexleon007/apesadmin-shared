@@ -3511,6 +3511,7 @@ export type SystemSettingsType = {
     pos_blind_cash_count: boolean;
     pos_docnumber_capture: boolean;
     pos_self_billing: boolean;
+    selfbilling_require_token?: boolean;
     project_property_managment: boolean;
     inventory_addition_on_po: boolean;
     inventory_movement_on_transfer: boolean;
@@ -4847,6 +4848,7 @@ export type SignRequestRowType = {
     createdat: string;
     completedat: string | null;
     expires: string | null;
+    error: string;
 };
 export type SignRecipientDetailType = {
     idrsgr: number;
@@ -4858,6 +4860,7 @@ export type SignRecipientDetailType = {
     signedat: string | null;
     declinereason: string;
     link: string;
+    mine: boolean;
 };
 export type SignEventRowType = {
     idesgr: number;

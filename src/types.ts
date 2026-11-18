@@ -5713,6 +5713,7 @@ export type SignRequestRowType = {
   createdat: string;
   completedat: string | null;
   expires: string | null;
+  error: string; // último error del sellado; vacío si no hubo
 };
 
 export type SignRecipientDetailType = {
@@ -5725,6 +5726,7 @@ export type SignRecipientDetailType = {
   signedat: string | null;
   declinereason: string;
   link: string; // vacío si ya firmó/rechazó o la solicitud no está pendiente
+  mine: boolean; // el firmante es el usuario que consulta
 };
 
 export type SignEventRowType = {
