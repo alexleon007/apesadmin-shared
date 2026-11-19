@@ -160,6 +160,10 @@ export declare const vetaLanguages: {
         pieceNoLabel: string;
         grainShort: string;
         pieceDoesNotFit: string;
+        materialPerPieceHint: string;
+        pieceMaterialUnavailable: string;
+        pieceGroupBoards_one: string;
+        pieceGroupBoards_other: string;
         clearAll: string;
         confirmClear: string;
         orderSummary: string;
@@ -412,6 +416,10 @@ export declare const vetaLanguages: {
         pieceNoLabel: string;
         grainShort: string;
         pieceDoesNotFit: string;
+        materialPerPieceHint: string;
+        pieceMaterialUnavailable: string;
+        pieceGroupBoards_one: string;
+        pieceGroupBoards_other: string;
         clearAll: string;
         confirmClear: string;
         orderSummary: string;

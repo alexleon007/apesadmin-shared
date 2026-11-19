@@ -4532,6 +4532,8 @@ export type VetaConfigType = {
 };
 
 export type VetaPieceType = {
+  /** Tablero (idprod) del que sale la pieza: un pedido puede mezclar materiales. */
+  materialId: number;
   label: string;
   length: number;
   width: number;
@@ -4544,7 +4546,6 @@ export type VetaOrderInputType = {
   /** Id del borrador en el navegador: un reintento no duplica el pedido. */
   draftId: string;
   name: string;
-  materialId: number;
   pieces: VetaPieceType[];
 };
 
@@ -4567,6 +4568,7 @@ export type VetaOrderSummaryType = {
   folio: string;
   name: string;
   date: string;
+  /** Nombres de los tableros del pedido, separados por coma. */
   material: string;
   pieces: number;
   total: number;
@@ -4577,9 +4579,26 @@ export type VetaOrderSummaryType = {
   payment: VetaPaymentStatusType;
 };
 
+/** Tablero usado en un pedido (detalle y despiece). Medidas en mm. */
+export type VetaOrderMaterialType = {
+  id: number;
+  code: string;
+  name: string;
+  length: number;
+  width: number;
+  thickness: number;
+};
+
 export type VetaOrderDetailType = VetaOrderSummaryType & {
   lines: VetaOrderLineType[];
+  /** En el orden en que aparecen en el despiece. */
+  materials: VetaOrderMaterialType[];
   cutlist: VetaPieceType[];
+};
+
+export type VetaOrderCutlistType = {
+  materials: VetaOrderMaterialType[];
+  pieces: VetaPieceType[];
 };
 
 export type VetaCheckoutType = {
