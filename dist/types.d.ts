@@ -1989,7 +1989,7 @@ export type DashboardConfigType = {
 export type DashboardWidgetType = {
     i: string;
     dbId?: number;
-    type: "welcome" | "quickActions" | "kpiGroup" | "report" | "attendance" | "myTickets";
+    type: "welcome" | "quickActions" | "kpiGroup" | "report" | "attendance" | "myTickets" | "myActivities";
     title: string;
     x: number;
     y: number;
@@ -5388,6 +5388,108 @@ export type SignSubmitResultType = {
     ok: true;
     recipientState: SignRecipientStateType;
     requestState: SignRequestStateType;
+};
+export type CrmActivityOutcomeType = {
+    code: string;
+    name: string;
+};
+/** Catálogo crm_activity_types (llamada, WhatsApp, reunión, visita, tarea...). */
+export type CrmActivityTypeType = {
+    idcrmat: number;
+    code: string;
+    name: string;
+    icon: string;
+    color: string;
+    defaultminutes: number;
+    countsascontact: boolean;
+    outcomes: CrmActivityOutcomeType[];
+    order: number;
+    status: number;
+};
+export type CrmActivityTabType = "overdue" | "today" | "upcoming" | "done" | "pending" | "all";
+/** Actividad programada (calendar con typedoc 'followups'). start/end en hora local. */
+export type CrmActivityType = {
+    idcal: number;
+    title: string;
+    description: string;
+    notes: string;
+    start: string;
+    end: string;
+    allday: boolean;
+    type: string;
+    typename: string;
+    typecolor: string;
+    typeicon: string;
+    idagent: number;
+    agentname: string;
+    idparty: number;
+    partyname: string;
+    partytel: string;
+    partyemail: string;
+    status: number;
+    priority: number;
+    reminder: number;
+    outcome: string;
+    doneat: string | null;
+    idopp: number;
+    iduser: number;
+    pipeline: string;
+    step: string;
+    stepcolor: string;
+    waidcc: number;
+    waidca: number;
+};
+export type CrmActivityCountsType = {
+    overdue: number;
+    today: number;
+    upcoming: number;
+    donetoday: number;
+    total: number;
+};
+/** Datos que se mandan al crear o editar una actividad. */
+export type CrmActivityInputType = {
+    type: string;
+    title?: string;
+    idparty?: number;
+    idopp?: number;
+    start: string;
+    end?: string;
+    allday?: boolean;
+    minutes?: number;
+    idagent?: number;
+    priority?: number;
+    reminder?: number;
+    notes?: string;
+};
+/** Encabezado de la ficha del cliente (GET /crm/get-party-summary/:idparty). */
+export type CrmPartySummaryType = {
+    idparty: number;
+    name: string;
+    type: number;
+    tel: string;
+    email: string;
+    idagent: number;
+    agentname: string;
+    lastcontact: string | null;
+    lastcontacttype: string;
+    lastpurchase: string | null;
+    balances: {
+        currency: string;
+        due: number;
+        overdue: number;
+    }[];
+    pending: number;
+    overdueactivities: number;
+    next: {
+        idcal: number;
+        title: string;
+        type: string;
+        allday: boolean;
+        start: string;
+    } | null;
+    waidcc: number;
+    waidca: number;
+    today: string;
 };
 export {};
 //# sourceMappingURL=types.d.ts.map
