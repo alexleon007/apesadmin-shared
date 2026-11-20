@@ -3757,6 +3757,44 @@ export type WorkflowType = {
     wfStatusName: string;
     wfNodes: WorkflowNodeType[];
     nodeCount?: number;
+    lastRun?: WorkflowRunType | null;
+    /** Segundos para el próximo disparo programado; null si no tiene. */
+    nextRunIn?: number | null;
+};
+export type WorkflowRunStatus = "running" | "completed" | "partial" | "failed" | "interrupted";
+export type WorkflowRunStepType = {
+    node: number;
+    action: string;
+    label: string;
+    status: "ok" | "error" | "skipped";
+    /** Rama que tomó un nodo de condición: ok = Sí, error = No. */
+    branch?: string;
+    ms?: number;
+    error?: string;
+    output?: string;
+};
+/** Una corrida de workflow tal como la devuelve /workflows/get-executions. */
+export type WorkflowRunType = {
+    id: number;
+    wfId: number;
+    status: WorkflowRunStatus;
+    /** Clave del trigger (recurrence-trigger, document-trigger...) o "manual". */
+    trigger: string;
+    triggerLabel: string;
+    username: string;
+    error: string;
+    context: {
+        document?: string;
+        idor?: number;
+        customer?: string;
+    } | null;
+    startedat: string;
+    secondsago: number;
+    /** Segundos; null mientras corre. */
+    duration: number | null;
+    stepCount: number;
+    errorCount: number;
+    steps?: WorkflowRunStepType[];
 };
 export type WorkItemsClasifType = "project" | "sprint" | "task" | "ticket" | "block" | string;
 export type WorkItemMemberType = {

@@ -1183,6 +1183,7 @@ export declare const languages: {
         diamond: string;
         difference: string;
         direct: string;
+        digital: string;
         directInventoryDeduction: string;
         directInventoryEntry: string;
         disability: string;
@@ -1434,6 +1435,7 @@ export declare const languages: {
         finalize: string;
         finalizeAndAdjust: string;
         finalUser: string;
+        finance: string;
         financialResolution: string;
         financialResult: string;
         finish: string;
@@ -1589,6 +1591,7 @@ export declare const languages: {
         hideErrorDetail: string;
         hideHistory: string;
         hideNotes: string;
+        hideOutput: string;
         hideSeries: string;
         high: string;
         higherToLower: string;
@@ -1603,6 +1606,7 @@ export declare const languages: {
         howScheduledMessagesWork: string;
         hubNotFound: string;
         hue: string;
+        humanCapital: string;
         humanResources: string;
         icon: string;
         iconColor: string;
@@ -1774,6 +1778,7 @@ export declare const languages: {
         language: string;
         largeDataset: string;
         lastCheck: string;
+        lastExecution: string;
         lastContactDate: string;
         lastMessageDate: string;
         lastMonth: string;
@@ -2124,6 +2129,7 @@ export declare const languages: {
         newWorkflow: string;
         next: string;
         next30Days: string;
+        nextExecution: string;
         nextFollowup: string;
         nextRun: string;
         no: string;
@@ -3153,6 +3159,7 @@ export declare const languages: {
         showOn: string;
         showOnFirstPage: string;
         showOnLastPage: string;
+        showOutput: string;
         showSeries: string;
         showTableAnyway: string;
         signIn: string;
@@ -3952,6 +3959,8 @@ export declare const languages: {
         workDays: string;
         workedDays: string;
         workflowNotFound: string;
+        workflowRunHistory: string;
+        workflowRunNoSteps: string;
         workflows: string;
         workflowsManagement: string;
         working: string;
@@ -5896,6 +5905,7 @@ export declare const languages: {
         diamond: string;
         difference: string;
         direct: string;
+        digital: string;
         directInventoryDeduction: string;
         directInventoryEntry: string;
         disability: string;
@@ -6147,6 +6157,7 @@ export declare const languages: {
         finalize: string;
         finalizeAndAdjust: string;
         finalUser: string;
+        finance: string;
         financialResolution: string;
         financialResult: string;
         finish: string;
@@ -6302,6 +6313,7 @@ export declare const languages: {
         hideErrorDetail: string;
         hideHistory: string;
         hideNotes: string;
+        hideOutput: string;
         hideSeries: string;
         high: string;
         higherToLower: string;
@@ -6316,6 +6328,7 @@ export declare const languages: {
         howScheduledMessagesWork: string;
         hubNotFound: string;
         hue: string;
+        humanCapital: string;
         humanResources: string;
         icon: string;
         iconColor: string;
@@ -6487,6 +6500,7 @@ export declare const languages: {
         language: string;
         largeDataset: string;
         lastCheck: string;
+        lastExecution: string;
         lastContactDate: string;
         lastMessageDate: string;
         lastMonth: string;
@@ -6837,6 +6851,7 @@ export declare const languages: {
         newWorkflow: string;
         next: string;
         next30Days: string;
+        nextExecution: string;
         nextFollowup: string;
         nextRun: string;
         no: string;
@@ -7866,6 +7881,7 @@ export declare const languages: {
         showOn: string;
         showOnFirstPage: string;
         showOnLastPage: string;
+        showOutput: string;
         showSeries: string;
         showTableAnyway: string;
         signIn: string;
@@ -8665,6 +8681,8 @@ export declare const languages: {
         workDays: string;
         workedDays: string;
         workflowNotFound: string;
+        workflowRunHistory: string;
+        workflowRunNoSteps: string;
         workflows: string;
         workflowsManagement: string;
         working: string;
@@ -10609,6 +10627,7 @@ export declare const languages: {
         diamond: string;
         difference: string;
         direct: string;
+        digital: string;
         directInventoryDeduction: string;
         directInventoryEntry: string;
         disability: string;
@@ -10860,6 +10879,7 @@ export declare const languages: {
         finalize: string;
         finalizeAndAdjust: string;
         finalUser: string;
+        finance: string;
         financialResolution: string;
         financialResult: string;
         finish: string;
@@ -11015,6 +11035,7 @@ export declare const languages: {
         hideErrorDetail: string;
         hideHistory: string;
         hideNotes: string;
+        hideOutput: string;
         hideSeries: string;
         high: string;
         higherToLower: string;
@@ -11029,6 +11050,7 @@ export declare const languages: {
         howScheduledMessagesWork: string;
         hubNotFound: string;
         hue: string;
+        humanCapital: string;
         humanResources: string;
         icon: string;
         iconColor: string;
@@ -11200,6 +11222,7 @@ export declare const languages: {
         language: string;
         largeDataset: string;
         lastCheck: string;
+        lastExecution: string;
         lastContactDate: string;
         lastMessageDate: string;
         lastMonth: string;
@@ -11550,6 +11573,7 @@ export declare const languages: {
         newWorkflow: string;
         next: string;
         next30Days: string;
+        nextExecution: string;
         nextFollowup: string;
         nextRun: string;
         no: string;
@@ -12579,6 +12603,7 @@ export declare const languages: {
         showOn: string;
         showOnFirstPage: string;
         showOnLastPage: string;
+        showOutput: string;
         showSeries: string;
         showTableAnyway: string;
         signIn: string;
@@ -13378,6 +13403,8 @@ export declare const languages: {
         workDays: string;
         workedDays: string;
         workflowNotFound: string;
+        workflowRunHistory: string;
+        workflowRunNoSteps: string;
         workflows: string;
         workflowsManagement: string;
         working: string;

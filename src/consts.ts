@@ -227,7 +227,8 @@ export const MAILSECURITY_SSL = "ssl";
 export const MAILSECURITY_STARTTLS = "starttls";
 export const MAILSECURITY_NONE = "none";
 
-export const MAILMENU_IDMM = 6;
+// Sección Digital. Los permisos se resuelven por idmm2; idmm solo documenta dónde vive.
+export const MAILMENU_IDMM = 10;
 export const MAILMENU_IDMM2 = 25;
 
 export const MAILFOLDER_INBOX = "INBOX";
