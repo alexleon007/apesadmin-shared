@@ -4511,8 +4511,8 @@ export declare const languages: {
         eventsKpiSoldHint: string;
         eventsKpiCheckedInHint: string;
         eventsKpiRevenueHint: string;
-        eventsDraft: string;
-        eventsPublished: string;
+        eventsUnpublished: string;
+        eventsStatusActive: string;
         eventsStatusClosed: string;
         eventsStatusCancelled: string;
         eventsPublish: string;
@@ -4531,6 +4531,7 @@ export declare const languages: {
         eventsTabAttendees: string;
         eventsTabAccess: string;
         eventsTabSummary: string;
+        eventsManage: string;
         eventsSlug: string;
         eventsPublicLink: string;
         eventsSummary: string;
@@ -4548,6 +4549,7 @@ export declare const languages: {
         eventsWebsite: string;
         eventsWebsiteNone: string;
         eventsWebsiteHint: string;
+        eventsSiteNoEventsSection: string;
         eventsSaleSettingsHint: string;
         eventsSeries: string;
         eventsSeriesHint: string;
@@ -4659,6 +4661,9 @@ export declare const languages: {
         eventsBookingNotFound: string;
         eventsBookingExpiredRetry: string;
         eventsTypeWithoutProduct: string;
+        eventsTypeNameHint: string;
+        eventsTypeProductRequired: string;
+        eventsTypeProductInventory: string;
         eventsPaymentsUnavailable: string;
         eventsPaymentProviderError: string;
         eventsPaymentMismatch: string;
@@ -9219,8 +9224,8 @@ export declare const languages: {
         eventsKpiSoldHint: string;
         eventsKpiCheckedInHint: string;
         eventsKpiRevenueHint: string;
-        eventsDraft: string;
-        eventsPublished: string;
+        eventsUnpublished: string;
+        eventsStatusActive: string;
         eventsStatusClosed: string;
         eventsStatusCancelled: string;
         eventsPublish: string;
@@ -9239,6 +9244,7 @@ export declare const languages: {
         eventsTabAttendees: string;
         eventsTabAccess: string;
         eventsTabSummary: string;
+        eventsManage: string;
         eventsSlug: string;
         eventsPublicLink: string;
         eventsSummary: string;
@@ -9256,6 +9262,7 @@ export declare const languages: {
         eventsWebsite: string;
         eventsWebsiteNone: string;
         eventsWebsiteHint: string;
+        eventsSiteNoEventsSection: string;
         eventsSaleSettingsHint: string;
         eventsSeries: string;
         eventsSeriesHint: string;
@@ -9367,6 +9374,9 @@ export declare const languages: {
         eventsBookingNotFound: string;
         eventsBookingExpiredRetry: string;
         eventsTypeWithoutProduct: string;
+        eventsTypeNameHint: string;
+        eventsTypeProductRequired: string;
+        eventsTypeProductInventory: string;
         eventsPaymentsUnavailable: string;
         eventsPaymentProviderError: string;
         eventsPaymentMismatch: string;
@@ -13927,8 +13937,8 @@ export declare const languages: {
         eventsKpiSoldHint: string;
         eventsKpiCheckedInHint: string;
         eventsKpiRevenueHint: string;
-        eventsDraft: string;
-        eventsPublished: string;
+        eventsUnpublished: string;
+        eventsStatusActive: string;
         eventsStatusClosed: string;
         eventsStatusCancelled: string;
         eventsPublish: string;
@@ -13947,6 +13957,7 @@ export declare const languages: {
         eventsTabAttendees: string;
         eventsTabAccess: string;
         eventsTabSummary: string;
+        eventsManage: string;
         eventsSlug: string;
         eventsPublicLink: string;
         eventsSummary: string;
@@ -13964,6 +13975,7 @@ export declare const languages: {
         eventsWebsite: string;
         eventsWebsiteNone: string;
         eventsWebsiteHint: string;
+        eventsSiteNoEventsSection: string;
         eventsSaleSettingsHint: string;
         eventsSeries: string;
         eventsSeriesHint: string;
@@ -14075,6 +14087,9 @@ export declare const languages: {
         eventsBookingNotFound: string;
         eventsBookingExpiredRetry: string;
         eventsTypeWithoutProduct: string;
+        eventsTypeNameHint: string;
+        eventsTypeProductRequired: string;
+        eventsTypeProductInventory: string;
         eventsPaymentsUnavailable: string;
         eventsPaymentProviderError: string;
         eventsPaymentMismatch: string;

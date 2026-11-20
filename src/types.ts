@@ -4634,8 +4634,12 @@ export type EventTicketTypeType = {
   id: number;
   name: string;
   description: string;
-  /** Precio final, con impuestos. */
+  /** Precio unitario, antes de impuestos. */
   price: number;
+  /** Lo que paga el comprador: precio + impuestos (lo calcula el servidor). */
+  gross?: number;
+  /** Impuestos de la categoría (taxporc null = no aplica). */
+  taxes?: TaxType[];
   /** 0 = sin tope propio (solo el del evento). */
   capacity: number;
   /** 0 = el máximo por compra del evento. */
@@ -4644,7 +4648,7 @@ export type EventTicketTypeType = {
   salesEnd: string | null;
   /** false = solo cortesía o venta manual. */
   isPublic: boolean;
-  /** 0 = se crea un producto de servicio al guardar. */
+  /** Producto existente con el que entra a la nota (obligatorio). */
   idprod: number;
   productName?: string;
   order: number;
