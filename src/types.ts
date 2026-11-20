@@ -4197,7 +4197,8 @@ export type PublicServiceKeyType =
   | "account"
   | "chat"
   | "documents"
-  | "forms";
+  | "forms"
+  | "events";
 
 export type OpenMenuCodeType = Exclude<PublicServiceKeyType, "account">;
 
@@ -4604,6 +4605,338 @@ export type VetaOrderCutlistType = {
 export type VetaCheckoutType = {
   url: string;
   sessionId: string;
+};
+
+// ─────────────────────────────────────────────────────────────────────────────
+// EVENTOS Y BOLETAJE (ERP features/events + páginas públicas de compra)
+// Fechas: "YYYY-MM-DDTHH:mm" en la zona horaria del sistema.
+// ─────────────────────────────────────────────────────────────────────────────
+
+/** 1 activo, 2 venta cerrada, -2 cancelado. */
+export type EventStatusType = 1 | 2 | -2;
+
+export type EventBookingSourceType = "web" | "free" | "manual" | "courtesy";
+
+/** 7 pendiente de pago, 1 confirmada, 0 expirada, -2 cancelada. */
+export type EventBookingStatusType = 7 | 1 | 0 | -2;
+
+export type EventScanResultType =
+  | "ok"
+  | "used"
+  | "invalid"
+  | "cancelled"
+  | "otherevent"
+  | "pending"
+  | "undo";
+
+export type EventTicketTypeType = {
+  /** 0 = categoría nueva. */
+  id: number;
+  name: string;
+  description: string;
+  /** Precio final, con impuestos. */
+  price: number;
+  /** 0 = sin tope propio (solo el del evento). */
+  capacity: number;
+  /** 0 = el máximo por compra del evento. */
+  maxPerOrder: number;
+  salesStart: string | null;
+  salesEnd: string | null;
+  /** false = solo cortesía o venta manual. */
+  isPublic: boolean;
+  /** 0 = se crea un producto de servicio al guardar. */
+  idprod: number;
+  productName?: string;
+  order: number;
+  sold?: number;
+  held?: number;
+};
+
+/** Datos con los que entran las notas de venta del evento. */
+export type EventSaleSettingsType = {
+  idcmp: number;
+  idwh: number;
+  doccode: string;
+  idagent: number;
+  idproject: number;
+  pricelist: number;
+  idaccount: number;
+  clas: string;
+  subclas: string;
+  idmail: number;
+  cvesat: string;
+  unisat: string;
+  idtax: number;
+  currency: string;
+};
+
+export type EventType = EventSaleSettingsType & {
+  id: number;
+  uuid: string;
+  slug: string;
+  name: string;
+  summary: string;
+  descriptionHtml: string;
+  /** Ruta en el bucket; imageUrl es la liga firmada para mostrarla. */
+  image: string;
+  imageUrl: string;
+  startsAt: string | null;
+  endsAt: string | null;
+  venue: string;
+  address: string;
+  mapUrl: string;
+  /** 0 = sin tope. */
+  capacity: number;
+  maxPerOrder: number;
+  salesStart: string | null;
+  salesEnd: string | null;
+  idweb: number;
+  publish: boolean;
+  status: EventStatusType;
+  ticketTypes: EventTicketTypeType[];
+  /** Liga pública de compra (vacía si no se puede armar). */
+  publicUrl: string;
+};
+
+export type EventInputType = Omit<
+  EventType,
+  "id" | "uuid" | "imageUrl" | "publicUrl" | "status"
+> & { removeImage?: boolean };
+
+export type EventListItemType = {
+  id: number;
+  slug: string;
+  name: string;
+  startsAt: string | null;
+  venue: string;
+  publish: boolean;
+  status: EventStatusType;
+  capacity: number;
+  sold: number;
+  courtesies: number;
+  checkedIn: number;
+  revenue: number;
+  currency: string;
+};
+
+export type EventBookingRowType = {
+  id: number;
+  source: EventBookingSourceType;
+  status: EventBookingStatusType;
+  buyerName: string;
+  buyerEmail: string;
+  buyerPhone: string;
+  total: number;
+  currency: string;
+  tickets: number;
+  idor: number;
+  folio: string;
+  createdAt: string;
+  confirmedAt: string | null;
+  sentAt: string | null;
+};
+
+export type EventTicketRowType = {
+  id: number;
+  number: number;
+  folio: string;
+  idett: number;
+  ticketType: string;
+  attendeeName: string;
+  attendeeEmail: string;
+  idebk: number;
+  buyerName: string;
+  source: EventBookingSourceType;
+  status: EventBookingStatusType;
+  checkedIn: boolean;
+  checkedInAt: string | null;
+};
+
+export type EventScanRowType = {
+  id: number;
+  result: EventScanResultType;
+  idtkt: number;
+  folio: string;
+  ticketType: string;
+  attendeeName: string;
+  userName: string;
+  createdAt: string;
+};
+
+export type EventSummaryType = {
+  capacity: number;
+  sold: number;
+  courtesies: number;
+  held: number;
+  checkedIn: number;
+  revenue: number;
+  currency: string;
+  byType: {
+    idett: number;
+    name: string;
+    capacity: number;
+    sold: number;
+    courtesies: number;
+    checkedIn: number;
+    revenue: number;
+  }[];
+};
+
+export type EventCheckinResponseType = {
+  result: EventScanResultType;
+  ticket: {
+    id: number;
+    folio: string;
+    ticketType: string;
+    attendeeName: string;
+    buyerName: string;
+    checkedInAt: string | null;
+  } | null;
+  /** Evento al que pertenece el boleto cuando result = "otherevent". */
+  otherEventName?: string;
+  counts: { checkedIn: number; issued: number };
+};
+
+export type EventAttendeeInputType = { name: string; email: string };
+
+/** Cortesía o venta manual desde el ERP. */
+export type EventIssueInputType = {
+  items: {
+    idett: number;
+    quantity: number;
+    attendees?: EventAttendeeInputType[];
+  }[];
+  buyer: { idparty: number; name: string; email: string; phone: string };
+  /** Solo venta manual. */
+  payform?: string;
+  idaccount?: number;
+  reference?: string;
+  obs?: string;
+  send: boolean;
+};
+
+// Público (página de compra, Mis boletos, boleto)
+
+export type PublicEventTicketTypeType = {
+  id: number;
+  name: string;
+  description: string;
+  price: number;
+  /** null = sin tope visible. */
+  available: number | null;
+  soldOut: boolean;
+  onSale: boolean;
+  maxPerOrder: number;
+  salesStart: string | null;
+  salesEnd: string | null;
+};
+
+export type PublicEventSaleStateType =
+  | "onsale"
+  | "soon"
+  | "ended"
+  | "soldout"
+  | "cancelled";
+
+export type PublicEventType = {
+  slug: string;
+  name: string;
+  summary: string;
+  descriptionHtml: string;
+  imageUrl: string;
+  startsAt: string | null;
+  endsAt: string | null;
+  venue: string;
+  address: string;
+  mapUrl: string;
+  currency: string;
+  maxPerOrder: number;
+  saleState: PublicEventSaleStateType;
+  payments: boolean;
+  /** Nombre comercial de la empresa que organiza. */
+  organizer: string;
+  ticketTypes: PublicEventTicketTypeType[];
+};
+
+export type PublicEventListItemType = {
+  slug: string;
+  name: string;
+  summary: string;
+  imageUrl: string;
+  startsAt: string | null;
+  venue: string;
+  minPrice: number | null;
+  currency: string;
+  saleState: PublicEventSaleStateType;
+};
+
+export type EventBookInputType = {
+  /** Id del borrador en el navegador: un reintento no duplica la compra. */
+  draftId: string;
+  buyer: { name: string; email: string; phone: string };
+  items: {
+    idett: number;
+    quantity: number;
+    attendees?: EventAttendeeInputType[];
+  }[];
+  returnUrl: string;
+};
+
+export type EventBookResultType = {
+  status: "checkout" | "confirmed";
+  checkoutUrl?: string;
+  bookingToken: string;
+};
+
+export type PublicEventTicketStatusType =
+  | "valid"
+  | "used"
+  | "pending"
+  | "expired"
+  | "cancelled";
+
+export type PublicEventTicketType = {
+  token: string;
+  folio: string;
+  ticketType: string;
+  attendeeName: string;
+  attendeeEmail: string;
+  status: PublicEventTicketStatusType;
+  checkedInAt: string | null;
+};
+
+export type PublicEventBookingType = {
+  token: string;
+  status: "pending" | "confirmed" | "expired" | "cancelled";
+  event: {
+    slug: string;
+    name: string;
+    startsAt: string | null;
+    endsAt: string | null;
+    venue: string;
+    address: string;
+    mapUrl: string;
+    imageUrl: string;
+  };
+  buyerName: string;
+  buyerEmail: string;
+  total: number;
+  currency: string;
+  /** Datos para la autofactura de la nota (null si fue gratis o cortesía). */
+  invoice: { folio: string; token: string } | null;
+  tickets: PublicEventTicketType[];
+  canEditAttendees: boolean;
+};
+
+export type PublicEventSingleTicketType = PublicEventTicketType & {
+  event: PublicEventBookingType["event"];
+};
+
+/** Lo que el edge de ApesWeb inyecta en <meta name="apes-event">. */
+export type PublicEventTargetType = {
+  company: string;
+  event: string;
+  backend: PublicBackendDataType;
 };
 
 // ─────────────────────────────────────────────────────────────────────────────
