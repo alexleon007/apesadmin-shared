@@ -188,9 +188,9 @@ export declare const vetaLanguages: {
         summaryBoardsLine_one: string;
         summaryBoardsLine_other: string;
         summaryEdgeLine: string;
-        summaryEstimatedTotal: string;
+        summaryTotal: string;
         summaryUnpriced: string;
-        summaryEstimateHint: string;
+        summaryPriceHint: string;
         seeAll: string;
         ordersErrorTitle: string;
         ordersErrorText: string;
@@ -272,8 +272,6 @@ export declare const vetaLanguages: {
         modulesInDraft: string;
         modulesGoToOrder: string;
         modulesPriceHint: string;
-        orderModulesTitle: string;
-        orderModulesBrowse: string;
         orderModuleUnavailable: string;
         orderModulesCount_one: string;
         orderModulesCount_other: string;
@@ -283,6 +281,16 @@ export declare const vetaLanguages: {
         homeQuickModules: string;
         decrease: string;
         increase: string;
+        addModeLabel: string;
+        addModePiece: string;
+        addModeModule: string;
+        moduleAddTitle: string;
+        moduleAddSubtitle: string;
+        moduleLabel: string;
+        moduleSize: string;
+        modulePrice: string;
+        moduleAdd: string;
+        orderContentTitle: string;
     };
     readonly en: {
         loading: string;
@@ -471,9 +479,9 @@ export declare const vetaLanguages: {
         summaryBoardsLine_one: string;
         summaryBoardsLine_other: string;
         summaryEdgeLine: string;
-        summaryEstimatedTotal: string;
+        summaryTotal: string;
         summaryUnpriced: string;
-        summaryEstimateHint: string;
+        summaryPriceHint: string;
         seeAll: string;
         ordersErrorTitle: string;
         ordersErrorText: string;
@@ -555,8 +563,6 @@ export declare const vetaLanguages: {
         modulesInDraft: string;
         modulesGoToOrder: string;
         modulesPriceHint: string;
-        orderModulesTitle: string;
-        orderModulesBrowse: string;
         orderModuleUnavailable: string;
         orderModulesCount_one: string;
         orderModulesCount_other: string;
@@ -566,6 +572,16 @@ export declare const vetaLanguages: {
         homeQuickModules: string;
         decrease: string;
         increase: string;
+        addModeLabel: string;
+        addModePiece: string;
+        addModeModule: string;
+        moduleAddTitle: string;
+        moduleAddSubtitle: string;
+        moduleLabel: string;
+        moduleSize: string;
+        modulePrice: string;
+        moduleAdd: string;
+        orderContentTitle: string;
     };
 };
 export type VetaLanguageKey = keyof typeof vetaLanguages;
