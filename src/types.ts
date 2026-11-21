@@ -4503,6 +4503,8 @@ export type ProductEcommerceConfigType = {
   veta: boolean;
   /** Cubrecanto del tablero en Veta (idprod, 0 = sin cubrecanto). */
   vetaedge: number;
+  /** Se ofrece como módulo (mueble) en Veta, con su receta de piezas. Excluye a `veta`. */
+  vetamodule: boolean;
 };
 
 export type ProductEcommercePricingType = {
@@ -4534,6 +4536,8 @@ export type ProductEcommerceInfoType = {
   config: ProductEcommerceConfigType;
   pricing: ProductEcommercePricingType | null;
   channels: { website: ProductEcommerceWebsiteChannelType[] };
+  /** Receta del módulo de Veta (null si el producto no tiene). */
+  vetaModule: VetaModuleRecipeType | null;
 };
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -4588,6 +4592,14 @@ export type VetaPieceType = {
   quantity: number;
   edges: VetaEdgesType;
   grain: boolean;
+  /** Módulo (idprod) del que sale la pieza; 0 o ausente = pieza capturada a mano. */
+  moduleId?: number;
+};
+
+/** Módulo que el carpintero compra en una pieza: el despiece no se le muestra. */
+export type VetaOrderModuleInputType = {
+  moduleId: number;
+  quantity: number;
 };
 
 export type VetaOrderInputType = {
@@ -4595,6 +4607,78 @@ export type VetaOrderInputType = {
   draftId: string;
   name: string;
   pieces: VetaPieceType[];
+  modules?: VetaOrderModuleInputType[];
+};
+
+/** Módulo del catálogo de Veta. Medidas comerciales en mm. */
+export type VetaModuleType = {
+  id: number;
+  code: string;
+  name: string;
+  description: string;
+  width: number;
+  height: number;
+  depth: number;
+  /** Liga firmada temporal a la imagen principal del producto. */
+  image: string | null;
+  /** Precio por módulo con impuestos (material consumido, lista de la conexión Veta). */
+  price: number;
+};
+
+/**
+ * Pieza de la receta de un módulo (ERP). Largo y ancho son fórmulas en mm con
+ * A (ancho), H (alto), P (fondo) del módulo y T (espesor del tablero).
+ */
+export type VetaModulePieceInputType = {
+  label: string;
+  boardId: number;
+  quantity: number;
+  length: string;
+  width: string;
+  edges: VetaEdgesType;
+  grain: boolean;
+};
+
+export type VetaModuleRecipeType = {
+  width: number;
+  height: number;
+  depth: number;
+  pieces: VetaModulePieceInputType[];
+};
+
+/** formula = fórmula inválida; board = tablero no ofrecido en Veta; fit = no cabe; edge = sin cubrecanto; size = medida ≤ 0. */
+export type VetaModuleIssueType = "" | "formula" | "board" | "fit" | "edge" | "size";
+
+export type VetaModulePreviewPieceType = {
+  index: number;
+  length: number | null;
+  width: number | null;
+  issue: VetaModuleIssueType;
+};
+
+export type VetaModulePreviewLineType = {
+  id: number;
+  code: string;
+  name: string;
+  unit: string;
+  /** Hojas (fracción), metros o cantidad del accesorio. */
+  quantity: number;
+  /** Antes de impuestos. */
+  cost: number;
+};
+
+export type VetaModulePreviewType = {
+  pieces: VetaModulePreviewPieceType[];
+  boards: VetaModulePreviewLineType[];
+  edges: VetaModulePreviewLineType[];
+  /** Pestaña Materiales del producto (herrajes, accesorios). */
+  accessories: VetaModulePreviewLineType[];
+  /** Costo por módulo antes de impuestos. */
+  cost: number;
+  /** Sin problemas y con al menos una pieza: aparece en Veta. */
+  ready: boolean;
+  /** Hay una conexión Veta (sin ella no hay lista de precios). */
+  connected: boolean;
 };
 
 /** pending = por pagar, partial = con abono, paid = pagado. */
@@ -4616,9 +4700,12 @@ export type VetaOrderSummaryType = {
   folio: string;
   name: string;
   date: string;
-  /** Nombres de los tableros del pedido, separados por coma. */
+  /** Nombres de los tableros de las piezas capturadas, separados por coma. */
   material: string;
+  /** Piezas capturadas a mano (las de los módulos no cuentan). */
   pieces: number;
+  /** Módulos comprados (suma de cantidades). */
+  modules: number;
   total: number;
   /** Saldo con impuestos; si ya se facturó, el de la factura. */
   due: number;
@@ -4644,9 +4731,17 @@ export type VetaOrderDetailType = VetaOrderSummaryType & {
   cutlist: VetaPieceType[];
 };
 
+/** Módulo del despiece en el ERP (código para la columna Módulo). */
+export type VetaOrderModuleRefType = {
+  id: number;
+  code: string;
+  name: string;
+};
+
 export type VetaOrderCutlistType = {
   materials: VetaOrderMaterialType[];
   pieces: VetaPieceType[];
+  modules: VetaOrderModuleRefType[];
 };
 
 export type VetaCheckoutType = {
