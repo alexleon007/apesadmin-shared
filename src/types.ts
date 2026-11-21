@@ -3291,7 +3291,11 @@ export type PipelineType = {
       user: string;
       comments: string;
       action: "forward" | "backward" | "created";
+      /** false = renglón viejo sin cambio de etapa (el contacto ya está en la bitácora). */
+      changed?: boolean;
       event?: {
+        /** Workitem del seguimiento (la llave); idcal es su entrada de calendario. */
+        idwi: number;
         idcal: number;
         title: string;
         start: string;
@@ -6344,9 +6348,16 @@ export type CrmActivityTabType =
   | "pending"
   | "all";
 
-/** Actividad programada (calendar con typedoc 'followups'). start/end en hora local. */
+/**
+ * Actividad = workitem del Espacio de trabajo (idwi es la llave). Si tiene
+ * fecha, idcal es su entrada de calendario. start/end en hora local; start
+ * vacío = tarea sin fecha.
+ */
 export type CrmActivityType = {
+  idwi: number;
   idcal: number;
+  code: string;
+  wistatus: number;
   title: string;
   description: string;
   notes: string;
@@ -6370,11 +6381,44 @@ export type CrmActivityType = {
   doneat: string | null;
   idopp: number;
   iduser: number;
+  /** Pipeline de la actividad (0 = ninguno). */
+  idpipe: number;
+  /** Etapa a la que pasa el cliente cuando se complete (0 = ninguna). */
+  idpipestep: number;
   pipeline: string;
   step: string;
   stepcolor: string;
   waidcc: number;
   waidca: number;
+};
+
+/** Renglón de la bitácora del cliente (GET /crm/get-party-log/:idparty). */
+export type CrmPartyLogType = {
+  idpact: number;
+  type: string;
+  typename: string;
+  typecolor: string;
+  typeicon: string;
+  direction: "in" | "out" | "";
+  subject: string;
+  body: string;
+  outcome: string;
+  /** Momento en que ocurrió (ISO). */
+  occurredat: string;
+  source: string;
+  countsascontact: boolean;
+  iduser: number;
+  username: string;
+  idpipe: number;
+  pipeline: string;
+  idpipestep: number;
+  step: string;
+  stepcolor: string;
+};
+
+export type CrmPartyLogPageType = {
+  items: CrmPartyLogType[];
+  hasmore: boolean;
 };
 
 export type CrmActivityCountsType = {
@@ -6391,7 +6435,8 @@ export type CrmActivityInputType = {
   title?: string;
   idparty?: number;
   idopp?: number;
-  start: string;
+  /** "YYYY-MM-DD" (todo el día), "YYYY-MM-DD HH:mm" o null (tarea sin fecha). */
+  start: string | null;
   end?: string;
   allday?: boolean;
   minutes?: number;
@@ -6399,6 +6444,9 @@ export type CrmActivityInputType = {
   priority?: number;
   reminder?: number;
   notes?: string;
+  /** Etapa a la que pasa el cliente cuando se complete (0 = ninguna). */
+  idpipe?: number;
+  idpipestep?: number;
 };
 
 /** Encabezado de la ficha del cliente (GET /crm/get-party-summary/:idparty). */
@@ -6417,7 +6465,7 @@ export type CrmPartySummaryType = {
   pending: number;
   overdueactivities: number;
   next: {
-    idcal: number;
+    idwi: number;
     title: string;
     type: string;
     allday: boolean;
