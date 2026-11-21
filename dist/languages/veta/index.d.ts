@@ -291,6 +291,10 @@ export declare const vetaLanguages: {
         modulePrice: string;
         moduleAdd: string;
         orderContentTitle: string;
+        imageOpen: string;
+        imagePrevious: string;
+        imageNext: string;
+        imageCount: string;
     };
     readonly en: {
         loading: string;
@@ -582,6 +586,10 @@ export declare const vetaLanguages: {
         modulePrice: string;
         moduleAdd: string;
         orderContentTitle: string;
+        imageOpen: string;
+        imagePrevious: string;
+        imageNext: string;
+        imageCount: string;
     };
 };
 export type VetaLanguageKey = keyof typeof vetaLanguages;

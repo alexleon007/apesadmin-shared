@@ -287,5 +287,9 @@
     "moduleSize": "Medidas",
     "modulePrice": "Precio por módulo",
     "moduleAdd": "Agregar módulo",
-    "orderContentTitle": "Piezas ({{pieces}}) · Módulos ({{modules}})"
+    "orderContentTitle": "Piezas ({{pieces}}) · Módulos ({{modules}})",
+    "imageOpen": "Ver foto de {{name}}",
+    "imagePrevious": "Foto anterior",
+    "imageNext": "Foto siguiente",
+    "imageCount": "{{current}} de {{total}}"
 }

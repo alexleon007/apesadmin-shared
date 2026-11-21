@@ -287,5 +287,9 @@
     "moduleSize": "Size",
     "modulePrice": "Price per module",
     "moduleAdd": "Add module",
-    "orderContentTitle": "Pieces ({{pieces}}) · Modules ({{modules}})"
+    "orderContentTitle": "Pieces ({{pieces}}) · Modules ({{modules}})",
+    "imageOpen": "View photo of {{name}}",
+    "imagePrevious": "Previous photo",
+    "imageNext": "Next photo",
+    "imageCount": "{{current}} of {{total}}"
 }

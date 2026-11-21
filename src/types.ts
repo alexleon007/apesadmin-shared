@@ -4571,6 +4571,8 @@ export type VetaMaterialType = {
   /** Precio por hoja con impuestos (lista de la conexión Veta). */
   price: number;
   edge: VetaEdgeType | null;
+  /** Ligas firmadas temporales a las fotos del tablero (portada primero): color y veta. */
+  images: string[];
 };
 
 export type VetaConfigType = {
@@ -4621,6 +4623,8 @@ export type VetaModuleType = {
   depth: number;
   /** Liga firmada temporal a la imagen principal del producto. */
   image: string | null;
+  /** Todas las fotos (portada primero), para verlas en grande. */
+  images: string[];
   /** Precio por módulo con impuestos (material consumido, lista de la conexión Veta). */
   price: number;
 };
