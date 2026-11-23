@@ -200,6 +200,7 @@ export const VAR_TYPE_OBJECT = "object";
 export const VAR_TYPE_EMPTY_STRING = "";
 
 export const FORM_MAIN = "main";
+export const FORM_ACTIVITY = "activity";
 export const FORM_ADDRESSES = "addresses";
 export const FORM_CONTACTS = "contacts";
 export const FORM_PIPELINE = "pipelines";

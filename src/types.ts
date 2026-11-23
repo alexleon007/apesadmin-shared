@@ -2715,6 +2715,9 @@ export type MailConfigType = {
   smtppassword?: string | null;
   lastcheck?: string | null;
   lasterror?: string;
+  /** 1 = sus correos con clientes se registran en el CRM. */
+  crmsync?: 0 | 1;
+  crmsyncerror?: string;
   status?: number;
   createdAt?: string | null;
 };
@@ -2881,7 +2884,9 @@ export type MailProviderType = {
   kind: "gmail" | "outlook" | "imap";
   list: (opts: MailListOptionsType) => Promise<MailListResultType>;
   detail: (opts: MailMessageRefType) => Promise<MailMessageType>;
-  send: (opts: MailSendOptionsType) => Promise<{ messageId: string }>;
+  send: (
+    opts: MailSendOptionsType,
+  ) => Promise<{ messageId: string; rfcMessageId?: string }>;
   markRead: (opts: MailMessageRefType) => Promise<void>;
   markUnread: (opts: MailMessageRefType) => Promise<void>;
   trash: (opts: MailMessageRefType) => Promise<void>;
@@ -6540,6 +6545,95 @@ export type CrmPartyLogType = {
 export type CrmPartyLogPageType = {
   items: CrmPartyLogType[];
   hasmore: boolean;
+};
+
+export type CrmTimelineKindType =
+  | "contact"
+  | "whatsapp"
+  | "email"
+  | "form"
+  | "stage"
+  | "quotation"
+  | "order"
+  | "sale"
+  | "creditnote"
+  | "payment"
+  | "agent";
+
+export type CrmTimelineItemType = {
+  key: string;
+  kind: CrmTimelineKindType;
+  /** Instante ISO en UTC; también ordena la línea de tiempo. */
+  at: string;
+  /** Fecha en la zona del sistema, para lo que no tiene hora. */
+  localdate: string;
+  dateonly: boolean;
+  type?: string;
+  typename?: string;
+  typecolor?: string | null;
+  typeicon?: string | null;
+  direction?: "in" | "out" | "";
+  subject?: string;
+  body?: string;
+  outcome?: string;
+  source?: string;
+  username?: string | null;
+  idpipe?: number;
+  pipeline?: string | null;
+  step?: string | null;
+  stepcolor?: string | null;
+  action?: "created" | "forward" | "backward" | null;
+  idmail?: number;
+  mailref?: string;
+  canopen?: boolean;
+  idpfs?: number | null;
+  verified?: number | null;
+  match?: CrmFormMatchType | null;
+  applied?: boolean;
+  idcc?: number;
+  idca?: number;
+  account?: string;
+  inbound?: number;
+  outbound?: number;
+  idor?: number;
+  ortype?: number;
+  hascfdi?: boolean;
+  idpay?: number;
+  docnumber?: string;
+  status?: number;
+  statusname?: string | null;
+  amount?: number;
+  due?: number;
+  currency?: string;
+  payform?: string;
+  docs?: string;
+  agent?: string | null;
+  prevagent?: string | null;
+};
+
+export type CrmTimelinePageType = {
+  items: CrmTimelineItemType[];
+  hasmore: boolean;
+  cursor: string | null;
+  /** Solo en la primera página. */
+  counts: Partial<Record<CrmTimelineKindType, number>> | null;
+};
+
+export type CrmFormMatchType = "new" | "phone" | "email" | "ambiguous";
+
+export type CrmFormSubmissionType = {
+  idpfs: number;
+  formname: string;
+  idparty: number;
+  name: string;
+  phone: string;
+  email: string;
+  match: CrmFormMatchType;
+  verified: boolean;
+  applied: boolean;
+  createdat: string;
+  fields: { name: string; type: string; value: string }[];
+  canapply: boolean;
 };
 
 export type CrmActivityCountsType = {

@@ -92,6 +92,7 @@ export declare const VAR_TYPE_NUMBER = "number";
 export declare const VAR_TYPE_OBJECT = "object";
 export declare const VAR_TYPE_EMPTY_STRING = "";
 export declare const FORM_MAIN = "main";
+export declare const FORM_ACTIVITY = "activity";
 export declare const FORM_ADDRESSES = "addresses";
 export declare const FORM_CONTACTS = "contacts";
 export declare const FORM_PIPELINE = "pipelines";
