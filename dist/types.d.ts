@@ -2133,6 +2133,24 @@ export type PosSessionCashType = {
     total: number;
     date: string;
 };
+export type POSWithdrawalType = {
+    idposwd: number;
+    idpos: number;
+    amount: number;
+    obs: string;
+    status: number;
+    iduser: number;
+    cashiername: string;
+    idreceiver: number;
+    receivername: string;
+    idaccount: number;
+    accountname: string;
+    idvalidator: number;
+    validatorname: string;
+    createdat: string;
+    validatedat: string;
+    canceledat: string;
+};
 export type ExternalUrlsType = {
     ideurl: number;
     type: string;
@@ -3003,6 +3021,8 @@ export type POSSessionType = {
     remainingcash: number;
     cashpayed: number;
     cashexpenses: number;
+    cashwithdrawals: number;
+    pendingwithdrawals: number;
     cashdif: number;
     totalsale: number;
     totalpayed: number;
@@ -3517,6 +3537,7 @@ export type SystemSettingsType = {
     pos_warehouse_mode: string;
     pos_pricelist_mode: string;
     pos_blind_cash_count: boolean;
+    pos_withdrawal_mode?: "self" | "validated";
     pos_docnumber_capture: boolean;
     pos_self_billing: boolean;
     selfbilling_require_token?: boolean;
