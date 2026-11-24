@@ -3336,6 +3336,7 @@ export type PODetailType = {
     qtyrecived?: number;
     price: number;
     subtotal: number;
+    discount?: number;
     total: number;
 };
 export type POType = {
@@ -3374,6 +3375,7 @@ export type POType = {
     pocfdiuse: string;
     poobsnew: string;
     posubtotal: number;
+    podiscount?: number;
     potaxes: number;
     poret: number;
     pototal: number;
