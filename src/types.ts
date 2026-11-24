@@ -6688,5 +6688,134 @@ export type CrmPartySummaryType = {
   } | null;
   waidcc: number;
   waidca: number;
+  score: number;
+  followers: CrmFollowerType[];
   today: string;
+};
+
+export type CrmFollowerType = { iduser: number; name: string };
+
+export type CrmDuplicatePartyType = {
+  idparty: number;
+  code: string;
+  name: string;
+  rfc: string;
+  tel: string;
+  email: string;
+  agent: string;
+  orders: number;
+};
+
+export type CrmDuplicateKindType = "phone" | "email" | "rfc";
+
+export type CrmDuplicateGroupType = {
+  kind: CrmDuplicateKindType;
+  value: string;
+  parties: CrmDuplicatePartyType[];
+};
+
+export type CrmMergeBlockerType = { code: string; idparty: number };
+
+export type CrmMergePartyType = Record<string, string | number | null> & {
+  idparty: number;
+  agentname: string | null;
+};
+
+export type CrmMergePreviewType = {
+  keep: number;
+  merged: number[];
+  fields: string[];
+  parties: CrmMergePartyType[];
+  counts: Record<string, number>;
+  blockers: CrmMergeBlockerType[];
+};
+
+export type CrmDnsRecordType = {
+  type: string;
+  name: string;
+  value: string;
+  required: boolean;
+};
+
+export type CrmCampaignDomainType = {
+  configured: boolean;
+  domain: string;
+  verified: boolean;
+  suspended: boolean;
+  dailylimit: number;
+  senttoday: number;
+  records: CrmDnsRecordType[];
+  maxrecipients: number;
+  fromname: string;
+  fromlocal: string;
+  replyto: string;
+};
+
+export type CrmCampaignPreviewType = {
+  selected: number;
+  accessible: number;
+  valid: number;
+  noemail: number;
+  suppressed: number;
+  duplicated: number;
+  maxrecipients: number;
+};
+
+export type CrmCampaignStatusType =
+  | "queued"
+  | "sending"
+  | "paused"
+  | "done"
+  | "cancelled";
+
+export type CrmCampaignIssueType = {
+  email: string;
+  name: string;
+  status: string;
+  error: string;
+};
+
+export type CrmCampaignType = {
+  idcamp: number;
+  name: string;
+  subject: string;
+  status: CrmCampaignStatusType;
+  pausereason: string;
+  username: string;
+  createdat: string;
+  startedat: string | null;
+  finishedat: string | null;
+  total: number;
+  pending: number;
+  sent: number;
+  failed: number;
+  skipped: number;
+  bounced: number;
+  complained: number;
+  issues?: CrmCampaignIssueType[];
+};
+
+export type CrmScoreWeightsType = {
+  recency: number;
+  inbound: number;
+  forms: number;
+  purchases: number;
+  overdue: number;
+};
+
+export type CrmSettingsType = {
+  digesthour: number;
+  scoreweights: CrmScoreWeightsType;
+  campaignmaxrecipients: number;
+  activitytypes: CrmActivityTypeType[];
+};
+
+export type CrmBulkRecipientType = {
+  idparty: number;
+  partyname: string;
+  partytel: string;
+  partyemail: string;
+  partyidcc: number;
+  partyidca: number;
+  partylastinboundat: string | null;
 };
