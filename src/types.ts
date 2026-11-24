@@ -3901,6 +3901,7 @@ export type SystemSettingsType = {
   pos_docnumber_capture: boolean;
   pos_self_billing: boolean;
   selfbilling_require_token?: boolean;
+  open_portal?: { siteId: string; subdomain: string; hostname: string };
   project_property_managment: boolean;
   inventory_addition_on_po: boolean;
   inventory_movement_on_transfer: boolean;
@@ -4295,6 +4296,11 @@ export type PublicPortalFormType = {
 export type PublicFormTargetType = {
   company: string;
   form: string;
+  backend: PublicBackendDataType;
+};
+
+export type PublicPortalTargetType = {
+  company: string;
   backend: PublicBackendDataType;
 };
 

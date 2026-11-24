@@ -698,6 +698,11 @@ export declare const languages: {
         openPanelPortalTitle: string;
         openPanelPortalHint: string;
         openPanelPortalGoToDomains: string;
+        openPanelSubdomain: string;
+        openPanelSubdomainDescription: string;
+        openPanelSubdomainHint: string;
+        openPanelSubdomainSave: string;
+        openPanelSubdomainRemoved: string;
         openServiceDisabled: string;
         performanceMode: string;
         perfModeAuto: string;
@@ -5747,6 +5752,11 @@ export declare const languages: {
         openPanelPortalTitle: string;
         openPanelPortalHint: string;
         openPanelPortalGoToDomains: string;
+        openPanelSubdomain: string;
+        openPanelSubdomainDescription: string;
+        openPanelSubdomainHint: string;
+        openPanelSubdomainSave: string;
+        openPanelSubdomainRemoved: string;
         openServiceDisabled: string;
         performanceMode: string;
         perfModeAuto: string;
@@ -10796,6 +10806,11 @@ export declare const languages: {
         openPanelPortalTitle: string;
         openPanelPortalHint: string;
         openPanelPortalGoToDomains: string;
+        openPanelSubdomain: string;
+        openPanelSubdomainDescription: string;
+        openPanelSubdomainHint: string;
+        openPanelSubdomainSave: string;
+        openPanelSubdomainRemoved: string;
         openServiceDisabled: string;
         performanceMode: string;
         perfModeAuto: string;
