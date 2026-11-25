@@ -3557,6 +3557,8 @@ export type SystemSettingsType = {
     inventory_movement_on_transfer: boolean;
     inventory_assign_to_party?: boolean;
     inventory_picking_mode: string;
+    /** orders | sales | both. Falta = orders. */
+    inventory_assortment_source?: "orders" | "sales" | "both";
     inventory_picking_scanner_only?: boolean;
     f_order_field_value_date1: string;
     f_order_field_show_date1: boolean;

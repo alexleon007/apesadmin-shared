@@ -182,6 +182,11 @@ export declare const languages: {
         assortmentProgress: string;
         assortmentReview: string;
         assortmentReviewClear: string;
+        assortmentSource: string;
+        assortmentSourceHelp: string;
+        assortmentSourceOrders: string;
+        assortmentSourceSales: string;
+        assortmentSourceBoth: string;
         assortOrderNo: string;
         atLeastOneColumn: string;
         attachedEvidence: string;
@@ -2362,7 +2367,6 @@ export declare const languages: {
         orderUploadLotAmbiguous: string;
         orderUploadLotNoProduct: string;
         orderUploadLotNotFound: string;
-        orderUploadLotRequired: string;
         orderUploadNoConcepts: string;
         orderUploadNoRows: string;
         orderUploadPayformNeedsCredit: string;
@@ -3680,6 +3684,7 @@ export declare const languages: {
         uploading: string;
         uploadOrders: string;
         uploadOrdersDone: string;
+        uploadOrdersPendingAssort: string;
         uploadPayments: string;
         uploadPaymentsDone: string;
         uploadPaymentsStamped: string;
@@ -5236,6 +5241,11 @@ export declare const languages: {
         assortmentProgress: string;
         assortmentReview: string;
         assortmentReviewClear: string;
+        assortmentSource: string;
+        assortmentSourceHelp: string;
+        assortmentSourceOrders: string;
+        assortmentSourceSales: string;
+        assortmentSourceBoth: string;
         assortOrderNo: string;
         atLeastOneColumn: string;
         attachedEvidence: string;
@@ -7416,7 +7426,6 @@ export declare const languages: {
         orderUploadLotAmbiguous: string;
         orderUploadLotNoProduct: string;
         orderUploadLotNotFound: string;
-        orderUploadLotRequired: string;
         orderUploadNoConcepts: string;
         orderUploadNoRows: string;
         orderUploadPayformNeedsCredit: string;
@@ -8734,6 +8743,7 @@ export declare const languages: {
         uploading: string;
         uploadOrders: string;
         uploadOrdersDone: string;
+        uploadOrdersPendingAssort: string;
         uploadPayments: string;
         uploadPaymentsDone: string;
         uploadPaymentsStamped: string;
@@ -10290,6 +10300,11 @@ export declare const languages: {
         assortmentProgress: string;
         assortmentReview: string;
         assortmentReviewClear: string;
+        assortmentSource: string;
+        assortmentSourceHelp: string;
+        assortmentSourceOrders: string;
+        assortmentSourceSales: string;
+        assortmentSourceBoth: string;
         assortOrderNo: string;
         atLeastOneColumn: string;
         attachedEvidence: string;
@@ -12470,7 +12485,6 @@ export declare const languages: {
         orderUploadLotAmbiguous: string;
         orderUploadLotNoProduct: string;
         orderUploadLotNotFound: string;
-        orderUploadLotRequired: string;
         orderUploadNoConcepts: string;
         orderUploadNoRows: string;
         orderUploadPayformNeedsCredit: string;
@@ -13788,6 +13802,7 @@ export declare const languages: {
         uploading: string;
         uploadOrders: string;
         uploadOrdersDone: string;
+        uploadOrdersPendingAssort: string;
         uploadPayments: string;
         uploadPaymentsDone: string;
         uploadPaymentsStamped: string;
