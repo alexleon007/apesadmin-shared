@@ -2419,6 +2419,8 @@ export type POSWithdrawalType = {
   receivername: string;
   idaccount: number;
   accountname: string;
+  idcmp?: number;
+  cmpname?: string;
   idvalidator: number;
   validatorname: string;
   createdat: string;
@@ -3360,13 +3362,17 @@ export type POSSessionType = {
   statusname: string;
   tickets: POSTicketType[];
   payformAccounts: Record<string, number>;
+  payformAccountsByCmp?: Record<string, Record<string, number>>;
   users: { iduser: number; username: string }[];
 };
 
 export type POSTicketType = {
   idticket: number;
   idpos: number;
+  doccode?: string;
   docnumber: number;
+  idcmp?: number;
+  cmpname?: string;
   subtotal: number;
   taxes: number;
   retentions: number;
@@ -3897,6 +3903,7 @@ export type SystemSettingsType = {
   inventory_deduction_on_invoice: boolean;
   assign_agents_on_order: boolean;
   pos_warehouse_mode: string;
+  pos_company_mode?: "initial" | "open";
   pos_pricelist_mode: string;
   pos_blind_cash_count: boolean;
   pos_withdrawal_mode?: "self" | "validated";
@@ -4620,6 +4627,57 @@ export type VetaConfigType = {
   currency: string;
   /** Aprovechamiento del tablero con que se estiman las hojas (0.85 = 85 %). */
   boardUsage: number;
+  cutting: VetaCutSettingsType;
+};
+
+/** Ajustes de corte de la maderería (conexión Veta). Medidas en mm. */
+export type VetaCutSettingsType = {
+  /** Grosor del corte (disco o fresa). */
+  kerf: number;
+  /** Refilado de cada orilla del tablero. */
+  trim: number;
+  /** true = solo cortes de lado a lado (seccionadora); false = cortes interiores (CNC). */
+  guillotine: boolean;
+};
+
+/** Pieza acomodada en la hoja: x sobre el largo del tablero, y sobre el ancho. */
+export type VetaCutPlacementType = {
+  /** Posición de la pieza en la lista de piezas capturadas del pedido. */
+  piece: number;
+  x: number;
+  y: number;
+  w: number;
+  h: number;
+  /** Girada 90° respecto al largo del tablero. */
+  rotated: boolean;
+};
+
+export type VetaCutRectType = { x: number; y: number; w: number; h: number };
+
+export type VetaCutSheetType = {
+  /** Hojas con este mismo acomodo. */
+  count: number;
+  /** Área de piezas ÷ área de la hoja (0–1). */
+  usage: number;
+  placements: VetaCutPlacementType[];
+  remainders: VetaCutRectType[];
+};
+
+export type VetaCutMaterialPlanType = {
+  materialId: number;
+  length: number;
+  width: number;
+  boards: number;
+  usage: number;
+  sheets: VetaCutSheetType[];
+};
+
+/** Plan de corte de las piezas capturadas (los módulos no se optimizan). */
+export type VetaCutPlanType = {
+  settings: VetaCutSettingsType;
+  materials: VetaCutMaterialPlanType[];
+  /** Huella de piezas, ajustes y resultado: el pedido se rechaza si ya no coincide. */
+  key: string;
 };
 
 export type VetaPieceType = {
@@ -4647,6 +4705,8 @@ export type VetaOrderInputType = {
   name: string;
   pieces: VetaPieceType[];
   modules?: VetaOrderModuleInputType[];
+  /** Llave del plan optimizado que vio el carpintero. */
+  planKey?: string;
 };
 
 /** Módulo del catálogo de Veta. Medidas comerciales en mm. */
@@ -4770,6 +4830,8 @@ export type VetaOrderDetailType = VetaOrderSummaryType & {
   /** En el orden en que aparecen en el despiece. */
   materials: VetaOrderMaterialType[];
   cutlist: VetaPieceType[];
+  /** Pedidos anteriores al optimizador no traen plan. */
+  plan: VetaCutPlanType | null;
 };
 
 /** Módulo del despiece en el ERP (código para la columna Módulo). */
@@ -4783,6 +4845,8 @@ export type VetaOrderCutlistType = {
   materials: VetaOrderMaterialType[];
   pieces: VetaPieceType[];
   modules: VetaOrderModuleRefType[];
+  /** El índice de cada pieza del plan apunta a las piezas sin módulo, en orden. */
+  plan: VetaCutPlanType | null;
 };
 
 export type VetaCheckoutType = {
@@ -6234,6 +6298,8 @@ export type BillingSerieType = {
   idbillserie: number;
   code: string;
   type: string;
+  idcmp?: number;
+  cmpname?: string;
   usedateprefix: number;
   startingfolio: string;
   iduser: number;
