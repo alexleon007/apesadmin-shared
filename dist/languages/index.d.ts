@@ -844,6 +844,7 @@ export declare const languages: {
         closeAnnouncement: string;
         closedAt: string;
         closedBy: string;
+        closedPosPaymentCancelNotice: string;
         closedThrough: string;
         closeFilters: string;
         closePeriod: string;
@@ -5976,6 +5977,7 @@ export declare const languages: {
         closeAnnouncement: string;
         closedAt: string;
         closedBy: string;
+        closedPosPaymentCancelNotice: string;
         closedThrough: string;
         closeFilters: string;
         closePeriod: string;
@@ -11108,6 +11110,7 @@ export declare const languages: {
         closeAnnouncement: string;
         closedAt: string;
         closedBy: string;
+        closedPosPaymentCancelNotice: string;
         closedThrough: string;
         closeFilters: string;
         closePeriod: string;
