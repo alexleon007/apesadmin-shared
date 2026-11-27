@@ -3027,6 +3027,9 @@ export type OrderDetailType = {
   prodlocations?: ProductLocationType[];
   /** 1 = el producto se controla por lote. */
   prodbatch?: number;
+  /** Lote a descontar cuando la venta saca existencias al guardarse. */
+  idbatch?: number;
+  batchname?: string;
   /** parties_entities.idpent de la partida (mascota, vehículo…); 0 = ninguna. */
   identity?: number;
   /** Nombre de la entidad al momento de leer la orden. */
@@ -4549,6 +4552,8 @@ export type ProductEcommerceConfigType = {
   vetaedge: number;
   /** Se ofrece como módulo (mueble) en Veta, con su receta de piezas. Excluye a `veta`. */
   vetamodule: boolean;
+  /** Cubrecanto del catálogo de Veta: se elige por lado y se vende por metro. Excluye a los otros dos. */
+  vetabanding: boolean;
 };
 
 export type ProductEcommercePricingType = {
@@ -4593,8 +4598,14 @@ export type VetaEdgeKeyType = "l1" | "l2" | "a1" | "a2";
 
 export type VetaEdgesType = Record<VetaEdgeKeyType, boolean>;
 
-/** Cubrecanto asignado al tablero; se cobra por metro. */
-export type VetaEdgeType = {
+/** Cubrecanto (idprod) de cada lado con canto; ausente o 0 = el del tablero. */
+export type VetaEdgeIdsType = Partial<Record<VetaEdgeKeyType, number>>;
+
+/** Lados con canto enchapados a 45°. */
+export type VetaMitersType = Partial<Record<VetaEdgeKeyType, boolean>>;
+
+/** Producto con su precio con impuestos (lista de la conexión Veta). */
+export type VetaPricedItemType = {
   id: number;
   code: string;
   name: string;
@@ -4602,6 +4613,19 @@ export type VetaEdgeType = {
   /** Precio por unidad con impuestos (lista de la conexión Veta). */
   price: number;
 };
+
+/** Cubrecanto; se cobra por metro. */
+export type VetaEdgeType = VetaPricedItemType & {
+  /** Ancho de la cinta en mm (0 = sin capturar: sirve para cualquier tablero). */
+  width: number;
+  /** Grosor de la cinta en mm; se descuenta de la medida de corte (0 = no se descuenta). */
+  thickness: number;
+  /** Foto del color (portada del producto). */
+  image: string | null;
+};
+
+/** Medida a la que se corta una pieza: la final menos el grosor del cubrecanto. */
+export type VetaCutSizeType = { length: number; width: number };
 
 /** Tablero que el carpintero puede pedir. Medidas en mm. */
 export type VetaMaterialType = {
@@ -4628,6 +4652,8 @@ export type VetaConfigType = {
   /** Aprovechamiento del tablero con que se estiman las hojas (0.85 = 85 %). */
   boardUsage: number;
   cutting: VetaCutSettingsType;
+  /** Servicio de enchapado a 45° por metro; null = la maderería no lo ofrece. */
+  miter: VetaPricedItemType | null;
 };
 
 /** Ajustes de corte de la maderería (conexión Veta). Medidas en mm. */
@@ -4676,6 +4702,8 @@ export type VetaCutMaterialPlanType = {
 export type VetaCutPlanType = {
   settings: VetaCutSettingsType;
   materials: VetaCutMaterialPlanType[];
+  /** Medida de corte de cada pieza, en el orden de las piezas (planes anteriores no la traen). */
+  cuts?: VetaCutSizeType[];
   /** Huella de piezas, ajustes y resultado: el pedido se rechaza si ya no coincide. */
   key: string;
 };
@@ -4688,9 +4716,14 @@ export type VetaPieceType = {
   width: number;
   quantity: number;
   edges: VetaEdgesType;
+  /** Cubrecanto por lado; sin él, todos los lados llevan el del tablero. */
+  edgeIds?: VetaEdgeIdsType;
+  miters?: VetaMitersType;
   grain: boolean;
   /** Módulo (idprod) del que sale la pieza; 0 o ausente = pieza capturada a mano. */
   moduleId?: number;
+  /** Medida de corte; solo en el despiece de un pedido ya creado. */
+  cut?: VetaCutSizeType;
 };
 
 /** Módulo que el carpintero compra en una pieza: el despiece no se le muestra. */
@@ -4699,21 +4732,38 @@ export type VetaOrderModuleInputType = {
   quantity: number;
 };
 
+/** Hojas completas, sin corte. */
+export type VetaOrderSheetInputType = {
+  materialId: number;
+  quantity: number;
+};
+
+/** Metros de cubrecanto suelto (el carpintero lo aplica). */
+export type VetaOrderEdgeInputType = {
+  edgeId: number;
+  meters: number;
+};
+
 export type VetaOrderInputType = {
   /** Id del borrador en el navegador: un reintento no duplica el pedido. */
   draftId: string;
   name: string;
   pieces: VetaPieceType[];
   modules?: VetaOrderModuleInputType[];
+  sheets?: VetaOrderSheetInputType[];
+  edgeMeters?: VetaOrderEdgeInputType[];
   /** Llave del plan optimizado que vio el carpintero. */
   planKey?: string;
 };
+
+export type VetaModuleCategoryType = "kitchen" | "closet" | "door" | "other";
 
 /** Módulo del catálogo de Veta. Medidas comerciales en mm. */
 export type VetaModuleType = {
   id: number;
   code: string;
   name: string;
+  category: VetaModuleCategoryType;
   description: string;
   width: number;
   height: number;
@@ -4741,6 +4791,7 @@ export type VetaModulePieceInputType = {
 };
 
 export type VetaModuleRecipeType = {
+  category: VetaModuleCategoryType;
   width: number;
   height: number;
   depth: number;
@@ -4794,6 +4845,8 @@ export type VetaOrderLineType = {
   quantity: number;
   /** Importe con impuestos. */
   total: number;
+  /** Observación de la partida (hojas sin corte, cubrecanto suelto). */
+  note: string;
 };
 
 export type VetaOrderSummaryType = {
@@ -4825,26 +4878,38 @@ export type VetaOrderMaterialType = {
   thickness: number;
 };
 
+export type VetaProductRefType = {
+  id: number;
+  code: string;
+  name: string;
+};
+
+/** Cubrecanto del despiece; medidas de la cinta en mm. */
+export type VetaEdgeRefType = VetaProductRefType & {
+  width: number;
+  thickness: number;
+};
+
 export type VetaOrderDetailType = VetaOrderSummaryType & {
   lines: VetaOrderLineType[];
   /** En el orden en que aparecen en el despiece. */
   materials: VetaOrderMaterialType[];
+  /** Cubrecantos que aparecen en `cutlist[].edgeIds`. */
+  edges: VetaEdgeRefType[];
   cutlist: VetaPieceType[];
   /** Pedidos anteriores al optimizador no traen plan. */
   plan: VetaCutPlanType | null;
 };
 
 /** Módulo del despiece en el ERP (código para la columna Módulo). */
-export type VetaOrderModuleRefType = {
-  id: number;
-  code: string;
-  name: string;
-};
+export type VetaOrderModuleRefType = VetaProductRefType;
 
 export type VetaOrderCutlistType = {
   materials: VetaOrderMaterialType[];
   pieces: VetaPieceType[];
   modules: VetaOrderModuleRefType[];
+  /** Cubrecantos que aparecen en `pieces[].edgeIds`. */
+  edges: VetaEdgeRefType[];
   /** El índice de cada pieza del plan apunta a las piezas sin módulo, en orden. */
   plan: VetaCutPlanType | null;
 };
@@ -4852,6 +4917,25 @@ export type VetaOrderCutlistType = {
 export type VetaCheckoutType = {
   url: string;
   sessionId: string;
+};
+
+/**
+ * Pagar y enviar: el pedido se crea hasta que Stripe confirma el pago. Si el
+ * borrador ya se había pagado, `order` trae el pedido y no hay liga de pago.
+ */
+export type VetaOrderCheckoutType = {
+  order: VetaOrderSummaryType | null;
+  url: string;
+  sessionId: string;
+};
+
+/** paid = pedido creado; pending = Stripe aún no cobra; expired = la sesión venció. */
+export type VetaOrderCheckoutStatusType = "paid" | "pending" | "expired";
+
+export type VetaOrderCheckoutResultType = {
+  status: VetaOrderCheckoutStatusType;
+  draftId: string;
+  order: VetaOrderSummaryType | null;
 };
 
 // ─────────────────────────────────────────────────────────────────────────────

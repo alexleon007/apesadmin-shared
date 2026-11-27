@@ -1,4 +1,4 @@
-import type { BotAccessType, BotActionType, BotConfigType, BotConflictKindType, BotConflictSeverityType, BotContactTrustType, BotDocumentType, BotKnowledgeSourceType, BotModeType, BotPurposeType, BotStepType, BotStockModeType, ChannelScheduledStatusType, ClasifTypeKey, MailSupplierMetaType, RecurrenceErrorCode, WappLegacyPartyFieldType } from "./types";
+import type { BotAccessType, BotActionType, BotConfigType, BotConflictKindType, BotConflictSeverityType, BotContactTrustType, BotDocumentType, BotKnowledgeSourceType, BotModeType, BotPurposeType, BotStepType, BotStockModeType, ChannelScheduledStatusType, ClasifTypeKey, MailSupplierMetaType, RecurrenceErrorCode, VetaModuleCategoryType, WappLegacyPartyFieldType } from "./types";
 export declare const MODE_CREATE = "create";
 export declare const MODE_NEW = "new";
 export declare const MODE_EDIT = "edit";
@@ -412,4 +412,6 @@ export declare const BOT_VERTICAL_PRESETS: Record<string, Partial<BotConfigType>
 export declare const BOT_PURPOSE_PRESETS: Record<BotPurposeType, Partial<BotConfigType>>;
 /** Serie (máximo 3 letras) de los pedidos que llegan desde Veta. */
 export declare const VETA_DOCCODE = "VET";
+/** Categorías de módulos en Veta, en el orden del menú. */
+export declare const VETA_MODULE_CATEGORIES: VetaModuleCategoryType[];
 //# sourceMappingURL=consts.d.ts.map

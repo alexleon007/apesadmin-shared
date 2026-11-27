@@ -15,6 +15,7 @@ import type {
   ClasifTypeKey,
   MailSupplierMetaType,
   RecurrenceErrorCode,
+  VetaModuleCategoryType,
   WappLegacyPartyFieldType,
 } from "./types";
 
@@ -1490,3 +1491,11 @@ export const BOT_PURPOSE_PRESETS: Record<
 
 /** Serie (máximo 3 letras) de los pedidos que llegan desde Veta. */
 export const VETA_DOCCODE = "VET";
+
+/** Categorías de módulos en Veta, en el orden del menú. */
+export const VETA_MODULE_CATEGORIES: VetaModuleCategoryType[] = [
+  "kitchen",
+  "closet",
+  "door",
+  "other",
+];
