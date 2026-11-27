@@ -3913,6 +3913,8 @@ export type SystemSettingsType = {
   pos_docnumber_capture: boolean;
   pos_self_billing: boolean;
   selfbilling_require_token?: boolean;
+  /** Cómo busca el comprador su compra en la autofactura. Falta = folio. */
+  selfbilling_search?: SelfBillingSearchType;
   open_portal?: { siteId: string; subdomain: string; hostname: string };
   project_property_managment: boolean;
   inventory_addition_on_po: boolean;
@@ -4044,6 +4046,15 @@ export type TicketDetail = {
   quantity: number;
   price: number;
   subtotal: number;
+  total: number;
+};
+
+export type SelfBillingSearchType = "folio" | "data" | "both";
+
+export type TicketChoiceType = {
+  idor: number;
+  folio: string;
+  docdate: string;
   total: number;
 };
 
