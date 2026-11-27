@@ -3065,6 +3065,16 @@ export type OrderMovementType = {
   ormovobs: string;
 };
 
+export type OrderFiscalStatus =
+  | "na"
+  | "unbilled"
+  | "stamped"
+  | "billedin"
+  | "cancelled"
+  | "cancelpending"
+  | "cancelrejected"
+  | "cancelactive";
+
 export type OrderType = {
   idor: number;
   ortype: number;
@@ -3122,6 +3132,8 @@ export type OrderType = {
   oridped: number;
   oridcfdi: number;
   orxmlurl: string;
+  orfiscal?: OrderFiscalStatus;
+  orfiscalref?: string;
   orstatusinbox?: string;
   ortags?: TagType[];
   orisassorted?: number;

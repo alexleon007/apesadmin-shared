@@ -3086,7 +3086,7 @@ export declare const languages: {
         selfBillingBuyerNameExample: string;
         selfBillingPurchaseDate: string;
         selfBillingChooseTicket: string;
-        selfBillingRfcFromSearch: string;
+        selfBillingSearchRfcHint: string;
         selfBillingSearchDisabled: string;
         selfBillingInvalidDate: string;
         selfInvoice: string;
@@ -5121,6 +5121,18 @@ export declare const languages: {
         vetaMiterProduct: string;
         vetaEdgeCsv: string;
         vetaMiterCsv: string;
+        billingStatus: string;
+        fiscalStamped: string;
+        fiscalBilledIn: string;
+        fiscalUnbilled: string;
+        fiscalCancelled: string;
+        fiscalCancelPending: string;
+        fiscalCancelRejected: string;
+        fiscalCancelActive: string;
+        checkSatStatus: string;
+        satStatusResult: string;
+        cfdiNotCancelled: string;
+        satQueryError: string;
     };
     readonly en: {
         aboveMax: string;
@@ -8206,7 +8218,7 @@ export declare const languages: {
         selfBillingBuyerNameExample: string;
         selfBillingPurchaseDate: string;
         selfBillingChooseTicket: string;
-        selfBillingRfcFromSearch: string;
+        selfBillingSearchRfcHint: string;
         selfBillingSearchDisabled: string;
         selfBillingInvalidDate: string;
         selfInvoice: string;
@@ -10241,6 +10253,18 @@ export declare const languages: {
         vetaMiterProduct: string;
         vetaEdgeCsv: string;
         vetaMiterCsv: string;
+        billingStatus: string;
+        fiscalStamped: string;
+        fiscalBilledIn: string;
+        fiscalUnbilled: string;
+        fiscalCancelled: string;
+        fiscalCancelPending: string;
+        fiscalCancelRejected: string;
+        fiscalCancelActive: string;
+        checkSatStatus: string;
+        satStatusResult: string;
+        cfdiNotCancelled: string;
+        satQueryError: string;
     };
     readonly "zh-TW": {
         aboveMax: string;
@@ -13326,7 +13350,7 @@ export declare const languages: {
         selfBillingBuyerNameExample: string;
         selfBillingPurchaseDate: string;
         selfBillingChooseTicket: string;
-        selfBillingRfcFromSearch: string;
+        selfBillingSearchRfcHint: string;
         selfBillingSearchDisabled: string;
         selfBillingInvalidDate: string;
         selfInvoice: string;
@@ -15361,6 +15385,18 @@ export declare const languages: {
         vetaMiterProduct: string;
         vetaEdgeCsv: string;
         vetaMiterCsv: string;
+        billingStatus: string;
+        fiscalStamped: string;
+        fiscalBilledIn: string;
+        fiscalUnbilled: string;
+        fiscalCancelled: string;
+        fiscalCancelPending: string;
+        fiscalCancelRejected: string;
+        fiscalCancelActive: string;
+        checkSatStatus: string;
+        satStatusResult: string;
+        cfdiNotCancelled: string;
+        satQueryError: string;
     };
 };
 export type LanguageKey = keyof typeof languages;
